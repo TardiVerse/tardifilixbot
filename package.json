@@ -1,16 +1,16 @@
 {
-  "name": "Alpha",
+  "name": "tardifilixbot",
   "version": "1.0.0",
-  "description": "Craft your own (fully customizable) web-based chatbot",
+  "description": "A Full Education based ChatBot of School",
   "repository": {
     "type": "git",
     "url": "git://github.com/IcaliaLabs/alpha.git"
   },
   "engines": {
     "npm": ">=3",
-    "node": "8.15"
+    "node": "18.16.1"
   },
-  "author": "Icalia Labs",
+  "author": "Vignesh Selvaraj",
   "license": "MIT",
   "scripts": {
     "heroku-postbuild": "npm run build",

@@ -13,7 +13,7 @@ const common_greetings_negative = /(?!(^hello|^hi|^hey|^hllo|^sup|^hola)\b)\w+/i
 
 const questions = {
   start: {
-    botPrompt: 'Hello Human, my name is <strong>Alpha</strong>, I am an awesome <strong>chatbot</strong>',
+    botPrompt: 'Welcome to <strong>E</strong>ducation <strong>F</strong>or <strong>A</strong>ll! my name is <strong>TardiFilixBot</strong>, An New Gen <strong>AI bot for your Skill Development</strong>',
     answers: [
       {
         nextId: 'myPurpose',
@@ -21,7 +21,16 @@ const questions = {
     ],
   },
   myPurpose: {
-    botPrompt: 'My purpose is to be a simple chatbot that <strong>guides users</strong> and <strong>is able to make decisions and make recommendations.</strong>',
+    botPrompt: 'This course was designed by the <strong>EFA</strong> Curriculum Team  aimed at eradicating learning lapse in children.',
+    answers: [
+      {
+        nextId: 'imageshare',
+      },
+    ],
+  },
+  imageshare: {
+    botPrompt: 'https://tardimeet.s3.ap-south-1.amazonaws.com/efaimage.jpg',
+    type: RTypes.MEDIA,
     answers: [
       {
         nextId: 'yourName',
@@ -29,7 +38,7 @@ const questions = {
     ],
   },
   yourName: {
-    botPrompt: 'So, What is your name?',
+    botPrompt: 'So, What`s your name?',
     input: textField(),
     answers: [
       {
@@ -67,34 +76,208 @@ const questions = {
 	  ],
   },
   asYouCanSee: {
-    botPrompt: 'So <strong>@varName</strong>, as you can see I can remember things the user says.',
+    botPrompt: 'Hi,<strong>@varName</strong>, We would like to know more about you ?',
     type: RTypes.TRANSFORMED_TEXT,
     varName: 'userName',
     answers: [
-			{ nextId: 'emojisHtml' },
+			{ nextId: 'emailcollection' },
     ],
+  },
+  emailcollection: {
+	  botPrompt: 'Please enter<strong> your 📧 email id .</strong>?',
+	  input: textField(),
+	  answers: [
+	    {
+	      answer: common_greetings_negative,  
+	      nextId: 'emojisHtml',
+	    },
+	  ],
   },
   emojisHtml: {
-    botPrompt: "I can enhance my dialogue with emojis 🎉 and also using inline <span style='color:purple; background-color:white;font-weight:bold'>HTML</span>",
+    botPrompt: "Vowels are Back",
     answers: [
-			{ nextId: 'mediaBubbles1' },
+			{ nextId: 'vowels_prompt1' },
     ],
   },
-  mediaBubbles1: {
-    botPrompt: 'I can also share <strong>images and animated GIFs</strong> like so:',
-    answers: [
-			{ nextId: 'mediaBubbles2' },
-    ],
-  },
-  mediaBubbles2: {
-    botPrompt: 'https://media.giphy.com/media/bDL3BsB4ViI2k/giphy.gif',
-    type: RTypes.MEDIA,
+  vowels_prompt1: {
+    botPrompt: 'A fun new activity to practise the use of vowels.',
     answers: [
       {
-        nextId: 'select',
+        nextId: 'vowels_prompt2',
       },
     ],
   },
+  vowels_prompt2: {
+    botPrompt: 'https://youtu.be/AE0qqd5O8AY',
+    type: RTypes.LINK,
+    answers: [
+      {
+        nextId: 'vowels_prompt3',
+      },
+    ],
+  },
+  vowels_prompt3: {
+    botPrompt: "Let's look into the pages of the book.",
+    answers: [
+      {
+        nextId: 'vowels_prompt4',
+      },
+    ],
+  },
+  vowels_prompt4: {
+    botPrompt: 'https://drive.google.com/file/d/11fCjQs0U8ubxkZpqoHLDRtSszQQFv0d5/view?usp=sharing',
+    type: RTypes.LINK,
+    answers: [
+      {
+        nextId: 'vowels_prompt5',
+      },
+    ],
+  },
+
+  vowels_prompt5: {
+    botPrompt: 'Let`s Solve 🧠 ',
+    answers: [
+			{ nextId: 'vowels_question1' },
+    ],
+  },
+  vowels_prompt6: {
+    botPrompt: 'https://tardimeet.s3.ap-south-1.amazonaws.com/vowels.gif',
+    type: RTypes.MEDIA,
+    answers: [
+      {
+        nextId: 'vowels_question1',
+      },
+    ],
+  },
+
+  vowels_question1: {
+    botPrompt: ' Which letter(s) is a vowel in the word <strong>"cat" </strong>? ',
+    type: RTypes.TRANSFORMED_TEXT,
+
+    input: selectField(['A', 'C', "T","None of the Above"]),
+    answers: [
+      {
+        answer: 'A',
+        nextId: 'correct',
+      },
+      {
+        answer: 'C',
+        nextId: 'incorrect',
+      },
+      {
+        answer: "T",
+        nextId: 'incorrect',
+      },
+      {
+        answer: "None of the Above",
+        nextId: 'incorrect',
+      },
+    ],
+  },
+  correct: {
+    botPrompt: 'Hurray <strong>A</strong> is the Answer is correct ! 😎',
+    answers: [
+      {
+        nextId: 'vowels_question2',
+      },
+    ],
+  },
+  incorrect: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"A"</strong>',
+    answers: [
+      {
+        nextId: 'vowels_question2',
+      },
+    ],
+  },
+
+  vowels_question2: {
+    botPrompt: ' Which letter(s) is a vowel in the word <strong>"rip"</strong>? ',
+    type: RTypes.TRANSFORMED_TEXT,
+
+    input: selectField(['R', 'I', "P","None of the Above"]),
+    answers: [
+      {
+        answer: 'R',
+        nextId: 'incorrectq2',
+      },
+      {
+        answer: 'I',
+        nextId: 'correctq2',
+      },
+      {
+        answer: "P",
+        nextId: 'incorrectq2',
+      },
+      {
+        answer: "None of the Above",
+        nextId: 'incorrectq2',
+      },
+    ],
+  },
+
+  correctq2: {
+    botPrompt: 'Hurray! <strong>I</strong> is the Answer is correct ! 😎',
+    answers: [
+      {
+        nextId: 'vowels_question3',
+      },
+    ],
+  },
+  incorrectq2: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"I"</strong>',
+    answers: [
+      {
+        nextId: 'vowels_question3',
+      },
+    ],
+  },
+  vowels_question3: {
+    botPrompt: 'Fill in the missing vowel in <strong>"s_n"</strong>: ',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['A', 'E', "I","O","U"]),
+    answers: [
+      {
+        answer: 'A',
+        nextId: 'incorrectq3',
+      },
+      {
+        answer: 'E',
+        nextId: 'incorrectq3',
+      },
+      {
+        answer: "I",
+        nextId: 'correctq3',
+      },
+      {
+        answer: "O",
+        nextId: 'correctq3',
+      },
+      {
+        answer: "U",
+        nextId: 'correctq3',
+      },
+    ],
+  },
+  correctq3: {
+    botPrompt: 'You Have Selected Correct Anwser 🎉! S<strong>U</strong>N  or S<strong>I</strong>N or S<strong>O</strong>N are the Correct Answers! 😎',
+    input: endOfConversation(),
+    answers: [
+      {
+        nextId: 'correctq3',
+      },
+    ],
+  },
+  incorrectq3: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"I"</strong>',
+    input: endOfConversation(),
+    answers: [
+      {
+        nextId: 'incorrectq3',
+      },
+    ],
+  },
+
   select: {
     botPrompt: 'I can also offer <strong>predefined options</strong> to choose from:',
     varName: 'userName',
@@ -259,7 +442,7 @@ const questions = {
     ],
   },
   recursion: {
-    botPrompt: 'https://media.giphy.com/media/l4HnKwiJJaJQB04Zq/giphy.gif',
+    botPrompt: 'https://tardimeet.s3.ap-south-1.amazonaws.com/vowels.gif',
     type: RTypes.MEDIA,
     answers: [
       {

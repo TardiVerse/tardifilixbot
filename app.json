@@ -1,6 +1,6 @@
 {
-  "name": "Alpha Sample",
-  "description": "An example of the Alpha chatbot framework",
+  "name": "Tardi Filix",
+  "description": "An EDU bot for all",
   "repository": "https://github.com/IcaliaLabs/alpha",
   "logo": "https://node-js-sample.herokuapp.com/node.png",
   "keywords": ["node", "react", "webpack"],
