@@ -7,8 +7,8 @@
     "url": "git://github.com/IcaliaLabs/alpha.git"
   },
   "engines": {
-    "npm": ">=3",
-    "node": "18.16.1"
+    "npm": "9.6.7",
+   "node": "18.17.0"
   },
   "author": "Vignesh Selvaraj",
   "license": "MIT",
