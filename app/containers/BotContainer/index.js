@@ -50,6 +50,7 @@ export class BotContainer extends React.Component { // eslint-disable-line react
           expanded={data.expanded}
           activateBot={this.handleActivateBot.bind(this)}
           userName={data.userName}
+          TFID={data.TFID}
           companyName={data.companyName}
           botThinking={data.botThinking}
         />

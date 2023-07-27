@@ -13,6 +13,7 @@ const initialState = fromJS({
   canSubmit: false,
   currentBotBubble: '',
   userName: '',
+  TFID:''
 });
 
 function userInputReducer(state = initialState, action) {
@@ -29,6 +30,8 @@ function userInputReducer(state = initialState, action) {
       return state.set('currentBotBubble', action.currentBotBubble);
     case C.SAVE_USER_NAME:
       return state.set('userName', action.userName);
+      case C.SAVE_TFID:
+        return state.set('TFID', action.TFID);
     default:
       return state;
   }

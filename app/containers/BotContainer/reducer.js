@@ -24,6 +24,7 @@ const initialState = fromJS({
   userEmail: '',
   companyName: '',
   userName: '',
+  TFID:'',
   userPhone: '',
   sendMailToOwnerWithSummary: true,
 });
@@ -124,6 +125,9 @@ function botContainerReducer(state = initialState, action) {
      // ga("send", "event", "botInputs", "Caught Username");
       return state.set('userName', action.userName);
 
+      case C.SAVE_TFID:
+        // ga("send", "event", "botInputs", "Caught TFID");
+         return state.set('TFID', action.TFID);
     case C.SAVE_USER_PHONE:
      // ga("send", "event", "botInputs", "Caught Phone");
       return state.set('userPhone', action.userPhone);

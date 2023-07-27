@@ -52,51 +52,63 @@ const questions = {
       },
     ],
   },
+
   greetings_notAName: {
-	  botPrompt: 'Hello! <strong>I\'m still learning how to talk to humans</strong>, which means my conversational range is not very wide yet... 😅',
-	  answers: [
-	    {
-	      nextId: 'greetings_whatsYourNameAgain',
-	    },
-	  ],
+      botPrompt: 'Hello! <strong>I\'m still learning how to talk to humans</strong>, which means my conversational range is not very wide yet... 😅',
+      answers: [
+        {
+          nextId: 'greetings_whatsYourNameAgain',
+        },
+      ],
   },
   greetings_whatsYourNameAgain: {
-	  botPrompt: 'So what’s <strong>your name</strong>?',
-	  input: textField(),
-	  answers: [
-	    {
-	      answer: common_greetings,
-	      nextId: 'greetings_notAName',
-	    },
-	    {
-	      answer: common_greetings_negative,
-	      catchName: true,
-	      nextId: 'asYouCanSee',
-	    },
-	  ],
+      botPrompt: 'So what’s <strong>your name</strong>?',
+      input: textField(),
+      answers: [
+        {
+          answer: common_greetings,
+          nextId: 'greetings_notAName',
+        },
+        {
+          answer: common_greetings_negative,
+          catchName: true,
+          nextId: 'asYouCanSee',
+        },
+      ],
   },
+
   asYouCanSee: {
     botPrompt: 'Hi,<strong>@varName</strong>, We would like to know more about you ?',
     type: RTypes.TRANSFORMED_TEXT,
     varName: 'userName',
     answers: [
-			{ nextId: 'emailcollection' },
+            { nextId: 'emailcollection' },
     ],
   },
   emailcollection: {
-	  botPrompt: 'Please enter<strong> your 📧 email id .</strong>?',
-	  input: textField(),
-	  answers: [
-	    {
-	      answer: common_greetings_negative,  
-	      nextId: 'emojisHtml',
-	    },
-	  ],
+      botPrompt: 'Please enter<strong> your 📧 email id </strong>?',
+      input: textField(),
+      answers: [
+        {
+          answer: common_greetings_negative,  
+          nextId: 'namecollection',
+        },
+      ],
   },
+  namecollection: {
+    botPrompt: 'Please enter<strong> your Mobile Number </strong>?',
+    input: textField(),
+    answers: [
+      {
+        answer: common_greetings_negative,  
+        nextId: 'emojisHtml',
+      },
+    ],
+},
   emojisHtml: {
     botPrompt: "Vowels are Back",
     answers: [
-			{ nextId: 'vowels_prompt1' },
+            { nextId: 'vowels_prompt1' },
     ],
   },
   vowels_prompt1: {
@@ -137,7 +149,7 @@ const questions = {
   vowels_prompt5: {
     botPrompt: 'Let`s Solve 🧠 ',
     answers: [
-			{ nextId: 'vowels_question1' },
+            { nextId: 'vowels_question1' },
     ],
   },
   vowels_prompt6: {
@@ -192,22 +204,22 @@ const questions = {
   },
 
   vowels_question2: {
-    botPrompt: ' Which letter(s) is a vowel in the word <strong>"rip"</strong>? ',
+    botPrompt: ' Identify the vowel(s) in the word "dog": ',
     type: RTypes.TRANSFORMED_TEXT,
 
-    input: selectField(['R', 'I', "P","None of the Above"]),
+    input: selectField(['D', 'G', "O","None of the Above"]),
     answers: [
       {
-        answer: 'R',
+        answer: 'D',
         nextId: 'incorrectq2',
       },
       {
-        answer: 'I',
+        answer: 'G',
+        nextId: 'incorrectq2',
+      },
+      {
+        answer: "O",
         nextId: 'correctq2',
-      },
-      {
-        answer: "P",
-        nextId: 'incorrectq2',
       },
       {
         answer: "None of the Above",
@@ -217,7 +229,7 @@ const questions = {
   },
 
   correctq2: {
-    botPrompt: 'Hurray! <strong>I</strong> is the Answer is correct ! 😎',
+    botPrompt: 'Hurray! <strong>O</strong> is the Answer is correct ! 😎',
     answers: [
       {
         nextId: 'vowels_question3',
@@ -225,65 +237,1427 @@ const questions = {
     ],
   },
   incorrectq2: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"I"</strong>',
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"O"</strong>',
     answers: [
       {
         nextId: 'vowels_question3',
       },
     ],
   },
-  vowels_question3: {
-    botPrompt: 'Fill in the missing vowel in <strong>"s_n"</strong>: ',
+
+//3
+vowels_question3: {
+  botPrompt: "Which letter(s) is a vowel in the word 'bird'?",
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['R', 'B', "D","None of the Above"]),
+  answers: [
+    {
+      answer: 'R',
+      nextId: 'incorrectq3',
+    },
+    {
+      answer: 'B',
+      nextId: 'incorrectq3',
+    },
+    {
+      answer: "D",
+      nextId: 'incorrectq3',
+    },
+    {
+      answer: "None of the Above",
+      nextId: 'correctq3',
+    },
+  ],
+},
+
+correctq3: {
+  botPrompt: 'Hurray! <strong>None of the Above</strong> is the Answer is correct ! 😎',
+  answers: [
+    {
+      nextId: 'vowels_question4',
+    },
+  ],
+},
+incorrectq3: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"None of the Above"</strong>',
+  answers: [
+    {
+      nextId: 'vowels_question4',
+    },
+  ],
+},
+
+//4
+vowels_question4: {
+  botPrompt: ' Identify the vowel(s) in the word "cup": ',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['C', 'U', "P","None of the Above"]),
+  answers: [
+    {
+      answer: 'C',
+      nextId: 'incorrectq4',
+    },
+    {
+      answer: 'U',
+      nextId: 'correctq4',
+    },
+    {
+      answer: "P",
+      nextId: 'incorrectq4',
+    },
+    {
+      answer: "None of the Above",
+      nextId: 'incorrectq4',
+    },
+  ],
+},
+
+correctq4: {
+  botPrompt: 'Hurray! <strong>U</strong> is the Answer is correct ! 😎',
+  answers: [
+    {
+      nextId: 'vowels_question5',
+    },
+  ],
+},
+incorrectq2: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"U"</strong>',
+  answers: [
+    {
+      nextId: 'vowels_question5',
+    },
+  ],
+},
+
+//5
+vowels_question5: {
+  botPrompt: ' Which letter(s) is a vowel in the word "book"? ',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['B', 'K', "O","None of the Above"]),
+  answers: [
+    {
+      answer: 'B',
+      nextId: 'incorrectq5',
+    },
+    {
+      answer: 'K',
+      nextId: 'incorrectq5',
+    },
+    {
+      answer: "O",
+      nextId: 'correctq5',
+    },
+    {
+      answer: "None of the Above",
+      nextId: 'incorrectq5',
+    },
+  ],
+},
+
+correctq5: {
+  botPrompt: 'Hurray! <strong>O</strong> is the Answer is correct ! 😎',
+  answers: [
+    {
+      nextId: 'vowels_question6',
+    },
+  ],
+},
+incorrectq5: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"O"</strong>',
+  answers: [
+    {
+      nextId: 'vowels_question6',
+    },
+  ],
+},
+
+//6
+vowels_question6: {
+  botPrompt: ' Which letter(s) is a vowel in the word "hat"? ',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['H', 'A', "T","None of the Above"]),
+  answers: [
+    {
+      answer: 'H',
+      nextId: 'incorrectq6',
+    },
+    {
+      answer: 'A',
+      nextId: 'correctq6',
+    },
+    {
+      answer: "T",
+      nextId: 'incorrectq6',
+    },
+    {
+      answer: "None of the Above",
+      nextId: 'incorrectq6',
+    },
+  ],
+},
+
+correctq6: {
+  botPrompt: 'Hurray! <strong>A</strong> is the Answer is correct ! 😎',
+  answers: [
+    {
+      nextId: 'vowels_question7',
+    },
+  ],
+},
+incorrectq6: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"A"</strong>',
+  answers: [
+    {
+      nextId: 'vowels_question7',
+    },
+  ],
+},
+
+//7
+vowels_question7: {
+  botPrompt: ' Identify the vowel(s) in the word "pen": ',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['P', 'E', "N","None of the Above"]),
+  answers: [
+    {
+      answer: 'P',
+      nextId: 'incorrectq7',
+    },
+    {
+      answer: 'E',
+      nextId: 'correctq7',
+    },
+    {
+      answer: "N",
+      nextId: 'incorrectq7',
+    },
+    {
+      answer: "None of the Above",
+      nextId: 'incorrectq7',
+    },
+  ],
+},
+
+correctq7: {
+  botPrompt: 'Hurray! <strong>E</strong> is the Answer is correct ! 😎',
+  answers: [
+    {
+      nextId: 'vowels_question8',
+    },
+  ],
+},
+incorrectq7: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"E"</strong>',
+  answers: [
+    {
+      nextId: 'vowels_question8',
+    },
+  ],
+},
+
+
+//8
+vowels_question8: {
+  botPrompt: 'Which letter(s) is a vowel in the word "bug"?',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['B', 'U', "G","None of the Above"]),
+  answers: [
+    {
+      answer: 'B',
+      nextId: 'incorrectq8',
+    },
+    {
+      answer: 'U',
+      nextId: 'correctq8',
+    },
+    {
+      answer: "G",
+      nextId: 'incorrectq8',
+    },
+    {
+      answer: "None of the Above",
+      nextId: 'incorrectq8',
+    },
+  ],
+},
+
+correctq8: {
+  botPrompt: 'Hurray! <strong>U</strong> is the Answer is correct ! 😎',
+  answers: [
+    {
+      nextId: 'vowels_question9',
+    },
+  ],
+},
+incorrectq8: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"U"</strong>',
+  answers: [
+    {
+      nextId: 'vowels_question9',
+    },
+  ],
+},
+
+//9
+vowels_question9: {
+  botPrompt: ' IIdentify the vowel(s) in the word "top": ',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['T', 'O', "P","None of the Above"]),
+  answers: [
+    {
+      answer: 'T',
+      nextId: 'incorrectq9',
+    },
+    {
+      answer: 'O',
+      nextId: 'correctq9',
+    },
+    {
+      answer: "P",
+      nextId: 'incorrectq9',
+    },
+    {
+      answer: "None of the Above",
+      nextId: 'incorrectq9',
+    },
+  ],
+},
+
+correctq9: {
+  botPrompt: 'Hurray! <strong>O</strong> is the Answer is correct ! 😎',
+  answers: [
+    {
+      nextId: 'vowels_question10',
+    },
+  ],
+},
+incorrectq9: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"O"</strong>',
+  answers: [
+    {
+      nextId: 'vowels_question10',
+    },
+  ],
+},
+
+
+//10
+vowels_question10: {
+  botPrompt: ' Which letter(s) is a vowel in the word "sun"? ',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['S', 'U', "N","None of the Above"]),
+  answers: [
+    {
+      answer: 'S',
+      nextId: 'incorrectq10',
+    },
+    {
+      answer: 'U',
+      nextId: 'correctq10',
+    },
+    {
+      answer: "N",
+      nextId: 'incorrectq10',
+    },
+    {
+      answer: "None of the Above",
+      nextId: 'incorrectq10',
+    },
+  ],
+},
+
+correctq10: {
+  botPrompt: 'Hurray! <strong>U</strong> is the Answer is correct ! 😎',
+  answers: [
+    {
+      nextId: 'vowels_question11',
+    },
+  ],
+},
+incorrectq10: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"U"</strong>',
+  answers: [
+    {
+      nextId: 'vowels_question11',
+    },
+  ],
+},
+
+//11
+vowels_question11: {
+  botPrompt: 'Identify the vowel(s) in the word "box":',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['B', 'O', "X","None of the Above"]),
+  answers: [
+    {
+      answer: 'B',
+      nextId: 'incorrectq11',
+    },
+    {
+      answer: 'O',
+      nextId: 'correctq11',
+    },
+    {
+      answer: "X",
+      nextId: 'incorrectq11',
+    },
+    {
+      answer: "None of the Above",
+      nextId: 'incorrectq11',
+    },
+  ],
+},
+
+correctq11: {
+  botPrompt: 'Hurray! <strong>O</strong> is the Answer is correct ! 😎',
+  answers: [
+    {
+      nextId: 'vowels_question12',
+    },
+  ],
+},
+incorrectq11: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"O"</strong>',
+  answers: [
+    {
+      nextId: 'vowels_question12',
+    },
+  ],
+},
+
+//12
+vowels_question12: {
+  botPrompt: ' Which letter(s) is a vowel in the word "net"?',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['N', 'E', "T","None of the Above"]),
+  answers: [
+    {
+      answer: 'N',
+      nextId: 'incorrectq12',
+    },
+    {
+      answer: 'E',
+      nextId: 'correctq12',
+    },
+    {
+      answer: "T",
+      nextId: 'incorrectq12',
+    },
+    {
+      answer: "None of the Above",
+      nextId: 'incorrectq12',
+    },
+  ],
+},
+
+correctq12: {
+  botPrompt: 'Hurray! <strong>E</strong> is the Answer is correct ! 😎',
+  answers: [
+    {
+      nextId: 'vowels_question13',
+    },
+  ],
+},
+incorrectq12: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"E"</strong>',
+  answers: [
+    {
+      nextId: 'vowels_question13',
+    },
+  ],
+},
+
+//13
+vowels_question13: {
+  botPrompt: 'Identify the vowel(s) in the word "jam":',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['J', 'A', "M","None of the Above"]),
+  answers: [
+    {
+      answer: 'J',
+      nextId: 'incorrectq13',
+    },
+    {
+      answer: 'A',
+      nextId: 'correctq13',
+    },
+    {
+      answer: "M",
+      nextId: 'incorrectq13',
+    },
+    {
+      answer: "None of the Above",
+      nextId: 'incorrectq13',
+    },
+  ],
+},
+
+correctq13: {
+  botPrompt: 'Hurray! <strong>A</strong> is the Answer is correct ! 😎',
+  answers: [
+    {
+      nextId: 'vowels_question14',
+    },
+  ],
+},
+incorrectq13: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"A"</strong>',
+  answers: [
+    {
+      nextId: 'vowels_question14',
+    },
+  ],
+},
+
+//14
+vowels_question14: {
+  botPrompt: ' Which letter(s) is a vowel in the word "rip"? ',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['R', 'I', "P","None of the Above"]),
+  answers: [
+    {
+      answer: 'R',
+      nextId: 'incorrectq14',
+    },
+    {
+      answer: 'I',
+      nextId: 'correctq14',
+    },
+    {
+      answer: "P",
+      nextId: 'correctq14',
+    },
+    {
+      answer: "None of the Above",
+      nextId: 'incorrectq14',
+    },
+  ],
+},
+
+correctq14: {
+  botPrompt: 'Hurray! <strong>I</strong> is the Answer is correct ! 😎',
+  answers: [
+    {
+      nextId: 'vowels_question15',
+    },
+  ],
+},
+incorrectq14: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"I"</strong>',
+  answers: [
+    {
+      nextId: 'vowels_question15',
+    },
+  ],
+},
+
+
+//15
+vowels_question15: {
+  botPrompt: ' Identify the vowel(s) in the word "pet":',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['P', 'E', "T","None of the Above"]),
+  answers: [
+    {
+      answer: 'P',
+      nextId: 'incorrectq15',
+    },
+    {
+      answer: 'E',
+      nextId: 'correctq15',
+    },
+    {
+      answer: "T",
+      nextId: 'incorrectq15',
+    },
+    {
+      answer: "None of the Above",
+      nextId: 'incorrectq15',
+    },
+  ],
+},
+
+correctq15: {
+  botPrompt: 'Hurray! <strong>E</strong> is the Answer is correct ! 😎',
+  answers: [
+    {
+      nextId: 'vowels_question16',
+    },
+  ],
+},
+incorrectq15: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"E"</strong>',
+  answers: [
+    {
+      nextId: 'vowels_question16',
+    },
+  ],
+},
+
+//16
+  vowels_question16: {
+    botPrompt: 'Fill in the missing vowel in "c_t": ',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['A', 'E', "I","O","U"]),
     answers: [
       {
         answer: 'A',
-        nextId: 'incorrectq3',
+        nextId: 'correctq16',
       },
       {
         answer: 'E',
-        nextId: 'incorrectq3',
+        nextId: 'incorrectq16',
       },
       {
         answer: "I",
-        nextId: 'correctq3',
+        nextId: 'incorrectq16',
       },
       {
         answer: "O",
-        nextId: 'correctq3',
+        nextId: 'incorrectq16',
       },
       {
         answer: "U",
-        nextId: 'correctq3',
+        nextId: 'incorrectq16',
       },
     ],
   },
-  correctq3: {
-    botPrompt: 'You Have Selected Correct Anwser 🎉! S<strong>U</strong>N  or S<strong>I</strong>N or S<strong>O</strong>N are the Correct Answers! 😎',
-    input: endOfConversation(),
+  correctq16: {
+    botPrompt: 'You Have Selected Correct Anwser 🎉! C<strong>A</strong>T😎',
     answers: [
       {
-        nextId: 'correctq3',
+        nextId: 'vowels_question17',
       },
     ],
   },
-  incorrectq3: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"I"</strong>',
-    input: endOfConversation(),
+  incorrectq16: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"A"</strong>',
     answers: [
       {
-        nextId: 'incorrectq3',
+        nextId: 'vowels_question17',
       },
     ],
   },
 
+//17
+vowels_question17: {
+  botPrompt: 'Fill in the missing vowel in "h_ppy":',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['A', 'E', "I","O","U"]),
+  answers: [
+    {
+      answer: 'A',
+      nextId: 'correctq17',
+    },
+    {
+      answer: 'E',
+      nextId: 'incorrectq17',
+    },
+    {
+      answer: "I",
+      nextId: 'incorrectq17',
+    },
+    {
+      answer: "O",
+      nextId: 'incorrectq17',
+    },
+    {
+      answer: "U",
+      nextId: 'incorrectq17',
+    },
+  ],
+},
+correctq17: {
+  botPrompt: 'You Have Selected Correct Anwser 🎉! H<strong>A</strong>PPY 😎',
+  answers: [
+    {
+      nextId: 'vowels_question18',
+    },
+  ],
+},
+incorrectq17: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"A"</strong>',
+  answers: [
+    {
+      nextId: 'vowels_question18',
+    },
+  ],
+},
+
+//18
+vowels_question18: {
+  botPrompt: 'Fill in the missing vowel in "w_nt": ',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['A', 'E', "I","O","U"]),
+  answers: [
+    {
+      answer: 'A',
+      nextId: 'correctq18',
+    },
+    {
+      answer: 'E',
+      nextId: 'incorrectq18',
+    },
+    {
+      answer: "I",
+      nextId: 'incorrectq18',
+    },
+    {
+      answer: "O",
+      nextId: 'incorrectq18',
+    },
+    {
+      answer: "U",
+      nextId: 'incorrectq18',
+    },
+  ],
+},
+correctq18: {
+  botPrompt: 'You Have Selected Correct Anwser 🎉! W<strong>A</strong>NT 😎',
+  answers: [
+    {
+      nextId: 'vowels_question19',
+    },
+  ],
+},
+incorrectq18: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"A"</strong>',
+  answers: [
+    {
+      nextId: 'vowels_question19',
+    },
+  ],
+},
+
+//19
+vowels_question19: {
+  botPrompt: 'Fill in the missing vowel in "sh_rt": ',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['A', 'E', "I","O","U"]),
+  answers: [
+    {
+      answer: 'A',
+      nextId: 'incorrectq19',
+    },
+    {
+      answer: 'E',
+      nextId: 'incorrectq19',
+    },
+    {
+      answer: "I",
+      nextId: 'incorrectq19',
+    },
+    {
+      answer: "O",
+      nextId: 'correctq19',
+    },
+    {
+      answer: "U",
+      nextId: 'correctq19',
+    },
+  ],
+},
+correctq19: {
+  botPrompt: 'You Have Selected Correct Anwser 🎉! SH<strong>O</strong>RT  or SH<strong>I</strong>T are the Correct Answers! 😎',
+  answers: [
+    {
+      nextId: 'vowels_question20',
+    },
+  ],
+},
+incorrectq19: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"O" or "I"</strong>',
+  answers: [
+    {
+      nextId: 'vowels_question20',
+    },
+  ],
+},
+//20
+vowels_question20: {
+  botPrompt: 'Fill in the missing vowel in "b_tt_r":',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['A', 'E', "I","O","U"]),
+  answers: [
+    {
+      answer: 'A',
+      nextId: 'incorrectq20',
+    },
+    {
+      answer: 'E',
+      nextId: 'correctq20',
+    },
+    {
+      answer: "I",
+      nextId: 'incorrectq20',
+    },
+    {
+      answer: "O",
+      nextId: 'incorrectq20',
+    },
+    {
+      answer: "U",
+      nextId: 'incorrectq20',
+    },
+  ],
+},
+correctq20: {
+  botPrompt: 'You Have Selected Correct Anwser 🎉! B<strong>E</strong>tt<strong>E</strong>R 😎',
+  answers: [
+    {
+      nextId: 'vowels_question21',
+    },
+  ],
+},
+incorrectq20: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"E"</strong>',
+  answers: [
+    {
+      nextId: 'vowels_question21',
+    },
+  ],
+},
+//21
+vowels_question21: {
+  botPrompt: ' Fill in the missing vowel in "h_g":',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['A', 'E', "I","O","U"]),
+  answers: [
+    {
+      answer: 'A',
+      nextId: 'incorrectq21',
+    },
+    {
+      answer: 'E',
+      nextId: 'incorrectq21',
+    },
+    {
+      answer: "I",
+      nextId: 'incorrectq21',
+    },
+    {
+      answer: "O",
+      nextId: 'incorrectq21',
+    },
+    {
+      answer: "U",
+      nextId: 'correctq21',
+    },
+  ],
+},
+correctq21: {
+  botPrompt: 'You Have Selected Correct Anwser 🎉! H<strong>U</strong>G 😎',
+  answers: [
+    {
+      nextId: 'vowels_question22',
+    },
+  ],
+},
+incorrectq21: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"U"</strong>',
+  answers: [
+    {
+      nextId: 'vowels_question22',
+    },
+  ],
+},
+//22
+vowels_question22: {
+  botPrompt: 'Fill in the missing vowel in "dr_ss": ',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['A', 'E', "I","O","U"]),
+  answers: [
+    {
+      answer: 'A',
+      nextId: 'incorrectq22',
+    },
+    {
+      answer: 'E',
+      nextId: 'correctq22',
+    },
+    {
+      answer: "I",
+      nextId: 'incorrectq22',
+    },
+    {
+      answer: "O",
+      nextId: 'incorrectq22',
+    },
+    {
+      answer: "U",
+      nextId: 'incorrectq22',
+    },
+  ],
+},
+correctq22: {
+  botPrompt: 'You Have Selected Correct Anwser 🎉! DR<strong>E</strong>SS 😎',
+  answers: [
+    {
+      nextId: 'vowels_question23',
+    },
+  ],
+},
+incorrectq22: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"E"</strong>',
+  answers: [
+    {
+      nextId: 'vowels_question23',
+    },
+  ],
+},
+//23
+vowels_question23: {
+  botPrompt: 'Fill in the missing vowel in "str_ng": ',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['A', 'E', "I","O","U"]),
+  answers: [
+    {
+      answer: 'A',
+      nextId: 'incorrectq23',
+    },
+    {
+      answer: 'E',
+      nextId: 'incorrectq23',
+    },
+    {
+      answer: "I",
+      nextId: 'correctq23',
+    },
+    {
+      answer: "O",
+      nextId: 'correctq23',
+    },
+    {
+      answer: "U",
+      nextId: 'incorrectq23',
+    },
+  ],
+},
+correctq23: {
+  botPrompt: 'You Have Selected Correct Anwser 🎉! STR<strong>I</strong>NG  or STR<strong>O</strong>NG 😎',
+  answers: [
+    {
+      nextId: 'vowels_question24',
+    },
+  ],
+},
+incorrectq23: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"I"or"O"</strong>',
+  answers: [
+    {
+      nextId: 'vowels_question24',
+    },
+  ],
+},
+//24
+vowels_question24: {
+  botPrompt: 'Fill in the missing vowel in "s_n": ',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['A', 'E', "I","O","U"]),
+  answers: [
+    {
+      answer: 'A',
+      nextId: 'incorrectq24',
+    },
+    {
+      answer: 'E',
+      nextId: 'incorrectq24',
+    },
+    {
+      answer: "I",
+      nextId: 'correctq24',
+    },
+    {
+      answer: "O",
+      nextId: 'correctq24',
+    },
+    {
+      answer: "U",
+      nextId: 'correctq24',
+    },
+  ],
+},
+correctq24: {
+  botPrompt: 'You Have Selected Correct Anwser 🎉! S<strong>U</strong>N  or S<strong>I</strong>N or S<strong>O</strong>N are the Correct Answers! 😎',
+  answers: [
+    {
+      nextId: 'vowels_question25',
+    },
+  ],
+},
+incorrectq24: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"I"</strong>',
+  answers: [
+    {
+      nextId: 'vowels_question25',
+    },
+  ],
+},
+
+//25
+vowels_question25: {
+  botPrompt: 'Fill in the missing vowel in "cl_ss": ',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['A', 'E', "I","O","U"]),
+  answers: [
+    {
+      answer: 'A',
+      nextId: 'correctq25',
+    },
+    {
+      answer: 'E',
+      nextId: 'incorrectq25',
+    },
+    {
+      answer: "I",
+      nextId: 'incorrectq25',
+    },
+    {
+      answer: "O",
+      nextId: 'incorrectq25',
+    },
+    {
+      answer: "U",
+      nextId: 'incorrectq25',
+    },
+  ],
+},
+correctq25: {
+  botPrompt: 'You Have Selected Correct Anwser 🎉! CL<strong>A</strong>SS 😎',
+  answers: [
+    {
+      nextId: 'vowels_question26',
+    },
+  ],
+},
+incorrectq25: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is CL<strong>A</strong>SS',
+  answers: [
+    {
+      nextId: 'vowels_question26',
+    },
+  ],
+},
+
+//26
+vowels_question26: {
+  botPrompt: 'Fill in the missing vowel in "gl_ss":',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['A', 'E', "I","O","U"]),
+  answers: [
+    {
+      answer: 'A',
+      nextId: 'correctq26',
+    },
+    {
+      answer: 'E',
+      nextId: 'incorrectq26',
+    },
+    {
+      answer: "I",
+      nextId: 'incorrectq26',
+    },
+    {
+      answer: "O",
+      nextId: 'incorrectq26',
+    },
+    {
+      answer: "U",
+      nextId: 'incorrectq26',
+    },
+  ],
+},
+
+correctq26: {
+  botPrompt: 'You Have Selected Correct Anwser 🎉! GL<strong>A</strong>SS  😎',
+  answers: [
+    {
+      nextId: 'vowels_question27',
+    },
+  ],
+},
+incorrectq26: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"A"</strong>',
+  answers: [
+    {
+      nextId: 'vowels_question27',
+    },
+  ],
+},
+//27
+vowels_question27: {
+  botPrompt: 'Fill in the missing vowel in "gr_ss": ',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['A', 'E', "I","O","U"]),
+  answers: [
+    {
+      answer: 'A',
+      nextId: 'correctq27',
+    },
+    {
+      answer: 'E',
+      nextId: 'incorrectq27',
+    },
+    {
+      answer: "I",
+      nextId: 'incorrectq27',
+    },
+    {
+      answer: "O",
+      nextId: 'incorrectq27',
+    },
+    {
+      answer: "U",
+      nextId: 'incorrectq27',
+    },
+  ],
+},
+correctq27: {
+  botPrompt: 'You Have Selected Correct Anwser 🎉! GR<strong>A</strong>SS 😎',
+  answers: [
+    {
+      nextId: 'vowels_question28',
+    },
+  ],
+},
+incorrectq27: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"A"</strong>',
+  answers: [
+    {
+      nextId: 'vowels_question28',
+    },
+  ],
+},
+//28
+vowels_question28: {
+  botPrompt: 'Fill in the missing vowel in "pl_n":',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['A', 'E', "I","O","U"]),
+  answers: [
+    {
+      answer: 'A',
+      nextId: 'correctq28',
+    },
+    {
+      answer: 'E',
+      nextId: 'incorrectq28',
+    },
+    {
+      answer: "I",
+      nextId: 'incorrectq28',
+    },
+    {
+      answer: "O",
+      nextId: 'incorrectq28',
+    },
+    {
+      answer: "U",
+      nextId: 'incorrectq28',
+    },
+  ],
+},
+correctq28: {
+  botPrompt: 'You Have Selected Correct Anwser 🎉! PL<strong>A</strong>N  😎',
+  answers: [
+    {
+      nextId: 'vowels_question29',
+    },
+  ],
+},
+incorrectq28: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"A"</strong>',
+  answers: [
+    {
+      nextId: 'vowels_question29',
+    },
+  ],
+},
+//29
+vowels_question29: {
+  botPrompt: 'Fill in the missing vowel in "m_n":',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['A', 'E', "I","O","U"]),
+  answers: [
+    {
+      answer: 'A',
+      nextId: 'correctq29',
+    },
+    {
+      answer: 'E',
+      nextId: 'incorrectq29',
+    },
+    {
+      answer: "I",
+      nextId: 'incorrectq29',
+    },
+    {
+      answer: "O",
+      nextId: 'incorrectq29',
+    },
+    {
+      answer: "U",
+      nextId: 'incorrectq29',
+    },
+  ],
+},
+correctq29: {
+  botPrompt: 'You Have Selected Correct Anwser 🎉! M<strong>A</strong>N 😎',
+  answers: [
+    {
+      nextId: 'vowels_question30',
+    },
+  ],
+},
+incorrectq29: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"A"</strong>',
+  answers: [
+    {
+      nextId: 'vowels_question30',
+    },
+  ],
+},
+//30
+vowels_question30: {
+  botPrompt: 'Fill in the missing vowel in "cl_ck": ',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['A', 'E', "I","O","U"]),
+  answers: [
+    {
+      answer: 'A',
+      nextId: 'incorrectq30',
+    },
+    {
+      answer: 'E',
+      nextId: 'incorrectq30',
+    },
+    {
+      answer: "I",
+      nextId: 'incorrectq30',
+    },
+    {
+      answer: "O",
+      nextId: 'correctq30',
+    },
+    {
+      answer: "U",
+      nextId: 'incorrectq30',
+    },
+  ],
+},
+correctq30: {
+  botPrompt: 'You Have Selected Correct Anwser 🎉! S<strong>U</strong>N  or S<strong>I</strong>N or S<strong>O</strong>N are the Correct Answers! 😎',
+  answers: [
+    {
+      nextId: 'vowels_question31',
+    },
+  ],
+},
+incorrectq30: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"I"</strong>',
+  answers: [
+    {
+      nextId: 'vowels_question31',
+    },
+  ],
+},
+//31
+vowels_question31: {
+  botPrompt: 'Fill in the missing vowel in "b_t": ',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['A', 'E', "I","O","U"]),
+  answers: [
+    {
+      answer: 'A',
+      nextId: 'correctq31',
+    },
+    {
+      answer: 'E',
+      nextId: 'incorrectq31',
+    },
+    {
+      answer: "I",
+      nextId: 'incorrectq31',
+    },
+    {
+      answer: "O",
+      nextId: 'incorrectq31',
+    },
+    {
+      answer: "U",
+      nextId: 'incorrectq31',
+    },
+  ],
+},
+correctq31: {
+  botPrompt: 'You Have Selected Correct Anwser 🎉! B<strong>A</strong>T 😎',
+  answers: [
+    {
+      nextId: 'vowels_question32',
+    },
+  ],
+},
+incorrectq31: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"A"</strong>',
+  answers: [
+    {
+      nextId: 'vowels_question32',
+    },
+  ],
+},
+//32
+vowels_question32: {
+  botPrompt: 'Fill in the missing vowel in "f_ll":',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['A', 'E', "I","O","U"]),
+  answers: [
+    {
+      answer: 'A',
+      nextId: 'incorrectq32',
+    },
+    {
+      answer: 'E',
+      nextId: 'incorrectq32',
+    },
+    {
+      answer: "I",
+      nextId: 'correctq32',
+    },
+    {
+      answer: "O",
+      nextId: 'incorrectq32',
+    },
+    {
+      answer: "U",
+      nextId: 'incorrectq32',
+    },
+  ],
+},
+correctq32: {
+  botPrompt: 'You Have Selected Correct Anwser 🎉! F<strong>I</strong>LL 😎',
+  answers: [
+    {
+      nextId: 'vowels_question33',
+    },
+  ],
+},
+incorrectq32: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"I"</strong>',
+  answers: [
+    {
+      nextId: 'vowels_question33',
+    },
+  ],
+},
+//33
+vowels_question33: {
+  botPrompt: 'Fill in the missing vowel in "ch_ck": ',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['A', 'E', "I","O","U"]),
+  answers: [
+    {
+      answer: 'A',
+      nextId: 'incorrectq33',
+    },
+    {
+      answer: 'E',
+      nextId: 'correctq33',
+    },
+    {
+      answer: "I",
+      nextId: 'incorrectq33',
+    },
+    {
+      answer: "O",
+      nextId: 'incorrectq33',
+    },
+    {
+      answer: "U",
+      nextId: 'incorrectq33',
+    },
+  ],
+},
+correctq33: {
+  botPrompt: 'You Have Selected Correct Anwser 🎉! CH<strong>E</strong>CK 😎',
+  answers: [
+    {
+      nextId: 'vowels_question34',
+    },
+  ],
+},
+incorrectq33: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"E"</strong>',
+  answers: [
+    {
+      nextId: 'vowels_question34',
+    },
+  ],
+},
+//34
+vowels_question34: {
+  botPrompt: 'Fill in the missing vowel in "h_ngy":',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['A', 'E', "I","O","U"]),
+  answers: [
+    {
+      answer: 'A',
+      nextId: 'incorrectq34',
+    },
+    {
+      answer: 'E',
+      nextId: 'incorrectq34',
+    },
+    {
+      answer: "I",
+      nextId: 'incorrectq34',
+    },
+    {
+      answer: "O",
+      nextId: 'incorrectq34',
+    },
+    {
+      answer: "U",
+      nextId: 'correctq34',
+    },
+  ],
+},
+correctq34: {
+  botPrompt: 'You Have Selected Correct Anwser 🎉! H<strong>U</strong>NGRY 😎',
+  input: endOfConversation(),
+  answers: [
+    {
+      nextId: 'correctq34',
+    },
+  ],
+},
+incorrectq34: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"U"</strong>',
+  input: endOfConversation(),
+  answers: [
+    {
+      nextId: 'incorrectq34',
+    },
+  ],
+},
+
+  
   select: {
     botPrompt: 'I can also offer <strong>predefined options</strong> to choose from:',
     varName: 'userName',
     input: selectField(['Dope!', 'Cool!']),
     answers: [
-			{ nextId: 'tags' },
+            { nextId: 'tags' },
     ],
   },
   tags: {
@@ -291,19 +1665,19 @@ const questions = {
     varName: 'userName',
     input: tagsField(['Do go on..', 'Amazing!', "I'm loving this!", '🍕']),
     answers: [
-			{ nextId: 'bagsSystem' },
+            { nextId: 'bagsSystem' },
     ],
   },
   bagsSystem: {
     botPrompt: "Besides all that, I can add up points in my <strong>Bags System</strong>, to eventually make a 'Recommendation'",
     answers: [
-			{ nextId: 'letsTryIt' },
+            { nextId: 'letsTryIt' },
     ],
   },
   letsTryIt: {
     botPrompt: "Let's try it!",
     answers: [
-			{ nextId: 'question1' },
+            { nextId: 'question1' },
     ],
   },
   question1: {

@@ -90,6 +90,10 @@
     type: C.SAVE_USER_NAME,
     userName,
   });
+  export const saveTFID = (TFID) => ({
+    type: C.SAVE_TFID,
+    TFID,
+  });
 
   export const saveCompanyName = (companyName) => ({
     type: C.SAVE_COMPANY_NAME,

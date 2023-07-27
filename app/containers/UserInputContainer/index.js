@@ -26,6 +26,8 @@ export class UserInputContainer extends React.Component { // eslint-disable-line
         enableSubmit={this.props.enableSubmit.bind(this)}
         disableSubmit={this.props.disableSubmit.bind(this)}
         userName={data.userName}
+        TFID={data.TFID}
+
         canSubmit={data.canSubmit}
       />
     );

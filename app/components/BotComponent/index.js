@@ -29,6 +29,7 @@ function BotComponent(props) {
         <Conversation
           conversation={props.conversation}
           userName={props.userName}
+          TFID={props.TFID}
           companyName={props.companyName}
           botThinking={props.botThinking}
         />
@@ -43,6 +44,7 @@ BotComponent.propTypes = {
   companyName: PropTypes.string,
   conversation: PropTypes.array.isRequired,
   userName: PropTypes.string,
+  TFID:PropTypes.string,
   botThinking: PropTypes.bool,
   expanded: PropTypes.bool,
 };
@@ -50,6 +52,7 @@ BotComponent.propTypes = {
 BotComponent.defaultProps = {
   companyName: '',
   userName: '',
+  TFID:'',
   botThinking: false,
   expanded: false,
 };

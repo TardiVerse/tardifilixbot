@@ -44,6 +44,8 @@ export const getNextBubble = (bubbleId, userAnswer = "") => {
   const catchPhone = jumpToBubbleId.catchPhone;
   const finishConversation = jumpToBubbleId.finishConversation;
   const sendAnalytics = jumpToBubbleId.sendAnalytics;
+  const catchTFID = jumpToBubbleId.catchTFID;
+
 
   return { nextBubble,
            sumToBags,
@@ -53,6 +55,7 @@ export const getNextBubble = (bubbleId, userAnswer = "") => {
            catchPhone,
            finishConversation,
            catchName,
+           catchTFID,
            catchCompanyName,
            sendAnalytics 
          };

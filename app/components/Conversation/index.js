@@ -51,6 +51,8 @@ class Conversation extends React.Component {// eslint-disable-line react/prefer-
           dialogue={dialogue}
           companyName={this.props.companyName}
           userName={this.props.userName}
+        
+
         />);
       } else if (dialogue.from === 'user') {
         return (<DialogueFromUser
@@ -58,6 +60,8 @@ class Conversation extends React.Component {// eslint-disable-line react/prefer-
           dialogue={dialogue}
           companyName={this.props.companyName}
           userName={this.props.userName}
+          TFID={this.props.TFID}
+
         />);
       }
       return null;
@@ -84,12 +88,15 @@ class Conversation extends React.Component {// eslint-disable-line react/prefer-
 Conversation.propTypes = {
   conversation: PropTypes.array.isRequired,
   userName: PropTypes.string,
+  TFID: PropTypes.string,
+
   companyName: PropTypes.string,
   botThinking: PropTypes.bool,
 };
 
 Conversation.defaultProps = {
   userName: '',
+  TFID:'',
   companyName: '',
   botThinking: false,
 };

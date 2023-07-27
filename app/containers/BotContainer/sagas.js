@@ -16,6 +16,7 @@ import {
   displayRecommendation,
   saveUserEmail,
   saveUserName,
+  saveTFID,
   saveCompanyName,
   saveUserPhone,
   turnOnMailRecommendation,
@@ -105,6 +106,11 @@ export function* sendMessageFromUserNow(action) {
       const theName = foundNames[0] || "Capt'n";
       const userName = theName.charAt(0).toUpperCase() + theName.substr(1).toLowerCase();
       yield put(saveUserName(userName));
+    }
+    
+    if (response.catchTFID) {
+      const userTFID = userMessage;
+      yield put(saveTFID(userTFID));
     }
 
     if (response.catchCompanyName) {
