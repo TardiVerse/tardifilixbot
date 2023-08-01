@@ -33,10 +33,48 @@ const questions = {
     type: RTypes.MEDIA,
     answers: [
       {
-        nextId: 'yourName',
+        nextId: 'tardiidcollection',
       },
     ],
   },
+
+  tardiidcollection: {
+    botPrompt: 'Do you have TardiFilix ID ?',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['Yes! I Have ID', "No. I Don't Have ID", "Contact Filix School Now"]),
+    answers: [
+      {
+        answer: 'Yes! I Have ID',
+        nextId: 'idcollection',
+      },
+      {
+        answer: "No. I Don't Have ID",
+        nextId: 'yourName',
+      },
+     
+    ],
+  },
+
+  idcollection: {
+    botPrompt: 'Kindly! Enter your TardiFilix ID ?',
+    input: textField(),
+    answers: [
+      {
+        answer: common_greetings_negative,
+        catchTFID: true,
+        nextId: 'Welcomeback',
+      },
+    ],
+  },
+ Welcomeback: {
+    botPrompt: 'Welcome Back !',
+    answers: [
+      {
+        nextId: 'emojisHtml',
+      },
+    ],
+  },
+
   yourName: {
     botPrompt: 'So, What`s your name?',
     input: textField(),
