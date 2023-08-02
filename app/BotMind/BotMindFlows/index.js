@@ -10,8 +10,36 @@ import * as RTypes from '../responseTypes';
 
 const common_greetings = /(^hello|^hllo|^hi|^hey|^hola|^sup)\b\s?.*$/i;
 const common_greetings_negative = /(?!(^hello|^hi|^hey|^hllo|^sup|^hola)\b)\w+/i;
+function shuffleArray(array) {
+  const shuffledArray = array.slice();
+  for (let i = shuffledArray.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+  }
+  return shuffledArray;
+}
 
+// Create an array containing numbers from 1 to 40
+const numbers = Array.from({ length: 34 }, (_, i) => i + 1);
+
+// Shuffle the array
+const shuffledNumbers = shuffleArray(numbers);
+
+function generateRandom12DigitNumber() {
+  const min = 100000000000; // 10^11 (minimum 12-digit number)
+  const max = 999999999999; // 10^12 - 1 (maximum 12-digit number)
+
+  const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+  return randomNumber.toString();
+}
+
+const random12DigitNumber = generateRandom12DigitNumber();
+console.log(random12DigitNumber);
+
+// Print the shuffled numbers
+console.log("shuff","vowels_question"+shuffledNumbers[0]);
 const questions = {
+
   start: {
     botPrompt: 'Welcome to <strong>E</strong>ducation <strong>F</strong>or <strong>A</strong>ll! my name is <strong>TardiFilixBot</strong>, An New Gen <strong>AI bot for your Skill Development</strong>',
     answers: [
@@ -129,20 +157,38 @@ const questions = {
       answers: [
         {
           answer: common_greetings_negative,  
-          nextId: 'namecollection',
+          nextId: 'mobilecollection',
         },
       ],
   },
-  namecollection: {
+  mobilecollection: {
     botPrompt: 'Please enter<strong> your Mobile Number </strong>?',
     input: textField(),
     answers: [
       {
         answer: common_greetings_negative,  
-        nextId: 'emojisHtml',
+        nextId: 'tfidgenration',
       },
     ],
 },
+
+tfidgenration: {
+  botPrompt: 'Your TFID is <strong>'+ random12DigitNumber +'</strong> .',
+  answers: [
+    {
+      nextId: 'tfidgenrationtext',
+    },
+  ],
+},
+tfidgenrationtext: {
+  botPrompt: 'You will receive your TFID Digital Card in your registered mobile number and email address.',
+  answers: [
+    {
+      nextId: 'emojisHtml',
+    },
+  ],
+},
+
   emojisHtml: {
     botPrompt: "Vowels are Back",
     answers: [
@@ -195,12 +241,12 @@ const questions = {
     type: RTypes.MEDIA,
     answers: [
       {
-        nextId: 'vowels_question1',
+        nextId: 'vowels_question'+shuffledNumbers[0],
       },
     ],
   },
 
-  vowels_question1: {
+ ["vowels_question"+shuffledNumbers[0]]: {
     botPrompt: ' Which letter(s) is a vowel in the word <strong>"cat" </strong>? ',
     type: RTypes.TRANSFORMED_TEXT,
 
@@ -228,7 +274,7 @@ const questions = {
     botPrompt: 'Hurray <strong>A</strong> is the Answer is correct ! 😎',
     answers: [
       {
-        nextId: 'vowels_question2',
+        nextId: 'vowels_question'+shuffledNumbers[1],
       },
     ],
   },
@@ -236,12 +282,12 @@ const questions = {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"A"</strong>',
     answers: [
       {
-        nextId: 'vowels_question2',
+        nextId: 'vowels_question'+shuffledNumbers[1],
       },
     ],
   },
 
-  vowels_question2: {
+  ['vowels_question'+shuffledNumbers[1]]: {
     botPrompt: ' Identify the vowel(s) in the word "dog": ',
     type: RTypes.TRANSFORMED_TEXT,
 
@@ -270,7 +316,7 @@ const questions = {
     botPrompt: 'Hurray! <strong>O</strong> is the Answer is correct ! 😎',
     answers: [
       {
-        nextId: 'vowels_question3',
+        nextId: 'vowels_question'+shuffledNumbers[2],
       },
     ],
   },
@@ -278,13 +324,13 @@ const questions = {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"O"</strong>',
     answers: [
       {
-        nextId: 'vowels_question3',
+        nextId: 'vowels_question'+shuffledNumbers[2],
       },
     ],
   },
 
 //3
-vowels_question3: {
+['vowels_question'+shuffledNumbers[2]]: {
   botPrompt: "Which letter(s) is a vowel in the word 'bird'?",
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -313,7 +359,7 @@ correctq3: {
   botPrompt: 'Hurray! <strong>None of the Above</strong> is the Answer is correct ! 😎',
   answers: [
     {
-      nextId: 'vowels_question4',
+      nextId: 'vowels_question'+shuffledNumbers[3],
     },
   ],
 },
@@ -321,13 +367,13 @@ incorrectq3: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"None of the Above"</strong>',
   answers: [
     {
-      nextId: 'vowels_question4',
+      nextId: 'vowels_question'+shuffledNumbers[3],
     },
   ],
 },
 
 //4
-vowels_question4: {
+['vowels_question'+shuffledNumbers[3]]: {
   botPrompt: ' Identify the vowel(s) in the word "cup": ',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -356,7 +402,7 @@ correctq4: {
   botPrompt: 'Hurray! <strong>U</strong> is the Answer is correct ! 😎',
   answers: [
     {
-      nextId: 'vowels_question5',
+      nextId: 'vowels_question'+shuffledNumbers[4],
     },
   ],
 },
@@ -364,13 +410,13 @@ incorrectq2: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"U"</strong>',
   answers: [
     {
-      nextId: 'vowels_question5',
+      nextId: 'vowels_question'+shuffledNumbers[4],
     },
   ],
 },
 
 //5
-vowels_question5: {
+['vowels_question'+shuffledNumbers[4]]: {
   botPrompt: ' Which letter(s) is a vowel in the word "book"? ',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -399,7 +445,7 @@ correctq5: {
   botPrompt: 'Hurray! <strong>O</strong> is the Answer is correct ! 😎',
   answers: [
     {
-      nextId: 'vowels_question6',
+      nextId: 'vowels_question'+shuffledNumbers[5],
     },
   ],
 },
@@ -407,13 +453,13 @@ incorrectq5: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"O"</strong>',
   answers: [
     {
-      nextId: 'vowels_question6',
+      nextId: 'vowels_question'+shuffledNumbers[5],
     },
   ],
 },
 
 //6
-vowels_question6: {
+['vowels_question'+shuffledNumbers[5]]: {
   botPrompt: ' Which letter(s) is a vowel in the word "hat"? ',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -442,7 +488,7 @@ correctq6: {
   botPrompt: 'Hurray! <strong>A</strong> is the Answer is correct ! 😎',
   answers: [
     {
-      nextId: 'vowels_question7',
+      nextId: 'vowels_question'+shuffledNumbers[6],
     },
   ],
 },
@@ -450,13 +496,13 @@ incorrectq6: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"A"</strong>',
   answers: [
     {
-      nextId: 'vowels_question7',
+      nextId: 'vowels_question'+shuffledNumbers[6],
     },
   ],
 },
 
 //7
-vowels_question7: {
+['vowels_question'+shuffledNumbers[6]]: {
   botPrompt: ' Identify the vowel(s) in the word "pen": ',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['P', 'E', "N","None of the Above"]),
@@ -484,7 +530,7 @@ correctq7: {
   botPrompt: 'Hurray! <strong>E</strong> is the Answer is correct ! 😎',
   answers: [
     {
-      nextId: 'vowels_question8',
+      nextId: 'vowels_question'+shuffledNumbers[7],
     },
   ],
 },
@@ -492,14 +538,14 @@ incorrectq7: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"E"</strong>',
   answers: [
     {
-      nextId: 'vowels_question8',
+      nextId: 'vowels_question'+shuffledNumbers[7],
     },
   ],
 },
 
 
 //8
-vowels_question8: {
+['vowels_question'+shuffledNumbers[7]]: {
   botPrompt: 'Which letter(s) is a vowel in the word "bug"?',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -528,7 +574,7 @@ correctq8: {
   botPrompt: 'Hurray! <strong>U</strong> is the Answer is correct ! 😎',
   answers: [
     {
-      nextId: 'vowels_question9',
+      nextId: 'vowels_question'+shuffledNumbers[8],
     },
   ],
 },
@@ -536,13 +582,13 @@ incorrectq8: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"U"</strong>',
   answers: [
     {
-      nextId: 'vowels_question9',
+      nextId: 'vowels_question'+shuffledNumbers[8],
     },
   ],
 },
 
 //9
-vowels_question9: {
+['vowels_question'+shuffledNumbers[8]]: {
   botPrompt: ' IIdentify the vowel(s) in the word "top": ',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -571,7 +617,7 @@ correctq9: {
   botPrompt: 'Hurray! <strong>O</strong> is the Answer is correct ! 😎',
   answers: [
     {
-      nextId: 'vowels_question10',
+      nextId: 'vowels_question'+shuffledNumbers[9],
     },
   ],
 },
@@ -579,14 +625,14 @@ incorrectq9: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"O"</strong>',
   answers: [
     {
-      nextId: 'vowels_question10',
+      nextId: 'vowels_question'+shuffledNumbers[9],
     },
   ],
 },
 
 
 //10
-vowels_question10: {
+['vowels_question'+shuffledNumbers[9]]: {
   botPrompt: ' Which letter(s) is a vowel in the word "sun"? ',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -615,7 +661,7 @@ correctq10: {
   botPrompt: 'Hurray! <strong>U</strong> is the Answer is correct ! 😎',
   answers: [
     {
-      nextId: 'vowels_question11',
+      nextId: 'vowels_question'+shuffledNumbers[10],
     },
   ],
 },
@@ -623,13 +669,13 @@ incorrectq10: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"U"</strong>',
   answers: [
     {
-      nextId: 'vowels_question11',
+      nextId: 'vowels_question'+shuffledNumbers[10],
     },
   ],
 },
 
 //11
-vowels_question11: {
+['vowels_question'+shuffledNumbers[10]]: {
   botPrompt: 'Identify the vowel(s) in the word "box":',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -658,7 +704,7 @@ correctq11: {
   botPrompt: 'Hurray! <strong>O</strong> is the Answer is correct ! 😎',
   answers: [
     {
-      nextId: 'vowels_question12',
+      nextId: 'vowels_question'+shuffledNumbers[11],
     },
   ],
 },
@@ -666,13 +712,13 @@ incorrectq11: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"O"</strong>',
   answers: [
     {
-      nextId: 'vowels_question12',
+      nextId: 'vowels_question'+shuffledNumbers[11],
     },
   ],
 },
 
 //12
-vowels_question12: {
+['vowels_question'+shuffledNumbers[11]]: {
   botPrompt: ' Which letter(s) is a vowel in the word "net"?',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -701,7 +747,7 @@ correctq12: {
   botPrompt: 'Hurray! <strong>E</strong> is the Answer is correct ! 😎',
   answers: [
     {
-      nextId: 'vowels_question13',
+      nextId: 'vowels_question'+shuffledNumbers[12],
     },
   ],
 },
@@ -709,13 +755,13 @@ incorrectq12: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"E"</strong>',
   answers: [
     {
-      nextId: 'vowels_question13',
+      nextId: 'vowels_question'+shuffledNumbers[12],
     },
   ],
 },
 
 //13
-vowels_question13: {
+['vowels_question'+shuffledNumbers[12]]: {
   botPrompt: 'Identify the vowel(s) in the word "jam":',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -744,7 +790,7 @@ correctq13: {
   botPrompt: 'Hurray! <strong>A</strong> is the Answer is correct ! 😎',
   answers: [
     {
-      nextId: 'vowels_question14',
+      nextId: 'vowels_question'+shuffledNumbers[13],
     },
   ],
 },
@@ -752,13 +798,13 @@ incorrectq13: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"A"</strong>',
   answers: [
     {
-      nextId: 'vowels_question14',
+      nextId: 'vowels_question'+shuffledNumbers[13],
     },
   ],
 },
 
 //14
-vowels_question14: {
+['vowels_question'+shuffledNumbers[13]]: {
   botPrompt: ' Which letter(s) is a vowel in the word "rip"? ',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -787,7 +833,7 @@ correctq14: {
   botPrompt: 'Hurray! <strong>I</strong> is the Answer is correct ! 😎',
   answers: [
     {
-      nextId: 'vowels_question15',
+      nextId: 'vowels_question'+shuffledNumbers[14],
     },
   ],
 },
@@ -795,14 +841,14 @@ incorrectq14: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"I"</strong>',
   answers: [
     {
-      nextId: 'vowels_question15',
+      nextId: 'vowels_question'+shuffledNumbers[14],
     },
   ],
 },
 
 
 //15
-vowels_question15: {
+['vowels_question'+shuffledNumbers[14]]: {
   botPrompt: ' Identify the vowel(s) in the word "pet":',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -831,7 +877,7 @@ correctq15: {
   botPrompt: 'Hurray! <strong>E</strong> is the Answer is correct ! 😎',
   answers: [
     {
-      nextId: 'vowels_question16',
+      nextId: 'vowels_question'+shuffledNumbers[15],
     },
   ],
 },
@@ -839,13 +885,13 @@ incorrectq15: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"E"</strong>',
   answers: [
     {
-      nextId: 'vowels_question16',
+      nextId: 'vowels_question'+shuffledNumbers[15],
     },
   ],
 },
 
 //16
-  vowels_question16: {
+  ['vowels_question'+shuffledNumbers[15]]: {
     botPrompt: 'Fill in the missing vowel in "c_t": ',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['A', 'E', "I","O","U"]),
@@ -876,7 +922,7 @@ incorrectq15: {
     botPrompt: 'You Have Selected Correct Anwser 🎉! C<strong>A</strong>T😎',
     answers: [
       {
-        nextId: 'vowels_question17',
+        nextId: 'vowels_question'+shuffledNumbers[16],
       },
     ],
   },
@@ -884,13 +930,13 @@ incorrectq15: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"A"</strong>',
     answers: [
       {
-        nextId: 'vowels_question17',
+        nextId: 'vowels_question'+shuffledNumbers[16],
       },
     ],
   },
 
 //17
-vowels_question17: {
+['vowels_question'+shuffledNumbers[16]]: {
   botPrompt: 'Fill in the missing vowel in "h_ppy":',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['A', 'E', "I","O","U"]),
@@ -921,7 +967,7 @@ correctq17: {
   botPrompt: 'You Have Selected Correct Anwser 🎉! H<strong>A</strong>PPY 😎',
   answers: [
     {
-      nextId: 'vowels_question18',
+      nextId: 'vowels_question'+shuffledNumbers[17],
     },
   ],
 },
@@ -929,13 +975,13 @@ incorrectq17: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"A"</strong>',
   answers: [
     {
-      nextId: 'vowels_question18',
+      nextId: 'vowels_question'+shuffledNumbers[17],
     },
   ],
 },
 
 //18
-vowels_question18: {
+['vowels_question'+shuffledNumbers[17]]: {
   botPrompt: 'Fill in the missing vowel in "w_nt": ',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['A', 'E', "I","O","U"]),
@@ -966,7 +1012,7 @@ correctq18: {
   botPrompt: 'You Have Selected Correct Anwser 🎉! W<strong>A</strong>NT 😎',
   answers: [
     {
-      nextId: 'vowels_question19',
+      nextId: 'vowels_question'+shuffledNumbers[18],
     },
   ],
 },
@@ -974,13 +1020,13 @@ incorrectq18: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"A"</strong>',
   answers: [
     {
-      nextId: 'vowels_question19',
+      nextId: 'vowels_question'+shuffledNumbers[18],
     },
   ],
 },
 
 //19
-vowels_question19: {
+['vowels_question'+shuffledNumbers[18]]: {
   botPrompt: 'Fill in the missing vowel in "sh_rt": ',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['A', 'E', "I","O","U"]),
@@ -1011,7 +1057,7 @@ correctq19: {
   botPrompt: 'You Have Selected Correct Anwser 🎉! SH<strong>O</strong>RT  or SH<strong>I</strong>T are the Correct Answers! 😎',
   answers: [
     {
-      nextId: 'vowels_question20',
+      nextId: 'vowels_question'+shuffledNumbers[19],
     },
   ],
 },
@@ -1019,12 +1065,12 @@ incorrectq19: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"O" or "I"</strong>',
   answers: [
     {
-      nextId: 'vowels_question20',
+      nextId: 'vowels_question'+shuffledNumbers[19],
     },
   ],
 },
 //20
-vowels_question20: {
+['vowels_question'+shuffledNumbers[19]]: {
   botPrompt: 'Fill in the missing vowel in "b_tt_r":',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['A', 'E', "I","O","U"]),
@@ -1055,7 +1101,7 @@ correctq20: {
   botPrompt: 'You Have Selected Correct Anwser 🎉! B<strong>E</strong>tt<strong>E</strong>R 😎',
   answers: [
     {
-      nextId: 'vowels_question21',
+      nextId: 'vowels_question'+shuffledNumbers[20],
     },
   ],
 },
@@ -1063,12 +1109,12 @@ incorrectq20: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"E"</strong>',
   answers: [
     {
-      nextId: 'vowels_question21',
+      nextId: 'vowels_question'+shuffledNumbers[20],
     },
   ],
 },
 //21
-vowels_question21: {
+['vowels_question'+shuffledNumbers[20]]: {
   botPrompt: ' Fill in the missing vowel in "h_g":',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['A', 'E', "I","O","U"]),
@@ -1099,7 +1145,7 @@ correctq21: {
   botPrompt: 'You Have Selected Correct Anwser 🎉! H<strong>U</strong>G 😎',
   answers: [
     {
-      nextId: 'vowels_question22',
+      nextId: 'vowels_question'+shuffledNumbers[21],
     },
   ],
 },
@@ -1107,12 +1153,12 @@ incorrectq21: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"U"</strong>',
   answers: [
     {
-      nextId: 'vowels_question22',
+      nextId: 'vowels_question'+shuffledNumbers[21],
     },
   ],
 },
 //22
-vowels_question22: {
+['vowels_question'+shuffledNumbers[21]]: {
   botPrompt: 'Fill in the missing vowel in "dr_ss": ',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['A', 'E', "I","O","U"]),
@@ -1143,7 +1189,7 @@ correctq22: {
   botPrompt: 'You Have Selected Correct Anwser 🎉! DR<strong>E</strong>SS 😎',
   answers: [
     {
-      nextId: 'vowels_question23',
+      nextId: 'vowels_question'+shuffledNumbers[22],
     },
   ],
 },
@@ -1151,12 +1197,12 @@ incorrectq22: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"E"</strong>',
   answers: [
     {
-      nextId: 'vowels_question23',
+      nextId: 'vowels_question'+shuffledNumbers[22],
     },
   ],
 },
 //23
-vowels_question23: {
+['vowels_question'+shuffledNumbers[22]]: {
   botPrompt: 'Fill in the missing vowel in "str_ng": ',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['A', 'E', "I","O","U"]),
@@ -1187,7 +1233,7 @@ correctq23: {
   botPrompt: 'You Have Selected Correct Anwser 🎉! STR<strong>I</strong>NG  or STR<strong>O</strong>NG 😎',
   answers: [
     {
-      nextId: 'vowels_question24',
+      nextId: 'vowels_question'+shuffledNumbers[23],
     },
   ],
 },
@@ -1195,12 +1241,12 @@ incorrectq23: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"I"or"O"</strong>',
   answers: [
     {
-      nextId: 'vowels_question24',
+      nextId: 'vowels_question'+shuffledNumbers[23],
     },
   ],
 },
 //24
-vowels_question24: {
+['vowels_question'+shuffledNumbers[23]]: {
   botPrompt: 'Fill in the missing vowel in "s_n": ',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['A', 'E', "I","O","U"]),
@@ -1231,7 +1277,7 @@ correctq24: {
   botPrompt: 'You Have Selected Correct Anwser 🎉! S<strong>U</strong>N  or S<strong>I</strong>N or S<strong>O</strong>N are the Correct Answers! 😎',
   answers: [
     {
-      nextId: 'vowels_question25',
+      nextId: 'vowels_question'+shuffledNumbers[24],
     },
   ],
 },
@@ -1239,13 +1285,13 @@ incorrectq24: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"I"</strong>',
   answers: [
     {
-      nextId: 'vowels_question25',
+      nextId: 'vowels_question'+shuffledNumbers[24],
     },
   ],
 },
 
 //25
-vowels_question25: {
+['vowels_question'+shuffledNumbers[24]]: {
   botPrompt: 'Fill in the missing vowel in "cl_ss": ',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['A', 'E', "I","O","U"]),
@@ -1276,7 +1322,7 @@ correctq25: {
   botPrompt: 'You Have Selected Correct Anwser 🎉! CL<strong>A</strong>SS 😎',
   answers: [
     {
-      nextId: 'vowels_question26',
+      nextId: 'vowels_question'+shuffledNumbers[25],
     },
   ],
 },
@@ -1284,23 +1330,23 @@ incorrectq25: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is CL<strong>A</strong>SS',
   answers: [
     {
-      nextId: 'vowels_question26',
+      nextId: 'vowels_question'+shuffledNumbers[25],
     },
   ],
 },
 
 //26
-vowels_question26: {
+['vowels_question'+shuffledNumbers[25]]: {
   botPrompt: 'Fill in the missing vowel in "gl_ss":',
   type: RTypes.TRANSFORMED_TEXT,
-  input: selectField(['A', 'E', "I","O","U"]),
+  input: selectField(["A","E","I","O","U"]),
   answers: [
     {
-      answer: 'A',
+      answer: "A",
       nextId: 'correctq26',
     },
     {
-      answer: 'E',
+      answer: "E",
       nextId: 'incorrectq26',
     },
     {
@@ -1322,7 +1368,7 @@ correctq26: {
   botPrompt: 'You Have Selected Correct Anwser 🎉! GL<strong>A</strong>SS  😎',
   answers: [
     {
-      nextId: 'vowels_question27',
+      nextId: 'vowels_question'+shuffledNumbers[26],
     },
   ],
 },
@@ -1330,15 +1376,15 @@ incorrectq26: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"A"</strong>',
   answers: [
     {
-      nextId: 'vowels_question27',
+      nextId:  'vowels_question'+shuffledNumbers[26],
     },
   ],
 },
 //27
-vowels_question27: {
+[ 'vowels_question'+shuffledNumbers[26]]: {
   botPrompt: 'Fill in the missing vowel in "gr_ss": ',
   type: RTypes.TRANSFORMED_TEXT,
-  input: selectField(['A', 'E', "I","O","U"]),
+  input: selectField(['A','E',"I","O","U"]),
   answers: [
     {
       answer: 'A',
@@ -1366,7 +1412,7 @@ correctq27: {
   botPrompt: 'You Have Selected Correct Anwser 🎉! GR<strong>A</strong>SS 😎',
   answers: [
     {
-      nextId: 'vowels_question28',
+      nextId:  'vowels_question'+shuffledNumbers[27],
     },
   ],
 },
@@ -1374,15 +1420,15 @@ incorrectq27: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"A"</strong>',
   answers: [
     {
-      nextId: 'vowels_question28',
+      nextId: 'vowels_question'+shuffledNumbers[27],
     },
   ],
 },
 //28
-vowels_question28: {
+['vowels_question'+shuffledNumbers[27]]: {
   botPrompt: 'Fill in the missing vowel in "pl_n":',
   type: RTypes.TRANSFORMED_TEXT,
-  input: selectField(['A', 'E', "I","O","U"]),
+  input: selectField(['A','E',"I","O","U"]),
   answers: [
     {
       answer: 'A',
@@ -1410,7 +1456,7 @@ correctq28: {
   botPrompt: 'You Have Selected Correct Anwser 🎉! PL<strong>A</strong>N  😎',
   answers: [
     {
-      nextId: 'vowels_question29',
+      nextId: 'vowels_question'+shuffledNumbers[28],
     },
   ],
 },
@@ -1418,12 +1464,12 @@ incorrectq28: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"A"</strong>',
   answers: [
     {
-      nextId: 'vowels_question29',
+      nextId: 'vowels_question'+shuffledNumbers[28],
     },
   ],
 },
 //29
-vowels_question29: {
+['vowels_question'+shuffledNumbers[28]]: {
   botPrompt: 'Fill in the missing vowel in "m_n":',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['A', 'E', "I","O","U"]),
@@ -1454,7 +1500,7 @@ correctq29: {
   botPrompt: 'You Have Selected Correct Anwser 🎉! M<strong>A</strong>N 😎',
   answers: [
     {
-      nextId: 'vowels_question30',
+      nextId: 'vowels_question'+shuffledNumbers[29],
     },
   ],
 },
@@ -1462,12 +1508,12 @@ incorrectq29: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"A"</strong>',
   answers: [
     {
-      nextId: 'vowels_question30',
+      nextId: 'vowels_question'+shuffledNumbers[29],
     },
   ],
 },
 //30
-vowels_question30: {
+['vowels_question'+shuffledNumbers[29]]: {
   botPrompt: 'Fill in the missing vowel in "cl_ck": ',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['A', 'E', "I","O","U"]),
@@ -1498,7 +1544,7 @@ correctq30: {
   botPrompt: 'You Have Selected Correct Anwser 🎉! S<strong>U</strong>N  or S<strong>I</strong>N or S<strong>O</strong>N are the Correct Answers! 😎',
   answers: [
     {
-      nextId: 'vowels_question31',
+      nextId: 'vowels_question'+shuffledNumbers[30],
     },
   ],
 },
@@ -1506,12 +1552,12 @@ incorrectq30: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"I"</strong>',
   answers: [
     {
-      nextId: 'vowels_question31',
+      nextId: 'vowels_question'+shuffledNumbers[30],
     },
   ],
 },
 //31
-vowels_question31: {
+['vowels_question'+shuffledNumbers[30]]: {
   botPrompt: 'Fill in the missing vowel in "b_t": ',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['A', 'E', "I","O","U"]),
@@ -1542,7 +1588,7 @@ correctq31: {
   botPrompt: 'You Have Selected Correct Anwser 🎉! B<strong>A</strong>T 😎',
   answers: [
     {
-      nextId: 'vowels_question32',
+      nextId: 'vowels_question'+shuffledNumbers[31],
     },
   ],
 },
@@ -1550,12 +1596,12 @@ incorrectq31: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"A"</strong>',
   answers: [
     {
-      nextId: 'vowels_question32',
+      nextId: 'vowels_question'+shuffledNumbers[31],
     },
   ],
 },
 //32
-vowels_question32: {
+['vowels_question'+shuffledNumbers[31]]: {
   botPrompt: 'Fill in the missing vowel in "f_ll":',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['A', 'E', "I","O","U"]),
@@ -1586,7 +1632,7 @@ correctq32: {
   botPrompt: 'You Have Selected Correct Anwser 🎉! F<strong>I</strong>LL 😎',
   answers: [
     {
-      nextId: 'vowels_question33',
+      nextId: 'vowels_question'+shuffledNumbers[32],
     },
   ],
 },
@@ -1594,12 +1640,12 @@ incorrectq32: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"I"</strong>',
   answers: [
     {
-      nextId: 'vowels_question33',
+      nextId: 'vowels_question'+shuffledNumbers[32],
     },
   ],
 },
 //33
-vowels_question33: {
+['vowels_question'+shuffledNumbers[32]]: {
   botPrompt: 'Fill in the missing vowel in "ch_ck": ',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['A', 'E', "I","O","U"]),
@@ -1630,7 +1676,7 @@ correctq33: {
   botPrompt: 'You Have Selected Correct Anwser 🎉! CH<strong>E</strong>CK 😎',
   answers: [
     {
-      nextId: 'vowels_question34',
+      nextId: 'vowels_question'+shuffledNumbers[33],
     },
   ],
 },
@@ -1638,12 +1684,12 @@ incorrectq33: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"E"</strong>',
   answers: [
     {
-      nextId: 'vowels_question34',
+      nextId: 'vowels_question'+shuffledNumbers[33],
     },
   ],
 },
 //34
-vowels_question34: {
+['vowels_question'+shuffledNumbers[33]]: {
   botPrompt: 'Fill in the missing vowel in "h_ngy":',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['A', 'E', "I","O","U"]),
@@ -1931,6 +1977,12 @@ incorrectq34: {
     ],
   },
 };
+
+
+
+
+
+console.log("myrand",questions)
 
 
 export default questions;
