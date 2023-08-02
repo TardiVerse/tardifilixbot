@@ -41,7 +41,7 @@ const questions = {
   tardiidcollection: {
     botPrompt: 'Do you have TardiFilix ID ?',
     type: RTypes.TRANSFORMED_TEXT,
-    input: selectField(['Yes! I Have ID', "No. I Don't Have ID", "Contact Filix School Now"]),
+    input: selectField(['Yes! I Have ID', "No. I Don't Have ID"]),
     answers: [
       {
         answer: 'Yes! I Have ID',
