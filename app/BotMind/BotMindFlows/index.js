@@ -167,9 +167,17 @@ const questions = {
     answers: [
       {
         answer: common_greetings_negative,  
-        nextId: 'tfidgenration',
+        nextId: 'chooseclass',
       },
     ],
+},
+chooseclass: {
+  botPrompt: 'Choose your <strong>Class</strong> ?',
+  varName: 'userName',
+  input: tagsField(['Pre-kG','L.K.G','U.K.G','CLASS I','CLASS II', 'CLASS III','CLASS IV','CLASS V','CLASS VI','CLASS VII','CLASS VIII','CLASS IX','CLASS X']),
+  answers: [
+          { nextId: 'tfidgenration' },
+  ],
 },
 
 tfidgenration: {
@@ -1764,6 +1772,7 @@ incorrectq34: {
             { nextId: 'question1' },
     ],
   },
+  
   question1: {
     botPrompt: 'Tell me <strong>@varName</strong>: Do you like to have fun?',
     type: RTypes.TRANSFORMED_TEXT,
@@ -1787,6 +1796,7 @@ incorrectq34: {
       },
     ],
   },
+
   cool: {
     botPrompt: 'Cool! 😎',
     answers: [
