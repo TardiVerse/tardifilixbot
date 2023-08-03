@@ -19,7 +19,23 @@ export function userMessage(message, type = 'text') {
     ],
   };
 }
+export function imageSelectField(optionsValues, labelpl) {
+  const options = optionsValues.map((optionValue) => {
+    return {
+      value: optionValue.label,
+      label: optionValue.label,
+      image: optionValue.image,
+    };
+  });
 
+  const selectInput = {
+    label: labelpl,
+    type: 'imageselect',
+    options,
+  };
+
+  return selectInput;
+}
 export function botMessage(message, type = "text", varName = "") {
   return {
     from: 'bot',

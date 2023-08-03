@@ -48,6 +48,9 @@ class UserInput extends React.Component { // eslint-disable-line react/prefer-st
       case 'select': {
         return this.handlegetSelect(inputType);
       }
+      case 'imageselect': {
+        return this.handlegetImageSelect(inputType);
+      }
       case 'tags': {
         return this.handlegetTags(inputType);
       }
@@ -149,6 +152,30 @@ class UserInput extends React.Component { // eslint-disable-line react/prefer-st
       </article>
     );
   }
+  handlegetImageSelect(inputType) {
+    const options = inputType.options.map((option) => (
+      <a
+        tabIndex={0}
+        role="button"
+        key={option.label.replace(/\W/gi, '').toLowerCase()}
+        className="qt-chat__imagereply"
+        onClick={() => this.handlesendUserMessage(option.label)}
+      >
+        {' '}
+        {
+          <div>
+            <img src={option.image} alt="" />
+          </div>
+        }
+        {option.label}{' '}
+      </a>
+    ));
+    return (
+      <article className="qt-chat__field">
+        <div>{options}</div>
+      </article>
+    );
+  }
 
   handlegetTags(inputType) {
     this.tags = [];
@@ -238,6 +265,10 @@ class UserInput extends React.Component { // eslint-disable-line react/prefer-st
       switch (inputType.type) {
         case 'optionCards': {
           return this.handlegetOptionCards(inputType);
+        }
+        case 'imageselect': {
+          userMessage = this.selecthandleinput.value;
+          break;
         }
         case 'fieldText': {
           userMessage = this.texthandleinput.value;

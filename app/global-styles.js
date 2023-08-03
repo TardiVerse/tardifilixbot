@@ -123,7 +123,9 @@ body {
   margin-top: 0.625rem;
 }
 .qt-chat__bubble.is-link div:after {
-  background: ${variables.primaryColor} url(${LinkIcon}) no-repeat center center;
+  background: ${
+    variables.primaryColor
+  } url(${LinkIcon}) no-repeat center center;
   border-radius: 50%;
   content: '';
   display: inline-block;
@@ -148,13 +150,15 @@ body {
 }
 @media (max-width: 640px) {
   .qt-avatar {
-    display: none;
+    display: block;
   }
 }
 
 .qt-chat__dialogue.from-bot .qt-avatar {
-  background: url(${variables.botAvatarIcon}) no-repeat center center ${variables.botAvatar};
-  background-size: 50%;
+  background: url(${variables.botAvatarIcon}) no-repeat center center ${
+  variables.botAvatar
+};
+  background-size: 100%;
 }
 .qt-chat__dialogue.from-bot .qt-chat__bubble div {
   background: ${variables.bubbleBGBot};
@@ -239,6 +243,26 @@ body {
   background: ${variables.selectReplyColorOnHover};
   color: ${variables.selectReplyTextColorOnHover};
 }
+.qt-chat__imagereply {
+  padding: 2px;
+  background: #dc2a231a;
+  border-radius: 5px 5px 0px 0px;
+  color: #003785;
+  margin: 0.375rem;
+  width:95px;
+  font-size: 11px;
+  text-align: center;
+  border:1px 5px solid #ffbfbf;
+  box-shadow: 3px 3px 3px #cccccc29;
+  -webkit-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.qt-chat__imagereply:hover {
+  background: ${variables.selectReplyColorOnHover};
+  color: ${variables.selectReplyTextColorOnHover};
+}
+
 
 .qt-chat__dialogue.from-user .qt-avatar {
   background: ${variables.userAvatar};
@@ -291,11 +315,13 @@ body {
   background: ${variables.userAvatar};
   color: ${variables.userAvatarTextColor};
   display: flex;
+  text-align: -webkit-center;
+line-height: 32px;
   justify-content: center;
 }
 @media (max-width: 640px) {
   .qt-avatar.is-user {
-    display: none;
+    display: block;
   }
 }
 
@@ -312,13 +338,14 @@ body {
 .qt-chat__select {
   background: ${variables.inputBGColor};
   border-radius: 0.125rem;
-  border: 1px solid ${variables.inputBorderColor};
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  border: 1px solid rgba(81, 203, 238, 1);
   color: ${variables.textColor};
   font-size: 0.875em;
   font-weight: 400;
   outline: 0;
   padding: 1rem;
-  width: 100%;
+  width: 92%;
   transition: background-color 1s ease;
 }
 @media (max-width: 640px) {

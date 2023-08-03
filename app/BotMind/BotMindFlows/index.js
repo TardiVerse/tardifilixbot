@@ -3,11 +3,14 @@ import {
   selectField,
   tagsField,
   textField,
+  imageSelectField,
   disabledFieldText,
   endOfConversation,
 } from '../StateFormatter';
 import * as RTypes from '../responseTypes';
-
+import apple from './assest/apple.jpg';
+import orange from './assest/orange.jpg';
+import pomegranate from './assest/pomegranate.jpg';
 const common_greetings = /(^hello|^hllo|^hi|^hey|^hola|^sup)\b\s?.*$/i;
 const common_greetings_negative = /(?!(^hello|^hi|^hey|^hllo|^sup|^hola)\b)\w+/i;
 function shuffleArray(array) {
@@ -98,7 +101,7 @@ const questions = {
     botPrompt: 'Welcome Back !',
     answers: [
       {
-        nextId: 'emojisHtml',
+        nextId: 'chooseapple',
       },
     ],
   },
@@ -109,6 +112,7 @@ const questions = {
     answers: [
       {
         answer: common_greetings,
+        catchName: true,
         nextId: 'greetings_notAName',
       },
       {
@@ -133,6 +137,7 @@ const questions = {
       answers: [
         {
           answer: common_greetings,
+          catchName: true,
           nextId: 'greetings_notAName',
         },
         {
@@ -172,14 +177,66 @@ const questions = {
     ],
 },
 chooseclass: {
-  botPrompt: 'Choose your <strong>Class</strong> ?',
+  botPrompt: 'Choose your <strong>Class</strong> @varName  ?',
+  type: RTypes.TRANSFORMED_TEXT,
   varName: 'userName',
   input: tagsField(['Pre-kG','L.K.G','U.K.G','CLASS I','CLASS II', 'CLASS III','CLASS IV','CLASS V','CLASS VI','CLASS VII','CLASS VIII','CLASS IX','CLASS X']),
   answers: [
-          { nextId: 'tfidgenration' },
+          { nextId: 'chooseapple' },
   ],
 },
 
+chooseapple: {
+  botPrompt: "From the below options find an Apple?",
+  input: imageSelectField(
+    [
+      { label: 'Apple', image: apple },
+      { label: 'Orange', image: orange },
+      { label: 'Pomegranate', image: pomegranate },
+    ],
+    'Select any one:'
+  ),
+  answers: [
+    {
+      answer: 'Apple',
+      nextId: 'choosecorrect',
+    },
+    {
+      answer: 'Orange',
+      nextId: 'chooseincorrect',
+    },
+    {
+      answer: 'Pomegranate',
+      nextId: 'chooseincorrect',
+    },
+  ],
+},
+choosecorrect: {
+  botPrompt: 'Hurray you have Choosed the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'tfidgenration',
+    },
+  ],
+},
+
+chooseincorrect: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is ',
+  answers: [
+    {
+      nextId: 'chooseincorrectans',
+    },
+  ],
+},
+chooseincorrectans: {
+  botPrompt: apple,
+  type: RTypes.MEDIA,
+  answers: [
+    {
+      nextId: 'tfidgenration',
+    },
+  ],
+},
 tfidgenration: {
   botPrompt: 'Your TFID is <strong>'+ random12DigitNumber +'</strong> .',
   answers: [
@@ -279,7 +336,7 @@ tfidgenrationtext: {
     ],
   },
   correct: {
-    botPrompt: 'Hurray <strong>A</strong> is the Answer is correct ! 😎',
+    botPrompt: 'Hurray <strong>A</strong> is the correct answer  ! 😎',
     answers: [
       {
         nextId: 'vowels_question'+shuffledNumbers[1],
@@ -321,7 +378,7 @@ tfidgenrationtext: {
   },
 
   correctq2: {
-    botPrompt: 'Hurray! <strong>O</strong> is the Answer is correct ! 😎',
+    botPrompt: 'Hurray! <strong>O</strong> is the correct answer  ! 😎',
     answers: [
       {
         nextId: 'vowels_question'+shuffledNumbers[2],
@@ -364,7 +421,7 @@ tfidgenrationtext: {
 },
 
 correctq3: {
-  botPrompt: 'Hurray! <strong>None of the Above</strong> is the Answer is correct ! 😎',
+  botPrompt: 'Hurray! <strong>None of the Above</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'vowels_question'+shuffledNumbers[3],
@@ -407,7 +464,7 @@ incorrectq3: {
 },
 
 correctq4: {
-  botPrompt: 'Hurray! <strong>U</strong> is the Answer is correct ! 😎',
+  botPrompt: 'Hurray! <strong>U</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'vowels_question'+shuffledNumbers[4],
@@ -450,7 +507,7 @@ incorrectq2: {
 },
 
 correctq5: {
-  botPrompt: 'Hurray! <strong>O</strong> is the Answer is correct ! 😎',
+  botPrompt: 'Hurray! <strong>O</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'vowels_question'+shuffledNumbers[5],
@@ -493,7 +550,7 @@ incorrectq5: {
 },
 
 correctq6: {
-  botPrompt: 'Hurray! <strong>A</strong> is the Answer is correct ! 😎',
+  botPrompt: 'Hurray! <strong>A</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'vowels_question'+shuffledNumbers[6],
@@ -535,7 +592,7 @@ incorrectq6: {
 },
 
 correctq7: {
-  botPrompt: 'Hurray! <strong>E</strong> is the Answer is correct ! 😎',
+  botPrompt: 'Hurray! <strong>E</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'vowels_question'+shuffledNumbers[7],
@@ -579,7 +636,7 @@ incorrectq7: {
 },
 
 correctq8: {
-  botPrompt: 'Hurray! <strong>U</strong> is the Answer is correct ! 😎',
+  botPrompt: 'Hurray! <strong>U</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'vowels_question'+shuffledNumbers[8],
@@ -622,7 +679,7 @@ incorrectq8: {
 },
 
 correctq9: {
-  botPrompt: 'Hurray! <strong>O</strong> is the Answer is correct ! 😎',
+  botPrompt: 'Hurray! <strong>O</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'vowels_question'+shuffledNumbers[9],
@@ -666,7 +723,7 @@ incorrectq9: {
 },
 
 correctq10: {
-  botPrompt: 'Hurray! <strong>U</strong> is the Answer is correct ! 😎',
+  botPrompt: 'Hurray! <strong>U</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'vowels_question'+shuffledNumbers[10],
@@ -709,7 +766,7 @@ incorrectq10: {
 },
 
 correctq11: {
-  botPrompt: 'Hurray! <strong>O</strong> is the Answer is correct ! 😎',
+  botPrompt: 'Hurray! <strong>O</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'vowels_question'+shuffledNumbers[11],
@@ -752,7 +809,7 @@ incorrectq11: {
 },
 
 correctq12: {
-  botPrompt: 'Hurray! <strong>E</strong> is the Answer is correct ! 😎',
+  botPrompt: 'Hurray! <strong>E</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'vowels_question'+shuffledNumbers[12],
@@ -795,7 +852,7 @@ incorrectq12: {
 },
 
 correctq13: {
-  botPrompt: 'Hurray! <strong>A</strong> is the Answer is correct ! 😎',
+  botPrompt: 'Hurray! <strong>A</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'vowels_question'+shuffledNumbers[13],
@@ -838,7 +895,7 @@ incorrectq13: {
 },
 
 correctq14: {
-  botPrompt: 'Hurray! <strong>I</strong> is the Answer is correct ! 😎',
+  botPrompt: 'Hurray! <strong>I</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'vowels_question'+shuffledNumbers[14],
@@ -882,7 +939,7 @@ incorrectq14: {
 },
 
 correctq15: {
-  botPrompt: 'Hurray! <strong>E</strong> is the Answer is correct ! 😎',
+  botPrompt: 'Hurray! <strong>E</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'vowels_question'+shuffledNumbers[15],
