@@ -91,11 +91,11 @@ body {
   }
 }
 .qt-chat__media img {
-  max-width: 36.25rem;
+  max-width: 18.25rem;
 }
 @media (max-width: 640px) {
   .qt-chat__media img {
-    width: 100%;
+    width: 60%;
   }
 }
 
