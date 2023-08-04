@@ -6,10 +6,7 @@
     "type": "git",
     "url": "git://github.com/IcaliaLabs/alpha.git"
   },
-  "engines": {
-    "npm": "9.6.7",
-   "node": "18.x"
-  },
+
   "author": "Vignesh Selvaraj",
   "license": "MIT",
   "scripts": {
