@@ -104,7 +104,7 @@ const questions = {
   type: RTypes.MEDIA,
     answers: [
       {
-        nextId: 'emojisHtml',
+        nextId: 'day1',
       },
     ],
   },
@@ -252,12 +252,63 @@ tfidgenrationtext: {
   botPrompt: 'You will receive your TFID Digital Card in your registered mobile number and email address.',
   answers: [
     {
-      nextId: 'emojisHtml',
+      nextId: 'day1',
     },
   ],
 },
 
-  emojisHtml: {
+
+
+day1: {
+  botPrompt: 'Gross Motor Skill <br>  Gross Motor skills develop the bigger muscles of a child’s body helping them with their daily activities including academics. <br> Watch the video to understand how these activities can be done inside classrooms:   ',
+  answers: [
+          { nextId: 'day1link' },
+  ],
+},
+day1link: {
+  botPrompt: 'https://youtu.be/WzyELzv_CRQ',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day1comment',
+    },
+  ],
+},
+day1comment: {
+  botPrompt: 'Along with exercising children learn essential English vocabulary and action words which they will soon use in sentences.   ',
+  answers: [
+          { nextId: 'wishtocontinue' },
+  ],
+},
+
+wishtocontinue: {
+  botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
+  input: selectField(['Yes!', 'No!']),
+  answers: [
+      {
+        answer: 'Yes!',
+        nextId: 'vowelsareback',
+      },
+      {
+        answer: 'No!',
+        nextId: 'endConv',
+      },
+  ],
+},
+
+// day1linklast: {
+//   botPrompt: 'https://www.youtube.com/watch?v=AAqY8K1DeKc',
+//   type: RTypes.LINK,
+//   answers: [
+//     {
+//       nextId: 'vowelsareback',
+//     },
+//   ],
+// },
+
+
+
+  vowelsareback: {
     botPrompt: "Vowels are Back",
     answers: [
             { nextId: 'vowels_prompt1' },
@@ -1803,6 +1854,15 @@ incorrectq34: {
   ],
 },
 
+endConv: {
+  botPrompt: 'Thank you Will Meet you tomorrow ',
+  input: endOfConversation(),
+  answers: [
+    {
+      nextId: 'endConv',
+    },
+  ],
+},
   
   select: {
     botPrompt: 'I can also offer <strong>predefined options</strong> to choose from:',

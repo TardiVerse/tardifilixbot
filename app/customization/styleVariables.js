@@ -1,5 +1,5 @@
 // =================================BACKGROUND=================================
-export const background = 'url("http://s3.amazonaws.com/icalialabs/assets/img/bg.png") no-repeat center center';
+export const background = 'url("https://ecommercetardiworld.s3.ap-south-1.amazonaws.com/tardifilixbg.jpg") no-repeat center center';
 
 // =================================COLORS=================================
 
