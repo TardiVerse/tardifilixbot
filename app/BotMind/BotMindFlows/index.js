@@ -15,6 +15,8 @@ import welcomebackgif from './assest/welcomeback.gif';
 
 const common_greetings = /(^hello|^hllo|^hi|^hey|^hola|^sup)\b\s?.*$/i;
 const common_greetings_negative = /(?!(^hello|^hi|^hey|^hllo|^sup|^hola)\b)\w+/i;
+
+
 function shuffleArray(array) {
   const shuffledArray = array.slice();
   for (let i = shuffledArray.length - 1; i > 0; i--) {
@@ -24,11 +26,35 @@ function shuffleArray(array) {
   return shuffledArray;
 }
 
-// Create an array containing numbers from 1 to 40
+// Create an array containing numbers from 1 to 33
 const numbers = Array.from({ length: 34 }, (_, i) => i + 1);
 
 // Shuffle the array
 const shuffledNumbers = shuffleArray(numbers);
+
+
+function shuffleArrayto(array) {
+  const shuffledArrayto = array.slice();
+  for (let i = shuffledArrayto.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffledArrayto[i], shuffledArrayto[j]] = [shuffledArrayto[j], shuffledArrayto[i]];
+  }
+  return shuffledArrayto;
+}
+
+// Create an array containing numbers from 1 to 40
+const numbersto = Array.from({ length: 20 }, (_, i) => i + 1);
+
+// Shuffle the array
+const shuffledNumbersto = shuffleArrayto(numbersto);
+
+
+
+
+
+
+
+
 
 function generateRandom12DigitNumber() {
   const min = 100000000000; // 10^11 (minimum 12-digit number)
@@ -39,10 +65,7 @@ function generateRandom12DigitNumber() {
 }
 
 const random12DigitNumber = generateRandom12DigitNumber();
-console.log(random12DigitNumber);
 
-// Print the shuffled numbers
-console.log("shuff","vowels_question"+shuffledNumbers[0]);
 const questions = {
 
   start: {
@@ -61,7 +84,7 @@ const questions = {
       },
     ],
   },
-  imageshare: {
+  imageshare: { 
     botPrompt: 'https://tardimeet.s3.ap-south-1.amazonaws.com/efaimage.jpg',
     type: RTypes.MEDIA,
     answers: [
@@ -260,7 +283,7 @@ tfidgenrationtext: {
 //day1
 
 day1: {
-  botPrompt: 'Gross Motor Skill <br>  Gross Motor skills develop the bigger muscles of a child’s body helping them with their daily activities including academics. <br> Watch the video to understand how these activities can be done inside classrooms:   ',
+  botPrompt: '<strong> Day 1 : </strong> Gross Motor Skill <br>  Gross Motor skills develop the bigger muscles of a child’s body helping them with their daily activities including academics. <br> Watch the video to understand how these activities can be done inside classrooms:   ',
   answers: [
           { nextId: 'day1link' },
   ],
@@ -303,7 +326,7 @@ wishtocontinue: {
 
 //day2
 day2: {
-  botPrompt: 'Fine motor skill activities involve use of the small muscles which control the hand, fingers and thumb. <br> Here is a video which helps in developing fine muscles. <br> Play Dough activity:',
+  botPrompt: ' <strong> Day 2 : </strong> Fine motor skill activities involve use of the small muscles which control the hand, fingers and thumb. <br> Here is a video which helps in developing fine muscles. <br> Play Dough activity:',
   answers: [
           { nextId: 'day2link' },
   ],
@@ -367,7 +390,7 @@ wishtocontinue2: {
 
 //day3
 day3: {
-  botPrompt: 'Lines help in developing a child`s fine motor skills and provide them with good handwriting skills. <br> Let us begin by learning different lines and doing activity related to it',
+  botPrompt: ' <strong> Day 3 : </strong> Lines help in developing a child`s fine motor skills and provide them with good handwriting skills. <br> Let us begin by learning different lines and doing activity related to it',
   answers: [
           { nextId: 'day3link' },
   ],
@@ -417,7 +440,7 @@ wishtocontinue3: {
 
 //day4
 day4: {
-  botPrompt: 'To understand directions, children need a lot of practice. <br> So, let`s see how we can make learning directions fun. This is a gross motor skill activity.',
+  botPrompt: '<strong> Day 4 : </strong> To understand directions, children need a lot of practice. <br> So, let`s see how we can make learning directions fun. This is a gross motor skill activity.',
   answers: [
           { nextId: 'day4link' },
   ],
@@ -482,7 +505,7 @@ wishtocontinue4: {
 
 //day5
 day5: {
-  botPrompt: 'Let us learn how to keep our classroom a happy, safe and interactive space . <br> A  song sung together plays an important role in settling the children down.',
+  botPrompt: '<strong> Day 5 : </strong> Let us learn how to keep our classroom a happy, safe and interactive space . <br> A  song sung together plays an important role in settling the children down.',
   answers: [
           { nextId: 'day5comment' },
   ],
@@ -521,7 +544,7 @@ wishtocontinue5: {
 
 //day6
 day6: {
-  botPrompt: 'Now, let`s see how we can make a classroom quiet really fast.',
+  botPrompt: '<strong> Day 6 : </strong> Now, let`s see how we can make a classroom quiet really fast.',
   answers: [
           { nextId: 'day6comment' },
   ],
@@ -565,7 +588,7 @@ wishtocontinue6: {
   answers: [
       {
         answer: 'Yes!',
-        nextId: 'vowelsareback',
+        nextId: 'day7',
       },
       {
         answer: 'No!',
@@ -577,7 +600,7 @@ wishtocontinue6: {
 
 //day7
 day7: {
-  botPrompt: 'ToDay is a Quiz Day.',
+  botPrompt: '<strong> Day 7 : </strong> ToDay is a Quiz Day.',
   answers: [
           { nextId: 'day7comment' },
   ],
@@ -607,11 +630,11 @@ day7link: {
 day72comment: {
   botPrompt: 'Now let us learn the Alphabet song.',
   answers: [
-          { nextId: 'day41link' },
+          { nextId: 'day72link' },
   ],
 },
 
-day71link: {
+day72link: {
   botPrompt: 'https://youtu.be/OXtOEGx5MB0',
   type: RTypes.LINK,
   answers: [
@@ -627,6 +650,1844 @@ wishtocontinue7: {
   answers: [
       {
         answer: 'Yes!',
+        nextId: 'day8',
+      },
+      {
+        answer: 'No!',
+        nextId: 'endConv',
+      },
+  ],
+},
+
+
+//day8
+day8: {
+  botPrompt: '<strong> Day 8 : </strong> Now, it`s time for tracing alphabets and numbers',
+  answers: [
+          { nextId: 'day8link' },
+  ],
+},
+day8link: {
+  botPrompt: 'https://youtu.be/VPpTp-PMAZs',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day8comment',
+    },
+  ],
+},
+day8comment: {
+  botPrompt: 'Look at our book <br> <strong> Tracing Capital letters </strong>',
+  answers: [
+          { nextId: 'day81link' },
+  ],
+},
+
+day81link: {
+  botPrompt: 'https://drive.google.com/file/d/1bmULkMLEs2F6pM_SlFCDQid9aGXHJy70/view?usp=sharing',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day81comment',
+    },
+  ],
+},
+day81comment: {
+  botPrompt: '<strong> Tracing Small letters </strong>',
+  answers: [
+          { nextId: 'day82link' },
+  ],
+},
+
+day82link: {
+  botPrompt: 'https://drive.google.com/file/d/1Oq-vDgxTJauH2R80KRL05bv5_IM8uqk-/view?usp=sharing',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day82comment',
+    },
+  ],
+},
+
+day82comment: {
+  botPrompt: 'Here is another video of tracing numbers.',
+  answers: [
+          { nextId: 'day83link' },
+  ],
+},
+
+day83link: {
+  botPrompt: 'https://youtu.be/y737D8xSgHg',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day83comment',
+    },
+  ],
+},
+day83comment: {
+  botPrompt: 'Let us have a look into the pages of our book-',
+  answers: [
+          { nextId: 'day84link' },
+  ],
+},
+
+day84link: {
+  botPrompt: 'https://drive.google.com/file/d/173lvzQ9Xpqcck9o6nDv6iD7l-98bvc24/view?usp=drive_link',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day84comment',
+    },
+  ],
+},
+
+day84comment: {
+  botPrompt: 'Let`s solve <br> <strong> TRACING CAPITAL LETTERS  QUESTIONS </strong>',
+  answers: [
+          { nextId: 'capletters'+shuffledNumbersto[0] },
+  ],
+},
+
+
+
+
+//capletters
+
+
+["capletters"+shuffledNumbersto[0]]: {
+  botPrompt: ' Which alphabet is made with 2 slanting lines and a sleeping  line? ',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['A', 'B', "C","D"]),
+  answers: [
+    {
+      answer: 'A',
+      nextId: 'capscorrect',
+    },
+    {
+      answer: 'B',
+      nextId: 'incapscorrect',
+    },
+    {
+      answer: "C",
+      nextId: 'incapscorrect',
+    },
+    {
+      answer: "D",
+      nextId: 'incapscorrect',
+    },
+  ],
+},
+capscorrect: {
+  botPrompt: 'Hurray <strong>A</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'capletters'+shuffledNumbersto[1],
+    },
+  ],
+},
+incapscorrect: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"A"</strong>',
+  answers: [
+    {
+      nextId: 'capletters'+shuffledNumbersto[1],
+    },
+  ],
+},
+
+['capletters'+shuffledNumbersto[1]]: {
+  botPrompt: ' Identify the alphabet made with two sleeping lines and a straight line.',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['E', 'F', "G","H"]),
+  answers: [
+    {
+      answer: 'E',
+      nextId: 'incapscorrectq2',
+    },
+    {
+      answer: 'F',
+      nextId: 'capscorrectq2',
+    },
+    {
+      answer: "G",
+      nextId: 'incapscorrectq2',
+    },
+    {
+      answer: "H",
+      nextId: 'incapscorrectq2',
+    },
+  ],
+},
+
+capscorrectq2: {
+  botPrompt: 'Hurray! <strong>F</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'capletters'+shuffledNumbersto[2],
+    },
+  ],
+},
+incapscorrectq2: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"F"</strong>',
+  answers: [
+    {
+      nextId: 'capletters'+shuffledNumbersto[2],
+    },
+  ],
+},
+
+//3
+['capletters'+shuffledNumbersto[2]]: {
+botPrompt: "Which alphabet is formed with two slanting and a straight line?",
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['I', 'J', "K","L"]),
+answers: [
+  {
+    answer: 'I',
+    nextId: 'incapscorrectq3',
+  },
+  {
+    answer: 'J',
+    nextId: 'incapscorrectq3',
+  },
+  {
+    answer: "K",
+    nextId: 'capscorrectq3',
+  },
+  {
+    answer: "L",
+    nextId: 'incapscorrectq3',
+  },
+],
+},
+
+capscorrectq3: {
+botPrompt: 'Hurray! <strong>K</strong> is the correct answer ! 😎',
+answers: [
+  {
+    nextId: 'capletters'+shuffledNumbersto[3],
+  },
+],
+},
+incapscorrectq3: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"K"</strong>',
+answers: [
+  {
+    nextId: 'capletters'+shuffledNumbersto[3],
+  },
+],
+},
+
+//4
+['capletters'+shuffledNumbersto[3]]: {
+botPrompt: ' Find the alphabet made with standing and a curved line. ',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['M', 'N', "O","P"]),
+answers: [
+  {
+    answer: 'M',
+    nextId: 'incapscorrectq4',
+  },
+  {
+    answer: 'N',
+    nextId: 'incapscorrectq4',
+  },
+  {
+    answer: "O",
+    nextId: 'incapscorrectq4',
+  },
+  {
+    answer: "P",
+    nextId: 'capscorrectq4',
+  },
+],
+},
+
+capscorrectq4: {
+botPrompt: 'Hurray! <strong>P</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'capletters'+shuffledNumbersto[4],
+  },
+],
+},
+incapscorrectq2: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"P"</strong>',
+answers: [
+  {
+    nextId: 'capletters'+shuffledNumbersto[4],
+  },
+],
+},
+
+//5
+['capletters'+shuffledNumbersto[4]]: {
+botPrompt: ' Which alphabet has slanting, curved and a standing line? ',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['Q', 'R', "S","T"]),
+answers: [
+  {
+    answer: 'Q',
+    nextId: 'incapscorrectq5',
+  },
+  {
+    answer: 'R',
+    nextId: 'capscorrectq5',
+  },
+  {
+    answer: "S",
+    nextId: 'incapscorrectq5',
+  },
+  {
+    answer: "T",
+    nextId: 'incapscorrectq5',
+  },
+],
+},
+
+capscorrectq5: {
+botPrompt: 'Hurray! <strong>R</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'capletters'+shuffledNumbersto[5],
+  },
+],
+},
+incapscorrectq5: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"R"</strong>',
+answers: [
+  {
+    nextId: 'capletters'+shuffledNumbersto[5],
+  },
+],
+},
+
+//6
+['capletters'+shuffledNumbersto[5]]: {
+botPrompt: ' Identify the alphabet formed with curved line.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['U', 'V', "W","X"]),
+answers: [
+  {
+    answer: 'U',
+    nextId: 'capscorrectq6',
+  },
+  {
+    answer: 'V',
+    nextId: 'incapscorrectq6',
+  },
+  {
+    answer: "W",
+    nextId: 'incapscorrectq6',
+  },
+  {
+    answer: "X",
+    nextId: 'incapscorrectq6',
+  },
+],
+},
+
+capscorrectq6: {
+botPrompt: 'Hurray! <strong>U</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'capletters'+shuffledNumbersto[6],
+  },
+],
+},
+incapscorrectq6: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"U"</strong>',
+answers: [
+  {
+    nextId: 'capletters'+shuffledNumbersto[6],
+  },
+],
+},
+
+//7
+['capletters'+shuffledNumbersto[6]]: {
+botPrompt: ' Which alphabet has straight and two curved lines? ',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['Y', 'Z', "A","B"]),
+answers: [
+  {
+    answer: 'Y',
+    nextId: 'incapscorrectq7',
+  },
+  {
+    answer: 'Z',
+    nextId: 'incapscorrectq7',
+  },
+  {
+    answer: "A",
+    nextId: 'incapscorrectq7',
+  },
+  {
+    answer: "B",
+    nextId: 'capscorrectq7',
+  },
+],
+},
+
+capscorrectq7: {
+botPrompt: 'Hurray! <strong>B</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'capletters'+shuffledNumbersto[7],
+  },
+],
+},
+incapscorrectq7: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"B"</strong>',
+answers: [
+  {
+    nextId: 'capletters'+shuffledNumbersto[7],
+  },
+],
+},
+
+
+//8
+['capletters'+shuffledNumbersto[7]]: {
+botPrompt: 'Find the alphabet made with standing line and three sleeping lines.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['C', 'D', "E","F"]),
+answers: [
+  {
+    answer: 'C',
+    nextId: 'incapscorrectq8',
+  },
+  {
+    answer: 'D',
+    nextId: 'incapscorrectq8',
+  },
+  {
+    answer: "E",
+    nextId: 'capscorrectq8',
+  },
+  {
+    answer: "F",
+    nextId: 'incapscorrectq8',
+  },
+],
+},
+
+capscorrectq8: {
+botPrompt: 'Hurray! <strong>E</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'capletters'+shuffledNumbersto[8],
+  },
+],
+},
+incapscorrectq8: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"E"</strong>',
+answers: [
+  {
+    nextId: 'capletters'+shuffledNumbersto[8],
+  },
+],
+},
+
+//9
+['capletters'+shuffledNumbersto[8]]: {
+botPrompt: 'Which alphabet has a standing line?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['G', 'H', "I","J"]),
+answers: [
+  {
+    answer: 'G',
+    nextId: 'incapscorrectq9',
+  },
+  {
+    answer: 'H',
+    nextId: 'incapscorrectq9',
+  },
+  {
+    answer: "I",
+    nextId: 'capscorrectq9',
+  },
+  {
+    answer: "J",
+    nextId: 'incapscorrectq9',
+  },
+],
+},
+
+capscorrectq9: {
+botPrompt: 'Hurray! <strong>I</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'capletters'+shuffledNumbersto[9],
+  },
+],
+},
+incapscorrectq9: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"I"</strong>',
+answers: [
+  {
+    nextId: 'capletters'+shuffledNumbersto[9],
+  },
+],
+},
+
+
+//10
+['capletters'+shuffledNumbersto[9]]: {
+botPrompt: ' Identify the alphabet formed with slanting and two standing lines.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['K', 'L', "M","N"]),
+answers: [
+  {
+    answer: 'K',
+    nextId: 'incapscorrectq10',
+  },
+  {
+    answer: 'L',
+    nextId: 'incapscorrectq10',
+  },
+  {
+    answer: "M",
+    nextId: 'incapscorrectq10',
+  },
+  {
+    answer: "N",
+    nextId: 'capscorrectq10',
+  },
+],
+},
+
+capscorrectq10: {
+botPrompt: 'Hurray! <strong>N</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'capletters'+shuffledNumbersto[10],
+  },
+],
+},
+incapscorrectq10: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"N"</strong>',
+answers: [
+  {
+    nextId: 'capletters'+shuffledNumbersto[10],
+  },
+],
+},
+
+//11
+['capletters'+shuffledNumbersto[10]]: {
+botPrompt: 'Which alphabet is made with two curved lines?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['O', 'P', "Q","R"]),
+answers: [
+  {
+    answer: 'O',
+    nextId: 'capscorrectq11',
+  },
+  {
+    answer: 'P',
+    nextId: 'incapscorrectq11',
+  },
+  {
+    answer: "Q",
+    nextId: 'incapscorrectq11',
+  },
+  {
+    answer: "R",
+    nextId: 'incapscorrectq11',
+  },
+],
+},
+
+capscorrectq11: {
+botPrompt: 'Hurray! <strong>O</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'capletters'+shuffledNumbersto[11],
+  },
+],
+},
+incapscorrectq11: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"O"</strong>',
+answers: [
+  {
+    nextId: 'capletters'+shuffledNumbersto[11],
+  },
+],
+},
+
+//12
+['capletters'+shuffledNumbersto[11]]: {
+botPrompt: ' Find the alphabet that has two slanting lines.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['S', 'T', "U","V"]),
+answers: [
+  {
+    answer: 'S',
+    nextId: 'incapscorrectq12',
+  },
+  {
+    answer: 'T',
+    nextId: 'incapscorrectq12',
+  },
+  {
+    answer: "U",
+    nextId: 'incapscorrectq12',
+  },
+  {
+    answer: "V",
+    nextId: 'capscorrectq12',
+  },
+],
+},
+
+capscorrectq12: {
+botPrompt: 'Hurray! <strong>V</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'capletters'+shuffledNumbersto[12],
+  },
+],
+},
+incapscorrectq12: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"V"</strong>',
+answers: [
+  {
+    nextId: 'capletters'+shuffledNumbersto[12],
+  },
+],
+},
+
+//13
+['capletters'+shuffledNumbersto[12]]: {
+botPrompt: 'Identify the alphabet made with slanting and two sleeping lines.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['W', 'X', "Y","Z"]),
+answers: [
+  {
+    answer: 'W',
+    nextId: 'incapscorrectq13',
+  },
+  {
+    answer: 'X',
+    nextId: 'incapscorrectq13',
+  },
+  {
+    answer: "Y",
+    nextId: 'incapscorrectq13',
+  },
+  {
+    answer: "Z",
+    nextId: 'capscorrectq13',
+  },
+],
+},
+
+capscorrectq13: {
+botPrompt: 'Hurray! <strong>Z</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'capletters'+shuffledNumbersto[13],
+  },
+],
+},
+incapscorrectq13: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Z"</strong>',
+answers: [
+  {
+    nextId: 'capletters'+shuffledNumbersto[13],
+  },
+],
+},
+
+//14
+['capletters'+shuffledNumbersto[13]]: {
+botPrompt: ' Which alphabet is formed with a curved line',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['A', 'B', "C","D"]),
+answers: [
+  {
+    answer: 'A',
+    nextId: 'incapscorrectq14',
+  },
+  {
+    answer: 'B',
+    nextId: 'incapscorrectq14',
+  },
+  {
+    answer: "C",
+    nextId: 'capscorrectq14',
+  },
+  {
+    answer: "D",
+    nextId: 'incapscorrectq14',
+  },
+],
+},
+
+capscorrectq14: {
+botPrompt: 'Hurray! <strong>C</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'capletters'+shuffledNumbersto[14],
+  },
+],
+},
+incapscorrectq14: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"C"</strong>',
+answers: [
+  {
+    nextId: 'capletters'+shuffledNumbersto[14],
+  },
+],
+},
+
+
+//15
+['capletters'+shuffledNumbersto[14]]: {
+botPrompt: ' Find the alphabet that has two straight lines and one sleeping line',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['E', 'F', "G","H"]),
+answers: [
+  {
+    answer: 'E',
+    nextId: 'incapscorrectq15',
+  },
+  {
+    answer: 'F',
+    nextId: 'incapscorrectq15',
+  },
+  {
+    answer: "G",
+    nextId: 'incapscorrectq15',
+  },
+  {
+    answer: "H",
+    nextId: 'capscorrectq15',
+  },
+],
+},
+
+capscorrectq15: {
+botPrompt: 'Hurray! <strong>H</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'capletters'+shuffledNumbersto[15],
+  },
+],
+},
+incapscorrectq15: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"H"</strong>',
+answers: [
+  {
+    nextId: 'capletters'+shuffledNumbersto[15],
+  },
+],
+},
+
+//16
+['capletters'+shuffledNumbersto[15]]: {
+  botPrompt: 'Identify the alphabet made with straight and curved line,',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['I', 'J', "K","L"]),
+  answers: [
+    {
+      answer: 'I',
+      nextId: 'incapscorrectq16',
+    },
+    {
+      answer: 'J',
+      nextId: 'capscorrectq16',
+    },
+    {
+      answer: "K",
+      nextId: 'incapscorrectq16',
+    },
+    {
+      answer: "L",
+      nextId: 'incapscorrectq16',
+    },
+  
+  ],
+},
+capscorrectq16: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>J</strong> 😎',
+  answers: [
+    {
+      nextId: 'capletters'+shuffledNumbersto[16],
+    },
+  ],
+},
+incapscorrectq16: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"J"</strong>',
+  answers: [
+    {
+      nextId: 'capletters'+shuffledNumbersto[16],
+    },
+  ],
+},
+
+//17
+['capletters'+shuffledNumbersto[16]]: {
+botPrompt: 'Which alphabet is formed with two standing and two slanting lines?',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['O', 'N', "M","P"]),
+answers: [
+  {
+    answer: 'O',
+    nextId: 'incapscorrectq17',
+  },
+  {
+    answer: 'N',
+    nextId: 'incapscorrectq17',
+  },
+  {
+    answer: "M",
+    nextId: 'capscorrectq17',
+  },
+  {
+    answer: "P",
+    nextId: 'incapscorrectq17',
+  },
+ 
+],
+},
+capscorrectq17: {
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>M</strong> 😎',
+answers: [
+  {
+    nextId: 'capletters'+shuffledNumbersto[17],
+  },
+],
+},
+incapscorrectq17: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"M"</strong>',
+answers: [
+  {
+    nextId: 'capletters'+shuffledNumbersto[17],
+  },
+],
+},
+
+//18
+['capletters'+shuffledNumbersto[17]]: {
+botPrompt: 'Find the alphabet that has two curved and slanting line. ',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['Q', 'R', "S","T"]),
+answers: [
+  {
+    answer: 'Q',
+    nextId: 'capscorrectq18',
+  },
+  {
+    answer: 'R',
+    nextId: 'incapscorrectq18',
+  },
+  {
+    answer: "S",
+    nextId: 'incapscorrectq18',
+  },
+  {
+    answer: "T",
+    nextId: 'incapscorrectq18',
+  },
+ 
+],
+},
+capscorrectq18: {
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>Q</strong> 😎',
+answers: [
+  {
+    nextId: 'capletters'+shuffledNumbersto[18],
+  },
+],
+},
+incapscorrectq18: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Q"</strong>',
+answers: [
+  {
+    nextId: 'capletters'+shuffledNumbersto[18],
+  },
+],
+},
+
+//19
+['capletters'+shuffledNumbersto[18]]: {
+botPrompt: 'Identify the alphabet made with two standing lines and a curved line. ',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['U', 'V', "W","X"]),
+answers: [
+  {
+    answer: 'U',
+    nextId: 'capscorrectq19',
+  },
+  {
+    answer: 'V',
+    nextId: 'incapscorrectq19',
+  },
+  {
+    answer: "W",
+    nextId: 'incapscorrectq19',
+  },
+  {
+    answer: "X",
+    nextId: 'incapscorrectq19',
+  },
+ 
+],
+},
+capscorrectq19: {
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>U</strong> Answers! 😎',
+answers: [
+  {
+    nextId: 'capletters'+shuffledNumbersto[19],
+  },
+],
+},
+incapscorrectq19: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"U"</strong>',
+answers: [
+  {
+    nextId: 'capletters'+shuffledNumbersto[19],
+  },
+],
+},
+
+//20
+['capletters'+shuffledNumbersto[19]]: {
+botPrompt: 'Which alphabet is formed with one standing and one sleeping line?',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['Y', 'L', "A","B"]),
+answers: [
+  {
+    answer: 'Y',
+    nextId: 'incapscorrectq20',
+  },
+  {
+    answer: 'L',
+    nextId: 'capscorrectq20',
+  },
+  {
+    answer: "AI",
+    nextId: 'incapscorrectq20',
+  },
+  {
+    answer: "B",
+    nextId: 'incapscorrectq20',
+  },
+
+],
+},
+capscorrectq20: {
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>L</strong> 😎',
+answers: [
+  {
+    nextId: 'day85comment',
+  },
+],
+},
+incapscorrectq20: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"L"</strong>',
+answers: [
+  {
+    nextId: 'day85comment',
+  },
+],
+},
+
+//endcapsletter
+
+day85comment: {
+  botPrompt: 'Let`s solve <br> <strong> TRACING SMALL LETTERS  QUESTIONS  QUESTIONS </strong>',
+  answers: [
+          { nextId: 'small_letter'+shuffledNumbersto[0] },
+  ],
+},
+
+//smallletter
+
+
+["small_letter"+shuffledNumbersto[0]]: {
+  botPrompt: ' Which alphabet is made with curved lines?',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['a', 'b', "c","d"]),
+  answers: [
+    {
+      answer: 'a',
+      nextId: 'smallcorrect',
+    },
+    {
+      answer: 'b',
+      nextId: 'insmallcorrect',
+    },
+    {
+      answer: "c",
+      nextId: 'insmallcorrect',
+    },
+    {
+      answer: "d",
+      nextId: 'insmallcorrect',
+    },
+  ],
+},
+smallcorrect: {
+  botPrompt: 'Hurray <strong>a</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'small_letter'+shuffledNumbersto[1],
+    },
+  ],
+},
+insmallcorrect: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"a"</strong>',
+  answers: [
+    {
+      nextId: 'small_letter'+shuffledNumbersto[1],
+    },
+  ],
+},
+
+['small_letter'+shuffledNumbersto[1]]: {
+  botPrompt: 'Identify the alphabet made with curved, and a sleeping line.',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['e', 'f', "g","h"]),
+  answers: [
+    {
+      answer: 'e',
+      nextId: 'insmallcorrectq2',
+    },
+    {
+      answer: 'f',
+      nextId: 'smallcorrectq2',
+    },
+    {
+      answer: "g",
+      nextId: 'insmallcorrectq2',
+    },
+    {
+      answer: "h",
+      nextId: 'insmallcorrectq2',
+    },
+  ],
+},
+
+smallcorrectq2: {
+  botPrompt: 'Hurray! <strong>f</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'small_letter'+shuffledNumbersto[2],
+    },
+  ],
+},
+insmallcorrectq2: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"f"</strong>',
+  answers: [
+    {
+      nextId: 'small_letter'+shuffledNumbersto[2],
+    },
+  ],
+},
+
+//3
+['small_letter'+shuffledNumbersto[2]]: {
+botPrompt: "Which alphabet is formed with two curved lines?",
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['i', 'j', "o","k"]),
+answers: [
+  {
+    answer: 'i',
+    nextId: 'insmallcorrectq3',
+  },
+  {
+    answer: 'j',
+    nextId: 'insmallcorrectq3',
+  },
+  {
+    answer: "o",
+    nextId: 'smallcorrectq3',
+  },
+  {
+    answer: "k",
+    nextId: 'insmallcorrectq3',
+  },
+],
+},
+
+smallcorrectq3: {
+botPrompt: 'Hurray! <strong>o</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'small_letter'+shuffledNumbersto[3],
+  },
+],
+},
+insmallcorrectq3: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"o"</strong>',
+answers: [
+  {
+    nextId: 'small_letter'+shuffledNumbersto[3],
+  },
+],
+},
+
+//4
+['small_letter'+shuffledNumbersto[3]]: {
+botPrompt: ' Find the alphabet made with standing and a curved line. ',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['m', 'n', "o","p"]),
+answers: [
+  {
+    answer: 'm',
+    nextId: 'insmallcorrectq4',
+  },
+  {
+    answer: 'n',
+    nextId: 'insmallcorrectq4',
+  },
+  {
+    answer: "o",
+    nextId: 'insmallcorrectq4',
+  },
+  {
+    answer: "p",
+    nextId: 'smallcorrectq4',
+  },
+],
+},
+
+smallcorrectq4: {
+botPrompt: 'Hurray! <strong>p</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'small_letter'+shuffledNumbersto[4],
+  },
+],
+},
+insmallcorrectq2: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"p"</strong>',
+answers: [
+  {
+    nextId: 'small_letter'+shuffledNumbersto[4],
+  },
+],
+},
+
+//5
+['small_letter'+shuffledNumbersto[4]]: {
+botPrompt: ' Which alphabet has both curved line and a straight line ',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['q', 'o', "s","t"]),
+answers: [
+  {
+    answer: 'q',
+    nextId: 'smallcorrectq5',
+  },
+  {
+    answer: 'o',
+    nextId: 'insmallcorrectq5',
+  },
+  {
+    answer: "s",
+    nextId: 'insmallcorrectq5',
+  },
+  {
+    answer: "t",
+    nextId: 'insmallcorrectq5',
+  },
+],
+},
+
+smallcorrectq5: {
+botPrompt: 'Hurray! <strong>q</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'small_letter'+shuffledNumbersto[5],
+  },
+],
+},
+insmallcorrectq5: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"q"</strong>',
+answers: [
+  {
+    nextId: 'small_letter'+shuffledNumbersto[5],
+  },
+],
+},
+
+//6
+['small_letter'+shuffledNumbersto[5]]: {
+botPrompt: ' Identify the alphabet formed with curved line.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['u', 'v', "w","x"]),
+answers: [
+  {
+    answer: 'u',
+    nextId: 'smallcorrectq6',
+  },
+  {
+    answer: 'v',
+    nextId: 'insmallcorrectq6',
+  },
+  {
+    answer: "w",
+    nextId: 'insmallcorrectq6',
+  },
+  {
+    answer: "x",
+    nextId: 'insmallcorrectq6',
+  },
+],
+},
+
+smallcorrectq6: {
+botPrompt: 'Hurray! <strong>u</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'small_letter'+shuffledNumbersto[6],
+  },
+],
+},
+insmallcorrectq6: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"u"</strong>',
+answers: [
+  {
+    nextId: 'small_letter'+shuffledNumbersto[6],
+  },
+],
+},
+
+//7
+['small_letter'+shuffledNumbersto[6]]: {
+botPrompt: ' Which alphabet has straight and one curve lines? ',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['y', 'z', "a","b"]),
+answers: [
+  {
+    answer: 'y',
+    nextId: 'insmallcorrectq7',
+  },
+  {
+    answer: 'z',
+    nextId: 'insmallcorrectq7',
+  },
+  {
+    answer: "a",
+    nextId: 'insmallcorrectq7',
+  },
+  {
+    answer: "b",
+    nextId: 'smallcorrectq7',
+  },
+],
+},
+
+smallcorrectq7: {
+botPrompt: 'Hurray! <strong>b</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'small_letter'+shuffledNumbersto[7],
+  },
+],
+},
+insmallcorrectq7: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"b"</strong>',
+answers: [
+  {
+    nextId: 'small_letter'+shuffledNumbersto[7],
+  },
+],
+},
+
+
+//8
+['small_letter'+shuffledNumbersto[7]]: {
+botPrompt: 'Find the alphabet made with standing line and a curved line.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['c', 'd', "e","f"]),
+answers: [
+  {
+    answer: 'c',
+    nextId: 'insmallcorrectq8',
+  },
+  {
+    answer: 'd',
+    nextId: 'smallcorrectq8',
+  },
+  {
+    answer: "e",
+    nextId: 'insmallcorrectq8',
+  },
+  {
+    answer: "f",
+    nextId: 'insmallcorrectq8',
+  },
+],
+},
+
+smallcorrectq8: {
+botPrompt: 'Hurray! <strong>d</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'small_letter'+shuffledNumbersto[8],
+  },
+],
+},
+insmallcorrectq8: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"d"</strong>',
+answers: [
+  {
+    nextId: 'small_letter'+shuffledNumbersto[8],
+  },
+],
+},
+
+//9
+['small_letter'+shuffledNumbersto[8]]: {
+botPrompt: 'Which alphabet has a standing line and a dot',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['g', 'h', "i","j"]),
+answers: [
+  {
+    answer: 'g',
+    nextId: 'insmallcorrectq9',
+  },
+  {
+    answer: 'h',
+    nextId: 'insmallcorrectq9',
+  },
+  {
+    answer: "i",
+    nextId: 'smallcorrectq9',
+  },
+  {
+    answer: "j",
+    nextId: 'insmallcorrectq9',
+  },
+],
+},
+
+smallcorrectq9: {
+botPrompt: 'Hurray! <strong>i</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'small_letter'+shuffledNumbersto[9],
+  },
+],
+},
+insmallcorrectq9: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"i"</strong>',
+answers: [
+  {
+    nextId: 'small_letter'+shuffledNumbersto[9],
+  },
+],
+},
+
+
+//10
+['small_letter'+shuffledNumbersto[9]]: {
+botPrompt: ' Identify the alphabet formed with one standing and one curved lines',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['k', 'l', "m","n"]),
+answers: [
+  {
+    answer: 'k',
+    nextId: 'insmallcorrectq10',
+  },
+  {
+    answer: 'l',
+    nextId: 'insmallcorrectq10',
+  },
+  {
+    answer: "m",
+    nextId: 'insmallcorrectq10',
+  },
+  {
+    answer: "n",
+    nextId: 'smallcorrectq10',
+  },
+],
+},
+
+smallcorrectq10: {
+botPrompt: 'Hurray! <strong>n</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'small_letter'+shuffledNumbersto[10],
+  },
+],
+},
+insmallcorrectq10: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"n"</strong>',
+answers: [
+  {
+    nextId: 'small_letter'+shuffledNumbersto[10],
+  },
+],
+},
+
+//11
+['small_letter'+shuffledNumbersto[10]]: {
+botPrompt: 'Which alphabet is made with two curved lines?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['o', 'p', "q","r"]),
+answers: [
+  {
+    answer: 'o',
+    nextId: 'smallcorrectq11',
+  },
+  {
+    answer: 'p',
+    nextId: 'insmallcorrectq11',
+  },
+  {
+    answer: "q",
+    nextId: 'insmallcorrectq11',
+  },
+  {
+    answer: "r",
+    nextId: 'insmallcorrectq11',
+  },
+],
+},
+
+smallcorrectq11: {
+botPrompt: 'Hurray! <strong>o</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'small_letter'+shuffledNumbersto[11],
+  },
+],
+},
+insmallcorrectq11: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"o"</strong>',
+answers: [
+  {
+    nextId: 'small_letter'+shuffledNumbersto[11],
+  },
+],
+},
+
+//12
+['small_letter'+shuffledNumbersto[11]]: {
+botPrompt: ' Find the alphabet that has two slanting lines.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['s', 't', "u","v"]),
+answers: [
+  {
+    answer: 's',
+    nextId: 'insmallcorrectq12',
+  },
+  {
+    answer: 't',
+    nextId: 'insmallcorrectq12',
+  },
+  {
+    answer: "u",
+    nextId: 'insmallcorrectq12',
+  },
+  {
+    answer: "v",
+    nextId: 'smallcorrectq12',
+  },
+],
+},
+
+smallcorrectq12: {
+botPrompt: 'Hurray! <strong>v</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'small_letter'+shuffledNumbersto[12],
+  },
+],
+},
+insmallcorrectq12: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"v"</strong>',
+answers: [
+  {
+    nextId: 'small_letter'+shuffledNumbersto[12],
+  },
+],
+},
+
+//13
+['small_letter'+shuffledNumbersto[12]]: {
+botPrompt: 'Identify the alphabet made with slanting and two sleeping lines.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['w', 'x', "y","z"]),
+answers: [
+  {
+    answer: 'w',
+    nextId: 'insmallcorrectq13',
+  },
+  {
+    answer: 'x',
+    nextId: 'insmallcorrectq13',
+  },
+  {
+    answer: "y",
+    nextId: 'insmallcorrectq13',
+  },
+  {
+    answer: "z",
+    nextId: 'smallcorrectq13',
+  },
+],
+},
+
+smallcorrectq13: {
+botPrompt: 'Hurray! <strong>z</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'small_letter'+shuffledNumbersto[13],
+  },
+],
+},
+insmallcorrectq13: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"z"</strong>',
+answers: [
+  {
+    nextId: 'small_letter'+shuffledNumbersto[13],
+  },
+],
+},
+
+//14
+['small_letter'+shuffledNumbersto[13]]: {
+botPrompt: ' Which alphabet is formed with a curved line',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['a', 'b', "c","d"]),
+answers: [
+  {
+    answer: 'a',
+    nextId: 'insmallcorrectq14',
+  },
+  {
+    answer: 'b',
+    nextId: 'insmallcorrectq14',
+  },
+  {
+    answer: "c",
+    nextId: 'smallcorrectq14',
+  },
+  {
+    answer: "d",
+    nextId: 'insmallcorrectq14',
+  },
+],
+},
+
+smallcorrectq14: {
+botPrompt: 'Hurray! <strong>c</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'small_letter'+shuffledNumbersto[14],
+  },
+],
+},
+insmallcorrectq14: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"c"</strong>',
+answers: [
+  {
+    nextId: 'small_letter'+shuffledNumbersto[14],
+  },
+],
+},
+
+
+//15
+['small_letter'+shuffledNumbersto[14]]: {
+botPrompt: 'Find the alphabet that has one straight line and one curved line',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['e', 'f', "g","h"]),
+answers: [
+  {
+    answer: 'e',
+    nextId: 'insmallcorrectq15',
+  },
+  {
+    answer: 'f',
+    nextId: 'insmallcorrectq15',
+  },
+  {
+    answer: "g",
+    nextId: 'insmallcorrectq15',
+  },
+  {
+    answer: "h",
+    nextId: 'smallcorrectq15',
+  },
+],
+},
+
+smallcorrectq15: {
+botPrompt: 'Hurray! <strong>h</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'small_letter'+shuffledNumbersto[15],
+  },
+],
+},
+insmallcorrectq15: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"h"</strong>',
+answers: [
+  {
+    nextId: 'small_letter'+shuffledNumbersto[15],
+  },
+],
+},
+
+//16
+['small_letter'+shuffledNumbersto[15]]: {
+  botPrompt: 'Identify the alphabet made with a curved line and a dot.',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['i', 'j', "k","l"]),
+  answers: [
+    {
+      answer: 'i',
+      nextId: 'insmallcorrectq16',
+    },
+    {
+      answer: 'j',
+      nextId: 'smallcorrectq16',
+    },
+    {
+      answer: "k",
+      nextId: 'insmallcorrectq16',
+    },
+    {
+      answer: "l",
+      nextId: 'insmallcorrectq16',
+    },
+  
+  ],
+},
+smallcorrectq16: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>j</strong> 😎',
+  answers: [
+    {
+      nextId: 'small_letter'+shuffledNumbersto[16],
+    },
+  ],
+},
+insmallcorrectq16: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"j"</strong>',
+  answers: [
+    {
+      nextId: 'small_letter'+shuffledNumbersto[16],
+    },
+  ],
+},
+
+//17
+['small_letter'+shuffledNumbersto[16]]: {
+botPrompt: 'Which alphabet is formed with three standing and two curved lines.',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['o', 'n', "m","p"]),
+answers: [
+  {
+    answer: 'o',
+    nextId: 'insmallcorrectq17',
+  },
+  {
+    answer: 'n',
+    nextId: 'insmallcorrectq17',
+  },
+  {
+    answer: "m",
+    nextId: 'smallcorrectq17',
+  },
+  {
+    answer: "p",
+    nextId: 'insmallcorrectq17',
+  },
+ 
+],
+},
+smallcorrectq17: {
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>m</strong> 😎',
+answers: [
+  {
+    nextId: 'small_letter'+shuffledNumbersto[17],
+  },
+],
+},
+insmallcorrectq17: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"m"</strong>',
+answers: [
+  {
+    nextId: 'small_letter'+shuffledNumbersto[17],
+  },
+],
+},
+
+//18
+['small_letter'+shuffledNumbersto[17]]: {
+botPrompt: 'Find the alphabet that has a curved and straight line. ',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['o', 'r', "s","v"]),
+answers: [
+  {
+    answer: 'o',
+    nextId: 'insmallcorrectq18',
+  },
+  {
+    answer: 'r',
+    nextId: 'smallcorrectq18',
+  },
+  {
+    answer: "s",
+    nextId: 'insmallcorrectq18',
+  },
+  {
+    answer: "v",
+    nextId: 'insmallcorrectq18',
+  },
+ 
+],
+},
+smallcorrectq18: {
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>r</strong> 😎',
+answers: [
+  {
+    nextId: 'small_letter'+shuffledNumbersto[18],
+  },
+],
+},
+insmallcorrectq18: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"r"</strong>',
+answers: [
+  {
+    nextId: 'small_letter'+shuffledNumbersto[18],
+  },
+],
+},
+
+//19
+['small_letter'+shuffledNumbersto[18]]: {
+botPrompt: 'Identify the alphabet made with two slanting lines ',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['u', 'a', "w","x"]),
+answers: [
+  {
+    answer: 'u',
+    nextId: 'insmallcorrectq19',
+  },
+  {
+    answer: 'a',
+    nextId: 'insmallcorrectq19',
+  },
+  {
+    answer: "w",
+    nextId: 'insmallcorrectq19',
+  },
+  {
+    answer: "x",
+    nextId: 'smallcorrectq19',
+  },
+ 
+],
+},
+smallcorrectq19: {
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>x</strong> Answers! 😎',
+answers: [
+  {
+    nextId: 'small_letter'+shuffledNumbersto[19],
+  },
+],
+},
+insmallcorrectq19: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"x"</strong>',
+answers: [
+  {
+    nextId: 'small_letter'+shuffledNumbersto[19],
+  },
+],
+},
+
+//20
+['small_letter'+shuffledNumbersto[19]]: {
+botPrompt: 'Which alphabet is formed with one standing line?',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['y', 'l', "a","b"]),
+answers: [
+  {
+    answer: 'y',
+    nextId: 'insmallcorrectq20',
+  },
+  {
+    answer: 'l',
+    nextId: 'smallcorrectq20',
+  },
+  {
+    answer: "AI",
+    nextId: 'insmallcorrectq20',
+  },
+  {
+    answer: "b",
+    nextId: 'insmallcorrectq20',
+  },
+
+],
+},
+smallcorrectq20: {
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>l</strong> 😎',
+answers: [
+  {
+    nextId: 'wishtocontinue8',
+  },
+],
+},
+insmallcorrectq20: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"l"</strong>',
+answers: [
+  {
+    nextId: 'wishtocontinue8',
+  },
+],
+},
+
+
+
+//endsmallletter
+
+
+
+
+wishtocontinue8: {
+  botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
+  input: selectField(['Yes!', 'No!']),
+  answers: [
+      {
+        answer: 'Yes!',
         nextId: 'vowelsareback',
       },
       {
@@ -637,13 +2498,8 @@ wishtocontinue7: {
 },
 
 
-
-
-
-
-
   vowelsareback: {
-    botPrompt: "Vowels are Back",
+    botPrompt: "<strong> Day 11 : </strong> Vowels are Back",
     answers: [
             { nextId: 'vowels_prompt1' },
     ],
@@ -1522,6 +3378,7 @@ incorrectq19: {
     },
   ],
 },
+
 //20
 ['vowels_question'+shuffledNumbers[19]]: {
   botPrompt: 'Fill in the missing vowel in "b_tt_r":',
@@ -1566,6 +3423,7 @@ incorrectq20: {
     },
   ],
 },
+
 //21
 ['vowels_question'+shuffledNumbers[20]]: {
   botPrompt: ' Fill in the missing vowel in "h_g":',
