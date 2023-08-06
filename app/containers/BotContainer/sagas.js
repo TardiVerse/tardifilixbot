@@ -179,9 +179,9 @@ export function* rootSaga() {
 
 function botThinkingTime(message) {
   if (!message) {
-    return 1000;
+    return 2000;
   }
-  let time = 600;
+  let time = 1000;
   if (window.location.href.indexOf('localhost') > -1) {
     time = 0;
   }
@@ -189,11 +189,11 @@ function botThinkingTime(message) {
   if (messageLength < 100) {
     time *= 2;
   } else if (messageLength > 100 && messageLength < 200) {
-    time *= 2;
+    time *= 3;
   } else if (messageLength > 200 && messageLength < 300) {
-    time *= 2;
+    time *= 3;
   } else if (messageLength > 300) {
-    time *= 2;
+    time *= 4;
   }
   return time;
 }
