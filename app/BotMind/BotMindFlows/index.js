@@ -450,7 +450,7 @@ day41link: {
 day41comment: {
   botPrompt: 'Now it’s time for some dance',
   answers: [
-          { nextId: 'day41link' },
+          { nextId: 'day42link' },
   ],
 },
 
@@ -470,6 +470,101 @@ wishtocontinue4: {
   answers: [
       {
         answer: 'Yes!',
+        nextId: 'day5',
+      },
+      {
+        answer: 'No!',
+        nextId: 'endConv',
+      },
+  ],
+},
+
+
+//day5
+day5: {
+  botPrompt: 'Let us learn how to keep our classroom a happy, safe and interactive space . <br> A  song sung together plays an important role in settling the children down.',
+  answers: [
+          { nextId: 'day5comment' },
+  ],
+},
+day5comment: {
+  botPrompt: '<strong>O BE CAREFUL LITTLE EYES </strong>',
+  answers: [
+          { nextId: 'day5link' },
+  ],
+},
+day5link: {
+  botPrompt: 'https://youtu.be/-EpJ7igt-0E',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'wishtocontinue5',
+    },
+  ],
+},
+
+wishtocontinue5: {
+  botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
+  input: selectField(['Yes!', 'No!']),
+  answers: [
+      {
+        answer: 'Yes!',
+        nextId: 'day6',
+      },
+      {
+        answer: 'No!',
+        nextId: 'endConv',
+      },
+  ],
+},
+
+
+//day6
+day6: {
+  botPrompt: 'Now, let`s see how we can make a classroom quiet really fast.',
+  answers: [
+          { nextId: 'day6comment' },
+  ],
+},
+day6comment: {
+  botPrompt: 'Time Out : ',
+  answers: [
+          { nextId: 'day6link' },
+  ],
+},
+day6link: {
+  botPrompt: 'https://youtu.be/BRPZNYerJdM',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day61comment',
+    },
+  ],
+},
+day61comment: {
+  botPrompt: '1 . 2.. 3... ',
+  answers: [
+          { nextId: 'day61link' },
+  ],
+},
+
+day61link: {
+  botPrompt: 'https://youtu.be/Iq4PVbWRN2k',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'wishtocontinue6',
+    },
+  ],
+},
+
+
+wishtocontinue6: {
+  botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
+  input: selectField(['Yes!', 'No!']),
+  answers: [
+      {
+        answer: 'Yes!',
         nextId: 'vowelsareback',
       },
       {
@@ -478,6 +573,10 @@ wishtocontinue4: {
       },
   ],
 },
+
+
+
+
 
 
 
