@@ -575,7 +575,66 @@ wishtocontinue6: {
 },
 
 
+//day7
+day7: {
+  botPrompt: 'ToDay is a Quiz Day.',
+  answers: [
+          { nextId: 'day7comment' },
+  ],
+},
+day7comment: {
+  botPrompt: '<strong> START </strong>',
+  answers: [
+          { nextId: 'day71comment' },
+  ],
+},
+day71comment: {
+  botPrompt: 'A question-answer session adds energy to the class. Here we go…',
+  answers: [
+          { nextId: 'day7link' },
+  ],
+},
 
+day7link: {
+  botPrompt: 'https://youtu.be/HM5AgkSwUxc',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day72comment',
+    },
+  ],
+},
+day72comment: {
+  botPrompt: 'Now let us learn the Alphabet song.',
+  answers: [
+          { nextId: 'day41link' },
+  ],
+},
+
+day71link: {
+  botPrompt: 'https://youtu.be/OXtOEGx5MB0',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'wishtocontinue7',
+    },
+  ],
+},
+
+wishtocontinue7: {
+  botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
+  input: selectField(['Yes!', 'No!']),
+  answers: [
+      {
+        answer: 'Yes!',
+        nextId: 'vowelsareback',
+      },
+      {
+        answer: 'No!',
+        nextId: 'endConv',
+      },
+  ],
+},
 
 
 
