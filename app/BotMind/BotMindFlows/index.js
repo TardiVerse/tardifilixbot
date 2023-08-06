@@ -257,7 +257,7 @@ tfidgenrationtext: {
   ],
 },
 
-
+//day1
 
 day1: {
   botPrompt: 'Gross Motor Skill <br>  Gross Motor skills develop the bigger muscles of a child’s body helping them with their daily activities including academics. <br> Watch the video to understand how these activities can be done inside classrooms:   ',
@@ -281,7 +281,190 @@ day1comment: {
   ],
 },
 
+
 wishtocontinue: {
+  botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
+  input: selectField(['Yes!', 'No!']),
+  answers: [
+      {
+        answer: 'Yes!',
+        nextId: 'day2',
+      },
+      {
+        answer: 'No!',
+        nextId: 'endConv',
+      },
+  ],
+},
+
+
+
+
+
+//day2
+day2: {
+  botPrompt: 'Fine motor skill activities involve use of the small muscles which control the hand, fingers and thumb. <br> Here is a video which helps in developing fine muscles. <br> Play Dough activity:',
+  answers: [
+          { nextId: 'day2link' },
+  ],
+},
+day2link: {
+  botPrompt: 'https://youtu.be/7CpiCbBsh5A',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day2comment',
+    },
+  ],
+},
+day2comment: {
+  botPrompt: 'Another activity to develop this skill is Rice colouring ',
+  answers: [
+          { nextId: 'day21link' },
+  ],
+},
+
+day21link: {
+  botPrompt: 'https://youtu.be/XHzyKBWx9VI',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day22comment',
+    },
+  ],
+},
+day22comment: {
+  botPrompt: 'Here we can see our children having fun while doing this activities',
+  answers: [
+          { nextId: 'day21link' },
+  ],
+},
+day21link: {
+  botPrompt: 'https://youtu.be/XHzyKBWx9VI',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'wishtocontinue2',
+    },
+  ],
+},
+
+wishtocontinue2: {
+  botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
+  input: selectField(['Yes!', 'No!']),
+  answers: [
+      {
+        answer: 'Yes!',
+        nextId: 'day3',
+      },
+      {
+        answer: 'No!',
+        nextId: 'endConv',
+      },
+  ],
+},
+
+
+//day3
+day3: {
+  botPrompt: 'Lines help in developing a child`s fine motor skills and provide them with good handwriting skills. <br> Let us begin by learning different lines and doing activity related to it',
+  answers: [
+          { nextId: 'day3link' },
+  ],
+},
+day3link: {
+  botPrompt: 'https://youtu.be/WSj93xe2U40',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day3comment',
+    },
+  ],
+},
+day3comment: {
+  botPrompt: 'Lines can also be demonstrated through Gross motor skill activity',
+  answers: [
+          { nextId: 'day31link' },
+  ],
+},
+
+day31link: {
+  botPrompt: 'https://youtu.be/2vEeUFFIYQE',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'wishtocontinue3',
+    },
+  ],
+},
+
+wishtocontinue3: {
+  botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
+  input: selectField(['Yes!', 'No!']),
+  answers: [
+      {
+        answer: 'Yes!',
+        nextId: 'day4',
+      },
+      {
+        answer: 'No!',
+        nextId: 'endConv',
+      },
+  ],
+},
+
+
+
+//day4
+day4: {
+  botPrompt: 'To understand directions, children need a lot of practice. <br> So, let`s see how we can make learning directions fun. This is a gross motor skill activity.',
+  answers: [
+          { nextId: 'day4link' },
+  ],
+},
+day4link: {
+  botPrompt: 'https://youtu.be/PKeJkjv-otY',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day4comment',
+    },
+  ],
+},
+day4comment: {
+  botPrompt: 'Let`s look at another video where directions can be learnt while playing.',
+  answers: [
+          { nextId: 'day41link' },
+  ],
+},
+
+day41link: {
+  botPrompt: 'https://youtu.be/xE3IFDP85nk',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day41comment',
+    },
+  ],
+},
+day41comment: {
+  botPrompt: 'Now it’s time for some dance',
+  answers: [
+          { nextId: 'day41link' },
+  ],
+},
+
+day42link: {
+  botPrompt: 'https://youtu.be/z8ZCnErO34o',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'wishtocontinue4',
+    },
+  ],
+},
+
+wishtocontinue4: {
   botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
   input: selectField(['Yes!', 'No!']),
   answers: [
@@ -296,15 +479,8 @@ wishtocontinue: {
   ],
 },
 
-// day1linklast: {
-//   botPrompt: 'https://www.youtube.com/watch?v=AAqY8K1DeKc',
-//   type: RTypes.LINK,
-//   answers: [
-//     {
-//       nextId: 'vowelsareback',
-//     },
-//   ],
-// },
+
+
 
 
 
