@@ -2482,13 +2482,18 @@ answers: [
 
 
 
+
+
+
+
+
 wishtocontinue8: {
   botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
   input: selectField(['Yes!', 'No!']),
   answers: [
       {
         answer: 'Yes!',
-        nextId: 'vowelsareback',
+        nextId: 'day9',
       },
       {
         answer: 'No!',
@@ -2497,6 +2502,59 @@ wishtocontinue8: {
   ],
 },
 
+//day9
+day9: {
+  botPrompt: ' <strong> Day 9 : </strong> Learn your vowels through a fun song and dance',
+  answers: [
+          { nextId: 'day9link' },
+  ],
+},
+day9link: {
+  botPrompt: 'https://youtu.be/hlNn2EGRaA4',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day9comment',
+    },
+  ],
+},
+day9comment: {
+  botPrompt: 'Here are some activities to make learning vowels interesting.',
+  answers: [
+          { nextId: 'day91link' },
+  ],
+},
+
+day91link: {
+  botPrompt: 'https://youtu.be/XRwjnD1DB1U',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'wishtocontinue9',
+    },
+  ],
+},
+
+wishtocontinue9: {
+  botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
+  input: selectField(['Yes!', 'No!']),
+  answers: [
+      {
+        answer: 'Yes!',
+        nextId: 'day4',
+      },
+      {
+        answer: 'No!',
+        nextId: 'endConv',
+      },
+  ],
+},
+
+
+//day10
+
+
+//day11
 
   vowelsareback: {
     botPrompt: "<strong> Day 11 : </strong> Vowels are Back",
@@ -4029,22 +4087,90 @@ incorrectq33: {
 },
 correctq34: {
   botPrompt: 'You Have Selected Correct Anwser 🎉! H<strong>U</strong>NGRY 😎',
-  input: endOfConversation(),
+ 
   answers: [
     {
-      nextId: 'correctq34',
+      nextId: 'day12',
     },
   ],
 },
 incorrectq34: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"U"</strong>',
-  input: endOfConversation(),
+
   answers: [
     {
-      nextId: 'incorrectq34',
+      nextId: 'day12',
     },
   ],
 },
+
+//day12
+
+day12: {
+  botPrompt: '<strong> Day 12 : </strong> Let`s play and jump to understand Ascending and descending order.',
+  answers: [
+          { nextId: 'day12link' },
+  ],
+},
+
+day12link: {
+  botPrompt: 'https://youtu.be/sS45c0o-gPI',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day121link',
+    },
+  ],
+},
+
+day121link: {
+  botPrompt: 'https://youtu.be/ipypG2rNQcU',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day122comment',
+    },
+  ],
+},
+day122comment: {
+  botPrompt: 'Here`s the page from the book',
+  answers: [
+          { nextId: 'day123link' },
+  ],
+},
+day123link: {
+  botPrompt: 'https://drive.google.com/file/d/1XDt31gFusGyBB7m5ZDskmWXzZof76o23/view?usp=sharing',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'wishtocontinue12',
+    },
+  ],
+},
+
+wishtocontinue12: {
+  botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
+  input: selectField(['Yes!', 'No!']),
+  answers: [
+      {
+        answer: 'Yes!',
+        nextId: 'endConv',
+      },
+      {
+        answer: 'No!',
+        nextId: 'endConv',
+      },
+  ],
+},
+
+
+
+
+
+
+
+
+
 
 endConv: {
   botPrompt: 'Thank you Will Meet you tomorrow ',
