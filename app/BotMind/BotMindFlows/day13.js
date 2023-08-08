@@ -434,7 +434,7 @@ type: RTypes.TRANSFORMED_TEXT,
 
 input: selectField(['s, m, l', 'o, m, l', "s, m, i","s, m, e"]),
 answers: [
-  s, m, l
+{
     answer: 's, m, l',
     nextId: 'consonantscorrectq11',
   },
