@@ -189,11 +189,11 @@ function botThinkingTime(message) {
   if (messageLength < 100) {
     time *= 2;
   } else if (messageLength > 100 && messageLength < 200) {
-    time *= 3;
+    time *= 2;
   } else if (messageLength > 200 && messageLength < 300) {
-    time *= 3;
+    time *= 2;
   } else if (messageLength > 300) {
-    time *= 4;
+    time *= 2;
   }
   return time;
 }

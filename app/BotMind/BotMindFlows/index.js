@@ -4128,7 +4128,7 @@ correctq34: {
  
   answers: [
     {
-      nextId: 'day12',
+      nextId: 'wishtocontinue11',
     },
   ],
 },
@@ -4137,8 +4137,23 @@ incorrectq34: {
 
   answers: [
     {
-      nextId: 'day12',
+      nextId: 'wishtocontinue11',
     },
+  ],
+},
+
+wishtocontinue11: {
+  botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
+  input: selectField(['Yes!', 'No!']),
+  answers: [
+      {
+        answer: 'Yes!',
+        nextId: 'day12',
+      },
+      {
+        answer: 'No!',
+        nextId: 'endConv',
+      },
   ],
 },
 
