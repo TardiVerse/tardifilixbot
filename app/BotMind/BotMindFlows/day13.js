@@ -651,11 +651,11 @@ answers: [
   answers: [
     {
       answer: 'l, p, h, n, t',
-      nextId: 'inconsonantscorrectq16',
+      nextId: 'consonantscorrectq16',
     },
     {
       answer: 'l, p, h, n, e',
-      nextId: 'consonantscorrectq16',
+      nextId: 'inconsonantscorrectq16',
     },
     {
       answer: "l, p, h, n, w",
@@ -898,10 +898,10 @@ answers: [
 ['consonants'+shuffledNumbersto[21]]: {
   botPrompt: 'Identify the consonants in "ocean".?',
   type: RTypes.TRANSFORMED_TEXT,
-  input: selectField(['c, n.a', 'c, n', "c, n,e","c,n,o"]),
+  input: selectField(['c, n,a', 'c, n', "c, n,e","c,n,o"]),
   answers: [
     {
-      answer: 'c, n.a',
+      answer: 'c, n,a',
       nextId: 'inconsonantscorrectq22',
     },
     {
