@@ -33,6 +33,10 @@ const numbers = Array.from({ length: 34 }, (_, i) => i + 1);
 const shuffledNumbers = shuffleArray(numbers);
 
 
+
+
+console.log("jumble",shuffledNumbers);
+
 function shuffleArrayto(array) {
   const shuffledArrayto = array.slice();
   for (let i = shuffledArrayto.length - 1; i > 0; i--) {
@@ -76,6 +80,8 @@ const questions = {
       },
     ],
   },
+
+
   myPurpose: {
     botPrompt: 'This course was designed by the <strong>EFA</strong> Curriculum Team  aimed at eradicating learning lapse in children.',
     answers: [
@@ -758,7 +764,6 @@ day84comment: {
 ["capletters"+shuffledNumbersto[0]]: {
   botPrompt: ' Which alphabet is made with 2 slanting lines and a sleeping  line? ',
   type: RTypes.TRANSFORMED_TEXT,
-
   input: selectField(['A', 'B', "C","D"]),
   answers: [
     {
@@ -2509,6 +2514,7 @@ day9: {
           { nextId: 'day9link' },
   ],
 },
+
 day9link: {
   botPrompt: 'https://youtu.be/hlNn2EGRaA4',
   type: RTypes.LINK,
@@ -2541,7 +2547,7 @@ wishtocontinue9: {
   answers: [
       {
         answer: 'Yes!',
-        nextId: 'day4',
+        nextId: 'vowelsareback',
       },
       {
         answer: 'No!',
