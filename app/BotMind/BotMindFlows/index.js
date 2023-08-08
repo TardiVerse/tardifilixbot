@@ -246,7 +246,7 @@ chooseclass: {
   varName: 'userName',
   input: tagsField(['Pre-kG','L.K.G','U.K.G','CLASS I','CLASS II', 'CLASS III','CLASS IV','CLASS V','CLASS VI','CLASS VII','CLASS VIII','CLASS IX','CLASS X']),
   answers: [
-          { nextId: 'chooseapple' },
+          { nextId: 'tfidgenration' },
   ],
 },
 
