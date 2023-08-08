@@ -345,7 +345,7 @@ answers: [
 botPrompt: 'What are the consonants in "basket"?',
 type: RTypes.TRANSFORMED_TEXT,
 
-input: selectField(['b, s, k, a', 'b, s, k, e', "b, s, k, t","J"]),
+input: selectField(['b, s, k, a', 'b, s, k, e', "b, s, k, t","b, s, k, o"]),
 answers: [
   {
     answer: 'b, s, k, a',
