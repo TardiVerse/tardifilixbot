@@ -46,12 +46,44 @@ function shuffleArrayto(array) {
   return shuffledArrayto;
 }
 
-// Create an array containing numbers from 1 to 40
+// Create an array containing numbers from 1 to 20
 const numbersto = Array.from({ length: 20 }, (_, i) => i + 1);
 
 // Shuffle the array
 const shuffledNumbersto = shuffleArrayto(numbersto);
 
+//shufflenummber30
+function shuffleArraythree(array) {
+  const shuffledArraythree = array.slice();
+  for (let i = shuffledArraythree.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffledArraythree[i], shuffledArraythree[j]] = [shuffledArraythree[j], shuffledArraythree[i]];
+  }
+  return shuffledArraythree;
+}
+
+// Create an array containing numbers from 1 to 30
+const numbersthree = Array.from({ length: 30 }, (_, i) => i + 1);
+
+// Shuffle the array
+const shuffledNumbersthree = shuffleArraythree(numbersthree);
+
+
+//shufflenummber25
+function shuffleArraytwofive(array) {
+  const shuffledArraytwofive = array.slice();
+  for (let i = shuffledArraytwofive.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffledArraytwofive[i], shuffledArraytwofive[j]] = [shuffledArraytwofive[j], shuffledArraytwofive[i]];
+  }
+  return shuffledArraytwofive;
+}
+
+// Create an array containing numbers from 1 to 25
+const numberstwofive = Array.from({ length: 25 }, (_, i) => i + 1);
+
+// Shuffle the array
+const shuffledNumberstwofive = shuffleArraytwofive(numberstwofive);
 
 
 
@@ -214,7 +246,7 @@ chooseclass: {
   varName: 'userName',
   input: tagsField(['Pre-kG','L.K.G','U.K.G','CLASS I','CLASS II', 'CLASS III','CLASS IV','CLASS V','CLASS VI','CLASS VII','CLASS VIII','CLASS IX','CLASS X']),
   answers: [
-          { nextId: 'chooseapple' },
+          { nextId: 'tfidgenration' },
   ],
 },
 
@@ -1587,7 +1619,7 @@ answers: [
     nextId: 'capscorrectq20',
   },
   {
-    answer: "AI",
+    answer: "A",
     nextId: 'incapscorrectq20',
   },
   {
@@ -2453,7 +2485,7 @@ answers: [
     nextId: 'smallcorrectq20',
   },
   {
-    answer: "AI",
+    answer: "A",
     nextId: 'insmallcorrectq20',
   },
   {
@@ -4096,7 +4128,7 @@ correctq34: {
  
   answers: [
     {
-      nextId: 'day12',
+      nextId: 'wishtocontinue11',
     },
   ],
 },
@@ -4105,8 +4137,23 @@ incorrectq34: {
 
   answers: [
     {
-      nextId: 'day12',
+      nextId: 'wishtocontinue11',
     },
+  ],
+},
+
+wishtocontinue11: {
+  botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
+  input: selectField(['Yes!', 'No!']),
+  answers: [
+      {
+        answer: 'Yes!',
+        nextId: 'day12',
+      },
+      {
+        answer: 'No!',
+        nextId: 'endConv',
+      },
   ],
 },
 
@@ -4160,6 +4207,3796 @@ wishtocontinue12: {
   answers: [
       {
         answer: 'Yes!',
+        nextId: 'day13',
+      },
+      {
+        answer: 'No!',
+        nextId: 'endConv',
+      },
+  ],
+},
+
+
+
+//day13
+
+day13: {
+  botPrompt: '<strong> Day 13 : </strong>Letters of the alphabet that are not vowels are called consonants.',
+  answers: [
+          { nextId: 'day13link' },
+  ],
+},
+
+day13link: {
+  botPrompt: 'https://youtu.be/0PGa9gmhZds',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day132comment',
+    },
+  ],
+},
+day132comment: {
+  botPrompt: 'Let`s have a look into the pages of the book',
+  answers: [
+          { nextId: 'day131link' },
+  ],
+},
+day131link: {
+  botPrompt: 'https://drive.google.com/file/d/1A7iYok28f96lk5gWf6rsv2iyZRM5VX7e/view?usp=sharing',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'consonants'+shuffledNumbersthree[0],
+    },
+  ],
+},
+
+//startconstant
+["consonants"+shuffledNumbersthree[0]]: {
+  botPrompt: ' Identify the consonants in "apple". ',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['a,p,l', 'a,p,e', "a,p,o", "a,p,c"]),
+  answers: [
+    {
+      answer: 'a,p,l',
+      nextId: 'consonantscorrect',
+    },
+    {
+      answer: 'a,p,e',
+      nextId: 'inconsonantscorrect',
+    },
+    {
+      answer: "a,p,o",
+      nextId: 'inconsonantscorrect',
+    },
+    {
+      answer: "a,p,c",
+      nextId: 'inconsonantscorrect',
+    },
+  ],
+},
+consonantscorrect: {
+  botPrompt: 'Hurray <strong>a,p,l</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'consonants'+shuffledNumbersthree[1],
+    },
+  ],
+},
+inconsonantscorrect: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"a,p,l"</strong>',
+  answers: [
+    {
+      nextId: 'consonants'+shuffledNumbersthree[1],
+    },
+  ],
+},
+
+['consonants'+shuffledNumbersthree[1]]: {
+  botPrompt: 'What are the consonants in "elephant"?',
+  type: RTypes.TRANSFORMED_TEXT,
+
+
+  input: selectField(['l, p, h, n, t', 'l, p, h, n, t,e', "l, p, h, n, t,a", "l, p, h, n, t"]),
+  answers: [
+    {
+      answer: 'l, p, h, n, t',
+      nextId: 'consonantscorrectq2',
+    },
+    {
+      answer: 'l, p, h, n, t,e',
+      nextId: 'inconsonantscorrectq2',
+    },
+    {
+      answer: "l, p, h, n, t,a",
+      nextId: 'inconsonantscorrectq2',
+    },
+    {
+      answer: "l, p, h, n, t",
+      nextId: 'inconsonantscorrectq2',
+    },
+  ],
+},
+
+consonantscorrectq2: {
+  botPrompt: 'Hurray! <strong>l, p, h, n, t</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'consonants'+shuffledNumbersthree[2],
+    },
+  ],
+},
+inconsonantscorrectq2: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"l, p, h, n, t"</strong>',
+  answers: [
+    {
+      nextId: 'consonants'+shuffledNumbersthree[2],
+    },
+  ],
+},
+
+//3
+['consonants'+shuffledNumbersthree[2]]: {
+botPrompt: 'Identify the consonants in "cat".',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['c', 't', "a", "Both A and B"]),
+  answers: [
+    {
+      answer: 'c',
+      nextId: 'inonsonantscorrectq3',
+    },
+    {
+      answer: 't',
+      nextId: 'inconsonantscorrectq3',
+    },
+    {
+      answer: "a",
+      nextId: 'inconsonantscorrectq3',
+    },
+    {
+      answer: "Both A and B",
+      nextId: 'consonantscorrectq3',
+    },
+  ],
+},
+
+consonantscorrectq3: {
+botPrompt: 'Hurray! <strong>Both A and B</strong> is the correct answer ! 😎',
+answers: [
+  {
+    nextId: 'consonants'+shuffledNumbersthree[3],
+  },
+],
+},
+inconsonantscorrectq3: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Both A and B"</strong>',
+answers: [
+  {
+    nextId: 'consonants'+shuffledNumbersthree[3],
+  },
+],
+},
+
+//4
+['consonants'+shuffledNumbersthree[3]]: {
+botPrompt: 'What are the consonants in "rainbow"? ',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['r, n, b, w', 'r, n, b, a', "r, n, b, i", "r, n, b, w,o"]),
+answers: [
+  {
+    answer: 'r, n, b, w',
+    nextId: 'consonantscorrectq4',
+  },
+  {
+    answer: 'r, n, b, a',
+    nextId: 'inconsonantscorrectq4',
+  },
+  {
+    answer: "r, n, b, i",
+    nextId: 'inconsonantscorrectq4',
+  },
+  {
+    answer: "r, n, b, w,o",
+    nextId: 'inconsonantscorrectq4',
+  },
+],
+},
+
+consonantscorrectq4: {
+botPrompt: 'Hurray! <strong>r, n, b, w</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'consonants'+shuffledNumbersthree[4],
+  },
+],
+},
+inconsonantscorrectq4: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"r, n, b, w"</strong>',
+answers: [
+  {
+    nextId: 'consonants'+shuffledNumbersthree[4],
+  },
+],
+},
+
+//5
+['consonants'+shuffledNumbersthree[4]]: {
+botPrompt: 'Identify the consonants in "frog".? ',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['f, r, g', 'f, r, o', "f, o, g","f, r, g,o"]),
+answers: [
+  {
+    answer: 'f, r, g',
+    nextId: 'consonantscorrectq5',
+  },
+  {
+    answer: 'f, r, o',
+    nextId: 'inconsonantscorrectq5',
+  },
+  {
+    answer: "f, o, g",
+    nextId: 'inconsonantscorrectq5',
+  },
+  {
+    answer: "f, r, g,o",
+    nextId: 'inconsonantscorrectq5',
+  },
+],
+},
+
+consonantscorrectq5: {
+botPrompt: 'Hurray! <strong>f, r, g</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'consonants'+shuffledNumbersthree[5],
+  },
+],
+},
+inconsonantscorrectq5: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"f, r, g"</strong>',
+answers: [
+  {
+    nextId: 'consonants'+shuffledNumbersthree[5],
+  },
+],
+},
+
+//6
+['consonants'+shuffledNumbersthree[5]]: {
+botPrompt: ' What are the consonants in "pencil"?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['p, n, c, e', 'p, n, c, i', "p, n, c, l","p, n, c"]),
+answers: [
+  {
+    answer: 'p, n, c, e',
+    nextId: 'inconsonantscorrectq6',
+  },
+  {
+    answer: 'p, n, c, i',
+    nextId: 'inconsonantscorrectq6',
+  },
+  {
+    answer: "p, n, c, l",
+    nextId: 'consonantscorrectq6',
+  },
+  {
+    answer: "p, n, c",
+    nextId: 'inconsonantscorrectq6',
+  },
+],
+},
+
+consonantscorrectq6: {
+botPrompt: 'Hurray! <strong>p, n, c, l</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'consonants'+shuffledNumbersthree[6],
+  },
+],
+},
+inconsonantscorrectq6: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"p, n, c, l"</strong>',
+answers: [
+  {
+    nextId: 'consonants'+shuffledNumbersthree[6],
+  },
+],
+},
+
+//7
+['consonants'+shuffledNumbersthree[6]]: {
+botPrompt: 'What are the consonants in "giraffe"? ',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['g, r, e', 'g, r, f', "g, r, i","g, r, a"]),
+answers: [
+  {
+    answer: 'g, r, e',
+    nextId: 'inconsonantscorrectq7',
+  },
+  {
+    answer: 'g, r, f',
+    nextId: 'consonantscorrectq7',
+  },
+  {
+    answer: "g, r, i",
+    nextId: 'inconsonantscorrectq7',
+  },
+  {
+    answer: "g, r, a",
+    nextId: 'inconsonantscorrectq7',
+  },
+],
+},
+
+consonantscorrectq7: {
+botPrompt: 'Hurray! <strong>g, r, f</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'consonants'+shuffledNumbersthree[7],
+  },
+],
+},
+inconsonantscorrectq7: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"g, r, f"</strong>',
+answers: [
+  {
+    nextId: 'consonants'+shuffledNumbersthree[7],
+  },
+],
+},
+
+
+//8
+['consonants'+shuffledNumbersthree[7]]: {
+botPrompt: 'What are the consonants in "flower"?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['f, l, w, r', 'f, l, w, o', "f, l, w, e","f, l, w, r,o"]),
+answers: [
+  {
+    answer: 'f, l, w, r',
+    nextId: 'consonantscorrectq8',
+  },
+  {
+    answer: 'f, l, w, o',
+    nextId: 'inconsonantscorrectq8',
+  },
+  {
+    answer: "f, l, w, e",
+    nextId: 'inconsonantscorrectq8',
+  },
+  {
+    answer: "f, l, w, r,o",
+    nextId: 'inconsonantscorrectq8',
+  },
+],
+},
+
+consonantscorrectq8: {
+botPrompt: 'Hurray! <strong>f, l, w, r</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'consonants'+shuffledNumbersthree[8],
+  },
+],
+},
+inconsonantscorrectq8: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"f, l, w, r"</strong>',
+answers: [
+  {
+    nextId: 'consonants'+shuffledNumbersthree[8],
+  },
+],
+},
+
+//9
+['consonants'+shuffledNumbersthree[8]]: {
+botPrompt: 'What are the consonants in "basket"?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['b, s, k, a', 'b, s, k, e', "b, s, k, t","b, s, k, o"]),
+answers: [
+  {
+    answer: 'b, s, k, a',
+    nextId: 'inconsonantscorrectq9',
+  },
+  {
+    answer: 'b, s, k, e',
+    nextId: 'inconsonantscorrectq9',
+  },
+  {
+    answer: "b, s, k, t",
+    nextId: 'consonantscorrectq9',
+  },
+  {
+    answer: "b, s, k, o",
+    nextId: 'inconsonantscorrectq9',
+  },
+],
+},
+
+consonantscorrectq9: {
+botPrompt: 'Hurray! <strong>b, s, k, t</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'consonants'+shuffledNumbersthree[9],
+  },
+],
+},
+inconsonantscorrectq9: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"b, s, k, t"</strong>',
+answers: [
+  {
+    nextId: 'consonants'+shuffledNumbersthree[9],
+  },
+],
+},
+
+
+//10
+['consonants'+shuffledNumbersthree[9]]: {
+botPrompt: ' Identify the consonants in "carrot".?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['c, r, p', 'c, r, t', "c, r, o","c, r, a"]),
+answers: [
+  {
+    answer: 'c, r, p',
+    nextId: 'inconsonantscorrectq10',
+  },
+  {
+    answer: 'c, r, t',
+    nextId: 'consonantscorrectq10',
+  },
+  {
+    answer: "c, r, o",
+    nextId: 'inconsonantscorrectq10',
+  },
+  {
+    answer: "c, r, a",
+    nextId: ' inconsonantscorrectq10',
+  },
+],
+},
+
+consonantscorrectq10: {
+botPrompt: 'Hurray! <strong>c, r, t</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'consonants'+shuffledNumbersthree[10],
+  },
+],
+},
+inconsonantscorrectq10: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"c, r, t"</strong>',
+answers: [
+  {
+    nextId: 'consonants'+shuffledNumbersthree[10],
+  },
+],
+},
+
+//11
+['consonants'+shuffledNumbersthree[10]]: {
+botPrompt: 'What are the consonants in "smile"?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['s, m, l', 'o, m, l', "s, m, i","s, m, e"]),
+answers: [
+{
+    answer: 's, m, l',
+    nextId: 'consonantscorrectq11',
+  },
+  {
+    answer: 'o, m, l',
+    nextId: 'inconsonantscorrectq11',
+  },
+  {
+    answer: "s, m, i",
+    nextId: 'inconsonantscorrectq11',
+  },
+  {
+    answer: "s, m, e",
+    nextId: 'inconsonantscorrectq11',
+  },
+],
+},
+
+consonantscorrectq11: {
+botPrompt: 'Hurray! <strong>s, m, l</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'consonants'+shuffledNumbersthree[11],
+  },
+],
+},
+inconsonantscorrectq11: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"s, m, l"</strong>',
+answers: [
+  {
+    nextId: 'consonants'+shuffledNumbersthree[11],
+  },
+],
+},
+
+//12
+['consonants'+shuffledNumbersthree[11]]: {
+botPrompt: ' What are the consonants in "cheesec, h, e',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['c, h, e', 'c, h, s,e', "c, h, o","c, h, s"]),
+answers: [
+  {
+    answer: 'c, h, e',
+    nextId: 'inconsonantscorrectq12',
+  },
+  {
+    answer: 'c, h, s,e',
+    nextId: 'inconsonantscorrectq12',
+  },
+  {
+    answer: "c, h, o",
+    nextId: 'inconsonantscorrectq12',
+  },
+  {
+    answer: "c, h, s",
+    nextId: 'consonantscorrectq12',
+  },
+],
+},
+
+consonantscorrectq12: {
+botPrompt: 'Hurray! <strong>c, h, s</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'consonants'+shuffledNumbersthree[12],
+  },
+],
+},
+inconsonantscorrectq12: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"c, h, s"</strong>',
+answers: [
+  {
+    nextId: 'consonants'+shuffledNumbersthree[12],
+  },
+],
+},
+
+//13
+['consonants'+shuffledNumbersthree[12]]: {
+botPrompt: 'What are the consonants in "butterfly"?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['b, t, r, f, l,y', 'b, t, r, f, l,u', "b, t, r, f, l,e","b, t, r, f, l,z"]),
+answers: [
+  {
+    answer: 'b, t, r, f, l,y',
+    nextId: 'consonantscorrectq13',
+  },
+  {
+    answer: 'b, t, r, f, l,u',
+    nextId: 'inconsonantscorrectq13',
+  },
+  {
+    answer: "b, t, r, f, l,e",
+    nextId: 'inconsonantscorrectq13',
+  },
+  {
+    answer: "b, t, r, f, l,z",
+    nextId: 'inconsonantscorrectq13',
+  },
+],
+},
+
+consonantscorrectq13: {
+botPrompt: 'Hurray! <strong>b, t, r, f, l,y</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'consonants'+shuffledNumbersthree[13],
+  },
+],
+},
+inconsonantscorrectq13: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"b, t, r, f, l,y"</strong>',
+answers: [
+  {
+    nextId: 'consonants'+shuffledNumbersthree[13],
+  },
+],
+},
+
+//14
+['consonants'+shuffledNumbersthree[13]]: {
+botPrompt: 'What are the consonants in "basketball"?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['b, s, k, t, l,a', 'b, s, k, t, l,e', "b, s, k, t, l,p","b, s, k, t, l"]),
+answers: [
+  {
+    answer: 'b, s, k, t, l,a',
+    nextId: 'inconsonantscorrectq14',
+  },
+  {
+    answer: 'b, s, k, t, l,e',
+    nextId: 'inconsonantscorrectq14',
+  },
+  {
+    answer: "b, s, k, t, l,p",
+    nextId: 'inconsonantscorrectq14',
+  },
+  {
+    answer: "b, s, k, t, l",
+    nextId: 'consonantscorrectq14',
+  },
+],
+},
+
+consonantscorrectq14: {
+botPrompt: 'Hurray! <strong>b, s, k, t, l</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'consonants'+shuffledNumbersthree[14],
+  },
+],
+},
+inconsonantscorrectq14: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"b, s, k, t, l"</strong>',
+answers: [
+  {
+    nextId: 'consonants'+shuffledNumbersthree[14],
+  },
+],
+},
+
+
+//15
+['consonants'+shuffledNumbersthree[14]]: {
+botPrompt: 'What are the consonants in "lemon"?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['l, m, e', 'l, m, o', "l, m, n","l, m, e"]),
+answers: [
+  {
+    answer: 'l, m, e',
+    nextId: 'inconsonantscorrectq15',
+  },
+  {
+    answer: 'l, m, o',
+    nextId: 'inconsonantscorrectq15',
+  },
+  {
+    answer: "l, m, n",
+    nextId: 'consonantscorrectq15',
+  },
+  {
+    answer: "l, m, e",
+    nextId: 'inconsonantscorrectq15',
+  },
+],
+},
+
+consonantscorrectq15: {
+botPrompt: 'Hurray! <strong>l, m, n</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'consonants'+shuffledNumbersthree[15],
+  },
+],
+},
+inconsonantscorrectq15: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"l, m, n"</strong>',
+answers: [
+  {
+    nextId: 'consonants'+shuffledNumbersthree[15],
+  },
+],
+},
+
+//16
+['consonants'+shuffledNumbersthree[15]]: {
+  botPrompt: 'Identify the consonants in "elephant".',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['l, p, h, n, t', 'l, p, h, n, e', "l, p, h, n, w","l, p, h, n, a"]),
+  answers: [
+    {
+      answer: 'l, p, h, n, t',
+      nextId: 'consonantscorrectq16',
+    },
+    {
+      answer: 'l, p, h, n, e',
+      nextId: 'inconsonantscorrectq16',
+    },
+    {
+      answer: "l, p, h, n, w",
+      nextId: 'inconsonantscorrectq16',
+    },
+    {
+      answer: "l, p, h, n, a",
+      nextId: 'inconsonantscorrectq16',
+    },
+  
+  ],
+},
+consonantscorrectq16: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>l, p, h, n, t</strong> 😎',
+  answers: [
+    {
+      nextId: 'consonants'+shuffledNumbersthree[16],
+    },
+  ],
+},
+inconsonantscorrectq16: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"l, p, h, n, t"</strong>',
+  answers: [
+    {
+      nextId: 'consonants'+shuffledNumbersthree[16],
+    },
+  ],
+},
+
+//17
+['consonants'+shuffledNumbersthree[16]]: {
+botPrompt: 'What are the consonants in "mountain"?',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['m, n, t, o', 'm, n, t, e', "m, n, t, i","m, n, t, n"]),
+answers: [
+  {
+    answer: 'm, n, t, o',
+    nextId: 'inconsonantscorrectq17',
+  },
+  {
+    answer: 'm, n, t, e',
+    nextId: 'inconsonantscorrectq17',
+  },
+  {
+    answer: "m, n, t, i",
+    nextId: 'inconsonantscorrectq17',
+  },
+  {
+    answer: "m, n, t, n",
+    nextId: 'consonantscorrectq17',
+  },
+ 
+],
+},
+consonantscorrectq17: {
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>m, n, t, n</strong> 😎',
+answers: [
+  {
+    nextId: 'consonants'+shuffledNumbersthree[17],
+  },
+],
+},
+inconsonantscorrectq17: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"m, n, t, n"</strong>',
+answers: [
+  {
+    nextId: 'consonants'+shuffledNumbersthree[17],
+  },
+],
+},
+
+//18
+['consonants'+shuffledNumbersthree[17]]: {
+botPrompt: 'Identify the consonants in "triangle".?',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['t, r, n, g, a', 't, r, n, g, e', "t, r, n, g, l","t, r, n, g, l,i"]),
+answers: [
+  {
+    answer: 't, r, n, g, a',
+    nextId: 'inconsonantscorrectq18',
+  },
+  {
+    answer: 't, r, n, g, e',
+    nextId: 'inconsonantscorrectq18',
+  },
+  {
+    answer: "t, r, n, g, l",
+    nextId: 'consonantscorrectq18',
+  },
+  {
+    answer: "t, r, n, g, l,i",
+    nextId: 'inconsonantscorrectq18',
+  },
+ 
+],
+},
+consonantscorrectq18: {
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>t, r, n, g, l</strong> 😎',
+answers: [
+  {
+    nextId: 'consonants'+shuffledNumbersthree[18],
+  },
+],
+},
+inconsonantscorrectq18: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"t, r, n, g, l"</strong>',
+answers: [
+  {
+    nextId: 'consonants'+shuffledNumbersthree[18],
+  },
+],
+},
+
+//19
+['consonants'+shuffledNumbersthree[18]]: {
+botPrompt: 'What are the consonants in "computer"? ',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['c, m, p, t, r', 'c, m, p, t, r,e', "c, m, p, t, r,a","c, m, p, t, r,p"]),
+answers: [
+  {
+    answer: 'c, m, p, t, r',
+    nextId: 'consonantscorrectq19',
+  },
+  {
+    answer: 'c, m, p, t, r,e',
+    nextId: 'inconsonantscorrectq19',
+  },
+  {
+    answer: "c, m, p, t, r,a",
+    nextId: 'inconsonantscorrectq19',
+  },
+  {
+    answer: "c, m, p, t, r,p",
+    nextId: 'inconsonantscorrectq19',
+  },
+
+],
+},
+consonantscorrectq19: {
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>c, m, p, t, r</strong> Answers! 😎',
+answers: [
+  {
+    nextId: 'consonants'+shuffledNumbersthree[19],
+  },
+],
+},
+inconsonantscorrectq19: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"c, m, p, t, r"</strong>',
+answers: [
+  {
+    nextId: 'consonants'+shuffledNumbersthree[19],
+  },
+],
+},
+
+//20
+['consonants'+shuffledNumbersthree[19]]: {
+botPrompt: 'What are the consonants in "guitar"?',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['g, t, r', 'g, t, i', "g, t, a","g, t, u"]),
+answers: [
+  {
+    answer: 'g, t, r',
+    nextId: 'consonantscorrectq20',
+  },
+  {
+    answer: 'g, t, i',
+    nextId: 'inconsonantscorrectq20',
+  },
+  {
+    answer: "g, t, a",
+    nextId: 'inconsonantscorrectq20',
+  },
+  {
+    answer: "g, t, u",
+    nextId: 'inconsonantscorrectq20',
+  },
+
+],
+},
+consonantscorrectq20: {
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>g, t, r</strong> 😎',
+answers: [
+  {
+    nextId: 'consonants'+shuffledNumbersthree[20],
+  },
+],
+},
+inconsonantscorrectq20: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"g, t, r"</strong>',
+answers: [
+  {
+    nextId: 'consonants'+shuffledNumbersthree[20],
+  },
+],
+},
+
+//21
+['consonants'+shuffledNumbersthree[20]]: {
+  botPrompt: 'What are the consonants in "science"?',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['c, n, c,e', 'c, n, c,s', "c, n, c,i","c, n, c,d"]),
+  answers: [
+    {
+      answer: 'c, n, c,e',
+      nextId: 'inconsonantscorrectq21',
+    },
+    {
+      answer: 'c, n, c,s',
+      nextId: 'consonantscorrectq21',
+    },
+    {
+      answer: "c, n, c,i",
+      nextId: 'inconsonantscorrectq21',
+    },
+    {
+      answer: "c, n, c,d",
+      nextId: 'inconsonantscorrectq21',
+    },
+  
+  ],
+  },
+  consonantscorrectq21: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>c, n, c,s</strong> Answers! 😎',
+  answers: [
+    {
+      nextId: 'consonants'+shuffledNumbersthree[21],
+    },
+  ],
+  },
+  inconsonantscorrectq21: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"c, n, c,s"</strong>',
+  answers: [
+    {
+      nextId: 'consonants'+shuffledNumbersthree[21],
+    },
+  ],
+  },
+
+  //22
+['consonants'+shuffledNumbersthree[21]]: {
+  botPrompt: 'Identify the consonants in "ocean".?',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['c, n,a', 'c, n', "c, n,e","c,n,o"]),
+  answers: [
+    {
+      answer: 'c, n,a',
+      nextId: 'inconsonantscorrectq22',
+    },
+    {
+      answer: 'c, n',
+      nextId: 'inconsonantscorrectq22',
+    },
+    {
+      answer: "c, n,e",
+      nextId: 'inconsonantscorrectq22',
+    },
+    {
+      answer: "c,n,o",
+      nextId: 'consonantscorrectq22',
+    },
+  
+  ],
+  },
+  consonantscorrectq22: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>c,n,o</strong> Answers! 😎',
+  answers: [
+    {
+      nextId: 'consonants'+shuffledNumbersthree[22],
+    },
+  ],
+  },
+  inconsonantscorrectq22: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"c,n,o"</strong>',
+  answers: [
+    {
+      nextId: 'consonants'+shuffledNumbersthree[22],
+    },
+  ],
+  },
+
+  //23
+['consonants'+shuffledNumbersthree[22]]: {
+  botPrompt: 'What are the consonants in "sentence"? ',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['s, n, t, c,e', 's, n, t, c,o', "s, n, t, c,i","s, n, t, c"]),
+  answers: [
+    {
+      answer: 's, n, t, c,e',
+      nextId: 'inconsonantscorrectq23',
+    },
+    {
+      answer: 's, n, t, c,o',
+      nextId: 'inconsonantscorrectq23',
+    },
+    {
+      answer: "s, n, t, c,i",
+      nextId: 'inconsonantscorrectq23',
+    },
+    {
+      answer: "s, n, t, c",
+      nextId: 'consonantscorrectq23',
+    },
+  
+  ],
+  },
+  consonantscorrectq23: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>s, n, t, c</strong> Answers! 😎',
+  answers: [
+    {
+      nextId: 'consonants'+shuffledNumbersthree[23],
+    },
+  ],
+  },
+  inconsonantscorrectq23: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"s, n, t, c"</strong>',
+  answers: [
+    {
+      nextId: 'consonants'+shuffledNumbersthree[23],
+    },
+  ],
+  },
+
+  //24
+['consonants'+shuffledNumbersthree[23]]: {
+  botPrompt: 'Identify the consonants in "eleven".? ',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['l, v, n,e', 'l, v, n,o', "l, v, n,a","l, v, n"]),
+  answers: [
+    {
+      answer: 'l, v, n,e',
+      nextId: 'inconsonantscorrectq24',
+    },
+    {
+      answer: 'l, v, n,o',
+      nextId: 'inconsonantscorrectq24',
+    },
+    {
+      answer: "l, v, n,a",
+      nextId: 'inconsonantscorrectq24',
+    },
+    {
+      answer: "l, v, n",
+      nextId: 'consonantscorrectq24',
+    },
+  
+  ],
+  },
+  consonantscorrectq24: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>l, v, n</strong> Answers! 😎',
+  answers: [
+    {
+      nextId: 'consonants'+shuffledNumbersthree[24],
+    },
+  ],
+  },
+  inconsonantscorrectq24: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"l, v, n"</strong>',
+  answers: [
+    {
+      nextId: 'consonants'+shuffledNumbersthree[24],
+    },
+  ],
+  },
+
+  //25
+['consonants'+shuffledNumbersthree[24]]: {
+  botPrompt: 'What are the consonants in "brother"?',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['b, r, t, h,o', 'b, r, t, h,e', "b, r, t, h,i","b, r, t, h"]),
+  answers: [
+    {
+      answer: 'b, r, t, h,o',
+      nextId: 'inconsonantscorrectq25',
+    },
+    {
+      answer: 'b, r, t, h,e',
+      nextId: 'inconsonantscorrectq25',
+    },
+    {
+      answer: "b, r, t, h,i",
+      nextId: 'inconsonantscorrectq25',
+    },
+    {
+      answer: "b, r, t, h",
+      nextId: 'consonantscorrectq25',
+    },
+  
+  ],
+  },
+  consonantscorrectq25: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>b, r, t, h</strong> Answers! 😎',
+  answers: [
+    {
+      nextId: 'consonants'+shuffledNumbersthree[25],
+    },
+  ],
+  },
+  inconsonantscorrectq25: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"b, r, t, h"</strong>',
+  answers: [
+    {
+      nextId: 'consonants'+shuffledNumbersthree[25],
+    },
+  ],
+  },
+
+  //26
+['consonants'+shuffledNumbersthree[25]]: {
+  botPrompt: 'What are the consonants in "diamond"?',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['d, m, n, d,o', 'd, m, n, d,i', "d, m, n, d","d, m, n, d,a"]),
+  answers: [
+    {
+      answer: 'd, m, n, d,o',
+      nextId: 'inconsonantscorrectq26',
+    },
+    {
+      answer: 'd, m, n, d,i',
+      nextId: 'inconsonantscorrectq26',
+    },
+    {
+      answer: "d, m, n, d",
+      nextId: 'consonantscorrectq26',
+    },
+    {
+      answer: "d, m, n, d,a",
+      nextId: 'inconsonantscorrectq26',
+    },
+  
+  ],
+  },
+  consonantscorrectq26: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>d, m, n, d</strong> Answers! 😎',
+  answers: [
+    {
+      nextId: 'consonants'+shuffledNumbersto[26],
+    },
+  ],
+  },
+  inconsonantscorrectq26: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"d, m, n, d"</strong>',
+  answers: [
+    {
+      nextId: 'consonants'+shuffledNumbersto[26],
+    },
+  ],
+  },
+
+
+//27
+['consonants'+shuffledNumbersthree[26]]: {
+  botPrompt: 'Identify the consonants in "jungle".? ',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['j, n, g, l,e', 'j, n, g, l,u', "j, n, g, l","j, n, g, l,a"]),
+  answers: [
+    {
+      answer: 'j, n, g, l,e',
+      nextId: 'inconsonantscorrectq27',
+    },
+    {
+      answer: 'j, n, g, l,u',
+      nextId: 'inconsonantscorrectq27',
+    },
+    {
+      answer: "j, n, g, l",
+      nextId: 'consonantscorrectq27',
+    },
+    {
+      answer: "j, n, g, l,a",
+      nextId: 'inconsonantscorrectq27',
+    },
+  
+  ],
+  },
+  consonantscorrectq27: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>j, n, g, l</strong> Answers! 😎',
+  answers: [
+    {
+      nextId: 'consonants'+shuffledNumbersto[27],
+    },
+  ],
+  },
+  inconsonantscorrectq27: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"j, n, g, l"</strong>',
+  answers: [
+    {
+      nextId: 'consonants'+shuffledNumbersto[27],
+    },
+  ],
+  },
+
+  //28
+['consonants'+shuffledNumbersthree[27]]: {
+  botPrompt: 'What are the consonants in "teacher"?',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['t, c, h, r', 't, c, h, r,e', "t, c, h, r,a","t, c, h, r,u"]),
+  answers: [
+    {
+      answer: 't, c, h, r',
+      nextId: 'consonantscorrectq28',
+    },
+    {
+      answer: 't, c, h, r,e',
+      nextId: 'inconsonantscorrectq28',
+    },
+    {
+      answer: "t, c, h, r,a",
+      nextId: 'inconsonantscorrectq28',
+    },
+    {
+      answer: "t, c, h, r,u",
+      nextId: 'inconsonantscorrectq28',
+    },
+  
+  ],
+  },
+  consonantscorrectq28: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>t, c, h, r</strong> Answers! 😎',
+  answers: [
+    {
+      nextId: 'consonants'+shuffledNumbersthree[28],
+    },
+  ],
+  },
+  inconsonantscorrectq28: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"t, c, h, r"</strong>',
+  answers: [
+    {
+      nextId: 'consonants'+shuffledNumbersthree[28],
+    },
+  ],
+  },
+
+  //29
+['consonants'+shuffledNumbersthree[28]]: {
+  botPrompt: 'Identify the consonants in "village".?',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['v, l, g,i', 'v, l, g,o', "v, l, g,a","v, l, g"]),
+  answers: [
+    {
+      answer: 'v, l, g,i',
+      nextId: 'inconsonantscorrectq29',
+    },
+    {
+      answer: 'v, l, g,o',
+      nextId: 'inconsonantscorrectq29',
+    },
+    {
+      answer: "v, l, g,a",
+      nextId: 'inconsonantscorrectq29',
+    },
+    {
+      answer: "v, l, g",
+      nextId: 'consonantscorrectq29',
+    },
+
+  ],
+  },
+  consonantscorrectq29: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>v, l, g</strong> Answers! 😎',
+  answers: [
+    {
+      nextId: 'wishtocontinue13',
+    },
+  ],
+  },
+  inconsonantscorrectq29: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"v, l, g"</strong>',
+  answers: [
+    {
+      nextId: 'wishtocontinue13',
+    },
+  ],
+  },
+
+
+
+
+
+//endconstant
+
+wishtocontinue13: {
+  botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
+  input: selectField(['Yes!', 'No!']),
+  answers: [
+      {
+        answer: 'Yes!',
+        nextId: 'day14',
+      },
+      {
+        answer: 'No!',
+        nextId: 'endConv',
+      },
+  ],
+},
+
+
+
+//day14
+day14: {
+  botPrompt: '<strong> Day 14 : </strong>Articles add an identity to the noun.',
+  answers: [
+          { nextId: 'day142comment' },
+  ],
+},
+day142comment: {
+  botPrompt: 'Let`s understand with an activity',
+  answers: [
+          { nextId: 'day14link' },
+  ],
+},
+day14link: {
+  botPrompt: 'https://youtu.be/47BGdVFYGPI',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day143comment',
+    },
+  ],
+},
+
+day143comment: {
+  botPrompt: 'Let`s understand with an activity',
+  answers: [
+          { nextId: 'day141link' },
+  ],
+},
+
+
+
+day141link: {
+  botPrompt: 'https://drive.google.com/file/d/1slxqfoLFs9sv7ctQb54_-G8snOXLhiS_/view?usp=sharing',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: "article"+shuffledNumberstwofive[0],
+    },
+  ],
+},
+
+//startarticles
+
+
+
+//article
+
+// 1
+
+["article"+shuffledNumberstwofive[0]]: {
+  botPrompt: 'Can I have ___ apple from the basket? ',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['a', 'an', "was","ann"]),
+  answers: [
+    {
+      answer: 'a',
+      nextId: 'articlecorrectq1',
+    },
+    {
+      answer: 'an',
+      nextId: 'inarticlecorrectq1',
+    },
+    {
+      answer: "ann",
+      nextId: 'inarticlecorrectq1',
+    },
+    {
+      answer: "was",
+      nextId: 'inarticlecorrectq1',
+    },
+  ],
+},
+articlecorrectq1: {
+  botPrompt: 'Hurray <strong>a</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'article'+shuffledNumberstwofive[1],
+    },
+  ],
+},
+inarticlecorrectq1: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"a"</strong>',
+  answers: [
+    {
+      nextId: 'article'+shuffledNumberstwofive[1],
+    },
+  ],
+},
+
+ // 2
+['article'+shuffledNumberstwofive[1]]: {
+  botPrompt: 'She wants to buy ___ book from the store.',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['a', 'an', "was","ann"]),
+  answers: [
+    {
+      answer: 'a',
+      nextId: 'articlecorrectq2',
+    },
+    {
+      answer: 'an',
+      nextId: 'inarticlecorrectq2',
+    },
+    {
+      answer: "ann",
+      nextId: 'inarticlecorrectq2',
+    },
+    {
+      answer: "was",
+      nextId: 'inarticlecorrectq2',
+    },
+  ],
+},
+
+articlecorrectq2: {
+  botPrompt: 'Hurray! <strong>a</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'article'+shuffledNumberstwofive[2],
+    },
+  ],
+},
+inarticlecorrectq2: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"a"</strong>',
+  answers: [
+    {
+      nextId: 'article'+shuffledNumberstwofive[2],
+    },
+  ],
+},
+
+//3
+['article'+shuffledNumberstwofive[2]]: {
+botPrompt: "I saw ___ elephant at the zoo.",
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['a', 'an', "was","ann"]),
+answers: [
+  {
+    answer: 'a',
+    nextId: 'inarticlecorrectq3',
+  },
+  {
+    answer: 'an',
+    nextId: 'articlecorrectq3',
+  },
+  {
+    answer: "ann",
+    nextId: 'inarticlecorrectq3',
+  },
+  {
+    answer: "was",
+    nextId: 'inarticlecorrectq3',
+  },
+],
+},
+
+articlecorrectq3: {
+botPrompt: 'Hurray! <strong>an</strong> is the correct answer ! 😎',
+answers: [
+  {
+    nextId: 'article'+shuffledNumberstwofive[3],
+  },
+],
+},
+inarticlecorrectq3: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"an"</strong>',
+answers: [
+  {
+    nextId: 'article'+shuffledNumberstwofive[3],
+  },
+],
+},
+
+//4
+['article'+shuffledNumberstwofive[3]]: {
+botPrompt: 'Would you like ___ piece of cake? ',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['a', 'an', "was","ann"]),
+answers: [
+  {
+    answer: 'a',
+    nextId: 'articlecorrectq4',
+  },
+  {
+    answer: 'an',
+    nextId: 'inarticlecorrectq4',
+  },
+  {
+    answer: "ann",
+    nextId: 'inarticlecorrectq4',
+  },
+  {
+    answer: "was",
+    nextId: 'inarticlecorrectq4',
+  },
+],
+},
+
+articlecorrectq4: {
+botPrompt: 'Hurray! <strong>a</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'article'+shuffledNumberstwofive[4],
+  },
+],
+},
+inarticlecorrectq4: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"a"</strong>',
+answers: [
+  {
+    nextId: 'article'+shuffledNumberstwofive[4],
+  },
+],
+},
+
+//5
+['article'+shuffledNumberstwofive[4]]: {
+botPrompt: 'My friend has ___ dog named Max.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['a', 'an', "was","ann"]),
+answers: [
+  {
+    answer: 'a',
+    nextId: 'articlecorrectq5',
+  },
+  {
+    answer: 'an',
+    nextId: 'inarticlecorrectq5',
+  },
+  {
+    answer: "ann",
+    nextId: 'inarticlecorrectq5',
+  },
+  {
+    answer: "was",
+    nextId: 'inarticlecorrectq5',
+  },
+],
+},
+
+articlecorrectq5: {
+botPrompt: 'Hurray! <strong>a</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'article'+shuffledNumberstwofive[5],
+  },
+],
+},
+inarticlecorrectq5: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"a"</strong>',
+answers: [
+  {
+    nextId: 'article'+shuffledNumberstwofive[5],
+  },
+],
+},
+
+//6
+['article'+shuffledNumberstwofive[5]]: {
+botPrompt: ' Can you lend me ___ pencil, please? ',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['a', 'an', "was","ann"]),
+answers: [
+  {
+    answer: 'a',
+    nextId: 'articlecorrectq6',
+  },
+  {
+    answer: 'an',
+    nextId: 'inarticlecorrectq6',
+  },
+  {
+    answer: "ann",
+    nextId: 'inarticlecorrectq6',
+  },
+  {
+    answer: "was",
+    nextId: 'inarticlecorrectq6',
+  },
+],
+},
+
+articlecorrectq6: {
+botPrompt: 'Hurray! <strong>a</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'article'+shuffledNumberstwofive[6],
+  },
+],
+},
+inarticlecorrectq6: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"a"</strong>',
+answers: [
+  {
+    nextId: 'article'+shuffledNumberstwofive[6],
+  },
+],
+},
+
+//7
+['article'+shuffledNumberstwofive[6]]: {
+botPrompt: ' There is ___ old house on the hill.',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['a', 'an', "was","ann"]),
+answers: [
+  {
+    answer: 'a',
+    nextId: 'inarticlecorrectq7',
+  },
+  {
+    answer: 'an',
+    nextId: 'articlecorrectq7',
+  },
+  {
+    answer: "ann",
+    nextId: 'inarticlecorrectq7',
+  },
+  {
+    answer: "was",
+    nextId: 'inarticlecorrectq7',
+  },
+],
+},
+articlecorrectq7: {
+botPrompt: 'Hurray! <strong>an</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'article'+shuffledNumberstwofive[7],
+  },
+],
+},
+inarticlecorrectq7: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"an"</strong>',
+answers: [
+  {
+    nextId: 'article'+shuffledNumberstwofive[7],
+  },
+],
+},
+
+
+//8
+['article'+shuffledNumberstwofive[7]]: {
+botPrompt: 'The teacher gave us ___ assignment to complete.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['a', 'an', "was","ann"]),
+answers: [
+  {
+    answer: 'a',
+    nextId: 'inarticlecorrectq8',
+  },
+  {
+    answer: 'an',
+    nextId: 'articlecorrectq8',
+  },
+  {
+    answer: "ann",
+    nextId: 'inarticlecorrectq8',
+  },
+  {
+    answer: "was",
+    nextId: 'inarticlecorrectq8',
+  },
+],
+},
+
+articlecorrectq8: {
+botPrompt: 'Hurray! <strong>an</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'article'+shuffledNumberstwofive[8],
+  },
+],
+},
+inarticlecorrectq8: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"an"</strong>',
+answers: [
+  {
+    nextId: 'article'+shuffledNumberstwofive[8],
+  },
+],
+},
+
+//9
+['article'+shuffledNumberstwofive[8]]: {
+botPrompt: 'He needs ___ umbrella because it`s raining.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['a', 'an', "was","ann"]),
+answers: [
+  {
+    answer: 'a',
+    nextId: 'inarticlecorrectq9',
+  },
+  {
+    answer: 'an',
+    nextId: 'articlecorrectq9',
+  },
+  {
+    answer: "ann",
+    nextId: 'inarticlecorrectq9',
+  },
+  {
+    answer: "was",
+    nextId: 'inarticlecorrectq9',
+  },
+],
+},
+articlecorrectq9: {
+botPrompt: 'Hurray! <strong>an</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'article'+shuffledNumberstwofive[9],
+  },
+],
+},
+inarticlecorrectq9: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"an"</strong>',
+answers: [
+  {
+    nextId: 'article'+shuffledNumberstwofive[9],
+  },
+],
+},
+
+
+
+//10
+['article'+shuffledNumberstwofive[9]]:
+ {
+botPrompt: ' She bought ___ orange from the market. ',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['a', 'an', "was","ann"]),
+answers: [
+  {
+    answer: 'a',
+    nextId: 'inarticlecorrectq10',
+  },
+  {
+    answer: 'an',
+    nextId: 'articlecorrectq10',
+  },
+  {
+    answer: "ann",
+    nextId: 'inarticlecorrectq10',
+  },
+  {
+    answer: "was",
+    nextId: 'inarticlecorrectq10',
+  },
+],
+},
+articlecorrectq10: {
+botPrompt: 'Hurray! <strong>an</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'article'+shuffledNumberstwofive[10],
+  },
+],
+},
+inarticlecorrectq10: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"an"</strong>',
+answers: [
+  {
+    nextId: 'article'+shuffledNumberstwofive[10],
+  },
+],
+},
+
+//11
+['article'+shuffledNumberstwofive[10]]: {
+botPrompt: 'I would like to have ___ ice cream for dessert.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['a', 'an', "was","ann"]),
+answers: [
+  {
+    answer: 'a',
+    nextId: 'inarticlecorrectq11',
+  },
+  {
+    answer: 'an',
+    nextId: 'articlecorrectq11',
+  },
+  {
+    answer: "ann",
+    nextId: 'inarticlecorrectq11',
+  },
+  {
+    answer: "was",
+    nextId: 'inarticlecorrectq11',
+  },
+],
+},
+
+articlecorrectq11: {
+botPrompt: 'Hurray! <strong>an</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'article'+shuffledNumberstwofive[11],
+  },
+],
+},
+inarticlecorrectq11: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"an"</strong>',
+answers: [
+  {
+    nextId: 'article'+shuffledNumberstwofive[11],
+  },
+],
+},
+
+//12
+['article'+shuffledNumberstwofive[11]]: {
+botPrompt: ' I saw ___  star in the sky last night. ',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['a', 'an', "was","ann"]),
+answers: [
+  {
+    answer: 'a',
+    nextId: 'inarticlecorrectq12',
+  },
+  {
+    answer: 'an',
+    nextId: 'articlecorrectq12',
+  },
+  {
+    answer: "ann",
+    nextId: 'inarticlecorrectq12',
+  },
+  {
+    answer: "was",
+    nextId: 'inarticlecorrectq12',
+  },
+],
+},
+
+articlecorrectq12: {
+botPrompt: 'Hurray! <strong>a</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'article'+shuffledNumberstwofive[12],
+  },
+],
+},
+inarticlecorrectq12: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"a"</strong>',
+answers: [
+  {
+    nextId: 'article'+shuffledNumberstwofive[12],
+  },
+],
+},
+
+//13
+['article'+shuffledNumberstwofive[12]]: {
+botPrompt: 'The chef prepared ___ delicious meal for us.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['a', 'an', "was","ann"]),
+answers: [
+  {
+    answer: 'a',
+    nextId: 'articlecorrectq13',
+  },
+  {
+    answer: 'an',
+    nextId: 'inarticlecorrectq13',
+  },
+  {
+    answer: "ann",
+    nextId: 'inarticlecorrectq13',
+  },
+  {
+    answer: "was",
+    nextId: 'inarticlecorrectq13',
+  },
+],
+},
+
+articlecorrectq13: {
+botPrompt: 'Hurray! <strong>a</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'article'+shuffledNumberstwofive[13],
+  },
+],
+},
+inarticlecorrectq13: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"a"</strong>',
+answers: [
+  {
+    nextId: 'article'+shuffledNumberstwofive[13],
+  },
+],
+},
+
+//14
+['article'+shuffledNumberstwofive[13]]: {
+botPrompt: ' I need ___ new notebook for school.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['a', 'an', "was","ann"]),
+answers: [
+  {
+    answer: 'a',
+    nextId: 'articlecorrectq14',
+  },
+  {
+    answer: 'an',
+    nextId: 'inarticlecorrectq14',
+  },
+  {
+    answer: "ann",
+    nextId: 'inarticlecorrectq14',
+  },
+  {
+    answer: "was",
+    nextId: 'inarticlecorrectq14',
+  },
+],
+},
+
+
+articlecorrectq14: {
+botPrompt: 'Hurray! <strong>a</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'article'+shuffledNumberstwofive[14],
+  },
+],
+},
+inarticlecorrectq14: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"a"</strong>',
+answers: [
+  {
+    nextId: 'article'+shuffledNumberstwofive[14],
+  },
+],
+},
+
+
+//15
+['article'+shuffledNumberstwofive[14]]: {
+botPrompt: ' He bought ___ car for his birthday.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['a', 'an', "was","ann"]),
+answers: [
+  {
+    answer: 'a',
+    nextId: 'articlecorrectq15',
+  },
+  {
+    answer: 'an',
+    nextId: 'inarticlecorrectq15',
+  },
+  {
+    answer: "ann",
+    nextId: 'inarticlecorrectq15',
+  },
+  {
+    answer: "was",
+    nextId: 'inarticlecorrectq15',
+  },
+],
+},
+
+
+articlecorrectq15: {
+botPrompt: 'Hurray! <strong>a</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'article'+shuffledNumberstwofive[15],
+  },
+],
+},
+inarticlecorrectq15: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"a"</strong>',
+answers: [
+  {
+    nextId: 'article'+shuffledNumberstwofive[15],
+  },
+],
+},
+
+//16
+['article'+shuffledNumberstwofive[15]]: {
+  botPrompt: '___ hour has passed since we started the game.',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['a', 'an', "was","ann"]),
+  answers: [
+      {
+      answer: 'a',
+      nextId: 'inarticlecorrectq16',
+      },
+      {
+      answer: 'an',
+      nextId: 'articlecorrectq16',
+      },
+      {
+      answer: "ann",
+      nextId: 'inarticlecorrectq16',
+      },
+      {
+      answer: "was",
+      nextId: 'inarticlecorrectq16',
+      },
+  ],
+},
+articlecorrectq16: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>an</strong> 😎',
+  answers: [
+    {
+      nextId: 'article'+shuffledNumberstwofive[16],
+    },
+  ],
+},
+inarticlecorrectq16: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"an"</strong>',
+  answers: [
+    {
+      nextId: 'article'+shuffledNumberstwofive[16],
+    },
+  ],
+},
+
+//17
+['article'+shuffledNumberstwofive[16]]: {
+  botPrompt: 'She wants to become ___ astronaut when she grows up.',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['a', 'an', "was","ann"]),
+  answers: [
+      {
+      answer: 'a',
+      nextId: 'inarticlecorrectq17',
+      },
+      {
+      answer: 'an',
+      nextId: 'articlecorrectq17',
+      },
+      {
+      answer: "ann",
+      nextId: 'inarticlecorrectq17',
+      },
+      {
+      answer: "was",
+      nextId: 'inarticlecorrectq17',
+      },
+  ],
+},
+articlecorrectq17: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>an</strong> 😎',
+  answers: [
+    {
+      nextId: 'article'+shuffledNumberstwofive[17],
+    },
+  ],
+},
+inarticlecorrectq17: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"an"</strong>',
+  answers: [
+    {
+      nextId: 'article'+shuffledNumberstwofive[17],
+    },
+  ],
+},
+
+//18
+['article'+shuffledNumberstwofive[17]]: {
+  botPrompt: 'There is ___ old  tree in the garden.',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['a', 'an', "was","ann"]),
+  answers: [
+      {
+      answer: 'a',
+      nextId: 'inarticlecorrectq18',
+      },
+      {
+      answer: 'an',
+      nextId: 'articlecorrectq18',
+      },
+      {
+      answer: "ann",
+      nextId: 'inarticlecorrectq18',
+      },
+      {
+      answer: "was",
+      nextId: 'inarticlecorrectq18',
+      },
+  ],
+},
+articlecorrectq18: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>an</strong> 😎',
+  answers: [
+    {
+      nextId: 'article'+shuffledNumberstwofive[18],
+    },
+  ],
+},
+inarticlecorrectq18: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"an"</strong>',
+  answers: [
+    {
+      nextId: 'article'+shuffledNumberstwofive[18],
+    },
+  ],
+},
+
+//19
+['article'+shuffledNumberstwofive[18]]: {
+  botPrompt: ' My mom bought me ___puppy for my birthday.',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['a', 'an', "was","ann"]),
+  answers: [
+    {
+      answer: 'a',
+      nextId: 'articlecorrectq19',
+    },
+    {
+      answer: 'an',
+      nextId: 'inarticlecorrectq19',
+    },
+    {
+      answer: "ann",
+      nextId: 'inarticlecorrectq19',
+    },
+    {
+      answer: "was",
+      nextId: 'inarticlecorrectq19',
+    },
+  ],
+  },
+  
+  
+  articlecorrectq19: {
+  botPrompt: 'Hurray! <strong>a</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'article'+shuffledNumberstwofive[19],
+    },
+  ],
+  },
+  inarticlecorrectq19: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"a"</strong>',
+  answers: [
+    {
+      nextId: 'article'+shuffledNumberstwofive[19],
+    },
+  ],
+  },
+
+//20
+['article'+shuffledNumberstwofive[19]]: {
+  botPrompt: ' Can you lend me ___ pen, please? ',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['a', 'an', "was","ann"]),
+  answers: [
+    {
+      answer: 'a',
+      nextId: 'articlecorrectq20',
+    },
+    {
+      answer: 'an',
+      nextId: 'inarticlecorrectq20',
+    },
+    {
+      answer: "ann",
+      nextId: 'inarticlecorrectq20',
+    },
+    {
+      answer: "was",
+      nextId: 'inarticlecorrectq20',
+    },
+  ],
+  },
+  
+  
+  articlecorrectq20: {
+  botPrompt: 'Hurray! <strong>a</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'article'+shuffledNumberstwofive[20],
+    },
+  ],
+  },
+  inarticlecorrectq20: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"a"</strong>',
+  answers: [
+    {
+      nextId: 'article'+shuffledNumberstwofive[20],
+    },
+  ],
+  },
+
+  //21
+['article'+shuffledNumberstwofive[20]]: {
+  botPrompt: ' I saw ___ eagle flying high in the sky.',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['a', 'an', "was","ann"]),
+  answers: [
+    {
+      answer: 'a',
+      nextId: 'inarticlecorrectq21',
+    },
+    {
+      answer: 'an',
+      nextId: 'articlecorrectq21',
+    },
+    {
+      answer: "ann",
+      nextId: 'inarticlecorrectq21',
+    },
+    {
+      answer: "was",
+      nextId: 'inarticlecorrectq21',
+    },
+  ],
+  },
+  
+  
+  articlecorrectq21: {
+  botPrompt: 'Hurray! <strong>an</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'article'+shuffledNumberstwofive[21],
+    },
+  ],
+  },
+  inarticlecorrectq21: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"an"</strong>',
+  answers: [
+    {
+      nextId: 'article'+shuffledNumberstwofive[21],
+    },
+  ],
+  },
+
+  //22
+['article'+shuffledNumberstwofive[21]]: {
+  botPrompt: ' I saw ___  star in the night sky.',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['a', 'an', "was","ann"]),
+  answers: [
+    {
+      answer: 'a',
+      nextId: 'articlecorrectq22',
+    },
+    {
+      answer: 'an',
+      nextId: 'inarticlecorrectq22',
+    },
+    {
+      answer: "ann",
+      nextId: 'inarticlecorrectq22',
+    },
+    {
+      answer: "was",
+      nextId: 'inarticlecorrectq22',
+    },
+  ],
+  },
+  
+  
+  articlecorrectq22: {
+  botPrompt: 'Hurray! <strong>a</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'article'+shuffledNumberstwofive[22],
+    },
+  ],
+  },
+  inarticlecorrectq22: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"a"</strong>',
+  answers: [
+    {
+      nextId: 'article'+shuffledNumberstwofive[22],
+    },
+  ],
+  },
+
+  // 23
+  ['article'+shuffledNumberstwofive[22]]: {
+      botPrompt: ' He wants to buy ___ bicycle for his birthday.',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['a', 'an', "was","ann"]),
+      answers: [
+        {
+          answer: 'a',
+          nextId: 'articlecorrectq23',
+        },
+        {
+          answer: 'an',
+          nextId: 'inarticlecorrectq23',
+        },
+        {
+          answer: "ann",
+          nextId: 'inarticlecorrectq23',
+        },
+        {
+          answer: "was",
+          nextId: 'inarticlecorrectq23',
+        },
+      ],
+      },
+      
+      
+      articlecorrectq23: {
+      botPrompt: 'Hurray! <strong>a</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'article'+shuffledNumberstwofive[23],
+        },
+      ],
+      },
+      inarticlecorrectq23: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"a"</strong>',
+      answers: [
+        {
+          nextId: 'article'+shuffledNumberstwofive[23],
+        },
+      ],
+      },
+
+  // 24
+  ['article'+shuffledNumberstwofive[23]]: {
+      botPrompt: ' Can you pass me ___ cup of coffee, please?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['a', 'an', "was","ann"]),
+      answers: [
+        {
+          answer: 'a',
+          nextId: 'articlecorrectq24',
+        },
+        {
+          answer: 'an',
+          nextId: 'inarticlecorrectq24',
+        },
+        {
+          answer: "ann",
+          nextId: 'inarticlecorrectq24',
+        },
+        {
+          answer: "was",
+          nextId: 'inarticlecorrectq24',
+        },
+      ],
+      },
+      
+      
+      articlecorrectq24: {
+      botPrompt: 'Hurray! <strong>a</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'article'+shuffledNumberstwofive[24],
+        },
+      ],
+      },
+      inarticlecorrectq24: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"a"</strong>',
+      answers: [
+        {
+          nextId: 'article'+shuffledNumberstwofive[24],
+        },
+      ],
+      },
+
+      // 25
+      ['article'+shuffledNumberstwofive[24]]: {
+          botPrompt: ' She painted ___ picture of the sunset.',
+          type: RTypes.TRANSFORMED_TEXT,
+          
+          input: selectField(['a', 'an', "was","ann"]),
+          answers: [
+            {
+              answer: 'a',
+              nextId: 'articlecorrectq25',
+            },
+            {
+              answer: 'an',
+              nextId: 'inarticlecorrectq25',
+            },
+            {
+              answer: "ann",
+              nextId: 'inarticlecorrectq25',
+            },
+            {
+              answer: "was",
+              nextId: 'inarticlecorrectq25',
+            },
+          ],
+          },
+          
+          
+          articlecorrectq25: {
+          botPrompt: 'Hurray! <strong>a</strong> is the correct answer  ! 😎',
+          answers: [
+            {
+              nextId: "wishtocontinue14",
+            },
+          ],
+          },
+          inarticlecorrectq25: {
+          botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"a"</strong>',
+          answers: [
+            {
+              nextId: "wishtocontinue14",
+            },
+          ],
+          },
+        
+    
+    
+//endarticle
+
+
+
+wishtocontinue14: {
+  botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
+  input: selectField(['Yes!', 'No!']),
+  answers: [
+      {
+        answer: 'Yes!',
+        nextId: 'day15',
+      },
+      {
+        answer: 'No!',
+        nextId: 'endConv',
+      },
+  ],
+},
+
+
+//day15
+day15: {
+  botPrompt: '<strong> Day 15 : </strong>Let`s Learn One/Many through an activity',
+  answers: [
+          { nextId: 'day15link' },
+  ],
+},
+day15link: {
+  botPrompt: 'https://www.youtube.com/watch?v=OTVf6aNfIac',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: ['oneandmany'+shuffledNumbersthree[0]],
+    },
+  ],
+},
+
+//startonemany
+
+
+['oneandmany'+shuffledNumbersthree[0]]: {
+  botPrompt: 'I have ___ brother and two sisters.',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['one', 'many', "onee","any"]),
+  answers: [
+    {
+      answer: 'one',
+      nextId: 'oneandmanycorrect',
+    },
+    {
+      answer: 'many',
+      nextId: 'inoneandmanycorrect',
+    },
+    {
+      answer: "onee",
+      nextId: 'inoneandmanycorrect',
+    },
+    {
+      answer: "any",
+      nextId: 'inoneandmanycorrect',
+    },
+  ],
+},
+oneandmanycorrect: {
+  botPrompt: 'Hurray <strong>one</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'oneandmany'+shuffledNumbersthree[1],
+    },
+  ],
+},
+inoneandmanycorrect: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>one</strong> answer is <strong>"a"</strong>',
+  answers: [
+    {
+      nextId: 'oneandmany'+shuffledNumbersthree[1],
+    },
+  ],
+},
+
+['oneandmany'+shuffledNumbersthree[1]]: {
+  botPrompt: 'There are ___ apples in the basket.',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['one', 'many', "onee","any"]),
+  answers: [
+    {
+      answer: 'one',
+      nextId: 'inoneandmanycorrectq2',
+    },
+    {
+      answer: 'many',
+      nextId: 'oneandmanycorrectq2',
+    },
+    {
+      answer: "onee",
+      nextId: 'inoneandmanycorrectq2',
+    },
+    {
+      answer: "any",
+      nextId: 'inoneandmanycorrectq2',
+    },
+  ],
+},
+
+oneandmanycorrectq2: {
+  botPrompt: 'Hurray! <strong>many</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'oneandmany'+shuffledNumbersthree[2],
+    },
+  ],
+},
+inoneandmanycorrectq2: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"many"</strong>',
+  answers: [
+    {
+      nextId: 'oneandmany'+shuffledNumbersthree[2],
+    },
+  ],
+},
+
+//3
+['oneandmany'+shuffledNumbersthree[2]]: {
+botPrompt: "She has ___ pet cat and two pet dogs.",
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['one', 'many', "onee","any"]),
+answers: [
+  {
+    answer: 'one',
+    nextId: 'oneandmanycorrectq3',
+  },
+  {
+    answer: 'many',
+    nextId: 'inoneandmanycorrectq3',
+  },
+  {
+    answer: "onee",
+    nextId: 'inoneandmanycorrectq3',
+  },
+  {
+    answer: "any",
+    nextId: 'inoneandmanycorrectq3',
+  },
+],
+},
+
+oneandmanycorrectq3: {
+botPrompt: 'Hurray! <strong>one</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'oneandmany'+shuffledNumbersthree[3],
+  },
+],
+},
+inoneandmanycorrectq3: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"one"</strong>',
+answers: [
+  {
+    nextId: 'oneandmany'+shuffledNumbersthree[3],
+  },
+],
+},
+
+//4
+['oneandmany'+shuffledNumbersthree[3]]: {
+botPrompt: 'We saw ___ bird flying in the sky.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['one', 'many', "onee","any"]),
+answers: [
+  {
+    answer: 'one',
+    nextId: 'oneandmanycorrectq3',
+  },
+  {
+    answer: 'many',
+    nextId: 'inoneandmanycorrectq3',
+  },
+  {
+    answer: "onee",
+    nextId: 'inoneandmanycorrectq3',
+  },
+  {
+    answer: "any",
+    nextId: 'inoneandmanycorrectq3',
+  },
+],
+},
+
+oneandmanycorrectq4: {
+botPrompt: 'Hurray! <strong>one</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'oneandmany'+shuffledNumbersthree[4],
+  },
+],
+},
+inoneandmanycorrectq2: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"one"</strong>',
+answers: [
+  {
+    nextId: 'oneandmany'+shuffledNumbersthree[4],
+  },
+],
+},
+
+//5
+['oneandmany'+shuffledNumbersthree[4]]: {
+botPrompt: 'They have ___ books on their bookshelf.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['one', 'many', "onee","any"]),
+answers: [
+  {
+    answer: 'one',
+    nextId: 'inoneandmanycorrectq5',
+  },
+  {
+    answer: 'many',
+    nextId: 'oneandmanycorrectq5',
+  },
+  {
+    answer: "onee",
+    nextId: 'inoneandmanycorrectq5',
+  },
+  {
+    answer: "any",
+    nextId: 'inoneandmanycorrectq5',
+  },
+],
+},
+
+oneandmanycorrectq5: {
+botPrompt: 'Hurray! <strong>many</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'oneandmany'+shuffledNumbersthree[5],
+  },
+],
+},
+inoneandmanycorrectq5: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"many"</strong>',
+answers: [
+  {
+    nextId: 'oneandmany'+shuffledNumbersthree[5],
+  },
+],
+},
+
+//6
+['oneandmany'+shuffledNumbersthree[5]]: {
+botPrompt: ' He bought ___ toy from the store.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['one', 'many', "onee","any"]),
+answers: [
+  {
+    answer: 'one',
+    nextId: 'inoneandmanycorrectq5',
+  },
+  {
+    answer: 'many',
+    nextId: 'inoneandmanycorrectq5',
+  },
+  {
+    answer: "onee",
+    nextId: 'inoneandmanycorrectq5',
+  },
+  {
+    answer: "any",
+    nextId: 'oneandmanycorrectq5',
+  },
+],
+},
+
+oneandmanycorrectq6: {
+botPrompt: 'Hurray! <strong>any</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'oneandmany'+shuffledNumbersthree[6],
+  },
+],
+},
+inoneandmanycorrectq6: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"any"</strong>',
+answers: [
+  {
+    nextId: 'oneandmany'+shuffledNumbersthree[6],
+  },
+],
+},
+
+//7
+['oneandmany'+shuffledNumbersthree[6]]: {
+botPrompt: 'We planted ___ flowers in the garden. ',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['onee', 'manyy', "many","manya"]),
+answers: [
+  {
+    answer: 'onee',
+    nextId: 'inoneandmanycorrectq7',
+  },
+  {
+    answer: 'manyy',
+    nextId: 'inoneandmanycorrectq7',
+  },
+  {
+    answer: "many",
+    nextId: 'oneandmanycorrectq7',
+  },
+  {
+    answer: "manya",
+    nextId: 'inoneandmanycorrectq7',
+  },
+],
+},
+
+oneandmanycorrectq7: {
+botPrompt: 'Hurray! <strong>many</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'oneandmany'+shuffledNumbersthree[7],
+  },
+],
+},
+inoneandmanycorrectq7: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"many"</strong>',
+answers: [
+  {
+    nextId: 'oneandmany'+shuffledNumbersthree[7],
+  },
+],
+},
+
+
+//8
+['oneandmany'+shuffledNumbersthree[7]]: {
+botPrompt: 'I ate ___ slice of cake at the party.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['onee', 'many', "onee","one"]),
+answers: [
+  {
+    answer: 'onee',
+    nextId: 'inoneandmanycorrectq8',
+  },
+  {
+    answer: 'many',
+    nextId: 'inoneandmanycorrectq8',
+  },
+  {
+    answer: "onee",
+    nextId: 'inoneandmanycorrectq8',
+  },
+  {
+    answer: "one",
+    nextId: 'oneandmanycorrectq8',
+  },
+],
+},
+
+oneandmanycorrectq8: {
+botPrompt: 'Hurray! <strong>d</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'oneandmany'+shuffledNumbersthree[8],
+  },
+],
+},
+inoneandmanycorrectq8: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"d"</strong>',
+answers: [
+  {
+    nextId: 'oneandmany'+shuffledNumbersthree[8],
+  },
+],
+},
+
+//9
+['oneandmany'+shuffledNumbersthree[8]]: {
+botPrompt: 'They have ___ pencils in their pencil case.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['onee', 'manyy', "many","maany"]),
+answers: [
+  {
+    answer: 'onee',
+    nextId: 'inoneandmanycorrectq9',
+  },
+  {
+    answer: 'manyy',
+    nextId: 'inoneandmanycorrectq9',
+  },
+  {
+    answer: "many",
+    nextId: 'oneandmanycorrectq9',
+  },
+  {
+    answer: "maany",
+    nextId: 'inoneandmanycorrectq9',
+  },
+],
+},
+
+oneandmanycorrectq9: {
+botPrompt: 'Hurray! <strong>many</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'oneandmany'+shuffledNumbersthree[9],
+  },
+],
+},
+inoneandmanycorrectq9: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"many"</strong>',
+answers: [
+  {
+    nextId: 'oneandmany'+shuffledNumbersthree[9],
+  },
+],
+},
+
+
+//10
+['oneandmany'+shuffledNumbersthree[9]]: {
+botPrompt: ' She drew ___ picture on the paper.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['onee', 'many', "many","one"]),
+answers: [
+  {
+    answer: 'onee',
+    nextId: 'inoneandmanycorrectq10',
+  },
+  {
+    answer: 'many',
+    nextId: 'inoneandmanycorrectq10',
+  },
+  {
+    answer: "many",
+    nextId: 'inoneandmanycorrectq10',
+  },
+  {
+    answer: "one",
+    nextId: 'oneandmanycorrectq10',
+  },
+],
+},
+
+oneandmanycorrectq10: {
+botPrompt: 'Hurray! <strong>one</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'oneandmany'+shuffledNumbersthree[10],
+  },
+],
+},
+inoneandmanycorrectq10: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"one"</strong>',
+answers: [
+  {
+    nextId: 'oneandmany'+shuffledNumbersthree[10],
+  },
+],
+},
+
+//11
+['oneandmany'+shuffledNumbersthree[10]]: {
+botPrompt: 'Change the word to it`s many form:Book',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['books', 'bookes', "bookies","book"]),
+answers: [
+  {
+    answer: 'books',
+    nextId: 'oneandmanycorrectq11',
+  },
+  {
+    answer: 'bookes',
+    nextId: 'inoneandmanycorrectq11',
+  },
+  {
+    answer: "bookies",
+    nextId: 'inoneandmanycorrectq11',
+  },
+  {
+    answer: "book",
+    nextId: 'inoneandmanycorrectq11',
+  },
+],
+},
+
+oneandmanycorrectq11: {
+botPrompt: 'Hurray! <strong>books</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'oneandmany'+shuffledNumbersthree[11],
+  },
+],
+},
+inoneandmanycorrectq11: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"books"</strong>',
+answers: [
+  {
+    nextId: 'oneandmany'+shuffledNumbersthree[11],
+  },
+],
+},
+
+//12
+['oneandmany'+shuffledNumbersthree[11]]: {
+botPrompt: ' Change the word to it`s many form:Dog',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['dogses', 'dogses', "dogs","dog"]),
+answers: [
+  {
+    answer: 'dogses',
+    nextId: 'inoneandmanycorrectq12',
+  },
+  {
+    answer: 'dogses',
+    nextId: 'inoneandmanycorrectq12',
+  },
+  {
+    answer: "dogs",
+    nextId: 'oneandmanycorrectq12',
+  },
+  {
+    answer: "dog",
+    nextId: 'inoneandmanycorrectq12',
+  },
+],
+},
+
+oneandmanycorrectq12: {
+botPrompt: 'Hurray! <strong>dogs</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'oneandmany'+shuffledNumbersthree[12],
+  },
+],
+},
+inoneandmanycorrectq12: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"dogs"</strong>',
+answers: [
+  {
+    nextId: 'oneandmany'+shuffledNumbersthree[12],
+  },
+],
+},
+
+//13
+['oneandmany'+shuffledNumbersthree[12]]: {
+botPrompt: 'Change the word to it`s many form:Leaf',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['leafs', 'leafs', "leaves","leafe"]),
+answers: [
+  {
+    answer: 'leafs',
+    nextId: 'inoneandmanycorrectq13',
+  },
+  {
+    answer: 'leafs',
+    nextId: 'inoneandmanycorrectq13',
+  },
+  {
+    answer: "leaves",
+    nextId: 'oneandmanycorrectq13',
+  },
+  {
+    answer: "leafe",
+    nextId: 'inoneandmanycorrectq13',
+  },
+],
+},
+
+oneandmanycorrectq13: {
+botPrompt: 'Hurray! <strong>leaves</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'oneandmany'+shuffledNumbersthree[13],
+  },
+],
+},
+inoneandmanycorrectq13: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"leaves"</strong>',
+answers: [
+  {
+    nextId: 'oneandmany'+shuffledNumbersthree[13],
+  },
+],
+},
+
+//14
+['oneandmany'+shuffledNumbersthree[13]]: {
+botPrompt: ' Change the word to it`s many form: Butterfly',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['butterfles', 'butterfles', "butterflies","butterfly"]),
+answers: [
+  {
+    answer: 'butterfles',
+    nextId: 'inoneandmanycorrectq14',
+  },
+  {
+    answer: 'butterfles',
+    nextId: 'inoneandmanycorrectq14',
+  },
+  {
+    answer: "butterflies",
+    nextId: 'oneandmanycorrectq14',
+  },
+  {
+    answer: "butterfly",
+    nextId: 'inoneandmanycorrectq14',
+  },
+],
+},
+
+oneandmanycorrectq14: {
+botPrompt: 'Hurray! <strong>butterflies</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'oneandmany'+shuffledNumbersthree[14],
+  },
+],
+},
+inoneandmanycorrectq14: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"butterflies"</strong>',
+answers: [
+  {
+    nextId: 'oneandmany'+shuffledNumbersthree[14],
+  },
+],
+},
+
+
+//15
+['oneandmany'+shuffledNumbersthree[14]]: {
+botPrompt: 'Change the word to it`s many form:Apple',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['apples', 'applees', "appleses","apple"]),
+answers: [
+  {
+    answer: 'apples',
+    nextId: 'oneandmanycorrectq15',
+  },
+  {
+    answer: 'applees',
+    nextId: 'inoneandmanycorrectq15',
+  },
+  {
+    answer: "appleses",
+    nextId: 'inoneandmanycorrectq15',
+  },
+  {
+    answer: "apple",
+    nextId: 'inoneandmanycorrectq15',
+  },
+],
+},
+
+oneandmanycorrectq15: {
+botPrompt: 'Hurray! <strong>apples</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'oneandmany'+shuffledNumbersthree[15],
+  },
+],
+},
+inoneandmanycorrectq15: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"apples"</strong>',
+answers: [
+  {
+    nextId: 'oneandmany'+shuffledNumbersthree[15],
+  },
+],
+},
+
+//16
+['oneandmany'+shuffledNumbersthree[15]]: {
+  botPrompt: 'Change the word to it`s many form:Child',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['children', 'childs', "childrens","child"]),
+  answers: [
+    {
+      answer: 'children',
+      nextId: 'oneandmanycorrectq16',
+    },
+    {
+      answer: 'childs',
+      nextId: 'inoneandmanycorrectq16',
+    },
+    {
+      answer: "childrens",
+      nextId: 'inoneandmanycorrectq16',
+    },
+    {
+      answer: "child",
+      nextId: 'inoneandmanycorrectq16',
+    },
+  
+  ],
+},
+oneandmanycorrectq16: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>children</strong> 😎',
+  answers: [
+    {
+      nextId: 'oneandmany'+shuffledNumbersthree[16],
+    },
+  ],
+},
+inoneandmanycorrectq16: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"children"</strong>',
+  answers: [
+    {
+      nextId: 'oneandmany'+shuffledNumbersthree[16],
+    },
+  ],
+},
+
+//17
+['oneandmany'+shuffledNumbersthree[16]]: {
+botPrompt: 'Change the word to it`s many form:Key',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['keys', 'keyses', "keyies","key"]),
+answers: [
+  {
+    answer: 'keys',
+    nextId: 'oneandmanycorrectq17',
+  },
+  {
+    answer: 'keyses',
+    nextId: 'inoneandmanycorrectq17',
+  },
+  {
+    answer: "keyies",
+    nextId: 'inoneandmanycorrectq17',
+  },
+  {
+    answer: "key",
+    nextId: 'inoneandmanycorrectq17',
+  },
+ 
+],
+},
+oneandmanycorrectq17: {
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>keys</strong> 😎',
+answers: [
+  {
+    nextId: 'oneandmany'+shuffledNumbersthree[17],
+  },
+],
+},
+inoneandmanycorrectq17: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"keys"</strong>',
+answers: [
+  {
+    nextId: 'oneandmany'+shuffledNumbersthree[17],
+  },
+],
+},
+
+//18
+['oneandmany'+shuffledNumbersthree[17]]: {
+botPrompt: 'Change the word to it`s many form:Toy ',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['toyses', 'toyes', "toys","toy"]),
+answers: [
+  {
+    answer: 'toyses',
+    nextId: 'inoneandmanycorrectq18',
+  },
+  {
+    answer: 'toyes',
+    nextId: 'inoneandmanycorrectq18',
+  },
+  {
+    answer: "toys",
+    nextId: 'oneandmanycorrectq18',
+  },
+  {
+    answer: "toy",
+    nextId: 'inoneandmanycorrectq18',
+  },
+ 
+],
+},
+oneandmanycorrectq18: {
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>toys</strong> 😎',
+answers: [
+  {
+    nextId: 'oneandmany'+shuffledNumbersthree[18],
+  },
+],
+},
+inoneandmanycorrectq18: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"toys"</strong>',
+answers: [
+  {
+    nextId: 'oneandmany'+shuffledNumbersthree[18],
+  },
+],
+},
+
+//19
+['oneandmany'+shuffledNumbersthree[18]]: {
+botPrompt: 'Change the word to it`s many form:Mouse ',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['mice', 'mouseses', "mouseies","mouses"]),
+answers: [
+  {
+    answer: 'mice',
+    nextId: 'oneandmanycorrectq19',
+  },
+  {
+    answer: 'mouseses',
+    nextId: 'inoneandmanycorrectq19',
+  },
+  {
+    answer: "mouseies",
+    nextId: 'inoneandmanycorrectq19',
+  },
+  {
+    answer: "mouses",
+    nextId: 'inoneandmanycorrectq19',
+  },
+ 
+],
+},
+oneandmanycorrectq19: {
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>mice</strong> Answers! 😎',
+answers: [
+  {
+    nextId: 'oneandmany'+shuffledNumbersthree[19],
+  },
+],
+},
+inoneandmanycorrectq19: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"mice"</strong>',
+answers: [
+  {
+    nextId: 'oneandmany'+shuffledNumbersthree[19],
+  },
+],
+},
+
+//20
+['oneandmany'+shuffledNumbersthree[19]]: {
+botPrompt: 'Change the word to it`s many form:Bag',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['Bags', 'Baags', "baggs","baaags"]),
+answers: [
+  {
+    answer: 'Bags',
+    nextId: 'oneandmanycorrectq20',
+  },
+  {
+    answer: 'Baags',
+    nextId: 'inoneandmanycorrectq20',
+  },
+  {
+    answer: "baggs",
+    nextId: 'inoneandmanycorrectq20',
+  },
+  {
+    answer: "baaags",
+    nextId: 'inoneandmanycorrectq20',
+  },
+
+],
+},
+oneandmanycorrectq20: {
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>Bags</strong> 😎',
+answers: [
+  {
+    nextId: 'oneandmany'+shuffledNumbersthree[20],
+  },
+],
+},
+inoneandmanycorrectq20: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Bags"</strong>',
+answers: [
+  {
+    nextId: 'oneandmany'+shuffledNumbersthree[20],
+  },
+],
+},
+
+//21
+['oneandmany'+shuffledNumbersthree[20]]: {
+    botPrompt: 'Complete the sentence: I have two ____.',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['books', 'bookes', "bookies","book"]),
+    answers: [
+      {
+        answer: 'books',
+        nextId: 'oneandmanycorrectq21',
+      },
+      {
+        answer: 'bookes',
+        nextId: 'inoneandmanycorrectq21',
+      },
+      {
+        answer: "bookies",
+        nextId: 'inoneandmanycorrectq21',
+      },
+      {
+        answer: "book",
+        nextId: 'inoneandmanycorrectq21',
+      },
+    
+    ],
+    },
+    oneandmanycorrectq21: {
+    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>books</strong> 😎',
+    answers: [
+      {
+        nextId: 'oneandmany'+shuffledNumbersthree[21],
+      },
+    ],
+    },
+    inoneandmanycorrectq21: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"books"</strong>',
+    answers: [
+      {
+        nextId: 'oneandmany'+shuffledNumbersthree[21],
+      },
+    ],
+    },
+
+
+//22
+['oneandmany'+shuffledNumbersthree[21]]: {
+    botPrompt: 'Complete the sentence: There are many ____.',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['dog', 'dogses', "doggies","dogs"]),
+    answers: [
+      {
+        answer: 'dog',
+        nextId: 'inoneandmanycorrectq22',
+      },
+      {
+        answer: 'dogses',
+        nextId: 'inoneandmanycorrectq22',
+      },
+      {
+        answer: "doggies",
+        nextId: 'inoneandmanycorrectq22',
+      },
+      {
+        answer: "dogs",
+        nextId: 'oneandmanycorrectq22',
+      },
+    
+    ],
+    },
+    oneandmanycorrectq22: {
+    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>dogs</strong> 😎',
+    answers: [
+      {
+        nextId: 'oneandmany'+shuffledNumbersthree[22],
+      },
+    ],
+    },
+    inoneandmanycorrectq22: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"dogs"</strong>',
+    answers: [
+      {
+        nextId: 'oneandmany'+shuffledNumbersthree[22],
+      },
+    ],
+    },
+
+
+//23
+['oneandmany'+shuffledNumbersthree[22]]: {
+    botPrompt: 'Complete the sentence: We saw three ____.',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['butterfly', 'butterfles', "butterflies","butterflie"]),
+    answers: [
+      {
+        answer: 'butterfly',
+        nextId: 'inoneandmanycorrectq20',
+      },
+      {
+        answer: 'butterfles',
+        nextId: 'inoneandmanycorrectq20',
+      },
+      {
+        answer: "butterflies",
+        nextId: 'oneandmanycorrectq20',
+      },
+      {
+        answer: "butterflie",
+        nextId: 'inoneandmanycorrectq20',
+      },
+    
+    ],
+    },
+    oneandmanycorrectq20: {
+    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>butterflies</strong> 😎',
+    answers: [
+      {
+        nextId: 'oneandmany'+shuffledNumbersthree[23],
+      },
+    ],
+    },
+    inoneandmanycorrectq20: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"butterflies"</strong>',
+    answers: [
+      {
+        nextId: 'oneandmany'+shuffledNumbersthree[23],
+      },
+    ],
+    },
+
+
+//24
+['oneandmany'+shuffledNumbersthree[23]]: {
+    botPrompt: 'Complete the sentence: I found five ____.',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['key', 'keyses', "bookies","book"]),
+    answers: [
+      {
+        answer: 'key',
+        nextId: 'inoneandmanycorrectq20',
+      },
+      {
+        answer: 'keyses',
+        nextId: 'inoneandmanycorrectq20',
+      },
+      {
+        answer: "keyies",
+        nextId: 'inoneandmanycorrectq20',
+      },
+      {
+        answer: "keys",
+        nextId: 'oneandmanycorrectq20',
+      },
+    
+    ],
+    },
+    oneandmanycorrectq20: {
+    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>keys</strong> 😎',
+    answers: [
+      {
+        nextId: 'oneandmany'+shuffledNumbersthree[24],
+      },
+    ],
+    },
+    inoneandmanycorrectq20: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"keys"</strong>',
+    answers: [
+      {
+        nextId: 'oneandmany'+shuffledNumbersthree[24],
+      },
+    ],
+    },
+
+
+//25
+['oneandmany'+shuffledNumbersthree[24]]: {
+    botPrompt: 'Complete the sentence: I found five ____.',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['balloon', 'balloonies', "balloonses","balloons"]),
+    answers: [
+      {
+        answer: 'balloon',
+        nextId: 'inoneandmanycorrectq20',
+      },
+      {
+        answer: 'balloonies',
+        nextId: 'inoneandmanycorrectq20',
+      },
+      {
+        answer: "balloonses",
+        nextId: 'inoneandmanycorrectq20',
+      },
+      {
+        answer: "balloons",
+        nextId: 'oneandmanycorrectq20',
+      },
+    
+    ],
+    },
+    oneandmanycorrectq20: {
+    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>balloons</strong> 😎',
+    answers: [
+      {
+        nextId: 'oneandmany'+shuffledNumbersthree[25],
+      },
+    ],
+    },
+    inoneandmanycorrectq20: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"balloons"</strong>',
+    answers: [
+      {
+        nextId: 'oneandmany'+shuffledNumbersthree[25],
+      },
+    ],
+    },
+
+
+//26
+['oneandmany'+shuffledNumbersthree[25]]: {
+    botPrompt: 'Complete the sentence: He has three ____.',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['brother', 'brotherses', "brotheries","brothers"]),
+    answers: [
+      {
+        answer: 'brother',
+        nextId: 'inoneandmanycorrectq20',
+      },
+      {
+        answer: 'brotherses',
+        nextId: 'inoneandmanycorrectq20',
+      },
+      {
+        answer: "brotheries",
+        nextId: 'inoneandmanycorrectq20',
+      },
+      {
+        answer: "brothers",
+        nextId: 'oneandmanycorrectq20',
+      },
+    
+    ],
+    },
+    oneandmanycorrectq20: {
+    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>brothers</strong> 😎',
+    answers: [
+      {
+        nextId: 'oneandmany'+shuffledNumbersthree[26],
+      },
+    ],
+    },
+    inoneandmanycorrectq20: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"brothers"</strong>',
+    answers: [
+      {
+        nextId: 'oneandmany'+shuffledNumbersthree[26],
+      },
+    ],
+    },
+
+
+//27
+['oneandmany'+shuffledNumbersthree[26]]: {
+    botPrompt: 'Complete the sentence: There are two ____.',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['fish', 'fishies', "fishses","fishes"]),
+    answers: [
+      {
+        answer: 'fish',
+        nextId: 'inoneandmanycorrectq20',
+      },
+      {
+        answer: 'fishies',
+        nextId: 'inoneandmanycorrectq20',
+      },
+      {
+        answer: "fishses",
+        nextId: 'inoneandmanycorrectq20',
+      },
+      {
+        answer: "fishes",
+        nextId: 'oneandmanycorrectq20',
+      },
+    
+    ],
+    },
+    oneandmanycorrectq20: {
+    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>fishes</strong> 😎',
+    answers: [
+      {
+        nextId: 'oneandmany'+shuffledNumbersthree[27],
+      },
+    ],
+    },
+    inoneandmanycorrectq20: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"fishes"</strong>',
+    answers: [
+      {
+        nextId: 'oneandmany'+shuffledNumbersthree[27],
+      },
+    ],
+    },
+
+
+//28
+['oneandmany'+shuffledNumbersthree[27]]: {
+    botPrompt: 'Complete the sentence: I found four ____.',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['pencil', 'pencilies', "pencilses","book"]),
+    answers: [
+      {
+        answer: 'pencil',
+        nextId: 'inoneandmanycorrectq20',
+      },
+      {
+        answer: 'pencilies',
+        nextId: 'inoneandmanycorrectq20',
+      },
+      {
+        answer: "pencilses",
+        nextId: 'inoneandmanycorrectq20',
+      },
+      {
+        answer: "pencils",
+        nextId: 'oneandmanycorrectq20',
+      },
+    
+    ],
+    },
+    oneandmanycorrectq20: {
+    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>pencils</strong> 😎',
+    answers: [
+      {
+        nextId: 'oneandmany'+shuffledNumbersthree[28],
+      },
+    ],
+    },
+    inoneandmanycorrectq20: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"pencils"</strong>',
+    answers: [
+      {
+        nextId: 'oneandmany'+shuffledNumbersthree[28],
+      },
+    ],
+    },
+
+
+//29
+['oneandmany'+shuffledNumbersthree[28]]: {
+    botPrompt: 'Complete the sentence: We saw three ____.',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['horse', 'horseses', "horseies","horses"]),
+    answers: [
+      {
+        answer: 'horse',
+        nextId: 'inoneandmanycorrectq20',
+      },
+      {
+        answer: 'horseses',
+        nextId: 'inoneandmanycorrectq20',
+      },
+      {
+        answer: "horseies",
+        nextId: 'inoneandmanycorrectq20',
+      },
+      {
+        answer: "horses",
+        nextId: 'oneandmanycorrectq20',
+      },
+    
+    ],
+    },
+    oneandmanycorrectq20: {
+    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>horses</strong> 😎',
+    answers: [
+      {
+        nextId: 'oneandmany'+shuffledNumbersthree[29],
+      },
+    ],
+    },
+    inoneandmanycorrectq20: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"horses"</strong>',
+    answers: [
+      {
+        nextId: 'oneandmany'+shuffledNumbersthree[29],
+      },
+    ],
+    },
+
+
+//30
+['oneandmany'+shuffledNumbersthree[29]]: {
+    botPrompt: 'Complete the sentence: There are two ____.',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['tooth', 'toothes', "teeths","teeth"]),
+    answers: [
+      {
+        answer: 'tooth',
+        nextId: 'inoneandmanycorrectq20',
+      },
+      {
+        answer: 'toothes',
+        nextId: 'inoneandmanycorrectq20',
+      },
+      {
+        answer: "teeths",
+        nextId: 'inoneandmanycorrectq20',
+      },
+      {
+        answer: "teeth",
+        nextId: 'oneandmanycorrectq20',
+      },
+    
+    ],
+    },
+    oneandmanycorrectq20: {
+    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>teeth</strong> 😎',
+    answers: [
+      {
+        nextId: 'day152comment',
+      },
+    ],
+    },
+    inoneandmanycorrectq20: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"teeth"</strong>',
+    answers: [
+      {
+        nextId: 'day152comment',
+      },
+    ],
+    },
+
+
+
+
+
+//endonemany
+
+day152comment: {
+  botPrompt: ' Let’s check out the book.',
+  answers: [
+          { nextId: 'day152link' },
+  ],
+},
+
+
+
+day152link: {
+  botPrompt: 'https://drive.google.com/file/d/1wtvzS0JEKi2xaeJMAIhHGV9H5DOlt36U/view?usp=sharing',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'wishtocontinue15',
+    },
+  ],
+},
+
+
+
+
+
+wishtocontinue15: {
+  botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
+  input: selectField(['Yes!', 'No!']),
+  answers: [
+      {
+        answer: 'Yes!',
         nextId: 'endConv',
       },
       {
@@ -4168,6 +8005,8 @@ wishtocontinue12: {
       },
   ],
 },
+
+
 
 
 
