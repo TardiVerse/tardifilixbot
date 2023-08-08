@@ -1,4 +1,4 @@
-["Consonants"+shuffledNumbersto[0]]: {
+["consonants"+shuffledNumbersthree[0]]: {
   botPrompt: ' Identify the consonants in "apple". ',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -26,7 +26,7 @@ consonantscorrect: {
   botPrompt: 'Hurray <strong>a,p,l</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'consonants'+shuffledNumbersto[1],
+      nextId: 'consonants'+shuffledNumbersthree[1],
     },
   ],
 },
@@ -34,12 +34,12 @@ inconsonantscorrect: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"a,p,l"</strong>',
   answers: [
     {
-      nextId: 'consonants'+shuffledNumbersto[1],
+      nextId: 'consonants'+shuffledNumbersthree[1],
     },
   ],
 },
 
-['Consonants'+shuffledNumbersto[1]]: {
+['consonants'+shuffledNumbersthree[1]]: {
   botPrompt: 'What are the consonants in "elephant"?',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -69,7 +69,7 @@ consonantscorrectq2: {
   botPrompt: 'Hurray! <strong>l, p, h, n, t</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'consonants'+shuffledNumbersto[2],
+      nextId: 'consonants'+shuffledNumbersthree[2],
     },
   ],
 },
@@ -77,13 +77,13 @@ inconsonantscorrectq2: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"l, p, h, n, t"</strong>',
   answers: [
     {
-      nextId: 'consonants'+shuffledNumbersto[2],
+      nextId: 'consonants'+shuffledNumbersthree[2],
     },
   ],
 },
 
 //3
-['consonants'+shuffledNumbersto[2]]: {
+['consonants'+shuffledNumbersthree[2]]: {
 botPrompt: 'Identify the consonants in "cat".',
 type: RTypes.TRANSFORMED_TEXT,
 
@@ -112,7 +112,7 @@ consonantscorrectq3: {
 botPrompt: 'Hurray! <strong>Both A and B</strong> is the correct answer ! 😎',
 answers: [
   {
-    nextId: 'consonants'+shuffledNumbersto[3],
+    nextId: 'consonants'+shuffledNumbersthree[3],
   },
 ],
 },
@@ -120,13 +120,13 @@ inconsonantscorrectq3: {
 botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Both A and B"</strong>',
 answers: [
   {
-    nextId: 'consonants'+shuffledNumbersto[3],
+    nextId: 'consonants'+shuffledNumbersthree[3],
   },
 ],
 },
 
 //4
-['consonants'+shuffledNumbersto[3]]: {
+['consonants'+shuffledNumbersthree[3]]: {
 botPrompt: 'What are the consonants in "rainbow"? ',
 type: RTypes.TRANSFORMED_TEXT,
 
@@ -155,7 +155,7 @@ consonantscorrectq4: {
 botPrompt: 'Hurray! <strong>r, n, b, w</strong> is the correct answer  ! 😎',
 answers: [
   {
-    nextId: 'consonants'+shuffledNumbersto[4],
+    nextId: 'consonants'+shuffledNumbersthree[4],
   },
 ],
 },
@@ -163,13 +163,13 @@ inconsonantscorrectq4: {
 botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"r, n, b, w"</strong>',
 answers: [
   {
-    nextId: 'consonants'+shuffledNumbersto[4],
+    nextId: 'consonants'+shuffledNumbersthree[4],
   },
 ],
 },
 
 //5
-['consonants'+shuffledNumbersto[4]]: {
+['consonants'+shuffledNumbersthree[4]]: {
 botPrompt: 'Identify the consonants in "frog".? ',
 type: RTypes.TRANSFORMED_TEXT,
 
@@ -198,7 +198,7 @@ consonantscorrectq5: {
 botPrompt: 'Hurray! <strong>f, r, g</strong> is the correct answer  ! 😎',
 answers: [
   {
-    nextId: 'consonants'+shuffledNumbersto[5],
+    nextId: 'consonants'+shuffledNumbersthree[5],
   },
 ],
 },
@@ -206,13 +206,13 @@ inconsonantscorrectq5: {
 botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"f, r, g"</strong>',
 answers: [
   {
-    nextId: 'consonants'+shuffledNumbersto[5],
+    nextId: 'consonants'+shuffledNumbersthree[5],
   },
 ],
 },
 
 //6
-['consonants'+shuffledNumbersto[5]]: {
+['consonants'+shuffledNumbersthree[5]]: {
 botPrompt: ' What are the consonants in "pencil"?',
 type: RTypes.TRANSFORMED_TEXT,
 
@@ -241,7 +241,7 @@ consonantscorrectq6: {
 botPrompt: 'Hurray! <strong>p, n, c, l</strong> is the correct answer  ! 😎',
 answers: [
   {
-    nextId: 'consonants'+shuffledNumbersto[6],
+    nextId: 'consonants'+shuffledNumbersthree[6],
   },
 ],
 },
@@ -249,13 +249,13 @@ inconsonantscorrectq6: {
 botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"p, n, c, l"</strong>',
 answers: [
   {
-    nextId: 'consonants'+shuffledNumbersto[6],
+    nextId: 'consonants'+shuffledNumbersthree[6],
   },
 ],
 },
 
 //7
-['consonants'+shuffledNumbersto[6]]: {
+['consonants'+shuffledNumbersthree[6]]: {
 botPrompt: 'What are the consonants in "giraffe"? ',
 type: RTypes.TRANSFORMED_TEXT,
 input: selectField(['g, r, e', 'g, r, f', "g, r, i","g, r, a"]),
@@ -283,7 +283,7 @@ consonantscorrectq7: {
 botPrompt: 'Hurray! <strong>g, r, f</strong> is the correct answer  ! 😎',
 answers: [
   {
-    nextId: 'consonants'+shuffledNumbersto[7],
+    nextId: 'consonants'+shuffledNumbersthree[7],
   },
 ],
 },
@@ -291,14 +291,14 @@ inconsonantscorrectq7: {
 botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"g, r, f"</strong>',
 answers: [
   {
-    nextId: 'consonants'+shuffledNumbersto[7],
+    nextId: 'consonants'+shuffledNumbersthree[7],
   },
 ],
 },
 
 
 //8
-['consonants'+shuffledNumbersto[7]]: {
+['consonants'+shuffledNumbersthree[7]]: {
 botPrompt: 'What are the consonants in "flower"?',
 type: RTypes.TRANSFORMED_TEXT,
 
@@ -327,7 +327,7 @@ consonantscorrectq8: {
 botPrompt: 'Hurray! <strong>f, l, w, r</strong> is the correct answer  ! 😎',
 answers: [
   {
-    nextId: 'consonants'+shuffledNumbersto[8],
+    nextId: 'consonants'+shuffledNumbersthree[8],
   },
 ],
 },
@@ -335,13 +335,13 @@ inconsonantscorrectq8: {
 botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"f, l, w, r"</strong>',
 answers: [
   {
-    nextId: 'consonants'+shuffledNumbersto[8],
+    nextId: 'consonants'+shuffledNumbersthree[8],
   },
 ],
 },
 
 //9
-['consonants'+shuffledNumbersto[8]]: {
+['consonants'+shuffledNumbersthree[8]]: {
 botPrompt: 'What are the consonants in "basket"?',
 type: RTypes.TRANSFORMED_TEXT,
 
@@ -370,7 +370,7 @@ consonantscorrectq9: {
 botPrompt: 'Hurray! <strong>b, s, k, t</strong> is the correct answer  ! 😎',
 answers: [
   {
-    nextId: 'consonants'+shuffledNumbersto[9],
+    nextId: 'consonants'+shuffledNumbersthree[9],
   },
 ],
 },
@@ -378,14 +378,14 @@ inconsonantscorrectq9: {
 botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"b, s, k, t"</strong>',
 answers: [
   {
-    nextId: 'consonants'+shuffledNumbersto[9],
+    nextId: 'consonants'+shuffledNumbersthree[9],
   },
 ],
 },
 
 
 //10
-['consonants'+shuffledNumbersto[9]]: {
+['consonants'+shuffledNumbersthree[9]]: {
 botPrompt: ' Identify the consonants in "carrot".?',
 type: RTypes.TRANSFORMED_TEXT,
 
@@ -414,7 +414,7 @@ consonantscorrectq10: {
 botPrompt: 'Hurray! <strong>c, r, t</strong> is the correct answer  ! 😎',
 answers: [
   {
-    nextId: 'consonants'+shuffledNumbersto[10],
+    nextId: 'consonants'+shuffledNumbersthree[10],
   },
 ],
 },
@@ -422,13 +422,13 @@ inconsonantscorrectq10: {
 botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"c, r, t"</strong>',
 answers: [
   {
-    nextId: 'consonants'+shuffledNumbersto[10],
+    nextId: 'consonants'+shuffledNumbersthree[10],
   },
 ],
 },
 
 //11
-['consonants'+shuffledNumbersto[10]]: {
+['consonants'+shuffledNumbersthree[10]]: {
 botPrompt: 'What are the consonants in "smile"?',
 type: RTypes.TRANSFORMED_TEXT,
 
@@ -457,7 +457,7 @@ consonantscorrectq11: {
 botPrompt: 'Hurray! <strong>s, m, l</strong> is the correct answer  ! 😎',
 answers: [
   {
-    nextId: 'consonants'+shuffledNumbersto[11],
+    nextId: 'consonants'+shuffledNumbersthree[11],
   },
 ],
 },
@@ -465,13 +465,13 @@ inconsonantscorrectq11: {
 botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"s, m, l"</strong>',
 answers: [
   {
-    nextId: 'consonants'+shuffledNumbersto[11],
+    nextId: 'consonants'+shuffledNumbersthree[11],
   },
 ],
 },
 
 //12
-['consonants'+shuffledNumbersto[11]]: {
+['consonants'+shuffledNumbersthree[11]]: {
 botPrompt: ' What are the consonants in "cheesec, h, e',
 type: RTypes.TRANSFORMED_TEXT,
 
@@ -500,7 +500,7 @@ consonantscorrectq12: {
 botPrompt: 'Hurray! <strong>c, h, s</strong> is the correct answer  ! 😎',
 answers: [
   {
-    nextId: 'consonants'+shuffledNumbersto[12],
+    nextId: 'consonants'+shuffledNumbersthree[12],
   },
 ],
 },
@@ -508,13 +508,13 @@ inconsonantscorrectq12: {
 botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"c, h, s"</strong>',
 answers: [
   {
-    nextId: 'consonants'+shuffledNumbersto[12],
+    nextId: 'consonants'+shuffledNumbersthree[12],
   },
 ],
 },
 
 //13
-['consonants'+shuffledNumbersto[12]]: {
+['consonants'+shuffledNumbersthree[12]]: {
 botPrompt: 'What are the consonants in "butterfly"?',
 type: RTypes.TRANSFORMED_TEXT,
 
@@ -543,7 +543,7 @@ consonantscorrectq13: {
 botPrompt: 'Hurray! <strong>b, t, r, f, l,y</strong> is the correct answer  ! 😎',
 answers: [
   {
-    nextId: 'consonants'+shuffledNumbersto[13],
+    nextId: 'consonants'+shuffledNumbersthree[13],
   },
 ],
 },
@@ -551,13 +551,13 @@ inconsonantscorrectq13: {
 botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"b, t, r, f, l,y"</strong>',
 answers: [
   {
-    nextId: 'consonants'+shuffledNumbersto[13],
+    nextId: 'consonants'+shuffledNumbersthree[13],
   },
 ],
 },
 
 //14
-['consonants'+shuffledNumbersto[13]]: {
+['consonants'+shuffledNumbersthree[13]]: {
 botPrompt: 'What are the consonants in "basketball"?',
 type: RTypes.TRANSFORMED_TEXT,
 
@@ -586,7 +586,7 @@ consonantscorrectq14: {
 botPrompt: 'Hurray! <strong>b, s, k, t, l</strong> is the correct answer  ! 😎',
 answers: [
   {
-    nextId: 'consonants'+shuffledNumbersto[14],
+    nextId: 'consonants'+shuffledNumbersthree[14],
   },
 ],
 },
@@ -594,14 +594,14 @@ inconsonantscorrectq14: {
 botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"b, s, k, t, l"</strong>',
 answers: [
   {
-    nextId: 'consonants'+shuffledNumbersto[14],
+    nextId: 'consonants'+shuffledNumbersthree[14],
   },
 ],
 },
 
 
 //15
-['consonants'+shuffledNumbersto[14]]: {
+['consonants'+shuffledNumbersthree[14]]: {
 botPrompt: 'What are the consonants in "lemon"?',
 type: RTypes.TRANSFORMED_TEXT,
 
@@ -630,7 +630,7 @@ consonantscorrectq15: {
 botPrompt: 'Hurray! <strong>l, m, n</strong> is the correct answer  ! 😎',
 answers: [
   {
-    nextId: 'consonants'+shuffledNumbersto[15],
+    nextId: 'consonants'+shuffledNumbersthree[15],
   },
 ],
 },
@@ -638,13 +638,13 @@ inconsonantscorrectq15: {
 botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"l, m, n"</strong>',
 answers: [
   {
-    nextId: 'consonants'+shuffledNumbersto[15],
+    nextId: 'consonants'+shuffledNumbersthree[15],
   },
 ],
 },
 
 //16
-['consonants'+shuffledNumbersto[15]]: {
+['consonants'+shuffledNumbersthree[15]]: {
   botPrompt: 'Identify the consonants in "elephant".',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['l, p, h, n, t', 'l, p, h, n, e', "l, p, h, n, w","l, p, h, n, a"]),
@@ -672,7 +672,7 @@ consonantscorrectq16: {
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>l, p, h, n, t</strong> 😎',
   answers: [
     {
-      nextId: 'consonants'+shuffledNumbersto[16],
+      nextId: 'consonants'+shuffledNumbersthree[16],
     },
   ],
 },
@@ -680,13 +680,13 @@ inconsonantscorrectq16: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"l, p, h, n, t"</strong>',
   answers: [
     {
-      nextId: 'consonants'+shuffledNumbersto[16],
+      nextId: 'consonants'+shuffledNumbersthree[16],
     },
   ],
 },
 
 //17
-['consonants'+shuffledNumbersto[16]]: {
+['consonants'+shuffledNumbersthree[16]]: {
 botPrompt: 'What are the consonants in "mountain"?',
 type: RTypes.TRANSFORMED_TEXT,
 input: selectField(['m, n, t, o', 'm, n, t, e', "m, n, t, i","m, n, t, n"]),
@@ -714,7 +714,7 @@ consonantscorrectq17: {
 botPrompt: 'You Have Selected correct Anwser 🎉! <strong>m, n, t, n</strong> 😎',
 answers: [
   {
-    nextId: 'consonants'+shuffledNumbersto[17],
+    nextId: 'consonants'+shuffledNumbersthree[17],
   },
 ],
 },
@@ -722,13 +722,13 @@ inconsonantscorrectq17: {
 botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"m, n, t, n"</strong>',
 answers: [
   {
-    nextId: 'consonants'+shuffledNumbersto[17],
+    nextId: 'consonants'+shuffledNumbersthree[17],
   },
 ],
 },
 
 //18
-['consonants'+shuffledNumbersto[17]]: {
+['consonants'+shuffledNumbersthree[17]]: {
 botPrompt: 'Identify the consonants in "triangle".?',
 type: RTypes.TRANSFORMED_TEXT,
 input: selectField(['t, r, n, g, a', 't, r, n, g, e', "t, r, n, g, l","t, r, n, g, l,i"]),
@@ -756,7 +756,7 @@ consonantscorrectq18: {
 botPrompt: 'You Have Selected correct Anwser 🎉! <strong>t, r, n, g, l</strong> 😎',
 answers: [
   {
-    nextId: 'consonants'+shuffledNumbersto[18],
+    nextId: 'consonants'+shuffledNumbersthree[18],
   },
 ],
 },
@@ -764,13 +764,13 @@ inconsonantscorrectq18: {
 botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"t, r, n, g, l"</strong>',
 answers: [
   {
-    nextId: 'consonants'+shuffledNumbersto[18],
+    nextId: 'consonants'+shuffledNumbersthree[18],
   },
 ],
 },
 
 //19
-['consonants'+shuffledNumbersto[18]]: {
+['consonants'+shuffledNumbersthree[18]]: {
 botPrompt: 'What are the consonants in "computer"? ',
 type: RTypes.TRANSFORMED_TEXT,
 input: selectField(['c, m, p, t, r', 'c, m, p, t, r,e', "c, m, p, t, r,a","c, m, p, t, r,p"]),
@@ -798,7 +798,7 @@ consonantscorrectq19: {
 botPrompt: 'You Have Selected correct Anwser 🎉! <strong>c, m, p, t, r</strong> Answers! 😎',
 answers: [
   {
-    nextId: 'consonants'+shuffledNumbersto[19],
+    nextId: 'consonants'+shuffledNumbersthree[19],
   },
 ],
 },
@@ -806,13 +806,13 @@ inconsonantscorrectq19: {
 botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"c, m, p, t, r"</strong>',
 answers: [
   {
-    nextId: 'consonants'+shuffledNumbersto[19],
+    nextId: 'consonants'+shuffledNumbersthree[19],
   },
 ],
 },
 
 //20
-['consonants'+shuffledNumbersto[19]]: {
+['consonants'+shuffledNumbersthree[19]]: {
 botPrompt: 'What are the consonants in "guitar"?',
 type: RTypes.TRANSFORMED_TEXT,
 input: selectField(['g, t, r', 'g, t, i', "g, t, a","g, t, u"]),
@@ -839,7 +839,7 @@ consonantscorrectq20: {
 botPrompt: 'You Have Selected correct Anwser 🎉! <strong>g, t, r</strong> 😎',
 answers: [
   {
-    nextId: 'consonants'+shuffledNumbersto[20],
+    nextId: 'consonants'+shuffledNumbersthree[20],
   },
 ],
 },
@@ -847,13 +847,13 @@ inconsonantscorrectq20: {
 botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"g, t, r"</strong>',
 answers: [
   {
-    nextId: 'consonants'+shuffledNumbersto[20],
+    nextId: 'consonants'+shuffledNumbersthree[20],
   },
 ],
 },
 
 //21
-['consonants'+shuffledNumbersto[20]]: {
+['consonants'+shuffledNumbersthree[20]]: {
   botPrompt: 'What are the consonants in "science"?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['c, n, c,e', 'c, n, c,s', "c, n, c,i","c, n, c,d"]),
@@ -881,7 +881,7 @@ answers: [
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>c, n, c,s</strong> Answers! 😎',
   answers: [
     {
-      nextId: 'consonants'+shuffledNumbersto[21],
+      nextId: 'consonants'+shuffledNumbersthree[21],
     },
   ],
   },
@@ -889,13 +889,13 @@ answers: [
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"c, n, c,s"</strong>',
   answers: [
     {
-      nextId: 'consonants'+shuffledNumbersto[21],
+      nextId: 'consonants'+shuffledNumbersthree[21],
     },
   ],
   },
 
   //22
-['consonants'+shuffledNumbersto[21]]: {
+['consonants'+shuffledNumbersthree[21]]: {
   botPrompt: 'Identify the consonants in "ocean".?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['c, n,a', 'c, n', "c, n,e","c,n,o"]),
@@ -923,7 +923,7 @@ answers: [
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>c,n,o</strong> Answers! 😎',
   answers: [
     {
-      nextId: 'consonants'+shuffledNumbersto[22],
+      nextId: 'consonants'+shuffledNumbersthree[22],
     },
   ],
   },
@@ -931,13 +931,13 @@ answers: [
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"c,n,o"</strong>',
   answers: [
     {
-      nextId: 'consonants'+shuffledNumbersto[22],
+      nextId: 'consonants'+shuffledNumbersthree[22],
     },
   ],
   },
 
   //23
-['consonants'+shuffledNumbersto[22]]: {
+['consonants'+shuffledNumbersthree[22]]: {
   botPrompt: 'What are the consonants in "sentence"? ',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['s, n, t, c,e', 's, n, t, c,o', "s, n, t, c,i","s, n, t, c"]),
@@ -965,7 +965,7 @@ answers: [
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>s, n, t, c</strong> Answers! 😎',
   answers: [
     {
-      nextId: 'consonants'+shuffledNumbersto[23],
+      nextId: 'consonants'+shuffledNumbersthree[23],
     },
   ],
   },
@@ -973,13 +973,13 @@ answers: [
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"s, n, t, c"</strong>',
   answers: [
     {
-      nextId: 'consonants'+shuffledNumbersto[23],
+      nextId: 'consonants'+shuffledNumbersthree[23],
     },
   ],
   },
 
   //24
-['consonants'+shuffledNumbersto[23]]: {
+['consonants'+shuffledNumbersthree[23]]: {
   botPrompt: 'Identify the consonants in "eleven".? ',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['l, v, n,e', 'l, v, n,o', "l, v, n,a","l, v, n"]),
@@ -1007,7 +1007,7 @@ answers: [
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>l, v, n</strong> Answers! 😎',
   answers: [
     {
-      nextId: 'consonants'+shuffledNumbersto[24],
+      nextId: 'consonants'+shuffledNumbersthree[24],
     },
   ],
   },
@@ -1015,13 +1015,13 @@ answers: [
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"l, v, n"</strong>',
   answers: [
     {
-      nextId: 'consonants'+shuffledNumbersto[24],
+      nextId: 'consonants'+shuffledNumbersthree[24],
     },
   ],
   },
 
   //25
-['consonants'+shuffledNumbersto[24]]: {
+['consonants'+shuffledNumbersthree[24]]: {
   botPrompt: 'What are the consonants in "brother"?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['b, r, t, h,o', 'b, r, t, h,e', "b, r, t, h,i","b, r, t, h"]),
@@ -1049,7 +1049,7 @@ answers: [
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>b, r, t, h</strong> Answers! 😎',
   answers: [
     {
-      nextId: 'consonants'+shuffledNumbersto[25],
+      nextId: 'consonants'+shuffledNumbersthree[25],
     },
   ],
   },
@@ -1057,13 +1057,13 @@ answers: [
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"b, r, t, h"</strong>',
   answers: [
     {
-      nextId: 'consonants'+shuffledNumbersto[25],
+      nextId: 'consonants'+shuffledNumbersthree[25],
     },
   ],
   },
 
   //26
-['consonants'+shuffledNumbersto[25]]: {
+['consonants'+shuffledNumbersthree[25]]: {
   botPrompt: 'What are the consonants in "diamond"?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['d, m, n, d,o', 'd, m, n, d,i', "d, m, n, d","d, m, n, d,a"]),
@@ -1106,7 +1106,7 @@ answers: [
 
 
 //27
-['consonants'+shuffledNumbersto[26]]: {
+['consonants'+shuffledNumbersthree[26]]: {
   botPrompt: 'Identify the consonants in "jungle".? ',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['j, n, g, l,e', 'j, n, g, l,u', "j, n, g, l","j, n, g, l,a"]),
@@ -1148,7 +1148,7 @@ answers: [
   },
 
   //28
-['consonants'+shuffledNumbersto[27]]: {
+['consonants'+shuffledNumbersthree[27]]: {
   botPrompt: 'What are the consonants in "teacher"?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['t, c, h, r', 't, c, h, r,e', "t, c, h, r,a","t, c, h, r,u"]),
@@ -1176,7 +1176,7 @@ answers: [
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>t, c, h, r</strong> Answers! 😎',
   answers: [
     {
-      nextId: 'consonants'+shuffledNumbersto[28],
+      nextId: 'consonants'+shuffledNumbersthree[28],
     },
   ],
   },
@@ -1184,13 +1184,13 @@ answers: [
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"t, c, h, r"</strong>',
   answers: [
     {
-      nextId: 'consonants'+shuffledNumbersto[28],
+      nextId: 'consonants'+shuffledNumbersthree[28],
     },
   ],
   },
 
   //29
-['consonants'+shuffledNumbersto[28]]: {
+['consonants'+shuffledNumbersthree[28]]: {
   botPrompt: 'Identify the consonants in "village".?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['v, l, g,i', 'v, l, g,o', "v, l, g,a","v, l, g"]),
