@@ -6,10 +6,18 @@
     "type": "git",
     "url": "git://github.com/IcaliaLabs/alpha.git"
   },
-
+  "engines": {
+    "node": "14.x",
+    "npm": "6.x"
+  },
   "author": "Vignesh Selvaraj",
   "license": "MIT",
   "scripts": {
+    "build": "npm run build:clean && npm run build:prod",
+  "build:prod": "cross-env NODE_ENV=production webpack --config internals/webpack/webpack.prod.babel.js --color -p --progress",
+
+  "start:production": "npm run build && npm run start:prod",
+  "start:prod": "cross-env NODE_ENV=production node server",
     "heroku-postbuild": "npm run build",
     "analyze:clean": "rimraf stats.json",
     "preanalyze": "npm run analyze:clean",
@@ -19,13 +27,12 @@
     "preinstall": "npm run npmcheckversion",
     "postinstall": "npm run build:dll",
     "prebuild": "npm run build:clean",
-    "build": "cross-env NODE_ENV=production webpack --config internals/webpack/webpack.prod.babel.js --color -p --progress",
+  
     "build:clean": "npm run test:clean && rimraf ./build",
     "build:dll": "node ./internals/scripts/dependencies.js",
     "start": "cross-env NODE_ENV=development node server",
     "start:tunnel": "cross-env NODE_ENV=development ENABLE_TUNNEL=true node server",
-    "start:production": "npm run test && npm run build && npm run start:prod",
-    "start:prod": "cross-env NODE_ENV=production node server",
+
     "presetup": "npm i chalk shelljs",
     "setup": "node ./internals/scripts/setup.js",
     "postsetup": "npm run build:dll",
@@ -46,6 +53,19 @@
     "*.js": "lint:eslint"
   },
   "pre-commit": "lint:staged",
+  "amplify": {
+    "backend": {
+      "buildCommand": "npm run build",
+      "outputDir": "build"
+    },
+    "frontend": {
+      "config": {
+        "SourceDir": "app",
+        "DistributionDir": "build",
+        "BuildCommand": "npm run build"
+      }
+    }
+  },
   "babel": {
     "presets": [
       [
