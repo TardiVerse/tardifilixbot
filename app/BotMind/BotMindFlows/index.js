@@ -105,7 +105,7 @@ const random12DigitNumber = generateRandom12DigitNumber();
 const questions = {
 
   start: {
-    botPrompt: 'Welcome to <strong>E</strong>ducation <strong>F</strong>or <strong>A</strong>ll! my name is <strong>TardiFilixBot</strong>, An New Gen <strong>AI bot for your Skill Development</strong>',
+    botPrompt: 'Hello, I am <strong>FiliBot</strong> From the planet of joyful learning! Here to help you to eradicate learning lapses from every corners!',
     answers: [
       {
         nextId: 'myPurpose',
@@ -115,7 +115,7 @@ const questions = {
 
 
   myPurpose: {
-    botPrompt: 'This course was designed by the <strong>EFA</strong> Curriculum Team  aimed at eradicating learning lapse in children.',
+    botPrompt: '<strong>Education For All </strong> (EFA) team of Filix School of Education has asked me to help you!',
     answers: [
       {
         nextId: 'imageshare',
