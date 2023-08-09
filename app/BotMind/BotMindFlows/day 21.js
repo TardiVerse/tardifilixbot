@@ -329,7 +329,7 @@ theseThosecorrectq8: {
 botPrompt: 'Hurray! <strong>These</strong> is the correct answer  ! 😎',
 answers: [
   {
-    nextId: 'theseThose'+shuffledNumbersto[8],
+    nextId: 'wishtocontinue22',
   },
 ],
 },
@@ -337,7 +337,7 @@ intheseThosecorrectq8: {
 botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"These"</strong>',
 answers: [
   {
-    nextId: 'theseThose'+shuffledNumbersto[8],
+    nextId: 'wishtocontinue22',
   },
 ],
 },
