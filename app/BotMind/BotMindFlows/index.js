@@ -3948,7 +3948,7 @@ incorrectq29: {
   ],
 },
 correctq30: {
-  botPrompt: 'You Have Selected Correct Anwser 🎉! S<strong>U</strong>N  or S<strong>I</strong>N or S<strong>O</strong>N are the Correct Answers! 😎',
+  botPrompt: 'You Have Selected Correct Anwser 🎉! CL<strong>O</strong>CK  or CL<strong>I</strong>CK  😎',
   answers: [
     {
       nextId: 'vowels_question'+shuffledNumbers[30],
@@ -3956,7 +3956,7 @@ correctq30: {
   ],
 },
 incorrectq30: {
-  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"I"</strong>',
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"O"</strong> or <strong>"I"</strong> ',
   answers: [
     {
       nextId: 'vowels_question'+shuffledNumbers[30],
@@ -4097,7 +4097,7 @@ incorrectq33: {
 },
 //34
 ['vowels_question'+shuffledNumbers[33]]: {
-  botPrompt: 'Fill in the missing vowel in "h_ngy":',
+  botPrompt: 'Fill in the missing vowel in "h_ngry":',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['A', 'E', "I","O","U"]),
   answers: [
@@ -4299,7 +4299,7 @@ inconsonantscorrect: {
   type: RTypes.TRANSFORMED_TEXT,
 
 
-  input: selectField(['l, p, h, n, t', 'l, p, h, n, t,e', "l, p, h, n, t,a", "l, p, h, n, t"]),
+  input: selectField(['l, p, h, n, t', 'l, p, h, n, t,e', "l, p, h, n, t,a", "l, p, h, n, t,r"]),
   answers: [
     {
       answer: 'l, p, h, n, t',
@@ -4314,7 +4314,7 @@ inconsonantscorrect: {
       nextId: 'inconsonantscorrectq2',
     },
     {
-      answer: "l, p, h, n, t",
+      answer: "l, p, h, n, t,r",
       nextId: 'inconsonantscorrectq2',
     },
   ],
@@ -4727,7 +4727,7 @@ answers: [
 
 //12
 ['consonants'+shuffledNumbersthree[11]]: {
-botPrompt: ' What are the consonants in "cheesec, h, e',
+botPrompt: ' What are the consonants in "cheese',
 type: RTypes.TRANSFORMED_TEXT,
 
 input: selectField(['c, h, e', 'c, h, s,e', "c, h, o","c, h, s"]),
@@ -4860,7 +4860,7 @@ answers: [
 botPrompt: 'What are the consonants in "lemon"?',
 type: RTypes.TRANSFORMED_TEXT,
 
-input: selectField(['l, m, e', 'l, m, o', "l, m, n","l, m, e"]),
+input: selectField(['l, m, e', 'l, m, o', "l, m, n","l, n, o"]),
 answers: [
   {
     answer: 'l, m, e',
@@ -4875,7 +4875,7 @@ answers: [
     nextId: 'consonantscorrectq15',
   },
   {
-    answer: "l, m, e",
+    answer: "l, n, o",
     nextId: 'inconsonantscorrectq15',
   },
 ],
