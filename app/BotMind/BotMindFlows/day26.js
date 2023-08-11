@@ -628,7 +628,7 @@
       },
     ],
   },
-  
+
   oppositescorrectq15: {
   botPrompt: 'Hurray! <strong>Out</strong> is the correct answer  ! 😎',
   answers: [
@@ -982,7 +982,7 @@
   botPrompt: 'Opposite of "awake"',
   type: RTypes.TRANSFORMED_TEXT,
   
-  input: selectField(['Asleep', 'Young', "Soft","salt`"]),
+  input: selectField(['Asleep', 'Young', "Soft","salt"]),
   answers: [
     {
       answer: 'Asleep',
@@ -1045,7 +1045,7 @@
     },
   ],
   },
-  
+
   oppositescorrectq25: {
   botPrompt: 'Hurray! <strong>sweet</strong> is the correct answer  ! 😎',
   answers: [
