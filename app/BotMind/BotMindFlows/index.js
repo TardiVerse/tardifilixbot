@@ -34,7 +34,7 @@ const random12DigitNumber = generateRandom12DigitNumber();
 const questions = {
 
   start: {
-    botPrompt: 'Hello, I am <strong>FiliBot</strong> From the planet of joyful learning! Here to help you to eradicate learning lapses from every corners!',
+    botPrompt: 'I am <strong>FiliBot</strong> from the planet of joyful learning. I am here to help you eradicate learning lapses in your students.',
     answers: [
       {
         nextId: 'myPurpose',
@@ -224,7 +224,7 @@ class8ivideo: {
 
 
 chooseapple: {
-  botPrompt: "From the below options find an Apple?",
+  botPrompt: "Find an apple from the options given below.?",
   input: imageSelectField(
     [
       { label: 'Apple', image: apple },
@@ -249,7 +249,7 @@ chooseapple: {
   ],
 },
 choosecorrect: {
-  botPrompt: 'Hurray you have Choosed the correct answer  ! 😎',
+  botPrompt: 'Hurray! You have chosen the correct picture. 😎',
   answers: [
     {
       nextId: 'tfidgenration',
@@ -470,7 +470,7 @@ day123q: {
   },
 
   endConv: {
-    botPrompt: 'Thank you Will Meet you tomorrow ',
+    botPrompt: 'Thank you. I will meet you tomorrow.',
     input: endOfConversation(),
     answers: [
       {

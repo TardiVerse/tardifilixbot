@@ -47,7 +47,7 @@ export class BotContainer extends React.Component { // eslint-disable-line react
 saveChatList = () => {
     const urlsplit = this.state.pathname.split('/').slice(-1)[0];
     fetch(
-      `https://opticalchatbot.thetopfluencer.com/api/v1/chatbot/save/${urlsplit}`,
+      `https://devapitardifilix-6bf804c0e6f9.herokuapp.com/chatbot/save/TF2601/hjgbjhg`,
       {
         method: 'POST',
 
