@@ -1064,7 +1064,7 @@
   },
   
   //26
-  ['moreLess'+shuffledNumbersto[5]]: {
+  ['moreLess'+shuffledNumbersto[25]]: {
   botPrompt: 'What is 1 more than 29?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -4087,7 +4087,7 @@
       },
     ],
     },
-    
+
     //97
     ['moreLess'+shuffledNumbersto[96]]: {
     botPrompt: ' What number is 1 less than 47?',

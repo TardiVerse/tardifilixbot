@@ -1064,7 +1064,7 @@ answers: [
 },
 
 //26
-['isAre'+shuffledNumbersto[5]]: {
+['isAre'+shuffledNumbersto[25]]: {
 botPrompt: 'The boys ___ playing.',
 type: RTypes.TRANSFORMED_TEXT,
 
