@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A Full Education based ChatBot for School",
 
-  "proxy":"https://devapitardifilix-6bf804c0e6f9.herokuapp.com/",
+  "proxy":"https://demo.dhzu9o4pqucvc.amplifyapp.com/",
   "author": "Vignesh Selvaraj",
   "license": "MIT",
   "scripts": {
