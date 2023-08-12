@@ -1,11 +1,8 @@
 {
   "name": "tardifilixbot",
   "version": "1.0.0",
-  "description": "A Full Education based ChatBot of School",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/IcaliaLabs/alpha.git"
-  },
+  "description": "A Full Education based ChatBot for School",
+
 
   "author": "Vignesh Selvaraj",
   "license": "MIT",

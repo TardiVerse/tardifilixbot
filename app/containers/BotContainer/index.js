@@ -13,6 +13,16 @@ import { initConversation, estimateRecommendation, activateBot } from './actions
 import BotComponent from '../../components/BotComponent/';
 
 export class BotContainer extends React.Component { // eslint-disable-line react/prefer-dataless-function
+ 
+ 
+  constructor(props) {
+    super(props);
+    this.state = {
+      botnameonfly: 'fillibot',
+      pathname: window.location.pathname,
+      id: Date.now(),
+    };
+  }
   componentDidMount() {
     this.handleInitConversation();
   }
@@ -21,6 +31,8 @@ export class BotContainer extends React.Component { // eslint-disable-line react
     if (this.props.botContainer.displayRecommendation) {
       this.handleEstimateRecommendation(this.props.botContainer.bags);
     }
+    
+    this.saveChatList();
   }
 
   handleActivateBot() {
@@ -32,19 +44,51 @@ export class BotContainer extends React.Component { // eslint-disable-line react
   handleInitConversation() {
     this.props.initConversation();
   }
+saveChatList = () => {
+    const urlsplit = this.state.pathname.split('/').slice(-1)[0];
+    fetch(
+      // `https://devapitardifilix-6bf804c0e6f9.herokuapp.com/chatbot/save/TF2601/hjgbjhg`,
+      `https://devapitardifilix-6bf804c0e6f9.herokuapp.com/chatbot/save/TF2601/64d64ce9827346662012e07d`,
+      {
+        method: 'POST',
 
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: this.props.botContainer.userName,
+          chatData: this.props.botContainer.conversation,
+          sessId: this.state.id,
+          number: this.props.botContainer.userPhone,
+          glassKind: this.props.botContainer.userGlassKind,
+          glassType: this.props.botContainer.userGlassType,
+          rimType: this.props.botContainer.userRimType,
+          userGender: this.props.botContainer.userGender,
+        }),
+      }
+    )
+      .then((response) => response.json())
+      .then((res) => {
+        if (res.message === 'Sucess') {
+          console.log('Success');
+        } else {
+          console.log('Failed');
+        }
+      });
+  };
   render() {
     const data = this.props.botContainer;
     return (
       <div>
         <Helmet
-          title="TardiFilix"
+          title="FiliBot"
           meta={[
             { name: 'description', content: 'Description of BotContainer' },
           ]}
         />
         <BotComponent
-          name="TardiFilix"
+          name="FiliBot"
           conversation={data.conversation}
           active={data.active}
           expanded={data.expanded}

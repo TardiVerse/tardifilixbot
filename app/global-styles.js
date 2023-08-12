@@ -158,7 +158,7 @@ body {
   background: url(${variables.botAvatarIcon}) no-repeat center center ${
   variables.botAvatar
 };
-  background-size: 60%;
+  background-size: 100%;
 }
 .qt-chat__dialogue.from-bot .qt-chat__bubble div {
   background: ${variables.bubbleBGBot};
