@@ -482,11 +482,11 @@
   answers: [
     {
       answer: 'a',
-      nextId: 'inarticlecorrectq12',
+      nextId: 'articlecorrectq12',
     },
     {
       answer: 'an',
-      nextId: 'articlecorrectq12',
+      nextId: 'inarticlecorrectq12',
     },
     {
       answer: "ann",
