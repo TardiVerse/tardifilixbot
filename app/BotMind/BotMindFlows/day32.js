@@ -40,7 +40,7 @@
       },
     ],
   },
-  
+
   ['useOfAnd'+shuffledNumbersto[1]]: {
     botPrompt: 'Which word is used to join two things together?',
     type: RTypes.TRANSFORMED_TEXT,
@@ -65,7 +65,7 @@
       },
     ],
   },
-  
+
   useOfAndcorrectq2: {
     botPrompt: 'Hurray! <strong>And</strong> is the correct answer  ! 😎',
     answers: [
@@ -108,7 +108,7 @@
     },
   ],
   },
-  
+
   useOfAndcorrectq3: {
   botPrompt: 'Hurray! <strong>And</strong> is the correct answer ! 😎',
   answers: [
@@ -125,7 +125,7 @@
     },
   ],
   },
-  
+
   //4
   ['useOfAnd'+shuffledNumbersto[3]]: {
   botPrompt: 'Which word is used to express similarity or continuation?',
@@ -150,7 +150,7 @@
     },
   ],
   },
-  
+
   useOfAndcorrectq4: {
   botPrompt: 'Hurray! <strong>And</strong> is the correct answer  ! 😎',
   answers: [
@@ -167,7 +167,7 @@
     },
   ],
   },
-  
+
   //5
   ['useOfAnd'+shuffledNumbersto[4]]: {
   botPrompt: 'Which word is used to indicate a combination of things?',
@@ -192,7 +192,7 @@
     },
   ],
   },
-  
+
   useOfAndcorrectq5: {
   botPrompt: 'Hurray! <strong>And</strong> is the correct answer  ! 😎',
   answers: [
@@ -209,12 +209,12 @@
     },
   ],
   },
-  
+
   //6
   ['useOfAnd'+shuffledNumbersto[5]]: {
   botPrompt: 'Ram is eating an apple ____ Shyam is eating an orange.',
   type: RTypes.TRANSFORMED_TEXT,
-  
+
   input: selectField(['But', 'And', "Or","Not"]),
   answers: [
     {
@@ -235,7 +235,7 @@
     },
   ],
   },
-  
+
   useOfAndcorrectq6: {
   botPrompt: 'Hurray! <strong>And</strong> is the correct answer  ! 😎',
   answers: [
@@ -277,7 +277,7 @@
     },
   ],
   },
-  
+
   useOfAndcorrectq7: {
   botPrompt: 'Hurray! <strong>And</strong> is the correct answer  ! 😎',
   answers: [
@@ -295,7 +295,7 @@
   ],
   },
   
-  
+
   //8
   ['useOfAnd'+shuffledNumbersto[7]]: {
   botPrompt: 'Which word can be used to express "rain" and "sun"?',
@@ -338,7 +338,7 @@
     },
   ],
   },
-  
+
   //9
   ['useOfAnd'+shuffledNumbersto[8]]: {
   botPrompt: 'Which word is used to indicate a join action or condition?',
@@ -364,7 +364,7 @@
     },
   ],
   },
-  
+
   useOfAndcorrectq9: {
   botPrompt: 'Hurray! <strong>And</strong> is the correct answer  ! 😎',
   answers: [
@@ -382,7 +382,7 @@
   ],
   },
   
-  
+
   //10
   ['useOfAnd'+shuffledNumbersto[9]]: {
   botPrompt: 'Which word is used to combine two phrases or clauses?',
@@ -409,7 +409,7 @@
   ],
   
   },
-  
+
   useOfAndcorrectq10: {
   botPrompt: 'Hurray! <strong>And</strong> is the correct answer  ! 😎',
   answers: [
@@ -426,7 +426,7 @@
     },
   ],
   },
-  
+
   //11
   ['useOfAnd'+shuffledNumbersto[10]]: {
   botPrompt: 'Which word is used to express addition or inclusion?',
@@ -452,7 +452,7 @@
     },
   ],
   },
-  
+
   useOfAndcorrectq11: {
   botPrompt: 'Hurray! <strong>And</strong> is the correct answer  ! 😎',
   answers: [
@@ -474,7 +474,7 @@
   ['useOfAnd'+shuffledNumbersto[11]]: {
   botPrompt: 'Which word is used to show a connection between two ideas?',
   type: RTypes.TRANSFORMED_TEXT,
-  
+
   input: selectField(['But', 'And', "Or","Not"]),
   answers: [
     {
@@ -495,7 +495,7 @@
     },
   ],
   },
-  
+
   useOfAndcorrectq12: {
   botPrompt: 'Hurray! <strong>And</strong> is the correct answer  ! 😎',
   answers: [
@@ -712,7 +712,7 @@
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>And</strong> 😎',
   answers: [
     {
-      nextId: 'wishtocontinue32',
+      nextId: 'wishtocontinue33',
     },
   ],
   },
@@ -720,7 +720,7 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"And"</strong>',
   answers: [
     {
-      nextId: 'wishtocontinue32',
+      nextId: 'wishtocontinue33',
     },
   ],
   },
