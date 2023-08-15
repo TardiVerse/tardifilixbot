@@ -2,7 +2,7 @@
 //zero
 
 
-["zero"+shuffledNumbersto[0]]: {
+["zero"+shuffledNumbersten[0]]: {
   botPrompt: 'What does the number "0" represent?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['The smallest number', 'The largest number', "nothing or empty","a negative value"]),
@@ -29,7 +29,7 @@ zerocorrect: {
   botPrompt: 'Hurray <strong>nothing or empty</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'zero'+shuffledNumbersto[1],
+      nextId: 'zero'+shuffledNumbersten[1],
     },
   ],
 },
@@ -37,12 +37,12 @@ inzerocorrect: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"nothing or empty"</strong>',
   answers: [
     {
-      nextId: 'zero'+shuffledNumbersto[1],
+      nextId: 'zero'+shuffledNumbersten[1],
     },
   ],
 },
 
-['zero'+shuffledNumbersto[1]]: {
+['zero'+shuffledNumbersten[1]]: {
   botPrompt: 'What happens when you add or subtract zero from a number?',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -71,7 +71,7 @@ zerocorrectq2: {
   botPrompt: 'Hurray! <strong>The number stays the same</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'zero'+shuffledNumbersto[2],
+      nextId: 'zero'+shuffledNumbersten[2],
     },
   ],
 },
@@ -79,13 +79,13 @@ inzerocorrectq2: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"The number stays the same"</strong>',
   answers: [
     {
-      nextId: 'zero'+shuffledNumbersto[2],
+      nextId: 'zero'+shuffledNumbersten[2],
     },
   ],
 },
 
 //3
-['zero'+shuffledNumbersto[2]]: {
+['zero'+shuffledNumbersten[2]]: {
 botPrompt: "How many apples are there if someone gives you zero apples?",
 type: RTypes.TRANSFORMED_TEXT,
 
@@ -114,7 +114,7 @@ zerocorrectq3: {
 botPrompt: 'Hurray! <strong>0</strong> is the correct answer ! 😎',
 answers: [
   {
-    nextId: 'zero'+shuffledNumbersto[3],
+    nextId: 'zero'+shuffledNumbersten[3],
   },
 ],
 },
@@ -122,13 +122,13 @@ inzerocorrectq3: {
 botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"0"</strong>',
 answers: [
   {
-    nextId: 'zero'+shuffledNumbersto[3],
+    nextId: 'zero'+shuffledNumbersten[3],
   },
 ],
 },
 
 //4
-['zero'+shuffledNumbersto[3]]: {
+['zero'+shuffledNumbersten[3]]: {
 botPrompt: 'What is the value of zero plus zero?',
 type: RTypes.TRANSFORMED_TEXT,
 
@@ -157,7 +157,7 @@ zerocorrectq4: {
 botPrompt: 'Hurray! <strong>0</strong> is the correct answer  ! 😎',
 answers: [
   {
-    nextId: 'zero'+shuffledNumbersto[4],
+    nextId: 'zero'+shuffledNumbersten[4],
   },
 ],
 },
@@ -165,13 +165,13 @@ inzerocorrectq4: {
 botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"0"</strong>',
 answers: [
   {
-    nextId: 'zero'+shuffledNumbersto[4],
+    nextId: 'zero'+shuffledNumbersten[4],
   },
 ],
 },
 
 //5
-['zero'+shuffledNumbersto[4]]: {
+['zero'+shuffledNumbersten[4]]: {
 botPrompt: 'What does it mean if you have zero chocolates?',
 type: RTypes.TRANSFORMED_TEXT,
 
@@ -200,7 +200,7 @@ zerocorrectq5: {
 botPrompt: 'Hurray! <strong>You have no chocolates</strong> is the correct answer  ! 😎',
 answers: [
   {
-    nextId: 'zero'+shuffledNumbersto[5],
+    nextId: 'zero'+shuffledNumbersten[5],
   },
 ],
 },
@@ -208,13 +208,13 @@ inzerocorrectq5: {
 botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"You have no chocolates"</strong>',
 answers: [
   {
-    nextId: 'zero'+shuffledNumbersto[5],
+    nextId: 'zero'+shuffledNumbersten[5],
   },
 ],
 },
 
 //6
-['zero'+shuffledNumbersto[5]]: {
+['zero'+shuffledNumbersten[5]]: {
 botPrompt: 'If you have five marbles and you give away zero marbles,how many marbles do you have left?',
 type: RTypes.TRANSFORMED_TEXT,
 
@@ -243,7 +243,7 @@ zerocorrectq6: {
 botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
 answers: [
   {
-    nextId: 'zero'+shuffledNumbersto[6],
+    nextId: 'zero'+shuffledNumbersten[6],
   },
 ],
 },
@@ -251,13 +251,13 @@ inzerocorrectq6: {
 botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
 answers: [
   {
-    nextId: 'zero'+shuffledNumbersto[6],
+    nextId: 'zero'+shuffledNumbersten[6],
   },
 ],
 },
 
 //7
-['zero'+shuffledNumbersto[6]]: {
+['zero'+shuffledNumbersten[6]]: {
 botPrompt: 'Which of the following numbers is equal to zero? ',
 type: RTypes.TRANSFORMED_TEXT,
 input: selectField(['5+5', '10-10', "3x3","2+4"]),
@@ -285,7 +285,7 @@ zerocorrectq7: {
 botPrompt: 'Hurray! <strong>10-10</strong> is the correct answer  ! 😎',
 answers: [
   {
-    nextId: 'zero'+shuffledNumbersto[7],
+    nextId: 'zero'+shuffledNumbersten[7],
   },
 ],
 },
@@ -293,14 +293,14 @@ inzerocorrectq7: {
 botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"10-10    "</strong>',
 answers: [
   {
-    nextId: 'zero'+shuffledNumbersto[7],
+    nextId: 'zero'+shuffledNumbersten[7],
   },
 ],
 },
 
 
 //8
-['zero'+shuffledNumbersto[7]]: {
+['zero'+shuffledNumbersten[7]]: {
 botPrompt: 'If you have zero pencils and someone gives you five pencils how many pencils do you have now?',
 type: RTypes.TRANSFORMED_TEXT,
 
@@ -329,7 +329,7 @@ zerocorrectq8: {
 botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
 answers: [
   {
-    nextId: 'zero'+shuffledNumbersto[8],
+    nextId: 'zero'+shuffledNumbersten[8],
   },
 ],
 },
@@ -337,13 +337,13 @@ inzerocorrectq8: {
 botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
 answers: [
   {
-    nextId: 'zero'+shuffledNumbersto[8],
+    nextId: 'zero'+shuffledNumbersten[8],
   },
 ],
 },
 
 //9
-['zero'+shuffledNumbersto[8]]: {
+['zero'+shuffledNumbersten[8]]: {
 botPrompt: 'What is the value of zero plus any number?',
 type: RTypes.TRANSFORMED_TEXT,
 

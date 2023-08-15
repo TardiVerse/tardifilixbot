@@ -20,6 +20,9 @@ export class BotContainer extends React.Component { // eslint-disable-line react
     this.state = {
       botnameonfly: 'fillibot',
       pathname: window.location.pathname,
+      signupnotdone:true,
+      dbid:"",
+      stateconvlength:0,
       id: Date.now(),
     };
   }
@@ -27,13 +30,32 @@ export class BotContainer extends React.Component { // eslint-disable-line react
     this.handleInitConversation();
   }
 
-  componentDidUpdate() {
+  componentDidUpdate(prevProps, prevState) {
+
     if (this.props.botContainer.displayRecommendation) {
       this.handleEstimateRecommendation(this.props.botContainer.bags);
     }
-    
-    this.saveChatList();
+    if(this.props.botContainer.userPhone && this.state.signupnotdone )
+    {
+    this.signup();
+
+    }
+  
+
+
+if(!this.state.signupnotdone)
+{
+
+     if (this.props.botContainer.conversation.length !== prevProps.botContainer.conversation.length) {
+ 
+      this.saveChatList();
+     }
+  
+}
+
   }
+
+
 
   handleActivateBot() {
     this.props.activateBot();
@@ -44,11 +66,59 @@ export class BotContainer extends React.Component { // eslint-disable-line react
   handleInitConversation() {
     this.props.initConversation();
   }
+
+//signup
+
+
+signup = () => {
+
+
+fetch(
+    // `https://devapitardifilix-6bf804c0e6f9.herokuapp.com/chatbot/save/TF2601/hjgbjhg`,
+    `https://devapitardifilix-6bf804c0e6f9.herokuapp.com/auth/signUp`,
+    {
+      method: 'POST',
+
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        name: this.props.botContainer.userName,
+        sessId: this.state.id,
+        mobile_no: this.props.botContainer.userPhone,
+        email_id: this.props.botContainer.userEmail,
+      }),
+    }
+  )
+    .then((response) => response.json())
+    .then((res) => {
+      if (res.status === true) {
+        this.setState({ signupnotdone: false,dbid:res.id });
+        console.log(res.status);
+      } else {
+        console.log('Failed');
+      }
+    });
+
+
+};
+
+
+
+
+//savechat
+
+
+
+
+
+
 saveChatList = () => {
-    const urlsplit = this.state.pathname.split('/').slice(-1)[0];
+    const dbid = this.state.dbid;
     fetch(
       // `https://devapitardifilix-6bf804c0e6f9.herokuapp.com/chatbot/save/TF2601/hjgbjhg`,
-      `https://devapitardifilix-6bf804c0e6f9.herokuapp.com/chatbot/save/TF2601/64d64ce9827346662012e07d`,
+      `https://devapitardifilix-6bf804c0e6f9.herokuapp.com/chatbot/save/TF2601/${dbid}`,
       {
         method: 'POST',
 
@@ -61,10 +131,7 @@ saveChatList = () => {
           chatData: this.props.botContainer.conversation,
           sessId: this.state.id,
           number: this.props.botContainer.userPhone,
-          glassKind: this.props.botContainer.userGlassKind,
-          glassType: this.props.botContainer.userGlassType,
-          rimType: this.props.botContainer.userRimType,
-          userGender: this.props.botContainer.userGender,
+          email: this.props.botContainer.userEmail,
         }),
       }
     )
