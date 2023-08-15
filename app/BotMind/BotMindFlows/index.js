@@ -12802,7 +12802,5 @@ endConv: {
 
 
 
-console.log("myrand",questions)
-
 
 export default questions;
