@@ -11432,7 +11432,7 @@ day171link: {
   type: RTypes.LINK,
   answers: [
     {
-      nextId: wishtocontinue17,
+      nextId: 'wishtocontinue17',
     },
   ],
 },
