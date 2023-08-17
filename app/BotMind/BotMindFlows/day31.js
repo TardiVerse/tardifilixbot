@@ -4509,7 +4509,7 @@
             },
           ],
         },
-  
+
         additioncorrectq106: {
         botPrompt: 'Hurray! <strong>567</strong> is the correct answer  ! 😎',
         answers: [
