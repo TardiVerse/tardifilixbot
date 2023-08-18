@@ -416,7 +416,7 @@
   botPrompt: 'Hurray! <strong>Circle</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'wishToContinue51'
+      nextId: 'wishToContinue50'
     },
   ],
   },
@@ -424,7 +424,7 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Circle"</strong>',
   answers: [
     {
-      nextId: 'wishToContinue51'
+      nextId: 'wishToContinue50'
     },
   ],
   },
