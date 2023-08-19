@@ -12104,7 +12104,7 @@ wishtocontinue18: {
 day19: {
   botPrompt: '<strong> Day 19 : </strong> Zero is a number with no value. It means none or nothing or empty. ',
   answers: [
-          { nextId: 'day18link' },
+          { nextId: 'day19link ' },
   ],
 },
 
@@ -12113,14 +12113,14 @@ day19link: {
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'day182comment',
+      nextId: 'day192comment',
     },
   ],
 },
 day192comment: {
   botPrompt: 'Let`s look into the pages of the book',
   answers: [
-          { nextId: 'day181link' },
+          { nextId: 'day191link' },
   ],
 },
 day191link: {
