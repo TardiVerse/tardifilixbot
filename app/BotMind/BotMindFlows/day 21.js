@@ -2,7 +2,7 @@
 //theseThose
 
 
-["theseThose"+shuffledNumbersto[0]]: {
+["theseThose"+shuffleArrayten[0]]: {
   botPrompt: 'Which word would you use to talk about objects that are not near you? ',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['Those', 'These', "This","There"]),
@@ -29,7 +29,7 @@ theseThosecorrect: {
   botPrompt: 'Hurray <strong>Those</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'theseThose'+shuffledNumbersto[1],
+      nextId: 'theseThose'+shuffleArrayten[1],
     },
   ],
 },
@@ -37,12 +37,12 @@ intheseThosecorrect: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Those"</strong>',
   answers: [
     {
-      nextId: 'theseThose'+shuffledNumbersto[1],
+      nextId: 'theseThose'+shuffleArrayten[1],
     },
   ],
 },
 
-['theseThose'+shuffledNumbersto[1]]: {
+['theseThose'+shuffleArrayten[1]]: {
   botPrompt: 'What word would you use to talk about objects that are specific and close to us?',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -71,7 +71,7 @@ theseThosecorrectq2: {
   botPrompt: 'Hurray! <strong>These</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'theseThose'+shuffledNumbersto[2],
+      nextId: 'theseThose'+shuffleArrayten[2],
     },
   ],
 },
@@ -79,13 +79,13 @@ intheseThosecorrectq2: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"These"</strong>',
   answers: [
     {
-      nextId: 'theseThose'+shuffledNumbersto[2],
+      nextId: 'theseThose'+shuffleArrayten[2],
     },
   ],
 },
 
 //3
-['theseThose'+shuffledNumbersto[2]]: {
+['theseThose'+shuffleArrayten[2]]: {
 botPrompt: "What word would you use to talk about objects that are far from us and not specific?",
 type: RTypes.TRANSFORMED_TEXT,
 
@@ -114,7 +114,7 @@ theseThosecorrectq3: {
 botPrompt: 'Hurray! <strong>Those</strong> is the correct answer ! 😎',
 answers: [
   {
-    nextId: 'theseThose'+shuffledNumbersto[3],
+    nextId: 'theseThose'+shuffleArrayten[3],
   },
 ],
 },
@@ -122,13 +122,13 @@ intheseThosecorrectq3: {
 botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Those"</strong>',
 answers: [
   {
-    nextId: 'theseThose'+shuffledNumbersto[3],
+    nextId: 'theseThose'+shuffleArrayten[3],
   },
 ],
 },
 
 //4
-['theseThose'+shuffledNumbersto[3]]: {
+['theseThose'+shuffleArrayten[3]]: {
 botPrompt: 'Which word describes objects that are near the speaker?',
 type: RTypes.TRANSFORMED_TEXT,
 
@@ -157,7 +157,7 @@ theseThosecorrectq4: {
 botPrompt: 'Hurray! <strong>That</strong> is the correct answer  ! 😎',
 answers: [
   {
-    nextId: 'theseThose'+shuffledNumbersto[4],
+    nextId: 'theseThose'+shuffleArrayten[4],
   },
 ],
 },
@@ -165,13 +165,13 @@ intheseThosecorrectq2: {
 botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"That"</strong>',
 answers: [
   {
-    nextId: 'theseThose'+shuffledNumbersto[4],
+    nextId: 'theseThose'+shuffleArrayten[4],
   },
 ],
 },
 
 //5
-['theseThose'+shuffledNumbersto[4]]: {
+['theseThose'+shuffleArrayten[4]]: {
 botPrompt: 'What word would you use to talk about objects that are in the distance? ',
 type: RTypes.TRANSFORMED_TEXT,
 
@@ -200,7 +200,7 @@ theseThosecorrectq5: {
 botPrompt: 'Hurray! <strong>Those</strong> is the correct answer  ! 😎',
 answers: [
   {
-    nextId: 'theseThose'+shuffledNumbersto[5],
+    nextId: 'theseThose'+shuffleArrayten[5],
   },
 ],
 },
@@ -208,13 +208,13 @@ intheseThosecorrectq5: {
 botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Those"</strong>',
 answers: [
   {
-    nextId: 'theseThose'+shuffledNumbersto[5],
+    nextId: 'theseThose'+shuffleArrayten[5],
   },
 ],
 },
 
 //6
-['theseThose'+shuffledNumbersto[5]]: {
+['theseThose'+shuffleArrayten[5]]: {
 botPrompt: 'Look around the classroom. Which word would you use to talk about objects that are far from you?',
 type: RTypes.TRANSFORMED_TEXT,
 
@@ -243,7 +243,7 @@ theseThosecorrectq6: {
 botPrompt: 'Hurray! <strong>Those</strong> is the correct answer  ! 😎',
 answers: [
   {
-    nextId: 'theseThose'+shuffledNumbersto[6],
+    nextId: 'theseThose'+shuffleArrayten[6],
   },
 ],
 },
@@ -251,13 +251,13 @@ intheseThosecorrectq6: {
 botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Those"</strong>',
 answers: [
   {
-    nextId: 'theseThose'+shuffledNumbersto[6],
+    nextId: 'theseThose'+shuffleArrayten[6],
   },
 ],
 },
 
 //7
-['theseThose'+shuffledNumbersto[6]]: {
+['theseThose'+shuffleArrayten[6]]: {
 botPrompt: ' Which word would you use to talk about objects that are not nearby?',
 type: RTypes.TRANSFORMED_TEXT,
 input: selectField(['Those', 'These', "This","There"]),
@@ -285,7 +285,7 @@ theseThosecorrectq7: {
 botPrompt: 'Hurray! <strong>Those</strong> is the correct answer  ! 😎',
 answers: [
   {
-    nextId: 'theseThose'+shuffledNumbersto[7],
+    nextId: 'theseThose'+shuffleArrayten[7],
   },
 ],
 },
@@ -293,14 +293,14 @@ intheseThosecorrectq7: {
 botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Those"</strong>',
 answers: [
   {
-    nextId: 'theseThose'+shuffledNumbersto[7],
+    nextId: 'theseThose'+shuffleArrayten[7],
   },
 ],
 },
 
 
 //8
-['theseThose'+shuffledNumbersto[7]]: {
+['theseThose'+shuffleArrayten[7]]: {
 botPrompt: 'Look around the classroom. Which word would you use to talk about objects that are near you?',
 type: RTypes.TRANSFORMED_TEXT,
 

@@ -20049,6 +20049,501 @@ wishtocontinue20: {
 },
 
 
+//day21
+day21: {
+  botPrompt: '<strong> Day 21: </strong> These, Those ',
+  answers: [
+          { nextId: 'day21newcomment' },
+  ],
+},
+day21newcomment: {
+  botPrompt: 'These and Those point towards more than one object which is near or far from us.',
+  answers: [
+          { nextId: 'day21newlink' },
+  ],
+},
+day21newlink: {
+  botPrompt: 'https://youtu.be/Nj8VNqvLHvo',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day212newcomment',
+    },
+  ],
+},
+day212newcomment: {
+  botPrompt: 'Let`s look into the pages of the book',
+  answers: [
+          { nextId: 'day212newlink' },
+  ],
+},
+
+day212newlink: {
+  botPrompt: 'https://drive.google.com/file/d/13Ke6FuVWHHPAHoEhh3zob9onVHfTcFe8/view?usp=sharing',
+  type: RTypes.MEDIA,
+  answers: [
+    {
+      nextId: 'day213newcomment',
+    },
+  ],
+},
+day213newcomment: {
+  botPrompt: 'Let`s solve',
+  answers: [
+          { nextId: "theseThose"+shuffleArrayten[0] },
+  ],
+},
+
+
+//theseThose
+
+
+["theseThose"+shuffleArrayten[0]]: {
+  botPrompt: 'Which word would you use to talk about objects that are not near you? ',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['Those', 'These', "This","There"]),
+  answers: [
+    {
+      answer: 'Those',
+      nextId: 'theseThosecorrect',
+    },
+    {
+      answer: 'These',
+      nextId: 'intheseThosecorrect',
+    },
+    {
+      answer: "This",
+      nextId: 'intheseThosecorrect',
+    },
+    {
+      answer: "There",
+      nextId: 'intheseThosecorrect',
+    },
+  ],
+},
+theseThosecorrect: {
+  botPrompt: 'Hurray <strong>Those</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'theseThose'+shuffleArrayten[1],
+    },
+  ],
+},
+intheseThosecorrect: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Those"</strong>',
+  answers: [
+    {
+      nextId: 'theseThose'+shuffleArrayten[1],
+    },
+  ],
+},
+
+['theseThose'+shuffleArrayten[1]]: {
+  botPrompt: 'What word would you use to talk about objects that are specific and close to us?',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['These', 'Those', "That","Here"]),
+  answers: [
+    {
+      answer: 'These',
+      nextId: 'theseThosecorrectq2',
+    },
+    {
+      answer: 'Those',
+      nextId: 'intheseThosecorrectq2',
+    },
+    {
+      answer: "That",
+      nextId: 'intheseThosecorrectq2',
+    },
+    {
+      answer: "Here",
+      nextId: 'intheseThosecorrectq2',
+    },
+  ],
+},
+
+theseThosecorrectq2: {
+  botPrompt: 'Hurray! <strong>These</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'theseThose'+shuffleArrayten[2],
+    },
+  ],
+},
+intheseThosecorrectq2: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"These"</strong>',
+  answers: [
+    {
+      nextId: 'theseThose'+shuffleArrayten[2],
+    },
+  ],
+},
+
+//3
+['theseThose'+shuffleArrayten[2]]: {
+botPrompt: "What word would you use to talk about objects that are far from us and not specific?",
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['Those', 'These', "This","There"]),
+answers: [
+  {
+    answer: 'Those',
+    nextId: 'theseThosecorrectq3',
+  },
+  {
+    answer: 'These',
+    nextId: 'intheseThosecorrectq3',
+  },
+  {
+    answer: "This",
+    nextId: 'intheseThosecorrectq3',
+  },
+  {
+    answer: "There",
+    nextId: 'intheseThosecorrectq3',
+  },
+],
+},
+
+theseThosecorrectq3: {
+botPrompt: 'Hurray! <strong>Those</strong> is the correct answer ! 😎',
+answers: [
+  {
+    nextId: 'theseThose'+shuffleArrayten[3],
+  },
+],
+},
+intheseThosecorrectq3: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Those"</strong>',
+answers: [
+  {
+    nextId: 'theseThose'+shuffleArrayten[3],
+  },
+],
+},
+
+//4
+['theseThose'+shuffleArrayten[3]]: {
+botPrompt: 'Which word describes objects that are near the speaker?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['These', 'That', "Those","There"]),
+answers: [
+  {
+    answer: 'These',
+    nextId: 'intheseThosecorrectq4',
+  },
+  {
+    answer: 'That',
+    nextId: 'theseThosecorrectq4',
+  },
+  {
+    answer: "Those",
+    nextId: 'intheseThosecorrectq4',
+  },
+  {
+    answer: "There",
+    nextId: 'intheseThosecorrectq4',
+  },
+],
+},
+
+theseThosecorrectq4: {
+botPrompt: 'Hurray! <strong>That</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'theseThose'+shuffleArrayten[4],
+  },
+],
+},
+intheseThosecorrectq2: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"That"</strong>',
+answers: [
+  {
+    nextId: 'theseThose'+shuffleArrayten[4],
+  },
+],
+},
+
+//5
+['theseThose'+shuffleArrayten[4]]: {
+botPrompt: 'What word would you use to talk about objects that are in the distance? ',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['Those', 'These', "This","There"]),
+answers: [
+  {
+    answer: 'Those',
+    nextId: 'theseThosecorrectq5',
+  },
+  {
+    answer: 'These',
+    nextId: 'intheseThosecorrectq5',
+  },
+  {
+    answer: "This",
+    nextId: 'intheseThosecorrectq5',
+  },
+  {
+    answer: "There",
+    nextId: 'intheseThosecorrectq5',
+  },
+],
+},
+
+theseThosecorrectq5: {
+botPrompt: 'Hurray! <strong>Those</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'theseThose'+shuffleArrayten[5],
+  },
+],
+},
+intheseThosecorrectq5: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Those"</strong>',
+answers: [
+  {
+    nextId: 'theseThose'+shuffleArrayten[5],
+  },
+],
+},
+
+//6
+['theseThose'+shuffleArrayten[5]]: {
+botPrompt: 'Look around the classroom. Which word would you use to talk about objects that are far from you?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['Those', 'These', "This","There"]),
+answers: [
+  {
+    answer: 'Those',
+    nextId: 'theseThosecorrectq6',
+  },
+  {
+    answer: 'These',
+    nextId: 'intheseThosecorrectq6',
+  },
+  {
+    answer: "This",
+    nextId: 'intheseThosecorrectq6',
+  },
+  {
+    answer: "There",
+    nextId: 'intheseThosecorrectq6',
+  },
+],
+},
+
+theseThosecorrectq6: {
+botPrompt: 'Hurray! <strong>Those</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'theseThose'+shuffleArrayten[6],
+  },
+],
+},
+intheseThosecorrectq6: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Those"</strong>',
+answers: [
+  {
+    nextId: 'theseThose'+shuffleArrayten[6],
+  },
+],
+},
+
+//7
+['theseThose'+shuffleArrayten[6]]: {
+botPrompt: ' Which word would you use to talk about objects that are not nearby?',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['Those', 'These', "This","There"]),
+answers: [
+  {
+    answer: 'Those',
+    nextId: 'theseThosecorrectq7',
+  },
+  {
+    answer: 'These',
+    nextId: 'intheseThosecorrectq7',
+  },
+  {
+    answer: "This",
+    nextId: 'intheseThosecorrectq7',
+  },
+  {
+    answer: "There",
+    nextId: 'intheseThosecorrectq7',
+  },
+],
+},
+
+theseThosecorrectq7: {
+botPrompt: 'Hurray! <strong>Those</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'theseThose'+shuffleArrayten[7],
+  },
+],
+},
+intheseThosecorrectq7: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Those"</strong>',
+answers: [
+  {
+    nextId: 'theseThose'+shuffleArrayten[7],
+  },
+],
+},
+
+
+//8
+['theseThose'+shuffleArrayten[7]]: {
+botPrompt: 'Look around the classroom. Which word would you use to talk about objects that are near you?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['These', 'Those', "That","There"]),
+answers: [
+  {
+    answer: 'These',
+    nextId: 'theseThosecorrectq8',
+  },
+  {
+    answer: 'Those',
+    nextId: 'intheseThosecorrectq8',
+  },
+  {
+    answer: "That",
+    nextId: 'intheseThosecorrectq8',
+  },
+  {
+    answer: "There",
+    nextId: 'intheseThosecorrectq8',
+  },
+],
+},
+
+theseThosecorrectq8: {
+botPrompt: 'Hurray! <strong>These</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'wishtocontinue21',
+  },
+],
+},
+intheseThosecorrectq8: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"These"</strong>',
+answers: [
+  {
+    nextId: 'wishtocontinue21',
+  },
+],
+},
+
+
+//endtheseThoseletter
+
+
+
+wishtocontinue21: {
+  botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
+  input: selectField(['Yes!', 'No!']),
+  answers: [
+      {
+        answer: 'Yes!',
+        nextId: 'day22',
+      },
+      {
+        answer: 'No!',
+        nextId: 'endConv',
+      },
+  ],
+},
+
+
+//day22
+day22: {
+  botPrompt: '<strong> Day 22 : </strong> Simon says',
+  answers: [
+          { nextId: 'day22newcomment' },
+  ],
+},
+day22newcomment: {
+  botPrompt: 'Simon says It is a joyful game which can be played to grab the attention of the children , make children follow instructions and learn action words simultaneously.',
+  answers: [
+          { nextId: 'daynew221' },
+  ],
+},
+
+daynew221: {
+  botPrompt: 'https://youtu.be/Yzx9zAAG1AY',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'wishtocontinue22',
+    },
+  ],
+},
+
+wishtocontinue22: {
+  botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
+  input: selectField(['Yes!', 'No!']),
+  answers: [
+      {
+        answer: 'Yes!',
+        nextId: 'day23',
+      },
+      {
+        answer: 'No!',
+        nextId: 'endConv',
+      },
+  ],
+},
+
+//day23
+day23: {
+  botPrompt: '<strong> Day 23 : </strong> Five Magic Words',
+  answers: [
+          { nextId: 'day23newcomment' },
+  ],
+},
+day23newcomment: {
+  botPrompt: 'Good manners begin with the magic words "please", "thank you", "welcome",”Excuse me and "I`m sorry".',
+  answers: [
+          { nextId: 'daynew221' },
+  ],
+},
+day23newcomment: {
+  botPrompt: 'Let`s build a simple Teaching Learning Material to remind students of the Five Magic words.',
+  answers: [
+          { nextId: 'daynew221' },
+  ],
+},
+daynew221: {
+  botPrompt: 'https://youtu.be/VY1nYwdtFJU',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'wishtocontinue23',
+    },
+  ],
+},
+
+wishtocontinue23: {
+  botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
+  input: selectField(['Yes!', 'No!']),
+  answers: [
+      {
+        answer: 'Yes!',
+        nextId: 'day24',
+      },
+      {
+        answer: 'No!',
+        nextId: 'endConv',
+      },
+  ],
+},
+
+
+
 
 
 
