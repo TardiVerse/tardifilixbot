@@ -1,7 +1,7 @@
 //numbers
 
 
-["numbers"+shuffledNumbersto[0]]: {
+["numbers"+shuffledNumbersnseve[0]]: {
     botPrompt: 'How many fingers do you have on one hand?',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['3', '4', "5","6"]),
@@ -28,7 +28,7 @@
     botPrompt: 'Hurray <strong>5</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[1],
+        nextId: 'numbers'+shuffledNumbersnseve[1],
       },
     ],
   },
@@ -36,12 +36,12 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[1],
+        nextId: 'numbers'+shuffledNumbersnseve[1],
       },
     ],
   },
   
-  ['numbers'+shuffledNumbersto[1]]: {
+  ['numbers'+shuffledNumbersnseve[1]]: {
     botPrompt: 'Which number comes after 4?',
     type: RTypes.TRANSFORMED_TEXT,
   
@@ -70,7 +70,7 @@
     botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[2],
+        nextId: 'numbers'+shuffledNumbersnseve[2],
       },
     ],
   },
@@ -78,13 +78,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[2],
+        nextId: 'numbers'+shuffledNumbersnseve[2],
       },
     ],
   },
   
   //3
-  ['numbers'+shuffledNumbersto[2]]: {
+  ['numbers'+shuffledNumbersnseve[2]]: {
     botPrompt: 'Which number comes before 7?',
     type: RTypes.TRANSFORMED_TEXT,
   
@@ -113,7 +113,7 @@
     botPrompt: 'Hurray! <strong>6</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[3],
+        nextId: 'numbers'+shuffledNumbersnseve[3],
       },
     ],
   },
@@ -121,13 +121,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"6"</strong>',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[3],
+        nextId: 'numbers'+shuffledNumbersnseve[3],
       },
     ],
   },
   
   //4
-  ['numbers'+shuffledNumbersto[3]]: {
+  ['numbers'+shuffledNumbersnseve[3]]: {
   botPrompt: 'What number comes between 3 and 5?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -156,7 +156,7 @@
   botPrompt: 'Hurray! <strong>4</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[4],
+      nextId: 'numbers'+shuffledNumbersnseve[4],
     },
   ],
   },
@@ -164,13 +164,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[4],
+      nextId: 'numbers'+shuffledNumbersnseve[4],
     },
   ],
   },
   
   //5
-  ['numbers'+shuffledNumbersto[4]]: {
+  ['numbers'+shuffledNumbersnseve[4]]: {
   botPrompt: 'How many legs does a cat have?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -199,7 +199,7 @@
   botPrompt: 'Hurray! <strong>4</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[5],
+      nextId: 'numbers'+shuffledNumbersnseve[5],
     },
   ],
   },
@@ -207,13 +207,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[5],
+      nextId: 'numbers'+shuffledNumbersnseve[5],
     },
   ],
   },
   
   //6
-  ['numbers'+shuffledNumbersto[5]]: {
+  ['numbers'+shuffledNumbersnseve[5]]: {
   botPrompt: 'Which is greater, 2 or 5?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -242,7 +242,7 @@
   botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[6],
+      nextId: 'numbers'+shuffledNumbersnseve[6],
     },
   ],
   },
@@ -250,13 +250,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[6],
+      nextId: 'numbers'+shuffledNumbersnseve[6],
     },
   ],
   },
   
   //7
-  ['numbers'+shuffledNumbersto[6]]: {
+  ['numbers'+shuffledNumbersnseve[6]]: {
   botPrompt: 'Which number is the smallest?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -285,7 +285,7 @@
   botPrompt: 'Hurray! <strong>8</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[7],
+      nextId: 'numbers'+shuffledNumbersnseve[7],
     },
   ],
   },
@@ -293,14 +293,14 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"8"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[7],
+      nextId: 'numbers'+shuffledNumbersnseve[7],
     },
   ],
   },
   
   
   //8
-  ['numbers'+shuffledNumbersto[7]]: {
+  ['numbers'+shuffledNumbersnseve[7]]: {
   botPrompt: 'Which number is the largest?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -329,7 +329,7 @@
   botPrompt: 'Hurray! <strong>9</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[8],
+      nextId: 'numbers'+shuffledNumbersnseve[8],
     },
   ],
   },
@@ -337,13 +337,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"9"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[8],
+      nextId: 'numbers'+shuffledNumbersnseve[8],
     },
   ],
   },
   
   //9
-  ['numbers'+shuffledNumbersto[8]]: {
+  ['numbers'+shuffledNumbersnseve[8]]: {
   botPrompt: 'What number comes after 9?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -372,7 +372,7 @@
   botPrompt: 'Hurray! <strong>10</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[9],
+      nextId: 'numbers'+shuffledNumbersnseve[9],
     },
   ],
   },
@@ -380,14 +380,14 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"10"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[9],
+      nextId: 'numbers'+shuffledNumbersnseve[9],
     },
   ],
   },
   
   
   //10
-  ['numbers'+shuffledNumbersto[9]]: {
+  ['numbers'+shuffledNumbersnseve[9]]: {
   botPrompt: 'What number comes before 4?',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -417,7 +417,7 @@
   botPrompt: 'Hurray! <strong>3</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[10],
+      nextId: 'numbers'+shuffledNumbersnseve[10],
     },
   ],
   },
@@ -425,13 +425,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"3"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[10],
+      nextId: 'numbers'+shuffledNumbersnseve[10],
     },
   ],
   },
   
   //11
-  ['numbers'+shuffledNumbersto[10]]: {
+  ['numbers'+shuffledNumbersnseve[10]]: {
   botPrompt: 'How many eyes does a person have?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['1', '2', "3","4"]),
@@ -461,7 +461,7 @@
   botPrompt: 'Hurray! <strong>2</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[11],
+      nextId: 'numbers'+shuffledNumbersnseve[11],
     },
   ],
   },
@@ -469,13 +469,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"2"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[11],
+      nextId: 'numbers'+shuffledNumbersnseve[11],
     },
   ],
   },
   
   //12
-  ['numbers'+shuffledNumbersto[11]]: {
+  ['numbers'+shuffledNumbersnseve[11]]: {
   botPrompt: 'Which number is in between 2 and 4?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -505,7 +505,7 @@
   botPrompt: 'Hurray! <strong>3</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[12],
+      nextId: 'numbers'+shuffledNumbersnseve[12],
     },
   ],
   },
@@ -513,13 +513,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"3"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[12],
+      nextId: 'numbers'+shuffledNumbersnseve[12],
     },
   ],
   },
   
   //13
-  ['numbers'+shuffledNumbersto[12]]: {
+  ['numbers'+shuffledNumbersnseve[12]]: {
   botPrompt: 'Which number is in between 6 and 8?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -548,7 +548,7 @@
   botPrompt: 'Hurray! <strong>7</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[13],
+      nextId: 'numbers'+shuffledNumbersnseve[13],
     },
   ],
   },
@@ -556,13 +556,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"7"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[13],
+      nextId: 'numbers'+shuffledNumbersnseve[13],
     },
   ],
   },
   
   //14
-  ['numbers'+shuffledNumbersto[13]]: {
+  ['numbers'+shuffledNumbersnseve[13]]: {
   botPrompt: 'Which number comes after 15?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -591,7 +591,7 @@
   botPrompt: 'Hurray! <strong>16</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[14],
+      nextId: 'numbers'+shuffledNumbersnseve[14],
     },
   ],
   },
@@ -599,14 +599,14 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"16"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[14],
+      nextId: 'numbers'+shuffledNumbersnseve[14],
     },
   ],
   },
   
   
   //15
-  ['numbers'+shuffledNumbersto[14]]: {
+  ['numbers'+shuffledNumbersnseve[14]]: {
   botPrompt: 'Which number comes before 11?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -635,7 +635,7 @@
   botPrompt: 'Hurray! <strong>10</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[15],
+      nextId: 'numbers'+shuffledNumbersnseve[15],
     },
   ],
   },
@@ -643,13 +643,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"10"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[15],
+      nextId: 'numbers'+shuffledNumbersnseve[15],
     },
   ],
   },
   
   //16
-  ['numbers'+shuffledNumbersto[15]]: {
+  ['numbers'+shuffledNumbersnseve[15]]: {
     botPrompt: 'How many wheels does a car have?',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['1', '2', "3","4"]),
@@ -676,7 +676,7 @@
     botPrompt: 'You Have Selected correct Anwser 🎉! <strong>4</strong> 😎',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[16],
+        nextId: 'numbers'+shuffledNumbersnseve[16],
       },
     ],
   },
@@ -684,13 +684,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[16],
+        nextId: 'numbers'+shuffledNumbersnseve[16],
       },
     ],
   },
   
   //17
-  ['numbers'+shuffledNumbersto[16]]: {
+  ['numbers'+shuffledNumbersnseve[16]]: {
   botPrompt: 'How many days are in a week?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['4', '5', "6","7"]),
@@ -717,7 +717,7 @@
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>7</strong> 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[17],
+      nextId: 'numbers'+shuffledNumbersnseve[17],
     },
   ],
   },
@@ -725,13 +725,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"7"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[17],
+      nextId: 'numbers'+shuffledNumbersnseve[17],
     },
   ],
   },
   
   //18
-  ['numbers'+shuffledNumbersto[17]]: {
+  ['numbers'+shuffledNumbersnseve[17]]: {
   botPrompt: 'Which number is greater, 9 or 6?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['6', '7', "8","94"]),
@@ -758,7 +758,7 @@
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>9</strong> 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[18],
+      nextId: 'numbers'+shuffledNumbersnseve[18],
     },
   ],
   },
@@ -766,13 +766,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"9"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[18],
+      nextId: 'numbers'+shuffledNumbersnseve[18],
     },
   ],
   },
   
   //19
-  ['numbers'+shuffledNumbersto[18]]: {
+  ['numbers'+shuffledNumbersnseve[18]]: {
   botPrompt: 'Which number is smaller, 2 or 5?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['2', '3', "4","5"]),
@@ -799,7 +799,7 @@
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>2</strong> Answers! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[19],
+      nextId: 'numbers'+shuffledNumbersnseve[19],
     },
   ],
   },
@@ -807,13 +807,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"2"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[19],
+      nextId: 'numbers'+shuffledNumbersnseve[19],
     },
   ],
   },
   
   //20
-  ['numbers'+shuffledNumbersto[19]]: {
+  ['numbers'+shuffledNumbersnseve[19]]: {
   botPrompt: 'What number comes between 7 and 9?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['5', '6', "7","8"]),
@@ -840,7 +840,7 @@
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>8</strong> 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[20],
+      nextId: 'numbers'+shuffledNumbersnseve[20],
     },
   ],
   },
@@ -848,13 +848,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"8"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[20],
+      nextId: 'numbers'+shuffledNumbersnseve[20],
     },
   ],
   },
   
   //21
-  ["numbers"+shuffledNumbersto[20]]: {
+  ["numbers"+shuffledNumbersnseve[20]]: {
     botPrompt: 'What number comes after 20?',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['21', '22', "23","24"]),
@@ -881,7 +881,7 @@
     botPrompt: 'Hurray <strong>21</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[21],
+        nextId: 'numbers'+shuffledNumbersnseve[21],
       },
     ],
   },
@@ -889,13 +889,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"21"</strong>',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[21],
+        nextId: 'numbers'+shuffledNumbersnseve[21],
       },
     ],
   },
   
   //22
-  ['numbers'+shuffledNumbersto[21]]: {
+  ['numbers'+shuffledNumbersnseve[21]]: {
     botPrompt: 'What number comes before 6?',
     type: RTypes.TRANSFORMED_TEXT,
   
@@ -924,7 +924,7 @@
     botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[22],
+        nextId: 'numbers'+shuffledNumbersnseve[22],
       },
     ],
   },
@@ -932,13 +932,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[22],
+        nextId: 'numbers'+shuffledNumbersnseve[22],
       },
     ],
   },
   
   //23
-  ['numbers'+shuffledNumbersto[22]]: {
+  ['numbers'+shuffledNumbersnseve[22]]: {
   botPrompt: "How many sides does a square have?"
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['2', '3', "4","5"]),
@@ -966,7 +966,7 @@
   botPrompt: 'Hurray! <strong>4</strong> is the correct answer ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[23],
+      nextId: 'numbers'+shuffledNumbersnseve[23],
     },
   ],
   },
@@ -974,13 +974,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[23],
+      nextId: 'numbers'+shuffledNumbersnseve[23],
     },
   ],
   },
   
   //24
-  ['numbers'+shuffledNumbersto[23]]: {
+  ['numbers'+shuffledNumbersnseve[23]]: {
   botPrompt: 'Which number comes after 8?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1009,7 +1009,7 @@
   botPrompt: 'Hurray! <strong>9</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[24],
+      nextId: 'numbers'+shuffledNumbersnseve[24],
     },
   ],
   },
@@ -1017,13 +1017,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"9"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[24],
+      nextId: 'numbers'+shuffledNumbersnseve[24],
     },
   ],
   },
   
   //25
-  ['numbers'+shuffledNumbersto[24]]: {
+  ['numbers'+shuffledNumbersnseve[24]]: {
   botPrompt: 'Which number comes before 13?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1052,7 +1052,7 @@
   botPrompt: 'Hurray! <strong>12</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[25],
+      nextId: 'numbers'+shuffledNumbersnseve[25],
     },
   ],
   },
@@ -1060,13 +1060,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"12"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[25],
+      nextId: 'numbers'+shuffledNumbersnseve[25],
     },
   ],
   },
   
   //26
-  ['numbers'+shuffledNumbersto[25]]: {
+  ['numbers'+shuffledNumbersnseve[25]]: {
   botPrompt: 'How many sides does a triangle have?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1095,7 +1095,7 @@
   botPrompt: 'Hurray! <strong>3</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[26],
+      nextId: 'numbers'+shuffledNumbersnseve[26],
     },
   ],
   },
@@ -1103,13 +1103,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"3"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[26],
+      nextId: 'numbers'+shuffledNumbersnseve[26],
     },
   ],
   },
   
   //27
-  ['numbers'+shuffledNumbersto[26]]: {
+  ['numbers'+shuffledNumbersnseve[26]]: {
   botPrompt: 'What number comes between 17 and 19?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['14', '15', "16","18"]),
@@ -1137,7 +1137,7 @@
   botPrompt: 'Hurray! <strong>18</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[27],
+      nextId: 'numbers'+shuffledNumbersnseve[27],
     },
   ],
   },
@@ -1145,14 +1145,14 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"18"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[27],
+      nextId: 'numbers'+shuffledNumbersnseve[27],
     },
   ],
   },
   
 
   //28
-  ['numbers'+shuffledNumbersto[27]]: {
+  ['numbers'+shuffledNumbersnseve[27]]: {
   botPrompt: 'What number comes before 20?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['16', '17', "18","19"]),
@@ -1180,7 +1180,7 @@
   botPrompt: 'Hurray! <strong>19</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[28],
+      nextId: 'numbers'+shuffledNumbersnseve[28],
     },
   ],
   },
@@ -1188,13 +1188,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"19"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[28],
+      nextId: 'numbers'+shuffledNumbersnseve[28],
     },
   ],
   },
   
   //29
-  ['numbers'+shuffledNumbersto[28]]: {
+  ['numbers'+shuffledNumbersnseve[28]]: {
   botPrompt: 'How many legs does a spider have?',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -1223,7 +1223,7 @@
   botPrompt: 'Hurray! <strong>8</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[29],
+      nextId: 'numbers'+shuffledNumbersnseve[29],
     },
   ],
   },
@@ -1231,14 +1231,14 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"8"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[29],
+      nextId: 'numbers'+shuffledNumbersnseve[29],
     },
   ],
   },
   
   
   //30
-  ['numbers'+shuffledNumbersto[29]]: {
+  ['numbers'+shuffledNumbersnseve[29]]: {
   botPrompt: 'Which number is greater, 3 or 7?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1267,7 +1267,7 @@
   botPrompt: 'Hurray! <strong>7</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[30],
+      nextId: 'numbers'+shuffledNumbersnseve[30],
     },
   ],
   },
@@ -1275,13 +1275,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"7"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[30],
+      nextId: 'numbers'+shuffledNumbersnseve[30],
     },
   ],
   },
   
   //31
-  ['numbers'+shuffledNumbersto[30]]: {
+  ['numbers'+shuffledNumbersnseve[30]]: {
   botPrompt: 'Which number is smaller, 1 or 5?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1310,7 +1310,7 @@
   botPrompt: 'Hurray! <strong>1</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[31],
+      nextId: 'numbers'+shuffledNumbersnseve[31],
     },
   ],
   },
@@ -1318,13 +1318,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"1"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[31],
+      nextId: 'numbers'+shuffledNumbersnseve[31],
     },
   ],
   },
   
   //32
-  ['numbers'+shuffledNumbersto[31]]: {
+  ['numbers'+shuffledNumbersnseve[31]]: {
   botPrompt: 'What number comes between 11 and 13?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1353,7 +1353,7 @@
   botPrompt: 'Hurray! <strong>12</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[32],
+      nextId: 'numbers'+shuffledNumbersnseve[32],
     },
   ],
   },
@@ -1361,13 +1361,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"12"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[32],
+      nextId: 'numbers'+shuffledNumbersnseve[32],
     },
   ],
   },
   
   //33
-  ['numbers'+shuffledNumbersto[32]]: {
+  ['numbers'+shuffledNumbersnseve[32]]: {
   botPrompt: 'What number comes after 25?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1397,7 +1397,7 @@
   botPrompt: 'Hurray! <strong>26</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[33],
+      nextId: 'numbers'+shuffledNumbersnseve[33],
     },
   ],
   },
@@ -1405,13 +1405,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"26"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[33],
+      nextId: 'numbers'+shuffledNumbersnseve[33],
     },
   ],
   },
   
   //34
-  ['numbers'+shuffledNumbersto[33]]: {
+  ['numbers'+shuffledNumbersnseve[33]]: {
   botPrompt: 'What number comes before 8?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1440,7 +1440,7 @@
   botPrompt: 'Hurray! <strong>7</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[34],
+      nextId: 'numbers'+shuffledNumbersnseve[34],
     },
   ],
   },
@@ -1448,14 +1448,14 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"7"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[34],
+      nextId: 'numbers'+shuffledNumbersnseve[34],
     },
   ],
   },
   
   
   //35
-  ['numbers'+shuffledNumbersto[34]]: {
+  ['numbers'+shuffledNumbersnseve[34]]: {
   botPrompt: 'How many sides does a circle have?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1485,7 +1485,7 @@
   botPrompt: 'Hurray! <strong>0</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[35],
+      nextId: 'numbers'+shuffledNumbersnseve[35],
     },
   ],
   },
@@ -1493,13 +1493,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"0"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[35],
+      nextId: 'numbers'+shuffledNumbersnseve[35],
     },
   ],
   },
   
   //36
-  ['numbers'+shuffledNumbersto[35]]: {
+  ['numbers'+shuffledNumbersnseve[35]]: {
     botPrompt: 'Which number is in between 14 and 16?',
     type: RTypes.TRANSFORMED_TEXT,
   
@@ -1527,7 +1527,7 @@
     botPrompt: 'You Have Selected correct Anwser 🎉! <strong>15</strong> 😎',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[36],
+        nextId: 'numbers'+shuffledNumbersnseve[36],
       },
     ],
   },
@@ -1535,13 +1535,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"15"</strong>',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[36],
+        nextId: 'numbers'+shuffledNumbersnseve[36],
       },
     ],
   },
   
   //37
-  ['numbers'+shuffledNumbersto[36]]: {
+  ['numbers'+shuffledNumbersnseve[36]]: {
   botPrompt: 'Which number is in between 18 and 20?',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -1569,7 +1569,7 @@
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>19</strong> 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[37],
+      nextId: 'numbers'+shuffledNumbersnseve[37],
     },
   ],
   },
@@ -1577,13 +1577,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"19"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[37],
+      nextId: 'numbers'+shuffledNumbersnseve[37],
     },
   ],
   },
 
   //38
-  ['numbers'+shuffledNumbersto[37]]: {
+  ['numbers'+shuffledNumbersnseve[37]]: {
   botPrompt: 'How many legs does a dog have?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1611,7 +1611,7 @@
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>4</strong> 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[38],
+      nextId: 'numbers'+shuffledNumbersnseve[38],
     },
   ],
   },
@@ -1619,13 +1619,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[38],
+      nextId: 'numbers'+shuffledNumbersnseve[38],
     },
   ],
   },
   
   //39
-  ['numbers'+shuffledNumbersto[38]]: {
+  ['numbers'+shuffledNumbersnseve[38]]: {
   botPrompt: 'Which number is greater, 2 or 9?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['2', '6', "8","9"]),
@@ -1652,7 +1652,7 @@
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>9</strong> Answers! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[39],
+      nextId: 'numbers'+shuffledNumbersnseve[39],
     },
   ],
   },
@@ -1660,13 +1660,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"9"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[39],
+      nextId: 'numbers'+shuffledNumbersnseve[39],
     },
   ],
   },
   
   //40
-  ['numbers'+shuffledNumbersto[39]]: {
+  ['numbers'+shuffledNumbersnseve[39]]: {
   botPrompt: 'Which number is smaller, 4 or 10?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['4', '6', "8","10"]),
@@ -1693,7 +1693,7 @@
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>4</strong> 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[40],
+      nextId: 'numbers'+shuffledNumbersnseve[40],
     },
   ],
   },
@@ -1701,13 +1701,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[40],
+      nextId: 'numbers'+shuffledNumbersnseve[40],
     },
   ],
   },
   
   //41
-  ["numbers"+shuffledNumbersto[40]]: {
+  ["numbers"+shuffledNumbersnseve[40]]: {
     botPrompt: 'What number comes between 21 and 23?',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['17', '18', "19","22"]),
@@ -1734,7 +1734,7 @@
     botPrompt: 'Hurray <strong>22</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[41],
+        nextId: 'numbers'+shuffledNumbersnseve[41],
       },
     ],
   },
@@ -1742,14 +1742,14 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"22"</strong>',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[41],
+        nextId: 'numbers'+shuffledNumbersnseve[41],
       },
     ],
   },
   
   //42
   
-  ['numbers'+shuffledNumbersto[41]]: {
+  ['numbers'+shuffledNumbersnseve[41]]: {
     botPrompt: 'What number comes after 30?',
     type: RTypes.TRANSFORMED_TEXT,
   
@@ -1778,7 +1778,7 @@
     botPrompt: 'Hurray! <strong>31</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[42],
+        nextId: 'numbers'+shuffledNumbersnseve[42],
       },
     ],
   },
@@ -1786,13 +1786,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"31"</strong>',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[42],
+        nextId: 'numbers'+shuffledNumbersnseve[42],
       },
     ],
   },
   
   //43
-  ['numbers'+shuffledNumbersto[42]]: {
+  ['numbers'+shuffledNumbersnseve[42]]: {
   botPrompt: "What number comes before 12?",
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1821,7 +1821,7 @@
   botPrompt: 'Hurray! <strong>11</strong> is the correct answer ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[43],
+      nextId: 'numbers'+shuffledNumbersnseve[43],
     },
   ],
   },
@@ -1829,13 +1829,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"11"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[43],
+      nextId: 'numbers'+shuffledNumbersnseve[43],
     },
   ],
   },
   
   //44
-  ['numbers'+shuffledNumbersto[43]]: {
+  ['numbers'+shuffledNumbersnseve[43]]: {
   botPrompt: 'What number comes after 35?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1864,7 +1864,7 @@
   botPrompt: 'Hurray! <strong>36</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[44],
+      nextId: 'numbers'+shuffledNumbersnseve[44],
     },
   ],
   },
@@ -1872,13 +1872,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"36"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[44],
+      nextId: 'numbers'+shuffledNumbersnseve[44],
     },
   ],
   },
   
   //45
-  ['numbers'+shuffledNumbersto[44]]: {
+  ['numbers'+shuffledNumbersnseve[44]]: {
   botPrompt: 'What number comes before 50?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1907,7 +1907,7 @@
   botPrompt: 'Hurray! <strong>49</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[45],
+      nextId: 'numbers'+shuffledNumbersnseve[45],
     },
   ],
   },
@@ -1915,13 +1915,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"49"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[45],
+      nextId: 'numbers'+shuffledNumbersnseve[45],
     },
   ],
   },
   
   //46
-  ['numbers'+shuffledNumbersto[45]]: {
+  ['numbers'+shuffledNumbersnseve[45]]: {
   botPrompt: 'How many sides does a square have?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['2', '3', "4","5"]),
@@ -1949,7 +1949,7 @@
   botPrompt: 'Hurray! <strong>4</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[46],
+      nextId: 'numbers'+shuffledNumbersnseve[46],
     },
   ],
   },
@@ -1957,13 +1957,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[46],
+      nextId: 'numbers'+shuffledNumbersnseve[46],
     },
   ],
   },
   
   //47
-  ['numbers'+shuffledNumbersto[46]]: {
+  ['numbers'+shuffledNumbersnseve[46]]: {
   botPrompt: 'Which number is greater, 15 or 22?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1992,7 +1992,7 @@
   botPrompt: 'Hurray! <strong>22</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[47],
+      nextId: 'numbers'+shuffledNumbersnseve[47],
     },
   ],
   },
@@ -2000,14 +2000,14 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"22"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[47],
+      nextId: 'numbers'+shuffledNumbersnseve[47],
     },
   ],
   },
 
 
   //48
-  ['numbers'+shuffledNumbersto[47]]: {
+  ['numbers'+shuffledNumbersnseve[47]]: {
   botPrompt: 'Which number is smaller, 9 or 13?',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -2036,7 +2036,7 @@
   botPrompt: 'Hurray! <strong>9</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[48],
+      nextId: 'numbers'+shuffledNumbersnseve[48],
     },
   ],
   },
@@ -2044,13 +2044,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"9"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[48],
+      nextId: 'numbers'+shuffledNumbersnseve[48],
     },
   ],
   },
   
   //49
-  ['numbers'+shuffledNumbersto[48]]: {
+  ['numbers'+shuffledNumbersnseve[48]]: {
   botPrompt: 'What number comes between 29 and 31?
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -2079,7 +2079,7 @@
   botPrompt: 'Hurray! <strong>30</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[49],
+      nextId: 'numbers'+shuffledNumbersnseve[49],
     },
   ],
   },
@@ -2087,14 +2087,14 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"30"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[49],
+      nextId: 'numbers'+shuffledNumbersnseve[49],
     },
   ],
   },
   
   
   //50
-  ['numbers'+shuffledNumbersto[49]]: {
+  ['numbers'+shuffledNumbersnseve[49]]: {
   botPrompt: 'What number comes after 60?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -2123,7 +2123,7 @@
   botPrompt: 'Hurray! <strong>61</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[50],
+      nextId: 'numbers'+shuffledNumbersnseve[50],
     },
   ],
   },
@@ -2131,13 +2131,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"61"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[50],
+      nextId: 'numbers'+shuffledNumbersnseve[50],
     },
   ],
   },
   
   //51
-  ['numbers'+shuffledNumbersto[50]]: {
+  ['numbers'+shuffledNumbersnseve[50]]: {
   botPrompt: 'What number comes before 100?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -2166,7 +2166,7 @@
   botPrompt: 'Hurray! <strong>99</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[51],
+      nextId: 'numbers'+shuffledNumbersnseve[51],
     },
   ],
   },
@@ -2174,13 +2174,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"99"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[51],
+      nextId: 'numbers'+shuffledNumbersnseve[51],
     },
   ],
   },
   
   //52
-  ['numbers'+shuffledNumbersto[51]]: {
+  ['numbers'+shuffledNumbersnseve[51]]: {
   botPrompt: 'How many legs does a bird have?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['2', '4', "6","8"]),
@@ -2208,7 +2208,7 @@
   botPrompt: 'Hurray! <strong>2</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[52],
+      nextId: 'numbers'+shuffledNumbersnseve[52],
     },
   ],
   },
@@ -2216,13 +2216,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"2"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[52],
+      nextId: 'numbers'+shuffledNumbersnseve[52],
     },
   ],
   },
   
   //53
-  ['numbers'+shuffledNumbersto[52]]: {
+  ['numbers'+shuffledNumbersnseve[52]]: {
   botPrompt: 'Which number is greater, 28 or 32?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -2251,7 +2251,7 @@
   botPrompt: 'Hurray! <strong>32</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[53],
+      nextId: 'numbers'+shuffledNumbersnseve[53],
     },
   ],
   },
@@ -2259,13 +2259,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"32"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[53],
+      nextId: 'numbers'+shuffledNumbersnseve[53],
     },
   ],
   },
   
   //54
-  ['numbers'+shuffledNumbersto[53]]: {
+  ['numbers'+shuffledNumbersnseve[53]]: {
   botPrompt: 'Which number is smaller, 17 or 20?',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -2294,7 +2294,7 @@
   botPrompt: 'Hurray! <strong>17</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[54],
+      nextId: 'numbers'+shuffledNumbersnseve[54],
     },
   ],
   },
@@ -2302,14 +2302,14 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"17"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[54],
+      nextId: 'numbers'+shuffledNumbersnseve[54],
     },
   ],
   },
 
 
   //55
-  ['numbers'+shuffledNumbersto[54]]: {
+  ['numbers'+shuffledNumbersnseve[54]]: {
   botPrompt: 'What number comes between 43 and 45?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -2338,7 +2338,7 @@
   botPrompt: 'Hurray! <strong>44</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[55],
+      nextId: 'numbers'+shuffledNumbersnseve[55],
     },
   ],
   },
@@ -2346,13 +2346,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"44"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[55],
+      nextId: 'numbers'+shuffledNumbersnseve[55],
     },
   ],
   },
   
   //56
-  ['numbers'+shuffledNumbersto[55]]: {
+  ['numbers'+shuffledNumbersnseve[55]]: {
     botPrompt: 'What number comes after 75?',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['76', '77', "78","79"]),
@@ -2379,7 +2379,7 @@
     botPrompt: 'You Have Selected correct Anwser 🎉! <strong>76</strong> 😎',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[56],
+        nextId: 'numbers'+shuffledNumbersnseve[56],
       },
     ],
   },
@@ -2387,13 +2387,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"76"</strong>',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[56],
+        nextId: 'numbers'+shuffledNumbersnseve[56],
       },
     ],
   },
 
   //57
-  ['numbers'+shuffledNumbersto[56]]: {
+  ['numbers'+shuffledNumbersnseve[56]]: {
   botPrompt: 'What number comes before 90?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['85', '86', "89","90"]),
@@ -2420,7 +2420,7 @@
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>89</strong> 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[57],
+      nextId: 'numbers'+shuffledNumbersnseve[57],
     },
   ],
   },
@@ -2428,13 +2428,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"89"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[57],
+      nextId: 'numbers'+shuffledNumbersnseve[57],
     },
   ],
   },
   
   //58
-  ['numbers'+shuffledNumbersto[57]]: {
+  ['numbers'+shuffledNumbersnseve[57]]: {
   botPrompt: 'How many sides does a rectangle have?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['2', '3', "4","5"]),
@@ -2461,7 +2461,7 @@
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>4</strong> 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[58],
+      nextId: 'numbers'+shuffledNumbersnseve[58],
     },
   ],
   },
@@ -2469,13 +2469,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[58],
+      nextId: 'numbers'+shuffledNumbersnseve[58],
     },
   ],
   },
   
   //59
-  ['numbers'+shuffledNumbersto[58]]: {
+  ['numbers'+shuffledNumbersnseve[58]]: {
   botPrompt: 'What is the missing number in the sequence: 2, 4, __, 8, 10?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['6', '7', "9","11"]),
@@ -2502,7 +2502,7 @@
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>6</strong> Answers! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[59],
+      nextId: 'numbers'+shuffledNumbersnseve[59],
     },
   ],
   },
@@ -2510,13 +2510,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"6"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[59],
+      nextId: 'numbers'+shuffledNumbersnseve[59],
     },
   ],
   },
   
   //60
-  ['numbers'+shuffledNumbersto[59]]: {
+  ['numbers'+shuffledNumbersnseve[59]]: {
   botPrompt: 'What number comes after the square of 4?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['15', '16', "17","18"]),
@@ -2543,7 +2543,7 @@
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>17</strong> 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[60],
+      nextId: 'numbers'+shuffledNumbersnseve[60],
     },
   ],
   },
@@ -2551,13 +2551,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"17"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[60],
+      nextId: 'numbers'+shuffledNumbersnseve[60],
     },
   ],
   },
   
   //61
-  ["numbers"+shuffledNumbersto[60]]: {
+  ["numbers"+shuffledNumbersnseve[60]]: {
     botPrompt: 'What number comes before the cube of 3?',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['25', '26', "27","28"]),
@@ -2584,7 +2584,7 @@
     botPrompt: 'Hurray <strong>26</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[61],
+        nextId: 'numbers'+shuffledNumbersnseve[61],
       },
     ],
   },
@@ -2592,13 +2592,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"26"</strong>',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[61],
+        nextId: 'numbers'+shuffledNumbersnseve[61],
       },
     ],
   },
   
   //62
-  ['numbers'+shuffledNumbersto[61]]: {
+  ['numbers'+shuffledNumbersnseve[61]]: {
     botPrompt: 'What number comes between 7 and square of 3?',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['7', '6', "8","5"]),
@@ -2626,7 +2626,7 @@
     botPrompt: 'Hurray! <strong>8</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[62],
+        nextId: 'numbers'+shuffledNumbersnseve[62],
       },
     ],
   },
@@ -2634,13 +2634,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"8"</strong>',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[62],
+        nextId: 'numbers'+shuffledNumbersnseve[62],
       },
     ],
   },
   
   //63
-  ['numbers'+shuffledNumbersto[62]]: {
+  ['numbers'+shuffledNumbersnseve[62]]: {
   botPrompt: "What number comes after the product of 3 and 5?",
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -2669,7 +2669,7 @@
   botPrompt: 'Hurray! <strong>16</strong> is the correct answer ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[63],
+      nextId: 'numbers'+shuffledNumbersnseve[63],
     },
   ],
   },
@@ -2677,13 +2677,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"16"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[63],
+      nextId: 'numbers'+shuffledNumbersnseve[63],
     },
   ],
   },
 
   //64
-  ['numbers'+shuffledNumbersto[63]]: {
+  ['numbers'+shuffledNumbersnseve[63]]: {
   botPrompt: 'What number comes before the quotient of 10 divided by 2?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -2712,7 +2712,7 @@
   botPrompt: 'Hurray! <strong>4</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[64],
+      nextId: 'numbers'+shuffledNumbersnseve[64],
     },
   ],
   },
@@ -2720,13 +2720,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[64],
+      nextId: 'numbers'+shuffledNumbersnseve[64],
     },
   ],
   },
   
   //65
-  ['numbers'+shuffledNumbersto[64]]: {
+  ['numbers'+shuffledNumbersnseve[64]]: {
   botPrompt: 'Which number is smaller, the sum of 6 and 4 or the product of 3 and 4?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -2755,7 +2755,7 @@
   botPrompt: 'Hurray! <strong>Sum of 6 and 4</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[65],
+      nextId: 'numbers'+shuffledNumbersnseve[65],
     },
   ],
   },
@@ -2763,13 +2763,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Sum of 6 and 4"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[65],
+      nextId: 'numbers'+shuffledNumbersnseve[65],
     },
   ],
   },
   
   //66
-  ['numbers'+shuffledNumbersto[65]]: {
+  ['numbers'+shuffledNumbersnseve[65]]: {
   botPrompt: 'What number comes between 89 and 91?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -2798,7 +2798,7 @@
   botPrompt: 'Hurray! <strong>90</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[66],
+      nextId: 'numbers'+shuffledNumbersnseve[66],
     },
   ],
   },
@@ -2806,13 +2806,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"90"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[66],
+      nextId: 'numbers'+shuffledNumbersnseve[66],
     },
   ],
   },
   
   //67
-  ['numbers'+shuffledNumbersto[66]]: {
+  ['numbers'+shuffledNumbersnseve[66]]: {
   botPrompt: 'What number comes before the difference of 9 and 4?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['4', '5', "6","7"]),
@@ -2840,7 +2840,7 @@
   botPrompt: 'Hurray! <strong>4</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[67],
+      nextId: 'numbers'+shuffledNumbersnseve[67],
     },
   ],
   },
@@ -2848,14 +2848,14 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[67],
+      nextId: 'numbers'+shuffledNumbersnseve[67],
     },
   ],
   },
   
   
   //68
-  ['numbers'+shuffledNumbersto[67]]: {
+  ['numbers'+shuffledNumbersnseve[67]]: {
   botPrompt: 'Which number is greater, the sum of 8 and 3 or the product of 2 and 7?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -2885,7 +2885,7 @@
   botPrompt: 'Hurray! <strong>Sum of 8 and 3</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[68],
+      nextId: 'numbers'+shuffledNumbersnseve[68],
     },
   ],
   },
@@ -2893,13 +2893,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Sum of 8 and 3"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[68],
+      nextId: 'numbers'+shuffledNumbersnseve[68],
     },
   ],
   },
   
   //69
-  ['numbers'+shuffledNumbersto[68]]: {
+  ['numbers'+shuffledNumbersnseve[68]]: {
   botPrompt: 'What number comes after the quotient of 21 divided by 3?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['6', '7', "8","9"]),
@@ -2927,7 +2927,7 @@
   botPrompt: 'Hurray! <strong>8</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[69],
+      nextId: 'numbers'+shuffledNumbersnseve[69],
     },
   ],
   },
@@ -2935,14 +2935,14 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"8"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[69],
+      nextId: 'numbers'+shuffledNumbersnseve[69],
     },
   ],
   },
 
   
   //70
-  ['numbers'+shuffledNumbersto[69]]: {
+  ['numbers'+shuffledNumbersnseve[69]]: {
   botPrompt: 'What number comes before the sum of 15 and 7?'?
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -2971,7 +2971,7 @@
   botPrompt: 'Hurray! <strong>21</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[70],
+      nextId: 'numbers'+shuffledNumbersnseve[70],
     },
   ],
   },
@@ -2979,13 +2979,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"21"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[70],
+      nextId: 'numbers'+shuffledNumbersnseve[70],
     },
   ],
   },
 
   //71
-  ['numbers'+shuffledNumbersto[70]]: {
+  ['numbers'+shuffledNumbersnseve[70]]: {
   botPrompt: 'What number comes between sqaure of 1 and 3?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['2', '0', "4","6"]),
@@ -3013,7 +3013,7 @@
   botPrompt: 'Hurray! <strong>2</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[71],
+      nextId: 'numbers'+shuffledNumbersnseve[71],
     },
   ],
   },
@@ -3021,13 +3021,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"2"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[71],
+      nextId: 'numbers'+shuffledNumbersnseve[71],
     },
   ],
   },
 
   //72
-  ['numbers'+shuffledNumbersto[71]]: {
+  ['numbers'+shuffledNumbersnseve[71]]: {
   botPrompt: 'What number comes after the difference of 6 and 2?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['2', '3', "4","5"]),
@@ -3055,7 +3055,7 @@
   botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[72],
+      nextId: 'numbers'+shuffledNumbersnseve[72],
     },
   ],
   },
@@ -3063,13 +3063,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[72],
+      nextId: 'numbers'+shuffledNumbersnseve[72],
     },
   ],
   },
 
   //73
-  ['numbers'+shuffledNumbersto[72]]: {
+  ['numbers'+shuffledNumbersnseve[72]]: {
   botPrompt: 'What number comes before the product of 5 and 6?',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -3098,7 +3098,7 @@
   botPrompt: 'Hurray! <strong>29</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[73],
+      nextId: 'numbers'+shuffledNumbersnseve[73],
     },
   ],
   },
@@ -3106,13 +3106,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"29"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[73],
+      nextId: 'numbers'+shuffledNumbersnseve[73],
     },
   ],
   },
 
   //74
-  ['numbers'+shuffledNumbersto[73]]: {
+  ['numbers'+shuffledNumbersnseve[73]]: {
   botPrompt: 'What comes after 7?',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -3141,7 +3141,7 @@
   botPrompt: 'Hurray! <strong>8</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[74],
+      nextId: 'numbers'+shuffledNumbersnseve[74],
     },
   ],
   },
@@ -3149,14 +3149,14 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"8"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[74],
+      nextId: 'numbers'+shuffledNumbersnseve[74],
     },
   ],
   },
 
 
   //75
-  ['numbers'+shuffledNumbersto[74]]: {
+  ['numbers'+shuffledNumbersnseve[74]]: {
   botPrompt: 'Which number comes after twelve?',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -3186,7 +3186,7 @@
   botPrompt: 'Hurray! <strong>13</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[75],
+      nextId: 'numbers'+shuffledNumbersnseve[75],
     },
   ],
   },
@@ -3194,13 +3194,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"13"</strong>',
   answers: [
     {
-      nextId: 'numbers'+shuffledNumbersto[75],
+      nextId: 'numbers'+shuffledNumbersnseve[75],
     },
   ],
   },
 
   //76
-  ['numbers'+shuffledNumbersto[75]]: {
+  ['numbers'+shuffledNumbersnseve[75]]: {
     botPrompt: 'Which number comes after twelve?',
     type: RTypes.TRANSFORMED_TEXT,
 
@@ -3228,7 +3228,7 @@
     botPrompt: 'You Have Selected correct Anwser 🎉! <strong>13</strong> 😎',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[76],
+        nextId: 'numbers'+shuffledNumbersnseve[76],
       },
     ],
   },
@@ -3236,13 +3236,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"13"</strong>',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[76],
+        nextId: 'numbers'+shuffledNumbersnseve[76],
       },
     ],
   },
 
   //77
-  ['numbers'+shuffledNumbersto[76]]: {
+  ['numbers'+shuffledNumbersnseve[76]]: {
   botPrompt: 'What comes before 5?',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -3286,7 +3286,7 @@
 
 
   //78
-  ['numbers'+shuffledNumbersto[77]]: {
+  ['numbers'+shuffledNumbersnseve[77]]: {
     botPrompt: 'Which number comes between 6 and 8? ',
     type: RTypes.TRANSFORMED_TEXT,
 
@@ -3315,7 +3315,7 @@
     botPrompt: 'Hurray! <strong>7</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[78],
+        nextId: 'numbers'+shuffledNumbersnseve[78],
       },
     ],
     },
@@ -3323,13 +3323,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"7"</strong>',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[78],
+        nextId: 'numbers'+shuffledNumbersnseve[78],
       },
     ],
     },
     
     //79
-    ['numbers'+shuffledNumbersto[78]]: {
+    ['numbers'+shuffledNumbersnseve[78]]: {
     botPrompt: 'What is the next number in the pattern: 10, 9, 8, ____?',
     type: RTypes.TRANSFORMED_TEXT,
     
@@ -3358,7 +3358,7 @@
     botPrompt: 'Hurray! <strong>7</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[79],
+        nextId: 'numbers'+shuffledNumbersnseve[79],
       },
     ],
     },
@@ -3366,14 +3366,14 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"7"</strong>',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[79],
+        nextId: 'numbers'+shuffledNumbersnseve[79],
       },
     ],
     },
     
     
     //80
-    ['numbers'+shuffledNumbersto[79]]: {
+    ['numbers'+shuffledNumbersnseve[79]]: {
     botPrompt: 'How many fingers do you have on one hand?',
     type: RTypes.TRANSFORMED_TEXT,
     
@@ -3402,7 +3402,7 @@
     botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[80],
+        nextId: 'numbers'+shuffledNumbersnseve[80],
       },
     ],
     },
@@ -3410,13 +3410,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[80],
+        nextId: 'numbers'+shuffledNumbersnseve[80],
       },
     ],
     },
     
     //81
-    ['numbers'+shuffledNumbersto[80]]: {
+    ['numbers'+shuffledNumbersnseve[80]]: {
     botPrompt: 'Which number comes after 20?',
     type: RTypes.TRANSFORMED_TEXT,
     
@@ -3445,7 +3445,7 @@
     botPrompt: 'Hurray! <strong>21</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[51],
+        nextId: 'numbers'+shuffledNumbersnseve[51],
       },
     ],
     },
@@ -3453,13 +3453,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"21"</strong>',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[51],
+        nextId: 'numbers'+shuffledNumbersnseve[51],
       },
     ],
     },
     
     //82
-    ['numbers'+shuffledNumbersto[81]]: {
+    ['numbers'+shuffledNumbersnseve[81]]: {
     botPrompt: 'What comes after 15?',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['16', '17', "18","19"]),
@@ -3487,7 +3487,7 @@
     botPrompt: 'Hurray! <strong>16</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[82],
+        nextId: 'numbers'+shuffledNumbersnseve[82],
       },
     ],
     },
@@ -3495,13 +3495,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"16"</strong>',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[82],
+        nextId: 'numbers'+shuffledNumbersnseve[82],
       },
     ],
     },
     
     //83
-    ['numbers'+shuffledNumbersto[82]]: {
+    ['numbers'+shuffledNumbersnseve[82]]: {
     botPrompt: 'What is the number that comes between 12 and 14?',
     type: RTypes.TRANSFORMED_TEXT,
 
@@ -3530,7 +3530,7 @@
     botPrompt: 'Hurray! <strong>13</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[83],
+        nextId: 'numbers'+shuffledNumbersnseve[83],
       },
     ],
     },
@@ -3538,13 +3538,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"13"</strong>',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[83],
+        nextId: 'numbers'+shuffledNumbersnseve[83],
       },
     ],
     },
     
     //84
-    ['numbers'+shuffledNumbersto[83]]: {
+    ['numbers'+shuffledNumbersnseve[83]]: {
     botPrompt: 'What is the missing number in the pattern: 3, 6, ___, 12?',
     type: RTypes.TRANSFORMED_TEXT,
     
@@ -3573,7 +3573,7 @@
     botPrompt: 'Hurray! <strong>9</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[84],
+        nextId: 'numbers'+shuffledNumbersnseve[84],
       },
     ],
     },
@@ -3581,14 +3581,14 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"9"</strong>',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[84],
+        nextId: 'numbers'+shuffledNumbersnseve[84],
       },
     ],
     },
     
     
     //85
-    ['numbers'+shuffledNumbersto[84]]: {
+    ['numbers'+shuffledNumbersnseve[84]]: {
     botPrompt: 'Which number comes before 9?',
     type: RTypes.TRANSFORMED_TEXT,
     
@@ -3617,7 +3617,7 @@
     botPrompt: 'Hurray! <strong>8</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[85],
+        nextId: 'numbers'+shuffledNumbersnseve[85],
       },
     ],
     },
@@ -3625,13 +3625,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"8"</strong>',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[85],
+        nextId: 'numbers'+shuffledNumbersnseve[85],
       },
     ],
     },
     
     //86
-    ['numbers'+shuffledNumbersto[85]]: {
+    ['numbers'+shuffledNumbersnseve[85]]: {
       botPrompt: 'How many legs does a cat have??',
       type: RTypes.TRANSFORMED_TEXT,
       input: selectField(['2', '3', "4","5"]),
@@ -3658,7 +3658,7 @@
       botPrompt: 'You Have Selected correct Anwser 🎉! <strong>4</strong> 😎',
       answers: [
         {
-          nextId: 'numbers'+shuffledNumbersto[86],
+          nextId: 'numbers'+shuffledNumbersnseve[86],
         },
       ],
     },
@@ -3666,13 +3666,13 @@
       botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
       answers: [
         {
-          nextId: 'numbers'+shuffledNumbersto[86],
+          nextId: 'numbers'+shuffledNumbersnseve[86],
         },
       ],
     },
   
     //87
-    ['numbers'+shuffledNumbersto[86]]: {
+    ['numbers'+shuffledNumbersnseve[86]]: {
     botPrompt: 'What comes after 12?',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['13', '14', "15","16"]),
@@ -3699,7 +3699,7 @@
     botPrompt: 'You Have Selected correct Anwser 🎉! <strong>13</strong> 😎',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[87],
+        nextId: 'numbers'+shuffledNumbersnseve[87],
       },
     ],
     },
@@ -3707,13 +3707,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"13"</strong>',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[87],
+        nextId: 'numbers'+shuffledNumbersnseve[87],
       },
     ],
     },
     
     //88
-    ['numbers'+shuffledNumbersto[87]]: {
+    ['numbers'+shuffledNumbersnseve[87]]: {
     botPrompt: 'Which number comes after nineteen?',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['18', '20', "21","22"]),
@@ -3740,7 +3740,7 @@
     botPrompt: 'You Have Selected correct Anwser 🎉! <strong>20</strong> 😎',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[88],
+        nextId: 'numbers'+shuffledNumbersnseve[88],
       },
     ],
     },
@@ -3748,13 +3748,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"20"</strong>',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[88],
+        nextId: 'numbers'+shuffledNumbersnseve[88],
       },
     ],
     },
     
     //89
-    ['numbers'+shuffledNumbersto[88]]: {
+    ['numbers'+shuffledNumbersnseve[88]]: {
     botPrompt: 'What is the number that comes between 15 and 17?',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['14', '16', "18","20"]),
@@ -3781,7 +3781,7 @@
     botPrompt: 'You Have Selected correct Anwser 🎉! <strong>16</strong> Answers! 😎',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[89],
+        nextId: 'numbers'+shuffledNumbersnseve[89],
       },
     ],
     },
@@ -3789,13 +3789,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"16"</strong>',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[89],
+        nextId: 'numbers'+shuffledNumbersnseve[89],
       },
     ],
     },
     
     //90
-    ['numbers'+shuffledNumbersto[89]]: {
+    ['numbers'+shuffledNumbersnseve[89]]: {
     botPrompt: 'Which number comes before 25?',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['23', '24', "25","26"]),
@@ -3822,7 +3822,7 @@
     botPrompt: 'You Have Selected correct Anwser 🎉! <strong>24</strong> 😎',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[90],
+        nextId: 'numbers'+shuffledNumbersnseve[90],
       },
     ],
     },
@@ -3830,13 +3830,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"24"</strong>',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[90],
+        nextId: 'numbers'+shuffledNumbersnseve[90],
       },
     ],
     },
     
     //91
-    ["numbers"+shuffledNumbersto[90]]: {
+    ["numbers"+shuffledNumbersnseve[90]]: {
       botPrompt: 'What is the number that comes between 10 and 12?',
       type: RTypes.TRANSFORMED_TEXT,
       input: selectField(['8', '9', "11","13"]),
@@ -3863,7 +3863,7 @@
       botPrompt: 'Hurray <strong>11</strong> is the correct answer  ! 😎',
       answers: [
         {
-          nextId: 'numbers'+shuffledNumbersto[91],
+          nextId: 'numbers'+shuffledNumbersnseve[91],
         },
       ],
     },
@@ -3871,13 +3871,13 @@
       botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"11"</strong>',
       answers: [
         {
-          nextId: 'numbers'+shuffledNumbersto[91],
+          nextId: 'numbers'+shuffledNumbersnseve[91],
         },
       ],
     },
     
     //92
-    ['numbers'+shuffledNumbersto[91]]: {
+    ['numbers'+shuffledNumbersnseve[91]]: {
       botPrompt: 'Which number comes before 50?',
       type: RTypes.TRANSFORMED_TEXT,
       input: selectField(['47', '48', "49","51"]),
@@ -3905,7 +3905,7 @@
       botPrompt: 'Hurray! <strong>49</strong> is the correct answer  ! 😎',
       answers: [
         {
-          nextId: 'numbers'+shuffledNumbersto[92],
+          nextId: 'numbers'+shuffledNumbersnseve[92],
         },
       ],
     },
@@ -3913,13 +3913,13 @@
       botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"49"</strong>',
       answers: [
         {
-          nextId: 'numbers'+shuffledNumbersto[92],
+          nextId: 'numbers'+shuffledNumbersnseve[92],
         },
       ],
     },
     
     //93
-    ['numbers'+shuffledNumbersto[92]]: {
+    ['numbers'+shuffledNumbersnseve[92]]: {
     botPrompt: "What comes after 28?",
     type: RTypes.TRANSFORMED_TEXT,
     
@@ -3948,7 +3948,7 @@
     botPrompt: 'Hurray! <strong>29</strong> is the correct answer ! 😎',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[93],
+        nextId: 'numbers'+shuffledNumbersnseve[93],
       },
     ],
     },
@@ -3956,13 +3956,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"29"</strong>',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[93],
+        nextId: 'numbers'+shuffledNumbersnseve[93],
       },
     ],
     },
   
     //94
-    ['numbers'+shuffledNumbersto[93]]: {
+    ['numbers'+shuffledNumbersnseve[93]]: {
     botPrompt: 'Which number comes after 7?',
     type: RTypes.TRANSFORMED_TEXT,
     
@@ -3991,7 +3991,7 @@
     botPrompt: 'Hurray! <strong>8</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[94],
+        nextId: 'numbers'+shuffledNumbersnseve[94],
       },
     ],
     },
@@ -3999,13 +3999,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"8"</strong>',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[94],
+        nextId: 'numbers'+shuffledNumbersnseve[94],
       },
     ],
     },
     
     //95
-    ['numbers'+shuffledNumbersto[94]]: {
+    ['numbers'+shuffledNumbersnseve[94]]: {
     botPrompt: 'What is the number that comes between 23 and 25?',
     type: RTypes.TRANSFORMED_TEXT,
     
@@ -4034,7 +4034,7 @@
     botPrompt: 'Hurray! <strong>24</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[95],
+        nextId: 'numbers'+shuffledNumbersnseve[95],
       },
     ],
     },
@@ -4042,13 +4042,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"24"</strong>',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[95],
+        nextId: 'numbers'+shuffledNumbersnseve[95],
       },
     ],
     },
     
     //96
-    ['numbers'+shuffledNumbersto[95]]: {
+    ['numbers'+shuffledNumbersnseve[95]]: {
     botPrompt: 'Which number comes before 30?',
     type: RTypes.TRANSFORMED_TEXT,
     
@@ -4077,7 +4077,7 @@
     botPrompt: 'Hurray! <strong>29</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[96],
+        nextId: 'numbers'+shuffledNumbersnseve[96],
       },
     ],
     },
@@ -4085,13 +4085,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"29"</strong>',
     answers: [
       {
-        nextId: 'numbers'+shuffledNumbersto[96],
+        nextId: 'numbers'+shuffledNumbersnseve[96],
       },
     ],
     },
 
     //97
-    ['numbers'+shuffledNumbersto[96]]: {
+    ['numbers'+shuffledNumbersnseve[96]]: {
     botPrompt: 'What comes after 19?',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['20', '21', "22","23"]),

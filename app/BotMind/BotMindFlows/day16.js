@@ -1,4 +1,5 @@
-//isAre
+//startisare
+
 
 
 ["isAre"+shuffledNumbersseventyseven[0]]: {
@@ -3268,7 +3269,7 @@ isArecorrectq77: {
 botPrompt: 'You Have Selected correct Anwser 🎉! <strong>is</strong> 😎',
 answers: [
   {
-    nextId: 'wishtocontinue17',
+    nextId: 'wishtocontinue16',
   },
 ],
 },
@@ -3276,7 +3277,7 @@ inisArecorrectq77: {
 botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"is"</strong>',
 answers: [
   {
-    nextId: 'wishtocontinue17',
+    nextId: 'wishtocontinue16',
   },
 ],
 },
@@ -3285,3 +3286,19 @@ answers: [
 
 
 //endisAreletter
+wishtocontinue16: {
+  botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
+  input: selectField(['Yes!', 'No!']),
+  answers: [
+      {
+        answer: 'Yes!',
+        nextId: 'day17',
+      },
+      {
+        answer: 'No!',
+        nextId: 'endConv',
+      },
+  ],
+},
+
+

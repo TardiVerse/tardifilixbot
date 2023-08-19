@@ -33,10 +33,6 @@ const numbers = Array.from({ length: 34 }, (_, i) => i + 1);
 const shuffledNumbers = shuffleArray(numbers);
 
 
-
-
-console.log("jumble",shuffledNumbers);
-
 function shuffleArrayto(array) {
   const shuffledArrayto = array.slice();
   for (let i = shuffledArrayto.length - 1; i > 0; i--) {
@@ -129,13 +125,27 @@ function shuffleArrayten(array) {
 }
 
 // Create an array containing numbers from 1 to 10
-const numbersten = Array.from({ length: 15 }, (_, i) => i + 1);
+const numbersten = Array.from({ length: 9 }, (_, i) => i + 1);
 
 // Shuffle the array
 const shuffledNumbersten = shuffleArrayten(numbersten);
 
 
+//shuffleArraynseve
+function shuffleArraynseve(array) {
+  const shuffleArraynseve = array.slice();
+  for (let i = shuffleArraynseve.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffleArraynseve[i], shuffleArraynseve[j]] = [shuffleArraynseve[j], shuffleArraynseve[i]];
+  }
+  return shuffleArraynseve;
+}
 
+// Create an array containing numbers from 1 to 97
+const numbersnseve = Array.from({ length: 97 }, (_, i) => i + 1);
+
+// Shuffle the array
+const shuffledNumbersnseve = shuffleArraynseve(numbersnseve);
 
 
 
@@ -2630,7 +2640,7 @@ wishtocontinue9: {
   answers: [
       {
         answer: 'Yes!',
-        nextId: 'vowelsareback',
+        nextId: 'day10',
       },
       {
         answer: 'No!',
@@ -2641,6 +2651,4185 @@ wishtocontinue9: {
 
 
 //day10
+
+day10: {
+  botPrompt: ' <strong> Day 10 : </strong> Counting can be fun in classroom.',
+  answers: [
+          { nextId: 'day10link' },
+  ],
+},
+day10link: {
+  botPrompt: 'https://youtu.be/9bT2jilWRXw',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day10comment',
+    },
+  ],
+},
+day10comment: {
+  botPrompt: '<strong>Let`s solve</strong> ',
+  answers: [
+          { nextId: "numbers"+shuffledNumbersnseve[0] },
+  ],
+},
+
+
+
+
+
+//startnumbers
+
+
+["numbers"+shuffledNumbersnseve[0]]: {
+  botPrompt: 'How many fingers do you have on one hand?',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['3', '4', "5","6"]),
+  answers: [
+    {
+      answer: '3',
+      nextId: 'innumberscorrect',
+    },
+    {
+      answer: '4',
+      nextId: 'innumberscorrect',
+    },
+    {
+      answer: "5",
+      nextId: 'numberscorrect',
+    },
+    {
+      answer: "6",
+      nextId: 'innumberscorrect',
+    },
+  ],
+},
+numberscorrect: {
+  botPrompt: 'Hurray <strong>5</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[1],
+    },
+  ],
+},
+innumberscorrect: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[1],
+    },
+  ],
+},
+
+['numbers'+shuffledNumbersnseve[1]]: {
+  botPrompt: 'Which number comes after 4?',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['1', '2', "3","5"]),
+  answers: [
+    {
+      answer: '1',
+      nextId: 'innumberscorrectq2',
+    },
+    {
+      answer: '2',
+      nextId: 'innumberscorrectq2',
+    },
+    {
+      answer: "3",
+      nextId: 'innumberscorrectq2',
+    },
+    {
+      answer: "5",
+      nextId: 'numberscorrectq2',
+    },
+  ],
+},
+
+numberscorrectq2: {
+  botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[2],
+    },
+  ],
+},
+innumberscorrectq2: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[2],
+    },
+  ],
+},
+
+//3
+['numbers'+shuffledNumbersnseve[2]]: {
+  botPrompt: 'Which number comes before 7?',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['5', '6', "7","8"]),
+  answers: [
+    {
+      answer: '5',
+      nextId: 'innumberscorrectq3',
+    },
+    {
+      answer: '6',
+      nextId: 'numberscorrectq3',
+    },
+    {
+      answer: "7",
+      nextId: 'innumberscorrectq3',
+    },
+    {
+      answer: "8",
+      nextId: 'innumberscorrectq3',
+    },
+  ],
+},
+
+numberscorrectq3: {
+  botPrompt: 'Hurray! <strong>6</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[3],
+    },
+  ],
+},
+innumberscorrectq3: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"6"</strong>',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[3],
+    },
+  ],
+},
+
+//4
+['numbers'+shuffledNumbersnseve[3]]: {
+botPrompt: 'What number comes between 3 and 5?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['1', '2', "4","6"]),
+  answers: [
+    {
+      answer: '1',
+      nextId: 'innumberscorrectq4',
+    },
+    {
+      answer: '2',
+      nextId: 'innumberscorrectq4',
+    },
+    {
+      answer: "4",
+      nextId: 'numberscorrectq4',
+    },
+    {
+      answer: "6",
+      nextId: 'innumberscorrectq4',
+    },
+  ],
+},
+
+numberscorrectq4: {
+botPrompt: 'Hurray! <strong>4</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[4],
+  },
+],
+},
+innumberscorrectq4: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[4],
+  },
+],
+},
+
+//5
+['numbers'+shuffledNumbersnseve[4]]: {
+botPrompt: 'How many legs does a cat have?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['2', '3', "4","5"]),
+  answers: [
+    {
+      answer: '2',
+      nextId: 'innumberscorrectq5',
+    },
+    {
+      answer: '3',
+      nextId: 'innumberscorrectq5',
+    },
+    {
+      answer: "4",
+      nextId: 'numberscorrectq5',
+    },
+    {
+      answer: "5",
+      nextId: 'innumberscorrectq5',
+    },
+  ],
+},
+
+numberscorrectq5: {
+botPrompt: 'Hurray! <strong>4</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[5],
+  },
+],
+},
+innumberscorrectq5: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[5],
+  },
+],
+},
+
+//6
+['numbers'+shuffledNumbersnseve[5]]: {
+botPrompt: 'Which is greater, 2 or 5?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['2', '3', "4","5"]),
+  answers: [
+    {
+      answer: '2',
+      nextId: 'innumberscorrectq6',
+    },
+    {
+      answer: '3',
+      nextId: 'innumberscorrectq6',
+    },
+    {
+      answer: "4",
+      nextId: 'innumberscorrectq6',
+    },
+    {
+      answer: "5",
+      nextId: 'numberscorrectq6',
+    },
+  ],
+},
+
+numberscorrectq6: {
+botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[6],
+  },
+],
+},
+innumberscorrectq6: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[6],
+  },
+],
+},
+
+//7
+['numbers'+shuffledNumbersnseve[6]]: {
+botPrompt: 'Which number is the smallest?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['8', '9', "10","11"]),
+  answers: [
+    {
+      answer: '8',
+      nextId: 'numberscorrectq7',
+    },
+    {
+      answer: '9',
+      nextId: 'innumberscorrectq7',
+    },
+    {
+      answer: "10",
+      nextId: 'innumberscorrectq7',
+    },
+    {
+      answer: "11",
+      nextId: 'innumberscorrectq7',
+    },
+  ],
+},
+
+numberscorrectq7: {
+botPrompt: 'Hurray! <strong>8</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[7],
+  },
+],
+},
+innumberscorrectq7: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"8"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[7],
+  },
+],
+},
+
+
+//8
+['numbers'+shuffledNumbersnseve[7]]: {
+botPrompt: 'Which number is the largest?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['6', '7', "8","9"]),
+  answers: [
+    {
+      answer: '6',
+      nextId: 'innumberscorrectq8',
+    },
+    {
+      answer: '7',
+      nextId: 'innumberscorrectq8',
+    },
+    {
+      answer: "8",
+      nextId: 'innumberscorrectq8',
+    },
+    {
+      answer: "9",
+      nextId: 'numberscorrectq8',
+    },
+  ],
+},
+
+numberscorrectq8: {
+botPrompt: 'Hurray! <strong>9</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[8],
+  },
+],
+},
+innumberscorrectq8: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"9"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[8],
+  },
+],
+},
+
+//9
+['numbers'+shuffledNumbersnseve[8]]: {
+botPrompt: 'What number comes after 9?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['10', '11', "12","13"]),
+  answers: [
+    {
+      answer: '10',
+      nextId: 'numberscorrectq9',
+    },
+    {
+      answer: '11',
+      nextId: 'innumberscorrectq9',
+    },
+    {
+      answer: "12",
+      nextId: 'innumberscorrectq9',
+    },
+    {
+      answer: "13",
+      nextId: 'innumberscorrectq9',
+    },
+  ],
+},
+
+numberscorrectq9: {
+botPrompt: 'Hurray! <strong>10</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[9],
+  },
+],
+},
+innumberscorrectq9: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"10"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[9],
+  },
+],
+},
+
+
+//10
+['numbers'+shuffledNumbersnseve[9]]: {
+botPrompt: 'What number comes before 4?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['1', '2', "3","4"]),
+  answers: [
+    {
+      answer: '1',
+      nextId: 'innumberscorrectq10',
+    },
+    {
+      answer: '2',
+      nextId: 'innumberscorrectq10',
+    },
+    {
+      answer: "3",
+      nextId: 'numberscorrectq10',
+    },
+    {
+      answer: "4",
+      nextId: 'innumberscorrectq10',
+    },
+  ],
+
+},
+
+numberscorrectq10: {
+botPrompt: 'Hurray! <strong>3</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[10],
+  },
+],
+},
+innumberscorrectq10: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"3"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[10],
+  },
+],
+},
+
+//11
+['numbers'+shuffledNumbersnseve[10]]: {
+botPrompt: 'How many eyes does a person have?',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['1', '2', "3","4"]),
+  answers: [
+    {
+      answer: '1',
+      nextId: 'innumberscorrectq11',
+    },
+    {
+      answer: '2',
+      nextId: 'numberscorrectq11',
+    },
+    {
+      answer: "3",
+      nextId: 'innumberscorrectq11',
+    },
+    {
+      answer: "4",
+      nextId: 'innumberscorrectq11',
+    },
+  ],
+
+},
+
+numberscorrectq11: {
+botPrompt: 'Hurray! <strong>2</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[11],
+  },
+],
+},
+innumberscorrectq11: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"2"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[11],
+  },
+],
+},
+
+//12
+['numbers'+shuffledNumbersnseve[11]]: {
+botPrompt: 'Which number is in between 2 and 4?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['1', '2', "3","4"]),
+  answers: [
+    {
+      answer: '1',
+      nextId: 'innumberscorrectq12',
+    },
+    {
+      answer: '2',
+      nextId: 'innumberscorrectq12',
+    },
+    {
+      answer: "3",
+      nextId: 'numberscorrectq12',
+    },
+    {
+      answer: "4",
+      nextId: 'innumberscorrectq12',
+    },
+  ],
+
+},
+
+numberscorrectq12: {
+botPrompt: 'Hurray! <strong>3</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[12],
+  },
+],
+},
+innumberscorrectq12: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"3"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[12],
+  },
+],
+},
+
+//13
+['numbers'+shuffledNumbersnseve[12]]: {
+botPrompt: 'Which number is in between 6 and 8?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['4', '5', "6","7"]),
+  answers: [
+    {
+      answer: '4',
+      nextId: 'innumberscorrectq13',
+    },
+    {
+      answer: '5',
+      nextId: 'innumberscorrectq13',
+    },
+    {
+      answer: "6",
+      nextId: 'innumberscorrectq13',
+    },
+    {
+      answer: "7",
+      nextId: 'numberscorrectq13',
+    },
+  ],
+},
+
+numberscorrectq13: {
+botPrompt: 'Hurray! <strong>7</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[13],
+  },
+],
+},
+innumberscorrectq13: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"7"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[13],
+  },
+],
+},
+
+//14
+['numbers'+shuffledNumbersnseve[13]]: {
+botPrompt: 'Which number comes after 15?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['16', '17', "18","19"]),
+  answers: [
+    {
+      answer: '16',
+      nextId: 'innumberscorrectq14',
+    },
+    {
+      answer: '17',
+      nextId: 'innumberscorrectq14',
+    },
+    {
+      answer: "18",
+      nextId: 'numberscorrectq14',
+    },
+    {
+      answer: "19",
+      nextId: 'innumberscorrectq14',
+    },
+  ],
+},
+
+numberscorrectq14: {
+botPrompt: 'Hurray! <strong>16</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[14],
+  },
+],
+},
+innumberscorrectq14: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"16"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[14],
+  },
+],
+},
+
+
+//15
+['numbers'+shuffledNumbersnseve[14]]: {
+botPrompt: 'Which number comes before 11?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['8', '9', "10","12"]),
+  answers: [
+    {
+      answer: '8',
+      nextId: 'innumberscorrectq15',
+    },
+    {
+      answer: '9',
+      nextId: 'innumberscorrectq15',
+    },
+    {
+      answer: "10",
+      nextId: 'numberscorrectq15',
+    },
+    {
+      answer: "12",
+      nextId: 'innumberscorrectq15',
+    },
+  ],
+},
+
+numberscorrectq15: {
+botPrompt: 'Hurray! <strong>10</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[15],
+  },
+],
+},
+innumberscorrectq15: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"10"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[15],
+  },
+],
+},
+
+//16
+['numbers'+shuffledNumbersnseve[15]]: {
+  botPrompt: 'How many wheels does a car have?',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['1', '2', "3","4"]),
+  answers: [
+    {
+      answer: '1',
+      nextId: 'innumberscorrectq16',
+    },
+    {
+      answer: '2',
+      nextId: 'innumberscorrectq16',
+    },
+    {
+      answer: "3",
+      nextId: 'innumberscorrectq16',
+    },
+    {
+      answer: "4",
+      nextId: 'numberscorrectq16',
+    },
+  ],
+},
+numberscorrectq16: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>4</strong> 😎',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[16],
+    },
+  ],
+},
+innumberscorrectq16: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[16],
+    },
+  ],
+},
+
+//17
+['numbers'+shuffledNumbersnseve[16]]: {
+botPrompt: 'How many days are in a week?',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['4', '5', "6","7"]),
+  answers: [
+    {
+      answer: '4',
+      nextId: 'innumberscorrectq17',
+    },
+    {
+      answer: '5',
+      nextId: 'innumberscorrectq17',
+    },
+    {
+      answer: "6",
+      nextId: 'innumberscorrectq17',
+    },
+    {
+      answer: "7",
+      nextId: 'numberscorrectq17',
+    },
+  ],
+},
+numberscorrectq17: {
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>7</strong> 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[17],
+  },
+],
+},
+innumberscorrectq17: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"7"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[17],
+  },
+],
+},
+
+//18
+['numbers'+shuffledNumbersnseve[17]]: {
+botPrompt: 'Which number is greater, 9 or 6?',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['6', '7', "8","94"]),
+answers: [
+  {
+    answer: '6',
+    nextId: 'innumberscorrectq18',
+  },
+  {
+    answer: '7',
+    nextId: 'innumberscorrectq18',
+  },
+  {
+    answer: "8",
+    nextId: 'innumberscorrectq18',
+  },
+  {
+    answer: "9",
+    nextId: 'numberscorrectq18',
+  },
+],
+},
+numberscorrectq18: {
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>9</strong> 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[18],
+  },
+],
+},
+innumberscorrectq18: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"9"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[18],
+  },
+],
+},
+
+//19
+['numbers'+shuffledNumbersnseve[18]]: {
+botPrompt: 'Which number is smaller, 2 or 5?',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['2', '3', "4","5"]),
+answers: [
+  {
+    answer: '2',
+    nextId: 'numberscorrectq19',
+  },
+  {
+    answer: '3',
+    nextId: 'innumberscorrectq19',
+  },
+  {
+    answer: "4",
+    nextId: 'innumberscorrectq19',
+  },
+  {
+    answer: "5",
+    nextId: 'innumberscorrectq19',
+  },
+],
+},
+numberscorrectq19: {
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>2</strong> Answers! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[19],
+  },
+],
+},
+innumberscorrectq19: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"2"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[19],
+  },
+],
+},
+
+//20
+['numbers'+shuffledNumbersnseve[19]]: {
+botPrompt: 'What number comes between 7 and 9?',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['5', '6', "7","8"]),
+answers: [
+  {
+    answer: '5',
+    nextId: 'innumberscorrectq20',
+  },
+  {
+    answer: '6',
+    nextId: 'innumberscorrectq20',
+  },
+  {
+    answer: "7",
+    nextId: 'innumberscorrectq20',
+  },
+  {
+    answer: "8",
+    nextId: 'numberscorrectq20',
+  },
+],
+},
+numberscorrectq20: {
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>8</strong> 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[20],
+  },
+],
+},
+innumberscorrectq20: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"8"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[20],
+  },
+],
+},
+
+//21
+["numbers"+shuffledNumbersnseve[20]]: {
+  botPrompt: 'What number comes after 20?',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['21', '22', "23","24"]),
+answers: [
+  {
+    answer: '21',
+    nextId: 'numberscorrectq21',
+  },
+  {
+    answer: '22',
+    nextId: 'innumberscorrectq21',
+  },
+  {
+    answer: "23",
+    nextId: 'innumberscorrectq21',
+  },
+  {
+    answer: "24",
+    nextId: 'innumberscorrectq21',
+  },
+],
+},
+numberscorrectq21: {
+  botPrompt: 'Hurray <strong>21</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[21],
+    },
+  ],
+},
+innumberscorrectq21: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"21"</strong>',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[21],
+    },
+  ],
+},
+
+//22
+['numbers'+shuffledNumbersnseve[21]]: {
+  botPrompt: 'What number comes before 6?',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['2', '3', "4","5"]),
+answers: [
+  {
+    answer: '2',
+    nextId: 'innumberscorrectq22',
+  },
+  {
+    answer: '3',
+    nextId: 'innumberscorrectq22',
+  },
+  {
+    answer: "4",
+    nextId: 'innumberscorrectq22',
+  },
+  {
+    answer: "5",
+    nextId: 'numberscorrectq22',
+  },
+],
+},
+
+numberscorrectq22: {
+  botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[22],
+    },
+  ],
+},
+innumberscorrectq22: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[22],
+    },
+  ],
+},
+
+//23
+['numbers'+shuffledNumbersnseve[22]]: {
+botPrompt: "How many sides does a square have?",
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['2', '3', "4","5"]),
+answers: [
+  {
+    answer: '2',
+    nextId: 'innumberscorrectq23',
+  },
+  {
+    answer: '3',
+    nextId: 'innumberscorrectq23',
+  },
+  {
+    answer: "4",
+    nextId: 'numberscorrectq23',
+  },
+  {
+    answer: "5",
+    nextId: 'innumberscorrectq23',
+  },
+],
+},
+
+numberscorrectq23: {
+botPrompt: 'Hurray! <strong>4</strong> is the correct answer ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[23],
+  },
+],
+},
+innumberscorrectq23: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[23],
+  },
+],
+},
+
+//24
+['numbers'+shuffledNumbersnseve[23]]: {
+botPrompt: 'Which number comes after 8?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['6', '7', "8","9"]),
+answers: [
+  {
+    answer: '6',
+    nextId: 'innumberscorrectq24',
+  },
+  {
+    answer: '7',
+    nextId: 'innumberscorrectq24',
+  },
+  {
+    answer: "8",
+    nextId: 'innumberscorrectq24',
+  },
+  {
+    answer: "9",
+    nextId: 'numberscorrectq24',
+  },
+],
+},
+
+numberscorrectq24: {
+botPrompt: 'Hurray! <strong>9</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[24],
+  },
+],
+},
+innumberscorrectq24: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"9"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[24],
+  },
+],
+},
+
+//25
+['numbers'+shuffledNumbersnseve[24]]: {
+botPrompt: 'Which number comes before 13?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['10', '11', "12","13"]),
+answers: [
+  {
+    answer: '10',
+    nextId: 'innumberscorrectq25',
+  },
+  {
+    answer: '11',
+    nextId: 'innumberscorrectq25',
+  },
+  {
+    answer: "12",
+    nextId: 'numberscorrectq25',
+  },
+  {
+    answer: "13",
+    nextId: 'innumberscorrectq25',
+  },
+],
+},
+
+numberscorrectq25: {
+botPrompt: 'Hurray! <strong>12</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[25],
+  },
+],
+},
+innumberscorrectq25: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"12"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[25],
+  },
+],
+},
+
+//26
+['numbers'+shuffledNumbersnseve[25]]: {
+botPrompt: 'How many sides does a triangle have?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['2', '3', "4","5"]),
+answers: [
+  {
+    answer: '2',
+    nextId: 'innumberscorrectq26',
+  },
+  {
+    answer: '3',
+    nextId: 'numberscorrectq26',
+  },
+  {
+    answer: "4",
+    nextId: 'innumberscorrectq26',
+  },
+  {
+    answer: "5",
+    nextId: 'innumberscorrectq26',
+  },
+],
+},
+
+numberscorrectq26: {
+botPrompt: 'Hurray! <strong>3</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[26],
+  },
+],
+},
+innumberscorrectq26: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"3"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[26],
+  },
+],
+},
+
+//27
+['numbers'+shuffledNumbersnseve[26]]: {
+botPrompt: 'What number comes between 17 and 19?',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['14', '15', "16","18"]),
+  answers: [
+    {
+      answer: '14',
+      nextId: 'innumberscorrectq27',
+    },
+    {
+      answer: '15',
+      nextId: 'innumberscorrectq27',
+    },
+    {
+      answer: "16",
+      nextId: 'innumberscorrectq27',
+    },
+    {
+      answer: "18",
+      nextId: 'numberscorrectq27',
+    },
+  ],
+},
+
+numberscorrectq27: {
+botPrompt: 'Hurray! <strong>18</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[27],
+  },
+],
+},
+innumberscorrectq27: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"18"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[27],
+  },
+],
+},
+
+
+//28
+['numbers'+shuffledNumbersnseve[27]]: {
+botPrompt: 'What number comes before 20?',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['16', '17', "18","19"]),
+answers: [
+  {
+    answer: '16',
+    nextId: 'innumberscorrectq28',
+  },
+  {
+    answer: '17',
+    nextId: 'innumberscorrectq28',
+  },
+  {
+    answer: "18",
+    nextId: 'innumberscorrectq28',
+  },
+  {
+    answer: "19",
+    nextId: 'numberscorrectq28',
+  },
+],
+},
+
+numberscorrectq28: {
+botPrompt: 'Hurray! <strong>19</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[28],
+  },
+],
+},
+innumberscorrectq28: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"19"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[28],
+  },
+],
+},
+
+//29
+['numbers'+shuffledNumbersnseve[28]]: {
+botPrompt: 'How many legs does a spider have?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['4', '6', "8","10"]),
+  answers: [
+    {
+      answer: '4',
+      nextId: 'innumberscorrectq29',
+    },
+    {
+      answer: '6',
+      nextId: 'innumberscorrectq29',
+    },
+    {
+      answer: "8",
+      nextId: 'numberscorrectq29',
+    },
+    {
+      answer: "10",
+      nextId: 'innumberscorrectq29',
+    },
+  ],
+},
+
+numberscorrectq29: {
+botPrompt: 'Hurray! <strong>8</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[29],
+  },
+],
+},
+innumberscorrectq29: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"8"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[29],
+  },
+],
+},
+
+
+//30
+['numbers'+shuffledNumbersnseve[29]]: {
+botPrompt: 'Which number is greater, 3 or 7?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['3', '4', "6","7"]),
+answers: [
+  {
+    answer: '3',
+    nextId: 'innumberscorrectq30',
+  },
+  {
+    answer: '4',
+    nextId: 'innumberscorrectq30',
+  },
+  {
+    answer: "6",
+    nextId: 'innumberscorrectq30',
+  },
+  {
+    answer: "7",
+    nextId: 'numberscorrectq30',
+  },
+],
+},
+
+numberscorrectq30: {
+botPrompt: 'Hurray! <strong>7</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[30],
+  },
+],
+},
+innumberscorrectq30: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"7"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[30],
+  },
+],
+},
+
+//31
+['numbers'+shuffledNumbersnseve[30]]: {
+botPrompt: 'Which number is smaller, 1 or 5?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['1', '2', "4","5"]),
+  answers: [
+    {
+      answer: '1',
+      nextId: 'numberscorrectq31',
+    },
+    {
+      answer: '2',
+      nextId: 'innumberscorrectq31',
+    },
+    {
+      answer: "4",
+      nextId: 'innumberscorrectq31',
+    },
+    {
+      answer: "5",
+      nextId: 'innumberscorrectq31',
+    },
+  ],
+},
+
+numberscorrectq31: {
+botPrompt: 'Hurray! <strong>1</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[31],
+  },
+],
+},
+innumberscorrectq31: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"1"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[31],
+  },
+],
+},
+
+//32
+['numbers'+shuffledNumbersnseve[31]]: {
+botPrompt: 'What number comes between 11 and 13?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['8', '9', "10","12"]),
+answers: [
+  {
+    answer: '8',
+    nextId: 'innumberscorrectq32',
+  },
+  {
+    answer: '9',
+    nextId: 'innumberscorrectq32',
+  },
+  {
+    answer: "10",
+    nextId: 'innumberscorrectq32',
+  },
+  {
+    answer: "12",
+    nextId: 'numberscorrectq32',
+  },
+],
+},
+
+numberscorrectq32: {
+botPrompt: 'Hurray! <strong>12</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[32],
+  },
+],
+},
+innumberscorrectq32: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"12"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[32],
+  },
+],
+},
+
+//33
+['numbers'+shuffledNumbersnseve[32]]: {
+botPrompt: 'What number comes after 25?',
+type: RTypes.TRANSFORMED_TEXT,
+
+
+input: selectField(['26', '27', "28","29"]),
+answers: [
+  {
+    answer: '26',
+    nextId: 'numberscorrectq33',
+  },
+  {
+    answer: '27',
+    nextId: 'innumberscorrectq33',
+  },
+  {
+    answer: "28",
+    nextId: 'innumberscorrectq33',
+  },
+  {
+    answer: "29",
+    nextId: 'innumberscorrectq33',
+  },
+],
+},
+
+numberscorrectq33: {
+botPrompt: 'Hurray! <strong>26</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[33],
+  },
+],
+},
+innumberscorrectq33: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"26"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[33],
+  },
+],
+},
+
+//34
+['numbers'+shuffledNumbersnseve[33]]: {
+botPrompt: 'What number comes before 8?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['3', '4', "5","7"]),
+  answers: [
+    {
+      answer: '3',
+      nextId: 'numberscorrectq34',
+    },
+    {
+      answer: '4',
+      nextId: 'innumberscorrectq34',
+    },
+    {
+      answer: "5",
+      nextId: 'innumberscorrectq34',
+    },
+    {
+      answer: "7",
+      nextId: 'innumberscorrectq34',
+    },
+  ],
+},
+
+numberscorrectq34: {
+botPrompt: 'Hurray! <strong>7</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[34],
+  },
+],
+},
+innumberscorrectq34: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"7"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[34],
+  },
+],
+},
+
+
+//35
+['numbers'+shuffledNumbersnseve[34]]: {
+botPrompt: 'How many sides does a circle have?',
+type: RTypes.TRANSFORMED_TEXT,
+
+
+input: selectField(['0', '1', "2","3"]),
+answers: [
+  {
+    answer: '0',
+    nextId: 'numberscorrectq35',
+  },
+  {
+    answer: '1',
+    nextId: 'innumberscorrectq35',
+  },
+  {
+    answer: "2",
+    nextId: 'innumberscorrectq35',
+  },
+  {
+    answer: "3",
+    nextId: 'innumberscorrectq35',
+  },
+],
+},
+
+numberscorrectq35: {
+botPrompt: 'Hurray! <strong>0</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[35],
+  },
+],
+},
+innumberscorrectq35: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"0"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[35],
+  },
+],
+},
+
+//36
+['numbers'+shuffledNumbersnseve[35]]: {
+  botPrompt: 'Which number is in between 14 and 16?',
+  type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['11', '12', "13","15"]),
+answers: [
+  {
+    answer: '11',
+    nextId: 'innumberscorrectq36',
+  },
+  {
+    answer: '12',
+    nextId: 'innumberscorrectq36',
+  },
+  {
+    answer: "13",
+    nextId: 'innumberscorrectq36',
+  },
+  {
+    answer: "15",
+    nextId: 'numberscorrectq36',
+  },
+],
+},
+numberscorrectq36: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>15</strong> 😎',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[36],
+    },
+  ],
+},
+innumberscorrectq36: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"15"</strong>',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[36],
+    },
+  ],
+},
+
+//37
+['numbers'+shuffledNumbersnseve[36]]: {
+botPrompt: 'Which number is in between 18 and 20?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['14', '15', "16","19"]),
+answers: [
+  {
+    answer: '14',
+    nextId: 'innumberscorrectq37',
+  },
+  {
+    answer: '15',
+    nextId: 'innumberscorrectq37',
+  },
+  {
+    answer: "16",
+    nextId: 'innumberscorrectq37',
+  },
+  {
+    answer: "19",
+    nextId: 'numberscorrectq37',
+  },
+],
+},
+numberscorrectq37: {
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>19</strong> 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[37],
+  },
+],
+},
+innumberscorrectq37: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"19"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[37],
+  },
+],
+},
+
+//38
+['numbers'+shuffledNumbersnseve[37]]: {
+botPrompt: 'How many legs does a dog have?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['2', '3', "4","5"]),
+  answers: [
+    {
+      answer: '2',
+      nextId: 'innumberscorrectq38',
+    },
+    {
+      answer: '3',
+      nextId: 'innumberscorrectq38',
+    },
+    {
+      answer: "4",
+      nextId: 'numberscorrectq38',
+    },
+    {
+      answer: "5",
+      nextId: 'innumberscorrectq38',
+    },
+  ],
+},
+numberscorrectq38: {
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>4</strong> 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[38],
+  },
+],
+},
+innumberscorrectq38: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[38],
+  },
+],
+},
+
+//39
+['numbers'+shuffledNumbersnseve[38]]: {
+botPrompt: 'Which number is greater, 2 or 9?',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['2', '6', "8","9"]),
+answers: [
+  {
+    answer: '2',
+    nextId: 'innumberscorrectq310',
+  },
+  {
+    answer: '6',
+    nextId: 'innumberscorrectq39',
+  },
+  {
+    answer: "8",
+    nextId: 'innumberscorrectq39',
+  },
+  {
+    answer: "9",
+    nextId: 'numberscorrectq39',
+  },
+],
+},
+numberscorrectq39: {
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>9</strong> Answers! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[39],
+  },
+],
+},
+innumberscorrectq39: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"9"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[39],
+  },
+],
+},
+
+//40
+['numbers'+shuffledNumbersnseve[39]]: {
+botPrompt: 'Which number is smaller, 4 or 10?',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['4', '6', "8","10"]),
+  answers: [
+    {
+      answer: '4',
+      nextId: 'numberscorrectq40',
+    },
+    {
+      answer: '6',
+      nextId: 'innumberscorrectq40',
+    },
+    {
+      answer: "8",
+      nextId: 'innumberscorrectq40',
+    },
+    {
+      answer: "10",
+      nextId: 'innumberscorrectq40',
+    },
+  ],
+},
+numberscorrectq40: {
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>4</strong> 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[40],
+  },
+],
+},
+innumberscorrectq40: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[40],
+  },
+],
+},
+
+//41
+["numbers"+shuffledNumbersnseve[40]]: {
+  botPrompt: 'What number comes between 21 and 23?',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['17', '18', "19","22"]),
+  answers: [
+    {
+      answer: '17',
+      nextId: 'innumberscorrectq41',
+    },
+    {
+      answer: '18',
+      nextId: 'innumberscorrectq41',
+    },
+    {
+      answer: "19",
+      nextId: 'innumberscorrectq41',
+    },
+    {
+      answer: "22",
+      nextId: 'numberscorrectq41',
+    },
+  ],
+},
+numberscorrectq41: {
+  botPrompt: 'Hurray <strong>22</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[41],
+    },
+  ],
+},
+innumberscorrectq41: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"22"</strong>',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[41],
+    },
+  ],
+},
+
+//42
+
+['numbers'+shuffledNumbersnseve[41]]: {
+  botPrompt: 'What number comes after 30?',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['31', '32', "33","34"]),
+  answers: [
+    {
+      answer: '31',
+      nextId: 'numberscorrectq42',
+    },
+    {
+      answer: '32',
+      nextId: 'innumberscorrectq42',
+    },
+    {
+      answer: "33",
+      nextId: 'innumberscorrectq42',
+    },
+    {
+      answer: "34",
+      nextId: 'innumberscorrectq42',
+    },
+  ],
+},
+
+numberscorrectq42: {
+  botPrompt: 'Hurray! <strong>31</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[42],
+    },
+  ],
+},
+innumberscorrectq42: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"31"</strong>',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[42],
+    },
+  ],
+},
+
+//43
+['numbers'+shuffledNumbersnseve[42]]: {
+botPrompt: "What number comes before 12?",
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['5', '6', "7","11"]),
+  answers: [
+    {
+      answer: '5',
+      nextId: 'innumberscorrectq43',
+    },
+    {
+      answer: '6',
+      nextId: 'innumberscorrectq43',
+    },
+    {
+      answer: "7",
+      nextId: 'innumberscorrectq43',
+    },
+    {
+      answer: "11",
+      nextId: 'numberscorrectq43',
+    },
+  ],
+},
+
+numberscorrectq43: {
+botPrompt: 'Hurray! <strong>11</strong> is the correct answer ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[43],
+  },
+],
+},
+innumberscorrectq43: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"11"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[43],
+  },
+],
+},
+
+//44
+['numbers'+shuffledNumbersnseve[43]]: {
+botPrompt: 'What number comes after 35?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['36', '37', "38","39"]),
+  answers: [
+    {
+      answer: '36',
+      nextId: 'innumberscorrectq44',
+    },
+    {
+      answer: '37',
+      nextId: 'innumberscorrectq44',
+    },
+    {
+      answer: "38",
+      nextId: 'numberscorrectq44',
+    },
+    {
+      answer: "39",
+      nextId: 'innumberscorrectq44',
+    },
+  ],
+},
+
+numberscorrectq44: {
+botPrompt: 'Hurray! <strong>36</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[44],
+  },
+],
+},
+innumberscorrectq44: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"36"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[44],
+  },
+],
+},
+
+//45
+['numbers'+shuffledNumbersnseve[44]]: {
+botPrompt: 'What number comes before 50?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['44', '45', "46","49"]),
+  answers: [
+    {
+      answer: '44',
+      nextId: 'innumberscorrectq45',
+    },
+    {
+      answer: '45',
+      nextId: 'innumberscorrectq45',
+    },
+    {
+      answer: "46",
+      nextId: 'innumberscorrectq45',
+    },
+    {
+      answer: "49",
+      nextId: 'numberscorrectq45',
+    },
+  ],
+},
+
+numberscorrectq45: {
+botPrompt: 'Hurray! <strong>49</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[45],
+  },
+],
+},
+innumberscorrectq45: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"49"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[45],
+  },
+],
+},
+
+//46
+['numbers'+shuffledNumbersnseve[45]]: {
+botPrompt: 'How many sides does a square have?',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['2', '3', "4","5"]),
+  answers: [
+    {
+      answer: '2',
+      nextId: 'innumberscorrectq46',
+    },
+    {
+      answer: '3',
+      nextId: 'innumberscorrectq46',
+    },
+    {
+      answer: "4",
+      nextId: 'numberscorrectq46',
+    },
+    {
+      answer: "5",
+      nextId: 'innumberscorrectq46',
+    },
+  ],
+},
+
+numberscorrectq46: {
+botPrompt: 'Hurray! <strong>4</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[46],
+  },
+],
+},
+innumberscorrectq46: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[46],
+  },
+],
+},
+
+//47
+['numbers'+shuffledNumbersnseve[46]]: {
+botPrompt: 'Which number is greater, 15 or 22?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['12', '15', "18","22"]),
+  answers: [
+    {
+      answer: '12',
+      nextId: 'innumberscorrectq47',
+    },
+    {
+      answer: '15',
+      nextId: 'innumberscorrectq47',
+    },
+    {
+      answer: "18",
+      nextId: 'innumberscorrectq47',
+    },
+    {
+      answer: "22",
+      nextId: 'numberscorrectq47',
+    },
+  ],
+},
+
+numberscorrectq47: {
+botPrompt: 'Hurray! <strong>22</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[47],
+  },
+],
+},
+innumberscorrectq47: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"22"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[47],
+  },
+],
+},
+
+
+//48
+['numbers'+shuffledNumbersnseve[47]]: {
+botPrompt: 'Which number is smaller, 9 or 13?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['9', '10', "12","13"]),
+  answers: [
+    {
+      answer: '9',
+      nextId: 'numberscorrectq48',
+    },
+    {
+      answer: '10',
+      nextId: 'innumberscorrectq48',
+    },
+    {
+      answer: "12",
+      nextId: 'innumberscorrectq48',
+    },
+    {
+      answer: "13",
+      nextId: 'innumberscorrectq48',
+    },
+  ],
+},
+
+numberscorrectq48: {
+botPrompt: 'Hurray! <strong>9</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[48],
+  },
+],
+},
+innumberscorrectq48: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"9"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[48],
+  },
+],
+},
+
+//49
+['numbers'+shuffledNumbersnseve[48]]: {
+botPrompt: 'What number comes between 29 and 31?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['28', '29', "30","32"]),
+  answers: [
+    {
+      answer: '28',
+      nextId: 'innumberscorrectq49',
+    },
+    {
+      answer: '29',
+      nextId: 'innumberscorrectq49',
+    },
+    {
+      answer: "30",
+      nextId: 'numberscorrectq49',
+    },
+    {
+      answer: "32",
+      nextId: 'innumberscorrectq49',
+    },
+  ],
+},
+
+numberscorrectq49: {
+botPrompt: 'Hurray! <strong>30</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[49],
+  },
+],
+},
+innumberscorrectq49: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"30"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[49],
+  },
+],
+},
+
+
+//50
+['numbers'+shuffledNumbersnseve[49]]: {
+botPrompt: 'What number comes after 60?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['61', '62', "63","64"]),
+  answers: [
+    {
+      answer: '61',
+      nextId: 'numberscorrectq50',
+    },
+    {
+      answer: '62',
+      nextId: 'innumberscorrectq50',
+    },
+    {
+      answer: "63",
+      nextId: 'numberscorrectq50',
+    },
+    {
+      answer: "64",
+      nextId: 'innumberscorrectq50',
+    },
+  ],
+},
+
+numberscorrectq50: {
+botPrompt: 'Hurray! <strong>61</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[50],
+  },
+],
+},
+innumberscorrectq50: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"61"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[50],
+  },
+],
+},
+
+//51
+['numbers'+shuffledNumbersnseve[50]]: {
+botPrompt: 'What number comes before 100?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['95', '96', "97","99"]),
+  answers: [
+    {
+      answer: '95',
+      nextId: 'innumberscorrectq51',
+    },
+    {
+      answer: '96',
+      nextId: 'innumberscorrectq51',
+    },
+    {
+      answer: "97",
+      nextId: 'innumberscorrectq51',
+    },
+    {
+      answer: "99",
+      nextId: 'numberscorrectq51',
+    },
+  ],
+},
+
+numberscorrectq51: {
+botPrompt: 'Hurray! <strong>99</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[51],
+  },
+],
+},
+innumberscorrectq51: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"99"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[51],
+  },
+],
+},
+
+//52
+['numbers'+shuffledNumbersnseve[51]]: {
+botPrompt: 'How many legs does a bird have?',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['2', '4', "6","8"]),
+  answers: [
+    {
+      answer: '2',
+      nextId: 'numberscorrectq52',
+    },
+    {
+      answer: '4',
+      nextId: 'innumberscorrectq52',
+    },
+    {
+      answer: "6",
+      nextId: 'innumberscorrectq52',
+    },
+    {
+      answer: "8",
+      nextId: 'innumberscorrectq52',
+    },
+  ],
+},
+
+numberscorrectq52: {
+botPrompt: 'Hurray! <strong>2</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[52],
+  },
+],
+},
+innumberscorrectq52: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"2"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[52],
+  },
+],
+},
+
+//53
+['numbers'+shuffledNumbersnseve[52]]: {
+botPrompt: 'Which number is greater, 28 or 32?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['24', '28', "30","32"]),
+  answers: [
+    {
+      answer: '24',
+      nextId: 'innumberscorrectq53',
+    },
+    {
+      answer: '28',
+      nextId: 'innumberscorrectq53',
+    },
+    {
+      answer: "30",
+      nextId: 'innumberscorrectq53',
+    },
+    {
+      answer: "32",
+      nextId: 'numberscorrectq53',
+    },
+  ],
+},
+
+numberscorrectq53: {
+botPrompt: 'Hurray! <strong>32</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[53],
+  },
+],
+},
+innumberscorrectq53: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"32"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[53],
+  },
+],
+},
+
+//54
+['numbers'+shuffledNumbersnseve[53]]: {
+botPrompt: 'Which number is smaller, 17 or 20?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['17', '18', "19","20"]),
+  answers: [
+    {
+      answer: '17',
+      nextId: 'numberscorrectq54',
+    },
+    {
+      answer: '18',
+      nextId: 'innumberscorrectq54',
+    },
+    {
+      answer: "19",
+      nextId: 'innumberscorrectq54',
+    },
+    {
+      answer: "20",
+      nextId: 'innumberscorrectq54',
+    },
+  ],
+},
+
+numberscorrectq54: {
+botPrompt: 'Hurray! <strong>17</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[54],
+  },
+],
+},
+innumberscorrectq54: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"17"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[54],
+  },
+],
+},
+
+
+//55
+['numbers'+shuffledNumbersnseve[54]]: {
+botPrompt: 'What number comes between 43 and 45?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['42', '43', "44","46"]),
+  answers: [
+    {
+      answer: '42',
+      nextId: 'innumberscorrectq55',
+    },
+    {
+      answer: '43',
+      nextId: 'innumberscorrectq55',
+    },
+    {
+      answer: "44",
+      nextId: 'numberscorrectq55',
+    },
+    {
+      answer: "46",
+      nextId: 'innumberscorrectq55',
+    },
+  ],
+},
+
+numberscorrectq55: {
+botPrompt: 'Hurray! <strong>44</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[55],
+  },
+],
+},
+innumberscorrectq55: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"44"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[55],
+  },
+],
+},
+
+//56
+['numbers'+shuffledNumbersnseve[55]]: {
+  botPrompt: 'What number comes after 75?',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['76', '77', "78","79"]),
+  answers: [
+    {
+      answer: '76',
+      nextId: 'numberscorrectq56',
+    },
+    {
+      answer: '77',
+      nextId: 'innumberscorrectq56',
+    },
+    {
+      answer: "78",
+      nextId: 'innumberscorrectq56',
+    },
+    {
+      answer: "79",
+      nextId: 'innumberscorrectq56',
+    },
+  ],
+},
+numberscorrectq56: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>76</strong> 😎',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[56],
+    },
+  ],
+},
+innumberscorrectq56: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"76"</strong>',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[56],
+    },
+  ],
+},
+
+//57
+['numbers'+shuffledNumbersnseve[56]]: {
+botPrompt: 'What number comes before 90?',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['85', '86', "89","90"]),
+  answers: [
+    {
+      answer: '85',
+      nextId: 'innumberscorrectq57',
+    },
+    {
+      answer: '86',
+      nextId: 'innumberscorrectq57',
+    },
+    {
+      answer: "89",
+      nextId: 'numberscorrectq57',
+    },
+    {
+      answer: "90",
+      nextId: 'innumberscorrectq57',
+    },
+  ],
+},
+numberscorrectq57: {
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>89</strong> 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[57],
+  },
+],
+},
+innumberscorrectq57: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"89"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[57],
+  },
+],
+},
+
+//58
+['numbers'+shuffledNumbersnseve[57]]: {
+botPrompt: 'How many sides does a rectangle have?',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['2', '3', "4","5"]),
+answers: [
+  {
+    answer: '2',
+    nextId: 'innumberscorrectq58',
+  },
+  {
+    answer: '3',
+    nextId: 'innumberscorrectq58',
+  },
+  {
+    answer: "4",
+    nextId: 'numberscorrectq58',
+  },
+  {
+    answer: "5",
+    nextId: 'innumberscorrectq58',
+  },
+],
+},
+numberscorrectq58: {
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>4</strong> 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[58],
+  },
+],
+},
+innumberscorrectq58: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[58],
+  },
+],
+},
+
+//59
+['numbers'+shuffledNumbersnseve[58]]: {
+botPrompt: 'What is the missing number in the sequence: 2, 4, __, 8, 10?',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['6', '7', "9","11"]),
+  answers: [
+    {
+      answer: '6',
+      nextId: 'numberscorrectq57',
+    },
+    {
+      answer: '7',
+      nextId: 'innumberscorrectq57',
+    },
+    {
+      answer: "9",
+      nextId: 'innumberscorrectq57',
+    },
+    {
+      answer: "11",
+      nextId: 'innumberscorrectq57',
+    },
+  ],
+},
+numberscorrectq59: {
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>6</strong> Answers! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[59],
+  },
+],
+},
+innumberscorrectq59: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"6"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[59],
+  },
+],
+},
+
+//60
+['numbers'+shuffledNumbersnseve[59]]: {
+botPrompt: 'What number comes after the square of 4?',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['15', '16', "17","18"]),
+answers: [
+  {
+    answer: '15',
+    nextId: 'numberscorrectq60',
+  },
+  {
+    answer: '16',
+    nextId: 'innumberscorrectq60',
+  },
+  {
+    answer: "17",
+    nextId: 'numberscorrectq60',
+  },
+  {
+    answer: "18",
+    nextId: 'innumberscorrectq60',
+  },
+],
+},
+numberscorrectq20: {
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>17</strong> 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[60],
+  },
+],
+},
+innumberscorrectq20: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"17"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[60],
+  },
+],
+},
+
+//61
+["numbers"+shuffledNumbersnseve[60]]: {
+  botPrompt: 'What number comes before the cube of 3?',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['25', '26', "27","28"]),
+  answers: [
+    {
+      answer: '25',
+      nextId: 'innumberscorrectq61',
+    },
+    {
+      answer: '26',
+      nextId: 'numberscorrectq61',
+    },
+    {
+      answer: "27",
+      nextId: 'innumberscorrectq61',
+    },
+    {
+      answer: "28",
+      nextId: 'innumberscorrectq61',
+    },
+  ],
+},
+numberscorrectq61: {
+  botPrompt: 'Hurray <strong>26</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[61],
+    },
+  ],
+},
+innumberscorrectq61: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"26"</strong>',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[61],
+    },
+  ],
+},
+
+//62
+['numbers'+shuffledNumbersnseve[61]]: {
+  botPrompt: 'What number comes between 7 and square of 3?',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['7', '6', "8","5"]),
+  answers: [
+    {
+      answer: '7',
+      nextId: 'innumberscorrectq62',
+    },
+    {
+      answer: '6',
+      nextId: 'innumberscorrectq62',
+    },
+    {
+      answer: "8",
+      nextId: 'numberscorrectq62',
+    },
+    {
+      answer: "5",
+      nextId: 'innumberscorrectq62',
+    },
+  ],
+},
+
+numberscorrectq62: {
+  botPrompt: 'Hurray! <strong>8</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[62],
+    },
+  ],
+},
+innumberscorrectq62: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"8"</strong>',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[62],
+    },
+  ],
+},
+
+//63
+['numbers'+shuffledNumbersnseve[62]]: {
+botPrompt: "What number comes after the product of 3 and 5?",
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['14', '15', "16","17"]),
+  answers: [
+    {
+      answer: '14',
+      nextId: 'innumberscorrectq63',
+    },
+    {
+      answer: '15',
+      nextId: 'innumberscorrectq63',
+    },
+    {
+      answer: "16",
+      nextId: 'numberscorrectq63',
+    },
+    {
+      answer: "17",
+      nextId: 'innumberscorrectq63',
+    },
+  ],
+},
+
+numberscorrectq63: {
+botPrompt: 'Hurray! <strong>16</strong> is the correct answer ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[63],
+  },
+],
+},
+innumberscorrectq63: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"16"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[63],
+  },
+],
+},
+
+//64
+['numbers'+shuffledNumbersnseve[63]]: {
+botPrompt: 'What number comes before the quotient of 10 divided by 2?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['2', '4', "5","6"]),
+answers: [
+  {
+    answer: '2',
+    nextId: 'innumberscorrectq64',
+  },
+  {
+    answer: '4',
+    nextId: 'numberscorrectq64',
+  },
+  {
+    answer: "5",
+    nextId: 'innumberscorrectq64',
+  },
+  {
+    answer: "6",
+    nextId: 'innumberscorrectq64',
+  },
+],
+},
+
+numberscorrectq64: {
+botPrompt: 'Hurray! <strong>4</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[64],
+  },
+],
+},
+innumberscorrectq2: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[64],
+  },
+],
+},
+
+//65
+['numbers'+shuffledNumbersnseve[64]]: {
+botPrompt: 'Which number is smaller, the sum of 6 and 4 or the product of 3 and 4?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['Sum of 6 and 4', 'Product of 3 and 4', "They are equal","Cannot be determined"]),
+  answers: [
+    {
+      answer: 'Sum of 6 and 4',
+      nextId: 'numberscorrectq65',
+    },
+    {
+      answer: 'Product of 3 and 4',
+      nextId: 'innumberscorrectq65',
+    },
+    {
+      answer: "They are equal",
+      nextId: 'innumberscorrectq65',
+    },
+    {
+      answer: "Cannot be determined",
+      nextId: 'innumberscorrectq65',
+    },
+  ],
+},
+
+numberscorrectq65: {
+botPrompt: 'Hurray! <strong>Sum of 6 and 4</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[65],
+  },
+],
+},
+innumberscorrectq65: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Sum of 6 and 4"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[65],
+  },
+],
+},
+
+//66
+['numbers'+shuffledNumbersnseve[65]]: {
+botPrompt: 'What number comes between 89 and 91?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['92', '90', "92","88"]),
+answers: [
+  {
+    answer: '92',
+    nextId: 'innumberscorrectq66',
+  },
+  {
+    answer: '90',
+    nextId: 'numberscorrectq66',
+  },
+  {
+    answer: "92",
+    nextId: 'numberscorrectq66',
+  },
+  {
+    answer: "88",
+    nextId: 'innumberscorrectq66',
+  },
+],
+},
+
+numberscorrectq66: {
+botPrompt: 'Hurray! <strong>90</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[66],
+  },
+],
+},
+innumberscorrectq66: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"90"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[66],
+  },
+],
+},
+
+//67
+['numbers'+shuffledNumbersnseve[66]]: {
+botPrompt: 'What number comes before the difference of 9 and 4?',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['4', '5', "6","7"]),
+answers: [
+  {
+    answer: '4',
+    nextId: 'numberscorrectq67',
+  },
+  {
+    answer: '5',
+    nextId: 'innumberscorrectq67',
+  },
+  {
+    answer: "6",
+    nextId: 'innumberscorrectq67',
+  },
+  {
+    answer: "7",
+    nextId: 'innumberscorrectq67',
+  },
+],
+},
+
+numberscorrectq67: {
+botPrompt: 'Hurray! <strong>4</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[67],
+  },
+],
+},
+innumberscorrectq67: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[67],
+  },
+],
+},
+
+
+//68
+['numbers'+shuffledNumbersnseve[67]]: {
+botPrompt: 'Which number is greater, the sum of 8 and 3 or the product of 2 and 7?',
+type: RTypes.TRANSFORMED_TEXT,
+
+
+input: selectField(['Sum of 8 and 3', 'Product of 2 and 7', "They are equal","Cannot be determined"]),
+  answers: [
+    {
+      answer: 'Sum of 8 and 3',
+      nextId: 'numberscorrectq68',
+    },
+    {
+      answer: 'Product of 2 and 7',
+      nextId: 'innumberscorrectq68',
+    },
+    {
+      answer: "They are equal",
+      nextId: 'innumberscorrectq68',
+    },
+    {
+      answer: "Cannot be determined",
+      nextId: 'innumberscorrectq68',
+    },
+  ],
+},
+
+numberscorrectq68: {
+botPrompt: 'Hurray! <strong>Sum of 8 and 3</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[68],
+  },
+],
+},
+innumberscorrectq68: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Sum of 8 and 3"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[68],
+  },
+],
+},
+
+//69
+['numbers'+shuffledNumbersnseve[68]]: {
+botPrompt: 'What number comes after the quotient of 21 divided by 3?',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['6', '7', "8","9"]),
+answers: [
+  {
+    answer: '6',
+    nextId: 'innumberscorrectq69',
+  },
+  {
+    answer: '7',
+    nextId: 'innumberscorrectq69',
+  },
+  {
+    answer: "8",
+    nextId: 'numberscorrectq69',
+  },
+  {
+    answer: "9",
+    nextId: 'innumberscorrectq69',
+  },
+],
+},
+
+numberscorrectq69: {
+botPrompt: 'Hurray! <strong>8</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[69],
+  },
+],
+},
+innumberscorrectq69: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"8"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[69],
+  },
+],
+},
+
+
+//70
+['numbers'+shuffledNumbersnseve[69]]: {
+botPrompt: 'What number comes before the sum of 15 and 7?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['20', '21', "22","23"]),
+answers: [
+  {
+    answer: '20',
+    nextId: 'innumberscorrectq70',
+  },
+  {
+    answer: '21',
+    nextId: 'numberscorrectq70',
+  },
+  {
+    answer: "22",
+    nextId: 'innumberscorrectq70',
+  },
+  {
+    answer: "23",
+    nextId: 'innumberscorrectq70',
+  },
+],
+},
+
+numberscorrectq70: {
+botPrompt: 'Hurray! <strong>21</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[70],
+  },
+],
+},
+innumberscorrectq70: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"21"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[70],
+  },
+],
+},
+
+//71
+['numbers'+shuffledNumbersnseve[70]]: {
+botPrompt: 'What number comes between sqaure of 1 and 3?',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['2', '0', "4","6"]),
+  answers: [
+    {
+      answer: '2',
+      nextId: 'numberscorrectq71',
+    },
+    {
+      answer: '0',
+      nextId: 'innumberscorrectq71',
+    },
+    {
+      answer: "4",
+      nextId: 'innumberscorrectq71',
+    },
+    {
+      answer: "6",
+      nextId: 'innumberscorrectq71',
+    },
+  ],
+},
+
+numberscorrectq71: {
+botPrompt: 'Hurray! <strong>2</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[71],
+  },
+],
+},
+innumberscorrectq71: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"2"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[71],
+  },
+],
+},
+
+//72
+['numbers'+shuffledNumbersnseve[71]]: {
+botPrompt: 'What number comes after the difference of 6 and 2?',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['2', '3', "4","5"]),
+answers: [
+  {
+    answer: '2',
+    nextId: 'innumberscorrectq72',
+  },
+  {
+    answer: '3',
+    nextId: 'innumberscorrectq72',
+  },
+  {
+    answer: "4",
+    nextId: 'innumberscorrectq72',
+  },
+  {
+    answer: "5",
+    nextId: 'numberscorrectq72',
+  },
+],
+},
+
+numberscorrectq72: {
+botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[72],
+  },
+],
+},
+innumberscorrectq72: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[72],
+  },
+],
+},
+
+//73
+['numbers'+shuffledNumbersnseve[72]]: {
+botPrompt: 'What number comes before the product of 5 and 6?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['28', '29', "30","31"]),
+  answers: [
+    {
+      answer: '28',
+      nextId: 'innumberscorrectq73',
+    },
+    {
+      answer: '29',
+      nextId: 'numberscorrectq73',
+    },
+    {
+      answer: "30",
+      nextId: 'innumberscorrectq73',
+    },
+    {
+      answer: "31",
+      nextId: 'innumberscorrectq73',
+    },
+  ],
+},
+
+numberscorrectq73: {
+botPrompt: 'Hurray! <strong>29</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[73],
+  },
+],
+},
+innumberscorrectq73: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"29"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[73],
+  },
+],
+},
+
+//74
+['numbers'+shuffledNumbersnseve[73]]: {
+botPrompt: 'What comes after 7?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['8', '9', "10","11"]),
+answers: [
+  {
+    answer: '8',
+    nextId: 'numberscorrectq74',
+  },
+  {
+    answer: '9',
+    nextId: 'innumberscorrectq74',
+  },
+  {
+    answer: "10",
+    nextId: 'innumberscorrectq74',
+  },
+  {
+    answer: "11",
+    nextId: 'innumberscorrectq74',
+  },
+],
+},
+
+numberscorrectq74: {
+botPrompt: 'Hurray! <strong>8</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[74],
+  },
+],
+},
+innumberscorrectq74: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"8"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[74],
+  },
+],
+},
+
+
+//75
+['numbers'+shuffledNumbersnseve[74]]: {
+botPrompt: 'Which number comes after twelve?',
+type: RTypes.TRANSFORMED_TEXT,
+
+
+input: selectField(['13', '14', "15","16"]),
+  answers: [
+    {
+      answer: '13',
+      nextId: 'numberscorrectq75',
+    },
+    {
+      answer: '14',
+      nextId: 'innumberscorrectq75',
+    },
+    {
+      answer: "15",
+      nextId: 'innumberscorrectq75',
+    },
+    {
+      answer: "16",
+      nextId: 'innumberscorrectq75',
+    },
+  ],
+},
+
+numberscorrectq75: {
+botPrompt: 'Hurray! <strong>13</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[75],
+  },
+],
+},
+innumberscorrectq75: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"13"</strong>',
+answers: [
+  {
+    nextId: 'numbers'+shuffledNumbersnseve[75],
+  },
+],
+},
+
+//76
+['numbers'+shuffledNumbersnseve[75]]: {
+  botPrompt: 'Which number comes after twelve?',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['13', '14', "15","16"]),
+  answers: [
+    {
+      answer: '13',
+      nextId: 'numberscorrectq76',
+    },
+    {
+      answer: '14',
+      nextId: 'innumberscorrectq76',
+    },
+    {
+      answer: "15",
+      nextId: 'innumberscorrectq76',
+    },
+    {
+      answer: "16",
+      nextId: 'innumberscorrectq76',
+    },
+  ],
+},
+numberscorrectq76: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>13</strong> 😎',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[76],
+    },
+  ],
+},
+innumberscorrectq76: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"13"</strong>',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[76],
+    },
+  ],
+},
+
+//77
+['numbers'+shuffledNumbersnseve[76]]: {
+botPrompt: 'What comes before 5?',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['4', '6', "7","8"]),
+  answers: [
+    {
+      answer: '4',
+      nextId: 'numberscorrectq77',
+    },
+    {
+      answer: '6',
+      nextId: 'innumberscorrectq77',
+    },
+    {
+      answer: "7",
+      nextId: 'innumberscorrectq77',
+    },
+    {
+      answer: "8",
+      nextId: 'innumberscorrectq77',
+    },
+  ],
+},
+numberscorrectq77: {
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>4</strong> 😎',
+answers: [
+  {
+    nextId: 'wishtocontinue17',
+  },
+],
+},
+innumberscorrectq77: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
+answers: [
+  {
+    nextId: 'wishtocontinue17',
+  },
+],
+},
+
+
+
+//78
+['numbers'+shuffledNumbersnseve[77]]: {
+  botPrompt: 'Which number comes between 6 and 8? ',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['5', '7', "9","10"]),
+    answers: [
+      {
+        answer: '5',
+        nextId: 'innumberscorrectq78',
+      },
+      {
+        answer: '7',
+        nextId: 'numberscorrectq78',
+      },
+      {
+        answer: "9",
+        nextId: 'innumberscorrectq78',
+      },
+      {
+        answer: "10",
+        nextId: 'innumberscorrectq78',
+      },
+    ],
+  },
+  
+  numberscorrectq78: {
+  botPrompt: 'Hurray! <strong>7</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[78],
+    },
+  ],
+  },
+  innumberscorrectq78: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"7"</strong>',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[78],
+    },
+  ],
+  },
+  
+  //79
+  ['numbers'+shuffledNumbersnseve[78]]: {
+  botPrompt: 'What is the next number in the pattern: 10, 9, 8, ____?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['7', '6', "5","4"]),
+    answers: [
+      {
+        answer: '7',
+        nextId: 'numberscorrectq79',
+      },
+      {
+        answer: '6',
+        nextId: 'innumberscorrectq79',
+      },
+      {
+        answer: "5",
+        nextId: 'innumberscorrectq79',
+      },
+      {
+        answer: "4",
+        nextId: 'innumberscorrectq79',
+      },
+    ],
+  },
+  
+  numberscorrectq79: {
+  botPrompt: 'Hurray! <strong>7</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[79],
+    },
+  ],
+  },
+  innumberscorrectq79: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"7"</strong>',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[79],
+    },
+  ],
+  },
+  
+  
+  //80
+  ['numbers'+shuffledNumbersnseve[79]]: {
+  botPrompt: 'How many fingers do you have on one hand?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['4', '5', "6","7"]),
+    answers: [
+      {
+        answer: '4',
+        nextId: 'innumberscorrectq80',
+      },
+      {
+        answer: '5',
+        nextId: 'numberscorrectq80',
+      },
+      {
+        answer: "6",
+        nextId: 'innumberscorrectq80',
+      },
+      {
+        answer: "7",
+        nextId: 'innumberscorrectq80',
+      },
+    ],
+  },
+  
+  numberscorrectq80: {
+  botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[80],
+    },
+  ],
+  },
+  innumberscorrectq80: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[80],
+    },
+  ],
+  },
+  
+  //81
+  ['numbers'+shuffledNumbersnseve[80]]: {
+  botPrompt: 'Which number comes after 20?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['21', '22', "23","24"]),
+    answers: [
+      {
+        answer: '21',
+        nextId: 'numberscorrectq51',
+      },
+      {
+        answer: '22',
+        nextId: 'innumberscorrectq51',
+      },
+      {
+        answer: "23",
+        nextId: 'innumberscorrectq51',
+      },
+      {
+        answer: "24",
+        nextId: 'innumberscorrectq51',
+      },
+    ],
+  },
+  
+  numberscorrectq51: {
+  botPrompt: 'Hurray! <strong>21</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[51],
+    },
+  ],
+  },
+  innumberscorrectq51: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"21"</strong>',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[51],
+    },
+  ],
+  },
+  
+  //82
+  ['numbers'+shuffledNumbersnseve[81]]: {
+  botPrompt: 'What comes after 15?',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['16', '17', "18","19"]),
+    answers: [
+      {
+        answer: '16',
+        nextId: 'numberscorrectq82',
+      },
+      {
+        answer: '17',
+        nextId: 'innumberscorrectq82',
+      },
+      {
+        answer: "18",
+        nextId: 'innumberscorrectq82',
+      },
+      {
+        answer: "19",
+        nextId: 'innumberscorrectq82',
+      },
+    ],
+  },
+  
+  numberscorrectq82: {
+  botPrompt: 'Hurray! <strong>16</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[82],
+    },
+  ],
+  },
+  innumberscorrectq82: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"16"</strong>',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[82],
+    },
+  ],
+  },
+  
+  //83
+  ['numbers'+shuffledNumbersnseve[82]]: {
+  botPrompt: 'What is the number that comes between 12 and 14?',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['11', '13', "15","16"]),
+    answers: [
+      {
+        answer: '11',
+        nextId: 'innumberscorrectq83',
+      },
+      {
+        answer: '13',
+        nextId: 'numberscorrectq83',
+      },
+      {
+        answer: "15",
+        nextId: 'innumberscorrectq83',
+      },
+      {
+        answer: "16",
+        nextId: 'innumberscorrectq83',
+      },
+    ],
+  },
+
+  numberscorrectq83: {
+  botPrompt: 'Hurray! <strong>13</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[83],
+    },
+  ],
+  },
+  innumberscorrectq83: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"13"</strong>',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[83],
+    },
+  ],
+  },
+  
+  //84
+  ['numbers'+shuffledNumbersnseve[83]]: {
+  botPrompt: 'What is the missing number in the pattern: 3, 6, ___, 12?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['9', '10', "11","13"]),
+    answers: [
+      {
+        answer: '9',
+        nextId: 'numberscorrectq84',
+      },
+      {
+        answer: '10',
+        nextId: 'innumberscorrectq84',
+      },
+      {
+        answer: "11",
+        nextId: 'innumberscorrectq84',
+      },
+      {
+        answer: "13",
+        nextId: 'innumberscorrectq84',
+      },
+    ],
+  },
+  
+  numberscorrectq84: {
+  botPrompt: 'Hurray! <strong>9</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[84],
+    },
+  ],
+  },
+  innumberscorrectq84: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"9"</strong>',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[84],
+    },
+  ],
+  },
+  
+  
+  //85
+  ['numbers'+shuffledNumbersnseve[84]]: {
+  botPrompt: 'Which number comes before 9?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['7', '8', "10","11"]),
+    answers: [
+      {
+        answer: '7',
+        nextId: 'innumberscorrectq85',
+      },
+      {
+        answer: '8',
+        nextId: 'numberscorrectq85',
+      },
+      {
+        answer: "10",
+        nextId: 'innumberscorrectq85',
+      },
+      {
+        answer: "11",
+        nextId: 'innumberscorrectq85',
+      },
+    ],
+  },
+  
+  numberscorrectq85: {
+  botPrompt: 'Hurray! <strong>8</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[85],
+    },
+  ],
+  },
+  innumberscorrectq85: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"8"</strong>',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[85],
+    },
+  ],
+  },
+  
+  //86
+  ['numbers'+shuffledNumbersnseve[85]]: {
+    botPrompt: 'How many legs does a cat have??',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['2', '3', "4","5"]),
+    answers: [
+      {
+        answer: '2',
+        nextId: 'innumberscorrectq86',
+      },
+      {
+        answer: '3',
+        nextId: 'innumberscorrectq86',
+      },
+      {
+        answer: "4",
+        nextId: 'numberscorrectq86',
+      },
+      {
+        answer: "5",
+        nextId: 'innumberscorrectq86',
+      },
+    ],
+  },
+  numberscorrectq86: {
+    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>4</strong> 😎',
+    answers: [
+      {
+        nextId: 'numbers'+shuffledNumbersnseve[86],
+      },
+    ],
+  },
+  innumberscorrectq86: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
+    answers: [
+      {
+        nextId: 'numbers'+shuffledNumbersnseve[86],
+      },
+    ],
+  },
+
+  //87
+  ['numbers'+shuffledNumbersnseve[86]]: {
+  botPrompt: 'What comes after 12?',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['13', '14', "15","16"]),
+    answers: [
+      {
+        answer: '13',
+        nextId: 'numberscorrectq87',
+      },
+      {
+        answer: '14',
+        nextId: 'innumberscorrectq87',
+      },
+      {
+        answer: "15",
+        nextId: 'innumberscorrectq87',
+      },
+      {
+        answer: "16",
+        nextId: 'innumberscorrectq87',
+      },
+    ],
+  },
+  numberscorrectq87: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>13</strong> 😎',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[87],
+    },
+  ],
+  },
+  innumberscorrectq87: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"13"</strong>',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[87],
+    },
+  ],
+  },
+  
+  //88
+  ['numbers'+shuffledNumbersnseve[87]]: {
+  botPrompt: 'Which number comes after nineteen?',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['18', '20', "21","22"]),
+  answers: [
+    {
+      answer: '18',
+      nextId: 'innumberscorrectq88',
+    },
+    {
+      answer: '20',
+      nextId: 'numberscorrectq88',
+    },
+    {
+      answer: "21",
+      nextId: 'innumberscorrectq88',
+    },
+    {
+      answer: "22",
+      nextId: 'innumberscorrectq88',
+    },
+  ],
+  },
+  numberscorrectq88: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>20</strong> 😎',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[88],
+    },
+  ],
+  },
+  innumberscorrectq88: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"20"</strong>',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[88],
+    },
+  ],
+  },
+  
+  //89
+  ['numbers'+shuffledNumbersnseve[88]]: {
+  botPrompt: 'What is the number that comes between 15 and 17?',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['14', '16', "18","20"]),
+    answers: [
+      {
+        answer: '14',
+        nextId: 'innumberscorrectq87',
+      },
+      {
+        answer: '16',
+        nextId: 'numberscorrectq87',
+      },
+      {
+        answer: "18",
+        nextId: 'innumberscorrectq87',
+      },
+      {
+        answer: "20",
+        nextId: 'innumberscorrectq87',
+      },
+    ],
+  },
+  numberscorrectq89: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>16</strong> Answers! 😎',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[89],
+    },
+  ],
+  },
+  innumberscorrectq89: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"16"</strong>',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[89],
+    },
+  ],
+  },
+  
+  //90
+  ['numbers'+shuffledNumbersnseve[89]]: {
+  botPrompt: 'Which number comes before 25?',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['23', '24', "25","26"]),
+  answers: [
+    {
+      answer: '23',
+      nextId: 'innumberscorrectq90',
+    },
+    {
+      answer: '24',
+      nextId: 'numberscorrectq90',
+    },
+    {
+      answer: "25",
+      nextId: 'innumberscorrectq90',
+    },
+    {
+      answer: "26",
+      nextId: 'innumberscorrectq90',
+    },
+  ],
+  },
+  numberscorrectq20: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>24</strong> 😎',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[90],
+    },
+  ],
+  },
+  innumberscorrectq20: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"24"</strong>',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[90],
+    },
+  ],
+  },
+  
+  //91
+  ["numbers"+shuffledNumbersnseve[90]]: {
+    botPrompt: 'What is the number that comes between 10 and 12?',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['8', '9', "11","13"]),
+    answers: [
+      {
+        answer: '8',
+        nextId: 'innumberscorrectq91',
+      },
+      {
+        answer: '9',
+        nextId: 'innumberscorrectq91',
+      },
+      {
+        answer: "11",
+        nextId: 'numberscorrectq91',
+      },
+      {
+        answer: "13",
+        nextId: 'innumberscorrectq91',
+      },
+    ],
+  },
+  numberscorrectq91: {
+    botPrompt: 'Hurray <strong>11</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'numbers'+shuffledNumbersnseve[91],
+      },
+    ],
+  },
+  innumberscorrectq91: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"11"</strong>',
+    answers: [
+      {
+        nextId: 'numbers'+shuffledNumbersnseve[91],
+      },
+    ],
+  },
+  
+  //92
+  ['numbers'+shuffledNumbersnseve[91]]: {
+    botPrompt: 'Which number comes before 50?',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['47', '48', "49","51"]),
+    answers: [
+      {
+        answer: '47',
+        nextId: 'innumberscorrectq92',
+      },
+      {
+        answer: '48',
+        nextId: 'innumberscorrectq92',
+      },
+      {
+        answer: "49",
+        nextId: 'numberscorrectq92',
+      },
+      {
+        answer: "51",
+        nextId: 'innumberscorrectq92',
+      },
+    ],
+  },
+  
+  numberscorrectq92: {
+    botPrompt: 'Hurray! <strong>49</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'numbers'+shuffledNumbersnseve[92],
+      },
+    ],
+  },
+  innumberscorrectq92: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"49"</strong>',
+    answers: [
+      {
+        nextId: 'numbers'+shuffledNumbersnseve[92],
+      },
+    ],
+  },
+  
+  //93
+  ['numbers'+shuffledNumbersnseve[92]]: {
+  botPrompt: "What comes after 28?",
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['26', '27', "29","30"]),
+    answers: [
+      {
+        answer: '26',
+        nextId: 'innumberscorrectq93',
+      },
+      {
+        answer: '27',
+        nextId: 'innumberscorrectq93',
+      },
+      {
+        answer: "29",
+        nextId: 'numberscorrectq93',
+      },
+      {
+        answer: "30",
+        nextId: 'innumberscorrectq93',
+      },
+    ],
+  },
+  
+  numberscorrectq93: {
+  botPrompt: 'Hurray! <strong>29</strong> is the correct answer ! 😎',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[93],
+    },
+  ],
+  },
+  innumberscorrectq93: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"29"</strong>',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[93],
+    },
+  ],
+  },
+
+  //94
+  ['numbers'+shuffledNumbersnseve[93]]: {
+  botPrompt: 'Which number comes after 7?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['5', '6', "8","9"]),
+  answers: [
+    {
+      answer: '5',
+      nextId: 'innumberscorrectq94',
+    },
+    {
+      answer: '6',
+      nextId: 'innumberscorrectq94',
+    },
+    {
+      answer: "8",
+      nextId: 'numberscorrectq94',
+    },
+    {
+      answer: "9",
+      nextId: 'innumberscorrectq94',
+    },
+  ],
+  },
+  
+  numberscorrectq94: {
+  botPrompt: 'Hurray! <strong>8</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[94],
+    },
+  ],
+  },
+  innumberscorrectq2: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"8"</strong>',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[94],
+    },
+  ],
+  },
+  
+  //95
+  ['numbers'+shuffledNumbersnseve[94]]: {
+  botPrompt: 'What is the number that comes between 23 and 25?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['21', '22', "24","26"]),
+    answers: [
+      {
+        answer: '21',
+        nextId: 'innumberscorrectq95',
+      },
+      {
+        answer: '22',
+        nextId: 'innumberscorrectq95',
+      },
+      {
+        answer: "24",
+        nextId: 'numberscorrectq95',
+      },
+      {
+        answer: "26",
+        nextId: 'innumberscorrectq95',
+      },
+    ],
+  },
+  
+  numberscorrectq95: {
+  botPrompt: 'Hurray! <strong>24</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[95],
+    },
+  ],
+  },
+  innumberscorrectq95: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"24"</strong>',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[95],
+    },
+  ],
+  },
+  
+  //96
+  ['numbers'+shuffledNumbersnseve[95]]: {
+  botPrompt: 'Which number comes before 30?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['28', '29', "30","31"]),
+  answers: [
+    {
+      answer: '28',
+      nextId: 'innumberscorrectq96',
+    },
+    {
+      answer: '29',
+      nextId: 'numberscorrectq96',
+    },
+    {
+      answer: "30",
+      nextId: 'innumberscorrectq96',
+    },
+    {
+      answer: "31",
+      nextId: 'innumberscorrectq96',
+    },
+  ],
+  },
+  
+  numberscorrectq96: {
+  botPrompt: 'Hurray! <strong>29</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[96],
+    },
+  ],
+  },
+  innumberscorrectq96: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"29"</strong>',
+  answers: [
+    {
+      nextId: 'numbers'+shuffledNumbersnseve[96],
+    },
+  ],
+  },
+
+  //97
+  ['numbers'+shuffledNumbersnseve[96]]: {
+  botPrompt: 'What comes after 19?',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['20', '21', "22","23"]),
+  answers: [
+    {
+      answer: '20',
+      nextId: 'numberscorrectq97',
+    },
+    {
+      answer: '21',
+      nextId: 'innumberscorrectq97',
+    },
+    {
+      answer: "22",
+      nextId: 'innumberscorrectq97',
+    },
+    {
+      answer: "23",
+      nextId: 'innumberscorrectq97',
+    },
+  ],
+  },
+
+  numberscorrectq97: {
+  botPrompt: 'Hurray! <strong>20</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'wishToContinue10'
+    },
+  ],
+  },
+  innumberscorrectq97: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"20"</strong>',
+  answers: [
+    {
+      nextId: 'wishToContinue10'
+    }
+  ],
+  },
+
+
+//endnumbersletter
+
+
+
+wishToContinue10: {
+  botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
+  input: selectField(['Yes!', 'No!']),
+  answers: [
+      {
+        answer: 'Yes!',
+        nextId: 'vowelsareback',
+      },
+      {
+        answer: 'No!',
+        nextId: 'endConv',
+      },
+  ],
+},
 
 
 //day11
@@ -12104,7 +16293,7 @@ wishtocontinue18: {
 day19: {
   botPrompt: '<strong> Day 19 : </strong> Zero is a number with no value. It means none or nothing or empty. ',
   answers: [
-          { nextId: 'day19link ' },
+          { nextId: 'day19link' },
   ],
 },
 
@@ -12532,6 +16721,3324 @@ wishtocontinue19: {
   answers: [
       {
         answer: 'Yes!',
+        nextId: 'day20',
+      },
+      {
+        answer: 'No!',
+        nextId: 'endConv',
+      },
+  ],
+},
+
+//day20
+day20: {
+  botPrompt: '<strong> Day 20: </strong> Use of is/Are ',
+  answers: [
+          { nextId: 'day20comment' },
+  ],
+},
+
+day20comment: {
+  botPrompt: 'Pages of the book',
+  answers: [
+          { nextId: "isAre"+shuffledNumbersseventyseven[0] },
+  ],
+},
+
+//startisare
+
+
+
+["isAre"+shuffledNumbersseventyseven[0]]: {
+  botPrompt: ' The cat ___ playing. ',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['is', 'are', "here","where"]),
+  answers: [
+    {
+      answer: 'is',
+      nextId: 'isArecorrect',
+    },
+    {
+      answer: 'are',
+      nextId: 'inisArecorrect',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrect',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrect',
+    },
+  ],
+},
+isArecorrect: {
+  botPrompt: 'Hurray <strong>is</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'isAre'+shuffledNumbersseventyseven[1],
+    },
+  ],
+},
+inisArecorrect: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"is"</strong>',
+  answers: [
+    {
+      nextId: 'isAre'+shuffledNumbersseventyseven[1],
+    },
+  ],
+},
+
+['isAre'+shuffledNumbersseventyseven[1]]: {
+  botPrompt: 'My friends ___ here.',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['are', 'is', "here","where"]),
+  answers: [
+    {
+      answer: 'are',
+      nextId: 'isArecorrectq2',
+    },
+    {
+      answer: 'is',
+      nextId: 'inisArecorrectq2',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq2',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq2',
+    },
+  ],
+},
+
+isArecorrectq2: {
+  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'isAre'+shuffledNumbersseventyseven[2],
+    },
+  ],
+},
+inisArecorrectq2: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+  answers: [
+    {
+      nextId: 'isAre'+shuffledNumbersseventyseven[2],
+    },
+  ],
+},
+
+//3
+['isAre'+shuffledNumbersseventyseven[2]]: {
+botPrompt: "The flowers ___ beautiful.",
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['are', 'is', "here","where"]),
+  answers: [
+    {
+      answer: 'are',
+      nextId: 'isArecorrectq3',
+    },
+    {
+      answer: 'is',
+      nextId: 'inisArecorrectq3',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq3',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq3',
+    },
+  ],
+},
+
+isArecorrectq3: {
+botPrompt: 'Hurray! <strong>are</strong> is the correct answer ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[3],
+  },
+],
+},
+inisArecorrectq3: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[3],
+  },
+],
+},
+
+//4
+['isAre'+shuffledNumbersseventyseven[3]]: {
+botPrompt: 'This book ___ interesting.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['is', 'are', "here","where"]),
+  answers: [
+    {
+      answer: 'is',
+      nextId: 'isArecorrectq4',
+    },
+    {
+      answer: 'are',
+      nextId: 'inisArecorrectq4',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq4',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq4',
+    },
+  ],
+},
+
+isArecorrectq4: {
+botPrompt: 'Hurray! <strong>is</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[4],
+  },
+],
+},
+inisArecorrectq4: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"is"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[4],
+  },
+],
+},
+
+//5
+['isAre'+shuffledNumbersseventyseven[4]]: {
+botPrompt: 'The birds ___ in the sky.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['are', 'is', "here","where"]),
+  answers: [
+    {
+      answer: 'are',
+      nextId: 'isArecorrectq5',
+    },
+    {
+      answer: 'is',
+      nextId: 'inisArecorrectq5',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq5',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq5',
+    },
+  ],
+},
+
+isArecorrectq5: {
+botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[5],
+  },
+],
+},
+inisArecorrectq5: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[5],
+  },
+],
+},
+
+//6
+['isAre'+shuffledNumbersseventyseven[5]]: {
+botPrompt: 'The sun ___ shining.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['is', 'are', "here","where"]),
+  answers: [
+    {
+      answer: 'is',
+      nextId: 'isArecorrectq6',
+    },
+    {
+      answer: 'are',
+      nextId: 'inisArecorrectq6',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq6',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq6',
+    },
+  ],
+},
+
+isArecorrectq6: {
+botPrompt: 'Hurray! <strong>is</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[6],
+  },
+],
+},
+inisArecorrectq6: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"is"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[6],
+  },
+],
+},
+
+//7
+['isAre'+shuffledNumbersseventyseven[6]]: {
+botPrompt: 'My toys ___ on the shelf.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['are', 'is', "here","where"]),
+  answers: [
+    {
+      answer: 'are',
+      nextId: 'isArecorrectq7',
+    },
+    {
+      answer: 'is',
+      nextId: 'inisArecorrectq7',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq7',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq7',
+    },
+  ],
+},
+
+isArecorrectq7: {
+botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[7],
+  },
+],
+},
+inisArecorrectq7: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[7],
+  },
+],
+},
+
+
+//8
+['isAre'+shuffledNumbersseventyseven[7]]: {
+botPrompt: 'The trees ___ tall.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['are', 'is', "here","where"]),
+  answers: [
+    {
+      answer: 'are',
+      nextId: 'isArecorrectq8',
+    },
+    {
+      answer: 'is',
+      nextId: 'inisArecorrectq8',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq8',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq8',
+    },
+  ],
+},
+
+isArecorrectq8: {
+botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[8],
+  },
+],
+},
+inisArecorrectq8: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[8],
+  },
+],
+},
+
+//9
+['isAre'+shuffledNumbersseventyseven[8]]: {
+botPrompt: 'The car ___ red.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['is', 'are', "here","where"]),
+  answers: [
+    {
+      answer: 'is',
+      nextId: 'isArecorrectq9',
+    },
+    {
+      answer: 'are',
+      nextId: 'inisArecorrectq9',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq9',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq9',
+    },
+  ],
+},
+
+isArecorrectq9: {
+botPrompt: 'Hurray! <strong>is</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[9],
+  },
+],
+},
+inisArecorrectq9: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"is"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[9],
+  },
+],
+},
+
+
+//10
+['isAre'+shuffledNumbersseventyseven[9]]: {
+botPrompt: 'The dogs ___ barking.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['are', 'is', "here","where"]),
+  answers: [
+    {
+      answer: 'are',
+      nextId: 'isArecorrectq10',
+    },
+    {
+      answer: 'is',
+      nextId: 'inisArecorrectq10',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq10',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq10',
+    },
+  ],
+
+},
+
+isArecorrectq10: {
+botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[10],
+  },
+],
+},
+inisArecorrectq10: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[10],
+  },
+],
+},
+
+//11
+['isAre'+shuffledNumbersseventyseven[10]]: {
+botPrompt: 'The pencil ___ on the desk.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['is', 'are', "here","where"]),
+  answers: [
+    {
+      answer: 'is',
+      nextId: 'isArecorrectq11',
+    },
+    {
+      answer: 'are',
+      nextId: 'inisArecorrectq11',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq11',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq11',
+    },
+  ],
+},
+
+isArecorrectq11: {
+botPrompt: 'Hurray! <strong>is</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[11],
+  },
+],
+},
+inisArecorrectq11: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"is"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[11],
+  },
+],
+},
+
+//12
+['isAre'+shuffledNumbersseventyseven[11]]: {
+botPrompt: 'The cookies ___ delicious.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['are', 'is', "here","where"]),
+  answers: [
+    {
+      answer: 'are',
+      nextId: 'isArecorrectq12',
+    },
+    {
+      answer: 'is',
+      nextId: 'inisArecorrectq12',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq12',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq12',
+    },
+  ],
+},
+
+isArecorrectq12: {
+botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[12],
+  },
+],
+},
+inisArecorrectq12: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[12],
+  },
+],
+},
+
+//13
+['isAre'+shuffledNumbersseventyseven[12]]: {
+botPrompt: 'The students ___ listening.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['are', 'is', "here","where"]),
+  answers: [
+    {
+      answer: 'are',
+      nextId: 'isArecorrectq13',
+    },
+    {
+      answer: 'is',
+      nextId: 'inisArecorrectq13',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq13',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq13',
+    },
+  ],
+},
+
+isArecorrectq13: {
+botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[13],
+  },
+],
+},
+inisArecorrectq13: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[13],
+  },
+],
+},
+
+//14
+['isAre'+shuffledNumbersseventyseven[13]]: {
+botPrompt: 'The sky ___ blue.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['is', 'are', "here","where"]),
+  answers: [
+    {
+      answer: 'is',
+      nextId: 'isArecorrectq14',
+    },
+    {
+      answer: 'are',
+      nextId: 'inisArecorrectq14',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq14',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq14',
+    },
+  ],
+},
+
+isArecorrectq14: {
+botPrompt: 'Hurray! <strong>is</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[14],
+  },
+],
+},
+inisArecorrectq14: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"is"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[14],
+  },
+],
+},
+
+
+//15
+['isAre'+shuffledNumbersseventyseven[14]]: {
+botPrompt: 'The chairs ___ comfortable.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['are', 'is', "here","where"]),
+  answers: [
+    {
+      answer: 'are',
+      nextId: 'isArecorrectq15',
+    },
+    {
+      answer: 'is',
+      nextId: 'inisArecorrectq15',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq15',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq15',
+    },
+  ],
+},
+
+isArecorrectq15: {
+botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[15],
+  },
+],
+},
+inisArecorrectq15: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[15],
+  },
+],
+},
+
+//16
+['isAre'+shuffledNumbersseventyseven[15]]: {
+  botPrompt: 'The birds ___ singing.',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['are', 'is', "here","where"]),
+  answers: [
+    {
+      answer: 'are',
+      nextId: 'isArecorrectq16',
+    },
+    {
+      answer: 'is',
+      nextId: 'inisArecorrectq16',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq16',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq16',
+    },
+  ],
+},
+isArecorrectq16: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>are</strong> 😎',
+  answers: [
+    {
+      nextId: 'isAre'+shuffledNumbersseventyseven[16],
+    },
+  ],
+},
+inisArecorrectq16: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+  answers: [
+    {
+      nextId: 'isAre'+shuffledNumbersseventyseven[16],
+    },
+  ],
+},
+
+//17
+['isAre'+shuffledNumbersseventyseven[16]]: {
+botPrompt: 'The cake ___ tasty.',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['is', 'are', "here","where"]),
+  answers: [
+    {
+      answer: 'is',
+      nextId: 'isArecorrectq17',
+    },
+    {
+      answer: 'are',
+      nextId: 'inisArecorrectq17',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq17',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq17',
+    },
+  ],
+},
+isArecorrectq17: {
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>is</strong> 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[17],
+  },
+],
+},
+inisArecorrectq17: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"is"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[17],
+  },
+],
+},
+
+//18
+['isAre'+shuffledNumbersseventyseven[17]]: {
+botPrompt: 'The cars ___ parked.   ',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['are', 'is', "here","where"]),
+answers: [
+  {
+    answer: 'are',
+    nextId: 'isArecorrectq18',
+  },
+  {
+    answer: 'is',
+    nextId: 'inisArecorrectq18',
+  },
+  {
+    answer: "here",
+    nextId: 'inisArecorrectq18',
+  },
+  {
+    answer: "where",
+    nextId: 'inisArecorrectq18',
+  },
+],
+},
+isArecorrectq18: {
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>are</strong> 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[18],
+  },
+],
+},
+inisArecorrectq18: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[18],
+  },
+],
+},
+
+//19
+['isAre'+shuffledNumbersseventyseven[18]]: {
+botPrompt: 'The flowers ___ blooming.',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['are', 'is', "here","where"]),
+answers: [
+  {
+    answer: 'are',
+    nextId: 'isArecorrectq19',
+  },
+  {
+    answer: 'is',
+    nextId: 'inisArecorrectq19',
+  },
+  {
+    answer: "here",
+    nextId: 'inisArecorrectq19',
+  },
+  {
+    answer: "where",
+    nextId: 'inisArecorrectq19',
+  },
+],
+},
+isArecorrectq19: {
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>are</strong> Answers! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[19],
+  },
+],
+},
+inisArecorrectq19: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[19],
+  },
+],
+},
+
+//20
+['isAre'+shuffledNumbersseventyseven[19]]: {
+botPrompt: 'The children ___ playing.',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['are', 'is', "here","where"]),
+answers: [
+  {
+    answer: 'are',
+    nextId: 'isArecorrectq20',
+  },
+  {
+    answer: 'is',
+    nextId: 'inisArecorrectq20',
+  },
+  {
+    answer: "here",
+    nextId: 'inisArecorrectq20',
+  },
+  {
+    answer: "where",
+    nextId: 'inisArecorrectq20',
+  },
+],
+},
+isArecorrectq20: {
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>are</strong> 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[20],
+  },
+],
+},
+inisArecorrectq20: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[20],
+  },
+],
+},
+
+//21
+["isAre"+shuffledNumbersseventyseven[20]]: {
+  botPrompt: 'The cat and dog ___ friends.',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['are', 'is', "here","where"]),
+answers: [
+  {
+    answer: 'are',
+    nextId: 'isArecorrectq21',
+  },
+  {
+    answer: 'is',
+    nextId: 'inisArecorrectq21',
+  },
+  {
+    answer: "here",
+    nextId: 'inisArecorrectq21',
+  },
+  {
+    answer: "where",
+    nextId: 'inisArecorrectq21',
+  },
+],
+},
+isArecorrectq21: {
+  botPrompt: 'Hurray <strong>are</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'isAre'+shuffledNumbersseventyseven[21],
+    },
+  ],
+},
+inisArecorrectq21: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+  answers: [
+    {
+      nextId: 'isAre'+shuffledNumbersseventyseven[21],
+    },
+  ],
+},
+
+//22
+['isAre'+shuffledNumbersseventyseven[21]]: {
+  botPrompt: 'The books ___ on the shelf.',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['are', 'is', "here","where"]),
+answers: [
+  {
+    answer: 'are',
+    nextId: 'isArecorrectq22',
+  },
+  {
+    answer: 'is',
+    nextId: 'inisArecorrectq22',
+  },
+  {
+    answer: "here",
+    nextId: 'inisArecorrectq22',
+  },
+  {
+    answer: "where",
+    nextId: 'inisArecorrectq22',
+  },
+],
+},
+
+isArecorrectq22: {
+  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'isAre'+shuffledNumbersseventyseven[22],
+    },
+  ],
+},
+inisArecorrectq22: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+  answers: [
+    {
+      nextId: 'isAre'+shuffledNumbersseventyseven[22],
+    },
+  ],
+},
+
+//23
+['isAre'+shuffledNumbersseventyseven[22]]: {
+botPrompt: "The stars ___ shining.",
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['are', 'is', "here","where"]),
+answers: [
+  {
+    answer: 'are',
+    nextId: 'isArecorrectq23',
+  },
+  {
+    answer: 'is',
+    nextId: 'inisArecorrectq23',
+  },
+  {
+    answer: "here",
+    nextId: 'inisArecorrectq23',
+  },
+  {
+    answer: "where",
+    nextId: 'inisArecorrectq23',
+  },
+],
+},
+
+isArecorrectq23: {
+botPrompt: 'Hurray! <strong>are</strong> is the correct answer ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[23],
+  },
+],
+},
+inisArecorrectq23: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[23],
+  },
+],
+},
+
+//24
+['isAre'+shuffledNumbersseventyseven[23]]: {
+botPrompt: 'The chairs and table ___ new.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['are', 'is', "here","where"]),
+answers: [
+  {
+    answer: 'are',
+    nextId: 'isArecorrectq24',
+  },
+  {
+    answer: 'is',
+    nextId: 'inisArecorrectq24',
+  },
+  {
+    answer: "here",
+    nextId: 'inisArecorrectq24',
+  },
+  {
+    answer: "where",
+    nextId: 'inisArecorrectq24',
+  },
+],
+},
+
+isArecorrectq24: {
+botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[24],
+  },
+],
+},
+inisArecorrectq24: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[24],
+  },
+],
+},
+
+//25
+['isAre'+shuffledNumbersseventyseven[24]]: {
+botPrompt: 'The flowers ___ colorful.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['are', 'is', "here","where"]),
+answers: [
+  {
+    answer: 'are',
+    nextId: 'isArecorrectq25',
+  },
+  {
+    answer: 'is',
+    nextId: 'inisArecorrectq25',
+  },
+  {
+    answer: "here",
+    nextId: 'inisArecorrectq25',
+  },
+  {
+    answer: "where",
+    nextId: 'inisArecorrectq25',
+  },
+],
+},
+
+isArecorrectq25: {
+botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[25],
+  },
+],
+},
+inisArecorrectq25: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[25],
+  },
+],
+},
+
+//26
+['isAre'+shuffledNumbersseventyseven[25]]: {
+botPrompt: 'The boys ___ playing.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['are', 'is', "here","where"]),
+answers: [
+  {
+    answer: 'are',
+    nextId: 'isArecorrectq26',
+  },
+  {
+    answer: 'is',
+    nextId: 'inisArecorrectq26',
+  },
+  {
+    answer: "here",
+    nextId: 'inisArecorrectq26',
+  },
+  {
+    answer: "where",
+    nextId: 'inisArecorrectq26',
+  },
+],
+},
+
+isArecorrectq26: {
+botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[26],
+  },
+],
+},
+inisArecorrectq26: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[26],
+  },
+],
+},
+
+//27
+['isAre'+shuffledNumbersseventyseven[26]]: {
+botPrompt: 'The dog ___ barking.',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['is', 'are', "here","where"]),
+  answers: [
+    {
+      answer: 'is',
+      nextId: 'isArecorrectq27',
+    },
+    {
+      answer: 'are',
+      nextId: 'inisArecorrectq27',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq27',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq27',
+    },
+  ],
+},
+
+isArecorrectq27: {
+botPrompt: 'Hurray! <strong>is</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[27],
+  },
+],
+},
+inisArecorrectq27: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"is"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[27],
+  },
+],
+},
+
+
+//28
+['isAre'+shuffledNumbersseventyseven[27]]: {
+botPrompt: 'The birds ___ chirping.',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['are', 'is', "here","where"]),
+answers: [
+  {
+    answer: 'are',
+    nextId: 'isArecorrectq28',
+  },
+  {
+    answer: 'is',
+    nextId: 'inisArecorrectq28',
+  },
+  {
+    answer: "here",
+    nextId: 'inisArecorrectq28',
+  },
+  {
+    answer: "where",
+    nextId: 'inisArecorrectq28',
+  },
+],
+},
+
+isArecorrectq28: {
+botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[28],
+  },
+],
+},
+inisArecorrectq28: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[28],
+  },
+],
+},
+
+//29
+['isAre'+shuffledNumbersseventyseven[28]]: {
+botPrompt: 'The sun ___ setting.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['is', 'are', "here","where"]),
+  answers: [
+    {
+      answer: 'is',
+      nextId: 'isArecorrectq29',
+    },
+    {
+      answer: 'are',
+      nextId: 'inisArecorrectq29',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq29',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq29',
+    },
+  ],
+},
+
+isArecorrectq29: {
+botPrompt: 'Hurray! <strong>is</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[29],
+  },
+],
+},
+inisArecorrectq29: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"is"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[29],
+  },
+],
+},
+
+
+//30
+['isAre'+shuffledNumbersseventyseven[29]]: {
+botPrompt: 'The toys ___ scattered.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['are', 'is', "here","where"]),
+answers: [
+  {
+    answer: 'are',
+    nextId: 'isArecorrectq30',
+  },
+  {
+    answer: 'is',
+    nextId: 'inisArecorrectq30',
+  },
+  {
+    answer: "here",
+    nextId: 'inisArecorrectq30',
+  },
+  {
+    answer: "where",
+    nextId: 'inisArecorrectq30',
+  },
+],
+},
+
+isArecorrectq30: {
+botPrompt: 'Hurray! <strong>N</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[30],
+  },
+],
+},
+inisArecorrectq30: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"N"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[30],
+  },
+],
+},
+
+//31
+['isAre'+shuffledNumbersseventyseven[30]]: {
+botPrompt: 'The cake ___ delicious.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['is', 'are', "here","where"]),
+  answers: [
+    {
+      answer: 'is',
+      nextId: 'isArecorrectq31',
+    },
+    {
+      answer: 'are',
+      nextId: 'inisArecorrectq31',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq31',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq31',
+    },
+  ],
+},
+
+isArecorrectq31: {
+botPrompt: 'Hurray! <strong>is</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[31],
+  },
+],
+},
+inisArecorrectq31: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"is"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[31],
+  },
+],
+},
+
+//32
+['isAre'+shuffledNumbersseventyseven[31]]: {
+botPrompt: 'The flowers ___ blooming.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['are', 'is', "here","where"]),
+answers: [
+  {
+    answer: 'are',
+    nextId: 'isArecorrectq32',
+  },
+  {
+    answer: 'is',
+    nextId: 'inisArecorrectq32',
+  },
+  {
+    answer: "here",
+    nextId: 'inisArecorrectq32',
+  },
+  {
+    answer: "where",
+    nextId: 'inisArecorrectq32',
+  },
+],
+},
+
+isArecorrectq32: {
+botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[32],
+  },
+],
+},
+inisArecorrectq32: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[32],
+  },
+],
+},
+
+//33
+['isAre'+shuffledNumbersseventyseven[32]]: {
+botPrompt: 'The childrens ___ playing.',
+type: RTypes.TRANSFORMED_TEXT,
+
+
+input: selectField(['are', 'is', "here","where"]),
+answers: [
+  {
+    answer: 'are',
+    nextId: 'isArecorrectq33',
+  },
+  {
+    answer: 'is',
+    nextId: 'inisArecorrectq33',
+  },
+  {
+    answer: "here",
+    nextId: 'inisArecorrectq33',
+  },
+  {
+    answer: "where",
+    nextId: 'inisArecorrectq33',
+  },
+],
+},
+
+isArecorrectq33: {
+botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[33],
+  },
+],
+},
+inisArecorrectq33: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[33],
+  },
+],
+},
+
+//34
+['isAre'+shuffledNumbersseventyseven[33]]: {
+botPrompt: 'The book ___ interesting.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['is', 'are', "here","where"]),
+  answers: [
+    {
+      answer: 'is',
+      nextId: 'isArecorrectq34',
+    },
+    {
+      answer: 'are',
+      nextId: 'inisArecorrectq34',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq34',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq34',
+    },
+  ],
+},
+
+isArecorrectq34: {
+botPrompt: 'Hurray! <strong>is</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[34],
+  },
+],
+},
+inisArecorrectq34: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"is"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[34],
+  },
+],
+},
+
+
+//35
+['isAre'+shuffledNumbersseventyseven[34]]: {
+botPrompt: 'The clouds ___ fluffy.',
+type: RTypes.TRANSFORMED_TEXT,
+
+
+input: selectField(['are', 'is', "here","where"]),
+answers: [
+  {
+    answer: 'are',
+    nextId: 'isArecorrectq35',
+  },
+  {
+    answer: 'is',
+    nextId: 'inisArecorrectq35',
+  },
+  {
+    answer: "here",
+    nextId: 'inisArecorrectq35',
+  },
+  {
+    answer: "where",
+    nextId: 'inisArecorrectq35',
+  },
+],
+},
+
+isArecorrectq35: {
+botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[35],
+  },
+],
+},
+inisArecorrectq35: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[35],
+  },
+],
+},
+
+//36
+['isAre'+shuffledNumbersseventyseven[35]]: {
+  botPrompt: 'The keys ___ missing.',
+  type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['are', 'is', "here","where"]),
+answers: [
+  {
+    answer: 'are',
+    nextId: 'isArecorrectq36',
+  },
+  {
+    answer: 'is',
+    nextId: 'inisArecorrectq36',
+  },
+  {
+    answer: "here",
+    nextId: 'inisArecorrectq36',
+  },
+  {
+    answer: "where",
+    nextId: 'inisArecorrectq36',
+  },
+],
+},
+isArecorrectq36: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>are</strong> 😎',
+  answers: [
+    {
+      nextId: 'isAre'+shuffledNumbersseventyseven[36],
+    },
+  ],
+},
+inisArecorrectq36: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+  answers: [
+    {
+      nextId: 'isAre'+shuffledNumbersseventyseven[36],
+    },
+  ],
+},
+
+//37
+['isAre'+shuffledNumbersseventyseven[36]]: {
+botPrompt: 'The stars ___ shining.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['are', 'is', "here","where"]),
+answers: [
+  {
+    answer: 'are',
+    nextId: 'isArecorrectq37',
+  },
+  {
+    answer: 'is',
+    nextId: 'inisArecorrectq37',
+  },
+  {
+    answer: "here",
+    nextId: 'inisArecorrectq37',
+  },
+  {
+    answer: "where",
+    nextId: 'inisArecorrectq37',
+  },
+],
+},
+isArecorrectq37: {
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>are</strong> 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[37],
+  },
+],
+},
+inisArecorrectq37: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[37],
+  },
+],
+},
+
+//38
+['isAre'+shuffledNumbersseventyseven[37]]: {
+botPrompt: 'The car ___ parked.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['is', 'are', "here","where"]),
+  answers: [
+    {
+      answer: 'is',
+      nextId: 'isArecorrectq38',
+    },
+    {
+      answer: 'are',
+      nextId: 'inisArecorrectq38',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq38',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq38',
+    },
+  ],
+},
+isArecorrectq38: {
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>is</strong> 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[38],
+  },
+],
+},
+inisArecorrectq38: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"is"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[38],
+  },
+],
+},
+
+//39
+['isAre'+shuffledNumbersseventyseven[38]]: {
+botPrompt: 'The dogs ___ friendly. ',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['are', 'is', "here","where"]),
+answers: [
+  {
+    answer: 'are',
+    nextId: 'isArecorrectq39',
+  },
+  {
+    answer: 'is',
+    nextId: 'inisArecorrectq39',
+  },
+  {
+    answer: "here",
+    nextId: 'inisArecorrectq39',
+  },
+  {
+    answer: "where",
+    nextId: 'inisArecorrectq39',
+  },
+],
+},
+isArecorrectq39: {
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>are</strong> Answers! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[39],
+  },
+],
+},
+inisArecorrectq39: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[39],
+  },
+],
+},
+
+//40
+['isAre'+shuffledNumbersseventyseven[39]]: {
+botPrompt: 'The cats ___ sleeping.',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['is', 'are', "here","where"]),
+  answers: [
+    {
+      answer: 'is',
+      nextId: 'isArecorrectq40',
+    },
+    {
+      answer: 'are',
+      nextId: 'inisArecorrectq40',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq40',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq40',
+    },
+  ],
+},
+isArecorrectq40: {
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>is</strong> 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[40],
+  },
+],
+},
+inisArecorrectq40: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"is"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[40],
+  },
+],
+},
+
+//41
+["isAre"+shuffledNumbersseventyseven[40]]: {
+  botPrompt: 'The chairs ___ comfortable.',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['are', 'is', "here","where"]),
+  answers: [
+    {
+      answer: 'are',
+      nextId: 'isArecorrectq41',
+    },
+    {
+      answer: 'is',
+      nextId: 'inisArecorrectq41',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq41',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq41',
+    },
+  ],
+},
+isArecorrectq41: {
+  botPrompt: 'Hurray <strong>A</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'isAre'+shuffledNumbersseventyseven[41],
+    },
+  ],
+},
+inisArecorrectq41: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"A"</strong>',
+  answers: [
+    {
+      nextId: 'isAre'+shuffledNumbersseventyseven[41],
+    },
+  ],
+},
+
+//42
+
+['isAre'+shuffledNumbersseventyseven[41]]: {
+  botPrompt: 'The plants ___ growing.',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['are', 'is', "here","where"]),
+  answers: [
+    {
+      answer: 'are',
+      nextId: 'isArecorrectq42',
+    },
+    {
+      answer: 'is',
+      nextId: 'inisArecorrectq42',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq42',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq42',
+    },
+  ],
+},
+
+isArecorrectq42: {
+  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'isAre'+shuffledNumbersseventyseven[42],
+    },
+  ],
+},
+inisArecorrectq42: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+  answers: [
+    {
+      nextId: 'isAre'+shuffledNumbersseventyseven[42],
+    },
+  ],
+},
+
+//43
+['isAre'+shuffledNumbersseventyseven[42]]: {
+botPrompt: "The sky ___ blue.",
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['is', 'are', "here","where"]),
+  answers: [
+    {
+      answer: 'is',
+      nextId: 'isArecorrectq43',
+    },
+    {
+      answer: 'are',
+      nextId: 'inisArecorrectq43',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq43',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq43',
+    },
+  ],
+},
+
+isArecorrectq43: {
+botPrompt: 'Hurray! <strong>is</strong> is the correct answer ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[43],
+  },
+],
+},
+inisArecorrectq43: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"is"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[43],
+  },
+],
+},
+
+//44
+['isAre'+shuffledNumbersseventyseven[43]]: {
+botPrompt: 'The students ___ learning.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['are', 'is', "here","where"]),
+  answers: [
+    {
+      answer: 'are',
+      nextId: 'isArecorrectq44',
+    },
+    {
+      answer: 'is',
+      nextId: 'inisArecorrectq44',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq44',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq44',
+    },
+  ],
+},
+
+isArecorrectq44: {
+botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[44],
+  },
+],
+},
+inisArecorrectq44: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[44],
+  },
+],
+},
+
+//45
+['isAre'+shuffledNumbersseventyseven[44]]: {
+botPrompt: 'The birds ___ migrating.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['are', 'is', "here","where"]),
+  answers: [
+    {
+      answer: 'are',
+      nextId: 'isArecorrectq45',
+    },
+    {
+      answer: 'is',
+      nextId: 'inisArecorrectq45',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq45',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq45',
+    },
+  ],
+},
+
+isArecorrectq45: {
+botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[45],
+  },
+],
+},
+inisArecorrectq45: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[45],
+  },
+],
+},
+
+//46
+['isAre'+shuffledNumbersseventyseven[45]]: {
+botPrompt: 'The tree ___ tall.',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['is', 'are', "here","where"]),
+  answers: [
+    {
+      answer: 'is',
+      nextId: 'isArecorrectq46',
+    },
+    {
+      answer: 'are',
+      nextId: 'inisArecorrectq46',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq46',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq46',
+    },
+  ],
+},
+
+isArecorrectq46: {
+botPrompt: 'Hurray! <strong>is</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[46],
+  },
+],
+},
+inisArecorrectq46: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"is"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[46],
+  },
+],
+},
+
+//47
+['isAre'+shuffledNumbersseventyseven[46]]: {
+botPrompt: 'The computer ___ on the desk.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['is', 'are', "here","where"]),
+  answers: [
+    {
+      answer: 'is',
+      nextId: 'isArecorrectq47',
+    },
+    {
+      answer: 'are',
+      nextId: 'inisArecorrectq47',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq47',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq47',
+    },
+  ],
+},
+
+isArecorrectq47: {
+botPrompt: 'Hurray! <strong>is</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[47],
+  },
+],
+},
+inisArecorrectq47: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"is"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[47],
+  },
+],
+},
+
+
+//48
+['isAre'+shuffledNumbersseventyseven[47]]: {
+botPrompt: 'The shoes ___ comfortable.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['are', 'is', "here","where"]),
+  answers: [
+    {
+      answer: 'are',
+      nextId: 'isArecorrectq48',
+    },
+    {
+      answer: 'is',
+      nextId: 'inisArecorrectq48',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq48',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq48',
+    },
+  ],
+},
+
+isArecorrectq48: {
+botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[48],
+  },
+],
+},
+inisArecorrectq48: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[48],
+  },
+],
+},
+
+//49
+['isAre'+shuffledNumbersseventyseven[48]]: {
+botPrompt: 'The boys ___ playing.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['are', 'is', "here","where"]),
+  answers: [
+    {
+      answer: 'are',
+      nextId: 'isArecorrectq49',
+    },
+    {
+      answer: 'is',
+      nextId: 'inisArecorrectq49',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq49',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq49',
+    },
+  ],
+},
+
+isArecorrectq49: {
+botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[49],
+  },
+],
+},
+inisArecorrectq49: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[49],
+  },
+],
+},
+
+
+//50
+['isAre'+shuffledNumbersseventyseven[49]]: {
+botPrompt: ' The pen ___ on the table.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['is', 'are', "here","where"]),
+  answers: [
+    {
+      answer: 'is',
+      nextId: 'isArecorrectq50',
+    },
+    {
+      answer: 'are',
+      nextId: 'inisArecorrectq50',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq50',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq50',
+    },
+  ],
+},
+
+isArecorrectq50: {
+botPrompt: 'Hurray! <strong>is</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[50],
+  },
+],
+},
+inisArecorrectq50: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"is"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[50],
+  },
+],
+},
+
+//51
+['isAre'+shuffledNumbersseventyseven[50]]: {
+botPrompt: 'The paintings ___ beautiful.',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['are', 'is', "here","where"]),
+  answers: [
+    {
+      answer: 'are',
+      nextId: 'isArecorrectq51',
+    },
+    {
+      answer: 'is',
+      nextId: 'inisArecorrectq51',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq51',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq51',
+    },
+  ],
+},
+
+isArecorrectq51: {
+botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[51],
+  },
+],
+},
+inisArecorrectq51: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[51],
+  },
+],
+},
+
+//52
+['isAre'+shuffledNumbersseventyseven[51]]: {
+botPrompt: 'The apples ___ ripe.',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['are', 'is', "here","where"]),
+  answers: [
+    {
+      answer: 'are',
+      nextId: 'isArecorrectq52',
+    },
+    {
+      answer: 'is',
+      nextId: 'inisArecorrectq52',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq52',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq52',
+    },
+  ],
+},
+
+isArecorrectq52: {
+botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[52],
+  },
+],
+},
+inisArecorrectq52: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[52],
+  },
+],
+},
+
+//53
+['isAre'+shuffledNumbersseventyseven[52]]: {
+botPrompt: 'The cat',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['is', 'are', "here","where"]),
+  answers: [
+    {
+      answer: 'is',
+      nextId: 'isArecorrectq53',
+    },
+    {
+      answer: 'are',
+      nextId: 'inisArecorrectq53',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq53',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq53',
+    },
+  ],
+},
+
+isArecorrectq53: {
+botPrompt: 'Hurray! <strong>is</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[53],
+  },
+],
+},
+inisArecorrectq53: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"is"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[53],
+  },
+],
+},
+
+//54
+['isAre'+shuffledNumbersseventyseven[53]]: {
+botPrompt: 'The books',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['are', 'is', "here","where"]),
+  answers: [
+    {
+      answer: 'are',
+      nextId: 'isArecorrectq54',
+    },
+    {
+      answer: 'is',
+      nextId: 'inisArecorrectq54',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq54',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq54',
+    },
+  ],
+},
+
+isArecorrectq54: {
+botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[54],
+  },
+],
+},
+inisArecorrectq54: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[54],
+  },
+],
+},
+
+
+//55
+['isAre'+shuffledNumbersseventyseven[54]]: {
+botPrompt: 'The flower',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['is', 'are', "here","where"]),
+  answers: [
+    {
+      answer: 'is',
+      nextId: 'isArecorrectq55',
+    },
+    {
+      answer: 'are',
+      nextId: 'inisArecorrectq55',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq55',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq55',
+    },
+  ],
+},
+
+isArecorrectq55: {
+botPrompt: 'Hurray! <strong>is</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[55],
+  },
+],
+},
+inisArecorrectq55: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"is"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[55],
+  },
+],
+},
+
+//56
+['isAre'+shuffledNumbersseventyseven[55]]: {
+  botPrompt: 'The students',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['are', 'is', "here","where"]),
+  answers: [
+    {
+      answer: 'are',
+      nextId: 'isArecorrectq56',
+    },
+    {
+      answer: 'is',
+      nextId: 'inisArecorrectq56',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq56',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq56',
+    },
+  ],
+},
+isArecorrectq56: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>are</strong> 😎',
+  answers: [
+    {
+      nextId: 'isAre'+shuffledNumbersseventyseven[56],
+    },
+  ],
+},
+inisArecorrectq56: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+  answers: [
+    {
+      nextId: 'isAre'+shuffledNumbersseventyseven[56],
+    },
+  ],
+},
+
+//57
+['isAre'+shuffledNumbersseventyseven[56]]: {
+botPrompt: 'The Sun',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['is', 'are', "here","where"]),
+  answers: [
+    {
+      answer: 'is',
+      nextId: 'isArecorrectq57',
+    },
+    {
+      answer: 'are',
+      nextId: 'inisArecorrectq57',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq57',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq57',
+    },
+  ],
+},
+isArecorrectq57: {
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>M</strong> 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[57],
+  },
+],
+},
+inisArecorrectq57: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"M"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[57],
+  },
+],
+},
+
+//58
+['isAre'+shuffledNumbersseventyseven[57]]: {
+botPrompt: 'The Birds ',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['are', 'is', "here","where"]),
+answers: [
+  {
+    answer: 'are',
+    nextId: 'isArecorrectq58',
+  },
+  {
+    answer: 'is',
+    nextId: 'inisArecorrectq58',
+  },
+  {
+    answer: "here",
+    nextId: 'inisArecorrectq58',
+  },
+  {
+    answer: "where",
+    nextId: 'inisArecorrectq58',
+  },
+],
+},
+isArecorrectq58: {
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>are</strong> 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[58],
+  },
+],
+},
+inisArecorrectq58: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"is"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[58],
+  },
+],
+},
+
+//59
+['isAre'+shuffledNumbersseventyseven[58]]: {
+botPrompt: 'The tree',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['is', 'are', "here","where"]),
+  answers: [
+    {
+      answer: 'is',
+      nextId: 'isArecorrectq57',
+    },
+    {
+      answer: 'are',
+      nextId: 'inisArecorrectq57',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq57',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq57',
+    },
+  ],
+},
+isArecorrectq59: {
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>is</strong> Answers! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[59],
+  },
+],
+},
+inisArecorrectq59: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"is"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[59],
+  },
+],
+},
+
+//60
+['isAre'+shuffledNumbersseventyseven[59]]: {
+botPrompt: 'The apples',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['are', 'is', "here","where"]),
+answers: [
+  {
+    answer: 'are',
+    nextId: 'isArecorrectq60',
+  },
+  {
+    answer: 'is',
+    nextId: 'inisArecorrectq60',
+  },
+  {
+    answer: "here",
+    nextId: 'inisArecorrectq60',
+  },
+  {
+    answer: "where",
+    nextId: 'inisArecorrectq60',
+  },
+],
+},
+isArecorrectq20: {
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>are</strong> 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[60],
+  },
+],
+},
+inisArecorrectq20: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[60],
+  },
+],
+},
+
+//61
+["isAre"+shuffledNumbersseventyseven[60]]: {
+  botPrompt: 'The dog',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['is', 'are', "here","where"]),
+  answers: [
+    {
+      answer: 'is',
+      nextId: 'isArecorrectq61',
+    },
+    {
+      answer: 'are',
+      nextId: 'inisArecorrectq61',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq61',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq61',
+    },
+  ],
+},
+isArecorrectq61: {
+  botPrompt: 'Hurray <strong>is</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'isAre'+shuffledNumbersseventyseven[61],
+    },
+  ],
+},
+inisArecorrectq61: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"is"</strong>',
+  answers: [
+    {
+      nextId: 'isAre'+shuffledNumbersseventyseven[61],
+    },
+  ],
+},
+
+//62
+['isAre'+shuffledNumbersseventyseven[61]]: {
+  botPrompt: 'The toys',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['are', 'is', "here","where"]),
+  answers: [
+    {
+      answer: 'are',
+      nextId: 'isArecorrectq62',
+    },
+    {
+      answer: 'is',
+      nextId: 'inisArecorrectq62',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq62',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq62',
+    },
+  ],
+},
+
+isArecorrectq62: {
+  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'isAre'+shuffledNumbersseventyseven[62],
+    },
+  ],
+},
+inisArecorrectq62: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+  answers: [
+    {
+      nextId: 'isAre'+shuffledNumbersseventyseven[62],
+    },
+  ],
+},
+
+//63
+['isAre'+shuffledNumbersseventyseven[62]]: {
+botPrompt: "The computer",
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['is', 'are', "here","where"]),
+  answers: [
+    {
+      answer: 'is',
+      nextId: 'isArecorrectq63',
+    },
+    {
+      answer: 'are',
+      nextId: 'inisArecorrectq63',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq63',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq63',
+    },
+  ],
+},
+
+isArecorrectq63: {
+botPrompt: 'Hurray! <strong>is</strong> is the correct answer ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[63],
+  },
+],
+},
+inisArecorrectq63: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"is"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[63],
+  },
+],
+},
+
+//64
+['isAre'+shuffledNumbersseventyseven[63]]: {
+botPrompt: 'The friends',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['are', 'is', "here","where"]),
+answers: [
+  {
+    answer: 'are',
+    nextId: 'isArecorrectq64',
+  },
+  {
+    answer: 'is',
+    nextId: 'inisArecorrectq64',
+  },
+  {
+    answer: "here",
+    nextId: 'inisArecorrectq64',
+  },
+  {
+    answer: "where",
+    nextId: 'inisArecorrectq64',
+  },
+],
+},
+
+isArecorrectq64: {
+botPrompt: 'Hurray! <strong>P</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[64],
+  },
+],
+},
+inisArecorrectq2: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"P"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[64],
+  },
+],
+},
+
+//65
+['isAre'+shuffledNumbersseventyseven[64]]: {
+botPrompt: 'The house',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['is', 'are', "here","where"]),
+  answers: [
+    {
+      answer: 'is',
+      nextId: 'isArecorrectq65',
+    },
+    {
+      answer: 'are',
+      nextId: 'inisArecorrectq65',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq65',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq65',
+    },
+  ],
+},
+
+isArecorrectq65: {
+botPrompt: 'Hurray! <strong>is</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[65],
+  },
+],
+},
+inisArecorrectq65: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"is"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[65],
+  },
+],
+},
+
+//66
+['isAre'+shuffledNumbersseventyseven[65]]: {
+botPrompt: 'The pencils',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['are', 'is', "here","where"]),
+answers: [
+  {
+    answer: 'are',
+    nextId: 'isArecorrectq66',
+  },
+  {
+    answer: 'is',
+    nextId: 'inisArecorrectq66',
+  },
+  {
+    answer: "here",
+    nextId: 'inisArecorrectq66',
+  },
+  {
+    answer: "where",
+    nextId: 'inisArecorrectq66',
+  },
+],
+},
+
+isArecorrectq66: {
+botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[66],
+  },
+],
+},
+inisArecorrectq66: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[66],
+  },
+],
+},
+
+//67
+['isAre'+shuffledNumbersseventyseven[66]]: {
+botPrompt: ' The cat and the dog ',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['are', 'is', "here","where"]),
+answers: [
+  {
+    answer: 'are',
+    nextId: 'isArecorrectq67',
+  },
+  {
+    answer: 'is',
+    nextId: 'inisArecorrectq67',
+  },
+  {
+    answer: "here",
+    nextId: 'inisArecorrectq67',
+  },
+  {
+    answer: "where",
+    nextId: 'inisArecorrectq67',
+  },
+],
+},
+
+isArecorrectq67: {
+botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[67],
+  },
+],
+},
+inisArecorrectq67: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[67],
+  },
+],
+},
+
+
+//68
+['isAre'+shuffledNumbersseventyseven[67]]: {
+botPrompt: 'The chair',
+type: RTypes.TRANSFORMED_TEXT,
+
+
+input: selectField(['is', 'are', "here","where"]),
+  answers: [
+    {
+      answer: 'is',
+      nextId: 'isArecorrectq68',
+    },
+    {
+      answer: 'are',
+      nextId: 'inisArecorrectq68',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq68',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq68',
+    },
+  ],
+},
+
+isArecorrectq68: {
+botPrompt: 'Hurray! <strong>is</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[68],
+  },
+],
+},
+inisArecorrectq68: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"is"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[68],
+  },
+],
+},
+
+//69
+['isAre'+shuffledNumbersseventyseven[68]]: {
+botPrompt: 'The birds and the bees',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['are', 'is', "here","where"]),
+answers: [
+  {
+    answer: 'are',
+    nextId: 'isArecorrectq69',
+  },
+  {
+    answer: 'is',
+    nextId: 'inisArecorrectq69',
+  },
+  {
+    answer: "here",
+    nextId: 'inisArecorrectq69',
+  },
+  {
+    answer: "where",
+    nextId: 'inisArecorrectq69',
+  },
+],
+},
+
+isArecorrectq69: {
+botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[69],
+  },
+],
+},
+inisArecorrectq69: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[69],
+  },
+],
+},
+
+
+//70
+['isAre'+shuffledNumbersseventyseven[69]]: {
+botPrompt: 'The flowers and the trees',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['are', 'is', "here","where"]),
+answers: [
+  {
+    answer: 'are',
+    nextId: 'isArecorrectq70',
+  },
+  {
+    answer: 'is',
+    nextId: 'inisArecorrectq70',
+  },
+  {
+    answer: "here",
+    nextId: 'inisArecorrectq70',
+  },
+  {
+    answer: "where",
+    nextId: 'inisArecorrectq70',
+  },
+],
+},
+
+isArecorrectq70: {
+botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[70],
+  },
+],
+},
+inisArecorrectq70: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[70],
+  },
+],
+},
+
+//71
+['isAre'+shuffledNumbersseventyseven[70]]: {
+botPrompt: 'The car',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['is', 'are', "here","where"]),
+  answers: [
+    {
+      answer: 'is',
+      nextId: 'isArecorrectq71',
+    },
+    {
+      answer: 'are',
+      nextId: 'inisArecorrectq71',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq71',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq71',
+    },
+  ],
+},
+
+isArecorrectq71: {
+botPrompt: 'Hurray! <strong>is</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[71],
+  },
+],
+},
+inisArecorrectq71: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"is"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[71],
+  },
+],
+},
+
+//72
+['isAre'+shuffledNumbersseventyseven[71]]: {
+botPrompt: 'The stars',
+type: RTypes.TRANSFORMED_TEXT,
+input: selectField(['are', 'is', "here","where"]),
+answers: [
+  {
+    answer: 'are',
+    nextId: 'isArecorrectq72',
+  },
+  {
+    answer: 'is',
+    nextId: 'inisArecorrectq72',
+  },
+  {
+    answer: "here",
+    nextId: 'inisArecorrectq72',
+  },
+  {
+    answer: "where",
+    nextId: 'inisArecorrectq72',
+  },
+],
+},
+
+isArecorrectq72: {
+botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[72],
+  },
+],
+},
+inisArecorrectq72: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[72],
+  },
+],
+},
+
+//73
+['isAre'+shuffledNumbersseventyseven[72]]: {
+botPrompt: 'The bookshelf',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['is', 'are', "here","where"]),
+  answers: [
+    {
+      answer: 'is',
+      nextId: 'isArecorrectq73',
+    },
+    {
+      answer: 'are',
+      nextId: 'inisArecorrectq73',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq73',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq73',
+    },
+  ],
+},
+
+isArecorrectq73: {
+botPrompt: 'Hurray! <strong>is</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[73],
+  },
+],
+},
+inisArecorrectq73: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"is"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[73],
+  },
+],
+},
+
+//74
+['isAre'+shuffledNumbersseventyseven[73]]: {
+botPrompt: 'The friends and family',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['are', 'is', "here","where"]),
+answers: [
+  {
+    answer: 'are',
+    nextId: 'isArecorrectq74',
+  },
+  {
+    answer: 'is',
+    nextId: 'inisArecorrectq74',
+  },
+  {
+    answer: "here",
+    nextId: 'inisArecorrectq74',
+  },
+  {
+    answer: "where",
+    nextId: 'inisArecorrectq74',
+  },
+],
+},
+
+isArecorrectq74: {
+botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[74],
+  },
+],
+},
+inisArecorrectq74: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[74],
+  },
+],
+},
+
+
+//75
+['isAre'+shuffledNumbersseventyseven[74]]: {
+botPrompt: 'The mountain',
+type: RTypes.TRANSFORMED_TEXT,
+
+
+input: selectField(['is', 'are', "here","where"]),
+  answers: [
+    {
+      answer: 'is',
+      nextId: 'isArecorrectq75',
+    },
+    {
+      answer: 'are',
+      nextId: 'inisArecorrectq75',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq75',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq75',
+    },
+  ],
+},
+
+isArecorrectq75: {
+botPrompt: 'Hurray! <strong>is</strong> is the correct answer  ! 😎',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[75],
+  },
+],
+},
+inisArecorrectq75: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"is"</strong>',
+answers: [
+  {
+    nextId: 'isAre'+shuffledNumbersseventyseven[75],
+  },
+],
+},
+
+//76
+['isAre'+shuffledNumbersseventyseven[75]]: {
+  botPrompt: 'The shoes',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['are', 'is', "here","where"]),
+  answers: [
+    {
+      answer: 'are',
+      nextId: 'isArecorrectq76',
+    },
+    {
+      answer: 'is',
+      nextId: 'inisArecorrectq76',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq76',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq76',
+    },
+  ],
+},
+isArecorrectq76: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>are</strong> 😎',
+  answers: [
+    {
+      nextId: 'isAre'+shuffledNumbersseventyseven[76],
+    },
+  ],
+},
+inisArecorrectq76: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+  answers: [
+    {
+      nextId: 'isAre'+shuffledNumbersseventyseven[76],
+    },
+  ],
+},
+
+//77
+['isAre'+shuffledNumbersseventyseven[76]]: {
+botPrompt: 'The table',
+type: RTypes.TRANSFORMED_TEXT,
+
+input: selectField(['is', 'are', "here","where"]),
+  answers: [
+    {
+      answer: 'is',
+      nextId: 'isArecorrectq77',
+    },
+    {
+      answer: 'are',
+      nextId: 'inisArecorrectq77',
+    },
+    {
+      answer: "here",
+      nextId: 'inisArecorrectq77',
+    },
+    {
+      answer: "where",
+      nextId: 'inisArecorrectq77',
+    },
+  ],
+},
+isArecorrectq77: {
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>is</strong> 😎',
+answers: [
+  {
+    nextId: 'wishtocontinue20',
+  },
+],
+},
+inisArecorrectq77: {
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"is"</strong>',
+answers: [
+  {
+    nextId: 'wishtocontinue20',
+  },
+],
+},
+
+
+
+
+//endisAreletter
+wishtocontinue20: {
+  botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
+  input: selectField(['Yes!', 'No!']),
+  answers: [
+      {
+        answer: 'Yes!',
         nextId: 'endConv',
       },
       {
@@ -12540,6 +20047,9 @@ wishtocontinue19: {
       },
   ],
 },
+
+
+
 
 
 
