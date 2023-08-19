@@ -2,10 +2,10 @@
   botPrompt: ' Identify the consonants in "apple". ',
   type: RTypes.TRANSFORMED_TEXT,
 
-  input: selectField(['a,p,l', 'a,p,e', "a,p,o", "a,p,c"]),
+  input: selectField(['p,p,l', 'a,p,e', "a,p,o", "a,p,c"]),
   answers: [
     {
-      answer: 'a,p,l',
+      answer: 'p,p,l',
       nextId: 'consonantscorrect',
     },
     {
@@ -23,7 +23,7 @@
   ],
 },
 consonantscorrect: {
-  botPrompt: 'Hurray <strong>a,p,l</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray <strong>p,p,l</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'consonants'+shuffledNumbersthree[1],
@@ -31,7 +31,7 @@ consonantscorrect: {
   ],
 },
 inconsonantscorrect: {
-  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"a,p,l"</strong>',
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"p,p,l"</strong>',
   answers: [
     {
       nextId: 'consonants'+shuffledNumbersthree[1],
@@ -472,7 +472,7 @@ answers: [
 
 //12
 ['consonants'+shuffledNumbersthree[11]]: {
-botPrompt: ' What are the consonants in "cheesec, h, e',
+botPrompt: ' What are the consonants in "cheese',
 type: RTypes.TRANSFORMED_TEXT,
 
 input: selectField(['c, h, e', 'c, h, s,e', "c, h, o","c, h, s"]),

@@ -164,11 +164,11 @@ input: selectField(['This', 'That', "These"]),
   answers: [
     {
       answer: 'This',
-      nextId: 'inthisThatcorrectq5',
+      nextId: 'thisThatcorrectq5',
     },
     {
       answer: 'That',
-      nextId: 'thisThatcorrectq5',
+      nextId: 'inthisThatcorrectq5',
     },
     {
       answer: "These",

@@ -3497,7 +3497,7 @@ incorrectq18: {
     },
     {
       answer: "I",
-      nextId: 'incorrectq19',
+      nextId: 'correctq19',
     },
     {
       answer: "O",
@@ -3505,12 +3505,12 @@ incorrectq18: {
     },
     {
       answer: "U",
-      nextId: 'correctq19',
+      nextId: 'incorrectq19',
     },
   ],
 },
 correctq19: {
-  botPrompt: 'You Have Selected Correct Anwser 🎉! SH<strong>O</strong>RT  or SH<strong>I</strong>T are the Correct Answers! 😎',
+  botPrompt: 'You Have Selected Correct Anwser 🎉! <strong>O</strong>  or <strong>I</strong> are the Correct Answers! 😎',
   answers: [
     {
       nextId: 'vowels_question'+shuffledNumbers[19],
@@ -3986,7 +3986,7 @@ incorrectq29: {
     },
     {
       answer: "I",
-      nextId: 'incorrectq30',
+      nextId: 'correctq30',
     },
     {
       answer: "O",
@@ -4034,7 +4034,7 @@ incorrectq30: {
     },
     {
       answer: "O",
-      nextId: 'incorrectq31',
+      nextId: 'correctq31',
     },
     {
       answer: "U",
@@ -4043,7 +4043,7 @@ incorrectq30: {
   ],
 },
 correctq31: {
-  botPrompt: 'You Have Selected Correct Anwser 🎉! B<strong>A</strong>T 😎',
+  botPrompt: 'You Have Selected Correct Anwser 🎉! B<strong>A</strong>T or B<strong>O</strong>T😎',
   answers: [
     {
       nextId: 'vowels_question'+shuffledNumbers[31],
@@ -4051,7 +4051,7 @@ correctq31: {
   ],
 },
 incorrectq31: {
-  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"A"</strong>',
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"A or O"</strong>',
   answers: [
     {
       nextId: 'vowels_question'+shuffledNumbers[31],
