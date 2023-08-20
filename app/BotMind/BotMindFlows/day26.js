@@ -1,3 +1,59 @@
+
+day26: {
+  botPrompt: '<strong> Day 26 : </strong> Learning opposites help in adding to a childs vocabulary and understanding how the world around functions.',
+  answers: [
+          { nextId: 'day26link' },
+  ],
+},
+
+day26link: {
+  botPrompt: 'https://www.youtube.com/watch?v=wpSUK7FnSVA&list=PLhVY3NLECmvXWnTL_xjBImY2ZbKD2XOyp&index=6&pp=iAQB',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day262comment',
+    },
+  ],
+},
+day262comment: {
+  botPrompt: 'Opposite Song',
+  answers: [
+          { nextId: 'day262link' },
+  ],
+},
+day262link: {
+  botPrompt: 'https://youtube.com/shorts/ywooSL_Kr1Q',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day263link',
+    },
+  ],
+},
+day263link: {
+  botPrompt: 'https://youtu.be/cwRddLXUnr8',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day263comment',
+    },
+  ],
+},
+day263comment: {
+  botPrompt: 'Let’s look into the pages of the book',
+  answers: [
+          { nextId: 'day263link' },
+  ],
+},
+day263link: {
+  botPrompt: 'https://drive.google.com/file/d/1MdSOrmqghLRHbhcES9M1liAEfaPC2Yqz/view?usp=sharing',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'opposites'+shuffledNumbersto[0] ,
+    },
+  ],
+},
 //opposites
 
 
@@ -1050,7 +1106,7 @@
   botPrompt: 'Hurray! <strong>sweet</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'wishtocontinue27',
+      nextId: 'wishtocontinue26',
     },
   ],
   },
@@ -1058,7 +1114,7 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"sweet"</strong>',
   answers: [
     {
-      nextId: 'wishtocontinue27',
+      nextId: 'wishtocontinue26',
     },
   ],
   },

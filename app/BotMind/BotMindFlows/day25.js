@@ -1,6 +1,47 @@
+
+day25: {
+  botPrompt: '<strong> Day 25 : </strong> Capital letters, full stops, and question marks play a crucial role in kindergarten education by helping young learners understand sentence structure and punctuation rules.',
+  answers: [
+          { nextId: 'day25link' },
+  ],
+},
+
+day25link: {
+  botPrompt: 'https://youtu.be/WFc5kESr4AI',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day252comment',
+    },
+  ],
+},
+day252comment: {
+  botPrompt: 'Let’s look into the pages of the book',
+  answers: [
+          { nextId: 'day252link' },
+  ],
+},
+day252link: {
+  botPrompt: 'https://drive.google.com/file/d/1vZFs9aRgL-fmnPrG_XfmNk9Z1xUg-Goz/view?usp=sharing',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day253link',
+    },
+  ],
+},
+day253link: {
+  botPrompt: 'https://drive.google.com/file/d/1iXpfIffsy556QVrDvtDN1Gg8wC3Iy9oX/view?usp=sharing',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'capitalLetterFullStop'+shuffledNumbersto[0]  ,
+    },
+  ],
+},
+
+
 //capitalLetterFullStop
-
-
 ["capitalLetterFullStop"+shuffledNumbersto[0]]: {
     botPrompt: 'i have a red bicycle',
     type: RTypes.TRANSFORMED_TEXT,
@@ -1343,7 +1384,7 @@
   botPrompt: 'Hurray! <strong>Correct</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'wishtocontinue26',
+      nextId: 'wishtocontinue25',
     },
   ],
   },
@@ -1351,7 +1392,7 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Correct"</strong>',
   answers: [
     {
-      nextId: 'wishtocontinue26',
+      nextId: 'wishtocontinue25',
     },
   ],
   },

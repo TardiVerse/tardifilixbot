@@ -1,3 +1,35 @@
+day38: {
+  botPrompt: '<strong> Day 38 : </strong> Understanding concepts like "above," "below," "beside," and "in front" lays the foundation for effective communication and reading abilities., enabling children to express ideas and interact effectively.',
+  answers: [
+          { nextId: 'day38link' },
+  ],
+},
+day38link: {
+
+  botPrompt: 'https://youtu.be/d70QvTi1Y2E,https://youtu.be/FG2aEUX2RXk',
+  type: RTypes.LINK,
+  answers: [
+          { nextId: 'day382comment' },
+  ],
+},
+
+day382comment: {
+  botPrompt: 'Let’s look into the pages of the book',
+  answers: [
+          { nextId: 'day382link' },
+  ],
+},
+day382link: {
+  botPrompt: 'https://drive.google.com/file/d/1e0RvqhSnTorOMiUZeDM9hTL-CBzER5V4/view?usp=sharing',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'positionWords'+shuffledNumbersto[0],
+    },
+  ],
+},
+
+
 //positionWords
 
 
@@ -756,7 +788,7 @@
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>inside</strong> 😎',
   answers: [
     {
-      nextId: 'wishtocontinue39'
+      nextId: 'wishtocontinue38'
     },
   ],
   },
@@ -764,7 +796,7 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"inside"</strong>',
   answers: [
     {
-      nextId: 'wishtocontinue39'
+      nextId: 'wishtocontinue38'
     },
   ],
   },

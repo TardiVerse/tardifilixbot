@@ -1,3 +1,45 @@
+day33: {
+  botPrompt: '<strong> Day 33 : </strong> Pair words play a vital role in kindergarten education as they introduce young learners to the concept of word associations and language patterns',
+  answers: [
+          { nextId: 'day33link' },
+  ],
+},
+day33link: {
+  botPrompt: 'https://youtu.be/bP4itjpVdJ4',
+  type: RTypes.LINK,
+  answers: [
+          { nextId: 'day331comment' },
+  ],
+},
+day331comment: {
+  botPrompt: 'TLM Video',
+  answers: [
+          { nextId: 'day331link' },
+  ],
+},
+day331link: {
+  botPrompt: 'https://youtu.be/tK6LSH86y98',
+  type: RTypes.LINK,
+  answers: [
+          { nextId: 'day332comment' },
+  ],
+},
+day332comment: {
+  botPrompt: 'Let’s look into the pages of the book',
+  answers: [
+          { nextId: 'day332link' },
+  ],
+},
+day332link: {
+  botPrompt: 'https://drive.google.com/file/d/16ScrFP2MmYucRIbciy8E47drUhBF6k1Y/view?usp=sharing',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'pairWords'+shuffledNumbersto[0],
+    },
+  ],
+},
+
 //pairWords
 
 
@@ -500,7 +542,7 @@
   botPrompt: 'Hurray! <strong>Pans</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'wishtocontinue34',
+      nextId: 'wishtocontinue33',
     },
   ],
   },
@@ -508,7 +550,7 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Pans"</strong>',
   answers: [
     {
-      nextId: 'wishtocontinue34',
+      nextId: 'wishtocontinue33',
     },
   ],
   },

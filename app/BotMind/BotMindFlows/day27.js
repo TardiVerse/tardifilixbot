@@ -1,81 +1,81 @@
-day30: {
-  botPrompt: '<strong> Day 30 : </strong> Number Formation',
-  answers: [
-          { nextId: 'day30link' },
-  ],
-},
 
-day30link: {
-  botPrompt: 'https://youtu.be/ZYNjszXpkMk',
-  type: RTypes.LINK,
-  answers: [
-    {
-      nextId: 'day303comment',
-    },
-  ],
-},
+day27: {
+    botPrompt: '<strong> Day 27 : </strong> The concept of Ones-Tens-Hundreds is fundamental to the decimal system.',
+    answers: [
+            { nextId: 'day27link' },
+    ],
+  },
 
-day303comment: {
-  botPrompt: 'Let’s look into the pages of the book',
-  answers: [
-          { nextId: 'day303link' },
-  ],
-},
-day303link: {
-  botPrompt: 'https://drive.google.com/file/d/1qAYGEXTHC5Plk-pslthp8liGEBWWYQmV/view?usp=share_link',
-  type: RTypes.LINK,
-  answers: [
-    {
-      nextId: 'onceTens'+shuffledNumbersto[0],
-    },
-  ],
-},
+  day27link: {
+    botPrompt: 'https://youtu.be/cmbHRrERNbg',
+    type: RTypes.LINK,
+    answers: [
+      {
+        nextId: 'day273comment',
+      },
+    ],
+  },
+
+  day273comment: {
+    botPrompt: 'Let’s look into the pages of the book',
+    answers: [
+            { nextId: 'day273link' },
+    ],
+  },
+  day273link: {
+    botPrompt: 'https://drive.google.com/file/d/1qAYGEXTHC5Plk-pslthp8liGEBWWYQmV/view?usp=share_link',
+    type: RTypes.LINK,
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[0] ,
+      },
+    ],
+  },
+
+//onceTensHundreds
 
 
-//onceTens
-
-
-["onceTens"+shuffledNumbersto[0]]: {
+["onceTensHundreds"+shuffledNumbersto[0]]: {
     botPrompt: 'What is the number at units place in 76?',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['6', '7', "8","9"]),
     answers: [
       {
         answer: '6',
-        nextId: 'onceTenscorrect',
+        nextId: 'onceTensHundredscorrect',
       },
       {
         answer: '7',
-        nextId: 'inonceTenscorrect',
+        nextId: 'inonceTensHundredscorrect',
       },
       {
         answer: "8",
-        nextId: 'inonceTenscorrect',
+        nextId: 'inonceTensHundredscorrect',
       },
       {
         answer: "9",
-        nextId: 'inonceTenscorrect',
+        nextId: 'inonceTensHundredscorrect',
       },
     ],
   },
-  onceTenscorrect: {
+  onceTensHundredscorrect: {
     botPrompt: 'Hurray <strong>6</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[1],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[1],
       },
     ],
   },
-  inonceTenscorrect: {
+  inonceTensHundredscorrect: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"6"</strong>',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[1],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[1],
       },
     ],
   },
   
-  ['onceTens'+shuffledNumbersto[1]]: {
+  ['onceTensHundreds'+shuffledNumbersto[1]]: {
     botPrompt: 'What is the number at tens place in 58?',
     type: RTypes.TRANSFORMED_TEXT,
   
@@ -83,42 +83,42 @@ day303link: {
     answers: [
       {
         answer: '4',
-        nextId: 'inonceTenscorrectq2',
+        nextId: 'inonceTensHundredscorrectq2',
       },
       {
         answer: '5',
-        nextId: 'onceTenscorrectq2',
+        nextId: 'onceTensHundredscorrectq2',
       },
       {
         answer: "6",
-        nextId: 'inonceTenscorrectq2',
+        nextId: 'inonceTensHundredscorrectq2',
       },
       {
         answer: "8",
-        nextId: 'inonceTenscorrectq2',
+        nextId: 'inonceTensHundredscorrectq2',
       },
     ],
   },
   
-  onceTenscorrectq2: {
+  onceTensHundredscorrectq2: {
     botPrompt: 'Hurray! <strong>58</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[2],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[2],
       },
     ],
   },
-  inonceTenscorrectq2: {
+  inonceTensHundredscorrectq2: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"58"</strong>',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[2],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[2],
       },
     ],
   },
   
   //3
-  ['onceTens'+shuffledNumbersto[2]]: {
+  ['onceTensHundreds'+shuffledNumbersto[2]]: {
   botPrompt: "What is the number at units place in 234?",
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -126,42 +126,42 @@ day303link: {
     answers: [
       {
         answer: '2',
-        nextId: 'inonceTenscorrectq3',
+        nextId: 'inonceTensHundredscorrectq3',
       },
       {
         answer: '3',
-        nextId: 'inonceTenscorrectq3',
+        nextId: 'inonceTensHundredscorrectq3',
       },
       {
         answer: "4",
-        nextId: 'onceTenscorrectq3',
+        nextId: 'onceTensHundredscorrectq3',
       },
       {
         answer: "5",
-        nextId: 'inonceTenscorrectq3',
+        nextId: 'inonceTensHundredscorrectq3',
       },
     ],
   },
   
-  onceTenscorrectq3: {
+  onceTensHundredscorrectq3: {
   botPrompt: 'Hurray! <strong>4</strong> is the correct answer ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[3],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[3],
     },
   ],
   },
-  inonceTenscorrectq3: {
+  inonceTensHundredscorrectq3: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[3],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[3],
     },
   ],
   },
   
   //4
-  ['onceTens'+shuffledNumbersto[3]]: {
+  ['onceTensHundreds'+shuffledNumbersto[3]]: {
   botPrompt: 'What is the number at tens place in 456?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -169,42 +169,42 @@ day303link: {
     answers: [
       {
         answer: '4',
-        nextId: 'inonceTenscorrectq4',
+        nextId: 'inonceTensHundredscorrectq4',
       },
       {
         answer: '5',
-        nextId: 'onceTenscorrectq4',
+        nextId: 'onceTensHundredscorrectq4',
       },
       {
         answer: "6",
-        nextId: 'inonceTenscorrectq4',
+        nextId: 'inonceTensHundredscorrectq4',
       },
       {
         answer: "7",
-        nextId: 'inonceTenscorrectq4',
+        nextId: 'inonceTensHundredscorrectq4',
       },
     ],
   },
   
-  onceTenscorrectq4: {
+  onceTensHundredscorrectq4: {
   botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[4],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[4],
     },
   ],
   },
-  inonceTenscorrectq4: {
+  inonceTensHundredscorrectq4: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[4],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[4],
     },
   ],
   },
   
   //5
-  ['onceTens'+shuffledNumbersto[4]]: {
+  ['onceTensHundreds'+shuffledNumbersto[4]]: {
   botPrompt: 'What is the number at hundreds place in 789?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -212,42 +212,42 @@ day303link: {
     answers: [
       {
         answer: '7',
-        nextId: 'inonceTenscorrectq5',
+        nextId: 'inonceTensHundredscorrectq5',
       },
       {
         answer: '8',
-        nextId: 'inonceTenscorrectq5',
+        nextId: 'inonceTensHundredscorrectq5',
       },
       {
         answer: "9",
-        nextId: 'onceTenscorrectq5',
+        nextId: 'onceTensHundredscorrectq5',
       },
       {
         answer: "1",
-        nextId: 'inonceTenscorrectq5',
+        nextId: 'inonceTensHundredscorrectq5',
       },
     ],
   },
   
-  onceTenscorrectq5: {
+  onceTensHundredscorrectq5: {
   botPrompt: 'Hurray! <strong>7</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[5],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[5],
     },
   ],
   },
-  inonceTenscorrectq5: {
+  inonceTensHundredscorrectq5: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"7"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[5],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[5],
     },
   ],
   },
   
   //6
-  ['onceTens'+shuffledNumbersto[5]]: {
+  ['onceTensHundreds'+shuffledNumbersto[5]]: {
   botPrompt: 'What is the number at units place in 1523?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -255,42 +255,42 @@ day303link: {
     answers: [
       {
         answer: '1',
-        nextId: 'inonceTenscorrectq6',
+        nextId: 'inonceTensHundredscorrectq6',
       },
       {
         answer: '2',
-        nextId: 'inonceTenscorrectq6',
+        nextId: 'inonceTensHundredscorrectq6',
       },
       {
         answer: "3",
-        nextId: 'onceTenscorrectq6',
+        nextId: 'onceTensHundredscorrectq6',
       },
       {
         answer: "5",
-        nextId: 'inonceTenscorrectq6',
+        nextId: 'inonceTensHundredscorrectq6',
       },
     ],
   },
   
-  onceTenscorrectq6: {
+  onceTensHundredscorrectq6: {
   botPrompt: 'Hurray! <strong>3</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[6],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[6],
     },
   ],
   },
-  inonceTenscorrectq6: {
+  inonceTensHundredscorrectq6: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"3"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[6],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[6],
     },
   ],
   },
   
   //7
-  ['onceTens'+shuffledNumbersto[6]]: {
+  ['onceTensHundreds'+shuffledNumbersto[6]]: {
   botPrompt: 'What is the number at tens place in 7896?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -298,43 +298,43 @@ day303link: {
     answers: [
       {
         answer: '7',
-        nextId: 'inonceTenscorrectq7',
+        nextId: 'inonceTensHundredscorrectq7',
       },
       {
         answer: '8',
-        nextId: 'inonceTenscorrectq7',
+        nextId: 'inonceTensHundredscorrectq7',
       },
       {
         answer: "9",
-        nextId: 'onceTenscorrectq7',
+        nextId: 'onceTensHundredscorrectq7',
       },
       {
         answer: "6",
-        nextId: 'inonceTenscorrectq7',
+        nextId: 'inonceTensHundredscorrectq7',
       },
     ],
   },
   
-  onceTenscorrectq7: {
+  onceTensHundredscorrectq7: {
   botPrompt: 'Hurray! <strong>9</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[7],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[7],
     },
   ],
   },
-  inonceTenscorrectq7: {
+  inonceTensHundredscorrectq7: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"9"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[7],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[7],
     },
   ],
   },
   
   
   //8
-  ['onceTens'+shuffledNumbersto[7]]: {
+  ['onceTensHundreds'+shuffledNumbersto[7]]: {
   botPrompt: 'What is the number at hundreds place in 2345?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -342,42 +342,42 @@ day303link: {
     answers: [
       {
         answer: '2',
-        nextId: 'inonceTenscorrectq8',
+        nextId: 'inonceTensHundredscorrectq8',
       },
       {
         answer: '3',
-        nextId: 'onceTenscorrectq8',
+        nextId: 'onceTensHundredscorrectq8',
       },
       {
         answer: "4",
-        nextId: 'inonceTenscorrectq8',
+        nextId: 'inonceTensHundredscorrectq8',
       },
       {
         answer: "5",
-        nextId: 'inonceTenscorrectq8',
+        nextId: 'inonceTensHundredscorrectq8',
       },
     ],
   },
   
-  onceTenscorrectq8: {
+  onceTensHundredscorrectq8: {
   botPrompt: 'Hurray! <strong>3</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[8],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[8],
     },
   ],
   },
-  inonceTenscorrectq8: {
+  inonceTensHundredscorrectq8: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"3"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[8],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[8],
     },
   ],
   },
   
   //9
-  ['onceTens'+shuffledNumbersto[8]]: {
+  ['onceTensHundreds'+shuffledNumbersto[8]]: {
   botPrompt: 'What is the number at units place in 6789?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -385,43 +385,43 @@ day303link: {
     answers: [
       {
         answer: '6',
-        nextId: 'inonceTenscorrectq9',
+        nextId: 'inonceTensHundredscorrectq9',
       },
       {
         answer: '7',
-        nextId: 'inonceTenscorrectq9',
+        nextId: 'inonceTensHundredscorrectq9',
       },
       {
         answer: "8",
-        nextId: 'inonceTenscorrectq9',
+        nextId: 'inonceTensHundredscorrectq9',
       },
       {
         answer: "9",
-        nextId: 'onceTenscorrectq9',
+        nextId: 'onceTensHundredscorrectq9',
       },
     ],
   },
   
-  onceTenscorrectq9: {
+  onceTensHundredscorrectq9: {
   botPrompt: 'Hurray! <strong>9</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[9],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[9],
     },
   ],
   },
-  inonceTenscorrectq9: {
+  inonceTensHundredscorrectq9: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"9"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[9],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[9],
     },
   ],
   },
   
   
   //10
-  ['onceTens'+shuffledNumbersto[9]]: {
+  ['onceTensHundreds'+shuffledNumbersto[9]]: {
   botPrompt: 'What is the number at tens place in 1234?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -429,43 +429,43 @@ day303link: {
     answers: [
       {
         answer: '1',
-        nextId: 'inonceTenscorrectq10',
+        nextId: 'inonceTensHundredscorrectq10',
       },
       {
         answer: '2',
-        nextId: 'inonceTenscorrectq10',
+        nextId: 'inonceTensHundredscorrectq10',
       },
       {
         answer: "3",
-        nextId: 'onceTenscorrectq10',
+        nextId: 'onceTensHundredscorrectq10',
       },
       {
         answer: "4",
-        nextId: 'inonceTenscorrectq10',
+        nextId: 'inonceTensHundredscorrectq10',
       },
     ],
   
   },
   
-  onceTenscorrectq10: {
+  onceTensHundredscorrectq10: {
   botPrompt: 'Hurray! <strong>3</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[10],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[10],
     },
   ],
   },
-  inonceTenscorrectq10: {
+  inonceTensHundredscorrectq10: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"3"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[10],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[10],
     },
   ],
   },
   
   //11
-  ['onceTens'+shuffledNumbersto[10]]: {
+  ['onceTensHundreds'+shuffledNumbersto[10]]: {
   botPrompt: 'What is the digit in the tens place in the number 27?',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -473,42 +473,42 @@ day303link: {
     answers: [
       {
         answer: '2',
-        nextId: 'onceTenscorrectq11',
+        nextId: 'onceTensHundredscorrectq11',
       },
       {
         answer: '7',
-        nextId: 'inonceTenscorrectq11',
+        nextId: 'inonceTensHundredscorrectq11',
       },
       {
         answer: "0",
-        nextId: 'inonceTenscorrectq11',
+        nextId: 'inonceTensHundredscorrectq11',
       },
       {
         answer: "9",
-        nextId: 'inonceTenscorrectq11',
+        nextId: 'inonceTensHundredscorrectq11',
       },
     ],
   },
   
-  onceTenscorrectq11: {
+  onceTensHundredscorrectq11: {
   botPrompt: 'Hurray! <strong>2</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[11],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[11],
     },
   ],
   },
-  inonceTenscorrectq11: {
+  inonceTensHundredscorrectq11: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"2"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[11],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[11],
     },
   ],
   },
   
   //12
-  ['onceTens'+shuffledNumbersto[11]]: {
+  ['onceTensHundreds'+shuffledNumbersto[11]]: {
   botPrompt: 'What is the digit in the ones place in the number 42?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -516,42 +516,42 @@ day303link: {
     answers: [
       {
         answer: '2',
-        nextId: 'onceTenscorrectq12',
+        nextId: 'onceTensHundredscorrectq12',
       },
       {
         answer: '4',
-        nextId: 'inonceTenscorrectq12',
+        nextId: 'inonceTensHundredscorrectq12',
       },
       {
         answer: "0",
-        nextId: 'inonceTenscorrectq12',
+        nextId: 'inonceTensHundredscorrectq12',
       },
       {
         answer: "9",
-        nextId: 'inonceTenscorrectq12',
+        nextId: 'inonceTensHundredscorrectq12',
       },
     ],
   },
   
-  onceTenscorrectq12: {
+  onceTensHundredscorrectq12: {
   botPrompt: 'Hurray! <strong>2</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[12],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[12],
     },
   ],
   },
-  inonceTenscorrectq12: {
+  inonceTensHundredscorrectq12: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"2"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[12],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[12],
     },
   ],
   },
   
   //13
-  ['onceTens'+shuffledNumbersto[12]]: {
+  ['onceTensHundreds'+shuffledNumbersto[12]]: {
   botPrompt: 'Which number comes after 63?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -559,42 +559,42 @@ day303link: {
     answers: [
       {
         answer: '64',
-        nextId: 'onceTenscorrectq13',
+        nextId: 'onceTensHundredscorrectq13',
       },
       {
         answer: '65',
-        nextId: 'inonceTenscorrectq13',
+        nextId: 'inonceTensHundredscorrectq13',
       },
       {
         answer: "66",
-        nextId: 'inonceTenscorrectq13',
+        nextId: 'inonceTensHundredscorrectq13',
       },
       {
         answer: "67",
-        nextId: 'inonceTenscorrectq13',
+        nextId: 'inonceTensHundredscorrectq13',
       },
     ],
   },
   
-  onceTenscorrectq13: {
+  onceTensHundredscorrectq13: {
   botPrompt: 'Hurray! <strong>64</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[13],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[13],
     },
   ],
   },
-  inonceTenscorrectq13: {
+  inonceTensHundredscorrectq13: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"64"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[13],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[13],
     },
   ],
   },
   
   //14
-  ['onceTens'+shuffledNumbersto[13]]: {
+  ['onceTensHundreds'+shuffledNumbersto[13]]: {
   botPrompt: 'Which number comes before 48?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -602,43 +602,43 @@ day303link: {
     answers: [
       {
         answer: '46',
-        nextId: 'inonceTenscorrectq14',
+        nextId: 'inonceTensHundredscorrectq14',
       },
       {
         answer: '47',
-        nextId: 'onceTenscorrectq14',
+        nextId: 'onceTensHundredscorrectq14',
       },
       {
         answer: "49",
-        nextId: 'inonceTenscorrectq14',
+        nextId: 'inonceTensHundredscorrectq14',
       },
       {
         answer: "50",
-        nextId: 'inonceTenscorrectq14',
+        nextId: 'inonceTensHundredscorrectq14',
       },
     ],
   },
   
-  onceTenscorrectq14: {
+  onceTensHundredscorrectq14: {
   botPrompt: 'Hurray! <strong>47</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[14],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[14],
     },
   ],
   },
-  inonceTenscorrectq14: {
+  inonceTensHundredscorrectq14: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"47"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[14],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[14],
     },
   ],
   },
   
   
   //15
-  ['onceTens'+shuffledNumbersto[14]]: {
+  ['onceTensHundreds'+shuffledNumbersto[14]]: {
   botPrompt: 'Which number comes between 5 and 7?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -646,288 +646,288 @@ day303link: {
     answers: [
       {
         answer: '6',
-        nextId: 'onceTenscorrectq15',
+        nextId: 'onceTensHundredscorrectq15',
       },
       {
         answer: '8',
-        nextId: 'inonceTenscorrectq15',
+        nextId: 'inonceTensHundredscorrectq15',
       },
       {
         answer: "9",
-        nextId: 'inonceTenscorrectq15',
+        nextId: 'inonceTensHundredscorrectq15',
       },
       {
         answer: "10",
-        nextId: 'inonceTenscorrectq15',
+        nextId: 'inonceTensHundredscorrectq15',
       },
     ],
   },
   
-  onceTenscorrectq15: {
+  onceTensHundredscorrectq15: {
   botPrompt: 'Hurray! <strong>6</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[15],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[15],
     },
   ],
   },
-  inonceTenscorrectq15: {
+  inonceTensHundredscorrectq15: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"6"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[15],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[15],
     },
   ],
   },
   
   //16
-  ['onceTens'+shuffledNumbersto[15]]: {
+  ['onceTensHundreds'+shuffledNumbersto[15]]: {
     botPrompt: 'What is the digit in the hundreds place in the number 123?',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['1', '2', "3","0"]),
     answers: [
       {
         answer: '1',
-        nextId: 'onceTenscorrectq16',
+        nextId: 'onceTensHundredscorrectq16',
       },
       {
         answer: '2',
-        nextId: 'inonceTenscorrectq16',
+        nextId: 'inonceTensHundredscorrectq16',
       },
       {
         answer: "3",
-        nextId: 'inonceTenscorrectq16',
+        nextId: 'inonceTensHundredscorrectq16',
       },
       {
         answer: "0",
-        nextId: 'inonceTenscorrectq16',
+        nextId: 'inonceTensHundredscorrectq16',
       },
     ],
   },
-  onceTenscorrectq16: {
+  onceTensHundredscorrectq16: {
     botPrompt: 'You Have Selected correct Anwser 🎉! <strong>1</strong> 😎',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[16],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[16],
       },
     ],
   },
-  inonceTenscorrectq16: {
+  inonceTensHundredscorrectq16: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"1"</strong>',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[16],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[16],
       },
     ],
   },
   
   //17
-  ['onceTens'+shuffledNumbersto[16]]: {
+  ['onceTensHundreds'+shuffledNumbersto[16]]: {
   botPrompt: 'Which number comes after 25?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['26', '27', "28","29"]),
     answers: [
       {
         answer: '26',
-        nextId: 'onceTenscorrectq17',
+        nextId: 'onceTensHundredscorrectq17',
       },
       {
         answer: '27',
-        nextId: 'inonceTenscorrectq17',
+        nextId: 'inonceTensHundredscorrectq17',
       },
       {
         answer: "28",
-        nextId: 'inonceTenscorrectq17',
+        nextId: 'inonceTensHundredscorrectq17',
       },
       {
         answer: "29",
-        nextId: 'inonceTenscorrectq17',
+        nextId: 'inonceTensHundredscorrectq17',
       },
     ],
   },
-  onceTenscorrectq17: {
+  onceTensHundredscorrectq17: {
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>26</strong> 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[17],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[17],
     },
   ],
   },
-  inonceTenscorrectq17: {
+  inonceTensHundredscorrectq17: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"26"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[17],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[17],
     },
   ],
   },
   
   //18
-  ['onceTens'+shuffledNumbersto[17]]: {
+  ['onceTensHundreds'+shuffledNumbersto[17]]: {
   botPrompt: 'Which number comes before 12?   ',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['9', '10', "11","13"]),
   answers: [
     {
       answer: '9',
-      nextId: 'inonceTenscorrectq18',
+      nextId: 'inonceTensHundredscorrectq18',
     },
     {
       answer: '10',
-      nextId: 'inonceTenscorrectq18',
+      nextId: 'inonceTensHundredscorrectq18',
     },
     {
       answer: "11",
-      nextId: 'onceTenscorrectq18',
+      nextId: 'onceTensHundredscorrectq18',
     },
     {
       answer: "13",
-      nextId: 'inonceTenscorrectq18',
+      nextId: 'inonceTensHundredscorrectq18',
     },
   ],
   },
-  onceTenscorrectq18: {
+  onceTensHundredscorrectq18: {
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>11</strong> 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[18],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[18],
     },
   ],
   },
-  inonceTenscorrectq18: {
+  inonceTensHundredscorrectq18: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"11"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[18],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[18],
     },
   ],
   },
   
   //19
-  ['onceTens'+shuffledNumbersto[18]]: {
+  ['onceTensHundreds'+shuffledNumbersto[18]]: {
   botPrompt: 'What is the value of the digit 3 in the number 345?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['300', '3', "30","3000"]),
   answers: [
     {
       answer: '300',
-      nextId: 'onceTenscorrectq19',
+      nextId: 'onceTensHundredscorrectq19',
     },
     {
       answer: '3',
-      nextId: 'inonceTenscorrectq19',
+      nextId: 'inonceTensHundredscorrectq19',
     },
     {
       answer: "30",
-      nextId: 'inonceTenscorrectq19',
+      nextId: 'inonceTensHundredscorrectq19',
     },
     {
       answer: "3000",
-      nextId: 'inonceTenscorrectq19',
+      nextId: 'inonceTensHundredscorrectq19',
     },
   ],
   },
-  onceTenscorrectq19: {
+  onceTensHundredscorrectq19: {
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>300</strong> Answers! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[19],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[19],
     },
   ],
   },
-  inonceTenscorrectq19: {
+  inonceTensHundredscorrectq19: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"300"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[19],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[19],
     },
   ],
   },
   
   //20
-  ['onceTens'+shuffledNumbersto[19]]: {
+  ['onceTensHundreds'+shuffledNumbersto[19]]: {
   botPrompt: 'What is the digit in the ones place in the number 86?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['8', '6', "0","2"]),
   answers: [
     {
       answer: '8',
-      nextId: 'inonceTenscorrectq20',
+      nextId: 'inonceTensHundredscorrectq20',
     },
     {
       answer: '6',
-      nextId: 'onceTenscorrectq20',
+      nextId: 'onceTensHundredscorrectq20',
     },
     {
       answer: "0",
-      nextId: 'inonceTenscorrectq20',
+      nextId: 'inonceTensHundredscorrectq20',
     },
     {
       answer: "2",
-      nextId: 'inonceTenscorrectq20',
+      nextId: 'inonceTensHundredscorrectq20',
     },
   ],
   },
-  onceTenscorrectq20: {
+  onceTensHundredscorrectq20: {
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>22</strong> 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[20],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[20],
     },
   ],
   },
-  inonceTenscorrectq20: {
+  inonceTensHundredscorrectq20: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"22"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[20],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[20],
     },
   ],
   },
   
   //21
-  ["onceTens"+shuffledNumbersto[20]]: {
+  ["onceTensHundreds"+shuffledNumbersto[20]]: {
     botPrompt: 'Which number comes between 18 and 20?',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['17', '19', "21","22"]),
   answers: [
     {
       answer: '17',
-      nextId: 'inonceTenscorrectq21',
+      nextId: 'inonceTensHundredscorrectq21',
     },
     {
       answer: '19',
-      nextId: 'onceTenscorrectq21',
+      nextId: 'onceTensHundredscorrectq21',
     },
     {
       answer: "21",
-      nextId: 'inonceTenscorrectq21',
+      nextId: 'inonceTensHundredscorrectq21',
     },
     {
       answer: "22",
-      nextId: 'inonceTenscorrectq21',
+      nextId: 'inonceTensHundredscorrectq21',
     },
   ],
   },
-  onceTenscorrectq21: {
+  onceTensHundredscorrectq21: {
     botPrompt: 'Hurray <strong>19</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[21],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[21],
       },
     ],
   },
-  inonceTenscorrectq21: {
+  inonceTensHundredscorrectq21: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>19</strong> answer is <strong>"23"</strong>',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[21],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[21],
       },
     ],
   },
   
   //22
-  ['onceTens'+shuffledNumbersto[21]]: {
+  ['onceTensHundreds'+shuffledNumbersto[21]]: {
     botPrompt: 'What is the digit in the tens place in the number 56?',
     type: RTypes.TRANSFORMED_TEXT,
   
@@ -935,84 +935,84 @@ day303link: {
   answers: [
     {
       answer: '5',
-      nextId: 'onceTenscorrectq22',
+      nextId: 'onceTensHundredscorrectq22',
     },
     {
       answer: '6',
-      nextId: 'inonceTenscorrectq22',
+      nextId: 'inonceTensHundredscorrectq22',
     },
     {
       answer: "0",
-      nextId: 'inonceTenscorrectq22',
+      nextId: 'inonceTensHundredscorrectq22',
     },
     {
       answer: "2",
-      nextId: 'inonceTenscorrectq22',
+      nextId: 'inonceTensHundredscorrectq22',
     },
   ],
   },
   
-  onceTenscorrectq22: {
+  onceTensHundredscorrectq22: {
     botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[22],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[22],
       },
     ],
   },
-  inonceTenscorrectq22: {
+  inonceTensHundredscorrectq22: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[22],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[22],
       },
     ],
   },
   
   //23
-  ['onceTens'+shuffledNumbersto[22]]: {
+  ['onceTensHundreds'+shuffledNumbersto[22]]: {
   botPrompt: "What is the value of the digit 2 in the number 825?",
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['2', '20', "200","2000"]),
   answers: [
     {
       answer: '2',
-      nextId: 'inonceTenscorrectq23',
+      nextId: 'inonceTensHundredscorrectq23',
     },
     {
       answer: '20',
-      nextId: 'onceTenscorrectq23',
+      nextId: 'onceTensHundredscorrectq23',
     },
     {
       answer: "200",
-      nextId: 'inonceTenscorrectq23',
+      nextId: 'inonceTensHundredscorrectq23',
     },
     {
       answer: "2000",
-      nextId: 'inonceTenscorrectq23',
+      nextId: 'inonceTensHundredscorrectq23',
     },
   ],
   },
   
-  onceTenscorrectq23: {
+  onceTensHundredscorrectq23: {
   botPrompt: 'Hurray! <strong>20</strong> is the correct answer ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[23],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[23],
     },
   ],
   },
-  inonceTenscorrectq23: {
+  inonceTensHundredscorrectq23: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"20"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[23],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[23],
     },
   ],
   },
   
   //24
-  ['onceTens'+shuffledNumbersto[23]]: {
+  ['onceTensHundreds'+shuffledNumbersto[23]]: {
   botPrompt: 'What is the digit in the ones place in the number 73?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1020,42 +1020,42 @@ day303link: {
   answers: [
     {
       answer: '7',
-      nextId: 'inonceTenscorrectq24',
+      nextId: 'inonceTensHundredscorrectq24',
     },
     {
       answer: '3',
-      nextId: 'onceTenscorrectq24',
+      nextId: 'onceTensHundredscorrectq24',
     },
     {
       answer: "0",
-      nextId: 'inonceTenscorrectq24',
+      nextId: 'inonceTensHundredscorrectq24',
     },
     {
       answer: "4",
-      nextId: 'inonceTenscorrectq24',
+      nextId: 'inonceTensHundredscorrectq24',
     },
   ],
   },
   
-  onceTenscorrectq24: {
+  onceTensHundredscorrectq24: {
   botPrompt: 'Hurray! <strong>3</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[24],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[24],
     },
   ],
   },
-  inonceTenscorrectq24: {
+  inonceTensHundredscorrectq24: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"3"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[24],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[24],
     },
   ],
   },
   
   //25
-  ['onceTens'+shuffledNumbersto[24]]: {
+  ['onceTensHundreds'+shuffledNumbersto[24]]: {
   botPrompt: 'What is the number at the units place in 124?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1063,42 +1063,42 @@ day303link: {
   answers: [
     {
       answer: '1',
-      nextId: 'inonceTenscorrectq25',
+      nextId: 'inonceTensHundredscorrectq25',
     },
     {
       answer: '2',
-      nextId: 'inonceTenscorrectq25',
+      nextId: 'inonceTensHundredscorrectq25',
     },
     {
       answer: "4",
-      nextId: 'onceTenscorrectq25',
+      nextId: 'onceTensHundredscorrectq25',
     },
     {
       answer: "0",
-      nextId: 'inonceTenscorrectq25',
+      nextId: 'inonceTensHundredscorrectq25',
     },
   ],
   },
   
-  onceTenscorrectq25: {
+  onceTensHundredscorrectq25: {
   botPrompt: 'Hurray! <strong>4</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[25],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[25],
     },
   ],
   },
-  inonceTenscorrectq25: {
+  inonceTensHundredscorrectq25: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[25],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[25],
     },
   ],
   },
   
   //26
-  ['onceTens'+shuffledNumbersto[25]]: {
+  ['onceTensHundreds'+shuffledNumbersto[25]]: {
   botPrompt: 'What is the number at the tens place in 379?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1106,127 +1106,127 @@ day303link: {
   answers: [
     {
       answer: '3',
-      nextId: 'inonceTenscorrectq26',
+      nextId: 'inonceTensHundredscorrectq26',
     },
     {
       answer: '7',
-      nextId: 'onceTenscorrectq26',
+      nextId: 'onceTensHundredscorrectq26',
     },
     {
       answer: "9",
-      nextId: 'inonceTenscorrectq26',
+      nextId: 'inonceTensHundredscorrectq26',
     },
     {
       answer: "0",
-      nextId: 'inonceTenscorrectq26',
+      nextId: 'inonceTensHundredscorrectq26',
     },
   ],
   },
   
-  onceTenscorrectq26: {
+  onceTensHundredscorrectq26: {
   botPrompt: 'Hurray! <strong>7</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[26],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[26],
     },
   ],
   },
-  inonceTenscorrectq26: {
+  inonceTensHundredscorrectq26: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"7"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[26],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[26],
     },
   ],
   },
   
   //27
-  ['onceTens'+shuffledNumbersto[26]]: {
+  ['onceTensHundreds'+shuffledNumbersto[26]]: {
   botPrompt: 'What is the number at the hundreds place in 548?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['5', '4', "8","0"]),
     answers: [
       {
         answer: '5',
-        nextId: 'onceTenscorrectq27',
+        nextId: 'onceTensHundredscorrectq27',
       },
       {
         answer: '4',
-        nextId: 'inonceTenscorrectq27',
+        nextId: 'inonceTensHundredscorrectq27',
       },
       {
         answer: "8",
-        nextId: 'inonceTenscorrectq27',
+        nextId: 'inonceTensHundredscorrectq27',
       },
       {
         answer: "0",
-        nextId: 'inonceTenscorrectq27',
+        nextId: 'inonceTensHundredscorrectq27',
       },
     ],
   },
   
-  onceTenscorrectq27: {
+  onceTensHundredscorrectq27: {
   botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[27],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[27],
     },
   ],
   },
-  inonceTenscorrectq27: {
+  inonceTensHundredscorrectq27: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[27],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[27],
     },
   ],
   },
   
   
   //28
-  ['onceTens'+shuffledNumbersto[27]]: {
+  ['onceTensHundreds'+shuffledNumbersto[27]]: {
   botPrompt: 'Which of the following is the sum of digits at the units and tens place in the number 56?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['9', '10', "11","12"]),
   answers: [
     {
       answer: '9',
-      nextId: 'inonceTenscorrectq28',
+      nextId: 'inonceTensHundredscorrectq28',
     },
     {
       answer: '10',
-      nextId: 'inonceTenscorrectq28',
+      nextId: 'inonceTensHundredscorrectq28',
     },
     {
       answer: "11",
-      nextId: 'onceTenscorrectq28',
+      nextId: 'onceTensHundredscorrectq28',
     },
     {
       answer: "12",
-      nextId: 'inonceTenscorrectq28',
+      nextId: 'inonceTensHundredscorrectq28',
     },
   ],
   },
   
-  onceTenscorrectq28: {
+  onceTensHundredscorrectq28: {
   botPrompt: 'Hurray! <strong>11</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[28],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[28],
     },
   ],
   },
-  inonceTenscorrectq28: {
+  inonceTensHundredscorrectq28: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"11"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[28],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[28],
     },
   ],
   },
   
   //29
-  ['onceTens'+shuffledNumbersto[28]]: {
+  ['onceTensHundreds'+shuffledNumbersto[28]]: {
   botPrompt: 'What is the sum of digits at the tens and hundreds place in the number 387?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1234,43 +1234,43 @@ day303link: {
     answers: [
       {
         answer: '6',
-        nextId: 'inonceTenscorrectq29',
+        nextId: 'inonceTensHundredscorrectq29',
       },
       {
         answer: '10',
-        nextId: 'inonceTenscorrectq29',
+        nextId: 'inonceTensHundredscorrectq29',
       },
       {
         answer: "15",
-        nextId: 'onceTenscorrectq29',
+        nextId: 'onceTensHundredscorrectq29',
       },
       {
         answer: "18",
-        nextId: 'inonceTenscorrectq29',
+        nextId: 'inonceTensHundredscorrectq29',
       },
     ],
   },
   
-  onceTenscorrectq29: {
+  onceTensHundredscorrectq29: {
   botPrompt: 'Hurray! <strong>15</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[29],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[29],
     },
   ],
   },
-  inonceTenscorrectq29: {
+  inonceTensHundredscorrectq29: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"15"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[29],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[29],
     },
   ],
   },
   
   
   //30
-  ['onceTens'+shuffledNumbersto[29]]: {
+  ['onceTensHundreds'+shuffledNumbersto[29]]: {
   botPrompt: 'What is the number formed by the digits 5, 2, and 8?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1278,42 +1278,42 @@ day303link: {
   answers: [
     {
       answer: '285',
-      nextId: 'inonceTenscorrectq30',
+      nextId: 'inonceTensHundredscorrectq30',
     },
     {
       answer: '582',
-      nextId: 'inonceTenscorrectq30',
+      nextId: 'inonceTensHundredscorrectq30',
     },
     {
       answer: "258",
-      nextId: 'onceTenscorrectq30',
+      nextId: 'onceTensHundredscorrectq30',
     },
     {
       answer: "852",
-      nextId: 'inonceTenscorrectq30',
+      nextId: 'inonceTensHundredscorrectq30',
     },
   ],
   },
 
-  onceTenscorrectq30: {
+  onceTensHundredscorrectq30: {
   botPrompt: 'Hurray! <strong>258</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[30],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[30],
     },
   ],
   },
-  inonceTenscorrectq30: {
+  inonceTensHundredscorrectq30: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"258"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[30],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[30],
     },
   ],
   },
   
   //31
-  ['onceTens'+shuffledNumbersto[30]]: {
+  ['onceTensHundreds'+shuffledNumbersto[30]]: {
   botPrompt: 'What is the sum of digits at the units place and hundreds place in the number 763?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1321,42 +1321,42 @@ day303link: {
     answers: [
       {
         answer: '7',
-        nextId: 'inonceTenscorrectq31',
+        nextId: 'inonceTensHundredscorrectq31',
       },
       {
         answer: '9',
-        nextId: 'inonceTenscorrectq31',
+        nextId: 'inonceTensHundredscorrectq31',
       },
       {
         answer: "10",
-        nextId: 'onceTenscorrectq31',
+        nextId: 'onceTensHundredscorrectq31',
       },
       {
         answer: "13",
-        nextId: 'inonceTenscorrectq31',
+        nextId: 'inonceTensHundredscorrectq31',
       },
     ],
   },
   
-  onceTenscorrectq31: {
+  onceTensHundredscorrectq31: {
   botPrompt: 'Hurray! <strong>10</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[31],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[31],
     },
   ],
   },
-  inonceTenscorrectq31: {
+  inonceTensHundredscorrectq31: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"10"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[31],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[31],
     },
   ],
   },
   
   //32
-  ['onceTens'+shuffledNumbersto[31]]: {
+  ['onceTensHundreds'+shuffledNumbersto[31]]: {
   botPrompt: 'What is the number formed by the digits 4, 6, and 2?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1364,42 +1364,42 @@ day303link: {
   answers: [
     {
       answer: '642',
-      nextId: 'inonceTenscorrectq32',
+      nextId: 'inonceTensHundredscorrectq32',
     },
     {
       answer: '426',
-      nextId: 'inonceTenscorrectq32',
+      nextId: 'inonceTensHundredscorrectq32',
     },
     {
       answer: "264",
-      nextId: 'inonceTenscorrectq32',
+      nextId: 'inonceTensHundredscorrectq32',
     },
     {
       answer: "462",
-      nextId: 'onceTenscorrectq32',
+      nextId: 'onceTensHundredscorrectq32',
     },
   ],
   },
   
-  onceTenscorrectq32: {
+  onceTensHundredscorrectq32: {
   botPrompt: 'Hurray! <strong>462</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[32],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[32],
     },
   ],
   },
-  inonceTenscorrectq32: {
+  inonceTensHundredscorrectq32: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"462"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[32],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[32],
     },
   ],
   },
   
   //33
-  ['onceTens'+shuffledNumbersto[32]]: {
+  ['onceTensHundreds'+shuffledNumbersto[32]]: {
   botPrompt: 'Which of the following is the sum of digits at the tens and units place in the number 73?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1408,42 +1408,42 @@ day303link: {
   answers: [
     {
       answer: '5',
-      nextId: 'inonceTenscorrectq33',
+      nextId: 'inonceTensHundredscorrectq33',
     },
     {
       answer: '10',
-      nextId: 'onceTenscorrectq33',
+      nextId: 'onceTensHundredscorrectq33',
     },
     {
       answer: "11",
-      nextId: 'inonceTenscorrectq33',
+      nextId: 'inonceTensHundredscorrectq33',
     },
     {
       answer: "12",
-      nextId: 'inonceTenscorrectq33',
+      nextId: 'inonceTensHundredscorrectq33',
     },
   ],
   },
   
-  onceTenscorrectq33: {
+  onceTensHundredscorrectq33: {
   botPrompt: 'Hurray! <strong>10</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[33],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[33],
     },
   ],
   },
-  inonceTenscorrectq33: {
+  inonceTensHundredscorrectq33: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"10"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[33],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[33],
     },
   ],
   },
   
   //34
-  ['onceTens'+shuffledNumbersto[33]]: {
+  ['onceTensHundreds'+shuffledNumbersto[33]]: {
   botPrompt: 'What is the number formed by the digits 9, 0, and 1?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1451,43 +1451,43 @@ day303link: {
     answers: [
       {
         answer: '109',
-        nextId: 'inonceTenscorrectq34',
+        nextId: 'inonceTensHundredscorrectq34',
       },
       {
         answer: '901',
-        nextId: 'inonceTenscorrectq34',
+        nextId: 'inonceTensHundredscorrectq34',
       },
       {
         answer: "190",
-        nextId: 'onceTenscorrectq34',
+        nextId: 'onceTensHundredscorrectq34',
       },
       {
         answer: "910",
-        nextId: 'inonceTenscorrectq34',
+        nextId: 'inonceTensHundredscorrectq34',
       },
     ],
   },
   
-  onceTenscorrectq34: {
+  onceTensHundredscorrectq34: {
   botPrompt: 'Hurray! <strong>190</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[34],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[34],
     },
   ],
   },
-  inonceTenscorrectq34: {
+  inonceTensHundredscorrectq34: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"190"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[34],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[34],
     },
   ],
   },
   
   
   //35
-  ['onceTens'+shuffledNumbersto[34]]: {
+  ['onceTensHundreds'+shuffledNumbersto[34]]: {
   botPrompt: 'What is the sum of digits at the units place and tens place in the number 48?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1496,42 +1496,42 @@ day303link: {
   answers: [
     {
       answer: '6',
-      nextId: 'inonceTenscorrectq35',
+      nextId: 'inonceTensHundredscorrectq35',
     },
     {
       answer: '8',
-      nextId: 'inonceTenscorrectq35',
+      nextId: 'inonceTensHundredscorrectq35',
     },
     {
       answer: "10",
-      nextId: 'inonceTenscorrectq35',
+      nextId: 'inonceTensHundredscorrectq35',
     },
     {
       answer: "12",
-      nextId: 'onceTenscorrectq35',
+      nextId: 'onceTensHundredscorrectq35',
     },
   ],
   },
   
-  onceTenscorrectq35: {
+  onceTensHundredscorrectq35: {
   botPrompt: 'Hurray! <strong>12</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[35],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[35],
     },
   ],
   },
-  inonceTenscorrectq35: {
+  inonceTensHundredscorrectq35: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"12"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[35],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[35],
     },
   ],
   },
   
   //36
-  ['onceTens'+shuffledNumbersto[35]]: {
+  ['onceTensHundreds'+shuffledNumbersto[35]]: {
     botPrompt: 'What is the number formed by the digits 6, 3, and 7?',
     type: RTypes.TRANSFORMED_TEXT,
   
@@ -1539,41 +1539,41 @@ day303link: {
   answers: [
     {
       answer: '367',
-      nextId: 'onceTenscorrectq36',
+      nextId: 'onceTensHundredscorrectq36',
     },
     {
       answer: '376',
-      nextId: 'inonceTenscorrectq36',
+      nextId: 'inonceTensHundredscorrectq36',
     },
     {
       answer: "736",
-      nextId: 'inonceTenscorrectq36',
+      nextId: 'inonceTensHundredscorrectq36',
     },
     {
       answer: "48",
-      nextId: 'inonceTenscorrectq36',
+      nextId: 'inonceTensHundredscorrectq36',
     },
   ],
   },
-  onceTenscorrectq36: {
+  onceTensHundredscorrectq36: {
     botPrompt: 'You Have Selected correct Anwser 🎉! <strong>367</strong> 😎',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[36],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[36],
       },
     ],
   },
-  inonceTenscorrectq36: {
+  inonceTensHundredscorrectq36: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"367"</strong>',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[36],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[36],
       },
     ],
   },
   
   //37
-  ['onceTens'+shuffledNumbersto[36]]: {
+  ['onceTensHundreds'+shuffledNumbersto[36]]: {
   botPrompt: 'Which of the following is the sum of digits at the hundreds and units place in the number 549?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1581,41 +1581,41 @@ day303link: {
   answers: [
     {
       answer: '8',
-      nextId: 'inonceTenscorrectq37',
+      nextId: 'inonceTensHundredscorrectq37',
     },
     {
       answer: '9',
-      nextId: 'onceTenscorrectq37',
+      nextId: 'onceTensHundredscorrectq37',
     },
     {
       answer: "10",
-      nextId: 'inonceTenscorrectq37',
+      nextId: 'inonceTensHundredscorrectq37',
     },
     {
       answer: "14",
-      nextId: 'inonceTenscorrectq37',
+      nextId: 'inonceTensHundredscorrectq37',
     },
   ],
   },
-  onceTenscorrectq37: {
+  onceTensHundredscorrectq37: {
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>9</strong> 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[37],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[37],
     },
   ],
   },
-  inonceTenscorrectq37: {
+  inonceTensHundredscorrectq37: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"9"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[37],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[37],
     },
   ],
   },
   
   //38
-  ['onceTens'+shuffledNumbersto[37]]: {
+  ['onceTensHundreds'+shuffledNumbersto[37]]: {
   botPrompt: 'What is the largest number formed by the digits 8, 5, and 2?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1623,165 +1623,165 @@ day303link: {
     answers: [
       {
         answer: '285',
-        nextId: 'inonceTenscorrectq38',
+        nextId: 'inonceTensHundredscorrectq38',
       },
       {
         answer: '852',
-        nextId: 'onceTenscorrectq38',
+        nextId: 'onceTensHundredscorrectq38',
       },
       {
         answer: "528",
-        nextId: 'inonceTenscorrectq38',
+        nextId: 'inonceTensHundredscorrectq38',
       },
       {
         answer: "582",
-        nextId: 'inonceTenscorrectq38',
+        nextId: 'inonceTensHundredscorrectq38',
       },
     ],
   },
-  onceTenscorrectq38: {
+  onceTensHundredscorrectq38: {
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>852</strong> 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[38],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[38],
     },
   ],
   },
-  inonceTenscorrectq38: {
+  inonceTensHundredscorrectq38: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"852"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[38],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[38],
     },
   ],
   },
   
   //39
-  ['onceTens'+shuffledNumbersto[38]]: {
+  ['onceTensHundreds'+shuffledNumbersto[38]]: {
   botPrompt: 'What is the sum of digits at the tens place and units place in the number 37?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['3', '7', "10","13"]),
   answers: [
     {
       answer: '3',
-      nextId: 'inonceTenscorrectq310',
+      nextId: 'inonceTensHundredscorrectq310',
     },
     {
       answer: '7',
-      nextId: 'inonceTenscorrectq39',
+      nextId: 'inonceTensHundredscorrectq39',
     },
     {
       answer: "10",
-      nextId: 'onceTenscorrectq39',
+      nextId: 'onceTensHundredscorrectq39',
     },
     {
       answer: "13",
-      nextId: 'inonceTenscorrectq39',
+      nextId: 'inonceTensHundredscorrectq39',
     },
   ],
   },
-  onceTenscorrectq39: {
+  onceTensHundredscorrectq39: {
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>10</strong> Answers! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[39],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[39],
     },
   ],
   },
-  inonceTenscorrectq39: {
+  inonceTensHundredscorrectq39: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"10"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[39],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[39],
     },
   ],
   },
   
   //40
-  ['onceTens'+shuffledNumbersto[39]]: {
+  ['onceTensHundreds'+shuffledNumbersto[39]]: {
   botPrompt: 'What is the number at the units place in the number 43?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['3', '4', "5","32"]),
     answers: [
       {
         answer: '3',
-        nextId: 'onceTenscorrectq40',
+        nextId: 'onceTensHundredscorrectq40',
       },
       {
         answer: '4',
-        nextId: 'inonceTenscorrectq40',
+        nextId: 'inonceTensHundredscorrectq40',
       },
       {
         answer: "5",
-        nextId: 'inonceTenscorrectq40',
+        nextId: 'inonceTensHundredscorrectq40',
       },
       {
         answer: "6",
-        nextId: 'inonceTenscorrectq40',
+        nextId: 'inonceTensHundredscorrectq40',
       },
     ],
   },
-  onceTenscorrectq40: {
+  onceTensHundredscorrectq40: {
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>3</strong> 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[40],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[40],
     },
   ],
   },
-  inonceTenscorrectq40: {
+  inonceTensHundredscorrectq40: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"3"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[40],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[40],
     },
   ],
   },
   
   //41
-  ["onceTens"+shuffledNumbersto[40]]: {
+  ["onceTensHundreds"+shuffledNumbersto[40]]: {
     botPrompt: 'What is the number at the tens place in the number 65?',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['4', '5', "6","7"]),
     answers: [
       {
         answer: '4',
-        nextId: 'inonceTenscorrectq41',
+        nextId: 'inonceTensHundredscorrectq41',
       },
       {
         answer: '5',
-        nextId: 'onceTenscorrectq41',
+        nextId: 'onceTensHundredscorrectq41',
       },
       {
         answer: "6",
-        nextId: 'inonceTenscorrectq41',
+        nextId: 'inonceTensHundredscorrectq41',
       },
       {
         answer: "7",
-        nextId: 'inonceTenscorrectq41',
+        nextId: 'inonceTensHundredscorrectq41',
       },
     ],
   },
-  onceTenscorrectq41: {
+  onceTensHundredscorrectq41: {
     botPrompt: 'Hurray <strong>5</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[41],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[41],
       },
     ],
   },
-  inonceTenscorrectq41: {
+  inonceTensHundredscorrectq41: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[41],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[41],
       },
     ],
   },
   
   //42
   
-  ['onceTens'+shuffledNumbersto[41]]: {
+  ['onceTensHundreds'+shuffledNumbersto[41]]: {
     botPrompt: 'What is the sum of digits at the units place and tens place in the number 28?',
     type: RTypes.TRANSFORMED_TEXT,
   
@@ -1789,42 +1789,42 @@ day303link: {
     answers: [
       {
         answer: '6',
-        nextId: 'inonceTenscorrectq42',
+        nextId: 'inonceTensHundredscorrectq42',
       },
       {
         answer: '7',
-        nextId: 'inonceTenscorrectq42',
+        nextId: 'inonceTensHundredscorrectq42',
       },
       {
         answer: "8",
-        nextId: 'onceTenscorrectq42',
+        nextId: 'onceTensHundredscorrectq42',
       },
       {
         answer: "9",
-        nextId: 'inonceTenscorrectq42',
+        nextId: 'inonceTensHundredscorrectq42',
       },
     ],
   },
   
-  onceTenscorrectq42: {
+  onceTensHundredscorrectq42: {
     botPrompt: 'Hurray! <strong>8</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[42],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[42],
       },
     ],
   },
-  inonceTenscorrectq42: {
+  inonceTensHundredscorrectq42: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"8"</strong>',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[42],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[42],
       },
     ],
   },
   
   //43
-  ['onceTens'+shuffledNumbersto[42]]: {
+  ['onceTensHundreds'+shuffledNumbersto[42]]: {
   botPrompt: "What is the number at the units place in the number 91?",
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1832,42 +1832,42 @@ day303link: {
     answers: [
       {
         answer: '0',
-        nextId: 'inonceTenscorrectq43',
+        nextId: 'inonceTensHundredscorrectq43',
       },
       {
         answer: '1',
-        nextId: 'onceTenscorrectq43',
+        nextId: 'onceTensHundredscorrectq43',
       },
       {
         answer: "2",
-        nextId: 'inonceTenscorrectq43',
+        nextId: 'inonceTensHundredscorrectq43',
       },
       {
         answer: "3",
-        nextId: 'inonceTenscorrectq43',
+        nextId: 'inonceTensHundredscorrectq43',
       },
     ],
   },
   
-  onceTenscorrectq43: {
+  onceTensHundredscorrectq43: {
   botPrompt: 'Hurray! <strong>1</strong> is the correct answer ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[43],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[43],
     },
   ],
   },
-  inonceTenscorrectq43: {
+  inonceTensHundredscorrectq43: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"1"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[43],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[43],
     },
   ],
   },
   
   //44
-  ['onceTens'+shuffledNumbersto[43]]: {
+  ['onceTensHundreds'+shuffledNumbersto[43]]: {
   botPrompt: 'What is the number at the tens place in the number 25?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1875,42 +1875,42 @@ day303link: {
     answers: [
       {
         answer: '2',
-        nextId: 'onceTenscorrectq44',
+        nextId: 'onceTensHundredscorrectq44',
       },
       {
         answer: '5',
-        nextId: 'inonceTenscorrectq44',
+        nextId: 'inonceTensHundredscorrectq44',
       },
       {
         answer: "8",
-        nextId: 'inonceTenscorrectq44',
+        nextId: 'inonceTensHundredscorrectq44',
       },
       {
         answer: "9",
-        nextId: 'inonceTenscorrectq44',
+        nextId: 'inonceTensHundredscorrectq44',
       },
     ],
   },
   
-  onceTenscorrectq44: {
+  onceTensHundredscorrectq44: {
   botPrompt: 'Hurray! <strong>2</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[44],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[44],
     },
   ],
   },
-  inonceTenscorrectq44: {
+  inonceTensHundredscorrectq44: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"2"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[44],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[44],
     },
   ],
   },
   
   //45
-  ['onceTens'+shuffledNumbersto[44]]: {
+  ['onceTensHundreds'+shuffledNumbersto[44]]: {
   botPrompt: 'What is the sum of digits at the units place and tens place in the number 57?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1918,84 +1918,84 @@ day303link: {
     answers: [
       {
         answer: '11',
-        nextId: 'inonceTenscorrectq45',
+        nextId: 'inonceTensHundredscorrectq45',
       },
       {
         answer: '12',
-        nextId: 'onceTenscorrectq45',
+        nextId: 'onceTensHundredscorrectq45',
       },
       {
         answer: "13",
-        nextId: 'inonceTenscorrectq45',
+        nextId: 'inonceTensHundredscorrectq45',
       },
       {
         answer: "14",
-        nextId: 'inonceTenscorrectq45',
+        nextId: 'inonceTensHundredscorrectq45',
       },
     ],
   },
   
-  onceTenscorrectq45: {
+  onceTensHundredscorrectq45: {
   botPrompt: 'Hurray! <strong>12</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[45],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[45],
     },
   ],
   },
-  inonceTenscorrectq45: {
+  inonceTensHundredscorrectq45: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"12"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[45],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[45],
     },
   ],
   },
   
   //46
-  ['onceTens'+shuffledNumbersto[45]]: {
+  ['onceTensHundreds'+shuffledNumbersto[45]]: {
   botPrompt: 'What is the number at the units place in the number 76?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['5', '6', "7","8"]),
     answers: [
       {
         answer: '5',
-        nextId: 'inonceTenscorrectq46',
+        nextId: 'inonceTensHundredscorrectq46',
       },
       {
         answer: '6',
-        nextId: 'onceTenscorrectq46',
+        nextId: 'onceTensHundredscorrectq46',
       },
       {
         answer: "7",
-        nextId: 'inonceTenscorrectq46',
+        nextId: 'inonceTensHundredscorrectq46',
       },
       {
         answer: "8",
-        nextId: 'inonceTenscorrectq46',
+        nextId: 'inonceTensHundredscorrectq46',
       },
     ],
   },
   
-  onceTenscorrectq46: {
+  onceTensHundredscorrectq46: {
   botPrompt: 'Hurray! <strong>6</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[46],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[46],
     },
   ],
   },
-  inonceTenscorrectq46: {
+  inonceTensHundredscorrectq46: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"6"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[46],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[46],
     },
   ],
   },
   
   //47
-  ['onceTens'+shuffledNumbersto[46]]: {
+  ['onceTensHundreds'+shuffledNumbersto[46]]: {
   botPrompt: 'What is the number at the tens place in the number 38?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -2003,43 +2003,43 @@ day303link: {
     answers: [
       {
         answer: '3',
-        nextId: 'onceTenscorrectq47',
+        nextId: 'onceTensHundredscorrectq47',
       },
       {
         answer: '5',
-        nextId: 'inonceTenscorrectq47',
+        nextId: 'inonceTensHundredscorrectq47',
       },
       {
         answer: "8",
-        nextId: 'inonceTenscorrectq47',
+        nextId: 'inonceTensHundredscorrectq47',
       },
       {
         answer: "9",
-        nextId: 'inonceTenscorrectq47',
+        nextId: 'inonceTensHundredscorrectq47',
       },
     ],
   },
   
-  onceTenscorrectq47: {
+  onceTensHundredscorrectq47: {
   botPrompt: 'Hurray! <strong>3</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[47],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[47],
     },
   ],
   },
-  inonceTenscorrectq47: {
+  inonceTensHundredscorrectq47: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"3"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[47],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[47],
     },
   ],
   },
 
 
   //48
-  ['onceTens'+shuffledNumbersto[47]]: {
+  ['onceTensHundreds'+shuffledNumbersto[47]]: {
   botPrompt: 'What is the sum of digits at the units place and tens place in the number 39?',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -2047,42 +2047,42 @@ day303link: {
     answers: [
       {
         answer: '9',
-        nextId: 'onceTenscorrectq48',
+        nextId: 'onceTensHundredscorrectq48',
       },
       {
         answer: '11',
-        nextId: 'inonceTenscorrectq48',
+        nextId: 'inonceTensHundredscorrectq48',
       },
       {
         answer: "13",
-        nextId: 'inonceTenscorrectq48',
+        nextId: 'inonceTensHundredscorrectq48',
       },
       {
         answer: "15",
-        nextId: 'inonceTenscorrectq48',
+        nextId: 'inonceTensHundredscorrectq48',
       },
     ],
   },
   
-  onceTenscorrectq48: {
+  onceTensHundredscorrectq48: {
   botPrompt: 'Hurray! <strong>9</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[48],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[48],
     },
   ],
   },
-  inonceTenscorrectq48: {
+  inonceTensHundredscorrectq48: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"9"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[48],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[48],
     },
   ],
   },
   
   //49
-  ['onceTens'+shuffledNumbersto[48]]: {
+  ['onceTensHundreds'+shuffledNumbersto[48]]: {
   botPrompt: 'What is the sum of digits at the units place and tens place in the number 39?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -2090,43 +2090,43 @@ day303link: {
     answers: [
       {
         answer: '9',
-        nextId: 'onceTenscorrectq49',
+        nextId: 'onceTensHundredscorrectq49',
       },
       {
         answer: '11',
-        nextId: 'inonceTenscorrectq49',
+        nextId: 'inonceTensHundredscorrectq49',
       },
       {
         answer: "13",
-        nextId: 'inonceTenscorrectq49',
+        nextId: 'inonceTensHundredscorrectq49',
       },
       {
         answer: "15",
-        nextId: 'inonceTenscorrectq49',
+        nextId: 'inonceTensHundredscorrectq49',
       },
     ],
   },
   
-  onceTenscorrectq49: {
+  onceTensHundredscorrectq49: {
   botPrompt: 'Hurray! <strong>9</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[49],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[49],
     },
   ],
   },
-  inonceTenscorrectq49: {
+  inonceTensHundredscorrectq49: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"9"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[49],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[49],
     },
   ],
   },
   
   
   //50
-  ['onceTens'+shuffledNumbersto[49]]: {
+  ['onceTensHundreds'+shuffledNumbersto[49]]: {
   botPrompt: 'What is the number at the units place in the number 52?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -2134,42 +2134,42 @@ day303link: {
     answers: [
       {
         answer: '2',
-        nextId: 'inonceTenscorrectq50',
+        nextId: 'inonceTensHundredscorrectq50',
       },
       {
         answer: '5',
-        nextId: 'onceTenscorrectq50',
+        nextId: 'onceTensHundredscorrectq50',
       },
       {
         answer: "7",
-        nextId: 'inonceTenscorrectq50',
+        nextId: 'inonceTensHundredscorrectq50',
       },
       {
         answer: "9",
-        nextId: 'inonceTenscorrectq50',
+        nextId: 'inonceTensHundredscorrectq50',
       },
     ],
   },
   
-  onceTenscorrectq50: {
+  onceTensHundredscorrectq50: {
   botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[50],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[50],
     },
   ],
   },
-  inonceTenscorrectq50: {
+  inonceTensHundredscorrectq50: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[50],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[50],
     },
   ],
   },
   
   //51
-  ['onceTens'+shuffledNumbersto[50]]: {
+  ['onceTensHundreds'+shuffledNumbersto[50]]: {
   botPrompt: 'What is the number at the tens place in the number 74?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -2177,84 +2177,84 @@ day303link: {
     answers: [
       {
         answer: '7',
-        nextId: 'inonceTenscorrectq51',
+        nextId: 'inonceTensHundredscorrectq51',
       },
       {
         answer: '6',
-        nextId: 'inonceTenscorrectq51',
+        nextId: 'inonceTensHundredscorrectq51',
       },
       {
         answer: "7",
-        nextId: 'onceTenscorrectq51',
+        nextId: 'onceTensHundredscorrectq51',
       },
       {
         answer: "9",
-        nextId: 'inonceTenscorrectq51',
+        nextId: 'inonceTensHundredscorrectq51',
       },
     ],
   },
   
-  onceTenscorrectq51: {
+  onceTensHundredscorrectq51: {
   botPrompt: 'Hurray! <strong>4</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[51],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[51],
     },
   ],
   },
-  inonceTenscorrectq51: {
+  inonceTensHundredscorrectq51: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[51],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[51],
     },
   ],
   },
   
   //52
-  ['onceTens'+shuffledNumbersto[51]]: {
+  ['onceTensHundreds'+shuffledNumbersto[51]]: {
   botPrompt: 'What is the sum of digits at the units place and tens place in the number 43?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['7', '8', "9","10"]),
     answers: [
       {
         answer: '7',
-        nextId: 'onceTenscorrectq52',
+        nextId: 'onceTensHundredscorrectq52',
       },
       {
         answer: '8',
-        nextId: 'inonceTenscorrectq52',
+        nextId: 'inonceTensHundredscorrectq52',
       },
       {
         answer: "9",
-        nextId: 'inonceTenscorrectq52',
+        nextId: 'inonceTensHundredscorrectq52',
       },
       {
         answer: "10",
-        nextId: 'inonceTenscorrectq52',
+        nextId: 'inonceTensHundredscorrectq52',
       },
     ],
   },
   
-  onceTenscorrectq52: {
+  onceTensHundredscorrectq52: {
   botPrompt: 'Hurray! <strong>7</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[52],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[52],
     },
   ],
   },
-  inonceTenscorrectq52: {
+  inonceTensHundredscorrectq52: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"7"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[52],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[52],
     },
   ],
   },
   
   //53
-  ['onceTens'+shuffledNumbersto[52]]: {
+  ['onceTensHundreds'+shuffledNumbersto[52]]: {
   botPrompt: 'What is the number at the units place in the number 85?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -2262,42 +2262,42 @@ day303link: {
     answers: [
       {
         answer: '3',
-        nextId: 'inonceTenscorrectq53',
+        nextId: 'inonceTensHundredscorrectq53',
       },
       {
         answer: '5',
-        nextId: 'onceTenscorrectq53',
+        nextId: 'onceTensHundredscorrectq53',
       },
       {
         answer: "8",
-        nextId: 'inonceTenscorrectq53',
+        nextId: 'inonceTensHundredscorrectq53',
       },
       {
         answer: "9",
-        nextId: 'inonceTenscorrectq53',
+        nextId: 'inonceTensHundredscorrectq53',
       },
     ],
   },
 
-  onceTenscorrectq53: {
+  onceTensHundredscorrectq53: {
   botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[53],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[53],
     },
   ],
   },
-  inonceTenscorrectq53: {
+  inonceTensHundredscorrectq53: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[53],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[53],
     },
   ],
   },
   
   //54
-  ['onceTens'+shuffledNumbersto[53]]: {
+  ['onceTensHundreds'+shuffledNumbersto[53]]: {
   botPrompt: 'What is the number at the tens place in the number 36?',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -2305,43 +2305,43 @@ day303link: {
     answers: [
       {
         answer: '2',
-        nextId: 'inonceTenscorrectq54',
+        nextId: 'inonceTensHundredscorrectq54',
       },
       {
         answer: '3',
-        nextId: 'onceTenscorrectq54',
+        nextId: 'onceTensHundredscorrectq54',
       },
       {
         answer: "6",
-        nextId: 'inonceTenscorrectq54',
+        nextId: 'inonceTensHundredscorrectq54',
       },
       {
         answer: "8",
-        nextId: 'inonceTenscorrectq54',
+        nextId: 'inonceTensHundredscorrectq54',
       },
     ],
   },
   
-  onceTenscorrectq54: {
+  onceTensHundredscorrectq54: {
   botPrompt: 'Hurray! <strong>3</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[54],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[54],
     },
   ],
   },
-  inonceTenscorrectq54: {
+  inonceTensHundredscorrectq54: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"3"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[54],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[54],
     },
   ],
   },
   
   
   //55
-  ['onceTens'+shuffledNumbersto[54]]: {
+  ['onceTensHundreds'+shuffledNumbersto[54]]: {
   botPrompt: 'What is the sum of digits at the units place and tens place in the number 61?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -2349,330 +2349,330 @@ day303link: {
     answers: [
       {
         answer: '6',
-        nextId: 'inonceTenscorrectq55',
+        nextId: 'inonceTensHundredscorrectq55',
       },
       {
         answer: '7',
-        nextId: 'inonceTenscorrectq55',
+        nextId: 'inonceTensHundredscorrectq55',
       },
       {
         answer: "8",
-        nextId: 'onceTenscorrectq55',
+        nextId: 'onceTensHundredscorrectq55',
       },
       {
         answer: "9",
-        nextId: 'inonceTenscorrectq55',
+        nextId: 'inonceTensHundredscorrectq55',
       },
     ],
   },
   
-  onceTenscorrectq55: {
+  onceTensHundredscorrectq55: {
   botPrompt: 'Hurray! <strong>8</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[55],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[55],
     },
   ],
   },
-  inonceTenscorrectq55: {
+  inonceTensHundredscorrectq55: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"8"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[55],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[55],
     },
   ],
   },
   
   //56
-  ['onceTens'+shuffledNumbersto[55]]: {
+  ['onceTensHundreds'+shuffledNumbersto[55]]: {
     botPrompt: 'What is the value of the digit in the units place in the number 537?',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['3', '5', "7","9"]),
     answers: [
       {
         answer: '3',
-        nextId: 'inonceTenscorrectq56',
+        nextId: 'inonceTensHundredscorrectq56',
       },
       {
         answer: '5',
-        nextId: 'inonceTenscorrectq56',
+        nextId: 'inonceTensHundredscorrectq56',
       },
       {
         answer: "7",
-        nextId: 'onceTenscorrectq56',
+        nextId: 'onceTensHundredscorrectq56',
       },
       {
         answer: "9",
-        nextId: 'inonceTenscorrectq56',
+        nextId: 'inonceTensHundredscorrectq56',
       },
     ],
   },
-  onceTenscorrectq56: {
+  onceTensHundredscorrectq56: {
     botPrompt: 'You Have Selected correct Anwser 🎉! <strong>7</strong> 😎',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[56],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[56],
       },
     ],
   },
-  inonceTenscorrectq56: {
+  inonceTensHundredscorrectq56: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"7"</strong>',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[56],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[56],
       },
     ],
   },
 
   //57
-  ['onceTens'+shuffledNumbersto[56]]: {
+  ['onceTensHundreds'+shuffledNumbersto[56]]: {
   botPrompt: 'What is the value of the digit in the tens place in the number 864?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['4', '6', "8","3"]),
     answers: [
       {
         answer: '4',
-        nextId: 'inonceTenscorrectq57',
+        nextId: 'inonceTensHundredscorrectq57',
       },
       {
         answer: '6',
-        nextId: 'onceTenscorrectq57',
+        nextId: 'onceTensHundredscorrectq57',
       },
       {
         answer: "8",
-        nextId: 'inonceTenscorrectq57',
+        nextId: 'inonceTensHundredscorrectq57',
       },
       {
         answer: "3",
-        nextId: 'inonceTenscorrectq57',
+        nextId: 'inonceTensHundredscorrectq57',
       },
     ],
   },
-  onceTenscorrectq57: {
+  onceTensHundredscorrectq57: {
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>6</strong> 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[57],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[57],
     },
   ],
   },
-  inonceTenscorrectq57: {
+  inonceTensHundredscorrectq57: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"6"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[57],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[57],
     },
   ],
   },
   
   //58
-  ['onceTens'+shuffledNumbersto[57]]: {
+  ['onceTensHundreds'+shuffledNumbersto[57]]: {
   botPrompt: 'What number can be formed by using the digits 2 and 7 at units and tens place respectively?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['72', '27', "52","25"]),
   answers: [
     {
       answer: '72',
-      nextId: 'inonceTenscorrectq58',
+      nextId: 'inonceTensHundredscorrectq58',
     },
     {
       answer: '27',
-      nextId: 'onceTenscorrectq58',
+      nextId: 'onceTensHundredscorrectq58',
     },
     {
       answer: "52",
-      nextId: 'inonceTenscorrectq58',
+      nextId: 'inonceTensHundredscorrectq58',
     },
     {
       answer: "25",
-      nextId: 'inonceTenscorrectq58',
+      nextId: 'inonceTensHundredscorrectq58',
     },
   ],
   },
-  onceTenscorrectq58: {
+  onceTensHundredscorrectq58: {
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>27</strong> 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[58],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[58],
     },
   ],
   },
-  inonceTenscorrectq58: {
+  inonceTensHundredscorrectq58: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"27"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[58],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[58],
     },
   ],
   },
   
   //59
-  ['onceTens'+shuffledNumbersto[58]]: {
+  ['onceTensHundreds'+shuffledNumbersto[58]]: {
   botPrompt: 'What is the sum of the digits at units and tens place in the number 458?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['12', '13', "14","9"]),
     answers: [
       {
         answer: '12',
-        nextId: 'onceTenscorrectq57',
+        nextId: 'onceTensHundredscorrectq57',
       },
       {
         answer: '13',
-        nextId: 'inonceTenscorrectq57',
+        nextId: 'inonceTensHundredscorrectq57',
       },
       {
         answer: "11",
-        nextId: 'inonceTenscorrectq57',
+        nextId: 'inonceTensHundredscorrectq57',
       },
       {
         answer: "9",
-        nextId: 'inonceTenscorrectq57',
+        nextId: 'inonceTensHundredscorrectq57',
       },
     ],
   },
-  onceTenscorrectq59: {
+  onceTensHundredscorrectq59: {
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>12</strong> Answers! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[59],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[59],
     },
   ],
   },
-  inonceTenscorrectq59: {
+  inonceTensHundredscorrectq59: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"12"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[59],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[59],
     },
   ],
   },
   
   //60
-  ['onceTens'+shuffledNumbersto[59]]: {
+  ['onceTensHundreds'+shuffledNumbersto[59]]: {
   botPrompt: 'What is the largest possible number that can be formed using the digits 5 and 8 at units place?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['85', '58', "95","59"]),
   answers: [
     {
       answer: '85',
-      nextId: 'inonceTenscorrectq60',
+      nextId: 'inonceTensHundredscorrectq60',
     },
     {
       answer: '58',
-      nextId: 'onceTenscorrectq60',
+      nextId: 'onceTensHundredscorrectq60',
     },
     {
       answer: "95",
-      nextId: 'inonceTenscorrectq60',
+      nextId: 'inonceTensHundredscorrectq60',
     },
     {
       answer: "59",
-      nextId: 'inonceTenscorrectq60',
+      nextId: 'inonceTensHundredscorrectq60',
     },
   ],
   },
-  onceTenscorrectq20: {
+  onceTensHundredscorrectq20: {
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>58</strong> 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[60],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[60],
     },
   ],
   },
-  inonceTenscorrectq20: {
+  inonceTensHundredscorrectq20: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"58"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[60],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[60],
     },
   ],
   },
   
   //61
-  ["onceTens"+shuffledNumbersto[60]]: {
+  ["onceTensHundreds"+shuffledNumbersto[60]]: {
     botPrompt: 'What is the smallest possible number that can be formed using the digits 2 and 6 at tens place?',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['26', '62', "20","6"]),
     answers: [
       {
         answer: '26',
-        nextId: 'onceTenscorrectq61',
+        nextId: 'onceTensHundredscorrectq61',
       },
       {
         answer: '62',
-        nextId: 'inonceTenscorrectq61',
+        nextId: 'inonceTensHundredscorrectq61',
       },
       {
         answer: "20",
-        nextId: 'inonceTenscorrectq61',
+        nextId: 'inonceTensHundredscorrectq61',
       },
       {
         answer: "6",
-        nextId: 'inonceTenscorrectq61',
+        nextId: 'inonceTensHundredscorrectq61',
       },
     ],
   },
-  onceTenscorrectq61: {
+  onceTensHundredscorrectq61: {
     botPrompt: 'Hurray <strong>26</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[61],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[61],
       },
     ],
   },
-  inonceTenscorrectq61: {
+  inonceTensHundredscorrectq61: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"26"</strong>',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[61],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[61],
       },
     ],
   },
   
   //62
-  ['onceTens'+shuffledNumbersto[61]]: {
+  ['onceTensHundreds'+shuffledNumbersto[61]]: {
     botPrompt: 'What is the sum of the digits at units and tens place in the number 973?',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['10', '18', "19","16"]),
     answers: [
       {
         answer: '10',
-        nextId: 'inonceTenscorrectq62',
+        nextId: 'inonceTensHundredscorrectq62',
       },
       {
         answer: '18',
-        nextId: 'inonceTenscorrectq62',
+        nextId: 'inonceTensHundredscorrectq62',
       },
       {
         answer: "19",
-        nextId: 'inonceTenscorrectq62',
+        nextId: 'inonceTensHundredscorrectq62',
       },
       {
         answer: "16",
-        nextId: 'onceTenscorrectq62',
+        nextId: 'onceTensHundredscorrectq62',
       },
     ],
   },
   
-  onceTenscorrectq62: {
+  onceTensHundredscorrectq62: {
     botPrompt: 'Hurray! <strong>16</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[62],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[62],
       },
     ],
   },
-  inonceTenscorrectq62: {
+  inonceTensHundredscorrectq62: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"16"</strong>',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[62],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[62],
       },
     ],
   },
   
   //63
-  ['onceTens'+shuffledNumbersto[62]]: {
+  ['onceTensHundreds'+shuffledNumbersto[62]]: {
   botPrompt: "What is the value of the digit in the units place in the number 674?",
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -2680,42 +2680,42 @@ day303link: {
     answers: [
       {
         answer: '3',
-        nextId: 'inonceTenscorrectq63',
+        nextId: 'inonceTensHundredscorrectq63',
       },
       {
         answer: '6',
-        nextId: 'inonceTenscorrectq63',
+        nextId: 'inonceTensHundredscorrectq63',
       },
       {
         answer: "4",
-        nextId: 'onceTenscorrectq63',
+        nextId: 'onceTensHundredscorrectq63',
       },
       {
         answer: "7",
-        nextId: 'inonceTenscorrectq63',
+        nextId: 'inonceTensHundredscorrectq63',
       },
     ],
   },
   
-  onceTenscorrectq63: {
+  onceTensHundredscorrectq63: {
   botPrompt: 'Hurray! <strong>4</strong> is the correct answer ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[63],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[63],
     },
   ],
   },
-  inonceTenscorrectq63: {
+  inonceTensHundredscorrectq63: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[63],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[63],
     },
   ],
   },
 
   //64
-  ['onceTens'+shuffledNumbersto[63]]: {
+  ['onceTensHundreds'+shuffledNumbersto[63]]: {
   botPrompt: 'What is the value of the digit in the tens place in the number 157?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -2723,42 +2723,42 @@ day303link: {
   answers: [
     {
       answer: '1',
-      nextId: 'inonceTenscorrectq64',
+      nextId: 'inonceTensHundredscorrectq64',
     },
     {
       answer: '5',
-      nextId: 'onceTenscorrectq64',
+      nextId: 'onceTensHundredscorrectq64',
     },
     {
       answer: "7",
-      nextId: 'inonceTenscorrectq64',
+      nextId: 'inonceTensHundredscorrectq64',
     },
     {
       answer: "9",
-      nextId: 'inonceTenscorrectq64',
+      nextId: 'inonceTensHundredscorrectq64',
     },
   ],
   },
   
-  onceTenscorrectq64: {
+  onceTensHundredscorrectq64: {
   botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[64],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[64],
     },
   ],
   },
-  inonceTenscorrectq2: {
+  inonceTensHundredscorrectq2: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[64],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[64],
     },
   ],
   },
   
   //65
-  ['onceTens'+shuffledNumbersto[64]]: {
+  ['onceTensHundreds'+shuffledNumbersto[64]]: {
   botPrompt: 'What number can be formed by using the digits 3 and 6 at units and tens place respectively?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -2766,42 +2766,42 @@ day303link: {
     answers: [
       {
         answer: '36',
-        nextId: 'inonceTenscorrectq65',
+        nextId: 'inonceTensHundredscorrectq65',
       },
       {
         answer: '63',
-        nextId: 'onceTenscorrectq65',
+        nextId: 'onceTensHundredscorrectq65',
       },
       {
         answer: "32",
-        nextId: 'inonceTenscorrectq65',
+        nextId: 'inonceTensHundredscorrectq65',
       },
       {
         answer: "23",
-        nextId: 'inonceTenscorrectq65',
+        nextId: 'inonceTensHundredscorrectq65',
       },
     ],
   },
   
-  onceTenscorrectq65: {
+  onceTensHundredscorrectq65: {
   botPrompt: 'Hurray! <strong>63</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[65],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[65],
     },
   ],
   },
-  inonceTenscorrectq65: {
+  inonceTensHundredscorrectq65: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"63"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[65],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[65],
     },
   ],
   },
   
   //66
-  ['onceTens'+shuffledNumbersto[65]]: {
+  ['onceTensHundreds'+shuffledNumbersto[65]]: {
   botPrompt: 'What is the sum of the digits at units and tens place in the number 538?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -2809,85 +2809,85 @@ day303link: {
   answers: [
     {
       answer: '11',
-      nextId: 'onceTenscorrectq66',
+      nextId: 'onceTensHundredscorrectq66',
     },
     {
       answer: '16',
-      nextId: 'inonceTenscorrectq66',
+      nextId: 'inonceTensHundredscorrectq66',
     },
     {
       answer: "13",
-      nextId: 'inonceTenscorrectq66',
+      nextId: 'inonceTensHundredscorrectq66',
     },
     {
       answer: "14",
-      nextId: 'inonceTenscorrectq66',
+      nextId: 'inonceTensHundredscorrectq66',
     },
   ],
   },
   
-  onceTenscorrectq66: {
+  onceTensHundredscorrectq66: {
   botPrompt: 'Hurray! <strong>11</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[66],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[66],
     },
   ],
   },
-  inonceTenscorrectq66: {
+  inonceTensHundredscorrectq66: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"11"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[66],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[66],
     },
   ],
   },
   
   //67
-  ['onceTens'+shuffledNumbersto[66]]: {
+  ['onceTensHundreds'+shuffledNumbersto[66]]: {
   botPrompt: 'What is the number with 4 in the units place and 6 in the tens place?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['46', '64', "56","54"]),
   answers: [
     {
       answer: '46',
-      nextId: 'onceTenscorrectq67',
+      nextId: 'onceTensHundredscorrectq67',
     },
     {
       answer: '64',
-      nextId: 'inonceTenscorrectq67',
+      nextId: 'inonceTensHundredscorrectq67',
     },
     {
       answer: "56",
-      nextId: 'inonceTenscorrectq67',
+      nextId: 'inonceTensHundredscorrectq67',
     },
     {
       answer: "54",
-      nextId: 'inonceTenscorrectq67',
+      nextId: 'inonceTensHundredscorrectq67',
     },
   ],
   },
   
-  onceTenscorrectq67: {
+  onceTensHundredscorrectq67: {
   botPrompt: 'Hurray! <strong>46</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[67],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[67],
     },
   ],
   },
-  inonceTenscorrectq67: {
+  inonceTensHundredscorrectq67: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"46"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[67],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[67],
     },
   ],
   },
   
   
   //68
-  ['onceTens'+shuffledNumbersto[67]]: {
+  ['onceTensHundreds'+shuffledNumbersto[67]]: {
   botPrompt: 'Which of these numbers has a digit sum of 8 in the units and tens place?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -2896,85 +2896,85 @@ day303link: {
     answers: [
       {
         answer: '44',
-        nextId: 'onceTenscorrectq68',
+        nextId: 'onceTensHundredscorrectq68',
       },
       {
         answer: '17',
-        nextId: 'inonceTenscorrectq68',
+        nextId: 'inonceTensHundredscorrectq68',
       },
       {
         answer: "53",
-        nextId: 'inonceTenscorrectq68',
+        nextId: 'inonceTensHundredscorrectq68',
       },
       {
         answer: "26",
-        nextId: 'inonceTenscorrectq68',
+        nextId: 'inonceTensHundredscorrectq68',
       },
     ],
   },
   
-  onceTenscorrectq68: {
+  onceTensHundredscorrectq68: {
   botPrompt: 'Hurray! <strong>44</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[68],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[68],
     },
   ],
   },
-  inonceTenscorrectq68: {
+  inonceTensHundredscorrectq68: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"44"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[68],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[68],
     },
   ],
   },
   
   //69
-  ['onceTens'+shuffledNumbersto[68]]: {
+  ['onceTensHundreds'+shuffledNumbersto[68]]: {
   botPrompt: 'What is the number with 5 in the units place, 6 in the tens place, and 3 in the hundreds place?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['653', '536', "365","356"]),
   answers: [
     {
       answer: '653',
-      nextId: 'inonceTenscorrectq69',
+      nextId: 'inonceTensHundredscorrectq69',
     },
     {
       answer: '536',
-      nextId: 'inonceTenscorrectq69',
+      nextId: 'inonceTensHundredscorrectq69',
     },
     {
       answer: "365",
-      nextId: 'inonceTenscorrectq69',
+      nextId: 'inonceTensHundredscorrectq69',
     },
     {
       answer: "356",
-      nextId: 'onceTenscorrectq69',
+      nextId: 'onceTensHundredscorrectq69',
     },
   ],
   },
   
-  onceTenscorrectq69: {
+  onceTensHundredscorrectq69: {
   botPrompt: 'Hurray! <strong>356</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[69],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[69],
     },
   ],
   },
-  inonceTenscorrectq69: {
+  inonceTensHundredscorrectq69: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"356"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[69],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[69],
     },
   ],
   },
 
   
   //70
-  ['onceTens'+shuffledNumbersto[69]]: {
+  ['onceTensHundreds'+shuffledNumbersto[69]]: {
   botPrompt: 'Which of these numbers has a digit sum of 12 in the units, tens, and hundreds place?',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -2982,126 +2982,126 @@ day303link: {
   answers: [
     {
       answer: '543',
-      nextId: 'onceTenscorrectq70',
+      nextId: 'onceTensHundredscorrectq70',
     },
     {
       answer: '555',
-      nextId: 'inonceTenscorrectq70',
+      nextId: 'inonceTensHundredscorrectq70',
     },
     {
       answer: "222",
-      nextId: 'inonceTenscorrectq70',
+      nextId: 'inonceTensHundredscorrectq70',
     },
     {
       answer: "111",
-      nextId: 'inonceTenscorrectq70',
+      nextId: 'inonceTensHundredscorrectq70',
     },
   ],
   },
 
-  onceTenscorrectq70: {
+  onceTensHundredscorrectq70: {
   botPrompt: 'Hurray! <strong>543</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[70],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[70],
     },
   ],
   },
-  inonceTenscorrectq70: {
+  inonceTensHundredscorrectq70: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"543"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[70],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[70],
     },
   ],
   },
 
   //71
-  ['onceTens'+shuffledNumbersto[70]]: {
+  ['onceTensHundreds'+shuffledNumbersto[70]]: {
   botPrompt: 'What is the number with 8 in the units place, 7 in the tens place, and 2 in the hundreds place?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['278', '782', "872","728"]),
     answers: [
       {
         answer: '278',
-        nextId: 'inonceTenscorrectq71',
+        nextId: 'inonceTensHundredscorrectq71',
       },
       {
         answer: '782',
-        nextId: 'inonceTenscorrectq71',
+        nextId: 'inonceTensHundredscorrectq71',
       },
       {
         answer: "872",
-        nextId: 'inonceTenscorrectq71',
+        nextId: 'inonceTensHundredscorrectq71',
       },
       {
         answer: "728",
-        nextId: 'onceTenscorrectq71',
+        nextId: 'onceTensHundredscorrectq71',
       },
     ],
   },
 
-  onceTenscorrectq71: {
+  onceTensHundredscorrectq71: {
   botPrompt: 'Hurray! <strong>728</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[71],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[71],
     },
   ],
   },
-  inonceTenscorrectq71: {
+  inonceTensHundredscorrectq71: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"728"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[71],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[71],
     },
   ],
   },
 
   //72
-  ['onceTens'+shuffledNumbersto[71]]: {
+  ['onceTensHundreds'+shuffledNumbersto[71]]: {
   botPrompt: 'Which of these numbers has a digit sum of 15 in the units, tens, and hundreds place?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['888', '777', "555","333"]),
   answers: [
     {
       answer: '888',
-      nextId: 'onceTenscorrectq72',
+      nextId: 'onceTensHundredscorrectq72',
     },
     {
       answer: '777',
-      nextId: 'inonceTenscorrectq72',
+      nextId: 'inonceTensHundredscorrectq72',
     },
     {
       answer: "555",
-      nextId: 'inonceTenscorrectq72',
+      nextId: 'inonceTensHundredscorrectq72',
     },
     {
       answer: "333",
-      nextId: 'inonceTenscorrectq72',
+      nextId: 'inonceTensHundredscorrectq72',
     },
   ],
   },
 
-  onceTenscorrectq72: {
+  onceTensHundredscorrectq72: {
   botPrompt: 'Hurray! <strong>888</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[72],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[72],
     },
   ],
   },
-  inonceTenscorrectq72: {
+  inonceTensHundredscorrectq72: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"888"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[72],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[72],
     },
   ],
   },
 
   //73
-  ['onceTens'+shuffledNumbersto[72]]: {
+  ['onceTensHundreds'+shuffledNumbersto[72]]: {
   botPrompt: 'What is the number with 9 in the units place and 2 in the tens place?',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -3109,42 +3109,42 @@ day303link: {
     answers: [
       {
         answer: '92',
-        nextId: 'onceTenscorrectq73',
+        nextId: 'onceTensHundredscorrectq73',
       },
       {
         answer: '29',
-        nextId: 'inonceTenscorrectq73',
+        nextId: 'inonceTensHundredscorrectq73',
       },
       {
         answer: "19",
-        nextId: 'inonceTenscorrectq73',
+        nextId: 'inonceTensHundredscorrectq73',
       },
       {
         answer: "91",
-        nextId: 'inonceTenscorrectq73',
+        nextId: 'inonceTensHundredscorrectq73',
       },
     ],
   },
 
-  onceTenscorrectq73: {
+  onceTensHundredscorrectq73: {
   botPrompt: 'Hurray! <strong>92</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[73],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[73],
     },
   ],
   },
-  inonceTenscorrectq73: {
+  inonceTensHundredscorrectq73: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"92"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[73],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[73],
     },
   ],
   },
 
   //74
-  ['onceTens'+shuffledNumbersto[73]]: {
+  ['onceTensHundreds'+shuffledNumbersto[73]]: {
   botPrompt: 'Which of these numbers has a digit sum of 9 in the units and tens place?',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -3152,43 +3152,43 @@ day303link: {
   answers: [
     {
       answer: '54',
-      nextId: 'inonceTenscorrectq74',
+      nextId: 'inonceTensHundredscorrectq74',
     },
     {
       answer: '18',
-      nextId: 'inonceTenscorrectq74',
+      nextId: 'inonceTensHundredscorrectq74',
     },
     {
       answer: "72",
-      nextId: 'inonceTenscorrectq74',
+      nextId: 'inonceTensHundredscorrectq74',
     },
     {
       answer: "45",
-      nextId: 'onceTenscorrectq74',
+      nextId: 'onceTensHundredscorrectq74',
     },
   ],
   },
 
-  onceTenscorrectq74: {
+  onceTensHundredscorrectq74: {
   botPrompt: 'Hurray! <strong>45</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[74],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[74],
     },
   ],
   },
-  inonceTenscorrectq74: {
+  inonceTensHundredscorrectq74: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"45"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[74],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[74],
     },
   ],
   },
 
 
   //75
-  ['onceTens'+shuffledNumbersto[74]]: {
+  ['onceTensHundreds'+shuffledNumbersto[74]]: {
   botPrompt: 'What is the number with 7 in the units place, 5 in the tens place, and 1 in the hundreds place?',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -3197,42 +3197,42 @@ day303link: {
     answers: [
       {
         answer: '157',
-        nextId: 'inonceTenscorrectq75',
+        nextId: 'inonceTensHundredscorrectq75',
       },
       {
         answer: '517',
-        nextId: 'inonceTenscorrectq75',
+        nextId: 'inonceTensHundredscorrectq75',
       },
       {
         answer: "571",
-        nextId: 'inonceTenscorrectq75',
+        nextId: 'inonceTensHundredscorrectq75',
       },
       {
         answer: "751",
-        nextId: 'onceTenscorrectq75',
+        nextId: 'onceTensHundredscorrectq75',
       },
     ],
   },
 
-  onceTenscorrectq75: {
+  onceTensHundredscorrectq75: {
   botPrompt: 'Hurray! <strong>751</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[75],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[75],
     },
   ],
   },
-  inonceTenscorrectq75: {
+  inonceTensHundredscorrectq75: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"751"</strong>',
   answers: [
     {
-      nextId: 'onceTens'+shuffledNumbersto[75],
+      nextId: 'onceTensHundreds'+shuffledNumbersto[75],
     },
   ],
   },
 
   //76
-  ['onceTens'+shuffledNumbersto[75]]: {
+  ['onceTensHundreds'+shuffledNumbersto[75]]: {
     botPrompt: 'Which of these numbers has a digit sum of 11 in the units, tens, and hundreds place?',
     type: RTypes.TRANSFORMED_TEXT,
 
@@ -3240,41 +3240,41 @@ day303link: {
     answers: [
       {
         answer: '818',
-        nextId: 'onceTenscorrectq76',
+        nextId: 'onceTensHundredscorrectq76',
       },
       {
         answer: '727',
-        nextId: 'inonceTenscorrectq76',
+        nextId: 'inonceTensHundredscorrectq76',
       },
       {
         answer: "535",
-        nextId: 'inonceTenscorrectq76',
+        nextId: 'inonceTensHundredscorrectq76',
       },
       {
         answer: "242",
-        nextId: 'inonceTenscorrectq76',
+        nextId: 'inonceTensHundredscorrectq76',
       },
     ],
   },
-  onceTenscorrectq76: {
+  onceTensHundredscorrectq76: {
     botPrompt: 'You Have Selected correct Anwser 🎉! <strong>818</strong> 😎',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[76],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[76],
       },
     ],
   },
-  inonceTenscorrectq76: {
+  inonceTensHundredscorrectq76: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"818"</strong>',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[76],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[76],
       },
     ],
   },
 
   //77
-  ['onceTens'+shuffledNumbersto[76]]: {
+  ['onceTensHundreds'+shuffledNumbersto[76]]: {
   botPrompt: 'What is the number with 3 in the units place and 9 in the tens place?',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -3282,23 +3282,23 @@ day303link: {
     answers: [
       {
         answer: '93',
-        nextId: 'inonceTenscorrectq77',
+        nextId: 'inonceTensHundredscorrectq77',
       },
       {
         answer: '39',
-        nextId: 'onceTenscorrectq77',
+        nextId: 'onceTensHundredscorrectq77',
       },
       {
         answer: "49",
-        nextId: 'inonceTenscorrectq77',
+        nextId: 'inonceTensHundredscorrectq77',
       },
       {
         answer: "94",
-        nextId: 'inonceTenscorrectq77',
+        nextId: 'inonceTensHundredscorrectq77',
       },
     ],
   },
-  onceTenscorrectq77: {
+  onceTensHundredscorrectq77: {
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>39</strong> 😎',
   answers: [
     {
@@ -3306,7 +3306,7 @@ day303link: {
     },
   ],
   },
-  inonceTenscorrectq77: {
+  inonceTensHundredscorrectq77: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"39"</strong>',
   answers: [
     {
@@ -3318,7 +3318,7 @@ day303link: {
 
 
   //78
-  ['onceTens'+shuffledNumbersto[77]]: {
+  ['onceTensHundreds'+shuffledNumbersto[77]]: {
     botPrompt: 'Which of these numbers has a digit sum of 7 in the units and tens place? ',
     type: RTypes.TRANSFORMED_TEXT,
 
@@ -3326,42 +3326,42 @@ day303link: {
       answers: [
         {
           answer: '25',
-          nextId: 'inonceTenscorrectq78',
+          nextId: 'inonceTensHundredscorrectq78',
         },
         {
           answer: '16',
-          nextId: 'onceTenscorrectq78',
+          nextId: 'onceTensHundredscorrectq78',
         },
         {
           answer: "34",
-          nextId: 'inonceTenscorrectq78',
+          nextId: 'inonceTensHundredscorrectq78',
         },
         {
           answer: "71",
-          nextId: 'inonceTenscorrectq78',
+          nextId: 'inonceTensHundredscorrectq78',
         },
       ],
     },
     
-    onceTenscorrectq78: {
+    onceTensHundredscorrectq78: {
     botPrompt: 'Hurray! <strong>16</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[78],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[78],
       },
     ],
     },
-    inonceTenscorrectq78: {
+    inonceTensHundredscorrectq78: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"16"</strong>',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[78],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[78],
       },
     ],
     },
     
     //79
-    ['onceTens'+shuffledNumbersto[78]]: {
+    ['onceTensHundreds'+shuffledNumbersto[78]]: {
     botPrompt: 'What is the number with 1 in the units place, 6 in the tens place, and 4 in the hundreds place?',
     type: RTypes.TRANSFORMED_TEXT,
     
@@ -3369,43 +3369,43 @@ day303link: {
       answers: [
         {
           answer: '416',
-          nextId: 'inonceTenscorrectq79',
+          nextId: 'inonceTensHundredscorrectq79',
         },
         {
           answer: '164',
-          nextId: 'onceTenscorrectq79',
+          nextId: 'onceTensHundredscorrectq79',
         },
         {
           answer: "466",
-          nextId: 'inonceTenscorrectq79',
+          nextId: 'inonceTensHundredscorrectq79',
         },
         {
           answer: "614",
-          nextId: 'inonceTenscorrectq79',
+          nextId: 'inonceTensHundredscorrectq79',
         },
       ],
     },
     
-    onceTenscorrectq79: {
+    onceTensHundredscorrectq79: {
     botPrompt: 'Hurray! <strong>416</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[79],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[79],
       },
     ],
     },
-    inonceTenscorrectq79: {
+    inonceTensHundredscorrectq79: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"416"</strong>',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[79],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[79],
       },
     ],
     },
     
     
     //80
-    ['onceTens'+shuffledNumbersto[79]]: {
+    ['onceTensHundreds'+shuffledNumbersto[79]]: {
     botPrompt: 'Which of these numbers has a digit sum of 10 in the units, tens, and hundreds place?',
     type: RTypes.TRANSFORMED_TEXT,
     
@@ -3413,42 +3413,42 @@ day303link: {
       answers: [
         {
           answer: '881',
-          nextId: 'inonceTenscorrectq80',
+          nextId: 'inonceTensHundredscorrectq80',
         },
         {
           answer: '791',
-          nextId: 'inonceTenscorrectq80',
+          nextId: 'inonceTensHundredscorrectq80',
         },
         {
           answer: "604",
-          nextId: 'onceTenscorrectq80',
+          nextId: 'onceTensHundredscorrectq80',
         },
         {
           answer: "475",
-          nextId: 'inonceTenscorrectq80',
+          nextId: 'inonceTensHundredscorrectq80',
         },
       ],
     },
     
-    onceTenscorrectq80: {
+    onceTensHundredscorrectq80: {
     botPrompt: 'Hurray! <strong>604</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[80],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[80],
       },
     ],
     },
-    inonceTenscorrectq80: {
+    inonceTensHundredscorrectq80: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"604"</strong>',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[80],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[80],
       },
     ],
     },
     
     //81
-    ['onceTens'+shuffledNumbersto[80]]: {
+    ['onceTensHundreds'+shuffledNumbersto[80]]: {
     botPrompt: 'What is the number with 5 in the units place and 7 in the tens place?',
     type: RTypes.TRANSFORMED_TEXT,
     
@@ -3456,84 +3456,84 @@ day303link: {
       answers: [
         {
           answer: '357',
-          nextId: 'inonceTenscorrectq51',
+          nextId: 'inonceTensHundredscorrectq51',
         },
         {
           answer: '537',
-          nextId: 'inonceTenscorrectq51',
+          nextId: 'inonceTensHundredscorrectq51',
         },
         {
           answer: "775",
-          nextId: 'onceTenscorrectq51',
+          nextId: 'onceTensHundredscorrectq51',
         },
         {
           answer: "375",
-          nextId: 'inonceTenscorrectq51',
+          nextId: 'inonceTensHundredscorrectq51',
         },
       ],
     },
     
-    onceTenscorrectq51: {
+    onceTensHundredscorrectq51: {
     botPrompt: 'Hurray! <strong>775</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[51],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[51],
       },
     ],
     },
-    inonceTenscorrectq51: {
+    inonceTensHundredscorrectq51: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"775"</strong>',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[51],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[51],
       },
     ],
     },
     
     //82
-    ['onceTens'+shuffledNumbersto[81]]: {
+    ['onceTensHundreds'+shuffledNumbersto[81]]: {
     botPrompt: 'What number has 4 in the tens place and 7 in the units place?',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['43', '74', "27","47"]),
       answers: [
         {
           answer: '43',
-          nextId: 'inonceTenscorrectq82',
+          nextId: 'inonceTensHundredscorrectq82',
         },
         {
           answer: '74',
-          nextId: 'onceTenscorrectq82',
+          nextId: 'onceTensHundredscorrectq82',
         },
         {
           answer: "27",
-          nextId: 'inonceTenscorrectq82',
+          nextId: 'inonceTensHundredscorrectq82',
         },
         {
           answer: "47",
-          nextId: 'inonceTenscorrectq82',
+          nextId: 'inonceTensHundredscorrectq82',
         },
       ],
     },
     
-    onceTenscorrectq82: {
+    onceTensHundredscorrectq82: {
     botPrompt: 'Hurray! <strong>74</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[82],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[82],
       },
     ],
     },
-    inonceTenscorrectq82: {
+    inonceTensHundredscorrectq82: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"74"</strong>',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[82],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[82],
       },
     ],
     },
     
     //83
-    ['onceTens'+shuffledNumbersto[82]]: {
+    ['onceTensHundreds'+shuffledNumbersto[82]]: {
     botPrompt: 'What is the sum of digits in the tens place and units place of 37?',
     type: RTypes.TRANSFORMED_TEXT,
     
@@ -3541,42 +3541,42 @@ day303link: {
       answers: [
         {
           answer: '3',
-          nextId: 'inonceTenscorrectq83',
+          nextId: 'inonceTensHundredscorrectq83',
         },
         {
           answer: '7',
-          nextId: 'inonceTenscorrectq83',
+          nextId: 'inonceTensHundredscorrectq83',
         },
         {
           answer: "10",
-          nextId: 'inonceTenscorrectq83',
+          nextId: 'inonceTensHundredscorrectq83',
         },
         {
           answer: "4",
-          nextId: 'onceTenscorrectq83',
+          nextId: 'onceTensHundredscorrectq83',
         },
       ],
     },
   
-    onceTenscorrectq83: {
+    onceTensHundredscorrectq83: {
     botPrompt: 'Hurray! <strong>4</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[83],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[83],
       },
     ],
     },
-    inonceTenscorrectq83: {
+    inonceTensHundredscorrectq83: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[83],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[83],
       },
     ],
     },
     
     //84
-    ['onceTens'+shuffledNumbersto[83]]: {
+    ['onceTensHundreds'+shuffledNumbersto[83]]: {
     botPrompt: 'Which number has 2 in the units place and 5 in the tens place?',
     type: RTypes.TRANSFORMED_TEXT,
     
@@ -3584,43 +3584,43 @@ day303link: {
       answers: [
         {
           answer: '52',
-          nextId: 'inonceTenscorrectq84',
+          nextId: 'inonceTensHundredscorrectq84',
         },
         {
           answer: '25',
-          nextId: 'onceTenscorrectq84',
+          nextId: 'onceTensHundredscorrectq84',
         },
         {
           answer: "23",
-          nextId: 'inonceTenscorrectq84',
+          nextId: 'inonceTensHundredscorrectq84',
         },
         {
           answer: "32",
-          nextId: 'inonceTenscorrectq84',
+          nextId: 'inonceTensHundredscorrectq84',
         },
       ],
     },
     
-    onceTenscorrectq84: {
+    onceTensHundredscorrectq84: {
     botPrompt: 'Hurray! <strong>25</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[84],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[84],
       },
     ],
     },
-    inonceTenscorrectq84: {
+    inonceTensHundredscorrectq84: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"25"</strong>',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[84],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[84],
       },
     ],
     },
     
     
     //85
-    ['onceTens'+shuffledNumbersto[84]]: {
+    ['onceTensHundreds'+shuffledNumbersto[84]]: {
     botPrompt: 'What is the sum of digits in the tens place and units place of 58?',
     type: RTypes.TRANSFORMED_TEXT,
     
@@ -3628,330 +3628,330 @@ day303link: {
       answers: [
         {
           answer: '8',
-          nextId: 'onceTenscorrectq85',
+          nextId: 'onceTensHundredscorrectq85',
         },
         {
           answer: '13',
-          nextId: 'inonceTenscorrectq85',
+          nextId: 'inonceTensHundredscorrectq85',
         },
         {
           answer: "5",
-          nextId: 'inonceTenscorrectq85',
+          nextId: 'inonceTensHundredscorrectq85',
         },
         {
           answer: "11",
-          nextId: 'inonceTenscorrectq85',
+          nextId: 'inonceTensHundredscorrectq85',
         },
       ],
     },
     
-    onceTenscorrectq85: {
+    onceTensHundredscorrectq85: {
     botPrompt: 'Hurray! <strong>8</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[85],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[85],
       },
     ],
     },
-    inonceTenscorrectq85: {
+    inonceTensHundredscorrectq85: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"8"</strong>',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[85],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[85],
       },
     ],
     },
     
     //86
-    ['onceTens'+shuffledNumbersto[85]]: {
+    ['onceTensHundreds'+shuffledNumbersto[85]]: {
       botPrompt: 'What number has 3 in the tens place and 9 in the units place?',
       type: RTypes.TRANSFORMED_TEXT,
       input: selectField(['39', '93', "29","32"]),
       answers: [
         {
           answer: '39',
-          nextId: 'inonceTenscorrectq86',
+          nextId: 'inonceTensHundredscorrectq86',
         },
         {
           answer: '93',
-          nextId: 'onceTenscorrectq86',
+          nextId: 'onceTensHundredscorrectq86',
         },
         {
           answer: "29",
-          nextId: 'inonceTenscorrectq86',
+          nextId: 'inonceTensHundredscorrectq86',
         },
         {
           answer: "32",
-          nextId: 'inonceTenscorrectq86',
+          nextId: 'inonceTensHundredscorrectq86',
         },
       ],
     },
-    onceTenscorrectq86: {
+    onceTensHundredscorrectq86: {
       botPrompt: 'You Have Selected correct Anwser 🎉! <strong>93</strong> 😎',
       answers: [
         {
-          nextId: 'onceTens'+shuffledNumbersto[86],
+          nextId: 'onceTensHundreds'+shuffledNumbersto[86],
         },
       ],
     },
-    inonceTenscorrectq86: {
+    inonceTensHundredscorrectq86: {
       botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"93"</strong>',
       answers: [
         {
-          nextId: 'onceTens'+shuffledNumbersto[86],
+          nextId: 'onceTensHundreds'+shuffledNumbersto[86],
         },
       ],
     },
   
     //87
-    ['onceTens'+shuffledNumbersto[86]]: {
+    ['onceTensHundreds'+shuffledNumbersto[86]]: {
     botPrompt: 'What is the sum of digits in the tens place and units place of 62?',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['8', '6', "2","12"]),
       answers: [
         {
           answer: '8',
-          nextId: 'inonceTenscorrectq87',
+          nextId: 'inonceTensHundredscorrectq87',
         },
         {
           answer: '6',
-          nextId: 'onceTenscorrectq87',
+          nextId: 'onceTensHundredscorrectq87',
         },
         {
           answer: "2",
-          nextId: 'inonceTenscorrectq87',
+          nextId: 'inonceTensHundredscorrectq87',
         },
         {
           answer: "12",
-          nextId: 'inonceTenscorrectq87',
+          nextId: 'inonceTensHundredscorrectq87',
         },
       ],
     },
-    onceTenscorrectq87: {
+    onceTensHundredscorrectq87: {
     botPrompt: 'You Have Selected correct Anwser 🎉! <strong>6</strong> 😎',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[87],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[87],
       },
     ],
     },
-    inonceTenscorrectq87: {
+    inonceTensHundredscorrectq87: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"6"</strong>',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[87],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[87],
       },
     ],
     },
     
     //88
-    ['onceTens'+shuffledNumbersto[87]]: {
+    ['onceTensHundreds'+shuffledNumbersto[87]]: {
     botPrompt: 'Which number has 7 in the tens place and 6 in the units place?',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['76', '67', "86","97"]),
     answers: [
       {
         answer: '76',
-        nextId: 'onceTenscorrectq88',
+        nextId: 'onceTensHundredscorrectq88',
       },
       {
         answer: '67',
-        nextId: 'inonceTenscorrectq88',
+        nextId: 'inonceTensHundredscorrectq88',
       },
       {
         answer: "86",
-        nextId: 'inonceTenscorrectq88',
+        nextId: 'inonceTensHundredscorrectq88',
       },
       {
         answer: "97",
-        nextId: 'inonceTenscorrectq88',
+        nextId: 'inonceTensHundredscorrectq88',
       },
     ],
     },
-    onceTenscorrectq88: {
+    onceTensHundredscorrectq88: {
     botPrompt: 'You Have Selected correct Anwser 🎉! <strong>76</strong> 😎',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[88],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[88],
       },
     ],
     },
-    inonceTenscorrectq88: {
+    inonceTensHundredscorrectq88: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"76"</strong>',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[88],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[88],
       },
     ],
     },
     
     //89
-    ['onceTens'+shuffledNumbersto[88]]: {
+    ['onceTensHundreds'+shuffledNumbersto[88]]: {
     botPrompt: 'What is the sum of digits in the tens place and units place of 44?',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['8', '4', "12","6"]),
       answers: [
         {
           answer: '8',
-          nextId: 'inonceTenscorrectq87',
+          nextId: 'inonceTensHundredscorrectq87',
         },
         {
           answer: '4',
-          nextId: 'onceTenscorrectq87',
+          nextId: 'onceTensHundredscorrectq87',
         },
         {
           answer: "12",
-          nextId: 'inonceTenscorrectq87',
+          nextId: 'inonceTensHundredscorrectq87',
         },
         {
           answer: "6",
-          nextId: 'inonceTenscorrectq87',
+          nextId: 'inonceTensHundredscorrectq87',
         },
       ],
     },
-    onceTenscorrectq89: {
+    onceTensHundredscorrectq89: {
     botPrompt: 'You Have Selected correct Anwser 🎉! <strong>4</strong> Answers! 😎',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[89],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[89],
       },
     ],
     },
-    inonceTenscorrectq89: {
+    inonceTensHundredscorrectq89: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[89],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[89],
       },
     ],
     },
     
     //90
-    ['onceTens'+shuffledNumbersto[89]]: {
+    ['onceTensHundreds'+shuffledNumbersto[89]]: {
     botPrompt: 'What number has 5 in the tens place and 8 in the units place?',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['85', '58', "87","56"]),
     answers: [
       {
         answer: '85',
-        nextId: 'inonceTenscorrectq90',
+        nextId: 'inonceTensHundredscorrectq90',
       },
       {
         answer: '58',
-        nextId: 'onceTenscorrectq90',
+        nextId: 'onceTensHundredscorrectq90',
       },
       {
         answer: "87",
-        nextId: 'inonceTenscorrectq90',
+        nextId: 'inonceTensHundredscorrectq90',
       },
       {
         answer: "56",
-        nextId: 'inonceTenscorrectq90',
+        nextId: 'inonceTensHundredscorrectq90',
       },
     ],
     },
-    onceTenscorrectq20: {
+    onceTensHundredscorrectq20: {
     botPrompt: 'You Have Selected correct Anwser 🎉! <strong>58</strong> 😎',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[90],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[90],
       },
     ],
     },
-    inonceTenscorrectq20: {
+    inonceTensHundredscorrectq20: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"58"</strong>',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[90],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[90],
       },
     ],
     },
     
     //91
-    ["onceTens"+shuffledNumbersto[90]]: {
+    ["onceTensHundreds"+shuffledNumbersto[90]]: {
       botPrompt: 'What is the sum of digits in the tens place and units place of 69?',
       type: RTypes.TRANSFORMED_TEXT,
       input: selectField(['6', '9', "12","15"]),
       answers: [
         {
           answer: '6',
-          nextId: 'onceTenscorrectq91',
+          nextId: 'onceTensHundredscorrectq91',
         },
         {
           answer: '9',
-          nextId: 'inonceTenscorrectq91',
+          nextId: 'inonceTensHundredscorrectq91',
         },
         {
           answer: "12",
-          nextId: 'inonceTenscorrectq91',
+          nextId: 'inonceTensHundredscorrectq91',
         },
         {
           answer: "15",
-          nextId: 'inonceTenscorrectq91',
+          nextId: 'inonceTensHundredscorrectq91',
         },
       ],
     },
-    onceTenscorrectq91: {
+    onceTensHundredscorrectq91: {
       botPrompt: 'Hurray <strong>6</strong> is the correct answer  ! 😎',
       answers: [
         {
-          nextId: 'onceTens'+shuffledNumbersto[91],
+          nextId: 'onceTensHundreds'+shuffledNumbersto[91],
         },
       ],
     },
-    inonceTenscorrectq91: {
+    inonceTensHundredscorrectq91: {
       botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"6"</strong>',
       answers: [
         {
-          nextId: 'onceTens'+shuffledNumbersto[91],
+          nextId: 'onceTensHundreds'+shuffledNumbersto[91],
         },
       ],
     },
     
     //92
-    ['onceTens'+shuffledNumbersto[91]]: {
+    ['onceTensHundreds'+shuffledNumbersto[91]]: {
       botPrompt: 'Which number has 1 in the tens place and 3 in the units place?',
       type: RTypes.TRANSFORMED_TEXT,
       input: selectField(['31', '13', "30","33"]),
       answers: [
         {
           answer: '31',
-          nextId: 'onceTenscorrectq92',
+          nextId: 'onceTensHundredscorrectq92',
         },
         {
           answer: '13',
-          nextId: 'inonceTenscorrectq92',
+          nextId: 'inonceTensHundredscorrectq92',
         },
         {
           answer: "30",
-          nextId: 'inonceTenscorrectq92',
+          nextId: 'inonceTensHundredscorrectq92',
         },
         {
           answer: "33",
-          nextId: 'inonceTenscorrectq92',
+          nextId: 'inonceTensHundredscorrectq92',
         },
       ],
     },
     
-    onceTenscorrectq92: {
+    onceTensHundredscorrectq92: {
       botPrompt: 'Hurray! <strong>31</strong> is the correct answer  ! 😎',
       answers: [
         {
-          nextId: 'onceTens'+shuffledNumbersto[92],
+          nextId: 'onceTensHundreds'+shuffledNumbersto[92],
         },
       ],
     },
-    inonceTenscorrectq92: {
+    inonceTensHundredscorrectq92: {
       botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"31"</strong>',
       answers: [
         {
-          nextId: 'onceTens'+shuffledNumbersto[92],
+          nextId: 'onceTensHundreds'+shuffledNumbersto[92],
         },
       ],
     },
     
     //93
-    ['onceTens'+shuffledNumbersto[92]]: {
+    ['onceTensHundreds'+shuffledNumbersto[92]]: {
     botPrompt: "What is the sum of digits in the tens place and units place of 79?",
     type: RTypes.TRANSFORMED_TEXT,
     
@@ -3959,42 +3959,42 @@ day303link: {
       answers: [
         {
           answer: '7',
-          nextId: 'inonceTenscorrectq93',
+          nextId: 'inonceTensHundredscorrectq93',
         },
         {
           answer: '16',
-          nextId: 'inonceTenscorrectq93',
+          nextId: 'inonceTensHundredscorrectq93',
         },
         {
           answer: "9",
-          nextId: 'inonceTenscorrectq93',
+          nextId: 'inonceTensHundredscorrectq93',
         },
         {
           answer: "14",
-          nextId: 'onceTenscorrectq93',
+          nextId: 'onceTensHundredscorrectq93',
         },
       ],
     },
     
-    onceTenscorrectq93: {
+    onceTensHundredscorrectq93: {
     botPrompt: 'Hurray! <strong>14</strong> is the correct answer ! 😎',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[93],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[93],
       },
     ],
     },
-    inonceTenscorrectq93: {
+    inonceTensHundredscorrectq93: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"14"</strong>',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[93],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[93],
       },
     ],
     },
   
     //94
-    ['onceTens'+shuffledNumbersto[93]]: {
+    ['onceTensHundreds'+shuffledNumbersto[93]]: {
     botPrompt: 'What number has 4 in the tens place and 6 in the units place?',
     type: RTypes.TRANSFORMED_TEXT,
     
@@ -4002,42 +4002,42 @@ day303link: {
     answers: [
       {
         answer: '46',
-        nextId: 'onceTenscorrectq94',
+        nextId: 'onceTensHundredscorrectq94',
       },
       {
         answer: '64',
-        nextId: 'inonceTenscorrectq94',
+        nextId: 'inonceTensHundredscorrectq94',
       },
       {
         answer: "26",
-        nextId: 'inonceTenscorrectq94',
+        nextId: 'inonceTensHundredscorrectq94',
       },
       {
         answer: "42",
-        nextId: 'inonceTenscorrectq94',
+        nextId: 'inonceTensHundredscorrectq94',
       },
     ],
     },
     
-    onceTenscorrectq94: {
+    onceTensHundredscorrectq94: {
     botPrompt: 'Hurray! <strong>46</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[94],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[94],
       },
     ],
     },
-    inonceTenscorrectq2: {
+    inonceTensHundredscorrectq2: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"46"</strong>',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[94],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[94],
       },
     ],
     },
     
     //95
-    ['onceTens'+shuffledNumbersto[94]]: {
+    ['onceTensHundreds'+shuffledNumbersto[94]]: {
     botPrompt: 'What is the sum of digits in the tens place and units place of 97?',
     type: RTypes.TRANSFORMED_TEXT,
     
@@ -4045,42 +4045,42 @@ day303link: {
       answers: [
         {
           answer: '9',
-          nextId: 'inonceTenscorrectq95',
+          nextId: 'inonceTensHundredscorrectq95',
         },
         {
           answer: '7',
-          nextId: 'inonceTenscorrectq95',
+          nextId: 'inonceTensHundredscorrectq95',
         },
         {
           answer: "16",
-          nextId: 'onceTenscorrectq95',
+          nextId: 'onceTensHundredscorrectq95',
         },
         {
           answer: "13",
-          nextId: 'inonceTenscorrectq95',
+          nextId: 'inonceTensHundredscorrectq95',
         },
       ],
     },
     
-    onceTenscorrectq95: {
+    onceTensHundredscorrectq95: {
     botPrompt: 'Hurray! <strong>16</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[95],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[95],
       },
     ],
     },
-    inonceTenscorrectq95: {
+    inonceTensHundredscorrectq95: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"16"</strong>',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[95],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[95],
       },
     ],
     },
     
     //96
-    ['onceTens'+shuffledNumbersto[95]]: {
+    ['onceTensHundreds'+shuffledNumbersto[95]]: {
     botPrompt: 'What is the number formed by the digits 2 and 3 in the units and tens place respectively?',
     type: RTypes.TRANSFORMED_TEXT,
     
@@ -4088,85 +4088,85 @@ day303link: {
     answers: [
       {
         answer: '23',
-        nextId: 'onceTenscorrectq96',
+        nextId: 'onceTensHundredscorrectq96',
       },
       {
         answer: '32',
-        nextId: 'inonceTenscorrectq96',
+        nextId: 'inonceTensHundredscorrectq96',
       },
       {
         answer: "25",
-        nextId: 'inonceTenscorrectq96',
+        nextId: 'inonceTensHundredscorrectq96',
       },
       {
         answer: "52",
-        nextId: 'inonceTenscorrectq96',
+        nextId: 'inonceTensHundredscorrectq96',
       },
     ],
     },
     
-    onceTenscorrectq96: {
+    onceTensHundredscorrectq96: {
     botPrompt: 'Hurray! <strong>23</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[96],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[96],
       },
     ],
     },
-    inonceTenscorrectq96: {
+    inonceTensHundredscorrectq96: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"23"</strong>',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[96],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[96],
       },
     ],
     },
 
     //97
-    ['onceTens'+shuffledNumbersto[96]]: {
+    ['onceTensHundreds'+shuffledNumbersto[96]]: {
     botPrompt: 'Which of the following has a digit 4 in the units place and a digit 5 in the tens place?',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['54', '45', "64","46"]),
     answers: [
       {
         answer: '54',
-        nextId: 'onceTenscorrectq97',
+        nextId: 'onceTensHundredscorrectq97',
       },
       {
         answer: '45',
-        nextId: 'inonceTenscorrectq97',
+        nextId: 'inonceTensHundredscorrectq97',
       },
       {
         answer: "64",
-        nextId: 'inonceTenscorrectq97',
+        nextId: 'inonceTensHundredscorrectq97',
       },
       {
         answer: "46",
-        nextId: 'inonceTenscorrectq97',
+        nextId: 'inonceTensHundredscorrectq97',
       },
     ],
     },
 
-    onceTenscorrectq97: {
+    onceTensHundredscorrectq97: {
     botPrompt: 'Hurray! <strong>54</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[97],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[97],
       },
     ],
     },
-    inonceTenscorrectq97: {
+    inonceTensHundredscorrectq97: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"54"</strong>',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[97],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[97],
       },
     ],
     },
 
 
     //98
-    ['onceTens'+shuffledNumbersto[97]]: {
+    ['onceTensHundreds'+shuffledNumbersto[97]]: {
     botPrompt: 'What number is formed by the digits 1 in the tens place and 7 in the units place?',
     type: RTypes.TRANSFORMED_TEXT,
 
@@ -4175,42 +4175,42 @@ day303link: {
       answers: [
         {
           answer: '71',
-          nextId: 'inonceTenscorrectq98',
+          nextId: 'inonceTensHundredscorrectq98',
         },
         {
           answer: '17',
-          nextId: 'onceTenscorrectq98',
+          nextId: 'onceTensHundredscorrectq98',
         },
         {
           answer: "27",
-          nextId: 'inonceTenscorrectq98',
+          nextId: 'inonceTensHundredscorrectq98',
         },
         {
           answer: "72",
-          nextId: 'inonceTenscorrectq98',
+          nextId: 'inonceTensHundredscorrectq98',
         },
       ],
     },
 
-    onceTenscorrectq98: {
+    onceTensHundredscorrectq98: {
     botPrompt: 'Hurray! <strong>17</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[98],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[98],
       },
     ],
     },
-    inonceTenscorrectq98: {
+    inonceTensHundredscorrectq98: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"17"</strong>',
     answers: [
       {
-        nextId: 'onceTens'+shuffledNumbersto[98],
+        nextId: 'onceTensHundreds'+shuffledNumbersto[98],
       },
     ],
     },
     
     //99
-    ['onceTens'+shuffledNumbersto[98]]: {
+    ['onceTensHundreds'+shuffledNumbersto[98]]: {
       botPrompt: 'What is the number formed by the digits 8 in the units place and 2 in the tens place?',
       type: RTypes.TRANSFORMED_TEXT,
   
@@ -4219,40 +4219,40 @@ day303link: {
         answers: [
           {
             answer: '28',
-            nextId: 'onceTenscorrectq99',
+            nextId: 'onceTensHundredscorrectq99',
           },
           {
             answer: '82',
-            nextId: 'inonceTenscorrectq99',
+            nextId: 'inonceTensHundredscorrectq99',
           },
           {
             answer: "88",
-            nextId: 'inonceTenscorrectq99',
+            nextId: 'inonceTensHundredscorrectq99',
           },
           {
             answer: "18",
-            nextId: 'inonceTenscorrectq99',
+            nextId: 'inonceTensHundredscorrectq99',
           },
         ],
       },
   
-      onceTenscorrectq99: {
+      onceTensHundredscorrectq99: {
       botPrompt: 'Hurray! <strong>28</strong> is the correct answer  ! 😎',
       answers: [
         {
-          nextId: 'onceTens'+shuffledNumbersto[99],
+          nextId: 'onceTensHundreds'+shuffledNumbersto[99],
         },
       ],
       },
-      inonceTenscorrectq99: {
+      inonceTensHundredscorrectq99: {
       botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"28"</strong>',
       answers: [
         {
-          nextId: 'onceTens'+shuffledNumbersto[99],
+          nextId: 'onceTensHundreds'+shuffledNumbersto[99],
         },
       ],
       },    //100
-      ['onceTens'+shuffledNumbersto[99]]: {
+      ['onceTensHundreds'+shuffledNumbersto[99]]: {
       botPrompt: 'Which number has a digit 3 in the tens place and a digit 6 in the units place?',
       type: RTypes.TRANSFORMED_TEXT,
   
@@ -4261,42 +4261,42 @@ day303link: {
         answers: [
           {
             answer: '63',
-            nextId: 'onceTenscorrectq100',
+            nextId: 'onceTensHundredscorrectq100',
           },
           {
             answer: '36',
-            nextId: 'inonceTenscorrectq100',
+            nextId: 'inonceTensHundredscorrectq100',
           },
           {
             answer: "64",
-            nextId: 'inonceTenscorrectq100',
+            nextId: 'inonceTensHundredscorrectq100',
           },
           {
             answer: "46",
-            nextId: 'inonceTenscorrectq100',
+            nextId: 'inonceTensHundredscorrectq100',
           },
         ],
       },
   
-      onceTenscorrectq100: {
+      onceTensHundredscorrectq100: {
       botPrompt: 'Hurray! <strong>63</strong> is the correct answer  ! 😎',
       answers: [
         {
-          nextId: 'onceTens'+shuffledNumbersto[100],
+          nextId: 'onceTensHundreds'+shuffledNumbersto[100],
         },
       ],
       },
-      inonceTenscorrectq100: {
+      inonceTensHundredscorrectq100: {
       botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"63"</strong>',
       answers: [
         {
-          nextId: 'onceTens'+shuffledNumbersto[100],
+          nextId: 'onceTensHundreds'+shuffledNumbersto[100],
         },
       ],
       },
 
       //101
-      ['onceTens'+shuffledNumbersto[100]]: {
+      ['onceTensHundreds'+shuffledNumbersto[100]]: {
       botPrompt: 'What number is formed by the digits 2 in the tens place and 0 in the units place?',
       type: RTypes.TRANSFORMED_TEXT,
   
@@ -4305,42 +4305,42 @@ day303link: {
         answers: [
           {
             answer: '71',
-            nextId: 'inonceTenscorrectq101',
+            nextId: 'inonceTensHundredscorrectq101',
           },
           {
             answer: '17',
-            nextId: 'onceTenscorrectq101',
+            nextId: 'onceTensHundredscorrectq101',
           },
           {
             answer: "27",
-            nextId: 'inonceTenscorrectq101',
+            nextId: 'inonceTensHundredscorrectq101',
           },
           {
             answer: "72",
-            nextId: 'inonceTenscorrectq101',
+            nextId: 'inonceTensHundredscorrectq101',
           },
         ],
       },
   
-      onceTenscorrectq101: {
+      onceTensHundredscorrectq101: {
       botPrompt: 'Hurray! <strong>17</strong> is the correct answer  ! 😎',
       answers: [
         {
-          nextId: 'onceTens'+shuffledNumbersto[101],
+          nextId: 'onceTensHundreds'+shuffledNumbersto[101],
         },
       ],
       },
-      inonceTenscorrectq101: {
+      inonceTensHundredscorrectq101: {
       botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"17"</strong>',
       answers: [
         {
-          nextId: 'onceTens'+shuffledNumbersto[101],
+          nextId: 'onceTensHundreds'+shuffledNumbersto[101],
         },
       ],
       },
 
       //102
-      ['onceTens'+shuffledNumbersto[101]]: {
+      ['onceTensHundreds'+shuffledNumbersto[101]]: {
       botPrompt: 'What number is formed by the digits 2 in the tens place and 0 in the units place?',
       type: RTypes.TRANSFORMED_TEXT,
   
@@ -4349,42 +4349,42 @@ day303link: {
         answers: [
           {
             answer: '20',
-            nextId: 'onceTenscorrectq102',
+            nextId: 'onceTensHundredscorrectq102',
           },
           {
             answer: '2',
-            nextId: 'inonceTenscorrectq102',
+            nextId: 'inonceTensHundredscorrectq102',
           },
           {
             answer: "22",
-            nextId: 'inonceTenscorrectq102',
+            nextId: 'inonceTensHundredscorrectq102',
           },
           {
             answer: "0",
-            nextId: 'inonceTenscorrectq102',
+            nextId: 'inonceTensHundredscorrectq102',
           },
         ],
       },
   
-      onceTenscorrectq102: {
+      onceTensHundredscorrectq102: {
       botPrompt: 'Hurray! <strong>20</strong> is the correct answer  ! 😎',
       answers: [
         {
-          nextId: 'onceTens'+shuffledNumbersto[102],
+          nextId: 'onceTensHundreds'+shuffledNumbersto[102],
         },
       ],
       },
-      inonceTenscorrectq102: {
+      inonceTensHundredscorrectq102: {
       botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"20"</strong>',
       answers: [
         {
-          nextId: 'onceTens'+shuffledNumbersto[102],
+          nextId: 'onceTensHundreds'+shuffledNumbersto[102],
         },
       ],
       },
 
       //103
-      ['onceTens'+shuffledNumbersto[102]]: {
+      ['onceTensHundreds'+shuffledNumbersto[102]]: {
       botPrompt: 'Which number has a digit 9 in the tens place and a digit 1 in the units place?',
       type: RTypes.TRANSFORMED_TEXT,
   
@@ -4393,43 +4393,43 @@ day303link: {
         answers: [
           {
             answer: '91',
-            nextId: 'onceTenscorrectq103',
+            nextId: 'onceTensHundredscorrectq103',
           },
           {
             answer: '19',
-            nextId: 'inonceTenscorrectq103',
+            nextId: 'inonceTensHundredscorrectq103',
           },
           {
             answer: "99",
-            nextId: 'inonceTenscorrectq103',
+            nextId: 'inonceTensHundredscorrectq103',
           },
           {
             answer: "11",
-            nextId: 'inonceTenscorrectq103',
+            nextId: 'inonceTensHundredscorrectq103',
           },
         ],
       },
   
-      onceTenscorrectq103: {
+      onceTensHundredscorrectq103: {
       botPrompt: 'Hurray! <strong>91</strong> is the correct answer  ! 😎',
       answers: [
         {
-          nextId: 'onceTens'+shuffledNumbersto[103],
+          nextId: 'onceTensHundreds'+shuffledNumbersto[103],
         },
       ],
       },
-      inonceTenscorrectq103: {
+      inonceTensHundredscorrectq103: {
       botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"91"</strong>',
       answers: [
         {
-          nextId: 'onceTens'+shuffledNumbersto[103],
+          nextId: 'onceTensHundreds'+shuffledNumbersto[103],
         },
       ],
       },
 
 
       //104
-      ['onceTens'+shuffledNumbersto[103]]: {
+      ['onceTensHundreds'+shuffledNumbersto[103]]: {
       botPrompt: 'What number is formed by the digits 5 in the tens place and 8 in the units place?',
       type: RTypes.TRANSFORMED_TEXT,
 
@@ -4438,43 +4438,43 @@ day303link: {
         answers: [
           {
             answer: '58',
-            nextId: 'inonceTenscorrectq104',
+            nextId: 'inonceTensHundredscorrectq104',
           },
           {
             answer: '85',
-            nextId: 'onceTenscorrectq104',
+            nextId: 'onceTensHundredscorrectq104',
           },
           {
             answer: "88",
-            nextId: 'inonceTenscorrectq104',
+            nextId: 'inonceTensHundredscorrectq104',
           },
           {
             answer: "18",
-            nextId: 'inonceTenscorrectq104',
+            nextId: 'inonceTensHundredscorrectq104',
           },
         ],
       },
   
-      onceTenscorrectq104: {
+      onceTensHundredscorrectq104: {
       botPrompt: 'Hurray! <strong>58</strong> is the correct answer  ! 😎',
       answers: [
         {
-          nextId: 'onceTens'+shuffledNumbersto[104],
+          nextId: 'onceTensHundreds'+shuffledNumbersto[104],
         },
       ],
       },
-      inonceTenscorrectq104: {
+      inonceTensHundredscorrectq104: {
       botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"58"</strong>',
       answers: [
         {
-          nextId: 'onceTens'+shuffledNumbersto[104],
+          nextId: 'onceTensHundreds'+shuffledNumbersto[104],
         },
       ],
       },
 
 
       //105
-      ['onceTens'+shuffledNumbersto[104]]: {
+      ['onceTensHundreds'+shuffledNumbersto[104]]: {
       botPrompt: 'Which of the following has a digit 2 in the tens place and a digit 4 in the units place?',
       type: RTypes.TRANSFORMED_TEXT,
 
@@ -4483,42 +4483,42 @@ day303link: {
         answers: [
           {
             answer: '42',
-            nextId: 'inonceTenscorrectq105',
+            nextId: 'inonceTensHundredscorrectq105',
           },
           {
             answer: '24',
-            nextId: 'onceTenscorrectq105',
+            nextId: 'onceTensHundredscorrectq105',
           },
           {
             answer: "64",
-            nextId: 'inonceTenscorrectq105',
+            nextId: 'inonceTensHundredscorrectq105',
           },
           {
             answer: "46",
-            nextId: 'inonceTenscorrectq105',
+            nextId: 'inonceTensHundredscorrectq105',
           },
         ],
       },
 
-      onceTenscorrectq105: {
+      onceTensHundredscorrectq105: {
       botPrompt: 'Hurray! <strong>24</strong> is the correct answer  ! 😎',
       answers: [
         {
-          nextId: 'onceTens'+shuffledNumbersto[105],
+          nextId: 'onceTensHundreds'+shuffledNumbersto[105],
         },
       ],
       },
-      inonceTenscorrectq105: {
+      inonceTensHundredscorrectq105: {
       botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"24"</strong>',
       answers: [
         {
-          nextId: 'onceTens'+shuffledNumbersto[105],
+          nextId: 'onceTensHundreds'+shuffledNumbersto[105],
         },
       ],
       },
 
        //106
-       ['onceTens'+shuffledNumbersto[105]]: {
+       ['onceTensHundreds'+shuffledNumbersto[105]]: {
         botPrompt: 'What is the number formed by the digits 3 in the tens place and 9 in the units place?',
         type: RTypes.TRANSFORMED_TEXT,
 
@@ -4527,38 +4527,38 @@ day303link: {
           answers: [
             {
               answer: '39',
-              nextId: 'onceTenscorrectq106',
+              nextId: 'onceTensHundredscorrectq106',
             },
             {
               answer: '93',
-              nextId: 'inonceTenscorrectq106',
+              nextId: 'inonceTensHundredscorrectq106',
             },
             {
               answer: "33",
-              nextId: 'inonceTenscorrectq106',
+              nextId: 'inonceTensHundredscorrectq106',
             },
             {
               answer: "99",
-              nextId: 'inonceTenscorrectq106',
+              nextId: 'inonceTensHundredscorrectq106',
             },
           ],
         },
   
-        onceTenscorrectq106: {
+        onceTensHundredscorrectq106: {
         botPrompt: 'Hurray! <strong>39</strong> is the correct answer  ! 😎',
         answers: [
           {
-            nextId: 'wishtoContinue31',
+            nextId: 'wishtoContinue27',
           },
         ],
         },
-        inonceTenscorrectq106: {
+        inonceTensHundredscorrectq106: {
         botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"39"</strong>',
         answers: [
           {
-            nextId: 'wishtoContinue31',
+            nextId: 'wishtoContinue27',
           },
         ],
         },
 
-  //endonceTensletter
+  //endonceTensHundredsletter

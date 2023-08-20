@@ -1,3 +1,67 @@
+day29: {
+  botPrompt: '<strong> Day 29 : </strong> Colour Song',
+  answers: [
+          { nextId: 'day29link' },
+  ],
+},
+
+day29link: {
+  botPrompt: 'https://youtu.be/5jS9tz3Fy24',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day291comment',
+    },
+  ],
+},
+
+day291comment: {
+  botPrompt: 'Recognising colour through everyDay objects',
+  answers: [
+          { nextId: 'day291link' },
+  ],
+},
+day291link: {
+  botPrompt: 'https://youtu.be/JQtIF3MG1q4',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day292comment',
+    },
+  ],
+},
+day292comment: {
+  botPrompt: 'TLM Video',
+  answers: [
+          { nextId: 'day292link' },
+  ],
+},
+day292link: {
+  botPrompt: 'https://youtu.be/i1wP6w_cJRk',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day293comment' ,
+    },
+  ],
+},
+day293comment: {
+  botPrompt: 'Let’s look into the pages of the book',
+  answers: [
+          { nextId: 'day293link' },
+  ],
+},
+day293link: {
+  botPrompt: 'https://drive.google.com/file/d/1e0RvqhSnTorOMiUZeDM9hTL-CBzER5V4/view?usp=sharing',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'colours'+shuffledNumbersto[0],
+    },
+  ],
+},
+
+
 //colours
 
 

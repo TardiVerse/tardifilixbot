@@ -1,3 +1,46 @@
+day35: {
+  botPrompt: '<strong> Day 35 : </strong> Number Line Subtraction',
+  answers: [
+          { nextId: 'day35link' },
+  ],
+},
+day35link: {
+
+  botPrompt: 'https://youtu.be/7ZcUodbBa6Q',
+  type: RTypes.LINK,
+  answers: [
+          { nextId: 'day351comment' },
+  ],
+},
+day351comment: {
+  botPrompt: 'Subtraction with Borrowing',
+  answers: [
+          { nextId: 'day351link' },
+  ],
+},
+day351link: {
+  botPrompt: 'https://youtu.be/J1xx2yktWgE',
+  type: RTypes.LINK,
+  answers: [
+          { nextId: 'day352comment' },
+  ],
+},
+day352comment: {
+  botPrompt: 'Let’s look into the pages of the book',
+  answers: [
+          { nextId: 'day352link' },
+  ],
+},
+day352link: {
+  botPrompt: 'https://drive.google.com/file/d/1BHXEoRdTNpI_DQxGbaWl-m5Ij_LIAfr5/view?usp=share_link',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'subtarction'+shuffledNumbersto[0],
+    },
+  ],
+},
+
 //subtarction
 
 
@@ -4336,7 +4379,7 @@
       botPrompt: 'Hurray! <strong>143</strong> is the correct answer  ! 😎',
       answers: [
         {
-          nextId: 'subtarction'+shuffledNumbersto[102],
+          nextId: 'wishToContinue35',
         },
       ],
       },
@@ -4344,7 +4387,7 @@
       botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"143"</strong>',
       answers: [
         {
-          nextId: 'subtarction'+shuffledNumbersto[102],
+          nextId: 'wishToContinue35',
         },
       ],
       },

@@ -1,3 +1,34 @@
+day49: {
+  botPrompt: '<strong> Day 49 : </strong> Shapes play a crucial role in kindergarten as they lay the foundation for understanding the world around us',
+  answers: [
+          { nextId: 'day49link' },
+  ],
+},
+day49link: {
+
+  botPrompt: 'https://youtu.be/RM1rc5j-sww',
+  type: RTypes.LINK,
+  answers: [
+          { nextId: 'day492comment' },
+  ],
+},
+
+day492comment: {
+  botPrompt: 'Let’s look into the pages of the book',
+  answers: [
+          { nextId: 'day492link' },
+  ],
+},
+day492link: {
+  botPrompt: 'https://drive.google.com/file/d/1q1KG4qtxXnB1oxP7bat-aqAa4q64HR-D/view?usp=share_link',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'positionWords'+shuffledNumbersto[0],
+    },
+  ],
+},
+
 //shapes
 
 
@@ -416,7 +447,7 @@
   botPrompt: 'Hurray! <strong>Circle</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'wishToContinue50'
+      nextId: 'wishToContinue49'
     },
   ],
   },
@@ -424,7 +455,7 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Circle"</strong>',
   answers: [
     {
-      nextId: 'wishToContinue50'
+      nextId: 'wishToContinue49'
     },
   ],
   },

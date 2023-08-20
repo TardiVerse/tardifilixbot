@@ -1,3 +1,27 @@
+day48: {
+  botPrompt: '<strong> Day 48 : </strong> Classroom demo',
+  answers: [
+          { nextId: 'day482comment' },
+  ],
+},
+
+
+
+day482comment: {
+  botPrompt: 'Let’s look into the pages of the book',
+  answers: [
+          { nextId: 'day482link' },
+  ],
+},
+day482link: {
+  botPrompt: 'https://drive.google.com/file/d/1dVuNlxtFrb2dWif0Xh1mLU3nLuyD4JNJ/view?usp=sharing',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'whWords'+shuffledNumbersto[0],
+    },
+  ],
+},
 //whWords
 
 
@@ -842,7 +866,7 @@
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>What is she wearing?</strong> 😎',
   answers: [
     {
-      nextId: 'wishToContinue49'
+      nextId: 'wishToContinue48'
     },
   ],
   },
@@ -850,7 +874,7 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"What is she wearing?"</strong>',
   answers: [
     {
-      nextId: 'wishToContinue49'
+      nextId: 'wishToContinue48'
     },
   ],
   },

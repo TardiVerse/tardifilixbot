@@ -1,3 +1,46 @@
+day39: {
+  botPrompt: '<strong> Day 39 : </strong> Multiplication activity',
+  answers: [
+          { nextId: 'day39link' },
+  ],
+},
+day39link: {
+
+  botPrompt: 'https://youtu.be/0zdqFRkInYg',
+  type: RTypes.LINK,
+  answers: [
+          { nextId: 'day391comment' },
+  ],
+},
+day391comment: {
+  botPrompt: 'Repeated Addition',
+  answers: [
+          { nextId: 'day391link' },
+  ],
+},
+day391link: {
+  botPrompt: 'https://youtu.be/E2sH1xHMQFs',
+  type: RTypes.LINK,
+  answers: [
+          { nextId: 'day392comment' },
+  ],
+},
+day392comment: {
+  botPrompt: 'Let’s look into the pages of the book',
+  answers: [
+          { nextId: 'day392link' },
+  ],
+},
+day392link: {
+  botPrompt: 'https://drive.google.com/file/d/1rUID9NgJgCwUuMiCcZrc5NbJaDIfvp3V/view?usp=share_link',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'multiply'+shuffledNumbersto[0],
+    },
+  ],
+},
+
 //multiply
 
 
@@ -4204,7 +4247,7 @@
       botPrompt: 'Hurray! <strong>8</strong> is the correct answer  ! 😎',
       answers: [
         {
-          nextId: 'multiply'+shuffledNumbersto[99],
+          nextId: 'wishToContinue39',
         },
       ],
       },
@@ -4212,7 +4255,7 @@
       botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"8"</strong>',
       answers: [
         {
-          nextId: 'multiply'+shuffledNumbersto[99],
+          nextId: 'wishToContinue39',
         },
       ],
       },

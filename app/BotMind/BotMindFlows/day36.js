@@ -1,3 +1,47 @@
+day36: {
+  botPrompt: '<strong> Day 36 : </strong> Combining words is crucial in kindergarten as it lays the foundation for language development, enabling children to express ideas and interact effectively.',
+  answers: [
+          { nextId: 'day36link' },
+  ],
+},
+day36link: {
+
+  botPrompt: 'https://youtu.be/Wh5lyHhbZws',
+  type: RTypes.LINK,
+  answers: [
+          { nextId: 'day361comment' },
+  ],
+},
+day361comment: {
+  botPrompt: 'TLM Video',
+  answers: [
+          { nextId: 'day361link' },
+  ],
+},
+day361link: {
+  botPrompt: 'https://youtu.be/82rUPIxSVgs',
+  type: RTypes.LINK,
+  answers: [
+          { nextId: 'day362comment' },
+  ],
+},
+day362comment: {
+  botPrompt: 'Let’s look into the pages of the book',
+  answers: [
+          { nextId: 'day362link' },
+  ],
+},
+day362link: {
+  botPrompt: 'https://drive.google.com/file/d/11N-63h5FAD2gYJwbOdqiEZTZSmqV4iBC/view?usp=sharing',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'combinedWords'+shuffledNumbersto[0],
+    },
+  ],
+},
+
+
 //combinedWords
 
 
@@ -922,7 +966,7 @@
     botPrompt: 'Hurray! <strong>Hopper</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'wishtocontinue37',
+        nextId: 'wishtocontinue36',
       },
     ],
   },
@@ -930,7 +974,7 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Hopper"</strong>',
     answers: [
       {
-        nextId: 'wishtocontinue37',
+        nextId: 'wishtocontinue36',
       },
     ],
   },

@@ -1,3 +1,34 @@
+day41: {
+  botPrompt: '<strong> Day 41 : </strong> Through rhyming activities, children develop sound recognition and expand their vocabulary',
+  answers: [
+          { nextId: 'day41link' },
+  ],
+},
+day41link: {
+
+  botPrompt: 'https://youtu.be/FgBlTNWH3To',
+  type: RTypes.LINK,
+  answers: [
+          { nextId: 'day412comment' },
+  ],
+},
+
+day412comment: {
+  botPrompt: 'Let’s look into the pages of the book',
+  answers: [
+          { nextId: 'day412link' },
+  ],
+},
+day412link: {
+  botPrompt: 'https://drive.google.com/file/d/1e0RvqhSnTorOMiUZeDM9hTL-CBzER5V4/view?usp=sharing',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[0],
+    },
+  ],
+},
+
 //rhymingWords
 
 
@@ -1279,7 +1310,7 @@
   botPrompt: 'Hurray! <strong>Hat</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'rhymingWords'+shuffledNumbersto[30],
+      nextId: 'wishToContinue41',
     },
   ],
   },
@@ -1287,7 +1318,7 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Hat"</strong>',
   answers: [
     {
-      nextId: 'rhymingWords'+shuffledNumbersto[30],
+      nextId: 'wishToContinue41',
     },
   ],
   },

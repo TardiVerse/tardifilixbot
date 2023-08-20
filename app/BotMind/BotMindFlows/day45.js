@@ -1,3 +1,41 @@
+day45: {
+  botPrompt: '<strong> Day 45 : </strong> Division is essential in kindergarten as it helps children develop their basic math skills by understanding sharing and equal distribution',
+  answers: [
+          { nextId: 'day452comment' },
+  ],
+},
+
+day452comment: {
+  botPrompt: 'Let’s look into the pages of the book',
+  answers: [
+          { nextId: 'day451link' },
+  ],
+},
+day451link: {
+
+  botPrompt: 'https://drive.google.com/file/d/1m3PAK02sWCi7IEPF8fPiGHVFo6frm_8G/view?usp=sharing',
+  type: RTypes.LINK,
+  answers: [
+          { nextId: 'day452link' },
+  ],
+},
+day452link: {
+
+  botPrompt: 'https://drive.google.com/file/d/1pHs1-6e0iESjWr1GDbOVcVwrrasFovej/view?usp=sharing',
+  type: RTypes.LINK,
+  answers: [
+          { nextId: 'day454link' },
+  ],
+},
+day454link: {
+  botPrompt: 'https://drive.google.com/file/d/1U1x8FyRcRDggFyLa_glAjblejOVpbGh8/view?usp=sharing',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'division'+shuffledNumbersto[0],
+    },
+  ],
+},
 //myHeShe
 
 
@@ -1490,7 +1528,7 @@
     botPrompt: 'Hurray! <strong>It</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'wishToContinue46'
+        nextId: 'wishToContinue45'
       },
     ],
     },
@@ -1498,7 +1536,7 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"It"</strong>',
     answers: [
       {
-        nextId: 'wishToContinue46'
+        nextId: 'wishToContinue45'
       },
     ],
     },

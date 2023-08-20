@@ -1,3 +1,21 @@
+
+day28: {
+  botPrompt: '<strong> Day 28 : </strong> Classroom demo.',
+  answers: [
+          { nextId: 'day283comment' },
+  ],
+},
+
+
+day283comment: {
+  botPrompt: 'Pages from the book',
+  answers: [
+          { nextId: 'yesNo'+shuffledNumbersto[0] },
+  ],
+},
+
+
+
 //yesNo
 
 
@@ -876,7 +894,7 @@
   botPrompt: 'Hurray! <strong>Yes</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'wishtocontinue29',
+      nextId: 'wishtocontinue28',
     },
   ],
   },
@@ -884,7 +902,7 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Yes"</strong>',
   answers: [
     {
-      nextId: 'wishtocontinue29',
+      nextId: 'wishtocontinue28',
     },
   ],
   },

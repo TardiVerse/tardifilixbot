@@ -1,3 +1,51 @@
+day43: {
+  botPrompt: '<strong> Day 43 : </strong> Division is essential in kindergarten as it helps children develop their basic math skills by understanding sharing and equal distribution',
+  answers: [
+          { nextId: 'day43link' },
+  ],
+},
+day43link: {
+
+  botPrompt: 'https://youtu.be/YtmbJKTftXA',
+  type: RTypes.LINK,
+  answers: [
+          { nextId: 'day431link' },
+  ],
+},
+day431link: {
+
+  botPrompt: 'https://youtu.be/dDfRSujyn6Q',
+  type: RTypes.LINK,
+  answers: [
+          { nextId: 'day432link' },
+  ],
+},
+day432link: {
+
+  botPrompt: 'https://youtu.be/q5E5PACpGEg',
+  type: RTypes.LINK,
+  answers: [
+          { nextId: 'day432comment' },
+  ],
+},
+
+day432comment: {
+  botPrompt: 'Let’s look into the pages of the book',
+  answers: [
+          { nextId: 'day434link' },
+  ],
+},
+day434link: {
+  botPrompt: 'https://drive.google.com/file/d/1yn8H4kkKLPuuvFo3ArPNV65azn3aBzfe/view?usp=share_link',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[0],
+    },
+  ],
+},
+
+
 //division
 
 
@@ -4204,7 +4252,7 @@
       botPrompt: 'Hurray! <strong>8</strong> is the correct answer  ! 😎',
       answers: [
         {
-          nextId: 'division'+shuffledNumbersto[99],
+          nextId: 'wishToContinue43',
         },
       ],
       },
@@ -4212,7 +4260,7 @@
       botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"8"</strong>',
       answers: [
         {
-          nextId: 'division'+shuffledNumbersto[99],
+          nextId: 'wishToContinue43',
         },
       ],
       },

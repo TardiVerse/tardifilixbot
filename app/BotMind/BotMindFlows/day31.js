@@ -1,3 +1,67 @@
+day31: {
+  botPrompt: '<strong> Day 31 : </strong> Monster box addition in kindergarten is a playful and engaging way to introduce children to basic math concepts',
+  answers: [
+          { nextId: 'day31link' },
+  ],
+},
+
+day31link: {
+  botPrompt: 'https://youtu.be/8r9-bUm96kY',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day311comment',
+    },
+  ],
+},
+day311comment: {
+  botPrompt: 'Number Line Addition',
+  answers: [
+          { nextId: 'day311link' },
+  ],
+},
+day311link: {
+  botPrompt: 'https://youtu.be/GHJ1RDLY9L8',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day312comment',
+    },
+  ],
+},
+day312comment: {
+  botPrompt: 'Lock and Key addition',
+  answers: [
+          { nextId: 'day312link' },
+  ],
+},
+day312link: {
+  botPrompt: 'https://youtu.be/kGDAtLGB4BU',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day313comment' ,
+    },
+  ],
+},
+day313comment: {
+  botPrompt: 'Let’s look into the pages of the book',
+  answers: [
+          { nextId: 'day313link' },
+  ],
+},
+day313link: {
+  botPrompt: 'https://drive.google.com/file/d/1klGC9i-SP4yGzcrH_NTyybudLx3iDWvk/view?usp=share_link',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'addition'+shuffledNumbersto[0],
+    },
+  ],
+},
+
+
+
 //addition
 
 
@@ -4514,7 +4578,7 @@
         botPrompt: 'Hurray! <strong>567</strong> is the correct answer  ! 😎',
         answers: [
           {
-            nextId: 'wishtoContinue32',
+            nextId: 'wishtoContinue31',
           },
         ],
         },
@@ -4522,7 +4586,7 @@
         botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"567"</strong>',
         answers: [
           {
-            nextId: 'wishtoContinue32',
+            nextId: 'wishtoContinue31',
           },
         ],
         },

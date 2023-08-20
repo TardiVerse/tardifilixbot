@@ -1,3 +1,26 @@
+day32: {
+  botPrompt: '<strong> Day 32 : </strong> Classroom demo',
+  answers: [
+          { nextId: 'day32link' },
+  ],
+},
+day32comment: {
+  botPrompt: 'Let’s look into the pages of the book',
+  answers: [
+          { nextId: 'day32link' },
+  ],
+},
+day32link: {
+  botPrompt: 'https://drive.google.com/file/d/1ZyZF2MzFs6QUxCtOCrt6Dn6_ZCYXeSYu/view?usp=sharing',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'useOfAnd'+shuffledNumbersto[0],
+    },
+  ],
+},
+
+
 //useOfAnd
 
 
@@ -712,7 +735,7 @@
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>And</strong> 😎',
   answers: [
     {
-      nextId: 'wishtocontinue33',
+      nextId: 'wishtocontinue32',
     },
   ],
   },
@@ -720,7 +743,7 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"And"</strong>',
   answers: [
     {
-      nextId: 'wishtocontinue33',
+      nextId: 'wishtocontinue32',
     },
   ],
   },

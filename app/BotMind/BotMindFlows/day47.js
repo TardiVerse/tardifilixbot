@@ -1,3 +1,32 @@
+day47: {
+  botPrompt: '<strong> Day 47 : </strong> "there" and "their" is essential in kindergarten as it helps children express location and possession accurately in their early writing and communication.',
+  answers: [
+          { nextId: 'day471comment' },
+  ],
+},
+
+day471comment: {
+  botPrompt: 'TLM Video',
+  answers: [
+          { nextId: 'day472comment' },
+  ],
+},
+
+day472comment: {
+  botPrompt: 'Let’s look into the pages of the book',
+  answers: [
+          { nextId: 'day472link' },
+  ],
+},
+day472link: {
+  botPrompt: 'https://drive.google.com/file/d/1Y9KGC1PRO_g5CmDkydkAWYQeH2X7Xq3k/view?usp=sharing',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'thierThere'+shuffledNumbersto[0],
+    },
+  ],
+},
 //thierThere
 
 
@@ -844,7 +873,7 @@
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>Their</strong> 😎',
   answers: [
     {
-      nextId: 'wishToContinue48'
+      nextId: 'wishToContinue47'
     },
   ],
   },
@@ -852,7 +881,7 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Their"</strong>',
   answers: [
     {
-      nextId: 'wishToContinue48'
+      nextId: 'wishToContinue47'
     },
   ],
   },
