@@ -1,7 +1,7 @@
 //moreLess
 
 
-["moreLess"+shuffledNumbersto[0]]: {
+["moreLess"+shuffleArraynseve[0]]: {
     botPrompt: ' What is 1 more than 2?',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['3', '4', "5","6"]),
@@ -28,7 +28,7 @@
     botPrompt: 'Hurray <strong>3</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[1],
+        nextId: 'moreLess'+shuffleArraynseve[1],
       },
     ],
   },
@@ -36,12 +36,12 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"3"</strong>',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[1],
+        nextId: 'moreLess'+shuffleArraynseve[1],
       },
     ],
   },
   
-  ['moreLess'+shuffledNumbersto[1]]: {
+  ['moreLess'+shuffleArraynseve[1]]: {
     botPrompt: 'What is the number that is 1 more than 11?',
     type: RTypes.TRANSFORMED_TEXT,
   
@@ -70,7 +70,7 @@
     botPrompt: 'Hurray! <strong>12</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[2],
+        nextId: 'moreLess'+shuffleArraynseve[2],
       },
     ],
   },
@@ -78,13 +78,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"12"</strong>',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[2],
+        nextId: 'moreLess'+shuffleArraynseve[2],
       },
     ],
   },
   
   //3
-  ['moreLess'+shuffledNumbersto[2]]: {
+  ['moreLess'+shuffleArraynseve[2]]: {
   botPrompt: "What is the number that is 1 more than 13?",
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -113,7 +113,7 @@
   botPrompt: 'Hurray! <strong>14</strong> is the correct answer ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[3],
+      nextId: 'moreLess'+shuffleArraynseve[3],
     },
   ],
   },
@@ -121,13 +121,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"14"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[3],
+      nextId: 'moreLess'+shuffleArraynseve[3],
     },
   ],
   },
   
   //4
-  ['moreLess'+shuffledNumbersto[3]]: {
+  ['moreLess'+shuffleArraynseve[3]]: {
   botPrompt: ' What is 1 more than 3?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -156,7 +156,7 @@
   botPrompt: 'Hurray! <strong>4</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[4],
+      nextId: 'moreLess'+shuffleArraynseve[4],
     },
   ],
   },
@@ -164,13 +164,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[4],
+      nextId: 'moreLess'+shuffleArraynseve[4],
     },
   ],
   },
   
   //5
-  ['moreLess'+shuffledNumbersto[4]]: {
+  ['moreLess'+shuffleArraynseve[4]]: {
   botPrompt: 'What is the number that is 1 more than 15?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -199,7 +199,7 @@
   botPrompt: 'Hurray! <strong>16</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[5],
+      nextId: 'moreLess'+shuffleArraynseve[5],
     },
   ],
   },
@@ -207,13 +207,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"16"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[5],
+      nextId: 'moreLess'+shuffleArraynseve[5],
     },
   ],
   },
   
   //6
-  ['moreLess'+shuffledNumbersto[5]]: {
+  ['moreLess'+shuffleArraynseve[5]]: {
   botPrompt: 'What is 1 more than 4?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -242,7 +242,7 @@
   botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[6],
+      nextId: 'moreLess'+shuffleArraynseve[6],
     },
   ],
   },
@@ -250,13 +250,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[6],
+      nextId: 'moreLess'+shuffleArraynseve[6],
     },
   ],
   },
   
   //7
-  ['moreLess'+shuffledNumbersto[6]]: {
+  ['moreLess'+shuffleArraynseve[6]]: {
   botPrompt: 'What is 1 more than 6?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -285,7 +285,7 @@
   botPrompt: 'Hurray! <strong>7</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[7],
+      nextId: 'moreLess'+shuffleArraynseve[7],
     },
   ],
   },
@@ -293,14 +293,14 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"7"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[7],
+      nextId: 'moreLess'+shuffleArraynseve[7],
     },
   ],
   },
   
   
   //8
-  ['moreLess'+shuffledNumbersto[7]]: {
+  ['moreLess'+shuffleArraynseve[7]]: {
   botPrompt: 'What is 1 more than  5?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -329,7 +329,7 @@
   botPrompt: 'Hurray! <strong>6</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[8],
+      nextId: 'moreLess'+shuffleArraynseve[8],
     },
   ],
   },
@@ -337,13 +337,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"6"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[8],
+      nextId: 'moreLess'+shuffleArraynseve[8],
     },
   ],
   },
   
   //9
-  ['moreLess'+shuffledNumbersto[8]]: {
+  ['moreLess'+shuffleArraynseve[8]]: {
   botPrompt: 'What is the number that is 1 more than 14?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -372,7 +372,7 @@
   botPrompt: 'Hurray! <strong>15</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[9],
+      nextId: 'moreLess'+shuffleArraynseve[9],
     },
   ],
   },
@@ -380,14 +380,14 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"15"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[9],
+      nextId: 'moreLess'+shuffleArraynseve[9],
     },
   ],
   },
   
   
   //10
-  ['moreLess'+shuffledNumbersto[9]]: {
+  ['moreLess'+shuffleArraynseve[9]]: {
   botPrompt: 'What is the number that is 1 more than 12?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -417,7 +417,7 @@
   botPrompt: 'Hurray! <strong>13</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[10],
+      nextId: 'moreLess'+shuffleArraynseve[10],
     },
   ],
   },
@@ -425,13 +425,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"13"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[10],
+      nextId: 'moreLess'+shuffleArraynseve[10],
     },
   ],
   },
   
   //11
-  ['moreLess'+shuffledNumbersto[10]]: {
+  ['moreLess'+shuffleArraynseve[10]]: {
   botPrompt: 'What is the number that is 1 more than 16?',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -460,7 +460,7 @@
   botPrompt: 'Hurray! <strong>17</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[11],
+      nextId: 'moreLess'+shuffleArraynseve[11],
     },
   ],
   },
@@ -468,13 +468,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"17"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[11],
+      nextId: 'moreLess'+shuffleArraynseve[11],
     },
   ],
   },
   
   //12
-  ['moreLess'+shuffledNumbersto[11]]: {
+  ['moreLess'+shuffleArraynseve[11]]: {
   botPrompt: 'What is 1 more than 7?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -503,7 +503,7 @@
   botPrompt: 'Hurray! <strong>8</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[12],
+      nextId: 'moreLess'+shuffleArraynseve[12],
     },
   ],
   },
@@ -511,13 +511,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"8"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[12],
+      nextId: 'moreLess'+shuffleArraynseve[12],
     },
   ],
   },
   
   //13
-  ['moreLess'+shuffledNumbersto[12]]: {
+  ['moreLess'+shuffleArraynseve[12]]: {
   botPrompt: 'What is the number that is 1 more than 17?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -546,7 +546,7 @@
   botPrompt: 'Hurray! <strong>18</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[13],
+      nextId: 'moreLess'+shuffleArraynseve[13],
     },
   ],
   },
@@ -554,13 +554,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"18"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[13],
+      nextId: 'moreLess'+shuffleArraynseve[13],
     },
   ],
   },
   
   //14
-  ['moreLess'+shuffledNumbersto[13]]: {
+  ['moreLess'+shuffleArraynseve[13]]: {
   botPrompt: 'What is 1 more than 8?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -589,7 +589,7 @@
   botPrompt: 'Hurray! <strong>18</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[14],
+      nextId: 'moreLess'+shuffleArraynseve[14],
     },
   ],
   },
@@ -597,14 +597,14 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"18"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[14],
+      nextId: 'moreLess'+shuffleArraynseve[14],
     },
   ],
   },
   
   
   //15
-  ['moreLess'+shuffledNumbersto[14]]: {
+  ['moreLess'+shuffleArraynseve[14]]: {
   botPrompt: 'What is 1 more than 18?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -633,7 +633,7 @@
   botPrompt: 'Hurray! <strong>9</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[15],
+      nextId: 'moreLess'+shuffleArraynseve[15],
     },
   ],
   },
@@ -641,13 +641,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"9"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[15],
+      nextId: 'moreLess'+shuffleArraynseve[15],
     },
   ],
   },
   
   //16
-  ['moreLess'+shuffledNumbersto[15]]: {
+  ['moreLess'+shuffleArraynseve[15]]: {
     botPrompt: 'What is 1 more than 9?',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['11', '10', "12","19"]),
@@ -674,7 +674,7 @@
     botPrompt: 'You Have Selected correct Anwser 🎉! <strong>10</strong> 😎',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[16],
+        nextId: 'moreLess'+shuffleArraynseve[16],
       },
     ],
   },
@@ -682,13 +682,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"10"</strong>',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[16],
+        nextId: 'moreLess'+shuffleArraynseve[16],
       },
     ],
   },
   
   //17
-  ['moreLess'+shuffledNumbersto[16]]: {
+  ['moreLess'+shuffleArraynseve[16]]: {
   botPrompt: 'What is 1 more than 19?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['20', '21', "18","22"]),
@@ -715,7 +715,7 @@
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>20</strong> 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[17],
+      nextId: 'moreLess'+shuffleArraynseve[17],
     },
   ],
   },
@@ -723,13 +723,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"20"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[17],
+      nextId: 'moreLess'+shuffleArraynseve[17],
     },
   ],
   },
   
   //18
-  ['moreLess'+shuffledNumbersto[17]]: {
+  ['moreLess'+shuffleArraynseve[17]]: {
   botPrompt: 'What is 1 more than 20?.   ',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['23', '21', "22","19"]),
@@ -756,7 +756,7 @@
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>21</strong> 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[18],
+      nextId: 'moreLess'+shuffleArraynseve[18],
     },
   ],
   },
@@ -764,13 +764,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"21"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[18],
+      nextId: 'moreLess'+shuffleArraynseve[18],
     },
   ],
   },
   
   //19
-  ['moreLess'+shuffledNumbersto[18]]: {
+  ['moreLess'+shuffleArraynseve[18]]: {
   botPrompt: 'What is the number that is 1 more than 10?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['16', '13', "12","11"]),
@@ -797,7 +797,7 @@
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>11</strong> Answers! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[19],
+      nextId: 'moreLess'+shuffleArraynseve[19],
     },
   ],
   },
@@ -805,13 +805,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"11"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[19],
+      nextId: 'moreLess'+shuffleArraynseve[19],
     },
   ],
   },
   
   //20
-  ['moreLess'+shuffledNumbersto[19]]: {
+  ['moreLess'+shuffleArraynseve[19]]: {
   botPrompt: 'What is 1 more than 21?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['25', '27', "22","20"]),
@@ -838,7 +838,7 @@
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>22</strong> 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[20],
+      nextId: 'moreLess'+shuffleArraynseve[20],
     },
   ],
   },
@@ -846,13 +846,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"22"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[20],
+      nextId: 'moreLess'+shuffleArraynseve[20],
     },
   ],
   },
   
   //21
-  ["moreLess"+shuffledNumbersto[20]]: {
+  ["moreLess"+shuffleArraynseve[20]]: {
     botPrompt: 'What is 1 more than 22?',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['23', '21', "20","19"]),
@@ -879,7 +879,7 @@
     botPrompt: 'Hurray <strong>23</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[21],
+        nextId: 'moreLess'+shuffleArraynseve[21],
       },
     ],
   },
@@ -887,13 +887,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"23"</strong>',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[21],
+        nextId: 'moreLess'+shuffleArraynseve[21],
       },
     ],
   },
   
   //22
-  ['moreLess'+shuffledNumbersto[21]]: {
+  ['moreLess'+shuffleArraynseve[21]]: {
     botPrompt: 'What is 1 more than 23?',
     type: RTypes.TRANSFORMED_TEXT,
   
@@ -922,7 +922,7 @@
     botPrompt: 'Hurray! <strong>24</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[22],
+        nextId: 'moreLess'+shuffleArraynseve[22],
       },
     ],
   },
@@ -930,13 +930,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"24"</strong>',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[22],
+        nextId: 'moreLess'+shuffleArraynseve[22],
       },
     ],
   },
   
   //23
-  ['moreLess'+shuffledNumbersto[22]]: {
+  ['moreLess'+shuffleArraynseve[22]]: {
   botPrompt: "What is 1 more than 25?",
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['24', '23', "26","27"]),
@@ -964,7 +964,7 @@
   botPrompt: 'Hurray! <strong>26</strong> is the correct answer ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[23],
+      nextId: 'moreLess'+shuffleArraynseve[23],
     },
   ],
   },
@@ -972,13 +972,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"26"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[23],
+      nextId: 'moreLess'+shuffleArraynseve[23],
     },
   ],
   },
   
   //24
-  ['moreLess'+shuffledNumbersto[23]]: {
+  ['moreLess'+shuffleArraynseve[23]]: {
   botPrompt: 'What is 1 more than 30?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1007,7 +1007,7 @@
   botPrompt: 'Hurray! <strong>31</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[24],
+      nextId: 'moreLess'+shuffleArraynseve[24],
     },
   ],
   },
@@ -1015,13 +1015,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"31"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[24],
+      nextId: 'moreLess'+shuffleArraynseve[24],
     },
   ],
   },
   
   //25
-  ['moreLess'+shuffledNumbersto[24]]: {
+  ['moreLess'+shuffleArraynseve[24]]: {
   botPrompt: 'What is 1 more than 26?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1050,7 +1050,7 @@
   botPrompt: 'Hurray! <strong>27</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[25],
+      nextId: 'moreLess'+shuffleArraynseve[25],
     },
   ],
   },
@@ -1058,13 +1058,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"27"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[25],
+      nextId: 'moreLess'+shuffleArraynseve[25],
     },
   ],
   },
   
   //26
-  ['moreLess'+shuffledNumbersto[25]]: {
+  ['moreLess'+shuffleArraynseve[25]]: {
   botPrompt: 'What is 1 more than 29?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1093,7 +1093,7 @@
   botPrompt: 'Hurray! <strong>30</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[26],
+      nextId: 'moreLess'+shuffleArraynseve[26],
     },
   ],
   },
@@ -1101,13 +1101,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"30"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[26],
+      nextId: 'moreLess'+shuffleArraynseve[26],
     },
   ],
   },
   
   //27
-  ['moreLess'+shuffledNumbersto[26]]: {
+  ['moreLess'+shuffleArraynseve[26]]: {
   botPrompt: 'What is the number that is 1 more than 35?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['34', '36', "33","23"]),
@@ -1135,7 +1135,7 @@
   botPrompt: 'Hurray! <strong>36</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[27],
+      nextId: 'moreLess'+shuffleArraynseve[27],
     },
   ],
   },
@@ -1143,14 +1143,14 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"36"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[27],
+      nextId: 'moreLess'+shuffleArraynseve[27],
     },
   ],
   },
   
   
   //28
-  ['moreLess'+shuffledNumbersto[27]]: {
+  ['moreLess'+shuffleArraynseve[27]]: {
   botPrompt: 'What is the number that is 1 more than 34?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['33', '32', "31","35"]),
@@ -1178,7 +1178,7 @@
   botPrompt: 'Hurray! <strong>35</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[28],
+      nextId: 'moreLess'+shuffleArraynseve[28],
     },
   ],
   },
@@ -1186,13 +1186,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"35"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[28],
+      nextId: 'moreLess'+shuffleArraynseve[28],
     },
   ],
   },
   
   //29
-  ['moreLess'+shuffledNumbersto[28]]: {
+  ['moreLess'+shuffleArraynseve[28]]: {
   botPrompt: 'What is the number that is 1 more than 33?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1221,7 +1221,7 @@
   botPrompt: 'Hurray! <strong>34</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[29],
+      nextId: 'moreLess'+shuffleArraynseve[29],
     },
   ],
   },
@@ -1229,14 +1229,14 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"34"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[29],
+      nextId: 'moreLess'+shuffleArraynseve[29],
     },
   ],
   },
   
   
   //30
-  ['moreLess'+shuffledNumbersto[29]]: {
+  ['moreLess'+shuffleArraynseve[29]]: {
   botPrompt: 'What is the number that is 1 more than 32?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1265,7 +1265,7 @@
   botPrompt: 'Hurray! <strong>33</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[30],
+      nextId: 'moreLess'+shuffleArraynseve[30],
     },
   ],
   },
@@ -1273,13 +1273,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"33"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[30],
+      nextId: 'moreLess'+shuffleArraynseve[30],
     },
   ],
   },
   
   //31
-  ['moreLess'+shuffledNumbersto[30]]: {
+  ['moreLess'+shuffleArraynseve[30]]: {
   botPrompt: 'What is 1 more than 1?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1308,7 +1308,7 @@
   botPrompt: 'Hurray! <strong>2</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[31],
+      nextId: 'moreLess'+shuffleArraynseve[31],
     },
   ],
   },
@@ -1316,13 +1316,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"2"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[31],
+      nextId: 'moreLess'+shuffleArraynseve[31],
     },
   ],
   },
   
   //32
-  ['moreLess'+shuffledNumbersto[31]]: {
+  ['moreLess'+shuffleArraynseve[31]]: {
   botPrompt: 'What is the number that is 1 more than 36?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1351,7 +1351,7 @@
   botPrompt: 'Hurray! <strong>37</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[32],
+      nextId: 'moreLess'+shuffleArraynseve[32],
     },
   ],
   },
@@ -1359,13 +1359,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"37"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[32],
+      nextId: 'moreLess'+shuffleArraynseve[32],
     },
   ],
   },
   
   //33
-  ['moreLess'+shuffledNumbersto[32]]: {
+  ['moreLess'+shuffleArraynseve[32]]: {
   botPrompt: 'What is 1 more than 49?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1395,7 +1395,7 @@
   botPrompt: 'Hurray! <strong>50</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[33],
+      nextId: 'moreLess'+shuffleArraynseve[33],
     },
   ],
   },
@@ -1403,13 +1403,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"50"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[33],
+      nextId: 'moreLess'+shuffleArraynseve[33],
     },
   ],
   },
   
   //34
-  ['moreLess'+shuffledNumbersto[33]]: {
+  ['moreLess'+shuffleArraynseve[33]]: {
   botPrompt: 'What is 1 more than 47?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1438,7 +1438,7 @@
   botPrompt: 'Hurray! <strong>48</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[34],
+      nextId: 'moreLess'+shuffleArraynseve[34],
     },
   ],
   },
@@ -1446,14 +1446,14 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"48"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[34],
+      nextId: 'moreLess'+shuffleArraynseve[34],
     },
   ],
   },
   
   
   //35
-  ['moreLess'+shuffledNumbersto[34]]: {
+  ['moreLess'+shuffleArraynseve[34]]: {
   botPrompt: 'What is the number that is 1 more than 40?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1483,7 +1483,7 @@
   botPrompt: 'Hurray! <strong>41</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[35],
+      nextId: 'moreLess'+shuffleArraynseve[35],
     },
   ],
   },
@@ -1491,13 +1491,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"41"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[35],
+      nextId: 'moreLess'+shuffleArraynseve[35],
     },
   ],
   },
   
   //36
-  ['moreLess'+shuffledNumbersto[35]]: {
+  ['moreLess'+shuffleArraynseve[35]]: {
     botPrompt: 'What is the number that is 1 more than 43?',
     type: RTypes.TRANSFORMED_TEXT,
   
@@ -1525,7 +1525,7 @@
     botPrompt: 'You Have Selected correct Anwser 🎉! <strong>44</strong> 😎',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[36],
+        nextId: 'moreLess'+shuffleArraynseve[36],
       },
     ],
   },
@@ -1533,13 +1533,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"44"</strong>',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[36],
+        nextId: 'moreLess'+shuffleArraynseve[36],
       },
     ],
   },
   
   //37
-  ['moreLess'+shuffledNumbersto[36]]: {
+  ['moreLess'+shuffleArraynseve[36]]: {
   botPrompt: 'What is the number that is 1 more than 46?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1567,7 +1567,7 @@
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>47</strong> 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[37],
+      nextId: 'moreLess'+shuffleArraynseve[37],
     },
   ],
   },
@@ -1575,13 +1575,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"47"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[37],
+      nextId: 'moreLess'+shuffleArraynseve[37],
     },
   ],
   },
   
   //38
-  ['moreLess'+shuffledNumbersto[37]]: {
+  ['moreLess'+shuffleArraynseve[37]]: {
   botPrompt: 'What is 1 more than 48?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1609,7 +1609,7 @@
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>49</strong> 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[38],
+      nextId: 'moreLess'+shuffleArraynseve[38],
     },
   ],
   },
@@ -1617,13 +1617,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"49"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[38],
+      nextId: 'moreLess'+shuffleArraynseve[38],
     },
   ],
   },
   
   //39
-  ['moreLess'+shuffledNumbersto[38]]: {
+  ['moreLess'+shuffleArraynseve[38]]: {
   botPrompt: 'What is 1 more than 41?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['43', '46', "42","44"]),
@@ -1650,7 +1650,7 @@
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>42</strong> Answers! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[39],
+      nextId: 'moreLess'+shuffleArraynseve[39],
     },
   ],
   },
@@ -1658,13 +1658,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"42"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[39],
+      nextId: 'moreLess'+shuffleArraynseve[39],
     },
   ],
   },
   
   //40
-  ['moreLess'+shuffledNumbersto[39]]: {
+  ['moreLess'+shuffleArraynseve[39]]: {
   botPrompt: 'What is the number that is 1 more than 38?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['37', '39', "40","32"]),
@@ -1691,7 +1691,7 @@
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>39</strong> 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[40],
+      nextId: 'moreLess'+shuffleArraynseve[40],
     },
   ],
   },
@@ -1699,13 +1699,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"39"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[40],
+      nextId: 'moreLess'+shuffleArraynseve[40],
     },
   ],
   },
   
   //41
-  ["moreLess"+shuffledNumbersto[40]]: {
+  ["moreLess"+shuffleArraynseve[40]]: {
     botPrompt: 'What is the number that is 1 more than 44?',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['48', '47', "45","43"]),
@@ -1732,7 +1732,7 @@
     botPrompt: 'Hurray <strong>45</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[41],
+        nextId: 'moreLess'+shuffleArraynseve[41],
       },
     ],
   },
@@ -1740,14 +1740,14 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"45"</strong>',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[41],
+        nextId: 'moreLess'+shuffleArraynseve[41],
       },
     ],
   },
   
   //42
   
-  ['moreLess'+shuffledNumbersto[41]]: {
+  ['moreLess'+shuffleArraynseve[41]]: {
     botPrompt: 'What is the number that is 1 more than 45?',
     type: RTypes.TRANSFORMED_TEXT,
   
@@ -1776,7 +1776,7 @@
     botPrompt: 'Hurray! <strong>46</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[42],
+        nextId: 'moreLess'+shuffleArraynseve[42],
       },
     ],
   },
@@ -1784,13 +1784,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"46"</strong>',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[42],
+        nextId: 'moreLess'+shuffleArraynseve[42],
       },
     ],
   },
   
   //43
-  ['moreLess'+shuffledNumbersto[42]]: {
+  ['moreLess'+shuffleArraynseve[42]]: {
   botPrompt: "What is the number that is 1 more than 37?",
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1819,7 +1819,7 @@
   botPrompt: 'Hurray! <strong>38</strong> is the correct answer ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[43],
+      nextId: 'moreLess'+shuffleArraynseve[43],
     },
   ],
   },
@@ -1827,13 +1827,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"38"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[43],
+      nextId: 'moreLess'+shuffleArraynseve[43],
     },
   ],
   },
   
   //44
-  ['moreLess'+shuffledNumbersto[43]]: {
+  ['moreLess'+shuffleArraynseve[43]]: {
   botPrompt: 'What is 1 more than 24?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1862,7 +1862,7 @@
   botPrompt: 'Hurray! <strong>25</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[44],
+      nextId: 'moreLess'+shuffleArraynseve[44],
     },
   ],
   },
@@ -1870,13 +1870,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"25"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[44],
+      nextId: 'moreLess'+shuffleArraynseve[44],
     },
   ],
   },
   
   //45
-  ['moreLess'+shuffledNumbersto[44]]: {
+  ['moreLess'+shuffleArraynseve[44]]: {
   botPrompt: 'What is 1 more than 27?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1905,7 +1905,7 @@
   botPrompt: 'Hurray! <strong>28</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[45],
+      nextId: 'moreLess'+shuffleArraynseve[45],
     },
   ],
   },
@@ -1913,13 +1913,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"28"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[45],
+      nextId: 'moreLess'+shuffleArraynseve[45],
     },
   ],
   },
   
   //46
-  ['moreLess'+shuffledNumbersto[45]]: {
+  ['moreLess'+shuffleArraynseve[45]]: {
   botPrompt: 'What is 1 more than 28?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['24', '29', "27","28"]),
@@ -1947,7 +1947,7 @@
   botPrompt: 'Hurray! <strong>28</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[46],
+      nextId: 'moreLess'+shuffleArraynseve[46],
     },
   ],
   },
@@ -1955,13 +1955,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"28"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[46],
+      nextId: 'moreLess'+shuffleArraynseve[46],
     },
   ],
   },
   
   //47
-  ['moreLess'+shuffledNumbersto[46]]: {
+  ['moreLess'+shuffleArraynseve[46]]: {
   botPrompt: 'What is 1 more than 38?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1990,7 +1990,7 @@
   botPrompt: 'Hurray! <strong>39</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[47],
+      nextId: 'moreLess'+shuffleArraynseve[47],
     },
   ],
   },
@@ -1998,14 +1998,14 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"39"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[47],
+      nextId: 'moreLess'+shuffleArraynseve[47],
     },
   ],
   },
 
 
   //48
-  ['moreLess'+shuffledNumbersto[47]]: {
+  ['moreLess'+shuffleArraynseve[47]]: {
   botPrompt: 'What is the number that is 1 more than 39?',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -2034,7 +2034,7 @@
   botPrompt: 'Hurray! <strong>40</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[48],
+      nextId: 'moreLess'+shuffleArraynseve[48],
     },
   ],
   },
@@ -2042,13 +2042,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"40"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[48],
+      nextId: 'moreLess'+shuffleArraynseve[48],
     },
   ],
   },
   
   //49
-  ['moreLess'+shuffledNumbersto[48]]: {
+  ['moreLess'+shuffleArraynseve[48]]: {
   botPrompt: 'What is the number that is 1 more than 42?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -2077,7 +2077,7 @@
   botPrompt: 'Hurray! <strong>43</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[49],
+      nextId: 'moreLess'+shuffleArraynseve[49],
     },
   ],
   },
@@ -2085,14 +2085,14 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"43"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[49],
+      nextId: 'moreLess'+shuffleArraynseve[49],
     },
   ],
   },
   
   
   //50
-  ['moreLess'+shuffledNumbersto[49]]: {
+  ['moreLess'+shuffleArraynseve[49]]: {
   botPrompt: 'What is 1 less than 4?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -2121,7 +2121,7 @@
   botPrompt: 'Hurray! <strong>3</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[50],
+      nextId: 'moreLess'+shuffleArraynseve[50],
     },
   ],
   },
@@ -2129,13 +2129,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"3"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[50],
+      nextId: 'moreLess'+shuffleArraynseve[50],
     },
   ],
   },
   
   //51
-  ['moreLess'+shuffledNumbersto[50]]: {
+  ['moreLess'+shuffleArraynseve[50]]: {
   botPrompt: 'What number is 1 less than 2?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -2164,7 +2164,7 @@
   botPrompt: 'Hurray! <strong>1</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[51],
+      nextId: 'moreLess'+shuffleArraynseve[51],
     },
   ],
   },
@@ -2172,13 +2172,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"1"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[51],
+      nextId: 'moreLess'+shuffleArraynseve[51],
     },
   ],
   },
   
   //52
-  ['moreLess'+shuffledNumbersto[51]]: {
+  ['moreLess'+shuffleArraynseve[51]]: {
   botPrompt: 'What is 1 less than 5?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['1', '2', "3","4"]),
@@ -2206,7 +2206,7 @@
   botPrompt: 'Hurray! <strong>4</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[52],
+      nextId: 'moreLess'+shuffleArraynseve[52],
     },
   ],
   },
@@ -2214,13 +2214,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[52],
+      nextId: 'moreLess'+shuffleArraynseve[52],
     },
   ],
   },
   
   //53
-  ['moreLess'+shuffledNumbersto[52]]: {
+  ['moreLess'+shuffleArraynseve[52]]: {
   botPrompt: 'What is 1 less than 3?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -2249,7 +2249,7 @@
   botPrompt: 'Hurray! <strong>2</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[53],
+      nextId: 'moreLess'+shuffleArraynseve[53],
     },
   ],
   },
@@ -2257,13 +2257,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"2"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[53],
+      nextId: 'moreLess'+shuffleArraynseve[53],
     },
   ],
   },
   
   //54
-  ['moreLess'+shuffledNumbersto[53]]: {
+  ['moreLess'+shuffleArraynseve[53]]: {
   botPrompt: 'What is 1 less than 6?',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -2292,7 +2292,7 @@
   botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[54],
+      nextId: 'moreLess'+shuffleArraynseve[54],
     },
   ],
   },
@@ -2300,14 +2300,14 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[54],
+      nextId: 'moreLess'+shuffleArraynseve[54],
     },
   ],
   },
   
   
   //55
-  ['moreLess'+shuffledNumbersto[54]]: {
+  ['moreLess'+shuffleArraynseve[54]]: {
   botPrompt: 'What number is 1 less than 10?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -2336,7 +2336,7 @@
   botPrompt: 'Hurray! <strong>9</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[55],
+      nextId: 'moreLess'+shuffleArraynseve[55],
     },
   ],
   },
@@ -2344,13 +2344,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"9"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[55],
+      nextId: 'moreLess'+shuffleArraynseve[55],
     },
   ],
   },
   
   //56
-  ['moreLess'+shuffledNumbersto[55]]: {
+  ['moreLess'+shuffleArraynseve[55]]: {
     botPrompt: 'What number is 1 less than 8?',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['6', '4', "7","2"]),
@@ -2377,7 +2377,7 @@
     botPrompt: 'You Have Selected correct Anwser 🎉! <strong>7</strong> 😎',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[56],
+        nextId: 'moreLess'+shuffleArraynseve[56],
       },
     ],
   },
@@ -2385,13 +2385,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"7"</strong>',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[56],
+        nextId: 'moreLess'+shuffleArraynseve[56],
       },
     ],
   },
 
   //57
-  ['moreLess'+shuffledNumbersto[56]]: {
+  ['moreLess'+shuffleArraynseve[56]]: {
   botPrompt: 'What number is 1 less than 7?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['5', '6', "8","4"]),
@@ -2418,7 +2418,7 @@
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>6</strong> 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[57],
+      nextId: 'moreLess'+shuffleArraynseve[57],
     },
   ],
   },
@@ -2426,13 +2426,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"6"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[57],
+      nextId: 'moreLess'+shuffleArraynseve[57],
     },
   ],
   },
   
   //58
-  ['moreLess'+shuffledNumbersto[57]]: {
+  ['moreLess'+shuffleArraynseve[57]]: {
   botPrompt: 'What is 1 less than 9?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['6', '7', "10","8"]),
@@ -2459,7 +2459,7 @@
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>8</strong> 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[58],
+      nextId: 'moreLess'+shuffleArraynseve[58],
     },
   ],
   },
@@ -2467,13 +2467,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"8"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[58],
+      nextId: 'moreLess'+shuffleArraynseve[58],
     },
   ],
   },
   
   //59
-  ['moreLess'+shuffledNumbersto[58]]: {
+  ['moreLess'+shuffleArraynseve[58]]: {
   botPrompt: 'What is 1 less than 12?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['12', '13', "11","9"]),
@@ -2500,7 +2500,7 @@
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>11</strong> Answers! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[59],
+      nextId: 'moreLess'+shuffleArraynseve[59],
     },
   ],
   },
@@ -2508,13 +2508,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"11"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[59],
+      nextId: 'moreLess'+shuffleArraynseve[59],
     },
   ],
   },
   
   //60
-  ['moreLess'+shuffledNumbersto[59]]: {
+  ['moreLess'+shuffleArraynseve[59]]: {
   botPrompt: 'What number is 1 less than 11?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['11', '13', "14","12"]),
@@ -2541,7 +2541,7 @@
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>12</strong> 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[60],
+      nextId: 'moreLess'+shuffleArraynseve[60],
     },
   ],
   },
@@ -2549,13 +2549,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"12"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[60],
+      nextId: 'moreLess'+shuffleArraynseve[60],
     },
   ],
   },
   
   //61
-  ["moreLess"+shuffledNumbersto[60]]: {
+  ["moreLess"+shuffleArraynseve[60]]: {
     botPrompt: 'What number is 1 less than 15?',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['14', '13', "12","11"]),
@@ -2582,7 +2582,7 @@
     botPrompt: 'Hurray <strong>14</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[61],
+        nextId: 'moreLess'+shuffleArraynseve[61],
       },
     ],
   },
@@ -2590,13 +2590,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"14"</strong>',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[61],
+        nextId: 'moreLess'+shuffleArraynseve[61],
       },
     ],
   },
   
   //62
-  ['moreLess'+shuffledNumbersto[61]]: {
+  ['moreLess'+shuffleArraynseve[61]]: {
     botPrompt: 'What is 1 less than 22?',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['21', '23', "24","25"]),
@@ -2624,7 +2624,7 @@
     botPrompt: 'Hurray! <strong>21</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[62],
+        nextId: 'moreLess'+shuffleArraynseve[62],
       },
     ],
   },
@@ -2632,13 +2632,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"21"</strong>',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[62],
+        nextId: 'moreLess'+shuffleArraynseve[62],
       },
     ],
   },
   
   //63
-  ['moreLess'+shuffledNumbersto[62]]: {
+  ['moreLess'+shuffleArraynseve[62]]: {
   botPrompt: "What is 1 less than 14?",
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -2667,7 +2667,7 @@
   botPrompt: 'Hurray! <strong>13</strong> is the correct answer ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[63],
+      nextId: 'moreLess'+shuffleArraynseve[63],
     },
   ],
   },
@@ -2675,13 +2675,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"13"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[63],
+      nextId: 'moreLess'+shuffleArraynseve[63],
     },
   ],
   },
 
   //64
-  ['moreLess'+shuffledNumbersto[63]]: {
+  ['moreLess'+shuffleArraynseve[63]]: {
   botPrompt: 'What is 1 less than 18?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -2710,7 +2710,7 @@
   botPrompt: 'Hurray! <strong>17</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[64],
+      nextId: 'moreLess'+shuffleArraynseve[64],
     },
   ],
   },
@@ -2718,13 +2718,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"17"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[64],
+      nextId: 'moreLess'+shuffleArraynseve[64],
     },
   ],
   },
   
   //65
-  ['moreLess'+shuffledNumbersto[64]]: {
+  ['moreLess'+shuffleArraynseve[64]]: {
   botPrompt: 'What number is 1 less than 20?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -2753,7 +2753,7 @@
   botPrompt: 'Hurray! <strong>19</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[65],
+      nextId: 'moreLess'+shuffleArraynseve[65],
     },
   ],
   },
@@ -2761,13 +2761,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"19"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[65],
+      nextId: 'moreLess'+shuffleArraynseve[65],
     },
   ],
   },
   
   //66
-  ['moreLess'+shuffledNumbersto[65]]: {
+  ['moreLess'+shuffleArraynseve[65]]: {
   botPrompt: 'What number is 1 less than 16?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -2796,7 +2796,7 @@
   botPrompt: 'Hurray! <strong>15</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[66],
+      nextId: 'moreLess'+shuffleArraynseve[66],
     },
   ],
   },
@@ -2804,13 +2804,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"15"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[66],
+      nextId: 'moreLess'+shuffleArraynseve[66],
     },
   ],
   },
   
   //67
-  ['moreLess'+shuffledNumbersto[66]]: {
+  ['moreLess'+shuffleArraynseve[66]]: {
   botPrompt: 'What number is 1 less than 17?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['15', '18', "14","16"]),
@@ -2838,7 +2838,7 @@
   botPrompt: 'Hurray! <strong>16</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[67],
+      nextId: 'moreLess'+shuffleArraynseve[67],
     },
   ],
   },
@@ -2846,14 +2846,14 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"16"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[67],
+      nextId: 'moreLess'+shuffleArraynseve[67],
     },
   ],
   },
   
   
   //68
-  ['moreLess'+shuffledNumbersto[67]]: {
+  ['moreLess'+shuffleArraynseve[67]]: {
   botPrompt: 'What number is 1 less than 25?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -2883,7 +2883,7 @@
   botPrompt: 'Hurray! <strong>24</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[68],
+      nextId: 'moreLess'+shuffleArraynseve[68],
     },
   ],
   },
@@ -2891,13 +2891,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"24"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[68],
+      nextId: 'moreLess'+shuffleArraynseve[68],
     },
   ],
   },
   
   //69
-  ['moreLess'+shuffledNumbersto[68]]: {
+  ['moreLess'+shuffleArraynseve[68]]: {
   botPrompt: 'What number is 1 less than 13?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['12', '13', "14","11"]),
@@ -2925,7 +2925,7 @@
   botPrompt: 'Hurray! <strong>12</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[69],
+      nextId: 'moreLess'+shuffleArraynseve[69],
     },
   ],
   },
@@ -2933,14 +2933,14 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"12"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[69],
+      nextId: 'moreLess'+shuffleArraynseve[69],
     },
   ],
   },
 
   
   //70
-  ['moreLess'+shuffledNumbersto[69]]: {
+  ['moreLess'+shuffleArraynseve[69]]: {
   botPrompt: 'What number is 1 less than 23?',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -2969,7 +2969,7 @@
   botPrompt: 'Hurray! <strong>22</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[70],
+      nextId: 'moreLess'+shuffleArraynseve[70],
     },
   ],
   },
@@ -2977,13 +2977,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"22"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[70],
+      nextId: 'moreLess'+shuffleArraynseve[70],
     },
   ],
   },
 
   //71
-  ['moreLess'+shuffledNumbersto[70]]: {
+  ['moreLess'+shuffleArraynseve[70]]: {
   botPrompt: 'What is 1 less than 19?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['21', '18', "20","17"]),
@@ -3011,7 +3011,7 @@
   botPrompt: 'Hurray! <strong>18</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[71],
+      nextId: 'moreLess'+shuffleArraynseve[71],
     },
   ],
   },
@@ -3019,13 +3019,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"18"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[71],
+      nextId: 'moreLess'+shuffleArraynseve[71],
     },
   ],
   },
 
   //72
-  ['moreLess'+shuffledNumbersto[71]]: {
+  ['moreLess'+shuffleArraynseve[71]]: {
   botPrompt: 'What is 1 less than 28?',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['25', '26', "29","27"]),
@@ -3053,7 +3053,7 @@
   botPrompt: 'Hurray! <strong>27</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[72],
+      nextId: 'moreLess'+shuffleArraynseve[72],
     },
   ],
   },
@@ -3061,13 +3061,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"27"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[72],
+      nextId: 'moreLess'+shuffleArraynseve[72],
     },
   ],
   },
 
   //73
-  ['moreLess'+shuffledNumbersto[72]]: {
+  ['moreLess'+shuffleArraynseve[72]]: {
   botPrompt: 'What is 1 less than 26?',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -3096,7 +3096,7 @@
   botPrompt: 'Hurray! <strong>25</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[73],
+      nextId: 'moreLess'+shuffleArraynseve[73],
     },
   ],
   },
@@ -3104,13 +3104,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"25"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[73],
+      nextId: 'moreLess'+shuffleArraynseve[73],
     },
   ],
   },
 
   //74
-  ['moreLess'+shuffledNumbersto[73]]: {
+  ['moreLess'+shuffleArraynseve[73]]: {
   botPrompt: 'What is 1 less than 29?',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -3139,7 +3139,7 @@
   botPrompt: 'Hurray! <strong>28</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[74],
+      nextId: 'moreLess'+shuffleArraynseve[74],
     },
   ],
   },
@@ -3147,14 +3147,14 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"28"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[74],
+      nextId: 'moreLess'+shuffleArraynseve[74],
     },
   ],
   },
 
 
   //75
-  ['moreLess'+shuffledNumbersto[74]]: {
+  ['moreLess'+shuffleArraynseve[74]]: {
   botPrompt: 'What is 1 less than 21?',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -3184,7 +3184,7 @@
   botPrompt: 'Hurray! <strong>20</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[75],
+      nextId: 'moreLess'+shuffleArraynseve[75],
     },
   ],
   },
@@ -3192,13 +3192,13 @@
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"20"</strong>',
   answers: [
     {
-      nextId: 'moreLess'+shuffledNumbersto[75],
+      nextId: 'moreLess'+shuffleArraynseve[75],
     },
   ],
   },
 
   //76
-  ['moreLess'+shuffledNumbersto[75]]: {
+  ['moreLess'+shuffleArraynseve[75]]: {
     botPrompt: 'What is 1 less than 27?',
     type: RTypes.TRANSFORMED_TEXT,
 
@@ -3226,7 +3226,7 @@
     botPrompt: 'You Have Selected correct Anwser 🎉! <strong>28</strong> 😎',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[76],
+        nextId: 'moreLess'+shuffleArraynseve[76],
       },
     ],
   },
@@ -3234,13 +3234,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"28"</strong>',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[76],
+        nextId: 'moreLess'+shuffleArraynseve[76],
       },
     ],
   },
 
   //77
-  ['moreLess'+shuffledNumbersto[76]]: {
+  ['moreLess'+shuffleArraynseve[76]]: {
   botPrompt: 'What number is 1 less than 24?',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -3284,7 +3284,7 @@
 
 
   //78
-  ['moreLess'+shuffledNumbersto[77]]: {
+  ['moreLess'+shuffleArraynseve[77]]: {
     botPrompt: 'What number is 1 less than 30? ',
     type: RTypes.TRANSFORMED_TEXT,
 
@@ -3313,7 +3313,7 @@
     botPrompt: 'Hurray! <strong>29</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[78],
+        nextId: 'moreLess'+shuffleArraynseve[78],
       },
     ],
     },
@@ -3321,13 +3321,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"29"</strong>',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[78],
+        nextId: 'moreLess'+shuffleArraynseve[78],
       },
     ],
     },
     
     //79
-    ['moreLess'+shuffledNumbersto[78]]: {
+    ['moreLess'+shuffleArraynseve[78]]: {
     botPrompt: 'What number is 1 less than 37?',
     type: RTypes.TRANSFORMED_TEXT,
     
@@ -3356,7 +3356,7 @@
     botPrompt: 'Hurray! <strong>36</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[79],
+        nextId: 'moreLess'+shuffleArraynseve[79],
       },
     ],
     },
@@ -3364,14 +3364,14 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"36"</strong>',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[79],
+        nextId: 'moreLess'+shuffleArraynseve[79],
       },
     ],
     },
     
     
     //80
-    ['moreLess'+shuffledNumbersto[79]]: {
+    ['moreLess'+shuffleArraynseve[79]]: {
     botPrompt: ' What number is 1 less than 39?',
     type: RTypes.TRANSFORMED_TEXT,
     
@@ -3400,7 +3400,7 @@
     botPrompt: 'Hurray! <strong>38</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[80],
+        nextId: 'moreLess'+shuffleArraynseve[80],
       },
     ],
     },
@@ -3408,13 +3408,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"38"</strong>',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[80],
+        nextId: 'moreLess'+shuffleArraynseve[80],
       },
     ],
     },
     
     //81
-    ['moreLess'+shuffledNumbersto[80]]: {
+    ['moreLess'+shuffleArraynseve[80]]: {
     botPrompt: 'What number is 1 less than 31?',
     type: RTypes.TRANSFORMED_TEXT,
     
@@ -3443,7 +3443,7 @@
     botPrompt: 'Hurray! <strong>30</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[51],
+        nextId: 'moreLess'+shuffleArraynseve[51],
       },
     ],
     },
@@ -3451,13 +3451,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"30"</strong>',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[51],
+        nextId: 'moreLess'+shuffleArraynseve[51],
       },
     ],
     },
     
     //82
-    ['moreLess'+shuffledNumbersto[81]]: {
+    ['moreLess'+shuffleArraynseve[81]]: {
     botPrompt: 'What number is 1 less than 32?',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['33', '35', "31","34"]),
@@ -3485,7 +3485,7 @@
     botPrompt: 'Hurray! <strong>31</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[82],
+        nextId: 'moreLess'+shuffleArraynseve[82],
       },
     ],
     },
@@ -3493,13 +3493,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"31"</strong>',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[82],
+        nextId: 'moreLess'+shuffleArraynseve[82],
       },
     ],
     },
     
     //83
-    ['moreLess'+shuffledNumbersto[82]]: {
+    ['moreLess'+shuffleArraynseve[82]]: {
     botPrompt: 'What is 1 less than 34?',
     type: RTypes.TRANSFORMED_TEXT,
     
@@ -3528,7 +3528,7 @@
     botPrompt: 'Hurray! <strong>31</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[83],
+        nextId: 'moreLess'+shuffleArraynseve[83],
       },
     ],
     },
@@ -3536,13 +3536,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"31"</strong>',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[83],
+        nextId: 'moreLess'+shuffleArraynseve[83],
       },
     ],
     },
     
     //84
-    ['moreLess'+shuffledNumbersto[83]]: {
+    ['moreLess'+shuffleArraynseve[83]]: {
     botPrompt: 'What is 1 less than 33?',
     type: RTypes.TRANSFORMED_TEXT,
     
@@ -3571,7 +3571,7 @@
     botPrompt: 'Hurray! <strong>33</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[84],
+        nextId: 'moreLess'+shuffleArraynseve[84],
       },
     ],
     },
@@ -3579,14 +3579,14 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"33"</strong>',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[84],
+        nextId: 'moreLess'+shuffleArraynseve[84],
       },
     ],
     },
     
     
     //85
-    ['moreLess'+shuffledNumbersto[84]]: {
+    ['moreLess'+shuffleArraynseve[84]]: {
     botPrompt: 'What is 1 less than 35?',
     type: RTypes.TRANSFORMED_TEXT,
     
@@ -3615,7 +3615,7 @@
     botPrompt: 'Hurray! <strong>34</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[85],
+        nextId: 'moreLess'+shuffleArraynseve[85],
       },
     ],
     },
@@ -3623,13 +3623,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"34"</strong>',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[85],
+        nextId: 'moreLess'+shuffleArraynseve[85],
       },
     ],
     },
     
     //86
-    ['moreLess'+shuffledNumbersto[85]]: {
+    ['moreLess'+shuffleArraynseve[85]]: {
       botPrompt: 'What is 1 less than 38?',
       type: RTypes.TRANSFORMED_TEXT,
       input: selectField(['37', '38', "39","40"]),
@@ -3656,7 +3656,7 @@
       botPrompt: 'You Have Selected correct Anwser 🎉! <strong>37</strong> 😎',
       answers: [
         {
-          nextId: 'moreLess'+shuffledNumbersto[86],
+          nextId: 'moreLess'+shuffleArraynseve[86],
         },
       ],
     },
@@ -3664,13 +3664,13 @@
       botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"37"</strong>',
       answers: [
         {
-          nextId: 'moreLess'+shuffledNumbersto[86],
+          nextId: 'moreLess'+shuffleArraynseve[86],
         },
       ],
     },
   
     //87
-    ['moreLess'+shuffledNumbersto[86]]: {
+    ['moreLess'+shuffleArraynseve[86]]: {
     botPrompt: 'What is 1 less than 36?',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['33', '34', "35","36"]),
@@ -3697,7 +3697,7 @@
     botPrompt: 'You Have Selected correct Anwser 🎉! <strong>35</strong> 😎',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[87],
+        nextId: 'moreLess'+shuffleArraynseve[87],
       },
     ],
     },
@@ -3705,13 +3705,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"35"</strong>',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[87],
+        nextId: 'moreLess'+shuffleArraynseve[87],
       },
     ],
     },
     
     //88
-    ['moreLess'+shuffledNumbersto[87]]: {
+    ['moreLess'+shuffleArraynseve[87]]: {
     botPrompt: 'What number is 1 less than 44?',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['48', '47', "49","43"]),
@@ -3738,7 +3738,7 @@
     botPrompt: 'You Have Selected correct Anwser 🎉! <strong>43</strong> 😎',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[88],
+        nextId: 'moreLess'+shuffleArraynseve[88],
       },
     ],
     },
@@ -3746,13 +3746,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"43"</strong>',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[88],
+        nextId: 'moreLess'+shuffleArraynseve[88],
       },
     ],
     },
     
     //89
-    ['moreLess'+shuffledNumbersto[88]]: {
+    ['moreLess'+shuffleArraynseve[88]]: {
     botPrompt: 'What number is 1 less than 40?',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['39', '37', "36","35"]),
@@ -3779,7 +3779,7 @@
     botPrompt: 'You Have Selected correct Anwser 🎉! <strong>39</strong> Answers! 😎',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[89],
+        nextId: 'moreLess'+shuffleArraynseve[89],
       },
     ],
     },
@@ -3787,13 +3787,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"39"</strong>',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[89],
+        nextId: 'moreLess'+shuffleArraynseve[89],
       },
     ],
     },
     
     //90
-    ['moreLess'+shuffledNumbersto[89]]: {
+    ['moreLess'+shuffleArraynseve[89]]: {
     botPrompt: 'What number is 1 less than 41?',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['40', '42', "43","44"]),
@@ -3820,7 +3820,7 @@
     botPrompt: 'You Have Selected correct Anwser 🎉! <strong>40</strong> 😎',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[90],
+        nextId: 'moreLess'+shuffleArraynseve[90],
       },
     ],
     },
@@ -3828,13 +3828,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"40"</strong>',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[90],
+        nextId: 'moreLess'+shuffleArraynseve[90],
       },
     ],
     },
     
     //91
-    ["moreLess"+shuffledNumbersto[90]]: {
+    ["moreLess"+shuffleArraynseve[90]]: {
       botPrompt: 'What number is 1 less than 42?',
       type: RTypes.TRANSFORMED_TEXT,
       input: selectField(['41', '44', "43","45"]),
@@ -3861,7 +3861,7 @@
       botPrompt: 'Hurray <strong>41</strong> is the correct answer  ! 😎',
       answers: [
         {
-          nextId: 'moreLess'+shuffledNumbersto[91],
+          nextId: 'moreLess'+shuffleArraynseve[91],
         },
       ],
     },
@@ -3869,13 +3869,13 @@
       botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"41"</strong>',
       answers: [
         {
-          nextId: 'moreLess'+shuffledNumbersto[91],
+          nextId: 'moreLess'+shuffleArraynseve[91],
         },
       ],
     },
     
     //92
-    ['moreLess'+shuffledNumbersto[91]]: {
+    ['moreLess'+shuffleArraynseve[91]]: {
       botPrompt: 'What number is 1 less than 49?',
       type: RTypes.TRANSFORMED_TEXT,
       input: selectField(['45', '46', "47","48"]),
@@ -3903,7 +3903,7 @@
       botPrompt: 'Hurray! <strong>48</strong> is the correct answer  ! 😎',
       answers: [
         {
-          nextId: 'moreLess'+shuffledNumbersto[92],
+          nextId: 'moreLess'+shuffleArraynseve[92],
         },
       ],
     },
@@ -3911,13 +3911,13 @@
       botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"48"</strong>',
       answers: [
         {
-          nextId: 'moreLess'+shuffledNumbersto[92],
+          nextId: 'moreLess'+shuffleArraynseve[92],
         },
       ],
     },
     
     //93
-    ['moreLess'+shuffledNumbersto[92]]: {
+    ['moreLess'+shuffleArraynseve[92]]: {
     botPrompt: "What is 1 less than 45?",
     type: RTypes.TRANSFORMED_TEXT,
     
@@ -3946,7 +3946,7 @@
     botPrompt: 'Hurray! <strong>44</strong> is the correct answer ! 😎',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[93],
+        nextId: 'moreLess'+shuffleArraynseve[93],
       },
     ],
     },
@@ -3954,13 +3954,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"44"</strong>',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[93],
+        nextId: 'moreLess'+shuffleArraynseve[93],
       },
     ],
     },
   
     //94
-    ['moreLess'+shuffledNumbersto[93]]: {
+    ['moreLess'+shuffleArraynseve[93]]: {
     botPrompt: 'What is 1 less than 43?',
     type: RTypes.TRANSFORMED_TEXT,
     
@@ -3989,7 +3989,7 @@
     botPrompt: 'Hurray! <strong>42</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[94],
+        nextId: 'moreLess'+shuffleArraynseve[94],
       },
     ],
     },
@@ -3997,13 +3997,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"42"</strong>',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[94],
+        nextId: 'moreLess'+shuffleArraynseve[94],
       },
     ],
     },
     
     //95
-    ['moreLess'+shuffledNumbersto[94]]: {
+    ['moreLess'+shuffleArraynseve[94]]: {
     botPrompt: 'What is 1 less than 46?',
     type: RTypes.TRANSFORMED_TEXT,
     
@@ -4032,7 +4032,7 @@
     botPrompt: 'Hurray! <strong>45</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[95],
+        nextId: 'moreLess'+shuffleArraynseve[95],
       },
     ],
     },
@@ -4040,13 +4040,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"45"</strong>',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[95],
+        nextId: 'moreLess'+shuffleArraynseve[95],
       },
     ],
     },
     
     //96
-    ['moreLess'+shuffledNumbersto[95]]: {
+    ['moreLess'+shuffleArraynseve[95]]: {
     botPrompt: 'What is 1 less than 50?',
     type: RTypes.TRANSFORMED_TEXT,
     
@@ -4075,7 +4075,7 @@
     botPrompt: 'Hurray! <strong>49</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[96],
+        nextId: 'moreLess'+shuffleArraynseve[96],
       },
     ],
     },
@@ -4083,13 +4083,13 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"49"</strong>',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[96],
+        nextId: 'moreLess'+shuffleArraynseve[96],
       },
     ],
     },
 
     //97
-    ['moreLess'+shuffledNumbersto[96]]: {
+    ['moreLess'+shuffleArraynseve[96]]: {
     botPrompt: ' What number is 1 less than 47?',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['48', '49', "46","44"]),
@@ -4117,7 +4117,7 @@
     botPrompt: 'Hurray! <strong>46</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[97],
+        nextId: 'moreLess'+shuffleArraynseve[97],
       },
     ],
     },
@@ -4125,14 +4125,14 @@
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"46"</strong>',
     answers: [
       {
-        nextId: 'moreLess'+shuffledNumbersto[97],
+        nextId: 'moreLess'+shuffleArraynseve[97],
       },
     ],
     },
     
     
     //98
-    ['moreLess'+shuffledNumbersto[97]]: {
+    ['moreLess'+shuffleArraynseve[97]]: {
     botPrompt: 'What number is 1 less than 48?',
     type: RTypes.TRANSFORMED_TEXT,
     
