@@ -35,14 +35,14 @@ day253link: {
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[0]  ,
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[0]  ,
     },
   ],
 },
 
 
 //capitalLetterFullStop
-["capitalLetterFullStop"+shuffledNumbersto[0]]: {
+["capitalLetterFullStop"+shuffledNumbers[0]]: {
     botPrompt: 'i have a red bicycle',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['I have a red bicycle.', 'i have a red bicycle', "I Have a red bicycle","i have a red bicycle."]),
@@ -69,7 +69,7 @@ day253link: {
     botPrompt: 'Hurray <strong>I have a red bicycle.</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'capitalLetterFullStop'+shuffledNumbersto[1],
+        nextId: 'capitalLetterFullStop'+shuffledNumbers[1],
       },
     ],
   },
@@ -77,12 +77,12 @@ day253link: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"I have a red bicycle."</strong>',
     answers: [
       {
-        nextId: 'capitalLetterFullStop'+shuffledNumbersto[1],
+        nextId: 'capitalLetterFullStop'+shuffledNumbers[1],
       },
     ],
   },
   
-  ['capitalLetterFullStop'+shuffledNumbersto[1]]: {
+  ['capitalLetterFullStop'+shuffledNumbers[1]]: {
     botPrompt: 'they went to the zoo',
     type: RTypes.TRANSFORMED_TEXT,
 
@@ -111,7 +111,7 @@ day253link: {
     botPrompt: 'Hurray! <strong>They went to the zoo.</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'capitalLetterFullStop'+shuffledNumbersto[2],
+        nextId: 'capitalLetterFullStop'+shuffledNumbers[2],
       },
     ],
   },
@@ -119,13 +119,13 @@ day253link: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"They went to the zoo."</strong>',
     answers: [
       {
-        nextId: 'capitalLetterFullStop'+shuffledNumbersto[2],
+        nextId: 'capitalLetterFullStop'+shuffledNumbers[2],
       },
     ],
   },
   
   //3
-  ['capitalLetterFullStop'+shuffledNumbersto[2]]: {
+  ['capitalLetterFullStop'+shuffledNumbers[2]]: {
   botPrompt: "my sister likes to read books",
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -154,7 +154,7 @@ day253link: {
   botPrompt: 'Hurray! <strong>My sister likes to read Books.</strong> is the correct answer ! 😎',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[3],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[3],
     },
   ],
   },
@@ -162,13 +162,13 @@ day253link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"My sister likes to read Books."</strong>',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[3],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[3],
     },
   ],
   },
   
   //4
-  ['capitalLetterFullStop'+shuffledNumbersto[3]]: {
+  ['capitalLetterFullStop'+shuffledNumbers[3]]: {
   botPrompt: 'we live in a small town',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -197,7 +197,7 @@ day253link: {
   botPrompt: 'Hurray! <strong>We live in a small town.</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[4],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[4],
     },
   ],
   },
@@ -205,13 +205,13 @@ day253link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"We live in a small town."</strong>',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[4],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[4],
     },
   ],
   },
   
   //5
-  ['capitalLetterFullStop'+shuffledNumbersto[4]]: {
+  ['capitalLetterFullStop'+shuffledNumbers[4]]: {
   botPrompt: 'she has two cats and a dog',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -240,7 +240,7 @@ day253link: {
   botPrompt: 'Hurray! <strong>She has two cats and a dog.</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[5],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[5],
     },
   ],
   },
@@ -248,13 +248,13 @@ day253link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"She has two cats and a dog."</strong>',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[5],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[5],
     },
   ],
   },
   
   //6
-  ['capitalLetterFullStop'+shuffledNumbersto[5]]: {
+  ['capitalLetterFullStop'+shuffledNumbers[5]]: {
   botPrompt: 'i want to go to the beach',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -283,7 +283,7 @@ day253link: {
   botPrompt: 'Hurray! <strong>I want to go to the beach.</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[6],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[6],
     },
   ],
   },
@@ -291,13 +291,13 @@ day253link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"I want to go to the beach."</strong>',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[6],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[6],
     },
   ],
   },
   
   //7
-  ['capitalLetterFullStop'+shuffledNumbersto[6]]: {
+  ['capitalLetterFullStop'+shuffledNumbers[6]]: {
   botPrompt: 'they have a picnic in the park',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -326,7 +326,7 @@ day253link: {
   botPrompt: 'Hurray! <strong>They have a picnic in the park.</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[7],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[7],
     },
   ],
   },
@@ -334,14 +334,14 @@ day253link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"They have a picnic in the park."</strong>',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[7],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[7],
     },
   ],
   },
   
   
   //8
-  ['capitalLetterFullStop'+shuffledNumbersto[7]]: {
+  ['capitalLetterFullStop'+shuffledNumbers[7]]: {
   botPrompt: 'i eat an apple every day',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -370,7 +370,7 @@ day253link: {
   botPrompt: 'Hurray! <strong>I eat an apple every day.</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[8],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[8],
     },
   ],
   },
@@ -378,13 +378,13 @@ day253link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"I eat an apple every day."</strong>',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[8],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[8],
     },
   ],
   },
   
   //9
-  ['capitalLetterFullStop'+shuffledNumbersto[8]]: {
+  ['capitalLetterFullStop'+shuffledNumbers[8]]: {
   botPrompt: 'we go swimming in the pool',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -413,7 +413,7 @@ day253link: {
   botPrompt: 'Hurray! <strong>We go swimming in the pool.</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[9],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[9],
     },
   ],
   },
@@ -421,14 +421,14 @@ day253link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"We go swimming in the pool."</strong>',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[9],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[9],
     },
   ],
   },
   
   
   //10
-  ['capitalLetterFullStop'+shuffledNumbersto[9]]: {
+  ['capitalLetterFullStop'+shuffledNumbers[9]]: {
   botPrompt: 'she has a big smile on her face',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -458,7 +458,7 @@ day253link: {
   botPrompt: 'Hurray! <strong>She has a big smile on her face.</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[10],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[10],
     },
   ],
   },
@@ -466,13 +466,13 @@ day253link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"She has a big smile on her face."</strong>',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[10],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[10],
     },
   ],
   },
   
   //11
-  ['capitalLetterFullStop'+shuffledNumbersto[10]]: {
+  ['capitalLetterFullStop'+shuffledNumbers[10]]: {
   botPrompt: 'i see a bird in the tree',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -501,7 +501,7 @@ day253link: {
   botPrompt: 'Hurray! <strong>I see a bird in the tree.</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[11],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[11],
     },
   ],
   },
@@ -509,13 +509,13 @@ day253link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"I see a bird in the tree."</strong>',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[11],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[11],
     },
   ],
   },
   
   //12
-  ['capitalLetterFullStop'+shuffledNumbersto[11]]: {
+  ['capitalLetterFullStop'+shuffledNumbers[11]]: {
   botPrompt: 'they enjoy playing games',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -544,7 +544,7 @@ day253link: {
   botPrompt: 'Hurray! <strong>They enjoy playing games.</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[12],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[12],
     },
   ],
   },
@@ -552,13 +552,13 @@ day253link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"They enjoy playing games."</strong>',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[12],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[12],
     },
   ],
   },
   
   //13
-  ['capitalLetterFullStop'+shuffledNumbersto[12]]: {
+  ['capitalLetterFullStop'+shuffledNumbers[12]]: {
   botPrompt: 'my mom makes tasty food.',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -587,7 +587,7 @@ day253link: {
   botPrompt: 'Hurray! <strong>My mom makes tasty food.</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[13],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[13],
     },
   ],
   },
@@ -595,13 +595,13 @@ day253link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"My mom makes tasty food."</strong>',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[13],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[13],
     },
   ],
   },
   
   //14
-  ['capitalLetterFullStop'+shuffledNumbersto[13]]: {
+  ['capitalLetterFullStop'+shuffledNumbers[13]]: {
   botPrompt: 'the cat is sleeping on the mat',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -630,7 +630,7 @@ day253link: {
   botPrompt: 'Hurray! <strong>The cat is sleeping on the mat.</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[14],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[14],
     },
   ],
   },
@@ -638,14 +638,14 @@ day253link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"The cat is sleeping on the mat."</strong>',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[14],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[14],
     },
   ],
   },
   
   
   //15
-  ['capitalLetterFullStop'+shuffledNumbersto[14]]: {
+  ['capitalLetterFullStop'+shuffledNumbers[14]]: {
   botPrompt: 'this is  a bird',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -674,7 +674,7 @@ day253link: {
   botPrompt: 'Hurray! <strong>This is a bird.</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[15],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[15],
     },
   ],
   },
@@ -682,13 +682,13 @@ day253link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"This is a bird."</strong>',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[15],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[15],
     },
   ],
   },
   
   //16
-  ['capitalLetterFullStop'+shuffledNumbersto[15]]: {
+  ['capitalLetterFullStop'+shuffledNumbers[15]]: {
     botPrompt: 'i have a cat',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['Correct', 'Incorrect']),
@@ -708,7 +708,7 @@ day253link: {
     botPrompt: 'You Have Selected correct Anwser 🎉! <strong>Incorrect</strong> 😎',
     answers: [
       {
-        nextId: 'capitalLetterFullStop'+shuffledNumbersto[16],
+        nextId: 'capitalLetterFullStop'+shuffledNumbers[16],
       },
     ],
   },
@@ -716,13 +716,13 @@ day253link: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Incorrect"</strong>',
     answers: [
       {
-        nextId: 'capitalLetterFullStop'+shuffledNumbersto[16],
+        nextId: 'capitalLetterFullStop'+shuffledNumbers[16],
       },
     ],
   },
   
   //17
-  ['capitalLetterFullStop'+shuffledNumbersto[16]]: {
+  ['capitalLetterFullStop'+shuffledNumbers[16]]: {
   botPrompt: 'my favorite color is blue',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['Correct', 'inCorrect']),
@@ -742,7 +742,7 @@ day253link: {
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>inCorrect</strong> 😎',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[17],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[17],
     },
   ],
   },
@@ -750,13 +750,13 @@ day253link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"inCorrect"</strong>',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[17],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[17],
     },
   ],
   },
   
   //18
-  ['capitalLetterFullStop'+shuffledNumbersto[17]]: {
+  ['capitalLetterFullStop'+shuffledNumbers[17]]: {
   botPrompt: 'she likes to play soccer in the park   ',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['Correct', 'Incorrect']),
@@ -776,7 +776,7 @@ day253link: {
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>Incorrect</strong> 😎',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[18],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[18],
     },
   ],
   },
@@ -784,13 +784,13 @@ day253link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Incorrect"</strong>',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[18],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[18],
     },
   ],
   },
   
   //19
-  ['capitalLetterFullStop'+shuffledNumbersto[18]]: {
+  ['capitalLetterFullStop'+shuffledNumbers[18]]: {
   botPrompt: 'the dog barks loudly at night',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['Correct', 'Incorrect']),
@@ -810,7 +810,7 @@ day253link: {
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>Incorrect</strong> Answers! 😎',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[19],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[19],
     },
   ],
   },
@@ -818,13 +818,13 @@ day253link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Incorrect"</strong>',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[19],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[19],
     },
   ],
   },
   
   //20
-  ['capitalLetterFullStop'+shuffledNumbersto[19]]: {
+  ['capitalLetterFullStop'+shuffledNumbers[19]]: {
   botPrompt: 'they go to school every day',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['Correct', 'Incorrect']),
@@ -844,7 +844,7 @@ day253link: {
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>Incorrect</strong> 😎',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[20],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[20],
     },
   ],
   },
@@ -852,13 +852,13 @@ day253link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Incorrect"</strong>',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[20],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[20],
     },
   ],
   },
   
   //21
-  ["capitalLetterFullStop"+shuffledNumbersto[20]]: {
+  ["capitalLetterFullStop"+shuffledNumbers[20]]: {
     botPrompt: "my brother's name is Alex",
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['Correct', 'Incorrect']),
@@ -878,7 +878,7 @@ day253link: {
     botPrompt: 'Hurray <strong>Incorrect</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'capitalLetterFullStop'+shuffledNumbersto[21],
+        nextId: 'capitalLetterFullStop'+shuffledNumbers[21],
       },
     ],
   },
@@ -886,13 +886,13 @@ day253link: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Incorrect"</strong>',
     answers: [
       {
-        nextId: 'capitalLetterFullStop'+shuffledNumbersto[21],
+        nextId: 'capitalLetterFullStop'+shuffledNumbers[21],
       },
     ],
   },
   
   //22
-  ['capitalLetterFullStop'+shuffledNumbersto[21]]: {
+  ['capitalLetterFullStop'+shuffledNumbers[21]]: {
     botPrompt: 'we had a picnic at the beach last weekend',
     type: RTypes.TRANSFORMED_TEXT,
   
@@ -914,7 +914,7 @@ day253link: {
     botPrompt: 'Hurray! <strong>Incorrect</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'capitalLetterFullStop'+shuffledNumbersto[22],
+        nextId: 'capitalLetterFullStop'+shuffledNumbers[22],
       },
     ],
   },
@@ -922,13 +922,13 @@ day253link: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Incorrect"</strong>',
     answers: [
       {
-        nextId: 'capitalLetterFullStop'+shuffledNumbersto[22],
+        nextId: 'capitalLetterFullStop'+shuffledNumbers[22],
       },
     ],
   },
   
   //23
-  ['capitalLetterFullStop'+shuffledNumbersto[22]]: {
+  ['capitalLetterFullStop'+shuffledNumbers[22]]: {
   botPrompt: "the sun is shining brightly in the sky",
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['Correct', 'Incorrect']),
@@ -949,7 +949,7 @@ day253link: {
   botPrompt: 'Hurray! <strong>Incorrect</strong> is the correct answer ! 😎',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[23],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[23],
     },
   ],
   },
@@ -957,13 +957,13 @@ day253link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Incorrect"</strong>',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[23],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[23],
     },
   ],
   },
   
   //24
-  ['capitalLetterFullStop'+shuffledNumbersto[23]]: {
+  ['capitalLetterFullStop'+shuffledNumbers[23]]: {
   botPrompt: 'my mom makes delicious pancakes for breakfast',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -985,7 +985,7 @@ day253link: {
   botPrompt: 'Hurray! <strong>Incorrect</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[24],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[24],
     },
   ],
   },
@@ -993,13 +993,13 @@ day253link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Incorrect"</strong>',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[24],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[24],
     },
   ],
   },
   
   //25
-  ['capitalLetterFullStop'+shuffledNumbersto[24]]: {
+  ['capitalLetterFullStop'+shuffledNumbers[24]]: {
   botPrompt: 'they are going on a trip to the zoo',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1021,7 +1021,7 @@ day253link: {
   botPrompt: 'Hurray! <strong>Incorrect</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[25],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[25],
     },
   ],
   },
@@ -1029,13 +1029,13 @@ day253link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Incorrect"</strong>',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[25],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[25],
     },
   ],
   },
   
   //26
-  ['capitalLetterFullStop'+shuffledNumbersto[25]]: {
+  ['capitalLetterFullStop'+shuffledNumbers[25]]: {
   botPrompt: 'The sun is shining brightly in the sky.',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1057,7 +1057,7 @@ day253link: {
   botPrompt: 'Hurray! <strong>Correct</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[26],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[26],
     },
   ],
   },
@@ -1065,13 +1065,13 @@ day253link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Correct"</strong>',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[26],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[26],
     },
   ],
   },
   
   //27
-  ['capitalLetterFullStop'+shuffledNumbersto[26]]: {
+  ['capitalLetterFullStop'+shuffledNumbers[26]]: {
   botPrompt: 'My favorite color is blue.',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['Correct', 'Incorrect']),
@@ -1092,7 +1092,7 @@ day253link: {
   botPrompt: 'Hurray! <strong>Correct</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[27],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[27],
     },
   ],
   },
@@ -1100,14 +1100,14 @@ day253link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Correct"</strong>',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[27],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[27],
     },
   ],
   },
   
   
   //28
-  ['capitalLetterFullStop'+shuffledNumbersto[27]]: {
+  ['capitalLetterFullStop'+shuffledNumbers[27]]: {
   botPrompt: 'She likes to play soccer in the park.',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['Correct', 'Incorrect']),
@@ -1129,7 +1129,7 @@ day253link: {
   botPrompt: 'Hurray! <strong>Correct</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[28],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[28],
     },
   ],
   },
@@ -1137,13 +1137,13 @@ day253link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Correct"</strong>',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[28],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[28],
     },
   ],
   },
   
   //29
-  ['capitalLetterFullStop'+shuffledNumbersto[28]]: {
+  ['capitalLetterFullStop'+shuffledNumbers[28]]: {
   botPrompt: 'We had a picnic at the beach last weekend.',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1165,7 +1165,7 @@ day253link: {
   botPrompt: 'Hurray! <strong>Correct</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[29],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[29],
     },
   ],
   },
@@ -1173,14 +1173,14 @@ day253link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Correct"</strong>',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[29],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[29],
     },
   ],
   },
   
 
   //30
-  ['capitalLetterFullStop'+shuffledNumbersto[29]]: {
+  ['capitalLetterFullStop'+shuffledNumbers[29]]: {
   botPrompt: "My brother's name is Alex.",
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1202,7 +1202,7 @@ day253link: {
   botPrompt: 'Hurray! <strong>Correct</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[30],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[30],
     },
   ],
   },
@@ -1210,13 +1210,13 @@ day253link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Correct"</strong>',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[30],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[30],
     },
   ],
   },
   
   //31
-  ['capitalLetterFullStop'+shuffledNumbersto[30]]: {
+  ['capitalLetterFullStop'+shuffledNumbers[30]]: {
   botPrompt: 'They go to school every day.',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -1238,7 +1238,7 @@ day253link: {
   botPrompt: 'Hurray! <strong>Correct</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[31],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[31],
     },
   ],
   },
@@ -1246,13 +1246,13 @@ day253link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Correct"</strong>',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[31],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[31],
     },
   ],
   },
   
   //32
-  ['capitalLetterFullStop'+shuffledNumbersto[31]]: {
+  ['capitalLetterFullStop'+shuffledNumbers[31]]: {
   botPrompt: 'I have a pet dog named Max.',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1274,7 +1274,7 @@ day253link: {
   botPrompt: 'Hurray! <strong>Correct</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[32],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[32],
     },
   ],
   },
@@ -1282,13 +1282,13 @@ day253link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Correct"</strong>',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[32],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[32],
     },
   ],
   },
   
   //33
-  ['capitalLetterFullStop'+shuffledNumbersto[32]]: {
+  ['capitalLetterFullStop'+shuffledNumbers[32]]: {
   botPrompt: 'The cat is sleeping on the couch.',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1311,7 +1311,7 @@ day253link: {
   botPrompt: 'Hurray! <strong>Correct</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[33],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[33],
     },
   ],
   },
@@ -1319,13 +1319,13 @@ day253link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Correct"</strong>',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[33],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[33],
     },
   ],
   },
   
   //34
-  ['capitalLetterFullStop'+shuffledNumbersto[33]]: {
+  ['capitalLetterFullStop'+shuffledNumbers[33]]: {
   botPrompt: 'We are going on a trip to the zoo.',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1347,7 +1347,7 @@ day253link: {
   botPrompt: 'Hurray! <strong>Correct</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[34],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[34],
     },
   ],
   },
@@ -1355,14 +1355,14 @@ day253link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Correct"</strong>',
   answers: [
     {
-      nextId: 'capitalLetterFullStop'+shuffledNumbersto[34],
+      nextId: 'capitalLetterFullStop'+shuffledNumbers[34],
     },
   ],
   },
   
   
   //35
-  ['capitalLetterFullStop'+shuffledNumbersto[34]]: {
+  ['capitalLetterFullStop'+shuffledNumbers[34]]: {
   botPrompt: 'The book on the shelf is very interesting.',
   type: RTypes.TRANSFORMED_TEXT,
   

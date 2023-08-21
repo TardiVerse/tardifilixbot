@@ -50,14 +50,15 @@ day263link: {
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'opposites'+shuffledNumbersto[0] ,
+      nextId: 'opposites'+shuffleArraytwofive[0] ,
     },
   ],
 },
+
 //opposites
 
 
-["opposites"+shuffledNumbersto[0]]: {
+["opposites"+shuffleArraytwofive[0]]: {
     botPrompt: 'Opposite of "big"',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['Small', 'Tall', "Fat","Thin"]),
@@ -84,7 +85,7 @@ day263link: {
     botPrompt: 'Hurray <strong>Small</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'opposites'+shuffledNumbersto[1],
+        nextId: 'opposites'+shuffleArraytwofive[1],
       },
     ],
   },
@@ -92,12 +93,12 @@ day263link: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Small"</strong>',
     answers: [
       {
-        nextId: 'opposites'+shuffledNumbersto[1],
+        nextId: 'opposites'+shuffleArraytwofive[1],
       },
     ],
   },
   
-  ['opposites'+shuffledNumbersto[1]]: {
+  ['opposites'+shuffleArraytwofive[1]]: {
     botPrompt: 'Opposite of "happy"',
     type: RTypes.TRANSFORMED_TEXT,
   
@@ -126,7 +127,7 @@ day263link: {
     botPrompt: 'Hurray! <strong>sad</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'opposites'+shuffledNumbersto[2],
+        nextId: 'opposites'+shuffleArraytwofive[2],
       },
     ],
   },
@@ -134,13 +135,13 @@ day263link: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"sad"</strong>',
     answers: [
       {
-        nextId: 'opposites'+shuffledNumbersto[2],
+        nextId: 'opposites'+shuffleArraytwofive[2],
       },
     ],
   },
   
   //3
-  ['opposites'+shuffledNumbersto[2]]: {
+  ['opposites'+shuffleArraytwofive[2]]: {
   botPrompt: 'Opposite of "hot"',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -169,7 +170,7 @@ day263link: {
   botPrompt: 'Hurray! <strong>cold</strong> is the correct answer ! 😎',
   answers: [
     {
-      nextId: 'opposites'+shuffledNumbersto[3],
+      nextId: 'opposites'+shuffleArraytwofive[3],
     },
   ],
   },
@@ -177,13 +178,13 @@ day263link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"cold"</strong>',
   answers: [
     {
-      nextId: 'opposites'+shuffledNumbersto[3],
+      nextId: 'opposites'+shuffleArraytwofive[3],
     },
   ],
   },
   
   //4
-  ['opposites'+shuffledNumbersto[3]]: {
+  ['opposites'+shuffleArraytwofive[3]]: {
   botPrompt: 'Opposite of "up"',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -212,7 +213,7 @@ day263link: {
   botPrompt: 'Hurray! <strong>Down</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'opposites'+shuffledNumbersto[4],
+      nextId: 'opposites'+shuffleArraytwofive[4],
     },
   ],
   },
@@ -220,13 +221,13 @@ day263link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Down"</strong>',
   answers: [
     {
-      nextId: 'opposites'+shuffledNumbersto[4],
+      nextId: 'opposites'+shuffleArraytwofive[4],
     },
   ],
   },
   
   //5
-  ['opposites'+shuffledNumbersto[4]]: {
+  ['opposites'+shuffleArraytwofive[4]]: {
   botPrompt: 'Opposite of "day"',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -255,7 +256,7 @@ day263link: {
   botPrompt: 'Hurray! <strong>Night</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'opposites'+shuffledNumbersto[5],
+      nextId: 'opposites'+shuffleArraytwofive[5],
     },
   ],
   },
@@ -263,13 +264,13 @@ day263link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Night"</strong>',
   answers: [
     {
-      nextId: 'opposites'+shuffledNumbersto[5],
+      nextId: 'opposites'+shuffleArraytwofive[5],
     },
   ],
   },
   
   //6
-  ['opposites'+shuffledNumbersto[5]]: {
+  ['opposites'+shuffleArraytwofive[5]]: {
   botPrompt: 'Opposite of "slow"',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -298,7 +299,7 @@ day263link: {
   botPrompt: 'Hurray! <strong>fast</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'opposites'+shuffledNumbersto[6],
+      nextId: 'opposites'+shuffleArraytwofive[6],
     },
   ],
   },
@@ -306,13 +307,13 @@ day263link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"fast"</strong>',
   answers: [
     {
-      nextId: 'opposites'+shuffledNumbersto[6],
+      nextId: 'opposites'+shuffleArraytwofive[6],
     },
   ],
   },
   
   //7
-  ['opposites'+shuffledNumbersto[6]]: {
+  ['opposites'+shuffleArraytwofive[6]]: {
   botPrompt: 'Opposite of "near"',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -341,7 +342,7 @@ day263link: {
   botPrompt: 'Hurray! <strong>far</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'opposites'+shuffledNumbersto[7],
+      nextId: 'opposites'+shuffleArraytwofive[7],
     },
   ],
   },
@@ -349,14 +350,14 @@ day263link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"far"</strong>',
   answers: [
     {
-      nextId: 'opposites'+shuffledNumbersto[7],
+      nextId: 'opposites'+shuffleArraytwofive[7],
     },
   ],
   },
   
   
   //8
-  ['opposites'+shuffledNumbersto[7]]: {
+  ['opposites'+shuffleArraytwofive[7]]: {
   botPrompt: 'Opposite of "close"',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -385,7 +386,7 @@ day263link: {
   botPrompt: 'Hurray! <strong>Open</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'opposites'+shuffledNumbersto[8],
+      nextId: 'opposites'+shuffleArraytwofive[8],
     },
   ],
   },
@@ -393,13 +394,13 @@ day263link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Open"</strong>',
   answers: [
     {
-      nextId: 'opposites'+shuffledNumbersto[8],
+      nextId: 'opposites'+shuffleArraytwofive[8],
     },
   ],
   },
   
   //9
-  ['opposites'+shuffledNumbersto[8]]: {
+  ['opposites'+shuffleArraytwofive[8]]: {
   botPrompt: 'Opposite of "empty"',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -428,7 +429,7 @@ day263link: {
   botPrompt: 'Hurray! <strong>Full</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'opposites'+shuffledNumbersto[9],
+      nextId: 'opposites'+shuffleArraytwofive[9],
     },
   ],
   },
@@ -436,14 +437,14 @@ day263link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Full"</strong>',
   answers: [
     {
-      nextId: 'opposites'+shuffledNumbersto[9],
+      nextId: 'opposites'+shuffleArraytwofive[9],
     },
   ],
   },
   
   
   //10
-  ['opposites'+shuffledNumbersto[9]]: {
+  ['opposites'+shuffleArraytwofive[9]]: {
   botPrompt: 'Opposite of "clean"',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -473,7 +474,7 @@ day263link: {
   botPrompt: 'Hurray! <strong>Dirty</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'opposites'+shuffledNumbersto[10],
+      nextId: 'opposites'+shuffleArraytwofive[10],
     },
   ],
   },
@@ -481,13 +482,13 @@ day263link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Dirty"</strong>',
   answers: [
     {
-      nextId: 'opposites'+shuffledNumbersto[10],
+      nextId: 'opposites'+shuffleArraytwofive[10],
     },
   ],
   },
   
   //11
-  ['opposites'+shuffledNumbersto[10]]: {
+  ['opposites'+shuffleArraytwofive[10]]: {
   botPrompt: 'Opposite of "cold"',
   type: RTypes.TRANSFORMED_TEXT,
 
@@ -516,7 +517,7 @@ day263link: {
   botPrompt: 'Hurray! <strong>Quiet</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'opposites'+shuffledNumbersto[11],
+      nextId: 'opposites'+shuffleArraytwofive[11],
     },
   ],
   },
@@ -524,13 +525,13 @@ day263link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Quiet"</strong>',
   answers: [
     {
-      nextId: 'opposites'+shuffledNumbersto[11],
+      nextId: 'opposites'+shuffleArraytwofive[11],
     },
   ],
   },
   
   //12
-  ['opposites'+shuffledNumbersto[11]]: {
+  ['opposites'+shuffleArraytwofive[11]]: {
   botPrompt: 'Opposite of "wet"',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -559,7 +560,7 @@ day263link: {
   botPrompt: 'Hurray! <strong>Dry</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'opposites'+shuffledNumbersto[12],
+      nextId: 'opposites'+shuffleArraytwofive[12],
     },
   ],
   },
@@ -567,13 +568,13 @@ day263link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Dry"</strong>',
   answers: [
     {
-      nextId: 'opposites'+shuffledNumbersto[12],
+      nextId: 'opposites'+shuffleArraytwofive[12],
     },
   ],
   },
   
   //13
-  ['opposites'+shuffledNumbersto[12]]: {
+  ['opposites'+shuffleArraytwofive[12]]: {
   botPrompt: 'Opposite of "fast"',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -602,7 +603,7 @@ day263link: {
   botPrompt: 'Hurray! <strong>Slow</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'opposites'+shuffledNumbersto[13],
+      nextId: 'opposites'+shuffleArraytwofive[13],
     },
   ],
   },
@@ -610,13 +611,13 @@ day263link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Slow"</strong>',
   answers: [
     {
-      nextId: 'opposites'+shuffledNumbersto[13],
+      nextId: 'opposites'+shuffleArraytwofive[13],
     },
   ],
   },
   
   //14
-  ['opposites'+shuffledNumbersto[13]]: {
+  ['opposites'+shuffleArraytwofive[13]]: {
   botPrompt: 'Opposite of "light"',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -645,7 +646,7 @@ day263link: {
   botPrompt: 'Hurray! <strong>Dark</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'opposites'+shuffledNumbersto[14],
+      nextId: 'opposites'+shuffleArraytwofive[14],
     },
   ],
   },
@@ -653,14 +654,14 @@ day263link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Dark"</strong>',
   answers: [
     {
-      nextId: 'opposites'+shuffledNumbersto[14],
+      nextId: 'opposites'+shuffleArraytwofive[14],
     },
   ],
   },
   
   
   //15
-  ['opposites'+shuffledNumbersto[14]]: {
+  ['opposites'+shuffleArraytwofive[14]]: {
   botPrompt: 'Opposite of "in"',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -689,7 +690,7 @@ day263link: {
   botPrompt: 'Hurray! <strong>Out</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'opposites'+shuffledNumbersto[15],
+      nextId: 'opposites'+shuffleArraytwofive[15],
     },
   ],
   },
@@ -697,13 +698,13 @@ day263link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Out"</strong>',
   answers: [
     {
-      nextId: 'opposites'+shuffledNumbersto[15],
+      nextId: 'opposites'+shuffleArraytwofive[15],
     },
   ],
   },
   
   //16
-  ['opposites'+shuffledNumbersto[15]]: {
+  ['opposites'+shuffleArraytwofive[15]]: {
     botPrompt: 'Opposite of "new"',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['Old', 'Fast', "Bright","Empty"]),
@@ -730,7 +731,7 @@ day263link: {
     botPrompt: 'You Have Selected correct Anwser 🎉! <strong>Old</strong> 😎',
     answers: [
       {
-        nextId: 'opposites'+shuffledNumbersto[16],
+        nextId: 'opposites'+shuffleArraytwofive[16],
       },
     ],
   },
@@ -738,13 +739,13 @@ day263link: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Old"</strong>',
     answers: [
       {
-        nextId: 'opposites'+shuffledNumbersto[16],
+        nextId: 'opposites'+shuffleArraytwofive[16],
       },
     ],
   },
   
   //17
-  ['opposites'+shuffledNumbersto[16]]: {
+  ['opposites'+shuffleArraytwofive[16]]: {
   botPrompt: 'Opposite of "happy"',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['Sad', 'Funny', "Brave","Angry"]),
@@ -771,7 +772,7 @@ day263link: {
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>Sad</strong> 😎',
   answers: [
     {
-      nextId: 'opposites'+shuffledNumbersto[17],
+      nextId: 'opposites'+shuffleArraytwofive[17],
     },
   ],
   },
@@ -779,13 +780,13 @@ day263link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Sad"</strong>',
   answers: [
     {
-      nextId: 'opposites'+shuffledNumbersto[17],
+      nextId: 'opposites'+shuffleArraytwofive[17],
     },
   ],
   },
   
   //18
-  ['opposites'+shuffledNumbersto[17]]: {
+  ['opposites'+shuffleArraytwofive[17]]: {
   botPrompt: 'Opposite of "quiet".   ',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['Far', 'Soft', "Loud","Near"]),
@@ -812,7 +813,7 @@ day263link: {
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>Loud</strong> 😎',
   answers: [
     {
-      nextId: 'opposites'+shuffledNumbersto[18],
+      nextId: 'opposites'+shuffleArraytwofive[18],
     },
   ],
   },
@@ -820,13 +821,13 @@ day263link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Loud"</strong>',
   answers: [
     {
-      nextId: 'opposites'+shuffledNumbersto[18],
+      nextId: 'opposites'+shuffleArraytwofive[18],
     },
   ],
   },
   
   //19
-  ['opposites'+shuffledNumbersto[18]]: {
+  ['opposites'+shuffleArraytwofive[18]]: {
   botPrompt: 'Opposite of "thick"',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['Heavy', 'Fast', "Thin","Tall"]),
@@ -853,7 +854,7 @@ day263link: {
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>Thin</strong> Answers! 😎',
   answers: [
     {
-      nextId: 'opposites'+shuffledNumbersto[19],
+      nextId: 'opposites'+shuffleArraytwofive[19],
     },
   ],
   },
@@ -861,13 +862,13 @@ day263link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Thin"</strong>',
   answers: [
     {
-      nextId: 'opposites'+shuffledNumbersto[19],
+      nextId: 'opposites'+shuffleArraytwofive[19],
     },
   ],
   },
   
   //20
-  ['opposites'+shuffledNumbersto[19]]: {
+  ['opposites'+shuffleArraytwofive[19]]: {
   botPrompt: 'Opposite of "long"',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['Short', 'Young', "Soft","Full"]),
@@ -894,7 +895,7 @@ day263link: {
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>Short</strong> 😎',
   answers: [
     {
-      nextId: 'opposites'+shuffledNumbersto[20],
+      nextId: 'opposites'+shuffleArraytwofive[20],
     },
   ],
   },
@@ -902,13 +903,13 @@ day263link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Short"</strong>',
   answers: [
     {
-      nextId: 'opposites'+shuffledNumbersto[20],
+      nextId: 'opposites'+shuffleArraytwofive[20],
     },
   ],
   },
   
   //21
-  ["opposites"+shuffledNumbersto[20]]: {
+  ["opposites"+shuffleArraytwofive[20]]: {
     botPrompt: 'Short',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['Short', 'Young', "Soft","Full"]),
@@ -935,7 +936,7 @@ day263link: {
     botPrompt: 'Hurray <strong>Soft</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'opposites'+shuffledNumbersto[21],
+        nextId: 'opposites'+shuffleArraytwofive[21],
       },
     ],
   },
@@ -943,13 +944,13 @@ day263link: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Soft"</strong>',
     answers: [
       {
-        nextId: 'opposites'+shuffledNumbersto[21],
+        nextId: 'opposites'+shuffleArraytwofive[21],
       },
     ],
   },
   
   //22
-  ['opposites'+shuffledNumbersto[21]]: {
+  ['opposites'+shuffleArraytwofive[21]]: {
     botPrompt: 'Opposite of "old"',
     type: RTypes.TRANSFORMED_TEXT,
   
@@ -978,7 +979,7 @@ day263link: {
     botPrompt: 'Hurray! <strong>young</strong> is the correct answer  ! 😎',
     answers: [
       {
-        nextId: 'opposites'+shuffledNumbersto[22],
+        nextId: 'opposites'+shuffleArraytwofive[22],
       },
     ],
   },
@@ -986,13 +987,13 @@ day263link: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"young"</strong>',
     answers: [
       {
-        nextId: 'opposites'+shuffledNumbersto[22],
+        nextId: 'opposites'+shuffleArraytwofive[22],
       },
     ],
   },
   
   //23
-  ['opposites'+shuffledNumbersto[22]]: {
+  ['opposites'+shuffleArraytwofive[22]]: {
   botPrompt: 'Opposite of "boy"',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['Short', 'Young', "girl","Full"]),
@@ -1020,7 +1021,7 @@ day263link: {
   botPrompt: 'Hurray! <strong>girl</strong> is the correct answer ! 😎',
   answers: [
     {
-      nextId: 'opposites'+shuffledNumbersto[23],
+      nextId: 'opposites'+shuffleArraytwofive[23],
     },
   ],
   },
@@ -1028,13 +1029,13 @@ day263link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"girl"</strong>',
   answers: [
     {
-      nextId: 'opposites'+shuffledNumbersto[23],
+      nextId: 'opposites'+shuffleArraytwofive[23],
     },
   ],
   },
   
   //24
-  ['opposites'+shuffledNumbersto[23]]: {
+  ['opposites'+shuffleArraytwofive[23]]: {
   botPrompt: 'Opposite of "awake"',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -1063,7 +1064,7 @@ day263link: {
   botPrompt: 'Hurray! <strong>Asleep</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'opposites'+shuffledNumbersto[24],
+      nextId: 'opposites'+shuffleArraytwofive[24],
     },
   ],
   },
@@ -1071,13 +1072,13 @@ day263link: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Asleep"</strong>',
   answers: [
     {
-      nextId: 'opposites'+shuffledNumbersto[24],
+      nextId: 'opposites'+shuffleArraytwofive[24],
     },
   ],
   },
   
   //25
-  ['opposites'+shuffledNumbersto[24]]: {
+  ['opposites'+shuffleArraytwofive[24]]: {
   botPrompt: 'Opposite of "sour"',
   type: RTypes.TRANSFORMED_TEXT,
   
