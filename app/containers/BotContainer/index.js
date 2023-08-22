@@ -47,13 +47,14 @@ if(!this.state.signupnotdone)
 {
 
      if (this.props.botContainer.conversation.length !== prevProps.botContainer.conversation.length) {
- 
+      
       this.saveChatList();
+
      }
   
 }
 
-  }
+}
 
 
 
@@ -132,6 +133,7 @@ saveChatList = () => {
           sessId: this.state.id,
           number: this.props.botContainer.userPhone,
           email: this.props.botContainer.userEmail,
+          bags:this.props.botContainer.bags
         }),
       }
     )

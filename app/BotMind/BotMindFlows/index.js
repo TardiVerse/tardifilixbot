@@ -374,7 +374,7 @@ tfidgenrationtext: {
   botPrompt: 'You will receive your TFID Digital Card in your registered mobile number and email address.',
   answers: [
     {
-      nextId: 'day1',
+      nextId: 'day8',
     },
   ],
 },
@@ -862,18 +862,32 @@ day84comment: {
     {
       answer: 'A',
       nextId: 'capscorrect',
+    sumToBags: [{ name: 'c', points: 1 },  { name: 'd', points: 8 }],
+
     },
     {
       answer: 'B',
       nextId: 'incapscorrect',
+  sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
+
+
+
     },
     {
       answer: "C",
       nextId: 'incapscorrect',
+    sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
+
+
+
     },
     {
       answer: "D",
       nextId: 'incapscorrect',
+    sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
+
+
+
     },
   ],
 },
@@ -883,7 +897,9 @@ capscorrect: {
     {
       nextId: 'capletters'+shuffledNumbersto[1],
     },
+    
   ],
+
 },
 incapscorrect: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"A"</strong>',
@@ -892,6 +908,8 @@ incapscorrect: {
       nextId: 'capletters'+shuffledNumbersto[1],
     },
   ],
+
+
 },
 
 ['capletters'+shuffledNumbersto[1]]: {
@@ -903,18 +921,26 @@ incapscorrect: {
     {
       answer: 'E',
       nextId: 'incapscorrectq2',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'F',
       nextId: 'capscorrectq2',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "G",
       nextId: 'incapscorrectq2',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "H",
       nextId: 'incapscorrectq2',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },

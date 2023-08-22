@@ -1,18 +1,23 @@
 const recommendationBags = [
 	{
-		name: "rickAndMorty",
+		name: "c",
 		defaultValue: 0,
-		goToBubbleId: "rickAndMorty",
+		goToBubbleId: "c",
 	},
 	{
-		name: "shroedingersCat",
+		name: "i",
 		defaultValue: 0,
-		goToBubbleId: "shroedingersCat",
+		goToBubbleId: "i",
 	},
 	{
-		name: "recursion",
+		name: "d",
 		defaultValue: 0,
-		goToBubbleId: "recursion",
+		goToBubbleId: "d",
+	},
+	{
+		name: "t",
+		defaultValue: 0,
+		goToBubbleId: "t",
 	},
 ]
 
