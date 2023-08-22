@@ -374,7 +374,7 @@ tfidgenrationtext: {
   botPrompt: 'You will receive your TFID Digital Card in your registered mobile number and email address.',
   answers: [
     {
-      nextId: 'day8',
+      nextId: 'day1',
     },
   ],
 },
@@ -411,10 +411,13 @@ wishtocontinue: {
       {
         answer: 'Yes!',
         nextId: 'day2',
+   
+
       },
       {
         answer: 'No!',
         nextId: 'endConv',
+        sumToBags: [{ name: 'd', points: 1 }],
       },
   ],
 },
@@ -482,6 +485,7 @@ wishtocontinue2: {
       {
         answer: 'No!',
         nextId: 'endConv',
+        sumToBags: [{ name: 'd', points: 2 }],
       },
   ],
 },
@@ -531,6 +535,7 @@ wishtocontinue3: {
       {
         answer: 'No!',
         nextId: 'endConv',
+        sumToBags: [{ name: 'd', points: 3 }],
       },
   ],
 },
@@ -587,6 +592,7 @@ day42link: {
 },
 
 wishtocontinue4: {
+
   botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
   input: selectField(['Yes!', 'No!']),
   answers: [
@@ -597,6 +603,7 @@ wishtocontinue4: {
       {
         answer: 'No!',
         nextId: 'endConv',
+        sumToBags: [{ name: 'd', points: 4 }],
       },
   ],
 },
@@ -636,6 +643,8 @@ wishtocontinue5: {
       {
         answer: 'No!',
         nextId: 'endConv',
+        sumToBags: [{ name: 'd', points: 5 }],
+
       },
   ],
 },
@@ -692,6 +701,8 @@ wishtocontinue6: {
       {
         answer: 'No!',
         nextId: 'endConv',
+        sumToBags: [{ name: 'd', points: 6 }],
+
       },
   ],
 },
@@ -754,6 +765,8 @@ wishtocontinue7: {
       {
         answer: 'No!',
         nextId: 'endConv',
+        sumToBags: [{ name: 'd', points: 7 }],
+
       },
   ],
 },
@@ -2772,6 +2785,8 @@ wishtocontinue8: {
       {
         answer: 'No!',
         nextId: 'endConv',
+        sumToBags: [{ name: 'd', points: 8 }],
+
       },
   ],
 },
@@ -2821,6 +2836,8 @@ wishtocontinue9: {
       {
         answer: 'No!',
         nextId: 'endConv',
+        sumToBags: [{ name: 'd', points: 9 }],
+
       },
   ],
 },
@@ -7003,6 +7020,8 @@ wishToContinue10: {
       {
         answer: 'No!',
         nextId: 'endConv',
+        sumToBags: [{ name: 'd', points: 10 }],
+
       },
   ],
 },

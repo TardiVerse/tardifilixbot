@@ -31,19 +31,20 @@ export class BotContainer extends React.Component { // eslint-disable-line react
   }
 
   componentDidUpdate(prevProps, prevState) {
-
+    const dbid = localStorage.getItem('dbid');
     if (this.props.botContainer.displayRecommendation) {
       this.handleEstimateRecommendation(this.props.botContainer.bags);
     }
     if(this.props.botContainer.userPhone && this.state.signupnotdone )
     {
-    this.signup();
 
-    }
+    this.signup();
+      
+        }
   
 
 
-if(!this.state.signupnotdone)
+if(dbid !== null)
 {
 
      if (this.props.botContainer.conversation.length !== prevProps.botContainer.conversation.length) {
@@ -96,6 +97,7 @@ fetch(
     .then((res) => {
       if (res.status === true) {
         this.setState({ signupnotdone: false,dbid:res.id });
+        localStorage.setItem('dbid', res.id);
         console.log(res.status);
       } else {
         console.log('Failed');
@@ -116,7 +118,8 @@ fetch(
 
 
 saveChatList = () => {
-    const dbid = this.state.dbid;
+    const dbid = localStorage.getItem('dbid');
+    let daycount=this.props.botContainer.bags.d;
     fetch(
       // `https://devapitardifilix-6bf804c0e6f9.herokuapp.com/chatbot/save/TF2601/hjgbjhg`,
       `https://devapitardifilix-6bf804c0e6f9.herokuapp.com/chatbot/save/TF2601/${dbid}`,
@@ -140,6 +143,9 @@ saveChatList = () => {
       .then((response) => response.json())
       .then((res) => {
         if (res.message === 'Sucess') {
+          const dayadd= parseInt(daycount)+1;
+          localStorage.setItem('dayc', "day"+dayadd);
+
           console.log('Success');
         } else {
           console.log('Failed');
