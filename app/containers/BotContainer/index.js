@@ -57,14 +57,13 @@ saveChatList = () => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
+          body: JSON.stringify({
           name: this.props.botContainer.userName,
           chatData: this.props.botContainer.conversation,
           sessId: this.state.id,
           number: this.props.botContainer.userPhone,
-          glassKind: this.props.botContainer.userGlassKind,
-          glassType: this.props.botContainer.userGlassType,
-          rimType: this.props.botContainer.userRimType,
-          userGender: this.props.botContainer.userGender,
+          email: this.props.botContainer.userEmail,
+        }),
         }),
       }
     )
