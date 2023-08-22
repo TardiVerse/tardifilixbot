@@ -972,18 +972,26 @@ answers: [
   {
     answer: 'I',
     nextId: 'incapscorrectq3',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'J',
     nextId: 'incapscorrectq3',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "K",
     nextId: 'capscorrectq3',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: "L",
     nextId: 'incapscorrectq3',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -1015,18 +1023,26 @@ answers: [
   {
     answer: 'M',
     nextId: 'incapscorrectq4',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'N',
     nextId: 'incapscorrectq4',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "O",
     nextId: 'incapscorrectq4',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "P",
     nextId: 'capscorrectq4',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
 ],
 },
@@ -1058,18 +1074,26 @@ answers: [
   {
     answer: 'Q',
     nextId: 'incapscorrectq5',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'R',
     nextId: 'capscorrectq5',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: "S",
     nextId: 'incapscorrectq5',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "T",
     nextId: 'incapscorrectq5',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -1101,18 +1125,26 @@ answers: [
   {
     answer: 'U',
     nextId: 'capscorrectq6',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'V',
     nextId: 'incapscorrectq6',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "W",
     nextId: 'incapscorrectq6',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "X",
     nextId: 'incapscorrectq6',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -1143,18 +1175,28 @@ answers: [
   {
     answer: 'Y',
     nextId: 'incapscorrectq7',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'Z',
     nextId: 'incapscorrectq7',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "A",
     nextId: 'incapscorrectq7',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "B",
     nextId: 'capscorrectq7',
+    sumToBags: [{ name: 'c', points: 1 }],
+
+
+
   },
 ],
 },
@@ -1187,18 +1229,26 @@ answers: [
   {
     answer: 'C',
     nextId: 'incapscorrectq8',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'D',
     nextId: 'incapscorrectq8',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "E",
     nextId: 'capscorrectq8',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: "F",
     nextId: 'incapscorrectq8',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -1230,18 +1280,26 @@ answers: [
   {
     answer: 'G',
     nextId: 'incapscorrectq9',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'H',
     nextId: 'incapscorrectq9',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "I",
     nextId: 'capscorrectq9',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: "J",
     nextId: 'incapscorrectq9',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -1274,18 +1332,26 @@ answers: [
   {
     answer: 'K',
     nextId: 'incapscorrectq10',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'L',
     nextId: 'incapscorrectq10',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "M",
     nextId: 'incapscorrectq10',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "N",
     nextId: 'capscorrectq10',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
 ],
 },
@@ -1317,18 +1383,26 @@ answers: [
   {
     answer: 'O',
     nextId: 'capscorrectq11',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'P',
     nextId: 'incapscorrectq11',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "Q",
     nextId: 'incapscorrectq11',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "R",
     nextId: 'incapscorrectq11',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -1360,18 +1434,26 @@ answers: [
   {
     answer: 'S',
     nextId: 'incapscorrectq12',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'T',
     nextId: 'incapscorrectq12',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "U",
     nextId: 'incapscorrectq12',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "V",
     nextId: 'capscorrectq12',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
 ],
 },
@@ -1403,18 +1485,26 @@ answers: [
   {
     answer: 'W',
     nextId: 'incapscorrectq13',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'X',
     nextId: 'incapscorrectq13',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "Y",
     nextId: 'incapscorrectq13',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "Z",
     nextId: 'capscorrectq13',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
 ],
 },
@@ -1446,18 +1536,26 @@ answers: [
   {
     answer: 'A',
     nextId: 'incapscorrectq14',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'B',
     nextId: 'incapscorrectq14',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "C",
     nextId: 'capscorrectq14',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: "D",
     nextId: 'incapscorrectq14',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -1490,18 +1588,26 @@ answers: [
   {
     answer: 'E',
     nextId: 'incapscorrectq15',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'F',
     nextId: 'incapscorrectq15',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "G",
     nextId: 'incapscorrectq15',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "H",
     nextId: 'capscorrectq15',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
 ],
 },
@@ -1532,18 +1638,26 @@ answers: [
     {
       answer: 'I',
       nextId: 'incapscorrectq16',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'J',
       nextId: 'capscorrectq16',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "K",
       nextId: 'incapscorrectq16',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "L",
       nextId: 'incapscorrectq16',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   
   ],
@@ -1574,18 +1688,26 @@ answers: [
   {
     answer: 'O',
     nextId: 'incapscorrectq17',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'N',
     nextId: 'incapscorrectq17',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "M",
     nextId: 'capscorrectq17',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: "P",
     nextId: 'incapscorrectq17',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
  
 ],
@@ -1616,18 +1738,26 @@ answers: [
   {
     answer: 'Q',
     nextId: 'capscorrectq18',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'R',
     nextId: 'incapscorrectq18',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "S",
     nextId: 'incapscorrectq18',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "T",
     nextId: 'incapscorrectq18',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
  
 ],
@@ -1658,18 +1788,26 @@ answers: [
   {
     answer: 'U',
     nextId: 'capscorrectq19',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'V',
     nextId: 'incapscorrectq19',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "W",
     nextId: 'incapscorrectq19',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "X",
     nextId: 'incapscorrectq19',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
  
 ],
@@ -1700,18 +1838,26 @@ answers: [
   {
     answer: 'Y',
     nextId: 'incapscorrectq20',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'L',
     nextId: 'capscorrectq20',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: "A",
     nextId: 'incapscorrectq20',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "B",
     nextId: 'incapscorrectq20',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 
 ],
@@ -1754,18 +1900,22 @@ day85comment: {
     {
       answer: 'a',
       nextId: 'smallcorrect',
+
     },
     {
       answer: 'b',
       nextId: 'insmallcorrect',
+      
     },
     {
       answer: "c",
       nextId: 'insmallcorrect',
+      
     },
     {
       answer: "d",
       nextId: 'insmallcorrect',
+      
     },
   ],
 },
