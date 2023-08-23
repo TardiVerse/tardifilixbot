@@ -14,8 +14,7 @@ import pomegranate from "./assest/pomegranate.jpg";
 import welcomebackgif from "./assest/welcomeback.gif";
 
 const common_greetings = /(^hello|^hllo|^hi|^hey|^hola|^sup)\b\s?.*$/i;
-const common_greetings_negative =
-  /(?!(^hello|^hi|^hey|^hllo|^sup|^hola)\b)\w+/i;
+const common_greetings_negative = /(?!(^hello|^hi|^hey|^hllo|^sup|^hola)\b)\w+/i;
 
 function shuffleArray(array) {
   const shuffledArray = array.slice();
