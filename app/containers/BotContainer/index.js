@@ -18,7 +18,7 @@ export class BotContainer extends React.Component { // eslint-disable-line react
   constructor(props) {
     super(props);
     this.state = {
-      botnameonfly: 'fillibot',
+      botnameonfly: 'filibot Assessment',
       pathname: window.location.pathname,
       signupnotdone:true,
       dbid:"",
@@ -157,7 +157,7 @@ saveChatList = () => {
     return (
       <div>
         <Helmet
-          title="FiliBot"
+          title="FiliBot Assessment"
           meta={[
             { name: 'description', content: 'Description of BotContainer' },
           ]}

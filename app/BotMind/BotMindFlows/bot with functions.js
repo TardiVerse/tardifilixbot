@@ -455,7 +455,7 @@ import {
   const questions = {
   
     start: {
-      botPrompt: 'Hello, I am <strong>FiliBot</strong> From the planet of joyful learning! Here to help you to eradicate learning lapses from every corners!',
+      botPrompt: 'Hello, I am <strong>FiliBot for Assessment</strong> From the planet of joyful learning! Here to help you to eradicate learning lapses from every corners!',
       answers: [
         {
           nextId: 'myPurpose',
