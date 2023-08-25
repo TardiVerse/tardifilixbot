@@ -33,18 +33,22 @@ day482link: {
       {
         answer: 'Who',
         nextId: 'whWordscorrect',
+        sumToBags: [{ name: 'c', points: 1 },  { name: 'd', points: 8 }],
       },
       {
         answer: 'Where',
         nextId: 'inwhWordscorrect',
+        sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
       },
       {
         answer: "What",
         nextId: 'inwhWordscorrect',
+        sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
       },
       {
         answer: "When",
         nextId: 'inwhWordscorrect',
+        sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
       },
     ],
   },
@@ -74,18 +78,22 @@ day482link: {
       {
         answer: 'Who',
         nextId: 'inwhWordscorrectq2',
+        sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: 'What',
         nextId: 'whWordscorrectq2',
+        sumToBags: [{ name: 'c', points: 1 }],
       },
       {
         answer: "Where",
         nextId: 'inwhWordscorrectq2',
+        sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "When",
         nextId: 'inwhWordscorrectq2',
+        sumToBags: [{ name: 'i', points: 1 }],
       },
     ],
   },
@@ -117,18 +125,22 @@ day482link: {
     {
       answer: 'Who',
       nextId: 'inwhWordscorrectq2',
+      sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'What',
       nextId: 'inwhWordscorrectq2',
+      sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "Where",
       nextId: 'whWordscorrectq2',
+      sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: "When",
       nextId: 'inwhWordscorrectq2',
+      sumToBags: [{ name: 'i', points: 1 }],
     },
   ],
   },
@@ -160,18 +172,23 @@ day482link: {
     {
       answer: 'Who',
       nextId: 'inwhWordscorrectq2',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'What',
       nextId: 'inwhWordscorrectq2',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "Where",
       nextId: 'inwhWordscorrectq2',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "When",
       nextId: 'whWordscorrectq2',
+       sumToBags: [{ name: 'c
+        sumToBags: [{ name: 'i', points: 1 }],', points: 1 }],
     },
   ],
   },
@@ -204,18 +221,22 @@ day482link: {
     {
       answer: 'Their',
       nextId: 'inwhWordscorrectq5',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'There',
       nextId: 'inwhWordscorrectq5',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "They're",
       nextId: 'inwhWordscorrectq5',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "When",
       nextId: 'whWordscorrectq5',
+       sumToBags: [{ name: 'c', points: 1 }],
     },
   ],
   },
@@ -247,18 +268,22 @@ day482link: {
     {
       answer: 'Who is sleeping?',
       nextId: 'whWordscorrectq6',
+       sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: 'What is sleeping?',
       nextId: 'inwhWordscorrectq6',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "Where is the cat?",
       nextId: 'inwhWordscorrectq6',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "How is the cat?",
       nextId: 'inwhWordscorrectq6',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
   ],
   },
@@ -291,18 +316,22 @@ day482link: {
     {
       answer: 'Who ate an apple?',
       nextId: 'whWordscorrectq7',
+       sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: 'What did I eat?',
       nextId: 'inwhWordscorrectq7',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "Where is the apple?",
       nextId: 'inwhWordscorrectq7',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "When did I eat?",
       nextId: 'inwhWordscorrectq7',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
   ],
   },
@@ -335,18 +364,22 @@ day482link: {
     {
       answer: 'What is the book?',
       nextId: 'inwhWordscorrectq8',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'Where is the book?',
       nextId: 'whWordscorrectq8',
+       sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: "They're",
       nextId: 'inwhWordscorrectq8',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "Why is the book there?",
       nextId: 'inwhWordscorrectq8',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
   ],
   },
@@ -378,18 +411,22 @@ day482link: {
     {
       answer: 'When did we go?',
       nextId: 'inwhWordscorrectq9',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'Where did we go?',
       nextId: 'whWordscorrectq9',
+       sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: "What did we do at the park?",
       nextId: 'inwhWordscorrectq9',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "Why did we go?",
       nextId: 'inwhWordscorrectq9',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
   ],
   },
@@ -422,18 +459,22 @@ day482link: {
     {
       answer: 'What is happening?',
       nextId: 'inwhWordscorrectq10',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'When is raining?',
       nextId: 'inwhWordscorrectq10',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "Where is it raining?",
       nextId: 'whWordscorrectq10',
+       sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: "Who is raining?",
       nextId: 'inwhWordscorrectq10',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
   ],
   
@@ -466,18 +507,22 @@ day482link: {
     {
       answer: 'Who is barking?',
       nextId: 'whWordscorrectq11',
+       sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: 'What is barking?',
       nextId: 'inwhWordscorrectq11',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "Where is the dog?",
       nextId: 'inwhWordscorrectq11',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "How is the dog?",
       nextId: 'inwhWordscorrectq11',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
   ],
   },
@@ -509,18 +554,22 @@ day482link: {
     {
       answer: 'Who is playing?',
       nextId: 'inwhWordscorrectq12',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'What is she playing with?',
       nextId: 'whWordscorrectq12',
+       sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: "Where is the ball?",
       nextId: 'inwhWordscorrectq12',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "When did she start playing?",
       nextId: 'inwhWordscorrectq12',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
   ],
   },
@@ -552,18 +601,22 @@ day482link: {
     {
       answer: 'What color is the car?',
       nextId: 'whWordscorrectq13',
+       sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: 'Why is the car red?',
       nextId: 'inwhWordscorrectq13',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "Where is the car?",
       nextId: 'inwhWordscorrectq13',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "Who painted the car?",
       nextId: 'inwhWordscorrectq13',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
   ],
   },
@@ -595,18 +648,22 @@ day482link: {
     {
       answer: 'Who is singing?',
       nextId: 'inwhWordscorrectq14',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'What are we doing?',
       nextId: 'whWordscorrectq14',
+       sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: "Where are we singing?",
       nextId: 'inwhWordscorrectq14',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "When did we start singing?",
       nextId: 'inwhWordscorrectq14',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
   ],
   },
@@ -639,18 +696,22 @@ day482link: {
     {
       answer: 'What is shining?',
       nextId: 'whWordscorrectq15',
+       sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: 'Why is the sun shining?',
       nextId: 'inwhWordscorrectq15',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "Where is the sun?",
       nextId: 'inwhWordscorrectq15',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "Where is the sun?",
       nextId: 'inwhWordscorrectq15',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
   ],
   },
@@ -682,18 +743,22 @@ day482link: {
       {
         answer: 'Who is taking?',
         nextId: 'inwhWordscorrectq16',
+         sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: 'What are they taking?',
         nextId: 'whWordscorrectq16',
+         sumToBags: [{ name: 'c', points: 1 }],
       },
       {
         answer: "Where are they taking?",
         nextId: 'inwhWordscorrectq16',
+         sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "When did they start taking?",
         nextId: 'inwhWordscorrectq16',
+         sumToBags: [{ name: 'i', points: 1 }],
       },
     ],
   },
@@ -723,18 +788,22 @@ day482link: {
     {
       answer: 'Who is flying?',
       nextId: 'inwhWordscorrectq17',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'What is flying?',
       nextId: 'whWordscorrectq17',
+       sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: "Where is the bird?",
       nextId: 'inwhWordscorrectq17',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "How is the bird flying?",
       nextId: 'inwhWordscorrectq17',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
   ],
   },
@@ -764,18 +833,22 @@ day482link: {
     {
       answer: 'Where I saw a butterfly?',
       nextId: 'inwhWordscorrectq18',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'What did I see in the garden?',
       nextId: 'whWordscorrectq18',
+       sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: "Where did I see the butterfly?",
       nextId: 'inwhWordscorrectq18',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "When did I see the butterfly?",
       nextId: 'inwhWordscorrectq18',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
   ],
   },
@@ -806,18 +879,22 @@ day482link: {
     {
       answer: 'How is the train?',
       nextId: 'inwhWordscorrectq19',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'Why is the train moving?',
       nextId: 'inwhWordscorrectq19',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "Where is the train moving?",
       nextId: 'whWordscorrectq19',
+       sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: "Who is moving the train?",
       nextId: 'inwhWordscorrectq19',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
   ],
   },
@@ -847,18 +924,22 @@ day482link: {
     {
       answer: 'Who is the dress?',
       nextId: 'inwhWordscorrectq20',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'What is she wearing?',
       nextId: 'whWordscorrectq20',
+       sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: "Where is the dress?",
       nextId: 'inwhWordscorrectq20',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "When did she wear the dress?",
       nextId: 'inwhWordscorrectq20',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
   ],
   },

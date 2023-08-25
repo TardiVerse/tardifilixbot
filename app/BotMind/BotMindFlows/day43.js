@@ -57,18 +57,22 @@ day434link: {
       {
         answer: '90',
         nextId: 'indivisioncorrect',
+          sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
       },
       {
         answer: '100',
         nextId: 'divisioncorrect',
+          sumToBags: [{ name: 'c', points: 1 },  { name: 'd', points: 8 }],
       },
       {
         answer: "110",
         nextId: 'indivisioncorrect',
+          sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
       },
       {
         answer: "120",
         nextId: 'indivisioncorrect',
+          sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
       },
     ],
   },

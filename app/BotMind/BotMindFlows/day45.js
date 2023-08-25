@@ -47,18 +47,22 @@ day454link: {
       {
         answer: 'I aam',
         nextId: 'inmyHeShecorrect',
+         sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
       },
       {
         answer: 'am',
         nextId: 'inmyHeShecorrect',
+         sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
       },
       {
         answer: "I amm",
         nextId: 'inmyHeShecorrect',
+         sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
       },
       {
         answer: "I am",
         nextId: 'myHeShecorrect',
+         sumToBags: [{ name: 'c', points: 1 },  { name: 'd', points: 8 }],
       },
     ],
   },
@@ -88,18 +92,22 @@ day454link: {
       {
         answer: 'I aam',
         nextId: 'inmyHeShecorrectq2',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: 'am',
         nextId: 'inmyHeShecorrectq2',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "I amm",
         nextId: 'inmyHeShecorrectq2',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "I am",
         nextId: 'myHeShecorrectq2',
+          sumToBags: [{ name: 'c', points: 1 }],
       },
     ],
   },
@@ -131,18 +139,23 @@ day454link: {
         {
             answer: 'I aam',
             nextId: 'inmyHeShecorrectq3',
+              sumToBags: [{ name: 'i', points: 1 }],
           },
           {
             answer: 'am',
             nextId: 'inmyHeShecorrectq3',
+              sumToBags: [{ name: 'i', points: 1 }],
           },
           {
             answer: "I amm",
             nextId: 'inmyHeShecorrectq3',
+              sumToBags: [{ name: 'i', points: 1 }],
           },
           {
             answer: "I am",
             nextId: 'myHeShecorrectq3',
+              sumToBags: [{ name: 'c
+                sumToBags: [{ name: 'i', points: 1 }],', points: 1 }],
           },
         ],
   },
@@ -174,18 +187,22 @@ day454link: {
     {
         answer: 'I aam',
         nextId: 'myHeShecorrectq4',
+          sumToBags: [{ name: 'c', points: 1 }],
       },
       {
         answer: 'am',
         nextId: 'inmyHeShecorrectq4',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "I amm",
         nextId: 'inmyHeShecorrectq4',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "I am",
         nextId: 'inmyHeShecorrectq4',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
     ],
   },
@@ -217,18 +234,22 @@ day454link: {
         {
             answer: 'I aam',
             nextId: 'myHeShecorrectq5',
+              sumToBags: [{ name: 'c', points: 1 }],
           },
           {
             answer: 'am',
             nextId: 'inmyHeShecorrectq5',
+              sumToBags: [{ name: 'i', points: 1 }],
           },
           {
             answer: "I amm",
             nextId: 'inmyHeShecorrectq5',
+              sumToBags: [{ name: 'i', points: 1 }],
           },
           {
             answer: "I am",
             nextId: 'inmyHeShecorrectq5',
+              sumToBags: [{ name: 'i', points: 1 }],
           },
     ],
   },
@@ -260,18 +281,22 @@ day454link: {
       {
         answer: 'I am',
         nextId: 'inmyHeShecorrectq6',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: 'Me',
         nextId: 'inmyHeShecorrectq6',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "I",
         nextId: 'inmyHeShecorrectq6',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "My",
         nextId: 'myHeShecorrectq6',
+          sumToBags: [{ name: 'c', points: 1 }],
       },
     ],
   },
@@ -303,18 +328,22 @@ day454link: {
       {
         answer: 'I am',
         nextId: 'inmyHeShecorrectq7',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: 'Me',
         nextId: 'inmyHeShecorrectq7',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "I",
         nextId: 'myHeShecorrectq7',
+          sumToBags: [{ name: 'c', points: 1 }],
       },
       {
         answer: "My",
         nextId: 'inmyHeShecorrectq7',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
     ],
   },
@@ -347,18 +376,22 @@ day454link: {
         {
             answer: 'I am',
             nextId: 'inmyHeShecorrectq7',
+              sumToBags: [{ name: 'i', points: 1 }],
           },
           {
             answer: 'Me',
             nextId: 'inmyHeShecorrectq7',
+              sumToBags: [{ name: 'i', points: 1 }],
           },
           {
             answer: "I",
             nextId: 'inmyHeShecorrectq7',
+              sumToBags: [{ name: 'i', points: 1 }],
           },
           {
             answer: "My",
             nextId: 'myHeShecorrectq7',
+              sumToBags: [{ name: 'c', points: 1 }],
           },
     ],
   },
@@ -390,18 +423,22 @@ day454link: {
       {
         answer: 'My',
         nextId: 'myHeShecorrectq9',
+          sumToBags: [{ name: 'c', points: 1 }],
       },
       {
         answer: 'Me',
         nextId: 'inmyHeShecorrectq9',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "I",
         nextId: 'inmyHeShecorrectq9',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "Mine",
         nextId: 'inmyHeShecorrectq9',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
     ],
   },
@@ -434,18 +471,22 @@ day454link: {
       {
         answer: 'My',
         nextId: 'myHeShecorrectq10',
+          sumToBags: [{ name: 'c', points: 1 }],
       },
       {
         answer: 'Me',
         nextId: 'inmyHeShecorrectq10',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "I",
         nextId: 'inmyHeShecorrectq10',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "Mine",
         nextId: 'inmyHeShecorrectq10',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
     ],
   
@@ -478,18 +519,22 @@ day454link: {
       {
         answer: 'I aam',
         nextId: 'inmyHeShecorrectq11',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: 'My',
         nextId: 'myHeShecorrectq11',
+          sumToBags: [{ name: 'c', points: 1 }],
       },
       {
         answer: "I amm",
         nextId: 'inmyHeShecorrectq11',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "I am",
         nextId: 'inmyHeShecorrectq11',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
     ],
   },
@@ -521,18 +566,22 @@ day454link: {
       {
         answer: 'I am',
         nextId: 'myHeShecorrectq12',
+          sumToBags: [{ name: 'c', points: 1 }],
       },
       {
         answer: "I'mm",
         nextId: 'inmyHeShecorrectq12',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "I amm",
         nextId: 'inmyHeShecorrectq12',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "I aam",
         nextId: 'inmyHeShecorrectq12',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
     ],
   },
@@ -564,18 +613,22 @@ day454link: {
       {
         answer: 'I am',
         nextId: 'myHeShecorrectq13',
+          sumToBags: [{ name: 'c', points: 1 }],
       },
       {
         answer: "I'mm",
         nextId: 'inmyHeShecorrectq13',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "I amm",
         nextId: 'inmyHeShecorrectq13',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "I aam",
         nextId: 'inmyHeShecorrectq13',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
     ],
   },
@@ -607,18 +660,22 @@ day454link: {
         {
             answer: 'I am',
             nextId: 'myHeShecorrectq14',
+              sumToBags: [{ name: 'c', points: 1 }],
           },
           {
             answer: "I'mm",
             nextId: 'inmyHeShecorrectq14',
+              sumToBags: [{ name: 'i', points: 1 }],
           },
           {
             answer: "I amm",
             nextId: 'inmyHeShecorrectq14',
+              sumToBags: [{ name: 'i', points: 1 }],
           },
           {
             answer: "I aam",
             nextId: 'inmyHeShecorrectq14',
+              sumToBags: [{ name: 'i', points: 1 }],
           },
     ],
   },
@@ -651,18 +708,22 @@ day454link: {
         {
             answer: 'I am',
             nextId: 'myHeShecorrectq15',
+              sumToBags: [{ name: 'c', points: 1 }],
           },
           {
             answer: "I'mm",
             nextId: 'inmyHeShecorrectq15',
+              sumToBags: [{ name: 'i', points: 1 }],
           },
           {
             answer: "I amm",
             nextId: 'inmyHeShecorrectq15',
+              sumToBags: [{ name: 'i', points: 1 }],
           },
           {
             answer: "I aam",
             nextId: 'inmyHeShecorrectq15',
+              sumToBags: [{ name: 'i', points: 1 }],
           },
     ],
   },
@@ -693,18 +754,22 @@ day454link: {
         {
             answer: 'Myy',
             nextId: 'inmyHeShecorrectq16',
+              sumToBags: [{ name: 'i', points: 1 }],
           },
           {
             answer: "Me",
             nextId: 'inmyHeShecorrectq16',
+              sumToBags: [{ name: 'i', points: 1 }],
           },
           {
             answer: "My",
             nextId: 'myHeShecorrectq16',
+              sumToBags: [{ name: 'c', points: 1 }],
           },
           {
             answer: "Mine",
             nextId: 'inmyHeShecorrectq16',
+              sumToBags: [{ name: 'i', points: 1 }],
           },
 
     ],
@@ -735,18 +800,22 @@ day454link: {
         {
             answer: 'Myy',
             nextId: 'myHeShecorrectq16',
+              sumToBags: [{ name: 'c', points: 1 }],
           },
           {
             answer: "Me",
             nextId: 'inmyHeShecorrectq16',
+              sumToBags: [{ name: 'i', points: 1 }],
           },
           {
             answer: "I",
             nextId: 'inmyHeShecorrectq16',
+              sumToBags: [{ name: 'i', points: 1 }],
           },
           {
             answer: "Mine",
             nextId: 'inmyHeShecorrectq16',
+              sumToBags: [{ name: 'i', points: 1 }],
           },
 
     ],
@@ -777,18 +846,22 @@ day454link: {
     {
         answer: 'My',
         nextId: 'myHeShecorrectq16',
+          sumToBags: [{ name: 'c', points: 1 }],
       },
       {
         answer: "Me",
         nextId: 'inmyHeShecorrectq16',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "I",
         nextId: 'inmyHeShecorrectq16',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "Mine",
         nextId: 'inmyHeShecorrectq16',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
 
   ],
@@ -819,18 +892,22 @@ day454link: {
     {
       answer: 'Me',
       nextId: 'inmyHeShecorrectq19',
+        sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'My',
       nextId: 'myHeShecorrectq19',
+        sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: 'I',
-      nextId: 'myHeShecorrectq19',
+      nextId: 'inmyHeShecorrectq19',
+        sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'Mine',
-      nextId: 'myHeShecorrectq19',
+      nextId: 'inmyHeShecorrectq19',
+        sumToBags: [{ name: 'i', points: 1 }],
     },
 
   ],
@@ -861,18 +938,22 @@ day454link: {
     {
       answer: 'Me',
       nextId: 'inmyHeShecorrectq20',
+        sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'My',
       nextId: 'myHeShecorrectq20',
+        sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: 'I',
-      nextId: 'myHeShecorrectq20',
+      nextId: 'inmyHeShecorrectq20',
+        sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'Mine',
-      nextId: 'myHeShecorrectq20',
+      nextId: 'inmyHeShecorrectq20',
+        sumToBags: [{ name: 'i', points: 1 }],
     },
 
   ],
@@ -903,18 +984,22 @@ day454link: {
       {
         answer: 'Me',
         nextId: 'inmyHeShecorrectq21',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: 'My',
         nextId: 'myHeShecorrectq21',
+          sumToBags: [{ name: 'c', points: 1 }],
       },
       {
         answer: 'I',
-        nextId: 'myHeShecorrectq21',
+        nextId: 'inmyHeShecorrectq21',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: 'Mine',
-        nextId: 'myHeShecorrectq21',
+        nextId: 'inmyHeShecorrectq21',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
   
     ],
@@ -946,18 +1031,22 @@ day454link: {
     {
       answer: 'He',
       nextId: 'inmyHeShecorrectq22',
+        sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'She',
       nextId: 'inmyHeShecorrectq22',
+        sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'It',
       nextId: 'myHeShecorrectq22',
+        sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: 'They',
       nextId: 'inmyHeShecorrectq22',
+        sumToBags: [{ name: 'i', points: 1 }],
     },
 
   ],
@@ -989,18 +1078,22 @@ day454link: {
     {
       answer: 'He',
       nextId: 'inmyHeShecorrectq23',
+        sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'She',
       nextId: 'inmyHeShecorrectq23',
+        sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'It',
       nextId: 'myHeShecorrectq23',
+        sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: 'They',
       nextId: 'inmyHeShecorrectq23',
+        sumToBags: [{ name: 'i', points: 1 }],
     },
 
   ],
@@ -1032,18 +1125,22 @@ day454link: {
     {
       answer: 'He',
       nextId: 'inmyHeShecorrectq24',
+        sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'She',
       nextId: 'inmyHeShecorrectq24',
+        sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'It',
       nextId: 'myHeShecorrectq24',
+        sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: 'They',
       nextId: 'inmyHeShecorrectq24',
+        sumToBags: [{ name: 'i', points: 1 }],
     },
 
   ],
@@ -1075,18 +1172,22 @@ day454link: {
     {
       answer: 'He',
       nextId: 'inmyHeShecorrectq24',
+        sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'She',
       nextId: 'inmyHeShecorrectq24',
+        sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'It',
       nextId: 'myHeShecorrectq24',
+        sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: 'They',
       nextId: 'inmyHeShecorrectq24',
+        sumToBags: [{ name: 'i', points: 1 }],
     },
 
   ],
@@ -1118,18 +1219,22 @@ day454link: {
     {
       answer: 'He',
       nextId: 'inmyHeShecorrectq24',
+        sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'She',
       nextId: 'inmyHeShecorrectq24',
+        sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'It',
       nextId: 'myHeShecorrectq24',
+        sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: 'They',
       nextId: 'inmyHeShecorrectq24',
+        sumToBags: [{ name: 'i', points: 1 }],
     },
 
   ],
@@ -1160,19 +1265,23 @@ day454link: {
     answers: [
       {
         answer: 'Me',
-        nextId: 'myHeShecorrectq27',
+        nextId: 'inmyHeShecorrectq27',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: 'My',
         nextId: 'inmyHeShecorrectq27',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: 'I',
         nextId: 'myHeShecorrectq27',
+          sumToBags: [{ name: 'c', points: 1 }],
       },
       {
         answer: 'A',
         nextId: 'inmyHeShecorrectq27',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
 
     ],
@@ -1205,18 +1314,22 @@ day454link: {
     {
       answer: 'My',
       nextId: 'myHeShecorrectq28',
+        sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: 'Me',
       nextId: 'inmyHeShecorrectq28',
+        sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'I',
       nextId: 'inmyHeShecorrectq28',
+        sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'Mine',
       nextId: 'inmyHeShecorrectq28',
+        sumToBags: [{ name: 'i', points: 1 }],
     },
   ],
   },
@@ -1248,18 +1361,22 @@ day454link: {
     {
       answer: 'My',
       nextId: 'myHeShecorrectq29',
+        sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: 'Me',
       nextId: 'inmyHeShecorrectq29',
+        sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'I',
       nextId: 'inmyHeShecorrectq29',
+        sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'Mine',
       nextId: 'inmyHeShecorrectq29',
+        sumToBags: [{ name: 'i', points: 1 }],
     },
   ],
   },
@@ -1292,18 +1409,22 @@ day454link: {
     {
       answer: 'My',
       nextId: 'myHeShecorrectq30',
+        sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: 'Me',
       nextId: 'inmyHeShecorrectq30',
+        sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'I',
       nextId: 'inmyHeShecorrectq30',
+        sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'Mine',
       nextId: 'inmyHeShecorrectq30',
+        sumToBags: [{ name: 'i', points: 1 }],
     },
   ],
   },
@@ -1335,18 +1456,22 @@ day454link: {
           {
             answer: 'He',
             nextId: 'inmyHeShecorrectq31',
+              sumToBags: [{ name: 'i', points: 1 }],
           },
           {
             answer: 'She',
             nextId: 'inmyHeShecorrectq31',
+              sumToBags: [{ name: 'i', points: 1 }],
           },
           {
             answer: 'It',
             nextId: 'myHeShecorrectq31',
+              sumToBags: [{ name: 'c', points: 1 }],
           },
           {
             answer: 'They',
             nextId: 'inmyHeShecorrectq31',
+              sumToBags: [{ name: 'i', points: 1 }],
           },
         ],
         },
@@ -1378,18 +1503,23 @@ day454link: {
       {
         answer: 'He',
         nextId: 'inmyHeShecorrectq32',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: 'She',
         nextId: 'inmyHeShecorrectq32',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: 'It',
         nextId: 'myHeShecorrectq32',
+          sumToBags: [{ name: 'c
+            sumToBags: [{ name: 'i', points: 1 }],', points: 1 }],
       },
       {
         answer: 'They',
         nextId: 'inmyHeShecorrectq32',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
     ],
     },
@@ -1421,18 +1551,23 @@ day454link: {
       {
         answer: 'He',
         nextId: 'inmyHeShecorrectq33',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: 'She',
         nextId: 'inmyHeShecorrectq33',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: 'It',
         nextId: 'myHeShecorrectq33',
+          sumToBags: [{ name: 'c
+            sumToBags: [{ name: 'i', points: 1 }],', points: 1 }],
       },
       {
         answer: 'They',
         nextId: 'inmyHeShecorrectq33',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
     ],
     },
@@ -1465,18 +1600,23 @@ day454link: {
       {
         answer: 'He',
         nextId: 'inmyHeShecorrectq33',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: 'She',
         nextId: 'inmyHeShecorrectq33',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: 'It',
         nextId: 'myHeShecorrectq33',
+          sumToBags: [{ name: 'c
+            sumToBags: [{ name: 'i', points: 1 }],', points: 1 }],
       },
       {
         answer: 'They',
         nextId: 'inmyHeShecorrectq33',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
     ],
     },
@@ -1508,18 +1648,22 @@ day454link: {
       {
         answer: 'He',
         nextId: 'inmyHeShecorrectq33',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: 'She',
         nextId: 'inmyHeShecorrectq33',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: 'It',
         nextId: 'myHeShecorrectq33',
+          sumToBags: [{ name: 'c', points: 1 }],
       },
       {
         answer: 'They',
         nextId: 'inmyHeShecorrectq33',
+          sumToBags: [{ name: 'i', points: 1 }],
       },
     ],
     },

@@ -31,7 +31,7 @@ day492link: {
 
 //shapes
 
-
+//1
 ["shapes"+shuffledNumbersto[0]]: {
     botPrompt: 'Which shape has three sides?',
     type: RTypes.TRANSFORMED_TEXT,
@@ -40,18 +40,22 @@ day492link: {
       {
         answer: 'Circle',
         nextId: 'inshapescorrect',
+        sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
       },
       {
         answer: 'Rectangle',
         nextId: 'inshapescorrect',
+        sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
       },
       {
         answer: "Square",
         nextId: 'inshapescorrect',
+        sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
       },
       {
         answer: "Triangle",
         nextId: 'shapescorrect',
+        sumToBags: [{ name: 'c', points: 1 },  { name: 'd', points: 8 }],
       },
     ],
   },
@@ -72,6 +76,7 @@ day492link: {
     ],
   },
   
+  //2
   ['shapes'+shuffledNumbersto[1]]: {
     botPrompt: 'Which shape has four sides of equal length?',
     type: RTypes.TRANSFORMED_TEXT,
@@ -80,18 +85,22 @@ day492link: {
       {
         answer: 'Circle',
         nextId: 'inshapescorrectq2',
+         sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: 'Rectangle',
         nextId: 'inshapescorrectq2',
+         sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "Square",
         nextId: 'shapescorrectq2',
+         sumToBags: [{ name: 'c', points: 1 }],
       },
       {
         answer: "Triangle",
         nextId: 'inshapescorrectq2',
+         sumToBags: [{ name: 'i', points: 1 }],
       },
     ],
   },
@@ -122,19 +131,23 @@ day492link: {
     answers: [
       {
         answer: 'Circle',
-        nextId: 'shapescorrectq2',
+        nextId: 'shapescorrectq3',
+        sumToBags: [{ name: 'c', points: 1 }],
       },
       {
         answer: 'Rectangle',
-        nextId: 'inshapescorrectq2',
+        nextId: 'inshapescorrectq3',
+        sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "Square",
-        nextId: 'inshapescorrectq2',
+        nextId: 'inshapescorrectq3',
+        sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "Triangle",
-        nextId: 'inshapescorrectq2',
+        nextId: 'inshapescorrectq3',
+        sumToBags: [{ name: 'i', points: 1 }],
       },
     ],
   },
@@ -165,19 +178,23 @@ day492link: {
   answers: [
     {
       answer: '1',
-      nextId: 'inshapescorrectq2',
+      nextId: 'inshapescorrectq4',
+      sumToBags: [{ name: 'i', points: 1 }],
     },
     {
-      answer: '2',
-      nextId: 'inshapescorrectq2',
+      answer: '4',
+      nextId: 'inshapescorrectq4',
+      sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "3",
-      nextId: 'inshapescorrectq2',
+      nextId: 'inshapescorrectq4',
+      sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "4",
-      nextId: 'shapescorrectq2',
+      nextId: 'shapescorrectq4',
+      sumToBags: [{ name: 'c', points: 1 }],
     },
   ],
   },
@@ -210,18 +227,22 @@ day492link: {
     {
       answer: '2',
       nextId: 'inshapescorrectq5',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: '3',
       nextId: 'shapescorrectq5',
+       sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: "4",
       nextId: 'inshapescorrectq5',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "5",
       nextId: 'inshapescorrectq5',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
   ],
   },
@@ -252,18 +273,22 @@ day492link: {
     {
       answer: 'Circle',
       nextId: 'inshapescorrectq6',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'Rectangle',
       nextId: 'inshapescorrectq6',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "Square",
       nextId: 'inshapescorrectq6',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "Triangle",
       nextId: 'shapescorrectq6',
+       sumToBags: [{ name: 'c', points: 1 }],
     },
   ],
   },
@@ -294,19 +319,23 @@ day492link: {
   answers: [
     {
       answer: 'Circle',
-      nextId: 'inshapescorrectq6',
+      nextId: 'inshapescorrectq7',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'Rectangle',
-      nextId: 'inshapescorrectq6',
+      nextId: 'inshapescorrectq7',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "Square",
-      nextId: 'shapescorrectq6',
+      nextId: 'shapescorrectq7',
+       sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: "Triangle",
-      nextId: 'inshapescorrectq6',
+      nextId: 'inshapescorrectq7',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
   ],
   },
@@ -338,19 +367,23 @@ day492link: {
   answers: [
     {
       answer: 'Circle',
-      nextId: 'shapescorrectq6',
+      nextId: 'shapescorrectq8',
+       sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: 'Rectangle',
-      nextId: 'inshapescorrectq6',
+      nextId: 'inshapescorrectq8',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "Square",
-      nextId: 'inshapescorrectq6',
+      nextId: 'inshapescorrectq8',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "Triangle",
-      nextId: 'inshapescorrectq6',
+      nextId: 'inshapescorrectq8',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
   ],
   },
@@ -382,18 +415,22 @@ day492link: {
     {
       answer: '4',
       nextId: 'shapescorrectq9',
+       sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: '5',
       nextId: 'inshapescorrectq9',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "6",
       nextId: 'inshapescorrectq9',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "7",
       nextId: 'inshapescorrectq9',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
   ],
   },
@@ -425,19 +462,23 @@ day492link: {
   answers: [
     {
       answer: 'Circle',
-      nextId: 'shapescorrectq6',
+      nextId: 'shapescorrectq10',
+       sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: 'Rectangle',
-      nextId: 'inshapescorrectq6',
+      nextId: 'inshapescorrectq10',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "Square",
-      nextId: 'inshapescorrectq6',
+      nextId: 'inshapescorrectq10',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "Triangle",
-      nextId: 'inshapescorrectq6',
+      nextId: 'inshapescorrectq10',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
   ],
   

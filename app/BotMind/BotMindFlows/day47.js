@@ -1,4 +1,5 @@
-day47: {
+
+sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],day47: {
   botPrompt: '<strong> Day 47 : </strong> "there" and "their" is essential in kindergarten as it helps children express location and possession accurately in their early writing and communication.',
   answers: [
           { nextId: 'day471comment' },
@@ -38,18 +39,22 @@ day472link: {
       {
         answer: 'Their',
         nextId: 'thierTherecorrect',
+        sumToBags: [{ name: 'c', points: 1 },  { name: 'd', points: 8 }],
       },
       {
         answer: 'There',
         nextId: 'inthierTherecorrect',
+        sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
       },
       {
         answer: "They're",
         nextId: 'inthierTherecorrect',
+        sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
       },
       {
         answer: "Them",
         nextId: 'inthierTherecorrect',
+        sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
       },
     ],
   },
@@ -79,18 +84,23 @@ day472link: {
       {
         answer: 'Their',
         nextId: 'inthierTherecorrectq2',
+         sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: 'There',
         nextId: 'thierTherecorrectq2',
+         sumToBags: [{ name: 'c
+          sumToBags: [{ name: 'i', points: 1 }],', points: 1 }],
       },
       {
         answer: "They're",
         nextId: 'inthierTherecorrectq2',
+         sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "Them",
         nextId: 'inthierTherecorrectq2',
+         sumToBags: [{ name: 'i', points: 1 }],
       },
     ],
   },
@@ -124,18 +134,22 @@ day472link: {
     {
       answer: 'Their',
       nextId: 'inthierTherecorrectq3',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'There',
       nextId: 'inthierTherecorrectq3',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "They're",
       nextId: 'thierTherecorrectq3',
+       sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: "Them",
       nextId: 'inthierTherecorrectq3',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
   ],
   },
@@ -167,18 +181,23 @@ day472link: {
     {
       answer: 'Their',
       nextId: 'inthierTherecorrectq4',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'There',
       nextId: 'thierTherecorrectq4',
+       sumToBags: [{ name: 'c
+        sumToBags: [{ name: 'i', points: 1 }],', points: 1 }],
     },
     {
       answer: "They're",
       nextId: 'inthierTherecorrectq4',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "Them",
       nextId: 'inthierTherecorrectq4',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
   ],
   },
@@ -211,18 +230,22 @@ day472link: {
     {
       answer: 'Their',
       nextId: 'inthierTherecorrectq5',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'There',
       nextId: 'thierTherecorrectq5',
+       sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: "They're",
       nextId: 'inthierTherecorrectq5',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "Them",
       nextId: 'inthierTherecorrectq5',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
   ],
   },
@@ -254,18 +277,22 @@ day472link: {
     {
       answer: 'Their',
       nextId: 'inthierTherecorrectq6',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'There',
       nextId: 'thierTherecorrectq6',
+       sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: "They're",
       nextId: 'inthierTherecorrectq6',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "Them",
       nextId: 'inthierTherecorrectq6',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
   ],
   },
@@ -298,18 +325,22 @@ day472link: {
     {
       answer: 'Their',
       nextId: 'inthierTherecorrectq7',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'There',
       nextId: 'thierTherecorrectq7',
+       sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: "They're",
       nextId: 'inthierTherecorrectq7',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "Them",
       nextId: 'inthierTherecorrectq7',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
   ],
   },
@@ -342,18 +373,22 @@ day472link: {
     {
       answer: 'Their',
       nextId: 'thierTherecorrectq8',
+       sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: 'There',
       nextId: 'inthierTherecorrectq8',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "They're",
       nextId: 'inthierTherecorrectq8',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "Them",
       nextId: 'inthierTherecorrectq8',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
   ],
   },
@@ -385,18 +420,22 @@ day472link: {
     {
       answer: 'Their',
       nextId: 'inthierTherecorrectq9',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'There',
       nextId: 'thierTherecorrectq9',
+       sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: "They're",
       nextId: 'inthierTherecorrectq9',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "Them",
       nextId: 'inthierTherecorrectq9',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
   ],
   },
@@ -429,18 +468,22 @@ day472link: {
     {
       answer: 'Their',
       nextId: 'thierTherecorrectq10',
+       sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: 'There',
       nextId: 'inthierTherecorrectq10',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "They're",
       nextId: 'inthierTherecorrectq10',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "Them",
       nextId: 'inthierTherecorrectq10',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
   ],
   
@@ -473,18 +516,22 @@ day472link: {
     {
       answer: 'Their',
       nextId: 'thierTherecorrectq11',
+       sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: 'There',
       nextId: 'inthierTherecorrectq11',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "They're",
       nextId: 'inthierTherecorrectq11',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "Them",
       nextId: 'inthierTherecorrectq11',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
   ],
   },
@@ -516,18 +563,22 @@ day472link: {
     {
       answer: 'Their',
       nextId: 'thierTherecorrectq12',
+       sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: 'There',
       nextId: 'inthierTherecorrectq12',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "They're",
       nextId: 'inthierTherecorrectq12',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "Them",
       nextId: 'inthierTherecorrectq12',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
   ],
   },
@@ -559,18 +610,22 @@ day472link: {
     {
       answer: 'Their',
       nextId: 'inthierTherecorrectq13',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'There',
       nextId: 'thierTherecorrectq13',
+       sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: "They're",
       nextId: 'inthierTherecorrectq13',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "Them",
       nextId: 'inthierTherecorrectq13',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
   ],
   },
@@ -602,18 +657,22 @@ day472link: {
     {
       answer: 'Their',
       nextId: 'thierTherecorrectq14',
+       sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: 'There',
       nextId: 'inthierTherecorrectq14',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "They're",
       nextId: 'inthierTherecorrectq14',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "Them",
       nextId: 'inthierTherecorrectq14',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
   ],
   },
@@ -646,18 +705,22 @@ day472link: {
     {
       answer: 'Their',
       nextId: 'inthierTherecorrectq15',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'There',
       nextId: 'thierTherecorrectq15',
+       sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: "They're",
       nextId: 'inthierTherecorrectq15',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "Them",
       nextId: 'inthierTherecorrectq15',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
   ],
   },
@@ -689,18 +752,22 @@ day472link: {
       {
         answer: 'Their',
         nextId: 'thierTherecorrectq16',
+         sumToBags: [{ name: 'c', points: 1 }],
       },
       {
         answer: 'There',
         nextId: 'inthierTherecorrectq16',
+         sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "They're",
         nextId: 'inthierTherecorrectq16',
+         sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "Them",
         nextId: 'inthierTherecorrectq16',
+         sumToBags: [{ name: 'i', points: 1 }],
       },
     ],
   },
@@ -730,18 +797,22 @@ day472link: {
     {
       answer: 'Their',
       nextId: 'inthierTherecorrectq17',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'There',
       nextId: 'thierTherecorrectq17',
+       sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: "They're",
       nextId: 'inthierTherecorrectq17',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "Them",
       nextId: 'inthierTherecorrectq17',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
   ],
   },
@@ -771,18 +842,22 @@ day472link: {
     {
       answer: 'Their',
       nextId: 'thierTherecorrectq18',
+       sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: 'There',
       nextId: 'inthierTherecorrectq18',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "They're",
       nextId: 'inthierTherecorrectq18',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "Them",
       nextId: 'inthierTherecorrectq18',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
   ],
   },
@@ -813,18 +888,22 @@ day472link: {
     {
       answer: 'Their',
       nextId: 'inthierTherecorrectq19',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: 'There',
       nextId: 'thierTherecorrectq19',
+       sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: "They're",
       nextId: 'inthierTherecorrectq19',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "Them",
       nextId: 'inthierTherecorrectq19',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
   ],
   },
@@ -854,18 +933,22 @@ day472link: {
     {
       answer: 'Their',
       nextId: 'thierTherecorrectq20',
+       sumToBags: [{ name: 'c', points: 1 }],
     },
     {
       answer: 'There',
       nextId: 'inthierTherecorrectq20',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "They're",
       nextId: 'inthierTherecorrectq20',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "Them",
       nextId: 'inthierTherecorrectq20',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
   ],
   },
