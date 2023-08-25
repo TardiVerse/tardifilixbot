@@ -385,6 +385,8 @@ day1: {
   answers: [
           { nextId: 'day1link' },
   ],
+  sumToBags: [{ name: 'd', points: 1 }],
+
 },
 day1link: {
   botPrompt: 'https://youtu.be/WzyELzv_CRQ',
@@ -416,7 +418,6 @@ wishtocontinue: {
       {
         answer: 'No!',
         nextId: 'endConv',
-        sumToBags: [{ name: 'd', points: 1 }],
       },
      
   ],
@@ -432,6 +433,8 @@ day2: {
   answers: [
           { nextId: 'day2link' },
   ],
+  sumToBags: [{ name: 'd', points: 2 }],
+
 },
 day2link: {
   botPrompt: 'https://youtu.be/7CpiCbBsh5A',
@@ -485,7 +488,6 @@ wishtocontinue2: {
       {
         answer: 'No!',
         nextId: 'endConv',
-        sumToBags: [{ name: 'd', points: 2 }],
       },
   ],
 },
@@ -497,6 +499,8 @@ day3: {
   answers: [
           { nextId: 'day3link' },
   ],
+  sumToBags: [{ name: 'd', points: 3 }],
+
 },
 day3link: {
   botPrompt: 'https://youtu.be/WSj93xe2U40',
@@ -535,7 +539,6 @@ wishtocontinue3: {
       {
         answer: 'No!',
         nextId: 'endConv',
-        sumToBags: [{ name: 'd', points: 3 }],
       },
   ],
 },
@@ -548,6 +551,8 @@ day4: {
   answers: [
           { nextId: 'day4link' },
   ],
+  sumToBags: [{ name: 'd', points: 4 }],
+
 },
 day4link: {
   botPrompt: 'https://youtu.be/PKeJkjv-otY',
@@ -603,7 +608,6 @@ wishtocontinue4: {
       {
         answer: 'No!',
         nextId: 'endConv',
-        sumToBags: [{ name: 'd', points: 4 }],
       },
   ],
 },
@@ -615,6 +619,8 @@ day5: {
   answers: [
           { nextId: 'day5comment' },
   ],
+  sumToBags: [{ name: 'd', points: 5 }],
+
 },
 day5comment: {
   botPrompt: '<strong>O BE CAREFUL LITTLE EYES </strong>',
@@ -643,7 +649,6 @@ wishtocontinue5: {
       {
         answer: 'No!',
         nextId: 'endConv',
-        sumToBags: [{ name: 'd', points: 5 }],
 
       },
   ],
@@ -656,6 +661,8 @@ day6: {
   answers: [
           { nextId: 'day6comment' },
   ],
+  sumToBags: [{ name: 'd', points: 6 }],
+
 },
 day6comment: {
   botPrompt: 'Time Out : ',
@@ -701,7 +708,6 @@ wishtocontinue6: {
       {
         answer: 'No!',
         nextId: 'endConv',
-        sumToBags: [{ name: 'd', points: 6 }],
 
       },
   ],
@@ -714,6 +720,8 @@ day7: {
   answers: [
           { nextId: 'day7comment' },
   ],
+  sumToBags: [{ name: 'd', points: 7 }],
+
 },
 day7comment: {
   botPrompt: '<strong> START </strong>',
@@ -765,7 +773,6 @@ wishtocontinue7: {
       {
         answer: 'No!',
         nextId: 'endConv',
-        sumToBags: [{ name: 'd', points: 7 }],
 
       },
   ],
@@ -778,6 +785,8 @@ day8: {
   answers: [
           { nextId: 'day8link' },
   ],
+  sumToBags: [{ name: 'd', points: 8 }],
+
 },
 day8link: {
   botPrompt: 'https://youtu.be/VPpTp-PMAZs',
@@ -1913,21 +1922,29 @@ day85comment: {
     {
       answer: 'a',
       nextId: 'smallcorrect',
+  sumToBags: [{ name: 'c', points: 1 },  { name: 'd', points: 8 }],
+
 
     },
     {
       answer: 'b',
       nextId: 'insmallcorrect',
+  sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
+
       
     },
     {
       answer: "c",
       nextId: 'insmallcorrect',
+  sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
+
       
     },
     {
       answer: "d",
       nextId: 'insmallcorrect',
+  sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
+
       
     },
   ],
@@ -1958,18 +1975,26 @@ insmallcorrect: {
     {
       answer: 'e',
       nextId: 'insmallcorrectq2',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'f',
       nextId: 'smallcorrectq2',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "g",
       nextId: 'insmallcorrectq2',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "h",
       nextId: 'insmallcorrectq2',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -2001,18 +2026,26 @@ answers: [
   {
     answer: 'i',
     nextId: 'insmallcorrectq3',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'j',
     nextId: 'insmallcorrectq3',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "o",
     nextId: 'smallcorrectq3',
+  sumToBags: [{ name: 'c', points: 1 }],
+    
   },
   {
     answer: "k",
     nextId: 'insmallcorrectq3',
+  sumToBags: [{ name: 'i', points: 1 }],
+    
   },
 ],
 },
@@ -2044,18 +2077,26 @@ answers: [
   {
     answer: 'm',
     nextId: 'insmallcorrectq4',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'n',
     nextId: 'insmallcorrectq4',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "o",
     nextId: 'insmallcorrectq4',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "p",
     nextId: 'smallcorrectq4',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
 ],
 },
@@ -2087,18 +2128,28 @@ answers: [
   {
     answer: 'q',
     nextId: 'smallcorrectq5',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'o',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     nextId: 'insmallcorrectq5',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "s",
     nextId: 'insmallcorrectq5',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "t",
     nextId: 'insmallcorrectq5',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -2130,18 +2181,26 @@ answers: [
   {
     answer: 'u',
     nextId: 'smallcorrectq6',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'v',
     nextId: 'insmallcorrectq6',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "w",
     nextId: 'insmallcorrectq6',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "x",
     nextId: 'insmallcorrectq6',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -2172,18 +2231,26 @@ answers: [
   {
     answer: 'y',
     nextId: 'insmallcorrectq7',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'z',
     nextId: 'insmallcorrectq7',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "a",
     nextId: 'insmallcorrectq7',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "b",
     nextId: 'smallcorrectq7',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
 ],
 },
@@ -2216,18 +2283,26 @@ answers: [
   {
     answer: 'c',
     nextId: 'insmallcorrectq8',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'd',
     nextId: 'smallcorrectq8',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: "e",
     nextId: 'insmallcorrectq8',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "f",
     nextId: 'insmallcorrectq8',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -2259,18 +2334,26 @@ answers: [
   {
     answer: 'g',
     nextId: 'insmallcorrectq9',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'h',
     nextId: 'insmallcorrectq9',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "i",
     nextId: 'smallcorrectq9',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "j",
     nextId: 'insmallcorrectq9',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -2303,18 +2386,26 @@ answers: [
   {
     answer: 'k',
     nextId: 'insmallcorrectq10',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'l',
     nextId: 'insmallcorrectq10',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "m",
     nextId: 'insmallcorrectq10',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "n",
     nextId: 'smallcorrectq10',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -2346,18 +2437,26 @@ answers: [
   {
     answer: 'o',
     nextId: 'smallcorrectq11',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'p',
     nextId: 'insmallcorrectq11',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "q",
     nextId: 'insmallcorrectq11',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "r",
     nextId: 'insmallcorrectq11',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -2389,18 +2488,26 @@ answers: [
   {
     answer: 's',
     nextId: 'insmallcorrectq12',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 't',
     nextId: 'insmallcorrectq12',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "u",
     nextId: 'insmallcorrectq12',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "v",
     nextId: 'smallcorrectq12',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
 ],
 },
@@ -2432,18 +2539,27 @@ answers: [
   {
     answer: 'w',
     nextId: 'insmallcorrectq13',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'x',
     nextId: 'insmallcorrectq13',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "y",
     nextId: 'insmallcorrectq13',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "z",
     nextId: 'smallcorrectq13',
+  sumToBags: [{ name: 'c', points: 1 }],
+
+
   },
 ],
 },
@@ -2475,18 +2591,26 @@ answers: [
   {
     answer: 'a',
     nextId: 'insmallcorrectq14',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'b',
     nextId: 'insmallcorrectq14',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "c",
     nextId: 'smallcorrectq14',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: "d",
     nextId: 'insmallcorrectq14',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -2519,18 +2643,26 @@ answers: [
   {
     answer: 'e',
     nextId: 'insmallcorrectq15',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'f',
     nextId: 'insmallcorrectq15',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "g",
     nextId: 'insmallcorrectq15',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "h",
     nextId: 'smallcorrectq15',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
 ],
 },
@@ -2561,18 +2693,26 @@ answers: [
     {
       answer: 'i',
       nextId: 'insmallcorrectq16',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'j',
       nextId: 'smallcorrectq16',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "k",
       nextId: 'insmallcorrectq16',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "l",
       nextId: 'insmallcorrectq16',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   
   ],
@@ -2603,18 +2743,26 @@ answers: [
   {
     answer: 'o',
     nextId: 'insmallcorrectq17',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'n',
     nextId: 'insmallcorrectq17',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "m",
     nextId: 'smallcorrectq17',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: "p",
     nextId: 'insmallcorrectq17',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
  
 ],
@@ -2645,18 +2793,26 @@ answers: [
   {
     answer: 'o',
     nextId: 'insmallcorrectq18',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'r',
     nextId: 'smallcorrectq18',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: "s",
     nextId: 'insmallcorrectq18',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "v",
     nextId: 'insmallcorrectq18',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
  
 ],
@@ -2687,18 +2843,26 @@ answers: [
   {
     answer: 'u',
     nextId: 'insmallcorrectq19',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'a',
     nextId: 'insmallcorrectq19',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "w",
     nextId: 'insmallcorrectq19',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "x",
     nextId: 'smallcorrectq19',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
  
 ],
@@ -2729,18 +2893,26 @@ answers: [
   {
     answer: 'y',
     nextId: 'insmallcorrectq20',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'l',
     nextId: 'smallcorrectq20',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: "A",
     nextId: 'insmallcorrectq20',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "b",
     nextId: 'insmallcorrectq20',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 
 ],
@@ -2797,6 +2969,8 @@ day9: {
   answers: [
           { nextId: 'day9link' },
   ],
+  sumToBags: [{ name: 'd', points: 9 }],
+
 },
 
 day9link: {
@@ -2836,7 +3010,6 @@ wishtocontinue9: {
       {
         answer: 'No!',
         nextId: 'endConv',
-        sumToBags: [{ name: 'd', points: 9 }],
 
       },
   ],
@@ -2850,6 +3023,8 @@ day10: {
   answers: [
           { nextId: 'day10link' },
   ],
+  sumToBags: [{ name: 'd', points: 10 }],
+
 },
 day10link: {
   botPrompt: 'https://youtu.be/9bT2jilWRXw',
@@ -2882,18 +3057,26 @@ day10comment: {
     {
       answer: '3',
       nextId: 'innumberscorrect',
+    sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
+
     },
     {
       answer: '4',
       nextId: 'innumberscorrect',
+    sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
+
     },
     {
       answer: "5",
       nextId: 'numberscorrect',
+    sumToBags: [{ name: 'c', points: 1 },  { name: 'd', points: 8 }],
+
     },
     {
       answer: "6",
       nextId: 'innumberscorrect',
+    sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
+
     },
   ],
 },
@@ -2923,18 +3106,26 @@ innumberscorrect: {
     {
       answer: '1',
       nextId: 'innumberscorrectq2',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: '2',
       nextId: 'innumberscorrectq2',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "3",
       nextId: 'innumberscorrectq2',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "5",
       nextId: 'numberscorrectq2',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
   ],
 },
@@ -2966,18 +3157,26 @@ innumberscorrectq2: {
     {
       answer: '5',
       nextId: 'innumberscorrectq3',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: '6',
       nextId: 'numberscorrectq3',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "7",
       nextId: 'innumberscorrectq3',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "8",
       nextId: 'innumberscorrectq3',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -3009,18 +3208,26 @@ input: selectField(['1', '2', "4","6"]),
     {
       answer: '1',
       nextId: 'innumberscorrectq4',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: '2',
       nextId: 'innumberscorrectq4',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "4",
       nextId: 'numberscorrectq4',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "6",
       nextId: 'innumberscorrectq4',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -3052,18 +3259,26 @@ input: selectField(['2', '3', "4","5"]),
     {
       answer: '2',
       nextId: 'innumberscorrectq5',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: '3',
       nextId: 'innumberscorrectq5',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "4",
       nextId: 'numberscorrectq5',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "5",
       nextId: 'innumberscorrectq5',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -3095,18 +3310,26 @@ input: selectField(['2', '3', "4","5"]),
     {
       answer: '2',
       nextId: 'innumberscorrectq6',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: '3',
       nextId: 'innumberscorrectq6',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "4",
       nextId: 'innumberscorrectq6',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "5",
       nextId: 'numberscorrectq6',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
   ],
 },
@@ -3138,18 +3361,26 @@ input: selectField(['8', '9', "10","11"]),
     {
       answer: '8',
       nextId: 'numberscorrectq7',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: '9',
       nextId: 'innumberscorrectq7',
+  sumToBags: [{ name: 'i', points: 1 }],
+      
     },
     {
       answer: "10",
       nextId: 'innumberscorrectq7',
+  sumToBags: [{ name: 'i', points: 1 }],
+      
     },
     {
       answer: "11",
       nextId: 'innumberscorrectq7',
+  sumToBags: [{ name: 'i', points: 1 }],
+      
     },
   ],
 },
@@ -3182,18 +3413,26 @@ input: selectField(['6', '7', "8","9"]),
     {
       answer: '6',
       nextId: 'innumberscorrectq8',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: '7',
       nextId: 'innumberscorrectq8',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "8",
       nextId: 'innumberscorrectq8',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "9",
       nextId: 'numberscorrectq8',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
   ],
 },
@@ -3225,18 +3464,26 @@ input: selectField(['10', '11', "12","13"]),
     {
       answer: '10',
       nextId: 'numberscorrectq9',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: '11',
       nextId: 'innumberscorrectq9',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "12",
       nextId: 'innumberscorrectq9',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "13",
       nextId: 'innumberscorrectq9',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -3269,18 +3516,26 @@ input: selectField(['1', '2', "3","4"]),
     {
       answer: '1',
       nextId: 'innumberscorrectq10',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: '2',
       nextId: 'innumberscorrectq10',
+  sumToBags: [{ name: 'i', points: 1 }],
+      
     },
     {
       answer: "3",
       nextId: 'numberscorrectq10',
+  sumToBags: [{ name: 'c', points: 1 }],
+      
     },
     {
       answer: "4",
       nextId: 'innumberscorrectq10',
+  sumToBags: [{ name: 'i', points: 1 }],
+      
     },
   ],
 
@@ -3312,18 +3567,26 @@ input: selectField(['1', '2', "3","4"]),
     {
       answer: '1',
       nextId: 'innumberscorrectq11',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: '2',
       nextId: 'numberscorrectq11',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "3",
       nextId: 'innumberscorrectq11',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "4",
       nextId: 'innumberscorrectq11',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 
@@ -3356,18 +3619,26 @@ input: selectField(['1', '2', "3","4"]),
     {
       answer: '1',
       nextId: 'innumberscorrectq12',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: '2',
       nextId: 'innumberscorrectq12',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "3",
       nextId: 'numberscorrectq12',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "4",
       nextId: 'innumberscorrectq12',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 
@@ -3400,18 +3671,26 @@ input: selectField(['4', '5', "6","7"]),
     {
       answer: '4',
       nextId: 'innumberscorrectq13',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: '5',
       nextId: 'innumberscorrectq13',
+  sumToBags: [{ name: 'i', points: 1 }],
+      
     },
     {
       answer: "6",
       nextId: 'innumberscorrectq13',
+  sumToBags: [{ name: 'i', points: 1 }],
+      
     },
     {
       answer: "7",
       nextId: 'numberscorrectq13',
+  sumToBags: [{ name: 'c', points: 1 }],
+      
     },
   ],
 },
@@ -3443,18 +3722,26 @@ input: selectField(['16', '17', "18","19"]),
     {
       answer: '16',
       nextId: 'innumberscorrectq14',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: '17',
       nextId: 'innumberscorrectq14',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "18",
       nextId: 'numberscorrectq14',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "19",
       nextId: 'innumberscorrectq14',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -3487,18 +3774,26 @@ input: selectField(['8', '9', "10","12"]),
     {
       answer: '8',
       nextId: 'innumberscorrectq15',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: '9',
       nextId: 'innumberscorrectq15',
+  sumToBags: [{ name: 'i', points: 1 }],
+      
     },
     {
       answer: "10",
       nextId: 'numberscorrectq15',
+  sumToBags: [{ name: 'c', points: 1 }],
+      
     },
     {
       answer: "12",
       nextId: 'innumberscorrectq15',
+  sumToBags: [{ name: 'i', points: 1 }],
+      
     },
   ],
 },
@@ -3529,18 +3824,26 @@ answers: [
     {
       answer: '1',
       nextId: 'innumberscorrectq16',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: '2',
       nextId: 'innumberscorrectq16',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "3",
       nextId: 'innumberscorrectq16',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "4",
       nextId: 'numberscorrectq16',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
   ],
 },
@@ -3570,18 +3873,26 @@ input: selectField(['4', '5', "6","7"]),
     {
       answer: '4',
       nextId: 'innumberscorrectq17',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: '5',
       nextId: 'innumberscorrectq17',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "6",
       nextId: 'innumberscorrectq17',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "7",
       nextId: 'numberscorrectq17',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
   ],
 },
@@ -3611,18 +3922,26 @@ answers: [
   {
     answer: '6',
     nextId: 'innumberscorrectq18',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: '7',
     nextId: 'innumberscorrectq18',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "8",
     nextId: 'innumberscorrectq18',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "9",
     nextId: 'numberscorrectq18',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
 ],
 },
@@ -3652,18 +3971,26 @@ answers: [
   {
     answer: '2',
     nextId: 'numberscorrectq19',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: '3',
     nextId: 'innumberscorrectq19',
+  sumToBags: [{ name: 'i', points: 1 }],
+    
   },
   {
     answer: "4",
     nextId: 'innumberscorrectq19',
+  sumToBags: [{ name: 'i', points: 1 }],
+    
   },
   {
     answer: "5",
     nextId: 'innumberscorrectq19',
+  sumToBags: [{ name: 'i', points: 1 }],
+    
   },
 ],
 },
@@ -3693,18 +4020,26 @@ answers: [
   {
     answer: '5',
     nextId: 'innumberscorrectq20',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: '6',
     nextId: 'innumberscorrectq20',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "7",
     nextId: 'innumberscorrectq20',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "8",
     nextId: 'numberscorrectq20',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
 ],
 },
@@ -3734,18 +4069,26 @@ answers: [
   {
     answer: '21',
     nextId: 'numberscorrectq21',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: '22',
     nextId: 'innumberscorrectq21',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "23",
     nextId: 'innumberscorrectq21',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "24",
     nextId: 'innumberscorrectq21',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -3776,18 +4119,26 @@ answers: [
   {
     answer: '2',
     nextId: 'innumberscorrectq22',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: '3',
     nextId: 'innumberscorrectq22',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "4",
     nextId: 'innumberscorrectq22',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "5",
     nextId: 'numberscorrectq22',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
 ],
 },
@@ -3818,18 +4169,26 @@ answers: [
   {
     answer: '2',
     nextId: 'innumberscorrectq23',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: '3',
     nextId: 'innumberscorrectq23',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "4",
     nextId: 'numberscorrectq23',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: "5",
     nextId: 'innumberscorrectq23',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -3861,18 +4220,26 @@ answers: [
   {
     answer: '6',
     nextId: 'innumberscorrectq24',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: '7',
     nextId: 'innumberscorrectq24',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "8",
     nextId: 'innumberscorrectq24',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "9",
     nextId: 'numberscorrectq24',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
 ],
 },
@@ -3904,18 +4271,26 @@ answers: [
   {
     answer: '10',
     nextId: 'innumberscorrectq25',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: '11',
     nextId: 'innumberscorrectq25',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "12",
     nextId: 'numberscorrectq25',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: "13",
     nextId: 'innumberscorrectq25',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -3947,18 +4322,26 @@ answers: [
   {
     answer: '2',
     nextId: 'innumberscorrectq26',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: '3',
     nextId: 'numberscorrectq26',
+  sumToBags: [{ name: 'c', points: 1 }],
+    
   },
   {
     answer: "4",
     nextId: 'innumberscorrectq26',
+  sumToBags: [{ name: 'i', points: 1 }],
+    
   },
   {
     answer: "5",
     nextId: 'innumberscorrectq26',
+  sumToBags: [{ name: 'i', points: 1 }],
+    
   },
 ],
 },
@@ -3989,18 +4372,26 @@ input: selectField(['14', '15', "16","18"]),
     {
       answer: '14',
       nextId: 'innumberscorrectq27',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: '15',
       nextId: 'innumberscorrectq27',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "16",
       nextId: 'innumberscorrectq27',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "18",
       nextId: 'numberscorrectq27',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
   ],
 },
@@ -4032,18 +4423,26 @@ answers: [
   {
     answer: '16',
     nextId: 'innumberscorrectq28',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: '17',
     nextId: 'innumberscorrectq28',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "18",
     nextId: 'innumberscorrectq28',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "19",
     nextId: 'numberscorrectq28',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
 ],
 },
@@ -4075,18 +4474,26 @@ input: selectField(['4', '6', "8","10"]),
     {
       answer: '4',
       nextId: 'innumberscorrectq29',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: '6',
       nextId: 'innumberscorrectq29',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "8",
       nextId: 'numberscorrectq29',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "10",
       nextId: 'innumberscorrectq29',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -4119,18 +4526,27 @@ answers: [
   {
     answer: '3',
     nextId: 'innumberscorrectq30',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: '4',
     nextId: 'innumberscorrectq30',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "6",
     nextId: 'innumberscorrectq30',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "7",
     nextId: 'numberscorrectq30',
+  sumToBags: [{ name: 'c', points: 1 }],
+
+
   },
 ],
 },
@@ -4162,18 +4578,26 @@ input: selectField(['1', '2', "4","5"]),
     {
       answer: '1',
       nextId: 'numberscorrectq31',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: '2',
       nextId: 'innumberscorrectq31',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "4",
       nextId: 'innumberscorrectq31',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "5",
       nextId: 'innumberscorrectq31',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -4205,18 +4629,26 @@ answers: [
   {
     answer: '8',
     nextId: 'innumberscorrectq32',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: '9',
     nextId: 'innumberscorrectq32',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "10",
     nextId: 'innumberscorrectq32',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "12",
     nextId: 'numberscorrectq32',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
 ],
 },
@@ -4249,18 +4681,26 @@ answers: [
   {
     answer: '26',
     nextId: 'numberscorrectq33',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: '27',
     nextId: 'innumberscorrectq33',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "28",
     nextId: 'innumberscorrectq33',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "29",
     nextId: 'innumberscorrectq33',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -4292,18 +4732,26 @@ input: selectField(['3', '4', "5","7"]),
     {
       answer: '3',
       nextId: 'numberscorrectq34',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: '4',
       nextId: 'innumberscorrectq34',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "5",
       nextId: 'innumberscorrectq34',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "7",
       nextId: 'innumberscorrectq34',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -4337,18 +4785,26 @@ answers: [
   {
     answer: '0',
     nextId: 'numberscorrectq35',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: '1',
     nextId: 'innumberscorrectq35',
+  sumToBags: [{ name: 'i', points: 1 }],
+    
   },
   {
     answer: "2",
     nextId: 'innumberscorrectq35',
+  sumToBags: [{ name: 'i', points: 1 }],
+    
   },
   {
     answer: "3",
     nextId: 'innumberscorrectq35',
+  sumToBags: [{ name: 'i', points: 1 }],
+    
   },
 ],
 },
@@ -4380,18 +4836,26 @@ answers: [
   {
     answer: '11',
     nextId: 'innumberscorrectq36',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: '12',
     nextId: 'innumberscorrectq36',
+  sumToBags: [{ name: 'i', points: 1 }],
+    
   },
   {
     answer: "13",
     nextId: 'innumberscorrectq36',
+  sumToBags: [{ name: 'i', points: 1 }],
+    
   },
   {
     answer: "15",
     nextId: 'numberscorrectq36',
+  sumToBags: [{ name: 'c', points: 1 }],
+    
   },
 ],
 },
@@ -4422,18 +4886,26 @@ answers: [
   {
     answer: '14',
     nextId: 'innumberscorrectq37',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: '15',
     nextId: 'innumberscorrectq37',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "16",
     nextId: 'innumberscorrectq37',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "19",
     nextId: 'numberscorrectq37',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
 ],
 },
@@ -4464,18 +4936,26 @@ input: selectField(['2', '3', "4","5"]),
     {
       answer: '2',
       nextId: 'innumberscorrectq38',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: '3',
       nextId: 'innumberscorrectq38',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "4",
       nextId: 'numberscorrectq38',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "5",
       nextId: 'innumberscorrectq38',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -4505,18 +4985,26 @@ answers: [
   {
     answer: '2',
     nextId: 'innumberscorrectq310',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: '6',
     nextId: 'innumberscorrectq39',
+  sumToBags: [{ name: 'i', points: 1 }],
+    
   },
   {
     answer: "8",
     nextId: 'innumberscorrectq39',
+  sumToBags: [{ name: 'i', points: 1 }],
+    
   },
   {
     answer: "9",
     nextId: 'numberscorrectq39',
+  sumToBags: [{ name: 'c', points: 1 }],
+    
   },
 ],
 },
@@ -4546,18 +5034,26 @@ input: selectField(['4', '6', "8","10"]),
     {
       answer: '4',
       nextId: 'numberscorrectq40',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: '6',
       nextId: 'innumberscorrectq40',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "8",
       nextId: 'innumberscorrectq40',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "10",
       nextId: 'innumberscorrectq40',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -4587,18 +5083,26 @@ answers: [
     {
       answer: '17',
       nextId: 'innumberscorrectq41',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: '18',
       nextId: 'innumberscorrectq41',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "19",
       nextId: 'innumberscorrectq41',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "22",
       nextId: 'numberscorrectq41',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
   ],
 },
@@ -4630,18 +5134,26 @@ innumberscorrectq41: {
     {
       answer: '31',
       nextId: 'numberscorrectq42',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: '32',
       nextId: 'innumberscorrectq42',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "33",
       nextId: 'innumberscorrectq42',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "34",
       nextId: 'innumberscorrectq42',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -4673,18 +5185,26 @@ input: selectField(['5', '6', "7","11"]),
     {
       answer: '5',
       nextId: 'innumberscorrectq43',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: '6',
       nextId: 'innumberscorrectq43',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "7",
       nextId: 'innumberscorrectq43',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "11",
       nextId: 'numberscorrectq43',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
   ],
 },
@@ -4716,18 +5236,26 @@ input: selectField(['36', '37', "38","39"]),
     {
       answer: '36',
       nextId: 'innumberscorrectq44',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: '37',
       nextId: 'innumberscorrectq44',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "38",
       nextId: 'numberscorrectq44',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "39",
       nextId: 'innumberscorrectq44',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -4759,18 +5287,26 @@ input: selectField(['44', '45', "46","49"]),
     {
       answer: '44',
       nextId: 'innumberscorrectq45',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: '45',
       nextId: 'innumberscorrectq45',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "46",
       nextId: 'innumberscorrectq45',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "49",
       nextId: 'numberscorrectq45',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
   ],
 },
@@ -4801,18 +5337,26 @@ input: selectField(['2', '3', "4","5"]),
     {
       answer: '2',
       nextId: 'innumberscorrectq46',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: '3',
       nextId: 'innumberscorrectq46',
+  sumToBags: [{ name: 'i', points: 1 }],
+      
     },
     {
       answer: "4",
       nextId: 'numberscorrectq46',
+  sumToBags: [{ name: 'c', points: 1 }],
+      
     },
     {
       answer: "5",
       nextId: 'innumberscorrectq46',
+  sumToBags: [{ name: 'i', points: 1 }],
+      
     },
   ],
 },
@@ -4844,18 +5388,26 @@ input: selectField(['12', '15', "18","22"]),
     {
       answer: '12',
       nextId: 'innumberscorrectq47',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: '15',
       nextId: 'innumberscorrectq47',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "18",
       nextId: 'innumberscorrectq47',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "22",
       nextId: 'numberscorrectq47',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
   ],
 },
@@ -4888,18 +5440,26 @@ input: selectField(['9', '10', "12","13"]),
     {
       answer: '9',
       nextId: 'numberscorrectq48',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: '10',
       nextId: 'innumberscorrectq48',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "12",
       nextId: 'innumberscorrectq48',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "13",
       nextId: 'innumberscorrectq48',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -4931,18 +5491,26 @@ input: selectField(['28', '29', "30","32"]),
     {
       answer: '28',
       nextId: 'innumberscorrectq49',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: '29',
       nextId: 'innumberscorrectq49',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "30",
       nextId: 'numberscorrectq49',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "32",
       nextId: 'innumberscorrectq49',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -4975,18 +5543,26 @@ input: selectField(['61', '62', "63","64"]),
     {
       answer: '61',
       nextId: 'numberscorrectq50',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: '62',
       nextId: 'innumberscorrectq50',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "63",
       nextId: 'numberscorrectq50',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "64",
       nextId: 'innumberscorrectq50',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -5018,18 +5594,26 @@ input: selectField(['95', '96', "97","99"]),
     {
       answer: '95',
       nextId: 'innumberscorrectq51',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: '96',
       nextId: 'innumberscorrectq51',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "97",
       nextId: 'innumberscorrectq51',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "99",
       nextId: 'numberscorrectq51',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
   ],
 },
@@ -5060,18 +5644,26 @@ input: selectField(['2', '4', "6","8"]),
     {
       answer: '2',
       nextId: 'numberscorrectq52',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: '4',
       nextId: 'innumberscorrectq52',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "6",
       nextId: 'innumberscorrectq52',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "8",
       nextId: 'innumberscorrectq52',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -5103,18 +5695,26 @@ input: selectField(['24', '28', "30","32"]),
     {
       answer: '24',
       nextId: 'innumberscorrectq53',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: '28',
       nextId: 'innumberscorrectq53',
+  sumToBags: [{ name: 'i', points: 1 }],
+      
     },
     {
       answer: "30",
       nextId: 'innumberscorrectq53',
+  sumToBags: [{ name: 'i', points: 1 }],
+      
     },
     {
       answer: "32",
       nextId: 'numberscorrectq53',
+  sumToBags: [{ name: 'c', points: 1 }],
+      
     },
   ],
 },
@@ -5146,18 +5746,26 @@ input: selectField(['17', '18', "19","20"]),
     {
       answer: '17',
       nextId: 'numberscorrectq54',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: '18',
       nextId: 'innumberscorrectq54',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "19",
       nextId: 'innumberscorrectq54',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "20",
       nextId: 'innumberscorrectq54',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -5190,18 +5798,26 @@ input: selectField(['42', '43', "44","46"]),
     {
       answer: '42',
       nextId: 'innumberscorrectq55',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: '43',
       nextId: 'innumberscorrectq55',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "44",
       nextId: 'numberscorrectq55',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "46",
       nextId: 'innumberscorrectq55',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -5232,18 +5848,26 @@ answers: [
     {
       answer: '76',
       nextId: 'numberscorrectq56',
+  sumToBags: [{ name: 'c', points: 1 }],
+      
     },
     {
       answer: '77',
       nextId: 'innumberscorrectq56',
+  sumToBags: [{ name: 'i', points: 1 }],
+      
     },
     {
       answer: "78",
       nextId: 'innumberscorrectq56',
+  sumToBags: [{ name: 'i', points: 1 }],
+      
     },
     {
       answer: "79",
       nextId: 'innumberscorrectq56',
+  sumToBags: [{ name: 'i', points: 1 }],
+      
     },
   ],
 },
@@ -5273,18 +5897,26 @@ input: selectField(['85', '86', "89","90"]),
     {
       answer: '85',
       nextId: 'innumberscorrectq57',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: '86',
       nextId: 'innumberscorrectq57',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "89",
       nextId: 'numberscorrectq57',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "90",
       nextId: 'innumberscorrectq57',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -5314,18 +5946,26 @@ answers: [
   {
     answer: '2',
     nextId: 'innumberscorrectq58',
+  sumToBags: [{ name: 'i', points: 1 }],
+    
   },
   {
     answer: '3',
     nextId: 'innumberscorrectq58',
+  sumToBags: [{ name: 'i', points: 1 }],
+    
   },
   {
     answer: "4",
     nextId: 'numberscorrectq58',
+  sumToBags: [{ name: 'c', points: 1 }],
+    
   },
   {
     answer: "5",
     nextId: 'innumberscorrectq58',
+  sumToBags: [{ name: 'i', points: 1 }],
+    
   },
 ],
 },
@@ -5355,18 +5995,26 @@ input: selectField(['6', '7', "9","11"]),
     {
       answer: '6',
       nextId: 'numberscorrectq57',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: '7',
       nextId: 'innumberscorrectq57',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "9",
       nextId: 'innumberscorrectq57',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "11",
       nextId: 'innumberscorrectq57',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -5396,18 +6044,26 @@ answers: [
   {
     answer: '15',
     nextId: 'numberscorrectq60',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: '16',
     nextId: 'innumberscorrectq60',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "17",
     nextId: 'numberscorrectq60',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "18",
     nextId: 'innumberscorrectq60',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -5437,18 +6093,26 @@ answers: [
     {
       answer: '25',
       nextId: 'innumberscorrectq61',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: '26',
       nextId: 'numberscorrectq61',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "27",
       nextId: 'innumberscorrectq61',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "28",
       nextId: 'innumberscorrectq61',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -5478,18 +6142,26 @@ innumberscorrectq61: {
     {
       answer: '7',
       nextId: 'innumberscorrectq62',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: '6',
       nextId: 'innumberscorrectq62',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "8",
       nextId: 'numberscorrectq62',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "5",
       nextId: 'innumberscorrectq62',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -5521,18 +6193,26 @@ input: selectField(['14', '15', "16","17"]),
     {
       answer: '14',
       nextId: 'innumberscorrectq63',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: '15',
       nextId: 'innumberscorrectq63',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "16",
       nextId: 'numberscorrectq63',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "17",
       nextId: 'innumberscorrectq63',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -5564,18 +6244,26 @@ answers: [
   {
     answer: '2',
     nextId: 'innumberscorrectq64',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: '4',
     nextId: 'numberscorrectq64',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: "5",
     nextId: 'innumberscorrectq64',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "6",
     nextId: 'innumberscorrectq64',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -5607,18 +6295,26 @@ input: selectField(['Sum of 6 and 4', 'Product of 3 and 4', "They are equal","Ca
     {
       answer: 'Sum of 6 and 4',
       nextId: 'numberscorrectq65',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'Product of 3 and 4',
       nextId: 'innumberscorrectq65',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "They are equal",
       nextId: 'innumberscorrectq65',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "Cannot be determined",
       nextId: 'innumberscorrectq65',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -5650,18 +6346,26 @@ answers: [
   {
     answer: '92',
     nextId: 'innumberscorrectq66',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: '90',
     nextId: 'numberscorrectq66',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "92",
     nextId: 'numberscorrectq66',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: "88",
     nextId: 'innumberscorrectq66',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -5692,18 +6396,26 @@ answers: [
   {
     answer: '4',
     nextId: 'numberscorrectq67',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: '5',
     nextId: 'innumberscorrectq67',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "6",
     nextId: 'innumberscorrectq67',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "7",
     nextId: 'innumberscorrectq67',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -5737,18 +6449,26 @@ input: selectField(['Sum of 8 and 3', 'Product of 2 and 7', "They are equal","Ca
     {
       answer: 'Sum of 8 and 3',
       nextId: 'numberscorrectq68',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'Product of 2 and 7',
       nextId: 'innumberscorrectq68',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "They are equal",
       nextId: 'innumberscorrectq68',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "Cannot be determined",
       nextId: 'innumberscorrectq68',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -5779,18 +6499,26 @@ answers: [
   {
     answer: '6',
     nextId: 'innumberscorrectq69',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: '7',
     nextId: 'innumberscorrectq69',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "8",
     nextId: 'numberscorrectq69',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: "9",
     nextId: 'innumberscorrectq69',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -5823,18 +6551,26 @@ answers: [
   {
     answer: '20',
     nextId: 'innumberscorrectq70',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: '21',
     nextId: 'numberscorrectq70',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: "22",
     nextId: 'innumberscorrectq70',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "23",
     nextId: 'innumberscorrectq70',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -5865,18 +6601,26 @@ input: selectField(['2', '0', "4","6"]),
     {
       answer: '2',
       nextId: 'numberscorrectq71',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: '0',
       nextId: 'innumberscorrectq71',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "4",
       nextId: 'innumberscorrectq71',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "6",
       nextId: 'innumberscorrectq71',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -5907,18 +6651,26 @@ answers: [
   {
     answer: '2',
     nextId: 'innumberscorrectq72',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: '3',
     nextId: 'innumberscorrectq72',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "4",
     nextId: 'innumberscorrectq72',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "5",
     nextId: 'numberscorrectq72',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
 ],
 },
@@ -5950,18 +6702,26 @@ input: selectField(['28', '29', "30","31"]),
     {
       answer: '28',
       nextId: 'innumberscorrectq73',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: '29',
       nextId: 'numberscorrectq73',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "30",
       nextId: 'innumberscorrectq73',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "31",
       nextId: 'innumberscorrectq73',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -5993,18 +6753,26 @@ answers: [
   {
     answer: '8',
     nextId: 'numberscorrectq74',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: '9',
     nextId: 'innumberscorrectq74',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "10",
     nextId: 'innumberscorrectq74',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "11",
     nextId: 'innumberscorrectq74',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -6038,18 +6806,26 @@ input: selectField(['13', '14', "15","16"]),
     {
       answer: '13',
       nextId: 'numberscorrectq75',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: '14',
       nextId: 'innumberscorrectq75',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "15",
       nextId: 'innumberscorrectq75',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "16",
       nextId: 'innumberscorrectq75',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -6081,18 +6857,26 @@ answers: [
     {
       answer: '13',
       nextId: 'numberscorrectq76',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: '14',
       nextId: 'innumberscorrectq76',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "15",
       nextId: 'innumberscorrectq76',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "16",
       nextId: 'innumberscorrectq76',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -6123,18 +6907,26 @@ input: selectField(['4', '6', "7","8"]),
     {
       answer: '4',
       nextId: 'numberscorrectq77',
+  sumToBags: [{ name: 'C', points: 1 }],
+
     },
     {
       answer: '6',
       nextId: 'innumberscorrectq77',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "7",
       nextId: 'innumberscorrectq77',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "8",
       nextId: 'innumberscorrectq77',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -6167,18 +6959,26 @@ answers: [
       {
         answer: '5',
         nextId: 'innumberscorrectq78',
+  sumToBags: [{ name: 'i', points: 1 }],
+        
       },
       {
         answer: '7',
         nextId: 'numberscorrectq78',
+  sumToBags: [{ name: 'C', points: 1 }],
+        
       },
       {
         answer: "9",
         nextId: 'innumberscorrectq78',
+  sumToBags: [{ name: 'i', points: 1 }],
+        
       },
       {
         answer: "10",
         nextId: 'innumberscorrectq78',
+  sumToBags: [{ name: 'i', points: 1 }],
+        
       },
     ],
   },
@@ -6210,18 +7010,26 @@ answers: [
       {
         answer: '7',
         nextId: 'numberscorrectq79',
+  sumToBags: [{ name: 'C', points: 1 }],
+
       },
       {
         answer: '6',
         nextId: 'innumberscorrectq79',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
       {
         answer: "5",
         nextId: 'innumberscorrectq79',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
       {
         answer: "4",
         nextId: 'innumberscorrectq79',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
     ],
   },
@@ -6254,18 +7062,26 @@ answers: [
       {
         answer: '4',
         nextId: 'innumberscorrectq80',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
       {
         answer: '5',
         nextId: 'numberscorrectq80',
+  sumToBags: [{ name: 'c', points: 1 }],
+
       },
       {
         answer: "6",
         nextId: 'innumberscorrectq80',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
       {
         answer: "7",
         nextId: 'innumberscorrectq80',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
     ],
   },
@@ -6297,18 +7113,26 @@ answers: [
       {
         answer: '21',
         nextId: 'numberscorrectq51',
+  sumToBags: [{ name: 'c', points: 1 }],
+
       },
       {
         answer: '22',
         nextId: 'innumberscorrectq51',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
       {
         answer: "23",
         nextId: 'innumberscorrectq51',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
       {
         answer: "24",
         nextId: 'innumberscorrectq51',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
     ],
   },
@@ -6339,18 +7163,26 @@ answers: [
       {
         answer: '16',
         nextId: 'numberscorrectq82',
+  sumToBags: [{ name: 'c', points: 1 }],
+
       },
       {
         answer: '17',
         nextId: 'innumberscorrectq82',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
       {
         answer: "18",
         nextId: 'innumberscorrectq82',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
       {
         answer: "19",
         nextId: 'innumberscorrectq82',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
     ],
   },
@@ -6382,18 +7214,26 @@ answers: [
       {
         answer: '11',
         nextId: 'innumberscorrectq83',
+  sumToBags: [{ name: 'i', points: 1 }],
+        
       },
       {
         answer: '13',
         nextId: 'numberscorrectq83',
+  sumToBags: [{ name: 'c', points: 1 }],
+        
       },
       {
         answer: "15",
         nextId: 'innumberscorrectq83',
+  sumToBags: [{ name: 'i', points: 1 }],
+        
       },
       {
         answer: "16",
         nextId: 'innumberscorrectq83',
+  sumToBags: [{ name: 'i', points: 1 }],
+        
       },
     ],
   },
@@ -6425,18 +7265,26 @@ answers: [
       {
         answer: '9',
         nextId: 'numberscorrectq84',
+  sumToBags: [{ name: 'c', points: 1 }],
+
       },
       {
         answer: '10',
         nextId: 'innumberscorrectq84',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
       {
         answer: "11",
         nextId: 'innumberscorrectq84',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
       {
         answer: "13",
         nextId: 'innumberscorrectq84',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
     ],
   },
@@ -6469,18 +7317,26 @@ answers: [
       {
         answer: '7',
         nextId: 'innumberscorrectq85',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
       {
         answer: '8',
         nextId: 'numberscorrectq85',
+  sumToBags: [{ name: 'c', points: 1 }],
+
       },
       {
         answer: "10",
         nextId: 'innumberscorrectq85',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
       {
         answer: "11",
         nextId: 'innumberscorrectq85',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
     ],
   },
@@ -6511,18 +7367,26 @@ answers: [
       {
         answer: '2',
         nextId: 'innumberscorrectq86',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
       {
         answer: '3',
         nextId: 'innumberscorrectq86',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
       {
         answer: "4",
         nextId: 'numberscorrectq86',
+  sumToBags: [{ name: 'c', points: 1 }],
+
       },
       {
         answer: "5",
         nextId: 'innumberscorrectq86',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
     ],
   },
@@ -6552,18 +7416,26 @@ answers: [
       {
         answer: '13',
         nextId: 'numberscorrectq87',
+  sumToBags: [{ name: 'c', points: 1 }],
+
       },
       {
         answer: '14',
         nextId: 'innumberscorrectq87',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
       {
         answer: "15",
         nextId: 'innumberscorrectq87',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
       {
         answer: "16",
         nextId: 'innumberscorrectq87',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
     ],
   },
@@ -6593,18 +7465,26 @@ answers: [
     {
       answer: '18',
       nextId: 'innumberscorrectq88',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: '20',
       nextId: 'numberscorrectq88',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "21",
       nextId: 'innumberscorrectq88',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "22",
       nextId: 'innumberscorrectq88',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
   },
@@ -6634,18 +7514,26 @@ answers: [
       {
         answer: '14',
         nextId: 'innumberscorrectq87',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
       {
         answer: '16',
         nextId: 'numberscorrectq87',
+  sumToBags: [{ name: 'c', points: 1 }],
+
       },
       {
         answer: "18",
         nextId: 'innumberscorrectq87',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
       {
         answer: "20",
         nextId: 'innumberscorrectq87',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
     ],
   },
@@ -6675,18 +7563,26 @@ answers: [
     {
       answer: '23',
       nextId: 'innumberscorrectq90',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: '24',
       nextId: 'numberscorrectq90',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "25",
       nextId: 'innumberscorrectq90',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "26",
       nextId: 'innumberscorrectq90',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
   },
@@ -6716,18 +7612,26 @@ answers: [
       {
         answer: '8',
         nextId: 'innumberscorrectq91',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
       {
         answer: '9',
         nextId: 'innumberscorrectq91',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
       {
         answer: "11",
         nextId: 'numberscorrectq91',
+  sumToBags: [{ name: 'c', points: 1 }],
+
       },
       {
         answer: "13",
         nextId: 'innumberscorrectq91',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
     ],
   },
@@ -6757,18 +7661,26 @@ answers: [
       {
         answer: '47',
         nextId: 'innumberscorrectq92',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
       {
         answer: '48',
         nextId: 'innumberscorrectq92',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
       {
         answer: "49",
         nextId: 'numberscorrectq92',
+  sumToBags: [{ name: 'c', points: 1 }],
+
       },
       {
         answer: "51",
         nextId: 'innumberscorrectq92',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
     ],
   },
@@ -6800,18 +7712,26 @@ answers: [
       {
         answer: '26',
         nextId: 'innumberscorrectq93',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
       {
         answer: '27',
         nextId: 'innumberscorrectq93',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
       {
         answer: "29",
         nextId: 'numberscorrectq93',
+  sumToBags: [{ name: 'c', points: 1 }],
+
       },
       {
         answer: "30",
         nextId: 'innumberscorrectq93',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
     ],
   },
@@ -6843,18 +7763,26 @@ answers: [
     {
       answer: '5',
       nextId: 'innumberscorrectq94',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: '6',
       nextId: 'innumberscorrectq94',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "8",
       nextId: 'numberscorrectq94',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "9",
       nextId: 'innumberscorrectq94',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
   },
@@ -6886,18 +7814,26 @@ answers: [
       {
         answer: '21',
         nextId: 'innumberscorrectq95',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
       {
         answer: '22',
         nextId: 'innumberscorrectq95',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
       {
         answer: "24",
         nextId: 'numberscorrectq95',
+  sumToBags: [{ name: 'c', points: 1 }],
+
       },
       {
         answer: "26",
         nextId: 'innumberscorrectq95',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
     ],
   },
@@ -6929,18 +7865,26 @@ answers: [
     {
       answer: '28',
       nextId: 'innumberscorrectq96',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: '29',
       nextId: 'numberscorrectq96',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "30",
       nextId: 'innumberscorrectq96',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "31",
       nextId: 'innumberscorrectq96',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
   },
@@ -6971,18 +7915,26 @@ answers: [
     {
       answer: '20',
       nextId: 'numberscorrectq97',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: '21',
       nextId: 'innumberscorrectq97',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "22",
       nextId: 'innumberscorrectq97',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "23",
       nextId: 'innumberscorrectq97',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
   },
@@ -7020,7 +7972,6 @@ wishToContinue10: {
       {
         answer: 'No!',
         nextId: 'endConv',
-        sumToBags: [{ name: 'd', points: 10 }],
 
       },
   ],
@@ -7034,6 +7985,9 @@ wishToContinue10: {
     answers: [
             { nextId: 'vowels_prompt1' },
     ],
+    sumToBags: [{ name: 'd', points: 11 }],
+
+
   },
   vowels_prompt1: {
     botPrompt: 'A fun new activity to practise the use of vowels.',
@@ -7095,18 +8049,26 @@ wishToContinue10: {
       {
         answer: 'A',
         nextId: 'correct',
+  sumToBags: [{ name: 'c', points: 1 },  { name: 'd', points: 8 }],
+
       },
       {
         answer: 'C',
         nextId: 'incorrect',
+  sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
+
       },
       {
         answer: "T",
         nextId: 'incorrect',
+  sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
+
       },
       {
         answer: "None of the Above",
         nextId: 'incorrect',
+  sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
+
       },
     ],
   },
@@ -7136,18 +8098,26 @@ wishToContinue10: {
       {
         answer: 'D',
         nextId: 'incorrectq2',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
       {
         answer: 'G',
         nextId: 'incorrectq2',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
       {
         answer: "O",
         nextId: 'correctq2',
+  sumToBags: [{ name: 'c', points: 1 }],
+
       },
       {
         answer: "None of the Above",
         nextId: 'incorrectq2',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
     ],
   },
@@ -7179,18 +8149,26 @@ wishToContinue10: {
     {
       answer: 'R',
       nextId: 'incorrectq3',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'B',
       nextId: 'incorrectq3',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "D",
       nextId: 'incorrectq3',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "None of the Above",
       nextId: 'correctq3',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
   ],
 },
@@ -7222,18 +8200,26 @@ incorrectq3: {
     {
       answer: 'C',
       nextId: 'incorrectq4',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'U',
       nextId: 'correctq4',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "P",
       nextId: 'incorrectq4',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "None of the Above",
       nextId: 'incorrectq4',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -7265,18 +8251,26 @@ incorrectq2: {
     {
       answer: 'B',
       nextId: 'incorrectq5',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'K',
       nextId: 'incorrectq5',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "O",
       nextId: 'correctq5',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "None of the Above",
       nextId: 'incorrectq5',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -7308,18 +8302,26 @@ incorrectq5: {
     {
       answer: 'H',
       nextId: 'incorrectq6',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'A',
       nextId: 'correctq6',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "T",
       nextId: 'incorrectq6',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "None of the Above",
       nextId: 'incorrectq6',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -7350,18 +8352,26 @@ incorrectq6: {
     {
       answer: 'P',
       nextId: 'incorrectq7',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'E',
       nextId: 'correctq7',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "N",
       nextId: 'incorrectq7',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "None of the Above",
       nextId: 'incorrectq7',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -7394,18 +8404,27 @@ incorrectq7: {
     {
       answer: 'B',
       nextId: 'incorrectq8',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'U',
       nextId: 'correctq8',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "G",
       nextId: 'incorrectq8',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "None of the Above",
       nextId: 'incorrectq8',
+  sumToBags: [{ name: 'i', points: 1 }],
+
+
     },
   ],
 },
@@ -7437,18 +8456,26 @@ incorrectq8: {
     {
       answer: 'T',
       nextId: 'incorrectq9',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'O',
       nextId: 'correctq9',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "P",
       nextId: 'incorrectq9',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "None of the Above",
       nextId: 'incorrectq9',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -7481,18 +8508,26 @@ incorrectq9: {
     {
       answer: 'S',
       nextId: 'incorrectq10',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'U',
       nextId: 'correctq10',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "N",
       nextId: 'incorrectq10',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "None of the Above",
       nextId: 'incorrectq10',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -7524,18 +8559,26 @@ incorrectq10: {
     {
       answer: 'B',
       nextId: 'incorrectq11',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'O',
       nextId: 'correctq11',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "X",
       nextId: 'incorrectq11',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "None of the Above",
       nextId: 'incorrectq11',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -7567,18 +8610,26 @@ incorrectq11: {
     {
       answer: 'N',
       nextId: 'incorrectq12',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'E',
       nextId: 'correctq12',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "T",
       nextId: 'incorrectq12',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "None of the Above",
       nextId: 'incorrectq12',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -7610,18 +8661,26 @@ incorrectq12: {
     {
       answer: 'J',
       nextId: 'incorrectq13',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'A',
       nextId: 'correctq13',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "M",
       nextId: 'incorrectq13',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "None of the Above",
       nextId: 'incorrectq13',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -7653,18 +8712,26 @@ incorrectq13: {
     {
       answer: 'R',
       nextId: 'incorrectq14',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'I',
       nextId: 'correctq14',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "P",
       nextId: 'correctq14',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "None of the Above",
       nextId: 'incorrectq14',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -7697,18 +8764,26 @@ incorrectq14: {
     {
       answer: 'P',
       nextId: 'incorrectq15',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'E',
       nextId: 'correctq15',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "T",
       nextId: 'incorrectq15',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "None of the Above",
       nextId: 'incorrectq15',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -7739,22 +8814,32 @@ incorrectq15: {
       {
         answer: 'A',
         nextId: 'correctq16',
+  sumToBags: [{ name: 'c', points: 1 }],
+
       },
       {
         answer: 'E',
         nextId: 'incorrectq16',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
       {
         answer: "I",
         nextId: 'incorrectq16',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
       {
         answer: "O",
         nextId: 'incorrectq16',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
       {
         answer: "U",
         nextId: 'incorrectq16',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
     ],
   },
@@ -7784,22 +8869,32 @@ incorrectq15: {
     {
       answer: 'A',
       nextId: 'correctq17',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'E',
       nextId: 'incorrectq17',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "I",
       nextId: 'incorrectq17',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "O",
       nextId: 'incorrectq17',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "U",
       nextId: 'incorrectq17',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -7829,22 +8924,32 @@ incorrectq17: {
     {
       answer: 'A',
       nextId: 'correctq18',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'E',
       nextId: 'incorrectq18',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "I",
       nextId: 'incorrectq18',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "O",
       nextId: 'incorrectq18',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "U",
       nextId: 'incorrectq18',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -7874,22 +8979,32 @@ incorrectq18: {
     {
       answer: 'A',
       nextId: 'incorrectq19',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'E',
       nextId: 'incorrectq19',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "I",
       nextId: 'correctq19',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "O",
       nextId: 'correctq19',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "U",
       nextId: 'incorrectq19',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -7919,22 +9034,32 @@ incorrectq19: {
     {
       answer: 'A',
       nextId: 'incorrectq20',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'E',
       nextId: 'correctq20',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "I",
       nextId: 'incorrectq20',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "O",
       nextId: 'incorrectq20',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "U",
       nextId: 'incorrectq20',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -7964,22 +9089,32 @@ incorrectq20: {
     {
       answer: 'A',
       nextId: 'incorrectq21',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'E',
       nextId: 'incorrectq21',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "I",
       nextId: 'incorrectq21',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "O",
       nextId: 'incorrectq21',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "U",
       nextId: 'correctq21',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
   ],
 },
@@ -8008,22 +9143,32 @@ incorrectq21: {
     {
       answer: 'A',
       nextId: 'incorrectq22',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'E',
       nextId: 'correctq22',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "I",
       nextId: 'incorrectq22',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "O",
       nextId: 'incorrectq22',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "U",
       nextId: 'incorrectq22',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -8052,22 +9197,32 @@ incorrectq22: {
     {
       answer: 'A',
       nextId: 'incorrectq23',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'E',
       nextId: 'incorrectq23',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "I",
       nextId: 'correctq23',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "O",
       nextId: 'correctq23',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "U",
       nextId: 'incorrectq23',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -8096,22 +9251,32 @@ incorrectq23: {
     {
       answer: 'A',
       nextId: 'incorrectq24',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'E',
       nextId: 'incorrectq24',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "I",
       nextId: 'correctq24',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "O",
       nextId: 'correctq24',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "U",
       nextId: 'correctq24',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -8141,22 +9306,32 @@ incorrectq24: {
     {
       answer: 'A',
       nextId: 'correctq25',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'E',
       nextId: 'incorrectq25',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "I",
       nextId: 'incorrectq25',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "O",
       nextId: 'incorrectq25',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "U",
       nextId: 'incorrectq25',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -8186,22 +9361,32 @@ incorrectq25: {
     {
       answer: "A",
       nextId: 'correctq26',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "E",
       nextId: 'incorrectq26',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "I",
       nextId: 'incorrectq26',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "O",
       nextId: 'incorrectq26',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "U",
       nextId: 'incorrectq26',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -8231,22 +9416,32 @@ incorrectq26: {
     {
       answer: 'A',
       nextId: 'correctq27',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'E',
       nextId: 'incorrectq27',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "I",
       nextId: 'incorrectq27',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "O",
       nextId: 'incorrectq27',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "U",
       nextId: 'incorrectq27',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -8275,22 +9470,32 @@ incorrectq27: {
     {
       answer: 'A',
       nextId: 'correctq28',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'E',
       nextId: 'incorrectq28',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "I",
       nextId: 'incorrectq28',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "O",
       nextId: 'incorrectq28',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "U",
       nextId: 'incorrectq28',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -8319,22 +9524,32 @@ incorrectq28: {
     {
       answer: 'A',
       nextId: 'correctq29',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'E',
       nextId: 'incorrectq29',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "I",
       nextId: 'incorrectq29',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "O",
       nextId: 'incorrectq29',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "U",
       nextId: 'incorrectq29',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -8363,22 +9578,32 @@ incorrectq29: {
     {
       answer: 'A',
       nextId: 'incorrectq30',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'E',
       nextId: 'incorrectq30',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "I",
       nextId: 'correctq30',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "O",
       nextId: 'correctq30',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "U",
       nextId: 'incorrectq30',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -8407,22 +9632,32 @@ incorrectq30: {
     {
       answer: 'A',
       nextId: 'correctq31',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'E',
       nextId: 'incorrectq31',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "I",
       nextId: 'incorrectq31',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "O",
       nextId: 'correctq31',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "U",
       nextId: 'incorrectq31',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -8451,22 +9686,32 @@ incorrectq31: {
     {
       answer: 'A',
       nextId: 'incorrectq32',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'E',
       nextId: 'incorrectq32',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "I",
       nextId: 'correctq32',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "O",
       nextId: 'incorrectq32',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "U",
       nextId: 'incorrectq32',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -8495,22 +9740,32 @@ incorrectq32: {
     {
       answer: 'A',
       nextId: 'incorrectq33',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'E',
       nextId: 'correctq33',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "I",
       nextId: 'incorrectq33',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "O",
       nextId: 'incorrectq33',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "U",
       nextId: 'incorrectq33',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -8539,22 +9794,32 @@ incorrectq33: {
     {
       answer: 'A',
       nextId: 'incorrectq34',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'E',
       nextId: 'incorrectq34',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "I",
       nextId: 'incorrectq34',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "O",
       nextId: 'incorrectq34',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "U",
       nextId: 'correctq34',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
   ],
 },
@@ -8599,6 +9864,8 @@ day12: {
   answers: [
           { nextId: 'day12link' },
   ],
+  sumToBags: [{ name: 'd', points: 12 }],
+
 },
 
 day12link: {
@@ -8660,6 +9927,8 @@ day13: {
   answers: [
           { nextId: 'day13link' },
   ],
+  sumToBags: [{ name: 'd', points: 13 }],
+
 },
 
 day13link: {
@@ -8697,18 +9966,26 @@ day131link: {
     {
       answer: 'a,p,l',
       nextId: 'consonantscorrect',
+  sumToBags: [{ name: 'c', points: 1 },  { name: 'd', points: 8 }],
+
     },
     {
       answer: 'a,p,e',
       nextId: 'inconsonantscorrect',
+  sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
+
     },
     {
       answer: "a,p,o",
       nextId: 'inconsonantscorrect',
+  sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
+
     },
     {
       answer: "a,p,c",
       nextId: 'inconsonantscorrect',
+  sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
+
     },
   ],
 },
@@ -8739,18 +10016,26 @@ inconsonantscorrect: {
     {
       answer: 'l, p, h, n, t',
       nextId: 'consonantscorrectq2',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'l, p, h, n, t,e',
       nextId: 'inconsonantscorrectq2',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "l, p, h, n, t,a",
       nextId: 'inconsonantscorrectq2',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "l, p, h, n, t,r",
       nextId: 'inconsonantscorrectq2',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -8782,18 +10067,26 @@ input: selectField(['c', 't', "a", "Both A and B"]),
     {
       answer: 'c',
       nextId: 'inonsonantscorrectq3',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 't',
       nextId: 'inconsonantscorrectq3',
+  sumToBags: [{ name: 'i', points: 1 }],
+      
     },
     {
       answer: "a",
       nextId: 'inconsonantscorrectq3',
+  sumToBags: [{ name: 'i', points: 1 }],
+      
     },
     {
       answer: "Both A and B",
       nextId: 'consonantscorrectq3',
+  sumToBags: [{ name: 'c', points: 1 }],
+      
     },
   ],
 },
@@ -8825,18 +10118,26 @@ answers: [
   {
     answer: 'r, n, b, w',
     nextId: 'consonantscorrectq4',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'r, n, b, a',
     nextId: 'inconsonantscorrectq4',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "r, n, b, i",
     nextId: 'inconsonantscorrectq4',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "r, n, b, w,o",
     nextId: 'inconsonantscorrectq4',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -8868,18 +10169,26 @@ answers: [
   {
     answer: 'f, r, g',
     nextId: 'consonantscorrectq5',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'f, r, o',
     nextId: 'inconsonantscorrectq5',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "f, o, g",
     nextId: 'inconsonantscorrectq5',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "f, r, g,o",
     nextId: 'inconsonantscorrectq5',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -8911,18 +10220,26 @@ answers: [
   {
     answer: 'p, n, c, e',
     nextId: 'inconsonantscorrectq6',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'p, n, c, i',
     nextId: 'inconsonantscorrectq6',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "p, n, c, l",
     nextId: 'consonantscorrectq6',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: "p, n, c",
     nextId: 'inconsonantscorrectq6',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -8953,18 +10270,26 @@ answers: [
   {
     answer: 'g, r, e',
     nextId: 'inconsonantscorrectq7',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'g, r, f',
     nextId: 'consonantscorrectq7',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: "g, r, i",
     nextId: 'inconsonantscorrectq7',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "g, r, a",
     nextId: 'inconsonantscorrectq7',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -8997,18 +10322,26 @@ answers: [
   {
     answer: 'f, l, w, r',
     nextId: 'consonantscorrectq8',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'f, l, w, o',
     nextId: 'inconsonantscorrectq8',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "f, l, w, e",
     nextId: 'inconsonantscorrectq8',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "f, l, w, r,o",
     nextId: 'inconsonantscorrectq8',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -9040,18 +10373,26 @@ answers: [
   {
     answer: 'b, s, k, a',
     nextId: 'inconsonantscorrectq9',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'b, s, k, e',
     nextId: 'inconsonantscorrectq9',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "b, s, k, t",
     nextId: 'consonantscorrectq9',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: "b, s, k, o",
     nextId: 'inconsonantscorrectq9',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -9084,18 +10425,26 @@ answers: [
   {
     answer: 'c, r, p',
     nextId: 'inconsonantscorrectq10',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'c, r, t',
     nextId: 'consonantscorrectq10',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: "c, r, o",
     nextId: 'inconsonantscorrectq10',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "c, r, a",
     nextId: ' inconsonantscorrectq10',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -9127,18 +10476,26 @@ answers: [
 {
     answer: 's, m, l',
     nextId: 'consonantscorrectq11',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'o, m, l',
     nextId: 'inconsonantscorrectq11',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "s, m, i",
     nextId: 'inconsonantscorrectq11',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "s, m, e",
     nextId: 'inconsonantscorrectq11',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -9170,18 +10527,26 @@ answers: [
   {
     answer: 'c, h, e',
     nextId: 'inconsonantscorrectq12',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'c, h, s,e',
     nextId: 'inconsonantscorrectq12',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "c, h, o",
     nextId: 'inconsonantscorrectq12',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "c, h, s",
     nextId: 'consonantscorrectq12',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
 ],
 },
@@ -9213,18 +10578,26 @@ answers: [
   {
     answer: 'b, t, r, f, l,y',
     nextId: 'consonantscorrectq13',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'b, t, r, f, l,u',
     nextId: 'inconsonantscorrectq13',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "b, t, r, f, l,e",
     nextId: 'inconsonantscorrectq13',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "b, t, r, f, l,z",
     nextId: 'inconsonantscorrectq13',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -9256,18 +10629,26 @@ answers: [
   {
     answer: 'b, s, k, t, l,a',
     nextId: 'inconsonantscorrectq14',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'b, s, k, t, l,e',
     nextId: 'inconsonantscorrectq14',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "b, s, k, t, l,p",
     nextId: 'inconsonantscorrectq14',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "b, s, k, t, l",
     nextId: 'consonantscorrectq14',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
 ],
 },
@@ -9300,18 +10681,26 @@ answers: [
   {
     answer: 'l, m, e',
     nextId: 'inconsonantscorrectq15',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'l, m, o',
     nextId: 'inconsonantscorrectq15',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "l, m, n",
     nextId: 'consonantscorrectq15',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: "l, n, o",
     nextId: 'inconsonantscorrectq15',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -9342,20 +10731,28 @@ answers: [
     {
       answer: 'l, p, h, n, t',
       nextId: 'consonantscorrectq16',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'l, p, h, n, e',
       nextId: 'inconsonantscorrectq16',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "l, p, h, n, w",
       nextId: 'inconsonantscorrectq16',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "l, p, h, n, a",
       nextId: 'inconsonantscorrectq16',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
-  
+
   ],
 },
 consonantscorrectq16: {
@@ -9384,18 +10781,26 @@ answers: [
   {
     answer: 'm, n, t, o',
     nextId: 'inconsonantscorrectq17',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'm, n, t, e',
     nextId: 'inconsonantscorrectq17',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "m, n, t, i",
     nextId: 'inconsonantscorrectq17',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "m, n, t, n",
     nextId: 'consonantscorrectq17',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
  
 ],
@@ -9426,18 +10831,26 @@ answers: [
   {
     answer: 't, r, n, g, a',
     nextId: 'inconsonantscorrectq18',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 't, r, n, g, e',
     nextId: 'inconsonantscorrectq18',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "t, r, n, g, l",
     nextId: 'consonantscorrectq18',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: "t, r, n, g, l,i",
     nextId: 'inconsonantscorrectq18',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
  
 ],
@@ -9468,18 +10881,26 @@ answers: [
   {
     answer: 'c, m, p, t, r',
     nextId: 'consonantscorrectq19',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'c, m, p, t, r,e',
     nextId: 'inconsonantscorrectq19',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "c, m, p, t, r,a",
     nextId: 'inconsonantscorrectq19',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "c, m, p, t, r,p",
     nextId: 'inconsonantscorrectq19',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 
 ],
@@ -9510,18 +10931,26 @@ answers: [
   {
     answer: 'g, t, r',
     nextId: 'consonantscorrectq20',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'g, t, i',
     nextId: 'inconsonantscorrectq20',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "g, t, a",
     nextId: 'inconsonantscorrectq20',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "g, t, u",
     nextId: 'inconsonantscorrectq20',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 
 ],
@@ -9552,18 +10981,26 @@ answers: [
     {
       answer: 'c, n, c,e',
       nextId: 'inconsonantscorrectq21',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'c, n, c,s',
       nextId: 'consonantscorrectq21',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "c, n, c,i",
       nextId: 'inconsonantscorrectq21',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "c, n, c,d",
       nextId: 'inconsonantscorrectq21',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   
   ],
@@ -9594,18 +11031,26 @@ answers: [
     {
       answer: 'c, n,a',
       nextId: 'inconsonantscorrectq22',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'c, n',
       nextId: 'inconsonantscorrectq22',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "c, n,e",
       nextId: 'inconsonantscorrectq22',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "c,n,o",
       nextId: 'consonantscorrectq22',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
   
   ],
@@ -9636,18 +11081,26 @@ answers: [
     {
       answer: 's, n, t, c,e',
       nextId: 'inconsonantscorrectq23',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 's, n, t, c,o',
       nextId: 'inconsonantscorrectq23',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "s, n, t, c,i",
       nextId: 'inconsonantscorrectq23',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "s, n, t, c",
       nextId: 'consonantscorrectq23',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
   
   ],
@@ -9678,18 +11131,26 @@ answers: [
     {
       answer: 'l, v, n,e',
       nextId: 'inconsonantscorrectq24',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'l, v, n,o',
       nextId: 'inconsonantscorrectq24',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "l, v, n,a",
       nextId: 'inconsonantscorrectq24',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "l, v, n",
       nextId: 'consonantscorrectq24',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
   
   ],
@@ -9720,18 +11181,26 @@ answers: [
     {
       answer: 'b, r, t, h,o',
       nextId: 'inconsonantscorrectq25',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'b, r, t, h,e',
       nextId: 'inconsonantscorrectq25',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "b, r, t, h,i",
       nextId: 'inconsonantscorrectq25',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "b, r, t, h",
       nextId: 'consonantscorrectq25',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
   
   ],
@@ -9762,18 +11231,26 @@ answers: [
     {
       answer: 'd, m, n, d,o',
       nextId: 'inconsonantscorrectq26',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'd, m, n, d,i',
       nextId: 'inconsonantscorrectq26',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "d, m, n, d",
       nextId: 'consonantscorrectq26',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "d, m, n, d,a",
       nextId: 'inconsonantscorrectq26',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   
   ],
@@ -9805,18 +11282,26 @@ answers: [
     {
       answer: 'j, n, g, l,e',
       nextId: 'inconsonantscorrectq27',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'j, n, g, l,u',
       nextId: 'inconsonantscorrectq27',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "j, n, g, l",
       nextId: 'consonantscorrectq27',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "j, n, g, l,a",
       nextId: 'inconsonantscorrectq27',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   
   ],
@@ -9847,18 +11332,26 @@ answers: [
     {
       answer: 't, c, h, r',
       nextId: 'consonantscorrectq28',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 't, c, h, r,e',
       nextId: 'inconsonantscorrectq28',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "t, c, h, r,a",
       nextId: 'inconsonantscorrectq28',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "t, c, h, r,u",
       nextId: 'inconsonantscorrectq28',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   
   ],
@@ -9889,18 +11382,26 @@ answers: [
     {
       answer: 'v, l, g,i',
       nextId: 'inconsonantscorrectq29',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'v, l, g,o',
       nextId: 'inconsonantscorrectq29',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "v, l, g,a",
       nextId: 'inconsonantscorrectq29',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "v, l, g",
       nextId: 'consonantscorrectq29',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
 
   ],
@@ -9951,6 +11452,8 @@ day14: {
   answers: [
           { nextId: 'day142comment' },
   ],
+  sumToBags: [{ name: 'd', points: 14 }],
+
 },
 day142comment: {
   botPrompt: 'Let`s understand with an activity',
@@ -10004,18 +11507,22 @@ day141link: {
     {
       answer: 'a',
       nextId: 'articlecorrectq1',
+       sumToBags: [{ name: 'c', points: 1 },  { name: 'd', points: 8 }],
     },
     {
       answer: 'an',
       nextId: 'inarticlecorrectq1',
+       sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
     },
     {
       answer: "ann",
       nextId: 'inarticlecorrectq1',
+       sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
     },
     {
       answer: "was",
       nextId: 'inarticlecorrectq1',
+       sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
     },
   ],
 },
@@ -10046,18 +11553,26 @@ inarticlecorrectq1: {
     {
       answer: 'a',
       nextId: 'articlecorrectq2',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'an',
       nextId: 'inarticlecorrectq2',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "ann",
       nextId: 'inarticlecorrectq2',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "was",
       nextId: 'inarticlecorrectq2',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -10089,18 +11604,26 @@ answers: [
   {
     answer: 'a',
     nextId: 'inarticlecorrectq3',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'an',
     nextId: 'articlecorrectq3',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: "ann",
     nextId: 'inarticlecorrectq3',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "was",
     nextId: 'inarticlecorrectq3',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -10132,18 +11655,26 @@ answers: [
   {
     answer: 'a',
     nextId: 'articlecorrectq4',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'an',
     nextId: 'inarticlecorrectq4',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "ann",
     nextId: 'inarticlecorrectq4',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "was",
     nextId: 'inarticlecorrectq4',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -10175,18 +11706,26 @@ answers: [
   {
     answer: 'a',
     nextId: 'articlecorrectq5',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'an',
     nextId: 'inarticlecorrectq5',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "ann",
     nextId: 'inarticlecorrectq5',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "was",
     nextId: 'inarticlecorrectq5',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -10218,18 +11757,26 @@ answers: [
   {
     answer: 'a',
     nextId: 'articlecorrectq6',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'an',
     nextId: 'inarticlecorrectq6',
+  sumToBags: [{ name: 'i', points: 1 }],
+    
   },
   {
     answer: "ann",
     nextId: 'inarticlecorrectq6',
+  sumToBags: [{ name: 'i', points: 1 }],
+    
   },
   {
     answer: "was",
     nextId: 'inarticlecorrectq6',
+  sumToBags: [{ name: 'i', points: 1 }],
+    
   },
 ],
 },
@@ -10260,18 +11807,26 @@ answers: [
   {
     answer: 'a',
     nextId: 'inarticlecorrectq7',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'an',
     nextId: 'articlecorrectq7',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: "ann",
     nextId: 'inarticlecorrectq7',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "was",
     nextId: 'inarticlecorrectq7',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -10303,18 +11858,26 @@ answers: [
   {
     answer: 'a',
     nextId: 'inarticlecorrectq8',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'an',
     nextId: 'articlecorrectq8',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: "ann",
     nextId: 'inarticlecorrectq8',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "was",
     nextId: 'inarticlecorrectq8',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -10346,18 +11909,26 @@ answers: [
   {
     answer: 'a',
     nextId: 'inarticlecorrectq9',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'an',
     nextId: 'articlecorrectq9',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: "ann",
     nextId: 'inarticlecorrectq9',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "was",
     nextId: 'inarticlecorrectq9',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -10391,18 +11962,26 @@ answers: [
   {
     answer: 'a',
     nextId: 'inarticlecorrectq10',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'an',
     nextId: 'articlecorrectq10',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: "ann",
     nextId: 'inarticlecorrectq10',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "was",
     nextId: 'inarticlecorrectq10',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -10433,18 +12012,26 @@ answers: [
   {
     answer: 'a',
     nextId: 'inarticlecorrectq11',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'an',
     nextId: 'articlecorrectq11',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: "ann",
     nextId: 'inarticlecorrectq11',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "was",
     nextId: 'inarticlecorrectq11',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -10476,18 +12063,26 @@ answers: [
   {
     answer: 'a',
     nextId: 'inarticlecorrectq12',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'an',
     nextId: 'articlecorrectq12',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: "ann",
     nextId: 'inarticlecorrectq12',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "was",
     nextId: 'inarticlecorrectq12',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -10519,18 +12114,26 @@ answers: [
   {
     answer: 'a',
     nextId: 'articlecorrectq13',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'an',
     nextId: 'inarticlecorrectq13',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "ann",
     nextId: 'inarticlecorrectq13',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "was",
     nextId: 'inarticlecorrectq13',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -10562,18 +12165,26 @@ answers: [
   {
     answer: 'a',
     nextId: 'articlecorrectq14',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'an',
     nextId: 'inarticlecorrectq14',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "ann",
     nextId: 'inarticlecorrectq14',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "was",
     nextId: 'inarticlecorrectq14',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -10607,18 +12218,26 @@ answers: [
   {
     answer: 'a',
     nextId: 'articlecorrectq15',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'an',
     nextId: 'inarticlecorrectq15',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "ann",
     nextId: 'inarticlecorrectq15',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "was",
     nextId: 'inarticlecorrectq15',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -10650,18 +12269,26 @@ answers: [
       {
       answer: 'a',
       nextId: 'inarticlecorrectq16',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
       {
       answer: 'an',
       nextId: 'articlecorrectq16',
+  sumToBags: [{ name: 'c', points: 1 }],
+
       },
       {
       answer: "ann",
       nextId: 'inarticlecorrectq16',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
       {
       answer: "was",
       nextId: 'inarticlecorrectq16',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
   ],
 },
@@ -10691,18 +12318,26 @@ inarticlecorrectq16: {
       {
       answer: 'a',
       nextId: 'inarticlecorrectq17',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
       {
       answer: 'an',
       nextId: 'articlecorrectq17',
+  sumToBags: [{ name: 'c', points: 1 }],
+
       },
       {
       answer: "ann",
       nextId: 'inarticlecorrectq17',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
       {
       answer: "was",
       nextId: 'inarticlecorrectq17',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
   ],
 },
@@ -10732,18 +12367,26 @@ inarticlecorrectq17: {
       {
       answer: 'a',
       nextId: 'inarticlecorrectq18',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
       {
       answer: 'an',
       nextId: 'articlecorrectq18',
+  sumToBags: [{ name: 'c', points: 1 }],
+
       },
       {
       answer: "ann",
       nextId: 'inarticlecorrectq18',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
       {
       answer: "was",
       nextId: 'inarticlecorrectq18',
+  sumToBags: [{ name: 'i', points: 1 }],
+
       },
   ],
 },
@@ -10774,18 +12417,26 @@ inarticlecorrectq18: {
     {
       answer: 'a',
       nextId: 'articlecorrectq19',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'an',
       nextId: 'inarticlecorrectq19',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "ann",
       nextId: 'inarticlecorrectq19',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "was",
       nextId: 'inarticlecorrectq19',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
   },
@@ -10818,18 +12469,26 @@ inarticlecorrectq18: {
     {
       answer: 'a',
       nextId: 'articlecorrectq20',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'an',
       nextId: 'inarticlecorrectq20',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "ann",
       nextId: 'inarticlecorrectq20',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "was",
       nextId: 'inarticlecorrectq20',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
   },
@@ -10862,18 +12521,26 @@ inarticlecorrectq18: {
     {
       answer: 'a',
       nextId: 'inarticlecorrectq21',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'an',
       nextId: 'articlecorrectq21',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "ann",
       nextId: 'inarticlecorrectq21',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "was",
       nextId: 'inarticlecorrectq21',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
   },
@@ -10906,18 +12573,26 @@ inarticlecorrectq18: {
     {
       answer: 'a',
       nextId: 'articlecorrectq22',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'an',
       nextId: 'inarticlecorrectq22',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "ann",
       nextId: 'inarticlecorrectq22',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "was",
       nextId: 'inarticlecorrectq22',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
   },
@@ -10950,18 +12625,26 @@ inarticlecorrectq18: {
         {
           answer: 'a',
           nextId: 'articlecorrectq23',
+  sumToBags: [{ name: 'c', points: 1 }],
+
         },
         {
           answer: 'an',
           nextId: 'inarticlecorrectq23',
+  sumToBags: [{ name: 'i', points: 1 }],
+
         },
         {
           answer: "ann",
           nextId: 'inarticlecorrectq23',
+  sumToBags: [{ name: 'i', points: 1 }],
+
         },
         {
           answer: "was",
           nextId: 'inarticlecorrectq23',
+  sumToBags: [{ name: 'i', points: 1 }],
+
         },
       ],
       },
@@ -10994,18 +12677,26 @@ inarticlecorrectq18: {
         {
           answer: 'a',
           nextId: 'articlecorrectq24',
+  sumToBags: [{ name: 'c', points: 1 }],
+
         },
         {
           answer: 'an',
           nextId: 'inarticlecorrectq24',
+  sumToBags: [{ name: 'i', points: 1 }],
+
         },
         {
           answer: "ann",
           nextId: 'inarticlecorrectq24',
+  sumToBags: [{ name: 'i', points: 1 }],
+
         },
         {
           answer: "was",
           nextId: 'inarticlecorrectq24',
+  sumToBags: [{ name: 'i', points: 1 }],
+
         },
       ],
       },
@@ -11038,18 +12729,26 @@ inarticlecorrectq18: {
             {
               answer: 'a',
               nextId: 'articlecorrectq25',
+  sumToBags: [{ name: 'c', points: 1 }],
+
             },
             {
               answer: 'an',
               nextId: 'inarticlecorrectq25',
+  sumToBags: [{ name: 'i', points: 1 }],
+
             },
             {
               answer: "ann",
               nextId: 'inarticlecorrectq25',
+  sumToBags: [{ name: 'i', points: 1 }],
+
             },
             {
               answer: "was",
               nextId: 'inarticlecorrectq25',
+  sumToBags: [{ name: 'i', points: 1 }],
+
             },
           ],
           },
@@ -11100,6 +12799,8 @@ day15: {
   answers: [
           { nextId: 'day15link' },
   ],
+  sumToBags: [{ name: 'd', points: 15 }],
+
 },
 day15link: {
   botPrompt: 'https://www.youtube.com/watch?v=OTVf6aNfIac',
@@ -11111,7 +12812,9 @@ day15link: {
   ],
 },
 
-//startonemany
+//start
+    sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
+
 
 
 ['oneandmany'+shuffledNumbersthree[0]]: {
@@ -11123,18 +12826,26 @@ day15link: {
     {
       answer: 'one',
       nextId: 'oneandmanycorrect',
+    sumToBags: [{ name: 'C', points: 1 },  { name: 'd', points: 8 }],
+
     },
     {
       answer: 'many',
       nextId: 'inoneandmanycorrect',
+    sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
+
     },
     {
       answer: "onee",
       nextId: 'inoneandmanycorrect',
+    sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
+
     },
     {
       answer: "any",
       nextId: 'inoneandmanycorrect',
+    sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
+
     },
   ],
 },
@@ -11164,18 +12875,26 @@ inoneandmanycorrect: {
     {
       answer: 'one',
       nextId: 'inoneandmanycorrectq2',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'many',
       nextId: 'oneandmanycorrectq2',
+  sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "onee",
       nextId: 'inoneandmanycorrectq2',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "any",
       nextId: 'inoneandmanycorrectq2',
+  sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -11207,18 +12926,26 @@ answers: [
   {
     answer: 'one',
     nextId: 'oneandmanycorrectq3',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'many',
     nextId: 'inoneandmanycorrectq3',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "onee",
     nextId: 'inoneandmanycorrectq3',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "any",
     nextId: 'inoneandmanycorrectq3',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -11250,18 +12977,26 @@ answers: [
   {
     answer: 'one',
     nextId: 'oneandmanycorrectq3',
+  sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'many',
     nextId: 'inoneandmanycorrectq3',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "onee",
     nextId: 'inoneandmanycorrectq3',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "any",
     nextId: 'inoneandmanycorrectq3',
+  sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -11293,18 +13028,26 @@ answers: [
   {
     answer: 'one',
     nextId: 'inoneandmanycorrectq5',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'many',
     nextId: 'oneandmanycorrectq5',
+    sumToBags: [{ name: 'C', points: 1 }],
+
   },
   {
     answer: "onee",
     nextId: 'inoneandmanycorrectq5',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "any",
     nextId: 'inoneandmanycorrectq5',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -11336,18 +13079,26 @@ answers: [
   {
     answer: 'one',
     nextId: 'inoneandmanycorrectq5',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'many',
     nextId: 'inoneandmanycorrectq5',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "onee",
     nextId: 'inoneandmanycorrectq5',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "any",
     nextId: 'oneandmanycorrectq5',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
 ],
 },
@@ -11378,18 +13129,22 @@ answers: [
   {
     answer: 'onee',
     nextId: 'inoneandmanycorrectq7',
+     sumToBags: [{ name: 'i', points: 1 }],
   },
   {
     answer: 'manyy',
     nextId: 'inoneandmanycorrectq7',
+     sumToBags: [{ name: 'i', points: 1 }],
   },
   {
     answer: "many",
     nextId: 'oneandmanycorrectq7',
+     sumToBags: [{ name: 'c', points: 1 }],
   },
   {
     answer: "manya",
     nextId: 'inoneandmanycorrectq7',
+     sumToBags: [{ name: 'i', points: 1 }],
   },
 ],
 },
@@ -11422,18 +13177,22 @@ answers: [
   {
     answer: 'onee',
     nextId: 'inoneandmanycorrectq8',
+     sumToBags: [{ name: 'i', points: 1 }],
   },
   {
     answer: 'many',
     nextId: 'inoneandmanycorrectq8',
+     sumToBags: [{ name: 'i', points: 1 }],
   },
   {
     answer: "onee",
     nextId: 'inoneandmanycorrectq8',
+     sumToBags: [{ name: 'i', points: 1 }],
   },
   {
     answer: "one",
     nextId: 'oneandmanycorrectq8',
+     sumToBags: [{ name: 'c', points: 1 }],
   },
 ],
 },
@@ -11465,18 +13224,22 @@ answers: [
   {
     answer: 'onee',
     nextId: 'inoneandmanycorrectq9',
+     sumToBags: [{ name: 'i', points: 1 }],
   },
   {
     answer: 'manyy',
     nextId: 'inoneandmanycorrectq9',
+     sumToBags: [{ name: 'i', points: 1 }],
   },
   {
     answer: "many",
     nextId: 'oneandmanycorrectq9',
+     sumToBags: [{ name: 'c', points: 1 }],
   },
   {
     answer: "maany",
     nextId: 'inoneandmanycorrectq9',
+     sumToBags: [{ name: 'i', points: 1 }],
   },
 ],
 },
@@ -11509,18 +13272,22 @@ answers: [
   {
     answer: 'onee',
     nextId: 'inoneandmanycorrectq10',
+     sumToBags: [{ name: 'i', points: 1 }],
   },
   {
     answer: 'many',
     nextId: 'inoneandmanycorrectq10',
+     sumToBags: [{ name: 'i', points: 1 }],
   },
   {
     answer: "many",
     nextId: 'inoneandmanycorrectq10',
+     sumToBags: [{ name: 'i', points: 1 }],
   },
   {
     answer: "one",
     nextId: 'oneandmanycorrectq10',
+     sumToBags: [{ name: 'c', points: 1 }],
   },
 ],
 },
@@ -11552,18 +13319,22 @@ answers: [
   {
     answer: 'books',
     nextId: 'oneandmanycorrectq11',
+     sumToBags: [{ name: 'c', points: 1 }],
   },
   {
     answer: 'bookes',
     nextId: 'inoneandmanycorrectq11',
+     sumToBags: [{ name: 'i', points: 1 }],
   },
   {
     answer: "bookies",
     nextId: 'inoneandmanycorrectq11',
+     sumToBags: [{ name: 'i', points: 1 }],
   },
   {
     answer: "book",
     nextId: 'inoneandmanycorrectq11',
+     sumToBags: [{ name: 'i', points: 1 }],
   },
 ],
 },
@@ -11595,18 +13366,22 @@ answers: [
   {
     answer: 'dogses',
     nextId: 'inoneandmanycorrectq12',
+     sumToBags: [{ name: 'i', points: 1 }],
   },
   {
     answer: 'dogses',
     nextId: 'inoneandmanycorrectq12',
+     sumToBags: [{ name: 'i', points: 1 }],
   },
   {
     answer: "dogs",
     nextId: 'oneandmanycorrectq12',
+     sumToBags: [{ name: 'c', points: 1 }],
   },
   {
     answer: "dog",
     nextId: 'inoneandmanycorrectq12',
+     sumToBags: [{ name: 'i', points: 1 }],
   },
 ],
 },
@@ -11638,18 +13413,22 @@ answers: [
   {
     answer: 'leafs',
     nextId: 'inoneandmanycorrectq13',
+     sumToBags: [{ name: 'i', points: 1 }],
   },
   {
     answer: 'leafs',
     nextId: 'inoneandmanycorrectq13',
+     sumToBags: [{ name: 'i', points: 1 }],
   },
   {
     answer: "leaves",
     nextId: 'oneandmanycorrectq13',
+     sumToBags: [{ name: 'c', points: 1 }],
   },
   {
     answer: "leafe",
     nextId: 'inoneandmanycorrectq13',
+     sumToBags: [{ name: 'i', points: 1 }],
   },
 ],
 },
@@ -11681,18 +13460,22 @@ answers: [
   {
     answer: 'butterfles',
     nextId: 'inoneandmanycorrectq14',
+     sumToBags: [{ name: 'i', points: 1 }],
   },
   {
     answer: 'butterfles',
     nextId: 'inoneandmanycorrectq14',
+     sumToBags: [{ name: 'i', points: 1 }],
   },
   {
     answer: "butterflies",
     nextId: 'oneandmanycorrectq14',
+     sumToBags: [{ name: 'c', points: 1 }],
   },
   {
     answer: "butterfly",
     nextId: 'inoneandmanycorrectq14',
+     sumToBags: [{ name: 'i', points: 1 }],
   },
 ],
 },
@@ -11725,18 +13508,22 @@ answers: [
   {
     answer: 'apples',
     nextId: 'oneandmanycorrectq15',
+     sumToBags: [{ name: 'c', points: 1 }],
   },
   {
     answer: 'applees',
     nextId: 'inoneandmanycorrectq15',
+     sumToBags: [{ name: 'i', points: 1 }],
   },
   {
     answer: "appleses",
     nextId: 'inoneandmanycorrectq15',
+     sumToBags: [{ name: 'i', points: 1 }],
   },
   {
     answer: "apple",
     nextId: 'inoneandmanycorrectq15',
+     sumToBags: [{ name: 'i', points: 1 }],
   },
 ],
 },
@@ -11767,18 +13554,23 @@ answers: [
     {
       answer: 'children',
       nextId: 'oneandmanycorrectq16',
+      sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'childs',
       nextId: 'inoneandmanycorrectq16',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "childrens",
       nextId: 'inoneandmanycorrectq16',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
     {
       answer: "child",
       nextId: 'inoneandmanycorrectq16',
+       sumToBags: [{ name: 'i', points: 1 }],
     },
   
   ],
@@ -11809,18 +13601,22 @@ answers: [
   {
     answer: 'keys',
     nextId: 'oneandmanycorrectq17',
+     sumToBags: [{ name: 'c', points: 1 }],
   },
   {
     answer: 'keyses',
     nextId: 'inoneandmanycorrectq17',
+     sumToBags: [{ name: 'i', points: 1 }],
   },
   {
     answer: "keyies",
     nextId: 'inoneandmanycorrectq17',
+     sumToBags: [{ name: 'i', points: 1 }],
   },
   {
     answer: "key",
     nextId: 'inoneandmanycorrectq17',
+     sumToBags: [{ name: 'i', points: 1 }],
   },
  
 ],
@@ -11851,18 +13647,26 @@ answers: [
   {
     answer: 'toyses',
     nextId: 'inoneandmanycorrectq18',
+       sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'toyes',
     nextId: 'inoneandmanycorrectq18',
+       sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "toys",
     nextId: 'oneandmanycorrectq18',
+       sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: "toy",
     nextId: 'inoneandmanycorrectq18',
+       sumToBags: [{ name: 'i', points: 1 }],
+
   },
  
 ],
@@ -11893,18 +13697,25 @@ answers: [
   {
     answer: 'mice',
     nextId: 'oneandmanycorrectq19',
+    sumToBags: [{ name: 'i', points: 1 }],
   },
   {
     answer: 'mouseses',
     nextId: 'inoneandmanycorrectq19',
+       sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "mouseies",
     nextId: 'inoneandmanycorrectq19',
+       sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "mouses",
     nextId: 'inoneandmanycorrectq19',
+       sumToBags: [{ name: 'i', points: 1 }],
+
   },
  
 ],
@@ -11935,18 +13746,26 @@ answers: [
   {
     answer: 'Bags',
     nextId: 'oneandmanycorrectq20',
+       sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'Baags',
     nextId: 'inoneandmanycorrectq20',
+       sumToBags: [{ name: 'i', points: 1 }],
+    
   },
   {
     answer: "baggs",
     nextId: 'inoneandmanycorrectq20',
+       sumToBags: [{ name: 'i', points: 1 }],
+    
   },
   {
     answer: "baaags",
     nextId: 'inoneandmanycorrectq20',
+       sumToBags: [{ name: 'i', points: 1 }],
+    
   },
 
 ],
@@ -11977,18 +13796,22 @@ answers: [
       {
         answer: 'books',
         nextId: 'oneandmanycorrectq21',
+           sumToBags: [{ name: 'c', points: 1 }],
       },
       {
         answer: 'bookes',
         nextId: 'inoneandmanycorrectq21',
+           sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "bookies",
         nextId: 'inoneandmanycorrectq21',
+           sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "book",
         nextId: 'inoneandmanycorrectq21',
+           sumToBags: [{ name: 'i', points: 1 }],
       },
     
     ],
@@ -12020,18 +13843,22 @@ answers: [
       {
         answer: 'dog',
         nextId: 'inoneandmanycorrectq22',
+           sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: 'dogses',
         nextId: 'inoneandmanycorrectq22',
+           sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "doggies",
         nextId: 'inoneandmanycorrectq22',
+           sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "dogs",
         nextId: 'oneandmanycorrectq22',
+           sumToBags: [{ name: 'c', points: 1 }],
       },
     
     ],
@@ -12062,24 +13889,28 @@ answers: [
     answers: [
       {
         answer: 'butterfly',
-        nextId: 'inoneandmanycorrectq20',
+        nextId: 'inoneandmanycorrectq23',
+           sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: 'butterfles',
-        nextId: 'inoneandmanycorrectq20',
+        nextId: 'inoneandmanycorrectq23',
+           sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "butterflies",
-        nextId: 'oneandmanycorrectq20',
+        nextId: 'oneandmanycorrectq23',
+           sumToBags: [{ name: 'c', points: 1 }],
       },
       {
         answer: "butterflie",
-        nextId: 'inoneandmanycorrectq20',
+        nextId: 'inoneandmanycorrectq23',
+           sumToBags: [{ name: 'i', points: 1 }],
       },
     
     ],
     },
-    oneandmanycorrectq20: {
+    oneandmanycorrectq23: {
     botPrompt: 'You Have Selected correct Anwser 🎉! <strong>butterflies</strong> 😎',
     answers: [
       {
@@ -12087,7 +13918,7 @@ answers: [
       },
     ],
     },
-    inoneandmanycorrectq20: {
+    inoneandmanycorrectq23: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"butterflies"</strong>',
     answers: [
       {
@@ -12105,24 +13936,28 @@ answers: [
     answers: [
       {
         answer: 'key',
-        nextId: 'inoneandmanycorrectq20',
+        nextId: 'inoneandmanycorrectq24',
+           sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: 'keyses',
-        nextId: 'inoneandmanycorrectq20',
+        nextId: 'inoneandmanycorrectq24',
+           sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "keyies",
-        nextId: 'inoneandmanycorrectq20',
+        nextId: 'inoneandmanycorrectq24',
+           sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "keys",
-        nextId: 'oneandmanycorrectq20',
+        nextId: 'oneandmanycorrectq24',
+           sumToBags: [{ name: 'c', points: 1 }],
       },
     
     ],
     },
-    oneandmanycorrectq20: {
+    oneandmanycorrectq24: {
     botPrompt: 'You Have Selected correct Anwser 🎉! <strong>keys</strong> 😎',
     answers: [
       {
@@ -12130,7 +13965,7 @@ answers: [
       },
     ],
     },
-    inoneandmanycorrectq20: {
+    inoneandmanycorrectq24: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"keys"</strong>',
     answers: [
       {
@@ -12148,24 +13983,28 @@ answers: [
     answers: [
       {
         answer: 'balloon',
-        nextId: 'inoneandmanycorrectq20',
+        nextId: 'inoneandmanycorrectq25',
+           sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: 'balloonies',
-        nextId: 'inoneandmanycorrectq20',
+        nextId: 'inoneandmanycorrectq25',
+           sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "balloonses",
-        nextId: 'inoneandmanycorrectq20',
+        nextId: 'inoneandmanycorrectq25',
+           sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "balloons",
-        nextId: 'oneandmanycorrectq20',
+        nextId: 'oneandmanycorrectq25',
+           sumToBags: [{ name: 'c', points: 1 }],
       },
     
     ],
     },
-    oneandmanycorrectq20: {
+    oneandmanycorrectq25: {
     botPrompt: 'You Have Selected correct Anwser 🎉! <strong>balloons</strong> 😎',
     answers: [
       {
@@ -12173,7 +14012,7 @@ answers: [
       },
     ],
     },
-    inoneandmanycorrectq20: {
+    inoneandmanycorrectq25: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"balloons"</strong>',
     answers: [
       {
@@ -12191,24 +14030,28 @@ answers: [
     answers: [
       {
         answer: 'brother',
-        nextId: 'inoneandmanycorrectq20',
+        nextId: 'inoneandmanycorrectq26',
+           sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: 'brotherses',
-        nextId: 'inoneandmanycorrectq20',
+        nextId: 'inoneandmanycorrectq26',
+           sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "brotheries",
-        nextId: 'inoneandmanycorrectq20',
+        nextId: 'inoneandmanycorrectq26',
+           sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "brothers",
-        nextId: 'oneandmanycorrectq20',
+        nextId: 'oneandmanycorrectq26',
+           sumToBags: [{ name: 'c', points: 1 }],
       },
     
     ],
     },
-    oneandmanycorrectq20: {
+    oneandmanycorrectq26: {
     botPrompt: 'You Have Selected correct Anwser 🎉! <strong>brothers</strong> 😎',
     answers: [
       {
@@ -12216,7 +14059,7 @@ answers: [
       },
     ],
     },
-    inoneandmanycorrectq20: {
+    inoneandmanycorrectq26: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"brothers"</strong>',
     answers: [
       {
@@ -12234,24 +14077,28 @@ answers: [
     answers: [
       {
         answer: 'fish',
-        nextId: 'inoneandmanycorrectq20',
+        nextId: 'inoneandmanycorrectq27',
+           sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: 'fishies',
-        nextId: 'inoneandmanycorrectq20',
+        nextId: 'inoneandmanycorrectq27',
+           sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "fishses",
-        nextId: 'inoneandmanycorrectq20',
+        nextId: 'inoneandmanycorrectq27',
+           sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "fishes",
-        nextId: 'oneandmanycorrectq20',
+        nextId: 'oneandmanycorrectq27',
+           sumToBags: [{ name: 'c', points: 1 }],
       },
     
     ],
     },
-    oneandmanycorrectq20: {
+    oneandmanycorrectq27: {
     botPrompt: 'You Have Selected correct Anwser 🎉! <strong>fishes</strong> 😎',
     answers: [
       {
@@ -12259,7 +14106,7 @@ answers: [
       },
     ],
     },
-    inoneandmanycorrectq20: {
+    inoneandmanycorrectq27: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"fishes"</strong>',
     answers: [
       {
@@ -12277,24 +14124,28 @@ answers: [
     answers: [
       {
         answer: 'pencil',
-        nextId: 'inoneandmanycorrectq20',
+        nextId: 'inoneandmanycorrectq28',
+           sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: 'pencilies',
-        nextId: 'inoneandmanycorrectq20',
+        nextId: 'inoneandmanycorrectq28',
+           sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "pencilses",
-        nextId: 'inoneandmanycorrectq20',
+        nextId: 'inoneandmanycorrectq28',
+           sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "pencils",
-        nextId: 'oneandmanycorrectq20',
+        nextId: 'oneandmanycorrectq28',
+           sumToBags: [{ name: 'c', points: 1 }],
       },
     
     ],
     },
-    oneandmanycorrectq20: {
+    oneandmanycorrectq28: {
     botPrompt: 'You Have Selected correct Anwser 🎉! <strong>pencils</strong> 😎',
     answers: [
       {
@@ -12302,7 +14153,7 @@ answers: [
       },
     ],
     },
-    inoneandmanycorrectq20: {
+    inoneandmanycorrectq28: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"pencils"</strong>',
     answers: [
       {
@@ -12320,24 +14171,28 @@ answers: [
     answers: [
       {
         answer: 'horse',
-        nextId: 'inoneandmanycorrectq20',
+        nextId: 'inoneandmanycorrectq29',
+           sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: 'horseses',
-        nextId: 'inoneandmanycorrectq20',
+        nextId: 'inoneandmanycorrectq29',
+           sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "horseies",
-        nextId: 'inoneandmanycorrectq20',
+        nextId: 'inoneandmanycorrectq29',
+           sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "horses",
-        nextId: 'oneandmanycorrectq20',
+        nextId: 'oneandmanycorrectq29',
+           sumToBags: [{ name: 'c', points: 1 }],
       },
     
     ],
     },
-    oneandmanycorrectq20: {
+    oneandmanycorrectq29: {
     botPrompt: 'You Have Selected correct Anwser 🎉! <strong>horses</strong> 😎',
     answers: [
       {
@@ -12345,7 +14200,7 @@ answers: [
       },
     ],
     },
-    inoneandmanycorrectq20: {
+    inoneandmanycorrectq29: {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"horses"</strong>',
     answers: [
       {
@@ -12363,24 +14218,29 @@ answers: [
     answers: [
       {
         answer: 'tooth',
-        nextId: 'inoneandmanycorrectq20',
+        nextId: 'inoneandmanycorrectq30',
+           sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: 'toothes',
-        nextId: 'inoneandmanycorrectq20',
+        nextId: 'inoneandmanycorrectq30',
+           sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "teeths",
-        nextId: 'inoneandmanycorrectq20',
+        nextId: 'inoneandmanycorrectq30',
+           sumToBags: [{ name: 'i', points: 1 }],
       },
       {
         answer: "teeth",
-        nextId: 'oneandmanycorrectq20',
+        nextId: 'oneandmanycorrectq30',
+           sumToBags: [{ name: 'c', points: 1 }],
       },
     
     ],
     },
-    oneandmanycorrectq20: {
+    oneandmanycorrectq30: 
+    {
     botPrompt: 'You Have Selected correct Anwser 🎉! <strong>teeth</strong> 😎',
     answers: [
       {
@@ -12388,7 +14248,8 @@ answers: [
       },
     ],
     },
-    inoneandmanycorrectq20: {
+    inoneandmanycorrectq30:
+      {
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"teeth"</strong>',
     answers: [
       {
@@ -12453,6 +14314,8 @@ day16: {
   answers: [
           { nextId: 'day16link' },
   ],
+  sumToBags: [{ name: 'd', points: 16 }],
+
 },
 
 day16link: {
@@ -12493,18 +14356,26 @@ day131link: {
     {
       answer: 'is',
       nextId: 'isArecorrect',
+    sumToBags: [{ name: 'c', points: 1 },  { name: 'd', points: 8 }],
+
     },
     {
       answer: 'are',
       nextId: 'inisArecorrect',
+    sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrect',
+    sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrect',
+    sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
+
     },
   ],
 },
@@ -12534,18 +14405,26 @@ inisArecorrect: {
     {
       answer: 'are',
       nextId: 'isArecorrectq2',
+           sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'is',
       nextId: 'inisArecorrectq2',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq2',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq2',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -12577,18 +14456,26 @@ input: selectField(['are', 'is', "here","where"]),
     {
       answer: 'are',
       nextId: 'isArecorrectq3',
+           sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'is',
       nextId: 'inisArecorrectq3',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq3',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq3',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -12620,18 +14507,26 @@ input: selectField(['is', 'are', "here","where"]),
     {
       answer: 'is',
       nextId: 'isArecorrectq4',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'are',
       nextId: 'inisArecorrectq4',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq4',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq4',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -12663,18 +14558,26 @@ input: selectField(['are', 'is', "here","where"]),
     {
       answer: 'are',
       nextId: 'isArecorrectq5',
+           sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'is',
       nextId: 'inisArecorrectq5',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq5',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq5',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -12706,18 +14609,26 @@ input: selectField(['is', 'are', "here","where"]),
     {
       answer: 'is',
       nextId: 'isArecorrectq6',
+           sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'are',
       nextId: 'inisArecorrectq6',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq6',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq6',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -12749,18 +14660,26 @@ input: selectField(['are', 'is', "here","where"]),
     {
       answer: 'are',
       nextId: 'isArecorrectq7',
+           sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'is',
       nextId: 'inisArecorrectq7',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq7',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq7',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -12793,18 +14712,26 @@ input: selectField(['are', 'is', "here","where"]),
     {
       answer: 'are',
       nextId: 'isArecorrectq8',
+           sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'is',
       nextId: 'inisArecorrectq8',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq8',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq8',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -12836,18 +14763,26 @@ input: selectField(['is', 'are', "here","where"]),
     {
       answer: 'is',
       nextId: 'isArecorrectq9',
+           sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'are',
       nextId: 'inisArecorrectq9',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq9',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq9',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -12880,18 +14815,26 @@ input: selectField(['are', 'is', "here","where"]),
     {
       answer: 'are',
       nextId: 'isArecorrectq10',
+           sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'is',
       nextId: 'inisArecorrectq10',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq10',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq10',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 
@@ -12924,18 +14867,26 @@ input: selectField(['is', 'are', "here","where"]),
     {
       answer: 'is',
       nextId: 'isArecorrectq11',
+           sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'are',
       nextId: 'inisArecorrectq11',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq11',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq11',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -12967,18 +14918,26 @@ input: selectField(['are', 'is', "here","where"]),
     {
       answer: 'are',
       nextId: 'isArecorrectq12',
+           sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'is',
       nextId: 'inisArecorrectq12',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq12',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq12',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -13010,18 +14969,26 @@ input: selectField(['are', 'is', "here","where"]),
     {
       answer: 'are',
       nextId: 'isArecorrectq13',
+           sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'is',
       nextId: 'inisArecorrectq13',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq13',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq13',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -13053,18 +15020,26 @@ input: selectField(['is', 'are', "here","where"]),
     {
       answer: 'is',
       nextId: 'isArecorrectq14',
+           sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'are',
       nextId: 'inisArecorrectq14',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq14',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq14',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -13097,18 +15072,26 @@ input: selectField(['are', 'is', "here","where"]),
     {
       answer: 'are',
       nextId: 'isArecorrectq15',
+           sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'is',
       nextId: 'inisArecorrectq15',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq15',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq15',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -13139,18 +15122,26 @@ answers: [
     {
       answer: 'are',
       nextId: 'isArecorrectq16',
+      sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'is',
       nextId: 'inisArecorrectq16',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq16',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq16',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -13180,18 +15171,26 @@ input: selectField(['is', 'are', "here","where"]),
     {
       answer: 'is',
       nextId: 'isArecorrectq17',
+           sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'are',
       nextId: 'inisArecorrectq17',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq17',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq17',
+           sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -13221,18 +15220,23 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq18',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq18',
+    sumToBags: [{ name: 'i', points: 1 }],
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq18',
+    sumToBags: [{ name: 'i', points: 1 }],
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq18',
+    sumToBags: [{ name: 'i', points: 1 }],
   },
 ],
 },
@@ -13262,18 +15266,22 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq19',
+    sumToBags: [{ name: 'c', points: 1 }],
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq19',
+    sumToBags: [{ name: 'i', points: 1 }],
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq19',
+    sumToBags: [{ name: 'i', points: 1 }],
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq19',
+    sumToBags: [{ name: 'i', points: 1 }],
   },
 ],
 },
@@ -13303,18 +15311,26 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq20',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq20',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq20',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq20',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -13344,18 +15360,26 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq21',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq21',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq21',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq21',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -13386,18 +15410,26 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq22',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq22',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq22',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq22',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -13428,18 +15460,26 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq23',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq23',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq23',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq23',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -13471,18 +15511,26 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq24',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq24',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq24',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq24',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -13514,18 +15562,27 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq25',
+    sumToBags: [{ name: 'c', points: 1 }],
+
+
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq25',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq25',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq25',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -13557,18 +15614,26 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq26',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq26',
+    sumToBags: [{ name: 'i', points: 1 }],
+    
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq26',
+    sumToBags: [{ name: 'i', points: 1 }],
+    
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq26',
+    sumToBags: [{ name: 'i', points: 1 }],
+    
   },
 ],
 },
@@ -13599,18 +15664,26 @@ input: selectField(['is', 'are', "here","where"]),
     {
       answer: 'is',
       nextId: 'isArecorrectq27',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'are',
       nextId: 'inisArecorrectq27',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq27',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq27',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -13642,18 +15715,27 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq28',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq28',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq28',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq28',
+    sumToBags: [{ name: 'i', points: 1 }],
+
+
   },
 ],
 },
@@ -13685,18 +15767,26 @@ input: selectField(['is', 'are', "here","where"]),
     {
       answer: 'is',
       nextId: 'isArecorrectq29',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'are',
       nextId: 'inisArecorrectq29',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq29',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq29',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -13729,18 +15819,26 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq30',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq30',
+    sumToBags: [{ name: 'i', points: 1 }],
+    
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq30',
+    sumToBags: [{ name: 'i', points: 1 }],
+    
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq30',
+    sumToBags: [{ name: 'i', points: 1 }],
+    
   },
 ],
 },
@@ -13772,18 +15870,26 @@ input: selectField(['is', 'are', "here","where"]),
     {
       answer: 'is',
       nextId: 'isArecorrectq31',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'are',
       nextId: 'inisArecorrectq31',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq31',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq31',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -13815,18 +15921,26 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq32',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq32',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq32',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq32',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -13859,18 +15973,26 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq33',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq33',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq33',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq33',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -13902,18 +16024,26 @@ input: selectField(['is', 'are', "here","where"]),
     {
       answer: 'is',
       nextId: 'isArecorrectq34',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'are',
       nextId: 'inisArecorrectq34',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq34',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq34',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -13947,18 +16077,26 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq35',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq35',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq35',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq35',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -13990,18 +16128,26 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq36',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq36',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq36',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq36',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -14032,18 +16178,26 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq37',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq37',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq37',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq37',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -14074,18 +16228,26 @@ input: selectField(['is', 'are', "here","where"]),
     {
       answer: 'is',
       nextId: 'isArecorrectq38',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'are',
       nextId: 'inisArecorrectq38',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq38',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq38',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -14115,18 +16277,26 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq39',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq39',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq39',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq39',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -14156,18 +16326,26 @@ input: selectField(['is', 'are', "here","where"]),
     {
       answer: 'is',
       nextId: 'isArecorrectq40',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'are',
       nextId: 'inisArecorrectq40',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq40',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq40',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -14197,18 +16375,26 @@ answers: [
     {
       answer: 'are',
       nextId: 'isArecorrectq41',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'is',
       nextId: 'inisArecorrectq41',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq41',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq41',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -14240,18 +16426,26 @@ inisArecorrectq41: {
     {
       answer: 'are',
       nextId: 'isArecorrectq42',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'is',
       nextId: 'inisArecorrectq42',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq42',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq42',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -14283,18 +16477,26 @@ input: selectField(['is', 'are', "here","where"]),
     {
       answer: 'is',
       nextId: 'isArecorrectq43',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'are',
       nextId: 'inisArecorrectq43',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq43',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq43',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -14326,18 +16528,26 @@ input: selectField(['are', 'is', "here","where"]),
     {
       answer: 'are',
       nextId: 'isArecorrectq44',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'is',
       nextId: 'inisArecorrectq44',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq44',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq44',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -14369,18 +16579,26 @@ input: selectField(['are', 'is', "here","where"]),
     {
       answer: 'are',
       nextId: 'isArecorrectq45',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'is',
       nextId: 'inisArecorrectq45',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq45',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq45',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -14411,18 +16629,26 @@ input: selectField(['is', 'are', "here","where"]),
     {
       answer: 'is',
       nextId: 'isArecorrectq46',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'are',
       nextId: 'inisArecorrectq46',
+    sumToBags: [{ name: 'i', points: 1 }],
+      
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq46',
+    sumToBags: [{ name: 'i', points: 1 }],
+      
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq46',
+    sumToBags: [{ name: 'i', points: 1 }],
+      
     },
   ],
 },
@@ -14454,18 +16680,26 @@ input: selectField(['is', 'are', "here","where"]),
     {
       answer: 'is',
       nextId: 'isArecorrectq47',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'are',
       nextId: 'inisArecorrectq47',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq47',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq47',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -14498,18 +16732,26 @@ input: selectField(['are', 'is', "here","where"]),
     {
       answer: 'are',
       nextId: 'isArecorrectq48',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'is',
       nextId: 'inisArecorrectq48',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq48',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq48',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -14541,18 +16783,26 @@ input: selectField(['are', 'is', "here","where"]),
     {
       answer: 'are',
       nextId: 'isArecorrectq49',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'is',
       nextId: 'inisArecorrectq49',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq49',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq49',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -14585,18 +16835,26 @@ input: selectField(['is', 'are', "here","where"]),
     {
       answer: 'is',
       nextId: 'isArecorrectq50',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'are',
       nextId: 'inisArecorrectq50',
+    sumToBags: [{ name: 'i', points: 1 }],
+      
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq50',
+    sumToBags: [{ name: 'i', points: 1 }],
+      
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq50',
+    sumToBags: [{ name: 'i', points: 1 }],
+      
     },
   ],
 },
@@ -14628,18 +16886,26 @@ input: selectField(['are', 'is', "here","where"]),
     {
       answer: 'are',
       nextId: 'isArecorrectq51',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'is',
       nextId: 'inisArecorrectq51',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq51',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq51',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -14670,18 +16936,26 @@ input: selectField(['are', 'is', "here","where"]),
     {
       answer: 'are',
       nextId: 'isArecorrectq52',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'is',
       nextId: 'inisArecorrectq52',
+    sumToBags: [{ name: 'i', points: 1 }],
+      
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq52',
+    sumToBags: [{ name: 'i', points: 1 }],
+      
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq52',
+    sumToBags: [{ name: 'i', points: 1 }],
+      
     },
   ],
 },
@@ -14713,18 +16987,26 @@ input: selectField(['is', 'are', "here","where"]),
     {
       answer: 'is',
       nextId: 'isArecorrectq53',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'are',
       nextId: 'inisArecorrectq53',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq53',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq53',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -14756,18 +17038,26 @@ input: selectField(['are', 'is', "here","where"]),
     {
       answer: 'are',
       nextId: 'isArecorrectq54',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'is',
       nextId: 'inisArecorrectq54',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq54',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq54',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -14800,18 +17090,26 @@ input: selectField(['is', 'are', "here","where"]),
     {
       answer: 'is',
       nextId: 'isArecorrectq55',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'are',
       nextId: 'inisArecorrectq55',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq55',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq55',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -14842,18 +17140,26 @@ answers: [
     {
       answer: 'are',
       nextId: 'isArecorrectq56',
+    sumToBags: [{ name: 'c', points: 1 }],
+      
     },
     {
       answer: 'is',
       nextId: 'inisArecorrectq56',
+    sumToBags: [{ name: 'i', points: 1 }],
+      
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq56',
+    sumToBags: [{ name: 'i', points: 1 }],
+      
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq56',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -14883,18 +17189,26 @@ input: selectField(['is', 'are', "here","where"]),
     {
       answer: 'is',
       nextId: 'isArecorrectq57',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'are',
       nextId: 'inisArecorrectq57',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq57',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq57',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -14924,18 +17238,26 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq58',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq58',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq58',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq58',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -14965,18 +17287,26 @@ input: selectField(['is', 'are', "here","where"]),
     {
       answer: 'is',
       nextId: 'isArecorrectq57',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'are',
       nextId: 'inisArecorrectq57',
+    sumToBags: [{ name: 'i', points: 1 }],
+      
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq57',
+    sumToBags: [{ name: 'i', points: 1 }],
+      
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq57',
+    sumToBags: [{ name: 'i', points: 1 }],
+      
     },
   ],
 },
@@ -15006,18 +17336,26 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq60',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq60',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq60',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq60',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -15047,18 +17385,26 @@ answers: [
     {
       answer: 'is',
       nextId: 'isArecorrectq61',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'are',
       nextId: 'inisArecorrectq61',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq61',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq61',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -15088,18 +17434,26 @@ inisArecorrectq61: {
     {
       answer: 'are',
       nextId: 'isArecorrectq62',
+    sumToBags: [{ name: 'c', points: 1 }],
+      
     },
     {
       answer: 'is',
       nextId: 'inisArecorrectq62',
+    sumToBags: [{ name: 'i', points: 1 }],
+      
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq62',
+    sumToBags: [{ name: 'i', points: 1 }],
+      
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq62',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -15131,18 +17485,26 @@ input: selectField(['is', 'are', "here","where"]),
     {
       answer: 'is',
       nextId: 'isArecorrectq63',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'are',
       nextId: 'inisArecorrectq63',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq63',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq63',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -15174,18 +17536,26 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq64',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq64',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq64',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq64',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -15217,18 +17587,26 @@ input: selectField(['is', 'are', "here","where"]),
     {
       answer: 'is',
       nextId: 'isArecorrectq65',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'are',
       nextId: 'inisArecorrectq65',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq65',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq65',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -15260,18 +17638,26 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq66',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq66',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq66',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq66',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -15302,18 +17688,26 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq67',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq67',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq67',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq67',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -15347,18 +17741,26 @@ input: selectField(['is', 'are', "here","where"]),
     {
       answer: 'is',
       nextId: 'isArecorrectq68',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'are',
       nextId: 'inisArecorrectq68',
+    sumToBags: [{ name: 'i', points: 1 }],
+      
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq68',
+    sumToBags: [{ name: 'i', points: 1 }],
+      
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq68',
+    sumToBags: [{ name: 'i', points: 1 }],
+      
     },
   ],
 },
@@ -15389,18 +17791,26 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq69',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq69',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq69',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq69',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -15433,18 +17843,26 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq70',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq70',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq70',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq70',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -15475,18 +17893,27 @@ input: selectField(['is', 'are', "here","where"]),
     {
       answer: 'is',
       nextId: 'isArecorrectq71',
+      sumToBags: [{ name: 'c', points: 1 }],
+
+
     },
     {
       answer: 'are',
       nextId: 'inisArecorrectq71',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq71',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq71',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -15517,18 +17944,26 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq72',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq72',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq72',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq72',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -15560,18 +17995,26 @@ input: selectField(['is', 'are', "here","where"]),
     {
       answer: 'is',
       nextId: 'isArecorrectq73',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'are',
       nextId: 'inisArecorrectq73',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq73',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq73',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -15603,18 +18046,26 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq74',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq74',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq74',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq74',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -15648,18 +18099,26 @@ input: selectField(['is', 'are', "here","where"]),
     {
       answer: 'is',
       nextId: 'isArecorrectq75',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'are',
       nextId: 'inisArecorrectq75',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq75',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq75',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -15691,18 +18150,26 @@ answers: [
     {
       answer: 'are',
       nextId: 'isArecorrectq76',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'is',
       nextId: 'inisArecorrectq76',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq76',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq76',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -15733,18 +18200,28 @@ input: selectField(['is', 'are', "here","where"]),
     {
       answer: 'is',
       nextId: 'isArecorrectq77',
+    sumToBags: [{ name: 'c', points: 1 }],
+    sumToBags: [{ name: 'c', points: 1 }],
+
+
     },
     {
       answer: 'are',
       nextId: 'inisArecorrectq77',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq77',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq77',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -15794,6 +18271,8 @@ day17: {
   answers: [
           { nextId: 'day17link' },
   ],
+  sumToBags: [{ name: 'd', points: 17 }],
+
 },
 
 day17link: {
@@ -15846,6 +18325,8 @@ day18: {
   answers: [
           { nextId: 'day18link' },
   ],
+  sumToBags: [{ name: 'd', points: 18 }],
+
 },
 
 day18link: {
@@ -15885,14 +18366,23 @@ day181link: {
     {
       answer: 'This',
       nextId: 'thisThatcorrect',
+
+
+    sumToBags: [{ name: 'c', points: 1 },  { name: 'd', points: 8 }],
+
+
     },
     {
       answer: 'That',
       nextId: 'inthisThatcorrect',
+    sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
+
     },
     {
       answer: "There",
       nextId: 'inthisThatcorrect',
+    sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
+
     },
 
   ],
@@ -15922,14 +18412,23 @@ inthisThatcorrect: {
     {
       answer: 'This',
       nextId: 'inthisThatcorrectq2',
+    sumToBags: [{ name: 'c', points: 1 }],
+
+
     },
     {
       answer: 'That',
       nextId: 'thisThatcorrectq2',
+    sumToBags: [{ name: 'i', points: 1 }],
+
+      
     },
     {
       answer: "Here",
       nextId: 'inthisThatcorrectq2',
+    sumToBags: [{ name: 'i', points: 1 }],
+
+      
     },
   ],
 },
@@ -15961,14 +18460,26 @@ input: selectField(['This', 'That', "Far"]),
     {
       answer: 'This',
       nextId: 'thisThatcorrectq3',
+    sumToBags: [{ name: 'c', points: 1 }],
+
+
+
     },
     {
       answer: 'That',
       nextId: 'inthisThatcorrectq3',
+    sumToBags: [{ name: 'i', points: 1 }],
+
+
+
     },
     {
       answer: "Far",
       nextId: 'inthisThatcorrectq3',
+    sumToBags: [{ name: 'i', points: 1 }],
+
+
+
     },
   ],
 },
@@ -16000,14 +18511,20 @@ input: selectField(['This', 'That', "Near"]),
     {
       answer: 'This',
       nextId: 'inthisThatcorrectq4',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'That',
       nextId: 'thisThatcorrectq4',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "Near",
       nextId: 'inthisThatcorrectq4',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -16040,14 +18557,20 @@ input: selectField(['This', 'That', "These"]),
     {
       answer: 'This',
       nextId: 'inthisThatcorrectq5',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'That',
       nextId: 'thisThatcorrectq5',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "These",
       nextId: 'inthisThatcorrectq5',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -16080,14 +18603,20 @@ input: selectField(['This', 'That', "These"]),
     {
       answer: 'This',
       nextId: 'inthisThatcorrectq6',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'That',
       nextId: 'thisThatcorrectq6',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "These",
       nextId: 'inthisThatcorrectq6',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -16119,14 +18648,20 @@ input: selectField(['This', 'That', "Those"]),
     {
       answer: 'This',
       nextId: 'inthisThatcorrectq7',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'That',
       nextId: 'thisThatcorrectq7',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "Those",
       nextId: 'inthisThatcorrectq7',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -16159,14 +18694,20 @@ input: selectField(['This', 'That', "Those"]),
     {
       answer: 'This',
       nextId: 'inthisThatcorrectq8',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'That',
       nextId: 'thisThatcorrectq8',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "Those",
       nextId: 'inthisThatcorrectq8',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -16197,14 +18738,20 @@ input: selectField(['This', 'That', "These"]),
     {
       answer: 'This',
       nextId: 'thisThatcorrectq9',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'That',
       nextId: 'inthisThatcorrectq9',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "These",
       nextId: 'inthisThatcorrectq9',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -16236,14 +18783,20 @@ input: selectField(['This', 'That', "These"]),
     {
       answer: 'This',
       nextId: 'inthisThatcorrectq10',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'That',
       nextId: 'thisThatcorrectq10',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "These",
       nextId: 'inthisThatcorrectq10',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -16275,14 +18828,20 @@ input: selectField(['This', 'That', "These"]),
     {
       answer: 'This',
       nextId: 'inthisThatcorrectq11',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'That',
       nextId: 'thisThatcorrectq11',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "These",
       nextId: 'inthisThatcorrectq11',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -16315,14 +18874,20 @@ input: selectField(['This', 'That', "These"]),
     {
       answer: 'This',
       nextId: 'thisThatcorrectq12',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'That',
       nextId: 'inthisThatcorrectq12',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "These",
       nextId: 'inthisThatcorrectq12',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -16353,14 +18918,20 @@ input: selectField(['This', 'That', "These"]),
     {
       answer: 'This',
       nextId: 'inthisThatcorrectq13',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'That',
       nextId: 'thisThatcorrectq13',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "These",
       nextId: 'inthisThatcorrectq13',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -16392,14 +18963,20 @@ input: selectField(['This', 'That', "These"]),
     {
       answer: 'This',
       nextId: 'inthisThatcorrectq14',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'That',
       nextId: 'thisThatcorrectq14',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "These",
       nextId: 'inthisThatcorrectq14',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -16431,14 +19008,20 @@ input: selectField(['This', 'That', "These"]),
     {
       answer: 'This',
       nextId: 'inthisThatcorrectq15',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: 'That',
       nextId: 'thisThatcorrectq15',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: "These",
       nextId: 'inthisThatcorrectq15',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -16490,6 +19073,9 @@ day19: {
   answers: [
           { nextId: 'day19link' },
   ],
+  sumToBags: [{ name: 'd', points: 19
+}],
+
 },
 
 day19link: {
@@ -16500,6 +19086,8 @@ day19link: {
       nextId: 'day192comment',
     },
   ],
+  sumToBags: [{ name: 'd', points: 19 }],
+
 },
 day192comment: {
   botPrompt: 'Let`s look into the pages of the book',
@@ -16530,18 +19118,26 @@ day191link: {
     {
       answer: 'The smallest number',
       nextId: 'inzerocorrect',
+       sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
+
     },
     {
       answer: 'The largest number',
       nextId: 'inzerocorrect',
+       sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
+
     },
     {
       answer: "nothing or empty",
       nextId: 'zerocorrect',
+       sumToBags: [{ name: 'c', points: 1 },  { name: 'd', points: 8 }],
+
     },
     {
       answer: "a negative value",
       nextId: 'inzerocorrect',
+       sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
+
     },
   ],
 },
@@ -16571,18 +19167,26 @@ inzerocorrect: {
     {
       answer: 'The number stays the same',
       nextId: 'zerocorrectq2',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'The number becomes negative',
       nextId: 'inzerocorrectq2',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "The number becomes zero ",
       nextId: 'inzerocorrectq2',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "The number becomes double",
       nextId: 'inzerocorrectq2',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -16614,18 +19218,26 @@ answers: [
   {
     answer: '1',
     nextId: 'inzerocorrectq3',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: '5',
     nextId: 'inzerocorrectq3',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "0",
     nextId: 'zerocorrectq3',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: "10",
     nextId: 'inzerocorrectq3',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -16657,18 +19269,26 @@ answers: [
   {
     answer: '1',
     nextId: 'inzerocorrectq4',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: '0',
     nextId: 'zerocorrectq4',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: "10",
     nextId: 'inzerocorrectq4',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "100",
     nextId: 'inzerocorrectq4',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -16700,18 +19320,26 @@ answers: [
   {
     answer: 'You have a lot of chocolates',
     nextId: 'inzerocorrectq5',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: 'You have no chocolates',
     nextId: 'zerocorrectq5',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: "You have one chocolate",
     nextId: 'inzerocorrectq5',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "You have two chocolates",
     nextId: 'inzerocorrectq5',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -16743,18 +19371,26 @@ answers: [
   {
     answer: '1',
     nextId: 'inzerocorrectq6',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: '0',
     nextId: 'inzerocorrectq6',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "10",
     nextId: 'inzerocorrectq6',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "5",
     nextId: 'zerocorrectq6',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
 ],
 },
@@ -16785,18 +19421,26 @@ answers: [
   {
     answer: '5+5',
     nextId: 'inzerocorrectq7',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: '10-10',
     nextId: 'zerocorrectq7',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: "3x3",
     nextId: 'inzerocorrectq7',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "2+4",
     nextId: 'inzerocorrectq7',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -16829,18 +19473,26 @@ answers: [
   {
     answer: '1',
     nextId: 'inzerocorrectq8',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: '5',
     nextId: 'zerocorrectq8',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: "0",
     nextId: 'inzerocorrectq8',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "10",
     nextId: 'inzerocorrectq8',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -16872,18 +19524,26 @@ answers: [
   {
     answer: '0',
     nextId: 'inzerocorrectq9',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: '5',
     nextId: 'inzerocorrectq9',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "1",
     nextId: 'inzerocorrectq9',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "any number",
     nextId: 'zerocorrectq9',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
 ],
 },
@@ -16931,6 +19591,8 @@ day20: {
   answers: [
           { nextId: 'day20comment' },
   ],
+  sumToBags: [{ name: 'd', points: 20 }],
+
 },
 
 day20comment: {
@@ -16952,18 +19614,26 @@ day20comment: {
     {
       answer: 'is',
       nextId: 'isArecorrect',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'are',
       nextId: 'inisArecorrect',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrect',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrect',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -16993,18 +19663,26 @@ inisArecorrect: {
     {
       answer: 'are',
       nextId: 'isArecorrectq2',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'is',
       nextId: 'inisArecorrectq2',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq2',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq2',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -17036,18 +19714,26 @@ input: selectField(['are', 'is', "here","where"]),
     {
       answer: 'are',
       nextId: 'isArecorrectq3',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'is',
       nextId: 'inisArecorrectq3',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq3',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq3',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -17079,18 +19765,26 @@ input: selectField(['is', 'are', "here","where"]),
     {
       answer: 'is',
       nextId: 'isArecorrectq4',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'are',
       nextId: 'inisArecorrectq4',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq4',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq4',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -17122,18 +19816,26 @@ input: selectField(['are', 'is', "here","where"]),
     {
       answer: 'are',
       nextId: 'isArecorrectq5',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'is',
       nextId: 'inisArecorrectq5',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq5',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq5',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -17165,18 +19867,26 @@ input: selectField(['is', 'are', "here","where"]),
     {
       answer: 'is',
       nextId: 'isArecorrectq6',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'are',
       nextId: 'inisArecorrectq6',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq6',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq6',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -17208,18 +19918,26 @@ input: selectField(['are', 'is', "here","where"]),
     {
       answer: 'are',
       nextId: 'isArecorrectq7',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'is',
       nextId: 'inisArecorrectq7',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq7',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq7',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -17252,18 +19970,26 @@ input: selectField(['are', 'is', "here","where"]),
     {
       answer: 'are',
       nextId: 'isArecorrectq8',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'is',
       nextId: 'inisArecorrectq8',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq8',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq8',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -17295,18 +20021,26 @@ input: selectField(['is', 'are', "here","where"]),
     {
       answer: 'is',
       nextId: 'isArecorrectq9',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'are',
       nextId: 'inisArecorrectq9',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq9',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq9',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -17339,18 +20073,26 @@ input: selectField(['are', 'is', "here","where"]),
     {
       answer: 'are',
       nextId: 'isArecorrectq10',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'is',
       nextId: 'inisArecorrectq10',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq10',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq10',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 
@@ -17383,18 +20125,26 @@ input: selectField(['is', 'are', "here","where"]),
     {
       answer: 'is',
       nextId: 'isArecorrectq11',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'are',
       nextId: 'inisArecorrectq11',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq11',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq11',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -17426,18 +20176,26 @@ input: selectField(['are', 'is', "here","where"]),
     {
       answer: 'are',
       nextId: 'isArecorrectq12',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'is',
       nextId: 'inisArecorrectq12',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq12',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq12',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -17469,18 +20227,26 @@ input: selectField(['are', 'is', "here","where"]),
     {
       answer: 'are',
       nextId: 'isArecorrectq13',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'is',
       nextId: 'inisArecorrectq13',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq13',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq13',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -17512,18 +20278,26 @@ input: selectField(['is', 'are', "here","where"]),
     {
       answer: 'is',
       nextId: 'isArecorrectq14',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'are',
       nextId: 'inisArecorrectq14',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq14',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq14',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -17556,18 +20330,26 @@ input: selectField(['are', 'is', "here","where"]),
     {
       answer: 'are',
       nextId: 'isArecorrectq15',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'is',
       nextId: 'inisArecorrectq15',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq15',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq15',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -17598,18 +20380,26 @@ answers: [
     {
       answer: 'are',
       nextId: 'isArecorrectq16',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'is',
       nextId: 'inisArecorrectq16',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq16',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq16',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -17639,18 +20429,26 @@ input: selectField(['is', 'are', "here","where"]),
     {
       answer: 'is',
       nextId: 'isArecorrectq17',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'are',
       nextId: 'inisArecorrectq17',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq17',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq17',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -17680,18 +20478,26 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq18',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq18',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq18',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq18',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -17721,18 +20527,26 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq19',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq19',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq19',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq19',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -17762,18 +20576,26 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq20',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq20',
+    sumToBags: [{ name: 'i', points: 1 }],
+    
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq20',
+    sumToBags: [{ name: 'i', points: 1 }],
+    
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq20',
+    sumToBags: [{ name: 'i', points: 1 }],
+    
   },
 ],
 },
@@ -17803,18 +20625,26 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq21',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq21',
+    sumToBags: [{ name: 'i', points: 1 }],
+    
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq21',
+    sumToBags: [{ name: 'i', points: 1 }],
+    
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq21',
+    sumToBags: [{ name: 'i', points: 1 }],
+    
   },
 ],
 },
@@ -17845,18 +20675,26 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq22',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq22',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq22',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq22',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -17887,18 +20725,26 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq23',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq23',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq23',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq23',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -17930,18 +20776,26 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq24',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq24',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq24',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq24',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -17973,18 +20827,26 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq25',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq25',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq25',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq25',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -18016,18 +20878,26 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq26',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq26',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq26',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq26',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -18058,18 +20928,26 @@ input: selectField(['is', 'are', "here","where"]),
     {
       answer: 'is',
       nextId: 'isArecorrectq27',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'are',
       nextId: 'inisArecorrectq27',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq27',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq27',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -18101,18 +20979,26 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq28',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq28',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq28',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq28',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -18144,18 +21030,26 @@ input: selectField(['is', 'are', "here","where"]),
     {
       answer: 'is',
       nextId: 'isArecorrectq29',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'are',
       nextId: 'inisArecorrectq29',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq29',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq29',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -18188,18 +21082,26 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq30',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq30',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq30',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq30',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -18231,18 +21133,26 @@ input: selectField(['is', 'are', "here","where"]),
     {
       answer: 'is',
       nextId: 'isArecorrectq31',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'are',
       nextId: 'inisArecorrectq31',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq31',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq31',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -18274,18 +21184,26 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq32',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq32',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq32',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq32',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -18318,18 +21236,26 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq33',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq33',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq33',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq33',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -18361,18 +21287,26 @@ input: selectField(['is', 'are', "here","where"]),
     {
       answer: 'is',
       nextId: 'isArecorrectq34',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'are',
       nextId: 'inisArecorrectq34',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq34',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq34',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -18406,18 +21340,26 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq35',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq35',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq35',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq35',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -18449,18 +21391,26 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq36',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq36',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq36',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq36',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -18491,18 +21441,26 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq37',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq37',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq37',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq37',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -18533,18 +21491,26 @@ input: selectField(['is', 'are', "here","where"]),
     {
       answer: 'is',
       nextId: 'isArecorrectq38',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'are',
       nextId: 'inisArecorrectq38',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq38',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq38',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -18574,18 +21540,26 @@ answers: [
   {
     answer: 'are',
     nextId: 'isArecorrectq39',
+    sumToBags: [{ name: 'c', points: 1 }],
+
   },
   {
     answer: 'is',
     nextId: 'inisArecorrectq39',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "here",
     nextId: 'inisArecorrectq39',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
   {
     answer: "where",
     nextId: 'inisArecorrectq39',
+    sumToBags: [{ name: 'i', points: 1 }],
+
   },
 ],
 },
@@ -18615,18 +21589,26 @@ input: selectField(['is', 'are', "here","where"]),
     {
       answer: 'is',
       nextId: 'isArecorrectq40',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'are',
       nextId: 'inisArecorrectq40',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq40',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq40',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -18656,18 +21638,26 @@ answers: [
     {
       answer: 'are',
       nextId: 'isArecorrectq41',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'is',
       nextId: 'inisArecorrectq41',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq41',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq41',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -18699,18 +21689,26 @@ inisArecorrectq41: {
     {
       answer: 'are',
       nextId: 'isArecorrectq42',
+    sumToBags: [{ name: 'c', points: 1 }],
+
     },
     {
       answer: 'is',
       nextId: 'inisArecorrectq42',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "here",
       nextId: 'inisArecorrectq42',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
     {
       answer: "where",
       nextId: 'inisArecorrectq42',
+    sumToBags: [{ name: 'i', points: 1 }],
+
     },
   ],
 },
@@ -20250,6 +23248,8 @@ day21: {
   answers: [
           { nextId: 'day21newcomment' },
   ],
+  sumToBags: [{ name: 'd', points: 21}],
+
 },
 day21newcomment: {
   botPrompt: 'These and Those point towards more than one object which is near or far from us.',
@@ -20660,6 +23660,8 @@ day22: {
   answers: [
           { nextId: 'day22newcomment' },
   ],
+  sumToBags: [{ name: 'd', points: 22 }],
+
 },
 day22newcomment: {
   botPrompt: 'Simon says It is a joyful game which can be played to grab the attention of the children , make children follow instructions and learn action words simultaneously.',
@@ -20699,6 +23701,8 @@ day23: {
   answers: [
           { nextId: 'day23newcomment' },
   ],
+  sumToBags: [{ name: 'd', points: 23 }],
+
 },
 day23newcomment: {
   botPrompt: 'Good manners begin with the magic words "please", "thank you", "welcome",”Excuse me and "I`m sorry".',
@@ -20747,6 +23751,8 @@ day24: {
   answers: [
           { nextId: 'day24newcomment' },
   ],
+  sumToBags: [{ name: 'd', points: 24}],
+
 },
 day24newcomment: {
   botPrompt: 'One more and one less teaches a child first steps of addition and substaction.',
@@ -24990,6 +27996,8 @@ day25: {
   answers: [
           { nextId: 'day25link' },
   ],
+  sumToBags: [{ name: 'd', points: 25 }],
+
 },
 
 day25link: {
@@ -26409,6 +29417,8 @@ day253link: {
     answers: [
             { nextId: 'day26link' },
     ],
+    sumToBags: [{ name: 'd', points: 26 }],
+
   },
   
   day26link: {
@@ -27535,7 +30545,7 @@ day253link: {
       answers: [
           {
             answer: 'Yes!',
-            nextId: 'endConv',
+            nextId: 'day27',
           },
           {
             answer: 'No!',
@@ -27543,7 +30553,11251 @@ day253link: {
           },
       ],
     },
+
+
+
+    day27: {
+      botPrompt: '<strong> Day 27 : </strong> The concept of Ones-Tens-Hundreds is fundamental to the decimal system.',
+      answers: [
+              { nextId: 'day27link' },
+      ],
+    sumToBags: [{ name: 'd', points: 27 }],
+
+    },
+
+    day27link: {
+      botPrompt: 'https://youtu.be/cmbHRrERNbg',
+      type: RTypes.LINK,
+      answers: [
+        {
+          nextId: 'day273comment',
+        },
+      ],
+    },
+  
+    day273comment: {
+      botPrompt: 'Let’s look into the pages of the book',
+      answers: [
+              { nextId: 'day273link' },
+      ],
+    },
+    day273link: {
+      botPrompt: 'https://drive.google.com/file/d/1qAYGEXTHC5Plk-pslthp8liGEBWWYQmV/view?usp=share_link',
+      type: RTypes.LINK,
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[0] ,
+        },
+      ],
+    },
+  
+  //onceTensHundreds
+  
+  
+  ["onceTensHundreds"+shuffledNumbersto[0]]: {
+      botPrompt: 'What is the number at units place in 76?',
+      type: RTypes.TRANSFORMED_TEXT,
+      input: selectField(['6', '7', "8","9"]),
+      answers: [
+        {
+          answer: '6',
+          nextId: 'onceTensHundredscorrect',
+        },
+        {
+          answer: '7',
+          nextId: 'inonceTensHundredscorrect',
+        },
+        {
+          answer: "8",
+          nextId: 'inonceTensHundredscorrect',
+        },
+        {
+          answer: "9",
+          nextId: 'inonceTensHundredscorrect',
+        },
+      ],
+    },
+    onceTensHundredscorrect: {
+      botPrompt: 'Hurray <strong>6</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[1],
+        },
+      ],
+    },
+    inonceTensHundredscorrect: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"6"</strong>',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[1],
+        },
+      ],
+    },
     
+    ['onceTensHundreds'+shuffledNumbersto[1]]: {
+      botPrompt: 'What is the number at tens place in 58?',
+      type: RTypes.TRANSFORMED_TEXT,
+    
+      input: selectField(['4', '5', "6","8"]),
+      answers: [
+        {
+          answer: '4',
+          nextId: 'inonceTensHundredscorrectq2',
+        },
+        {
+          answer: '5',
+          nextId: 'onceTensHundredscorrectq2',
+        },
+        {
+          answer: "6",
+          nextId: 'inonceTensHundredscorrectq2',
+        },
+        {
+          answer: "8",
+          nextId: 'inonceTensHundredscorrectq2',
+        },
+      ],
+    },
+    
+    onceTensHundredscorrectq2: {
+      botPrompt: 'Hurray! <strong>58</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[2],
+        },
+      ],
+    },
+    inonceTensHundredscorrectq2: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"58"</strong>',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[2],
+        },
+      ],
+    },
+    
+    //3
+    ['onceTensHundreds'+shuffledNumbersto[2]]: {
+    botPrompt: "What is the number at units place in 234?",
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['2', '3', "4","5"]),
+      answers: [
+        {
+          answer: '2',
+          nextId: 'inonceTensHundredscorrectq3',
+        },
+        {
+          answer: '3',
+          nextId: 'inonceTensHundredscorrectq3',
+        },
+        {
+          answer: "4",
+          nextId: 'onceTensHundredscorrectq3',
+        },
+        {
+          answer: "5",
+          nextId: 'inonceTensHundredscorrectq3',
+        },
+      ],
+    },
+    
+    onceTensHundredscorrectq3: {
+    botPrompt: 'Hurray! <strong>4</strong> is the correct answer ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[3],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq3: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[3],
+      },
+    ],
+    },
+    
+    //4
+    ['onceTensHundreds'+shuffledNumbersto[3]]: {
+    botPrompt: 'What is the number at tens place in 456?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['4', '5', "6","7"]),
+      answers: [
+        {
+          answer: '4',
+          nextId: 'inonceTensHundredscorrectq4',
+        },
+        {
+          answer: '5',
+          nextId: 'onceTensHundredscorrectq4',
+        },
+        {
+          answer: "6",
+          nextId: 'inonceTensHundredscorrectq4',
+        },
+        {
+          answer: "7",
+          nextId: 'inonceTensHundredscorrectq4',
+        },
+      ],
+    },
+    
+    onceTensHundredscorrectq4: {
+    botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[4],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq4: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[4],
+      },
+    ],
+    },
+    
+    //5
+    ['onceTensHundreds'+shuffledNumbersto[4]]: {
+    botPrompt: 'What is the number at hundreds place in 789?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['7', '8', "9","1"]),
+      answers: [
+        {
+          answer: '7',
+          nextId: 'inonceTensHundredscorrectq5',
+        },
+        {
+          answer: '8',
+          nextId: 'inonceTensHundredscorrectq5',
+        },
+        {
+          answer: "9",
+          nextId: 'onceTensHundredscorrectq5',
+        },
+        {
+          answer: "1",
+          nextId: 'inonceTensHundredscorrectq5',
+        },
+      ],
+    },
+    
+    onceTensHundredscorrectq5: {
+    botPrompt: 'Hurray! <strong>7</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[5],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq5: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"7"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[5],
+      },
+    ],
+    },
+    
+    //6
+    ['onceTensHundreds'+shuffledNumbersto[5]]: {
+    botPrompt: 'What is the number at units place in 1523?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['1', '2', "3","5"]),
+      answers: [
+        {
+          answer: '1',
+          nextId: 'inonceTensHundredscorrectq6',
+        },
+        {
+          answer: '2',
+          nextId: 'inonceTensHundredscorrectq6',
+        },
+        {
+          answer: "3",
+          nextId: 'onceTensHundredscorrectq6',
+        },
+        {
+          answer: "5",
+          nextId: 'inonceTensHundredscorrectq6',
+        },
+      ],
+    },
+    
+    onceTensHundredscorrectq6: {
+    botPrompt: 'Hurray! <strong>3</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[6],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq6: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"3"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[6],
+      },
+    ],
+    },
+    
+    //7
+    ['onceTensHundreds'+shuffledNumbersto[6]]: {
+    botPrompt: 'What is the number at tens place in 7896?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['7', '8', "9","6"]),
+      answers: [
+        {
+          answer: '7',
+          nextId: 'inonceTensHundredscorrectq7',
+        },
+        {
+          answer: '8',
+          nextId: 'inonceTensHundredscorrectq7',
+        },
+        {
+          answer: "9",
+          nextId: 'onceTensHundredscorrectq7',
+        },
+        {
+          answer: "6",
+          nextId: 'inonceTensHundredscorrectq7',
+        },
+      ],
+    },
+    
+    onceTensHundredscorrectq7: {
+    botPrompt: 'Hurray! <strong>9</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[7],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq7: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"9"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[7],
+      },
+    ],
+    },
+    
+    
+    //8
+    ['onceTensHundreds'+shuffledNumbersto[7]]: {
+    botPrompt: 'What is the number at hundreds place in 2345?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['2', '3', "4","5"]),
+      answers: [
+        {
+          answer: '2',
+          nextId: 'inonceTensHundredscorrectq8',
+        },
+        {
+          answer: '3',
+          nextId: 'onceTensHundredscorrectq8',
+        },
+        {
+          answer: "4",
+          nextId: 'inonceTensHundredscorrectq8',
+        },
+        {
+          answer: "5",
+          nextId: 'inonceTensHundredscorrectq8',
+        },
+      ],
+    },
+    
+    onceTensHundredscorrectq8: {
+    botPrompt: 'Hurray! <strong>3</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[8],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq8: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"3"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[8],
+      },
+    ],
+    },
+    
+    //9
+    ['onceTensHundreds'+shuffledNumbersto[8]]: {
+    botPrompt: 'What is the number at units place in 6789?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['6', '7', "8","9"]),
+      answers: [
+        {
+          answer: '6',
+          nextId: 'inonceTensHundredscorrectq9',
+        },
+        {
+          answer: '7',
+          nextId: 'inonceTensHundredscorrectq9',
+        },
+        {
+          answer: "8",
+          nextId: 'inonceTensHundredscorrectq9',
+        },
+        {
+          answer: "9",
+          nextId: 'onceTensHundredscorrectq9',
+        },
+      ],
+    },
+    
+    onceTensHundredscorrectq9: {
+    botPrompt: 'Hurray! <strong>9</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[9],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq9: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"9"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[9],
+      },
+    ],
+    },
+    
+    
+    //10
+    ['onceTensHundreds'+shuffledNumbersto[9]]: {
+    botPrompt: 'What is the number at tens place in 1234?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['1', '2', "3","4"]),
+      answers: [
+        {
+          answer: '1',
+          nextId: 'inonceTensHundredscorrectq10',
+        },
+        {
+          answer: '2',
+          nextId: 'inonceTensHundredscorrectq10',
+        },
+        {
+          answer: "3",
+          nextId: 'onceTensHundredscorrectq10',
+        },
+        {
+          answer: "4",
+          nextId: 'inonceTensHundredscorrectq10',
+        },
+      ],
+    
+    },
+    
+    onceTensHundredscorrectq10: {
+    botPrompt: 'Hurray! <strong>3</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[10],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq10: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"3"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[10],
+      },
+    ],
+    },
+    
+    //11
+    ['onceTensHundreds'+shuffledNumbersto[10]]: {
+    botPrompt: 'What is the digit in the tens place in the number 27?',
+    type: RTypes.TRANSFORMED_TEXT,
+  
+    input: selectField(['2', '7', "0","9"]),
+      answers: [
+        {
+          answer: '2',
+          nextId: 'onceTensHundredscorrectq11',
+        },
+        {
+          answer: '7',
+          nextId: 'inonceTensHundredscorrectq11',
+        },
+        {
+          answer: "0",
+          nextId: 'inonceTensHundredscorrectq11',
+        },
+        {
+          answer: "9",
+          nextId: 'inonceTensHundredscorrectq11',
+        },
+      ],
+    },
+    
+    onceTensHundredscorrectq11: {
+    botPrompt: 'Hurray! <strong>2</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[11],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq11: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"2"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[11],
+      },
+    ],
+    },
+    
+    //12
+    ['onceTensHundreds'+shuffledNumbersto[11]]: {
+    botPrompt: 'What is the digit in the ones place in the number 42?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['2', '4', "0","9"]),
+      answers: [
+        {
+          answer: '2',
+          nextId: 'onceTensHundredscorrectq12',
+        },
+        {
+          answer: '4',
+          nextId: 'inonceTensHundredscorrectq12',
+        },
+        {
+          answer: "0",
+          nextId: 'inonceTensHundredscorrectq12',
+        },
+        {
+          answer: "9",
+          nextId: 'inonceTensHundredscorrectq12',
+        },
+      ],
+    },
+    
+    onceTensHundredscorrectq12: {
+    botPrompt: 'Hurray! <strong>2</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[12],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq12: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"2"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[12],
+      },
+    ],
+    },
+    
+    //13
+    ['onceTensHundreds'+shuffledNumbersto[12]]: {
+    botPrompt: 'Which number comes after 63?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['64', '65', "66","67"]),
+      answers: [
+        {
+          answer: '64',
+          nextId: 'onceTensHundredscorrectq13',
+        },
+        {
+          answer: '65',
+          nextId: 'inonceTensHundredscorrectq13',
+        },
+        {
+          answer: "66",
+          nextId: 'inonceTensHundredscorrectq13',
+        },
+        {
+          answer: "67",
+          nextId: 'inonceTensHundredscorrectq13',
+        },
+      ],
+    },
+    
+    onceTensHundredscorrectq13: {
+    botPrompt: 'Hurray! <strong>64</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[13],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq13: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"64"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[13],
+      },
+    ],
+    },
+    
+    //14
+    ['onceTensHundreds'+shuffledNumbersto[13]]: {
+    botPrompt: 'Which number comes before 48?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['46', '47', "49","50"]),
+      answers: [
+        {
+          answer: '46',
+          nextId: 'inonceTensHundredscorrectq14',
+        },
+        {
+          answer: '47',
+          nextId: 'onceTensHundredscorrectq14',
+        },
+        {
+          answer: "49",
+          nextId: 'inonceTensHundredscorrectq14',
+        },
+        {
+          answer: "50",
+          nextId: 'inonceTensHundredscorrectq14',
+        },
+      ],
+    },
+    
+    onceTensHundredscorrectq14: {
+    botPrompt: 'Hurray! <strong>47</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[14],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq14: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"47"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[14],
+      },
+    ],
+    },
+    
+    
+    //15
+    ['onceTensHundreds'+shuffledNumbersto[14]]: {
+    botPrompt: 'Which number comes between 5 and 7?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['6', '8', "9","10"]),
+      answers: [
+        {
+          answer: '6',
+          nextId: 'onceTensHundredscorrectq15',
+        },
+        {
+          answer: '8',
+          nextId: 'inonceTensHundredscorrectq15',
+        },
+        {
+          answer: "9",
+          nextId: 'inonceTensHundredscorrectq15',
+        },
+        {
+          answer: "10",
+          nextId: 'inonceTensHundredscorrectq15',
+        },
+      ],
+    },
+    
+    onceTensHundredscorrectq15: {
+    botPrompt: 'Hurray! <strong>6</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[15],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq15: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"6"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[15],
+      },
+    ],
+    },
+    
+    //16
+    ['onceTensHundreds'+shuffledNumbersto[15]]: {
+      botPrompt: 'What is the digit in the hundreds place in the number 123?',
+      type: RTypes.TRANSFORMED_TEXT,
+      input: selectField(['1', '2', "3","0"]),
+      answers: [
+        {
+          answer: '1',
+          nextId: 'onceTensHundredscorrectq16',
+        },
+        {
+          answer: '2',
+          nextId: 'inonceTensHundredscorrectq16',
+        },
+        {
+          answer: "3",
+          nextId: 'inonceTensHundredscorrectq16',
+        },
+        {
+          answer: "0",
+          nextId: 'inonceTensHundredscorrectq16',
+        },
+      ],
+    },
+    onceTensHundredscorrectq16: {
+      botPrompt: 'You Have Selected correct Anwser 🎉! <strong>1</strong> 😎',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[16],
+        },
+      ],
+    },
+    inonceTensHundredscorrectq16: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"1"</strong>',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[16],
+        },
+      ],
+    },
+    
+    //17
+    ['onceTensHundreds'+shuffledNumbersto[16]]: {
+    botPrompt: 'Which number comes after 25?',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['26', '27', "28","29"]),
+      answers: [
+        {
+          answer: '26',
+          nextId: 'onceTensHundredscorrectq17',
+        },
+        {
+          answer: '27',
+          nextId: 'inonceTensHundredscorrectq17',
+        },
+        {
+          answer: "28",
+          nextId: 'inonceTensHundredscorrectq17',
+        },
+        {
+          answer: "29",
+          nextId: 'inonceTensHundredscorrectq17',
+        },
+      ],
+    },
+    onceTensHundredscorrectq17: {
+    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>26</strong> 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[17],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq17: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"26"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[17],
+      },
+    ],
+    },
+    
+    //18
+    ['onceTensHundreds'+shuffledNumbersto[17]]: {
+    botPrompt: 'Which number comes before 12?   ',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['9', '10', "11","13"]),
+    answers: [
+      {
+        answer: '9',
+        nextId: 'inonceTensHundredscorrectq18',
+      },
+      {
+        answer: '10',
+        nextId: 'inonceTensHundredscorrectq18',
+      },
+      {
+        answer: "11",
+        nextId: 'onceTensHundredscorrectq18',
+      },
+      {
+        answer: "13",
+        nextId: 'inonceTensHundredscorrectq18',
+      },
+    ],
+    },
+    onceTensHundredscorrectq18: {
+    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>11</strong> 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[18],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq18: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"11"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[18],
+      },
+    ],
+    },
+    
+    //19
+    ['onceTensHundreds'+shuffledNumbersto[18]]: {
+    botPrompt: 'What is the value of the digit 3 in the number 345?',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['300', '3', "30","3000"]),
+    answers: [
+      {
+        answer: '300',
+        nextId: 'onceTensHundredscorrectq19',
+      },
+      {
+        answer: '3',
+        nextId: 'inonceTensHundredscorrectq19',
+      },
+      {
+        answer: "30",
+        nextId: 'inonceTensHundredscorrectq19',
+      },
+      {
+        answer: "3000",
+        nextId: 'inonceTensHundredscorrectq19',
+      },
+    ],
+    },
+    onceTensHundredscorrectq19: {
+    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>300</strong> Answers! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[19],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq19: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"300"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[19],
+      },
+    ],
+    },
+    
+    //20
+    ['onceTensHundreds'+shuffledNumbersto[19]]: {
+    botPrompt: 'What is the digit in the ones place in the number 86?',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['8', '6', "0","2"]),
+    answers: [
+      {
+        answer: '8',
+        nextId: 'inonceTensHundredscorrectq20',
+      },
+      {
+        answer: '6',
+        nextId: 'onceTensHundredscorrectq20',
+      },
+      {
+        answer: "0",
+        nextId: 'inonceTensHundredscorrectq20',
+      },
+      {
+        answer: "2",
+        nextId: 'inonceTensHundredscorrectq20',
+      },
+    ],
+    },
+    onceTensHundredscorrectq20: {
+    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>22</strong> 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[20],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq20: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"22"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[20],
+      },
+    ],
+    },
+    
+    //21
+    ["onceTensHundreds"+shuffledNumbersto[20]]: {
+      botPrompt: 'Which number comes between 18 and 20?',
+      type: RTypes.TRANSFORMED_TEXT,
+      input: selectField(['17', '19', "21","22"]),
+    answers: [
+      {
+        answer: '17',
+        nextId: 'inonceTensHundredscorrectq21',
+      },
+      {
+        answer: '19',
+        nextId: 'onceTensHundredscorrectq21',
+      },
+      {
+        answer: "21",
+        nextId: 'inonceTensHundredscorrectq21',
+      },
+      {
+        answer: "22",
+        nextId: 'inonceTensHundredscorrectq21',
+      },
+    ],
+    },
+    onceTensHundredscorrectq21: {
+      botPrompt: 'Hurray <strong>19</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[21],
+        },
+      ],
+    },
+    inonceTensHundredscorrectq21: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>19</strong> answer is <strong>"23"</strong>',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[21],
+        },
+      ],
+    },
+    
+    //22
+    ['onceTensHundreds'+shuffledNumbersto[21]]: {
+      botPrompt: 'What is the digit in the tens place in the number 56?',
+      type: RTypes.TRANSFORMED_TEXT,
+    
+      input: selectField(['5', '6', "0","2"]),
+    answers: [
+      {
+        answer: '5',
+        nextId: 'onceTensHundredscorrectq22',
+      },
+      {
+        answer: '6',
+        nextId: 'inonceTensHundredscorrectq22',
+      },
+      {
+        answer: "0",
+        nextId: 'inonceTensHundredscorrectq22',
+      },
+      {
+        answer: "2",
+        nextId: 'inonceTensHundredscorrectq22',
+      },
+    ],
+    },
+    
+    onceTensHundredscorrectq22: {
+      botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[22],
+        },
+      ],
+    },
+    inonceTensHundredscorrectq22: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[22],
+        },
+      ],
+    },
+    
+    //23
+    ['onceTensHundreds'+shuffledNumbersto[22]]: {
+    botPrompt: "What is the value of the digit 2 in the number 825?",
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['2', '20', "200","2000"]),
+    answers: [
+      {
+        answer: '2',
+        nextId: 'inonceTensHundredscorrectq23',
+      },
+      {
+        answer: '20',
+        nextId: 'onceTensHundredscorrectq23',
+      },
+      {
+        answer: "200",
+        nextId: 'inonceTensHundredscorrectq23',
+      },
+      {
+        answer: "2000",
+        nextId: 'inonceTensHundredscorrectq23',
+      },
+    ],
+    },
+    
+    onceTensHundredscorrectq23: {
+    botPrompt: 'Hurray! <strong>20</strong> is the correct answer ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[23],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq23: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"20"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[23],
+      },
+    ],
+    },
+    
+    //24
+    ['onceTensHundreds'+shuffledNumbersto[23]]: {
+    botPrompt: 'What is the digit in the ones place in the number 73?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['7', '3', "0","4"]),
+    answers: [
+      {
+        answer: '7',
+        nextId: 'inonceTensHundredscorrectq24',
+      },
+      {
+        answer: '3',
+        nextId: 'onceTensHundredscorrectq24',
+      },
+      {
+        answer: "0",
+        nextId: 'inonceTensHundredscorrectq24',
+      },
+      {
+        answer: "4",
+        nextId: 'inonceTensHundredscorrectq24',
+      },
+    ],
+    },
+    
+    onceTensHundredscorrectq24: {
+    botPrompt: 'Hurray! <strong>3</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[24],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq24: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"3"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[24],
+      },
+    ],
+    },
+    
+    //25
+    ['onceTensHundreds'+shuffledNumbersto[24]]: {
+    botPrompt: 'What is the number at the units place in 124?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['1', '2', "4","0"]),
+    answers: [
+      {
+        answer: '1',
+        nextId: 'inonceTensHundredscorrectq25',
+      },
+      {
+        answer: '2',
+        nextId: 'inonceTensHundredscorrectq25',
+      },
+      {
+        answer: "4",
+        nextId: 'onceTensHundredscorrectq25',
+      },
+      {
+        answer: "0",
+        nextId: 'inonceTensHundredscorrectq25',
+      },
+    ],
+    },
+    
+    onceTensHundredscorrectq25: {
+    botPrompt: 'Hurray! <strong>4</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[25],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq25: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[25],
+      },
+    ],
+    },
+    
+    //26
+    ['onceTensHundreds'+shuffledNumbersto[25]]: {
+    botPrompt: 'What is the number at the tens place in 379?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['3', '7', "9","0"]),
+    answers: [
+      {
+        answer: '3',
+        nextId: 'inonceTensHundredscorrectq26',
+      },
+      {
+        answer: '7',
+        nextId: 'onceTensHundredscorrectq26',
+      },
+      {
+        answer: "9",
+        nextId: 'inonceTensHundredscorrectq26',
+      },
+      {
+        answer: "0",
+        nextId: 'inonceTensHundredscorrectq26',
+      },
+    ],
+    },
+    
+    onceTensHundredscorrectq26: {
+    botPrompt: 'Hurray! <strong>7</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[26],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq26: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"7"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[26],
+      },
+    ],
+    },
+    
+    //27
+    ['onceTensHundreds'+shuffledNumbersto[26]]: {
+    botPrompt: 'What is the number at the hundreds place in 548?',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['5', '4', "8","0"]),
+      answers: [
+        {
+          answer: '5',
+          nextId: 'onceTensHundredscorrectq27',
+        },
+        {
+          answer: '4',
+          nextId: 'inonceTensHundredscorrectq27',
+        },
+        {
+          answer: "8",
+          nextId: 'inonceTensHundredscorrectq27',
+        },
+        {
+          answer: "0",
+          nextId: 'inonceTensHundredscorrectq27',
+        },
+      ],
+    },
+    
+    onceTensHundredscorrectq27: {
+    botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[27],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq27: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[27],
+      },
+    ],
+    },
+    
+    
+    //28
+    ['onceTensHundreds'+shuffledNumbersto[27]]: {
+    botPrompt: 'Which of the following is the sum of digits at the units and tens place in the number 56?',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['9', '10', "11","12"]),
+    answers: [
+      {
+        answer: '9',
+        nextId: 'inonceTensHundredscorrectq28',
+      },
+      {
+        answer: '10',
+        nextId: 'inonceTensHundredscorrectq28',
+      },
+      {
+        answer: "11",
+        nextId: 'onceTensHundredscorrectq28',
+      },
+      {
+        answer: "12",
+        nextId: 'inonceTensHundredscorrectq28',
+      },
+    ],
+    },
+    
+    onceTensHundredscorrectq28: {
+    botPrompt: 'Hurray! <strong>11</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[28],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq28: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"11"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[28],
+      },
+    ],
+    },
+    
+    //29
+    ['onceTensHundreds'+shuffledNumbersto[28]]: {
+    botPrompt: 'What is the sum of digits at the tens and hundreds place in the number 387?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['6', '10', "15","18"]),
+      answers: [
+        {
+          answer: '6',
+          nextId: 'inonceTensHundredscorrectq29',
+        },
+        {
+          answer: '10',
+          nextId: 'inonceTensHundredscorrectq29',
+        },
+        {
+          answer: "15",
+          nextId: 'onceTensHundredscorrectq29',
+        },
+        {
+          answer: "18",
+          nextId: 'inonceTensHundredscorrectq29',
+        },
+      ],
+    },
+    
+    onceTensHundredscorrectq29: {
+    botPrompt: 'Hurray! <strong>15</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[29],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq29: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"15"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[29],
+      },
+    ],
+    },
+    
+    
+    //30
+    ['onceTensHundreds'+shuffledNumbersto[29]]: {
+    botPrompt: 'What is the number formed by the digits 5, 2, and 8?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['285', '582', "258","852"]),
+    answers: [
+      {
+        answer: '285',
+        nextId: 'inonceTensHundredscorrectq30',
+      },
+      {
+        answer: '582',
+        nextId: 'inonceTensHundredscorrectq30',
+      },
+      {
+        answer: "258",
+        nextId: 'onceTensHundredscorrectq30',
+      },
+      {
+        answer: "852",
+        nextId: 'inonceTensHundredscorrectq30',
+      },
+    ],
+    },
+  
+    onceTensHundredscorrectq30: {
+    botPrompt: 'Hurray! <strong>258</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[30],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq30: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"258"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[30],
+      },
+    ],
+    },
+    
+    //31
+    ['onceTensHundreds'+shuffledNumbersto[30]]: {
+    botPrompt: 'What is the sum of digits at the units place and hundreds place in the number 763?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['7', '9', "10","13"]),
+      answers: [
+        {
+          answer: '7',
+          nextId: 'inonceTensHundredscorrectq31',
+        },
+        {
+          answer: '9',
+          nextId: 'inonceTensHundredscorrectq31',
+        },
+        {
+          answer: "10",
+          nextId: 'onceTensHundredscorrectq31',
+        },
+        {
+          answer: "13",
+          nextId: 'inonceTensHundredscorrectq31',
+        },
+      ],
+    },
+    
+    onceTensHundredscorrectq31: {
+    botPrompt: 'Hurray! <strong>10</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[31],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq31: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"10"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[31],
+      },
+    ],
+    },
+    
+    //32
+    ['onceTensHundreds'+shuffledNumbersto[31]]: {
+    botPrompt: 'What is the number formed by the digits 4, 6, and 2?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['642', '426', "264","462"]),
+    answers: [
+      {
+        answer: '642',
+        nextId: 'inonceTensHundredscorrectq32',
+      },
+      {
+        answer: '426',
+        nextId: 'inonceTensHundredscorrectq32',
+      },
+      {
+        answer: "264",
+        nextId: 'inonceTensHundredscorrectq32',
+      },
+      {
+        answer: "462",
+        nextId: 'onceTensHundredscorrectq32',
+      },
+    ],
+    },
+    
+    onceTensHundredscorrectq32: {
+    botPrompt: 'Hurray! <strong>462</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[32],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq32: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"462"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[32],
+      },
+    ],
+    },
+    
+    //33
+    ['onceTensHundreds'+shuffledNumbersto[32]]: {
+    botPrompt: 'Which of the following is the sum of digits at the tens and units place in the number 73?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    
+    input: selectField(['5', '10', "11","12"]),
+    answers: [
+      {
+        answer: '5',
+        nextId: 'inonceTensHundredscorrectq33',
+      },
+      {
+        answer: '10',
+        nextId: 'onceTensHundredscorrectq33',
+      },
+      {
+        answer: "11",
+        nextId: 'inonceTensHundredscorrectq33',
+      },
+      {
+        answer: "12",
+        nextId: 'inonceTensHundredscorrectq33',
+      },
+    ],
+    },
+    
+    onceTensHundredscorrectq33: {
+    botPrompt: 'Hurray! <strong>10</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[33],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq33: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"10"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[33],
+      },
+    ],
+    },
+    
+    //34
+    ['onceTensHundreds'+shuffledNumbersto[33]]: {
+    botPrompt: 'What is the number formed by the digits 9, 0, and 1?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['109', '901', "190","910"]),
+      answers: [
+        {
+          answer: '109',
+          nextId: 'inonceTensHundredscorrectq34',
+        },
+        {
+          answer: '901',
+          nextId: 'inonceTensHundredscorrectq34',
+        },
+        {
+          answer: "190",
+          nextId: 'onceTensHundredscorrectq34',
+        },
+        {
+          answer: "910",
+          nextId: 'inonceTensHundredscorrectq34',
+        },
+      ],
+    },
+    
+    onceTensHundredscorrectq34: {
+    botPrompt: 'Hurray! <strong>190</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[34],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq34: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"190"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[34],
+      },
+    ],
+    },
+    
+    
+    //35
+    ['onceTensHundreds'+shuffledNumbersto[34]]: {
+    botPrompt: 'What is the sum of digits at the units place and tens place in the number 48?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+  
+    input: selectField(['6', '8', "10","12"]),
+    answers: [
+      {
+        answer: '6',
+        nextId: 'inonceTensHundredscorrectq35',
+      },
+      {
+        answer: '8',
+        nextId: 'inonceTensHundredscorrectq35',
+      },
+      {
+        answer: "10",
+        nextId: 'inonceTensHundredscorrectq35',
+      },
+      {
+        answer: "12",
+        nextId: 'onceTensHundredscorrectq35',
+      },
+    ],
+    },
+    
+    onceTensHundredscorrectq35: {
+    botPrompt: 'Hurray! <strong>12</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[35],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq35: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"12"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[35],
+      },
+    ],
+    },
+    
+    //36
+    ['onceTensHundreds'+shuffledNumbersto[35]]: {
+      botPrompt: 'What is the number formed by the digits 6, 3, and 7?',
+      type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['367', '376', "736","763"]),
+    answers: [
+      {
+        answer: '367',
+        nextId: 'onceTensHundredscorrectq36',
+      },
+      {
+        answer: '376',
+        nextId: 'inonceTensHundredscorrectq36',
+      },
+      {
+        answer: "736",
+        nextId: 'inonceTensHundredscorrectq36',
+      },
+      {
+        answer: "48",
+        nextId: 'inonceTensHundredscorrectq36',
+      },
+    ],
+    },
+    onceTensHundredscorrectq36: {
+      botPrompt: 'You Have Selected correct Anwser 🎉! <strong>367</strong> 😎',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[36],
+        },
+      ],
+    },
+    inonceTensHundredscorrectq36: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"367"</strong>',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[36],
+        },
+      ],
+    },
+    
+    //37
+    ['onceTensHundreds'+shuffledNumbersto[36]]: {
+    botPrompt: 'Which of the following is the sum of digits at the hundreds and units place in the number 549?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['8', '9', "10","14"]),
+    answers: [
+      {
+        answer: '8',
+        nextId: 'inonceTensHundredscorrectq37',
+      },
+      {
+        answer: '9',
+        nextId: 'onceTensHundredscorrectq37',
+      },
+      {
+        answer: "10",
+        nextId: 'inonceTensHundredscorrectq37',
+      },
+      {
+        answer: "14",
+        nextId: 'inonceTensHundredscorrectq37',
+      },
+    ],
+    },
+    onceTensHundredscorrectq37: {
+    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>9</strong> 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[37],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq37: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"9"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[37],
+      },
+    ],
+    },
+    
+    //38
+    ['onceTensHundreds'+shuffledNumbersto[37]]: {
+    botPrompt: 'What is the largest number formed by the digits 8, 5, and 2?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['285', '852', "528","582"]),
+      answers: [
+        {
+          answer: '285',
+          nextId: 'inonceTensHundredscorrectq38',
+        },
+        {
+          answer: '852',
+          nextId: 'onceTensHundredscorrectq38',
+        },
+        {
+          answer: "528",
+          nextId: 'inonceTensHundredscorrectq38',
+        },
+        {
+          answer: "582",
+          nextId: 'inonceTensHundredscorrectq38',
+        },
+      ],
+    },
+    onceTensHundredscorrectq38: {
+    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>852</strong> 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[38],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq38: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"852"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[38],
+      },
+    ],
+    },
+    
+    //39
+    ['onceTensHundreds'+shuffledNumbersto[38]]: {
+    botPrompt: 'What is the sum of digits at the tens place and units place in the number 37?',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['3', '7', "10","13"]),
+    answers: [
+      {
+        answer: '3',
+        nextId: 'inonceTensHundredscorrectq310',
+      },
+      {
+        answer: '7',
+        nextId: 'inonceTensHundredscorrectq39',
+      },
+      {
+        answer: "10",
+        nextId: 'onceTensHundredscorrectq39',
+      },
+      {
+        answer: "13",
+        nextId: 'inonceTensHundredscorrectq39',
+      },
+    ],
+    },
+    onceTensHundredscorrectq39: {
+    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>10</strong> Answers! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[39],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq39: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"10"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[39],
+      },
+    ],
+    },
+    
+    //40
+    ['onceTensHundreds'+shuffledNumbersto[39]]: {
+    botPrompt: 'What is the number at the units place in the number 43?',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['3', '4', "5","32"]),
+      answers: [
+        {
+          answer: '3',
+          nextId: 'onceTensHundredscorrectq40',
+        },
+        {
+          answer: '4',
+          nextId: 'inonceTensHundredscorrectq40',
+        },
+        {
+          answer: "5",
+          nextId: 'inonceTensHundredscorrectq40',
+        },
+        {
+          answer: "6",
+          nextId: 'inonceTensHundredscorrectq40',
+        },
+      ],
+    },
+    onceTensHundredscorrectq40: {
+    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>3</strong> 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[40],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq40: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"3"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[40],
+      },
+    ],
+    },
+    
+    //41
+    ["onceTensHundreds"+shuffledNumbersto[40]]: {
+      botPrompt: 'What is the number at the tens place in the number 65?',
+      type: RTypes.TRANSFORMED_TEXT,
+      input: selectField(['4', '5', "6","7"]),
+      answers: [
+        {
+          answer: '4',
+          nextId: 'inonceTensHundredscorrectq41',
+        },
+        {
+          answer: '5',
+          nextId: 'onceTensHundredscorrectq41',
+        },
+        {
+          answer: "6",
+          nextId: 'inonceTensHundredscorrectq41',
+        },
+        {
+          answer: "7",
+          nextId: 'inonceTensHundredscorrectq41',
+        },
+      ],
+    },
+    onceTensHundredscorrectq41: {
+      botPrompt: 'Hurray <strong>5</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[41],
+        },
+      ],
+    },
+    inonceTensHundredscorrectq41: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[41],
+        },
+      ],
+    },
+    
+    //42
+    
+    ['onceTensHundreds'+shuffledNumbersto[41]]: {
+      botPrompt: 'What is the sum of digits at the units place and tens place in the number 28?',
+      type: RTypes.TRANSFORMED_TEXT,
+    
+      input: selectField(['6', '7', "8","9"]),
+      answers: [
+        {
+          answer: '6',
+          nextId: 'inonceTensHundredscorrectq42',
+        },
+        {
+          answer: '7',
+          nextId: 'inonceTensHundredscorrectq42',
+        },
+        {
+          answer: "8",
+          nextId: 'onceTensHundredscorrectq42',
+        },
+        {
+          answer: "9",
+          nextId: 'inonceTensHundredscorrectq42',
+        },
+      ],
+    },
+    
+    onceTensHundredscorrectq42: {
+      botPrompt: 'Hurray! <strong>8</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[42],
+        },
+      ],
+    },
+    inonceTensHundredscorrectq42: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"8"</strong>',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[42],
+        },
+      ],
+    },
+    
+    //43
+    ['onceTensHundreds'+shuffledNumbersto[42]]: {
+    botPrompt: "What is the number at the units place in the number 91?",
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['0', '1', "2","3"]),
+      answers: [
+        {
+          answer: '0',
+          nextId: 'inonceTensHundredscorrectq43',
+        },
+        {
+          answer: '1',
+          nextId: 'onceTensHundredscorrectq43',
+        },
+        {
+          answer: "2",
+          nextId: 'inonceTensHundredscorrectq43',
+        },
+        {
+          answer: "3",
+          nextId: 'inonceTensHundredscorrectq43',
+        },
+      ],
+    },
+    
+    onceTensHundredscorrectq43: {
+    botPrompt: 'Hurray! <strong>1</strong> is the correct answer ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[43],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq43: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"1"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[43],
+      },
+    ],
+    },
+    
+    //44
+    ['onceTensHundreds'+shuffledNumbersto[43]]: {
+    botPrompt: 'What is the number at the tens place in the number 25?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['2', '5', "8","9"]),
+      answers: [
+        {
+          answer: '2',
+          nextId: 'onceTensHundredscorrectq44',
+        },
+        {
+          answer: '5',
+          nextId: 'inonceTensHundredscorrectq44',
+        },
+        {
+          answer: "8",
+          nextId: 'inonceTensHundredscorrectq44',
+        },
+        {
+          answer: "9",
+          nextId: 'inonceTensHundredscorrectq44',
+        },
+      ],
+    },
+    
+    onceTensHundredscorrectq44: {
+    botPrompt: 'Hurray! <strong>2</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[44],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq44: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"2"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[44],
+      },
+    ],
+    },
+    
+    //45
+    ['onceTensHundreds'+shuffledNumbersto[44]]: {
+    botPrompt: 'What is the sum of digits at the units place and tens place in the number 57?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['11', '12', "13","14"]),
+      answers: [
+        {
+          answer: '11',
+          nextId: 'inonceTensHundredscorrectq45',
+        },
+        {
+          answer: '12',
+          nextId: 'onceTensHundredscorrectq45',
+        },
+        {
+          answer: "13",
+          nextId: 'inonceTensHundredscorrectq45',
+        },
+        {
+          answer: "14",
+          nextId: 'inonceTensHundredscorrectq45',
+        },
+      ],
+    },
+    
+    onceTensHundredscorrectq45: {
+    botPrompt: 'Hurray! <strong>12</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[45],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq45: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"12"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[45],
+      },
+    ],
+    },
+    
+    //46
+    ['onceTensHundreds'+shuffledNumbersto[45]]: {
+    botPrompt: 'What is the number at the units place in the number 76?',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['5', '6', "7","8"]),
+      answers: [
+        {
+          answer: '5',
+          nextId: 'inonceTensHundredscorrectq46',
+        },
+        {
+          answer: '6',
+          nextId: 'onceTensHundredscorrectq46',
+        },
+        {
+          answer: "7",
+          nextId: 'inonceTensHundredscorrectq46',
+        },
+        {
+          answer: "8",
+          nextId: 'inonceTensHundredscorrectq46',
+        },
+      ],
+    },
+    
+    onceTensHundredscorrectq46: {
+    botPrompt: 'Hurray! <strong>6</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[46],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq46: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"6"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[46],
+      },
+    ],
+    },
+    
+    //47
+    ['onceTensHundreds'+shuffledNumbersto[46]]: {
+    botPrompt: 'What is the number at the tens place in the number 38?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['3', '5', "8","9"]),
+      answers: [
+        {
+          answer: '3',
+          nextId: 'onceTensHundredscorrectq47',
+        },
+        {
+          answer: '5',
+          nextId: 'inonceTensHundredscorrectq47',
+        },
+        {
+          answer: "8",
+          nextId: 'inonceTensHundredscorrectq47',
+        },
+        {
+          answer: "9",
+          nextId: 'inonceTensHundredscorrectq47',
+        },
+      ],
+    },
+    
+    onceTensHundredscorrectq47: {
+    botPrompt: 'Hurray! <strong>3</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[47],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq47: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"3"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[47],
+      },
+    ],
+    },
+  
+  
+    //48
+    ['onceTensHundreds'+shuffledNumbersto[47]]: {
+    botPrompt: 'What is the sum of digits at the units place and tens place in the number 39?',
+    type: RTypes.TRANSFORMED_TEXT,
+  
+    input: selectField(['9', '11', "13","15"]),
+      answers: [
+        {
+          answer: '9',
+          nextId: 'onceTensHundredscorrectq48',
+        },
+        {
+          answer: '11',
+          nextId: 'inonceTensHundredscorrectq48',
+        },
+        {
+          answer: "13",
+          nextId: 'inonceTensHundredscorrectq48',
+        },
+        {
+          answer: "15",
+          nextId: 'inonceTensHundredscorrectq48',
+        },
+      ],
+    },
+    
+    onceTensHundredscorrectq48: {
+    botPrompt: 'Hurray! <strong>9</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[48],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq48: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"9"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[48],
+      },
+    ],
+    },
+    
+    //49
+    ['onceTensHundreds'+shuffledNumbersto[48]]: {
+    botPrompt: 'What is the sum of digits at the units place and tens place in the number 39?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['9', '11', "13","15"]),
+      answers: [
+        {
+          answer: '9',
+          nextId: 'onceTensHundredscorrectq49',
+        },
+        {
+          answer: '11',
+          nextId: 'inonceTensHundredscorrectq49',
+        },
+        {
+          answer: "13",
+          nextId: 'inonceTensHundredscorrectq49',
+        },
+        {
+          answer: "15",
+          nextId: 'inonceTensHundredscorrectq49',
+        },
+      ],
+    },
+    
+    onceTensHundredscorrectq49: {
+    botPrompt: 'Hurray! <strong>9</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[49],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq49: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"9"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[49],
+      },
+    ],
+    },
+    
+    
+    //50
+    ['onceTensHundreds'+shuffledNumbersto[49]]: {
+    botPrompt: 'What is the number at the units place in the number 52?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['2', '5', "7","9"]),
+      answers: [
+        {
+          answer: '2',
+          nextId: 'inonceTensHundredscorrectq50',
+        },
+        {
+          answer: '5',
+          nextId: 'onceTensHundredscorrectq50',
+        },
+        {
+          answer: "7",
+          nextId: 'inonceTensHundredscorrectq50',
+        },
+        {
+          answer: "9",
+          nextId: 'inonceTensHundredscorrectq50',
+        },
+      ],
+    },
+    
+    onceTensHundredscorrectq50: {
+    botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[50],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq50: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[50],
+      },
+    ],
+    },
+    
+    //51
+    ['onceTensHundreds'+shuffledNumbersto[50]]: {
+    botPrompt: 'What is the number at the tens place in the number 74?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['4', '6', "7","9"]),
+      answers: [
+        {
+          answer: '7',
+          nextId: 'inonceTensHundredscorrectq51',
+        },
+        {
+          answer: '6',
+          nextId: 'inonceTensHundredscorrectq51',
+        },
+        {
+          answer: "7",
+          nextId: 'onceTensHundredscorrectq51',
+        },
+        {
+          answer: "9",
+          nextId: 'inonceTensHundredscorrectq51',
+        },
+      ],
+    },
+    
+    onceTensHundredscorrectq51: {
+    botPrompt: 'Hurray! <strong>4</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[51],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq51: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[51],
+      },
+    ],
+    },
+    
+    //52
+    ['onceTensHundreds'+shuffledNumbersto[51]]: {
+    botPrompt: 'What is the sum of digits at the units place and tens place in the number 43?',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['7', '8', "9","10"]),
+      answers: [
+        {
+          answer: '7',
+          nextId: 'onceTensHundredscorrectq52',
+        },
+        {
+          answer: '8',
+          nextId: 'inonceTensHundredscorrectq52',
+        },
+        {
+          answer: "9",
+          nextId: 'inonceTensHundredscorrectq52',
+        },
+        {
+          answer: "10",
+          nextId: 'inonceTensHundredscorrectq52',
+        },
+      ],
+    },
+    
+    onceTensHundredscorrectq52: {
+    botPrompt: 'Hurray! <strong>7</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[52],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq52: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"7"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[52],
+      },
+    ],
+    },
+    
+    //53
+    ['onceTensHundreds'+shuffledNumbersto[52]]: {
+    botPrompt: 'What is the number at the units place in the number 85?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['3', '5', "8","9"]),
+      answers: [
+        {
+          answer: '3',
+          nextId: 'inonceTensHundredscorrectq53',
+        },
+        {
+          answer: '5',
+          nextId: 'onceTensHundredscorrectq53',
+        },
+        {
+          answer: "8",
+          nextId: 'inonceTensHundredscorrectq53',
+        },
+        {
+          answer: "9",
+          nextId: 'inonceTensHundredscorrectq53',
+        },
+      ],
+    },
+  
+    onceTensHundredscorrectq53: {
+    botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[53],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq53: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[53],
+      },
+    ],
+    },
+    
+    //54
+    ['onceTensHundreds'+shuffledNumbersto[53]]: {
+    botPrompt: 'What is the number at the tens place in the number 36?',
+    type: RTypes.TRANSFORMED_TEXT,
+  
+    input: selectField(['2', '3', "6","8"]),
+      answers: [
+        {
+          answer: '2',
+          nextId: 'inonceTensHundredscorrectq54',
+        },
+        {
+          answer: '3',
+          nextId: 'onceTensHundredscorrectq54',
+        },
+        {
+          answer: "6",
+          nextId: 'inonceTensHundredscorrectq54',
+        },
+        {
+          answer: "8",
+          nextId: 'inonceTensHundredscorrectq54',
+        },
+      ],
+    },
+    
+    onceTensHundredscorrectq54: {
+    botPrompt: 'Hurray! <strong>3</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[54],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq54: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"3"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[54],
+      },
+    ],
+    },
+    
+    
+    //55
+    ['onceTensHundreds'+shuffledNumbersto[54]]: {
+    botPrompt: 'What is the sum of digits at the units place and tens place in the number 61?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['6', '7', "8","9"]),
+      answers: [
+        {
+          answer: '6',
+          nextId: 'inonceTensHundredscorrectq55',
+        },
+        {
+          answer: '7',
+          nextId: 'inonceTensHundredscorrectq55',
+        },
+        {
+          answer: "8",
+          nextId: 'onceTensHundredscorrectq55',
+        },
+        {
+          answer: "9",
+          nextId: 'inonceTensHundredscorrectq55',
+        },
+      ],
+    },
+    
+    onceTensHundredscorrectq55: {
+    botPrompt: 'Hurray! <strong>8</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[55],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq55: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"8"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[55],
+      },
+    ],
+    },
+    
+    //56
+    ['onceTensHundreds'+shuffledNumbersto[55]]: {
+      botPrompt: 'What is the value of the digit in the units place in the number 537?',
+      type: RTypes.TRANSFORMED_TEXT,
+      input: selectField(['3', '5', "7","9"]),
+      answers: [
+        {
+          answer: '3',
+          nextId: 'inonceTensHundredscorrectq56',
+        },
+        {
+          answer: '5',
+          nextId: 'inonceTensHundredscorrectq56',
+        },
+        {
+          answer: "7",
+          nextId: 'onceTensHundredscorrectq56',
+        },
+        {
+          answer: "9",
+          nextId: 'inonceTensHundredscorrectq56',
+        },
+      ],
+    },
+    onceTensHundredscorrectq56: {
+      botPrompt: 'You Have Selected correct Anwser 🎉! <strong>7</strong> 😎',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[56],
+        },
+      ],
+    },
+    inonceTensHundredscorrectq56: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"7"</strong>',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[56],
+        },
+      ],
+    },
+  
+    //57
+    ['onceTensHundreds'+shuffledNumbersto[56]]: {
+    botPrompt: 'What is the value of the digit in the tens place in the number 864?',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['4', '6', "8","3"]),
+      answers: [
+        {
+          answer: '4',
+          nextId: 'inonceTensHundredscorrectq57',
+        },
+        {
+          answer: '6',
+          nextId: 'onceTensHundredscorrectq57',
+        },
+        {
+          answer: "8",
+          nextId: 'inonceTensHundredscorrectq57',
+        },
+        {
+          answer: "3",
+          nextId: 'inonceTensHundredscorrectq57',
+        },
+      ],
+    },
+    onceTensHundredscorrectq57: {
+    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>6</strong> 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[57],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq57: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"6"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[57],
+      },
+    ],
+    },
+    
+    //58
+    ['onceTensHundreds'+shuffledNumbersto[57]]: {
+    botPrompt: 'What number can be formed by using the digits 2 and 7 at units and tens place respectively?',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['72', '27', "52","25"]),
+    answers: [
+      {
+        answer: '72',
+        nextId: 'inonceTensHundredscorrectq58',
+      },
+      {
+        answer: '27',
+        nextId: 'onceTensHundredscorrectq58',
+      },
+      {
+        answer: "52",
+        nextId: 'inonceTensHundredscorrectq58',
+      },
+      {
+        answer: "25",
+        nextId: 'inonceTensHundredscorrectq58',
+      },
+    ],
+    },
+    onceTensHundredscorrectq58: {
+    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>27</strong> 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[58],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq58: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"27"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[58],
+      },
+    ],
+    },
+    
+    //59
+    ['onceTensHundreds'+shuffledNumbersto[58]]: {
+    botPrompt: 'What is the sum of the digits at units and tens place in the number 458?',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['12', '13', "14","9"]),
+      answers: [
+        {
+          answer: '12',
+          nextId: 'onceTensHundredscorrectq57',
+        },
+        {
+          answer: '13',
+          nextId: 'inonceTensHundredscorrectq57',
+        },
+        {
+          answer: "11",
+          nextId: 'inonceTensHundredscorrectq57',
+        },
+        {
+          answer: "9",
+          nextId: 'inonceTensHundredscorrectq57',
+        },
+      ],
+    },
+    onceTensHundredscorrectq59: {
+    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>12</strong> Answers! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[59],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq59: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"12"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[59],
+      },
+    ],
+    },
+    
+    //60
+    ['onceTensHundreds'+shuffledNumbersto[59]]: {
+    botPrompt: 'What is the largest possible number that can be formed using the digits 5 and 8 at units place?',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['85', '58', "95","59"]),
+    answers: [
+      {
+        answer: '85',
+        nextId: 'inonceTensHundredscorrectq60',
+      },
+      {
+        answer: '58',
+        nextId: 'onceTensHundredscorrectq60',
+      },
+      {
+        answer: "95",
+        nextId: 'inonceTensHundredscorrectq60',
+      },
+      {
+        answer: "59",
+        nextId: 'inonceTensHundredscorrectq60',
+      },
+    ],
+    },
+    onceTensHundredscorrectq20: {
+    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>58</strong> 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[60],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq20: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"58"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[60],
+      },
+    ],
+    },
+    
+    //61
+    ["onceTensHundreds"+shuffledNumbersto[60]]: {
+      botPrompt: 'What is the smallest possible number that can be formed using the digits 2 and 6 at tens place?',
+      type: RTypes.TRANSFORMED_TEXT,
+      input: selectField(['26', '62', "20","6"]),
+      answers: [
+        {
+          answer: '26',
+          nextId: 'onceTensHundredscorrectq61',
+        },
+        {
+          answer: '62',
+          nextId: 'inonceTensHundredscorrectq61',
+        },
+        {
+          answer: "20",
+          nextId: 'inonceTensHundredscorrectq61',
+        },
+        {
+          answer: "6",
+          nextId: 'inonceTensHundredscorrectq61',
+        },
+      ],
+    },
+    onceTensHundredscorrectq61: {
+      botPrompt: 'Hurray <strong>26</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[61],
+        },
+      ],
+    },
+    inonceTensHundredscorrectq61: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"26"</strong>',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[61],
+        },
+      ],
+    },
+    
+    //62
+    ['onceTensHundreds'+shuffledNumbersto[61]]: {
+      botPrompt: 'What is the sum of the digits at units and tens place in the number 973?',
+      type: RTypes.TRANSFORMED_TEXT,
+      input: selectField(['10', '18', "19","16"]),
+      answers: [
+        {
+          answer: '10',
+          nextId: 'inonceTensHundredscorrectq62',
+        },
+        {
+          answer: '18',
+          nextId: 'inonceTensHundredscorrectq62',
+        },
+        {
+          answer: "19",
+          nextId: 'inonceTensHundredscorrectq62',
+        },
+        {
+          answer: "16",
+          nextId: 'onceTensHundredscorrectq62',
+        },
+      ],
+    },
+    
+    onceTensHundredscorrectq62: {
+      botPrompt: 'Hurray! <strong>16</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[62],
+        },
+      ],
+    },
+    inonceTensHundredscorrectq62: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"16"</strong>',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[62],
+        },
+      ],
+    },
+    
+    //63
+    ['onceTensHundreds'+shuffledNumbersto[62]]: {
+    botPrompt: "What is the value of the digit in the units place in the number 674?",
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['3', '6', "4","7"]),
+      answers: [
+        {
+          answer: '3',
+          nextId: 'inonceTensHundredscorrectq63',
+        },
+        {
+          answer: '6',
+          nextId: 'inonceTensHundredscorrectq63',
+        },
+        {
+          answer: "4",
+          nextId: 'onceTensHundredscorrectq63',
+        },
+        {
+          answer: "7",
+          nextId: 'inonceTensHundredscorrectq63',
+        },
+      ],
+    },
+    
+    onceTensHundredscorrectq63: {
+    botPrompt: 'Hurray! <strong>4</strong> is the correct answer ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[63],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq63: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[63],
+      },
+    ],
+    },
+  
+    //64
+    ['onceTensHundreds'+shuffledNumbersto[63]]: {
+    botPrompt: 'What is the value of the digit in the tens place in the number 157?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['1', '5', "7","9"]),
+    answers: [
+      {
+        answer: '1',
+        nextId: 'inonceTensHundredscorrectq64',
+      },
+      {
+        answer: '5',
+        nextId: 'onceTensHundredscorrectq64',
+      },
+      {
+        answer: "7",
+        nextId: 'inonceTensHundredscorrectq64',
+      },
+      {
+        answer: "9",
+        nextId: 'inonceTensHundredscorrectq64',
+      },
+    ],
+    },
+    
+    onceTensHundredscorrectq64: {
+    botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[64],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq2: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[64],
+      },
+    ],
+    },
+    
+    //65
+    ['onceTensHundreds'+shuffledNumbersto[64]]: {
+    botPrompt: 'What number can be formed by using the digits 3 and 6 at units and tens place respectively?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['36', '63', "32","23"]),
+      answers: [
+        {
+          answer: '36',
+          nextId: 'inonceTensHundredscorrectq65',
+        },
+        {
+          answer: '63',
+          nextId: 'onceTensHundredscorrectq65',
+        },
+        {
+          answer: "32",
+          nextId: 'inonceTensHundredscorrectq65',
+        },
+        {
+          answer: "23",
+          nextId: 'inonceTensHundredscorrectq65',
+        },
+      ],
+    },
+    
+    onceTensHundredscorrectq65: {
+    botPrompt: 'Hurray! <strong>63</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[65],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq65: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"63"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[65],
+      },
+    ],
+    },
+    
+    //66
+    ['onceTensHundreds'+shuffledNumbersto[65]]: {
+    botPrompt: 'What is the sum of the digits at units and tens place in the number 538?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['11', '16', "13","14"]),
+    answers: [
+      {
+        answer: '11',
+        nextId: 'onceTensHundredscorrectq66',
+      },
+      {
+        answer: '16',
+        nextId: 'inonceTensHundredscorrectq66',
+      },
+      {
+        answer: "13",
+        nextId: 'inonceTensHundredscorrectq66',
+      },
+      {
+        answer: "14",
+        nextId: 'inonceTensHundredscorrectq66',
+      },
+    ],
+    },
+    
+    onceTensHundredscorrectq66: {
+    botPrompt: 'Hurray! <strong>11</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[66],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq66: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"11"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[66],
+      },
+    ],
+    },
+    
+    //67
+    ['onceTensHundreds'+shuffledNumbersto[66]]: {
+    botPrompt: 'What is the number with 4 in the units place and 6 in the tens place?',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['46', '64', "56","54"]),
+    answers: [
+      {
+        answer: '46',
+        nextId: 'onceTensHundredscorrectq67',
+      },
+      {
+        answer: '64',
+        nextId: 'inonceTensHundredscorrectq67',
+      },
+      {
+        answer: "56",
+        nextId: 'inonceTensHundredscorrectq67',
+      },
+      {
+        answer: "54",
+        nextId: 'inonceTensHundredscorrectq67',
+      },
+    ],
+    },
+    
+    onceTensHundredscorrectq67: {
+    botPrompt: 'Hurray! <strong>46</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[67],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq67: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"46"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[67],
+      },
+    ],
+    },
+    
+    
+    //68
+    ['onceTensHundreds'+shuffledNumbersto[67]]: {
+    botPrompt: 'Which of these numbers has a digit sum of 8 in the units and tens place?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    
+    input: selectField(['44', '17', "53","26"]),
+      answers: [
+        {
+          answer: '44',
+          nextId: 'onceTensHundredscorrectq68',
+        },
+        {
+          answer: '17',
+          nextId: 'inonceTensHundredscorrectq68',
+        },
+        {
+          answer: "53",
+          nextId: 'inonceTensHundredscorrectq68',
+        },
+        {
+          answer: "26",
+          nextId: 'inonceTensHundredscorrectq68',
+        },
+      ],
+    },
+    
+    onceTensHundredscorrectq68: {
+    botPrompt: 'Hurray! <strong>44</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[68],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq68: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"44"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[68],
+      },
+    ],
+    },
+    
+    //69
+    ['onceTensHundreds'+shuffledNumbersto[68]]: {
+    botPrompt: 'What is the number with 5 in the units place, 6 in the tens place, and 3 in the hundreds place?',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['653', '536', "365","356"]),
+    answers: [
+      {
+        answer: '653',
+        nextId: 'inonceTensHundredscorrectq69',
+      },
+      {
+        answer: '536',
+        nextId: 'inonceTensHundredscorrectq69',
+      },
+      {
+        answer: "365",
+        nextId: 'inonceTensHundredscorrectq69',
+      },
+      {
+        answer: "356",
+        nextId: 'onceTensHundredscorrectq69',
+      },
+    ],
+    },
+    
+    onceTensHundredscorrectq69: {
+    botPrompt: 'Hurray! <strong>356</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[69],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq69: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"356"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[69],
+      },
+    ],
+    },
+  
+    
+    //70
+    ['onceTensHundreds'+shuffledNumbersto[69]]: {
+    botPrompt: 'Which of these numbers has a digit sum of 12 in the units, tens, and hundreds place?',
+    type: RTypes.TRANSFORMED_TEXT,
+  
+    input: selectField(['543', '555', "222","111"]),
+    answers: [
+      {
+        answer: '543',
+        nextId: 'onceTensHundredscorrectq70',
+      },
+      {
+        answer: '555',
+        nextId: 'inonceTensHundredscorrectq70',
+      },
+      {
+        answer: "222",
+        nextId: 'inonceTensHundredscorrectq70',
+      },
+      {
+        answer: "111",
+        nextId: 'inonceTensHundredscorrectq70',
+      },
+    ],
+    },
+  
+    onceTensHundredscorrectq70: {
+    botPrompt: 'Hurray! <strong>543</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[70],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq70: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"543"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[70],
+      },
+    ],
+    },
+  
+    //71
+    ['onceTensHundreds'+shuffledNumbersto[70]]: {
+    botPrompt: 'What is the number with 8 in the units place, 7 in the tens place, and 2 in the hundreds place?',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['278', '782', "872","728"]),
+      answers: [
+        {
+          answer: '278',
+          nextId: 'inonceTensHundredscorrectq71',
+        },
+        {
+          answer: '782',
+          nextId: 'inonceTensHundredscorrectq71',
+        },
+        {
+          answer: "872",
+          nextId: 'inonceTensHundredscorrectq71',
+        },
+        {
+          answer: "728",
+          nextId: 'onceTensHundredscorrectq71',
+        },
+      ],
+    },
+  
+    onceTensHundredscorrectq71: {
+    botPrompt: 'Hurray! <strong>728</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[71],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq71: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"728"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[71],
+      },
+    ],
+    },
+  
+    //72
+    ['onceTensHundreds'+shuffledNumbersto[71]]: {
+    botPrompt: 'Which of these numbers has a digit sum of 15 in the units, tens, and hundreds place?',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['888', '777', "555","333"]),
+    answers: [
+      {
+        answer: '888',
+        nextId: 'onceTensHundredscorrectq72',
+      },
+      {
+        answer: '777',
+        nextId: 'inonceTensHundredscorrectq72',
+      },
+      {
+        answer: "555",
+        nextId: 'inonceTensHundredscorrectq72',
+      },
+      {
+        answer: "333",
+        nextId: 'inonceTensHundredscorrectq72',
+      },
+    ],
+    },
+  
+    onceTensHundredscorrectq72: {
+    botPrompt: 'Hurray! <strong>888</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[72],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq72: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"888"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[72],
+      },
+    ],
+    },
+  
+    //73
+    ['onceTensHundreds'+shuffledNumbersto[72]]: {
+    botPrompt: 'What is the number with 9 in the units place and 2 in the tens place?',
+    type: RTypes.TRANSFORMED_TEXT,
+  
+    input: selectField(['92', '29', "19","91"]),
+      answers: [
+        {
+          answer: '92',
+          nextId: 'onceTensHundredscorrectq73',
+        },
+        {
+          answer: '29',
+          nextId: 'inonceTensHundredscorrectq73',
+        },
+        {
+          answer: "19",
+          nextId: 'inonceTensHundredscorrectq73',
+        },
+        {
+          answer: "91",
+          nextId: 'inonceTensHundredscorrectq73',
+        },
+      ],
+    },
+  
+    onceTensHundredscorrectq73: {
+    botPrompt: 'Hurray! <strong>92</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[73],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq73: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"92"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[73],
+      },
+    ],
+    },
+  
+    //74
+    ['onceTensHundreds'+shuffledNumbersto[73]]: {
+    botPrompt: 'Which of these numbers has a digit sum of 9 in the units and tens place?',
+    type: RTypes.TRANSFORMED_TEXT,
+  
+    input: selectField(['54', '18', "72","45"]),
+    answers: [
+      {
+        answer: '54',
+        nextId: 'inonceTensHundredscorrectq74',
+      },
+      {
+        answer: '18',
+        nextId: 'inonceTensHundredscorrectq74',
+      },
+      {
+        answer: "72",
+        nextId: 'inonceTensHundredscorrectq74',
+      },
+      {
+        answer: "45",
+        nextId: 'onceTensHundredscorrectq74',
+      },
+    ],
+    },
+  
+    onceTensHundredscorrectq74: {
+    botPrompt: 'Hurray! <strong>45</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[74],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq74: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"45"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[74],
+      },
+    ],
+    },
+  
+  
+    //75
+    ['onceTensHundreds'+shuffledNumbersto[74]]: {
+    botPrompt: 'What is the number with 7 in the units place, 5 in the tens place, and 1 in the hundreds place?',
+    type: RTypes.TRANSFORMED_TEXT,
+  
+  
+    input: selectField(['157', '517', "571","751"]),
+      answers: [
+        {
+          answer: '157',
+          nextId: 'inonceTensHundredscorrectq75',
+        },
+        {
+          answer: '517',
+          nextId: 'inonceTensHundredscorrectq75',
+        },
+        {
+          answer: "571",
+          nextId: 'inonceTensHundredscorrectq75',
+        },
+        {
+          answer: "751",
+          nextId: 'onceTensHundredscorrectq75',
+        },
+      ],
+    },
+  
+    onceTensHundredscorrectq75: {
+    botPrompt: 'Hurray! <strong>751</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[75],
+      },
+    ],
+    },
+    inonceTensHundredscorrectq75: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"751"</strong>',
+    answers: [
+      {
+        nextId: 'onceTensHundreds'+shuffledNumbersto[75],
+      },
+    ],
+    },
+  
+    //76
+    ['onceTensHundreds'+shuffledNumbersto[75]]: {
+      botPrompt: 'Which of these numbers has a digit sum of 11 in the units, tens, and hundreds place?',
+      type: RTypes.TRANSFORMED_TEXT,
+  
+      input: selectField(['818', '727', "535","242"]),
+      answers: [
+        {
+          answer: '818',
+          nextId: 'onceTensHundredscorrectq76',
+        },
+        {
+          answer: '727',
+          nextId: 'inonceTensHundredscorrectq76',
+        },
+        {
+          answer: "535",
+          nextId: 'inonceTensHundredscorrectq76',
+        },
+        {
+          answer: "242",
+          nextId: 'inonceTensHundredscorrectq76',
+        },
+      ],
+    },
+    onceTensHundredscorrectq76: {
+      botPrompt: 'You Have Selected correct Anwser 🎉! <strong>818</strong> 😎',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[76],
+        },
+      ],
+    },
+    inonceTensHundredscorrectq76: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"818"</strong>',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[76],
+        },
+      ],
+    },
+  
+    //77
+    ['onceTensHundreds'+shuffledNumbersto[76]]: {
+    botPrompt: 'What is the number with 3 in the units place and 9 in the tens place?',
+    type: RTypes.TRANSFORMED_TEXT,
+  
+    input: selectField(['93', '39', "49","94"]),
+      answers: [
+        {
+          answer: '93',
+          nextId: 'inonceTensHundredscorrectq77',
+        },
+        {
+          answer: '39',
+          nextId: 'onceTensHundredscorrectq77',
+        },
+        {
+          answer: "49",
+          nextId: 'inonceTensHundredscorrectq77',
+        },
+        {
+          answer: "94",
+          nextId: 'inonceTensHundredscorrectq77',
+        },
+      ],
+    },
+    onceTensHundredscorrectq77: {
+    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>39</strong> 😎',
+    answers: [
+      {
+        nextId: 'wishtocontinue17',
+      },
+    ],
+    },
+    inonceTensHundredscorrectq77: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"39"</strong>',
+    answers: [
+      {
+        nextId: 'wishtocontinue17',
+      },
+    ],
+    },
+  
+  
+  
+    //78
+    ['onceTensHundreds'+shuffledNumbersto[77]]: {
+      botPrompt: 'Which of these numbers has a digit sum of 7 in the units and tens place? ',
+      type: RTypes.TRANSFORMED_TEXT,
+  
+      input: selectField(['25', '16', "34","71"]),
+        answers: [
+          {
+            answer: '25',
+            nextId: 'inonceTensHundredscorrectq78',
+          },
+          {
+            answer: '16',
+            nextId: 'onceTensHundredscorrectq78',
+          },
+          {
+            answer: "34",
+            nextId: 'inonceTensHundredscorrectq78',
+          },
+          {
+            answer: "71",
+            nextId: 'inonceTensHundredscorrectq78',
+          },
+        ],
+      },
+      
+      onceTensHundredscorrectq78: {
+      botPrompt: 'Hurray! <strong>16</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[78],
+        },
+      ],
+      },
+      inonceTensHundredscorrectq78: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"16"</strong>',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[78],
+        },
+      ],
+      },
+      
+      //79
+      ['onceTensHundreds'+shuffledNumbersto[78]]: {
+      botPrompt: 'What is the number with 1 in the units place, 6 in the tens place, and 4 in the hundreds place?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['461', '164', "466","614"]),
+        answers: [
+          {
+            answer: '416',
+            nextId: 'inonceTensHundredscorrectq79',
+          },
+          {
+            answer: '164',
+            nextId: 'onceTensHundredscorrectq79',
+          },
+          {
+            answer: "466",
+            nextId: 'inonceTensHundredscorrectq79',
+          },
+          {
+            answer: "614",
+            nextId: 'inonceTensHundredscorrectq79',
+          },
+        ],
+      },
+      
+      onceTensHundredscorrectq79: {
+      botPrompt: 'Hurray! <strong>416</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[79],
+        },
+      ],
+      },
+      inonceTensHundredscorrectq79: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"416"</strong>',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[79],
+        },
+      ],
+      },
+      
+      
+      //80
+      ['onceTensHundreds'+shuffledNumbersto[79]]: {
+      botPrompt: 'Which of these numbers has a digit sum of 10 in the units, tens, and hundreds place?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['881', '791', "604","475"]),
+        answers: [
+          {
+            answer: '881',
+            nextId: 'inonceTensHundredscorrectq80',
+          },
+          {
+            answer: '791',
+            nextId: 'inonceTensHundredscorrectq80',
+          },
+          {
+            answer: "604",
+            nextId: 'onceTensHundredscorrectq80',
+          },
+          {
+            answer: "475",
+            nextId: 'inonceTensHundredscorrectq80',
+          },
+        ],
+      },
+      
+      onceTensHundredscorrectq80: {
+      botPrompt: 'Hurray! <strong>604</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[80],
+        },
+      ],
+      },
+      inonceTensHundredscorrectq80: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"604"</strong>',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[80],
+        },
+      ],
+      },
+      
+      //81
+      ['onceTensHundreds'+shuffledNumbersto[80]]: {
+      botPrompt: 'What is the number with 5 in the units place and 7 in the tens place?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['357', '537', "775","375"]),
+        answers: [
+          {
+            answer: '357',
+            nextId: 'inonceTensHundredscorrectq51',
+          },
+          {
+            answer: '537',
+            nextId: 'inonceTensHundredscorrectq51',
+          },
+          {
+            answer: "775",
+            nextId: 'onceTensHundredscorrectq51',
+          },
+          {
+            answer: "375",
+            nextId: 'inonceTensHundredscorrectq51',
+          },
+        ],
+      },
+      
+      onceTensHundredscorrectq51: {
+      botPrompt: 'Hurray! <strong>775</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[51],
+        },
+      ],
+      },
+      inonceTensHundredscorrectq51: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"775"</strong>',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[51],
+        },
+      ],
+      },
+      
+      //82
+      ['onceTensHundreds'+shuffledNumbersto[81]]: {
+      botPrompt: 'What number has 4 in the tens place and 7 in the units place?',
+      type: RTypes.TRANSFORMED_TEXT,
+      input: selectField(['43', '74', "27","47"]),
+        answers: [
+          {
+            answer: '43',
+            nextId: 'inonceTensHundredscorrectq82',
+          },
+          {
+            answer: '74',
+            nextId: 'onceTensHundredscorrectq82',
+          },
+          {
+            answer: "27",
+            nextId: 'inonceTensHundredscorrectq82',
+          },
+          {
+            answer: "47",
+            nextId: 'inonceTensHundredscorrectq82',
+          },
+        ],
+      },
+      
+      onceTensHundredscorrectq82: {
+      botPrompt: 'Hurray! <strong>74</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[82],
+        },
+      ],
+      },
+      inonceTensHundredscorrectq82: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"74"</strong>',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[82],
+        },
+      ],
+      },
+      
+      //83
+      ['onceTensHundreds'+shuffledNumbersto[82]]: {
+      botPrompt: 'What is the sum of digits in the tens place and units place of 37?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['3', '7', "10","4"]),
+        answers: [
+          {
+            answer: '3',
+            nextId: 'inonceTensHundredscorrectq83',
+          },
+          {
+            answer: '7',
+            nextId: 'inonceTensHundredscorrectq83',
+          },
+          {
+            answer: "10",
+            nextId: 'inonceTensHundredscorrectq83',
+          },
+          {
+            answer: "4",
+            nextId: 'onceTensHundredscorrectq83',
+          },
+        ],
+      },
+    
+      onceTensHundredscorrectq83: {
+      botPrompt: 'Hurray! <strong>4</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[83],
+        },
+      ],
+      },
+      inonceTensHundredscorrectq83: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[83],
+        },
+      ],
+      },
+      
+      //84
+      ['onceTensHundreds'+shuffledNumbersto[83]]: {
+      botPrompt: 'Which number has 2 in the units place and 5 in the tens place?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['52', '25', "23","32"]),
+        answers: [
+          {
+            answer: '52',
+            nextId: 'inonceTensHundredscorrectq84',
+          },
+          {
+            answer: '25',
+            nextId: 'onceTensHundredscorrectq84',
+          },
+          {
+            answer: "23",
+            nextId: 'inonceTensHundredscorrectq84',
+          },
+          {
+            answer: "32",
+            nextId: 'inonceTensHundredscorrectq84',
+          },
+        ],
+      },
+      
+      onceTensHundredscorrectq84: {
+      botPrompt: 'Hurray! <strong>25</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[84],
+        },
+      ],
+      },
+      inonceTensHundredscorrectq84: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"25"</strong>',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[84],
+        },
+      ],
+      },
+      
+      
+      //85
+      ['onceTensHundreds'+shuffledNumbersto[84]]: {
+      botPrompt: 'What is the sum of digits in the tens place and units place of 58?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['8', '13', "5","11"]),
+        answers: [
+          {
+            answer: '8',
+            nextId: 'onceTensHundredscorrectq85',
+          },
+          {
+            answer: '13',
+            nextId: 'inonceTensHundredscorrectq85',
+          },
+          {
+            answer: "5",
+            nextId: 'inonceTensHundredscorrectq85',
+          },
+          {
+            answer: "11",
+            nextId: 'inonceTensHundredscorrectq85',
+          },
+        ],
+      },
+      
+      onceTensHundredscorrectq85: {
+      botPrompt: 'Hurray! <strong>8</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[85],
+        },
+      ],
+      },
+      inonceTensHundredscorrectq85: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"8"</strong>',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[85],
+        },
+      ],
+      },
+      
+      //86
+      ['onceTensHundreds'+shuffledNumbersto[85]]: {
+        botPrompt: 'What number has 3 in the tens place and 9 in the units place?',
+        type: RTypes.TRANSFORMED_TEXT,
+        input: selectField(['39', '93', "29","32"]),
+        answers: [
+          {
+            answer: '39',
+            nextId: 'inonceTensHundredscorrectq86',
+          },
+          {
+            answer: '93',
+            nextId: 'onceTensHundredscorrectq86',
+          },
+          {
+            answer: "29",
+            nextId: 'inonceTensHundredscorrectq86',
+          },
+          {
+            answer: "32",
+            nextId: 'inonceTensHundredscorrectq86',
+          },
+        ],
+      },
+      onceTensHundredscorrectq86: {
+        botPrompt: 'You Have Selected correct Anwser 🎉! <strong>93</strong> 😎',
+        answers: [
+          {
+            nextId: 'onceTensHundreds'+shuffledNumbersto[86],
+          },
+        ],
+      },
+      inonceTensHundredscorrectq86: {
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"93"</strong>',
+        answers: [
+          {
+            nextId: 'onceTensHundreds'+shuffledNumbersto[86],
+          },
+        ],
+      },
+    
+      //87
+      ['onceTensHundreds'+shuffledNumbersto[86]]: {
+      botPrompt: 'What is the sum of digits in the tens place and units place of 62?',
+      type: RTypes.TRANSFORMED_TEXT,
+      input: selectField(['8', '6', "2","12"]),
+        answers: [
+          {
+            answer: '8',
+            nextId: 'inonceTensHundredscorrectq87',
+          },
+          {
+            answer: '6',
+            nextId: 'onceTensHundredscorrectq87',
+          },
+          {
+            answer: "2",
+            nextId: 'inonceTensHundredscorrectq87',
+          },
+          {
+            answer: "12",
+            nextId: 'inonceTensHundredscorrectq87',
+          },
+        ],
+      },
+      onceTensHundredscorrectq87: {
+      botPrompt: 'You Have Selected correct Anwser 🎉! <strong>6</strong> 😎',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[87],
+        },
+      ],
+      },
+      inonceTensHundredscorrectq87: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"6"</strong>',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[87],
+        },
+      ],
+      },
+      
+      //88
+      ['onceTensHundreds'+shuffledNumbersto[87]]: {
+      botPrompt: 'Which number has 7 in the tens place and 6 in the units place?',
+      type: RTypes.TRANSFORMED_TEXT,
+      input: selectField(['76', '67', "86","97"]),
+      answers: [
+        {
+          answer: '76',
+          nextId: 'onceTensHundredscorrectq88',
+        },
+        {
+          answer: '67',
+          nextId: 'inonceTensHundredscorrectq88',
+        },
+        {
+          answer: "86",
+          nextId: 'inonceTensHundredscorrectq88',
+        },
+        {
+          answer: "97",
+          nextId: 'inonceTensHundredscorrectq88',
+        },
+      ],
+      },
+      onceTensHundredscorrectq88: {
+      botPrompt: 'You Have Selected correct Anwser 🎉! <strong>76</strong> 😎',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[88],
+        },
+      ],
+      },
+      inonceTensHundredscorrectq88: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"76"</strong>',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[88],
+        },
+      ],
+      },
+      
+      //89
+      ['onceTensHundreds'+shuffledNumbersto[88]]: {
+      botPrompt: 'What is the sum of digits in the tens place and units place of 44?',
+      type: RTypes.TRANSFORMED_TEXT,
+      input: selectField(['8', '4', "12","6"]),
+        answers: [
+          {
+            answer: '8',
+            nextId: 'inonceTensHundredscorrectq87',
+          },
+          {
+            answer: '4',
+            nextId: 'onceTensHundredscorrectq87',
+          },
+          {
+            answer: "12",
+            nextId: 'inonceTensHundredscorrectq87',
+          },
+          {
+            answer: "6",
+            nextId: 'inonceTensHundredscorrectq87',
+          },
+        ],
+      },
+      onceTensHundredscorrectq89: {
+      botPrompt: 'You Have Selected correct Anwser 🎉! <strong>4</strong> Answers! 😎',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[89],
+        },
+      ],
+      },
+      inonceTensHundredscorrectq89: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[89],
+        },
+      ],
+      },
+      
+      //90
+      ['onceTensHundreds'+shuffledNumbersto[89]]: {
+      botPrompt: 'What number has 5 in the tens place and 8 in the units place?',
+      type: RTypes.TRANSFORMED_TEXT,
+      input: selectField(['85', '58', "87","56"]),
+      answers: [
+        {
+          answer: '85',
+          nextId: 'inonceTensHundredscorrectq90',
+        },
+        {
+          answer: '58',
+          nextId: 'onceTensHundredscorrectq90',
+        },
+        {
+          answer: "87",
+          nextId: 'inonceTensHundredscorrectq90',
+        },
+        {
+          answer: "56",
+          nextId: 'inonceTensHundredscorrectq90',
+        },
+      ],
+      },
+      onceTensHundredscorrectq20: {
+      botPrompt: 'You Have Selected correct Anwser 🎉! <strong>58</strong> 😎',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[90],
+        },
+      ],
+      },
+      inonceTensHundredscorrectq20: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"58"</strong>',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[90],
+        },
+      ],
+      },
+      
+      //91
+      ["onceTensHundreds"+shuffledNumbersto[90]]: {
+        botPrompt: 'What is the sum of digits in the tens place and units place of 69?',
+        type: RTypes.TRANSFORMED_TEXT,
+        input: selectField(['6', '9', "12","15"]),
+        answers: [
+          {
+            answer: '6',
+            nextId: 'onceTensHundredscorrectq91',
+          },
+          {
+            answer: '9',
+            nextId: 'inonceTensHundredscorrectq91',
+          },
+          {
+            answer: "12",
+            nextId: 'inonceTensHundredscorrectq91',
+          },
+          {
+            answer: "15",
+            nextId: 'inonceTensHundredscorrectq91',
+          },
+        ],
+      },
+      onceTensHundredscorrectq91: {
+        botPrompt: 'Hurray <strong>6</strong> is the correct answer  ! 😎',
+        answers: [
+          {
+            nextId: 'onceTensHundreds'+shuffledNumbersto[91],
+          },
+        ],
+      },
+      inonceTensHundredscorrectq91: {
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"6"</strong>',
+        answers: [
+          {
+            nextId: 'onceTensHundreds'+shuffledNumbersto[91],
+          },
+        ],
+      },
+      
+      //92
+      ['onceTensHundreds'+shuffledNumbersto[91]]: {
+        botPrompt: 'Which number has 1 in the tens place and 3 in the units place?',
+        type: RTypes.TRANSFORMED_TEXT,
+        input: selectField(['31', '13', "30","33"]),
+        answers: [
+          {
+            answer: '31',
+            nextId: 'onceTensHundredscorrectq92',
+          },
+          {
+            answer: '13',
+            nextId: 'inonceTensHundredscorrectq92',
+          },
+          {
+            answer: "30",
+            nextId: 'inonceTensHundredscorrectq92',
+          },
+          {
+            answer: "33",
+            nextId: 'inonceTensHundredscorrectq92',
+          },
+        ],
+      },
+      
+      onceTensHundredscorrectq92: {
+        botPrompt: 'Hurray! <strong>31</strong> is the correct answer  ! 😎',
+        answers: [
+          {
+            nextId: 'onceTensHundreds'+shuffledNumbersto[92],
+          },
+        ],
+      },
+      inonceTensHundredscorrectq92: {
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"31"</strong>',
+        answers: [
+          {
+            nextId: 'onceTensHundreds'+shuffledNumbersto[92],
+          },
+        ],
+      },
+      
+      //93
+      ['onceTensHundreds'+shuffledNumbersto[92]]: {
+      botPrompt: "What is the sum of digits in the tens place and units place of 79?",
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['7', '16', "9","14"]),
+        answers: [
+          {
+            answer: '7',
+            nextId: 'inonceTensHundredscorrectq93',
+          },
+          {
+            answer: '16',
+            nextId: 'inonceTensHundredscorrectq93',
+          },
+          {
+            answer: "9",
+            nextId: 'inonceTensHundredscorrectq93',
+          },
+          {
+            answer: "14",
+            nextId: 'onceTensHundredscorrectq93',
+          },
+        ],
+      },
+      
+      onceTensHundredscorrectq93: {
+      botPrompt: 'Hurray! <strong>14</strong> is the correct answer ! 😎',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[93],
+        },
+      ],
+      },
+      inonceTensHundredscorrectq93: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"14"</strong>',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[93],
+        },
+      ],
+      },
+    
+      //94
+      ['onceTensHundreds'+shuffledNumbersto[93]]: {
+      botPrompt: 'What number has 4 in the tens place and 6 in the units place?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['46', '64', "26","42"]),
+      answers: [
+        {
+          answer: '46',
+          nextId: 'onceTensHundredscorrectq94',
+        },
+        {
+          answer: '64',
+          nextId: 'inonceTensHundredscorrectq94',
+        },
+        {
+          answer: "26",
+          nextId: 'inonceTensHundredscorrectq94',
+        },
+        {
+          answer: "42",
+          nextId: 'inonceTensHundredscorrectq94',
+        },
+      ],
+      },
+      
+      onceTensHundredscorrectq94: {
+      botPrompt: 'Hurray! <strong>46</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[94],
+        },
+      ],
+      },
+      inonceTensHundredscorrectq2: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"46"</strong>',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[94],
+        },
+      ],
+      },
+      
+      //95
+      ['onceTensHundreds'+shuffledNumbersto[94]]: {
+      botPrompt: 'What is the sum of digits in the tens place and units place of 97?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['9', '7', "16","13"]),
+        answers: [
+          {
+            answer: '9',
+            nextId: 'inonceTensHundredscorrectq95',
+          },
+          {
+            answer: '7',
+            nextId: 'inonceTensHundredscorrectq95',
+          },
+          {
+            answer: "16",
+            nextId: 'onceTensHundredscorrectq95',
+          },
+          {
+            answer: "13",
+            nextId: 'inonceTensHundredscorrectq95',
+          },
+        ],
+      },
+      
+      onceTensHundredscorrectq95: {
+      botPrompt: 'Hurray! <strong>16</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[95],
+        },
+      ],
+      },
+      inonceTensHundredscorrectq95: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"16"</strong>',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[95],
+        },
+      ],
+      },
+      
+      //96
+      ['onceTensHundreds'+shuffledNumbersto[95]]: {
+      botPrompt: 'What is the number formed by the digits 2 and 3 in the units and tens place respectively?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['23', '32', "25","52"]),
+      answers: [
+        {
+          answer: '23',
+          nextId: 'onceTensHundredscorrectq96',
+        },
+        {
+          answer: '32',
+          nextId: 'inonceTensHundredscorrectq96',
+        },
+        {
+          answer: "25",
+          nextId: 'inonceTensHundredscorrectq96',
+        },
+        {
+          answer: "52",
+          nextId: 'inonceTensHundredscorrectq96',
+        },
+      ],
+      },
+      
+      onceTensHundredscorrectq96: {
+      botPrompt: 'Hurray! <strong>23</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[96],
+        },
+      ],
+      },
+      inonceTensHundredscorrectq96: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"23"</strong>',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[96],
+        },
+      ],
+      },
+  
+      //97
+      ['onceTensHundreds'+shuffledNumbersto[96]]: {
+      botPrompt: 'Which of the following has a digit 4 in the units place and a digit 5 in the tens place?',
+      type: RTypes.TRANSFORMED_TEXT,
+      input: selectField(['54', '45', "64","46"]),
+      answers: [
+        {
+          answer: '54',
+          nextId: 'onceTensHundredscorrectq97',
+        },
+        {
+          answer: '45',
+          nextId: 'inonceTensHundredscorrectq97',
+        },
+        {
+          answer: "64",
+          nextId: 'inonceTensHundredscorrectq97',
+        },
+        {
+          answer: "46",
+          nextId: 'inonceTensHundredscorrectq97',
+        },
+      ],
+      },
+  
+      onceTensHundredscorrectq97: {
+      botPrompt: 'Hurray! <strong>54</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[97],
+        },
+      ],
+      },
+      inonceTensHundredscorrectq97: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"54"</strong>',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[97],
+        },
+      ],
+      },
+  
+  
+      //98
+      ['onceTensHundreds'+shuffledNumbersto[97]]: {
+      botPrompt: 'What number is formed by the digits 1 in the tens place and 7 in the units place?',
+      type: RTypes.TRANSFORMED_TEXT,
+  
+  
+      input: selectField(['71', '17', "27","72"]),
+        answers: [
+          {
+            answer: '71',
+            nextId: 'inonceTensHundredscorrectq98',
+          },
+          {
+            answer: '17',
+            nextId: 'onceTensHundredscorrectq98',
+          },
+          {
+            answer: "27",
+            nextId: 'inonceTensHundredscorrectq98',
+          },
+          {
+            answer: "72",
+            nextId: 'inonceTensHundredscorrectq98',
+          },
+        ],
+      },
+  
+      onceTensHundredscorrectq98: {
+      botPrompt: 'Hurray! <strong>17</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[98],
+        },
+      ],
+      },
+      inonceTensHundredscorrectq98: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"17"</strong>',
+      answers: [
+        {
+          nextId: 'onceTensHundreds'+shuffledNumbersto[98],
+        },
+      ],
+      },
+      
+      //99
+      ['onceTensHundreds'+shuffledNumbersto[98]]: {
+        botPrompt: 'What is the number formed by the digits 8 in the units place and 2 in the tens place?',
+        type: RTypes.TRANSFORMED_TEXT,
+    
+    
+        input: selectField(['28', '82', "88","18"]),
+          answers: [
+            {
+              answer: '28',
+              nextId: 'onceTensHundredscorrectq99',
+            },
+            {
+              answer: '82',
+              nextId: 'inonceTensHundredscorrectq99',
+            },
+            {
+              answer: "88",
+              nextId: 'inonceTensHundredscorrectq99',
+            },
+            {
+              answer: "18",
+              nextId: 'inonceTensHundredscorrectq99',
+            },
+          ],
+        },
+    
+        onceTensHundredscorrectq99: {
+        botPrompt: 'Hurray! <strong>28</strong> is the correct answer  ! 😎',
+        answers: [
+          {
+            nextId: 'onceTensHundreds'+shuffledNumbersto[99],
+          },
+        ],
+        },
+        inonceTensHundredscorrectq99: {
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"28"</strong>',
+        answers: [
+          {
+            nextId: 'onceTensHundreds'+shuffledNumbersto[99],
+          },
+        ],
+        },    //100
+        ['onceTensHundreds'+shuffledNumbersto[99]]: {
+        botPrompt: 'Which number has a digit 3 in the tens place and a digit 6 in the units place?',
+        type: RTypes.TRANSFORMED_TEXT,
+    
+    
+        input: selectField(['63', '36', "64","46"]),
+          answers: [
+            {
+              answer: '63',
+              nextId: 'onceTensHundredscorrectq100',
+            },
+            {
+              answer: '36',
+              nextId: 'inonceTensHundredscorrectq100',
+            },
+            {
+              answer: "64",
+              nextId: 'inonceTensHundredscorrectq100',
+            },
+            {
+              answer: "46",
+              nextId: 'inonceTensHundredscorrectq100',
+            },
+          ],
+        },
+    
+        onceTensHundredscorrectq100: {
+        botPrompt: 'Hurray! <strong>63</strong> is the correct answer  ! 😎',
+        answers: [
+          {
+            nextId: 'onceTensHundreds'+shuffledNumbersto[100],
+          },
+        ],
+        },
+        inonceTensHundredscorrectq100: {
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"63"</strong>',
+        answers: [
+          {
+            nextId: 'onceTensHundreds'+shuffledNumbersto[100],
+          },
+        ],
+        },
+  
+        //101
+        ['onceTensHundreds'+shuffledNumbersto[100]]: {
+        botPrompt: 'What number is formed by the digits 2 in the tens place and 0 in the units place?',
+        type: RTypes.TRANSFORMED_TEXT,
+    
+    
+        input: selectField(['71', '17', "27","72"]),
+          answers: [
+            {
+              answer: '71',
+              nextId: 'inonceTensHundredscorrectq101',
+            },
+            {
+              answer: '17',
+              nextId: 'onceTensHundredscorrectq101',
+            },
+            {
+              answer: "27",
+              nextId: 'inonceTensHundredscorrectq101',
+            },
+            {
+              answer: "72",
+              nextId: 'inonceTensHundredscorrectq101',
+            },
+          ],
+        },
+    
+        onceTensHundredscorrectq101: {
+        botPrompt: 'Hurray! <strong>17</strong> is the correct answer  ! 😎',
+        answers: [
+          {
+            nextId: 'onceTensHundreds'+shuffledNumbersto[101],
+          },
+        ],
+        },
+        inonceTensHundredscorrectq101: {
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"17"</strong>',
+        answers: [
+          {
+            nextId: 'onceTensHundreds'+shuffledNumbersto[101],
+          },
+        ],
+        },
+  
+        //102
+        ['onceTensHundreds'+shuffledNumbersto[101]]: {
+        botPrompt: 'What number is formed by the digits 2 in the tens place and 0 in the units place?',
+        type: RTypes.TRANSFORMED_TEXT,
+    
+    
+        input: selectField(['20', '2', "22","0"]),
+          answers: [
+            {
+              answer: '20',
+              nextId: 'onceTensHundredscorrectq102',
+            },
+            {
+              answer: '2',
+              nextId: 'inonceTensHundredscorrectq102',
+            },
+            {
+              answer: "22",
+              nextId: 'inonceTensHundredscorrectq102',
+            },
+            {
+              answer: "0",
+              nextId: 'inonceTensHundredscorrectq102',
+            },
+          ],
+        },
+    
+        onceTensHundredscorrectq102: {
+        botPrompt: 'Hurray! <strong>20</strong> is the correct answer  ! 😎',
+        answers: [
+          {
+            nextId: 'onceTensHundreds'+shuffledNumbersto[102],
+          },
+        ],
+        },
+        inonceTensHundredscorrectq102: {
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"20"</strong>',
+        answers: [
+          {
+            nextId: 'onceTensHundreds'+shuffledNumbersto[102],
+          },
+        ],
+        },
+  
+        //103
+        ['onceTensHundreds'+shuffledNumbersto[102]]: {
+        botPrompt: 'Which number has a digit 9 in the tens place and a digit 1 in the units place?',
+        type: RTypes.TRANSFORMED_TEXT,
+    
+    
+        input: selectField(['91', '19', "99","11"]),
+          answers: [
+            {
+              answer: '91',
+              nextId: 'onceTensHundredscorrectq103',
+            },
+            {
+              answer: '19',
+              nextId: 'inonceTensHundredscorrectq103',
+            },
+            {
+              answer: "99",
+              nextId: 'inonceTensHundredscorrectq103',
+            },
+            {
+              answer: "11",
+              nextId: 'inonceTensHundredscorrectq103',
+            },
+          ],
+        },
+    
+        onceTensHundredscorrectq103: {
+        botPrompt: 'Hurray! <strong>91</strong> is the correct answer  ! 😎',
+        answers: [
+          {
+            nextId: 'onceTensHundreds'+shuffledNumbersto[103],
+          },
+        ],
+        },
+        inonceTensHundredscorrectq103: {
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"91"</strong>',
+        answers: [
+          {
+            nextId: 'onceTensHundreds'+shuffledNumbersto[103],
+          },
+        ],
+        },
+  
+  
+        //104
+        ['onceTensHundreds'+shuffledNumbersto[103]]: {
+        botPrompt: 'What number is formed by the digits 5 in the tens place and 8 in the units place?',
+        type: RTypes.TRANSFORMED_TEXT,
+  
+    
+        input: selectField(['58', '85', "88","18"]),
+          answers: [
+            {
+              answer: '58',
+              nextId: 'inonceTensHundredscorrectq104',
+            },
+            {
+              answer: '85',
+              nextId: 'onceTensHundredscorrectq104',
+            },
+            {
+              answer: "88",
+              nextId: 'inonceTensHundredscorrectq104',
+            },
+            {
+              answer: "18",
+              nextId: 'inonceTensHundredscorrectq104',
+            },
+          ],
+        },
+    
+        onceTensHundredscorrectq104: {
+        botPrompt: 'Hurray! <strong>58</strong> is the correct answer  ! 😎',
+        answers: [
+          {
+            nextId: 'onceTensHundreds'+shuffledNumbersto[104],
+          },
+        ],
+        },
+        inonceTensHundredscorrectq104: {
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"58"</strong>',
+        answers: [
+          {
+            nextId: 'onceTensHundreds'+shuffledNumbersto[104],
+          },
+        ],
+        },
+  
+  
+        //105
+        ['onceTensHundreds'+shuffledNumbersto[104]]: {
+        botPrompt: 'Which of the following has a digit 2 in the tens place and a digit 4 in the units place?',
+        type: RTypes.TRANSFORMED_TEXT,
+  
+  
+        input: selectField(['42', '24', "64","46"]),
+          answers: [
+            {
+              answer: '42',
+              nextId: 'inonceTensHundredscorrectq105',
+            },
+            {
+              answer: '24',
+              nextId: 'onceTensHundredscorrectq105',
+            },
+            {
+              answer: "64",
+              nextId: 'inonceTensHundredscorrectq105',
+            },
+            {
+              answer: "46",
+              nextId: 'inonceTensHundredscorrectq105',
+            },
+          ],
+        },
+  
+        onceTensHundredscorrectq105: {
+        botPrompt: 'Hurray! <strong>24</strong> is the correct answer  ! 😎',
+        answers: [
+          {
+            nextId: 'onceTensHundreds'+shuffledNumbersto[105],
+          },
+        ],
+        },
+        inonceTensHundredscorrectq105: {
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"24"</strong>',
+        answers: [
+          {
+            nextId: 'onceTensHundreds'+shuffledNumbersto[105],
+          },
+        ],
+        },
+  
+         //106
+         ['onceTensHundreds'+shuffledNumbersto[105]]: {
+          botPrompt: 'What is the number formed by the digits 3 in the tens place and 9 in the units place?',
+          type: RTypes.TRANSFORMED_TEXT,
+  
+  
+          input: selectField(['39', '93', "33","99"]),
+            answers: [
+              {
+                answer: '39',
+                nextId: 'onceTensHundredscorrectq106',
+              },
+              {
+                answer: '93',
+                nextId: 'inonceTensHundredscorrectq106',
+              },
+              {
+                answer: "33",
+                nextId: 'inonceTensHundredscorrectq106',
+              },
+              {
+                answer: "99",
+                nextId: 'inonceTensHundredscorrectq106',
+              },
+            ],
+          },
+    
+          onceTensHundredscorrectq106: {
+          botPrompt: 'Hurray! <strong>39</strong> is the correct answer  ! 😎',
+          answers: [
+            {
+              nextId: 'wishtoContinue27',
+            },
+          ],
+          },
+          inonceTensHundredscorrectq106: {
+          botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"39"</strong>',
+          answers: [
+            {
+              nextId: 'wishtoContinue27',
+            },
+          ],
+          },
+
+    //endonceTensHundredsletter
+
+    wishtocontinue27: {
+      botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
+      input: selectField(['Yes!', 'No!']),
+      answers: [
+          {
+            answer: 'Yes!',
+            nextId: 'day28',
+          },
+          {
+            answer: 'No!',
+            nextId: 'endConv',
+          },
+      ],
+    },
+
+
+
+day28: {
+  botPrompt: '<strong> Day 28 : </strong> Classroom demo.',
+  answers: [
+          { nextId: 'day283comment' },
+  ],
+  sumToBags: [{ name: 'd', points: 28 }],
+
+
+},
+
+
+day283comment: {
+  botPrompt: 'Pages from the book',
+  answers: [
+          { nextId: 'yesNo'+shuffledNumbersto[0] },
+  ],
+},
+
+
+
+//yesNo
+
+
+["yesNo"+shuffledNumbersto[0]]: {
+    botPrompt: 'Is that a cat?  ',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['Yes', 'No']),
+    answers: [
+      {
+        answer: 'Yes',
+        nextId: 'yesNocorrect',
+      },
+      {
+        answer: 'No',
+        nextId: 'inyesNocorrect',
+      },
+
+    ],
+  },
+  yesNocorrect: {
+    botPrompt: 'Hurray <strong>Yes</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'yesNo'+shuffledNumbersto[1],
+      },
+    ],
+  },
+  inyesNocorrect: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Yes"</strong>',
+    answers: [
+      {
+        nextId: 'yesNo'+shuffledNumbersto[1],
+      },
+    ],
+  },
+  
+  ['yesNo'+shuffledNumbersto[1]]: {
+    botPrompt: 'Is this a book?',
+    type: RTypes.TRANSFORMED_TEXT,
+  
+    input: selectField(['Yes', 'No']),
+    answers: [
+      {
+        answer: 'Yes',
+        nextId: 'inyesNocorrectq2',
+      },
+      {
+        answer: 'No',
+        nextId: 'yesNocorrectq2',
+      },
+
+    ],
+  },
+  
+  yesNocorrectq2: {
+    botPrompt: 'Hurray! <strong>No</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'yesNo'+shuffledNumbersto[2],
+      },
+    ],
+  },
+  inyesNocorrectq2: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"No"</strong>',
+    answers: [
+      {
+        nextId: 'yesNo'+shuffledNumbersto[2],
+      },
+    ],
+  },
+  
+  //3
+  ['yesNo'+shuffledNumbersto[2]]: {
+  botPrompt: 'Is she a teacher?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['Yes', 'No']),
+    answers: [
+      {
+        answer: 'Yes',
+        nextId: 'inyesNocorrectq3',
+      },
+      {
+        answer: 'No',
+        nextId: 'yesNocorrectq3',
+      },
+
+    ],
+  },
+  
+  yesNocorrectq3: {
+  botPrompt: 'Hurray! <strong>No</strong> is the correct answer ! 😎',
+  answers: [
+    {
+      nextId: 'yesNo'+shuffledNumbersto[3],
+    },
+  ],
+  },
+  inyesNocorrectq3: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"No"</strong>',
+  answers: [
+    {
+      nextId: 'yesNo'+shuffledNumbersto[3],
+    },
+  ],
+  },
+  
+  //4
+  ['yesNo'+shuffledNumbersto[3]]: {
+  botPrompt: 'Is it raining outside?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['Yes', 'No']),
+    answers: [
+      {
+        answer: 'Yes',
+        nextId: 'yesNocorrectq4',
+      },
+      {
+        answer: 'No',
+        nextId: 'inyesNocorrectq4',
+      },
+
+    ],
+  },
+  
+  yesNocorrectq4: {
+  botPrompt: 'Hurray! <strong>Yes</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'yesNo'+shuffledNumbersto[4],
+    },
+  ],
+  },
+  inyesNocorrectq4: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Yes"</strong>',
+  answers: [
+    {
+      nextId: 'yesNo'+shuffledNumbersto[4],
+    },
+  ],
+  },
+  
+  //5
+  ['yesNo'+shuffledNumbersto[4]]: {
+  botPrompt: 'Is this a pen?',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['Yes', 'No']),
+    answers: [
+      {
+        answer: 'Yes',
+        nextId: 'inyesNocorrectq5',
+      },
+      {
+        answer: 'No',
+        nextId: 'yesNocorrectq5',
+      },
+
+
+    ],
+  },
+  
+  yesNocorrectq5: {
+  botPrompt: 'Hurray! <strong>No</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'yesNo'+shuffledNumbersto[5],
+    },
+  ],
+  },
+  inyesNocorrectq5: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"No"</strong>',
+  answers: [
+    {
+      nextId: 'yesNo'+shuffledNumbersto[5],
+    },
+  ],
+  },
+  
+  //6
+  ['yesNo'+shuffledNumbersto[5]]: {
+  botPrompt: 'Is that a bird?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['Yes', 'No']),
+    answers: [
+      {
+        answer: 'Yes',
+        nextId: 'yesNocorrectqfast',
+      },
+      {
+        answer: 'No',
+        nextId: 'inyesNocorrectq6',
+      },
+
+    ],
+  },
+  
+  yesNocorrectq6: {
+  botPrompt: 'Hurray! <strong>Yes</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'yesNo'+shuffledNumbersto[6],
+    },
+  ],
+  },
+  inyesNocorrectq6: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Yes"</strong>',
+  answers: [
+    {
+      nextId: 'yesNo'+shuffledNumbersto[6],
+    },
+  ],
+  },
+  
+  //7
+  ['yesNo'+shuffledNumbersto[6]]: {
+  botPrompt: 'Is that a car?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['Yes', 'No']),
+    answers: [
+      {
+        answer: 'Yes',
+        nextId: 'yesNocorrectq7',
+      },
+      {
+        answer: 'No',
+        nextId: 'inyesNocorrectq7',
+      },
+
+    ],
+  },
+  
+  yesNocorrectq7: {
+  botPrompt: 'Hurray! <strong>Yes</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'yesNo'+shuffledNumbersto[7],
+    },
+  ],
+  },
+  inyesNocorrectq7: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Yes"</strong>',
+  answers: [
+    {
+      nextId: 'yesNo'+shuffledNumbersto[7],
+    },
+  ],
+  },
+  
+  
+  //8
+  ['yesNo'+shuffledNumbersto[7]]: {
+  botPrompt: 'Is she playing the piano?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['Yes', 'No']),
+    answers: [
+      {
+        answer: 'Yes',
+        nextId: 'inyesNocorrectq8',
+      },
+      {
+        answer: 'No',
+        nextId: 'yesNocorrectq8',
+      },
+
+    ],
+  },
+  
+  yesNocorrectq8: {
+  botPrompt: 'Hurray! <strong>No</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'yesNo'+shuffledNumbersto[8],
+    },
+  ],
+  },
+  inyesNocorrectq8: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"No"</strong>',
+  answers: [
+    {
+      nextId: 'yesNo'+shuffledNumbersto[8],
+    },
+  ],
+  },
+  
+  //9
+  ['yesNo'+shuffledNumbersto[8]]: {
+  botPrompt: 'Is he wearing a cap?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['Yes', 'No']),
+    answers: [
+      {
+        answer: 'Yes',
+        nextId: 'yesNocorrectq9',
+      },
+      {
+        answer: 'No',
+        nextId: 'inyesNocorrectq9',
+      },
+
+    ],
+  },
+  
+  yesNocorrectq9: {
+  botPrompt: 'Hurray! <strong>Yes</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'yesNo'+shuffledNumbersto[9],
+    },
+  ],
+  },
+  inyesNocorrectq9: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Yes"</strong>',
+  answers: [
+    {
+      nextId: 'yesNo'+shuffledNumbersto[9],
+    },
+  ],
+  },
+  
+  
+  //10
+  ['yesNo'+shuffledNumbersto[9]]: {
+  botPrompt: 'Is that a red shirt?',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['Yes', 'No']),
+    answers: [
+      {
+        answer: 'Yes',
+        nextId: 'yesNocorrectqAngry',
+      },
+      {
+        answer: 'No',
+        nextId: 'inyesNocorrectq10',
+      },
+
+    ],
+  
+  },
+  
+  yesNocorrectq10: {
+  botPrompt: 'Hurray! <strong>Yes</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'yesNo'+shuffledNumbersto[10],
+    },
+  ],
+  },
+  inyesNocorrectq10: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Yes"</strong>',
+  answers: [
+    {
+      nextId: 'yesNo'+shuffledNumbersto[10],
+    },
+  ],
+  },
+  
+  //11
+  ['yesNo'+shuffledNumbersto[10]]: {
+  botPrompt: 'Is it a sunny day?',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['Yes', 'No']),
+    answers: [
+      {
+        answer: 'Yes',
+        nextId: 'yesNocorrectq11',
+      },
+      {
+        answer: 'No',
+        nextId: 'inyesNocorrectq11',
+      },
+
+    ],
+  },
+  
+  yesNocorrectq11: {
+  botPrompt: 'Hurray! <strong>Yes</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'yesNo'+shuffledNumbersto[11],
+    },
+  ],
+  },
+  inyesNocorrectq11: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Yes"</strong>',
+  answers: [
+    {
+      nextId: 'yesNo'+shuffledNumbersto[11],
+    },
+  ],
+  },
+  
+  //12
+  ['yesNo'+shuffledNumbersto[11]]: {
+  botPrompt: 'Is she a  dancer?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['Yes', 'No', "Loud","Dry"]),
+    answers: [
+      {
+        answer: 'Yes',
+        nextId: 'inyesNocorrectq12',
+      },
+      {
+        answer: 'No',
+        nextId: 'yesNocorrectq12',
+      },
+
+    ],
+  },
+  
+  yesNocorrectq12: {
+  botPrompt: 'Hurray! <strong>No</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'yesNo'+shuffledNumbersto[12],
+    },
+  ],
+  },
+  inyesNocorrectq12: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"No"</strong>',
+  answers: [
+    {
+      nextId: 'yesNo'+shuffledNumbersto[12],
+    },
+  ],
+  },
+  
+  //13
+  ['yesNo'+shuffledNumbersto[12]]: {
+  botPrompt: 'Is that a computer?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['Yes', 'No']),
+    answers: [
+      {
+        answer: 'Yes',
+        nextId: 'inyesNocorrectq13',
+      },
+      {
+        answer: 'No',
+        nextId: 'yesNocorrectq13',
+      },
+
+    ],
+  },
+  
+  yesNocorrectq13: {
+  botPrompt: 'Hurray! <strong>No</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'yesNo'+shuffledNumbersto[13],
+    },
+  ],
+  },
+  inyesNocorrectq13: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"No"</strong>',
+  answers: [
+    {
+      nextId: 'yesNo'+shuffledNumbersto[13],
+    },
+  ],
+  },
+  
+  //14
+  ['yesNo'+shuffledNumbersto[13]]: {
+  botPrompt: 'Is he playing football?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['Yes', 'No']),
+    answers: [
+      {
+        answer: 'Yes',
+        nextId: 'inyesNocorrectq14',
+      },
+      {
+        answer: 'No',
+        nextId: 'yesNocorrectq14',
+      },
+
+    ],
+  },
+  
+  yesNocorrectq14: {
+  botPrompt: 'Hurray! <strong>No</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'yesNo'+shuffledNumbersto[14],
+    },
+  ],
+  },
+  inyesNocorrectq14: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"No"</strong>',
+  answers: [
+    {
+      nextId: 'yesNo'+shuffledNumbersto[14],
+    },
+  ],
+  },
+  
+  
+  //15
+  ['yesNo'+shuffledNumbersto[14]]: {
+  botPrompt: 'Is it a  cake?',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['Yes', 'No']),
+    answers: [
+      {
+        answer: 'Yes',
+        nextId: 'yesNocorrectq15',
+      },
+      {
+        answer: 'No',
+        nextId: 'inyesNocorrectq15',
+      },
+
+    ],
+  },
+  
+  yesNocorrectq15: {
+  botPrompt: 'Hurray! <strong>Yes</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'yesNo'+shuffledNumbersto[15],
+    },
+  ],
+  },
+  inyesNocorrectq15: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Yes"</strong>',
+  answers: [
+    {
+      nextId: 'yesNo'+shuffledNumbersto[15],
+    },
+  ],
+  },
+  
+  //16
+  ['yesNo'+shuffledNumbersto[15]]: {
+    botPrompt: 'Is this a pencil?',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['Yes', 'No']),
+    answers: [
+      {
+        answer: 'Yes',
+        nextId: 'yesNocorrectq16',
+      },
+      {
+        answer: 'No',
+        nextId: 'inyesNocorrectq16',
+      },
+
+    ],
+  },
+  yesNocorrectq16: {
+    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>Yes</strong> 😎',
+    answers: [
+      {
+        nextId: 'yesNo'+shuffledNumbersto[16],
+      },
+    ],
+  },
+  inyesNocorrectq16: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Yes"</strong>',
+    answers: [
+      {
+        nextId: 'yesNo'+shuffledNumbersto[16],
+      },
+    ],
+  },
+  
+  //17
+  ['yesNo'+shuffledNumbersto[16]]: {
+  botPrompt: 'Is that a bicycle?',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['Yes', 'No']),
+    answers: [
+      {
+        answer: 'Yes',
+        nextId: 'inyesNocorrectq17',
+      },
+      {
+        answer: 'No',
+        nextId: 'yesNocorrectq17',
+      },
+
+    ],
+  },
+  yesNocorrectq17: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>No</strong> 😎',
+  answers: [
+    {
+      nextId: 'yesNo'+shuffledNumbersto[17],
+    },
+  ],
+  },
+  inyesNocorrectq17: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"No"</strong>',
+  answers: [
+    {
+      nextId: 'yesNo'+shuffledNumbersto[17],
+    },
+  ],
+  },
+  
+  //18
+  ['yesNo'+shuffledNumbersto[17]]: {
+  botPrompt: 'Is it a windy day?.   ',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['Yes', 'No']),
+  answers: [
+    {
+      answer: 'Yes',
+      nextId: 'yesNocorrectq18',
+    },
+    {
+      answer: 'No',
+      nextId: 'inyesNocorrectq18',
+    },
+
+  ],
+  },
+  yesNocorrectq18: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>Yes</strong> 😎',
+  answers: [
+    {
+      nextId: 'yesNo'+shuffledNumbersto[18],
+    },
+  ],
+  },
+  inyesNocorrectq18: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Yes"</strong>',
+  answers: [
+    {
+      nextId: 'yesNo'+shuffledNumbersto[18],
+    },
+  ],
+  },
+  
+  //19
+  ['yesNo'+shuffledNumbersto[18]]: {
+  botPrompt: 'Is that a house?',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['Yes', 'No']),
+  answers: [
+    {
+      answer: 'Yes',
+      nextId: 'yesNocorrectq19',
+    },
+    {
+      answer: 'No',
+      nextId: 'inyesNocorrectq19',
+    },
+
+  ],
+  },
+  yesNocorrectq19: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>Yes</strong> Answers! 😎',
+  answers: [
+    {
+      nextId: 'yesNo'+shuffledNumbersto[19],
+    },
+  ],
+  },
+  inyesNocorrectq19: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Yes"</strong>',
+  answers: [
+    {
+      nextId: 'yesNo'+shuffledNumbersto[19],
+    },
+  ],
+  },
+  
+  //20
+  ['yesNo'+shuffledNumbersto[19]]: {
+  botPrompt: 'Is she wearinng a blue colour dress?',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['Yes', 'No']),
+  answers: [
+    {
+      answer: 'Yes',
+      nextId: 'inyesNocorrectq20',
+    },
+    {
+      answer: 'No',
+      nextId: 'yesNocorrectq20',
+    },
+
+  ],
+  },
+  yesNocorrectq20: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>No</strong> 😎',
+  answers: [
+    {
+      nextId: 'yesNo'+shuffledNumbersto[20],
+    },
+  ],
+  },
+  inyesNocorrectq20: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"No"</strong>',
+  answers: [
+    {
+      nextId: 'yesNo'+shuffledNumbersto[20],
+    },
+  ],
+  },
+  
+  //21
+  ["yesNo"+shuffledNumbersto[20]]: {
+    botPrompt: 'Is he wearing glasses?',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['Yes', 'No']),
+  answers: [
+    {
+      answer: 'Yes',
+      nextId: 'yesNocorrectq21',
+    },
+    {
+      answer: 'No',
+      nextId: 'inyesNocorrectq21',
+    },
+
+  ],
+  },
+  yesNocorrectq21: {
+    botPrompt: 'Hurray <strong>Yes</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'yesNo'+shuffledNumbersto[21],
+      },
+    ],
+  },
+  inyesNocorrectq21: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Yes"</strong>',
+    answers: [
+      {
+        nextId: 'yesNo'+shuffledNumbersto[21],
+      },
+    ],
+  },
+  
+  //22
+  ['yesNo'+shuffledNumbersto[21]]: {
+    botPrompt: 'Is that a mountain?',
+    type: RTypes.TRANSFORMED_TEXT,
+  
+    input: selectField(['Yes', 'No']),
+  answers: [
+    {
+      answer: 'Yes',
+      nextId: 'yesNocorrectq22',
+    },
+    {
+      answer: 'No',
+      nextId: 'inyesNocorrectq22',
+    },
+
+  ],
+  },
+  
+  yesNocorrectq22: {
+    botPrompt: 'Hurray! <strong>Yes</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'yesNo'+shuffledNumbersto[22],
+      },
+    ],
+  },
+  inyesNocorrectq22: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Yes"</strong>',
+    answers: [
+      {
+        nextId: 'yesNo'+shuffledNumbersto[22],
+      },
+    ],
+  },
+  
+  //23
+  ['yesNo'+shuffledNumbersto[22]]: {
+  botPrompt: 'Is she dancing?',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['Yes', 'No']),
+  answers: [
+    {
+      answer: 'Yes',
+      nextId: 'yesNocorrectq23',
+    },
+    {
+      answer: 'No',
+      nextId: 'inyesNocorrectq23',
+    },
+
+  ],
+  },
+  
+  yesNocorrectq23: {
+  botPrompt: 'Hurray! <strong>Yes</strong> is the correct answer ! 😎',
+  answers: [
+    {
+      nextId: 'yesNo'+shuffledNumbersto[23],
+    },
+  ],
+  },
+  inyesNocorrectq23: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Yes"</strong>',
+  answers: [
+    {
+      nextId: 'yesNo'+shuffledNumbersto[23],
+    },
+  ],
+  },
+  
+  //24
+  ['yesNo'+shuffledNumbersto[23]]: {
+  botPrompt: 'Is she studying?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['Yes', 'No']),
+  answers: [
+    {
+      answer: 'Yes',
+      nextId: 'yesNocorrectq24',
+    },
+    {
+      answer: 'No',
+      nextId: 'inyesNocorrectq24',
+    },
+
+  ],
+  },
+  
+  yesNocorrectq24: {
+  botPrompt: 'Hurray! <strong>Yes</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'yesNo'+shuffledNumbersto[24],
+    },
+  ],
+  },
+  inyesNocorrectq24: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Yes"</strong>',
+  answers: [
+    {
+      nextId: 'yesNo'+shuffledNumbersto[24],
+    },
+  ],
+  },
+  
+  //25
+  ['yesNo'+shuffledNumbersto[24]]: {
+  botPrompt: 'Is  he a teacher?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['Yes ', 'No']),
+  answers: [
+    {
+      answer: 'Yes ',
+      nextId: 'yesNocorrectq25',
+    },
+    {
+      answer: 'No',
+      nextId: 'inyesNocorrectq25',
+    },
+
+  ],
+  },
+  
+  yesNocorrectq25: {
+  botPrompt: 'Hurray! <strong>Yes</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'wishtocontinue28',
+    },
+  ],
+  },
+  inyesNocorrectq25: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Yes"</strong>',
+  answers: [
+    {
+      nextId: 'wishtocontinue28',
+    },
+  ],
+  },
+  
+  wishtocontinue28: {
+    botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
+    input: selectField(['Yes!', 'No!']),
+    answers: [
+        {
+          answer: 'Yes!',
+          nextId: 'day29',
+        },
+        {
+          answer: 'No!',
+          nextId: 'endConv',
+        },
+    ],
+  },
+  //endyesNoletter
+
+  day29: {
+    botPrompt: '<strong> Day 29 : </strong> Colour Song',
+    answers: [
+            { nextId: 'day29link' },
+    ],
+    sumToBags: [{ name: 'd', points: 29 }],
+  },
+  
+  day29link: {
+    botPrompt: 'https://youtu.be/5jS9tz3Fy24',
+    type: RTypes.LINK,
+    answers: [
+      {
+        nextId: 'day291comment',
+      },
+    ],
+  },
+  
+  day291comment: {
+    botPrompt: 'Recognising colour through everyDay objects',
+    answers: [
+            { nextId: 'day291link' },
+    ],
+  },
+  day291link: {
+    botPrompt: 'https://youtu.be/JQtIF3MG1q4',
+    type: RTypes.LINK,
+    answers: [
+      {
+        nextId: 'day292comment',
+      },
+    ],
+  },
+  day292comment: {
+    botPrompt: 'TLM Video',
+    answers: [
+            { nextId: 'day292link' },
+    ],
+  },
+  day292link: {
+    botPrompt: 'https://youtu.be/i1wP6w_cJRk',
+    type: RTypes.LINK,
+    answers: [
+      {
+        nextId: 'day293comment' ,
+      },
+    ],
+  },
+  day293comment: {
+    botPrompt: 'Let’s look into the pages of the book',
+    answers: [
+            { nextId: 'day293link' },
+    ],
+  },
+  day293link: {
+    botPrompt: 'https://drive.google.com/file/d/1e0RvqhSnTorOMiUZeDM9hTL-CBzER5V4/view?usp=sharing',
+    type: RTypes.LINK,
+    answers: [
+      {
+        nextId: 'colours'+shuffledNumbersto[0],
+      },
+    ],
+  },
+  
+  
+  //colours
+  
+  
+  ["colours"+shuffledNumbersto[0]]: {
+      botPrompt: 'What is the colour of  rose?',
+      type: RTypes.TRANSFORMED_TEXT,
+      input: selectField(['Blue', 'Red', "Green","Yellow"]),
+      answers: [
+        {
+          answer: 'Blue',
+          nextId: 'incolourscorrect',
+        },
+        {
+          answer: 'Red',
+          nextId: 'colourscorrect',
+        },
+        {
+          answer: "Green",
+          nextId: 'incolourscorrect',
+        },
+        {
+          answer: "Yellow",
+          nextId: 'incolourscorrect',
+        },
+      ],
+    },
+    colourscorrect: {
+      botPrompt: 'Hurray <strong>Red</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'colours'+shuffledNumbersto[1],
+        },
+      ],
+    },
+    incolourscorrect: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Red"</strong>',
+      answers: [
+        {
+          nextId: 'colours'+shuffledNumbersto[1],
+        },
+      ],
+    },
+    
+    ['colours'+shuffledNumbersto[1]]: {
+      botPrompt: 'What is the colour of the sun?',
+      type: RTypes.TRANSFORMED_TEXT,
+    
+      input: selectField(['Black', 'Yellow', "Purple","Pink"]),
+      answers: [
+        {
+          answer: 'Black',
+          nextId: 'incolourscorrectq2',
+        },
+        {
+          answer: 'Yellow',
+          nextId: 'colourscorrectq2',
+        },
+        {
+          answer: "Purple",
+          nextId: 'incolourscorrectq2',
+        },
+        {
+          answer: "Pink",
+          nextId: 'incolourscorrectq2',
+        },
+      ],
+    },
+    
+    colourscorrectq2: {
+      botPrompt: 'Hurray! <strong>Yellow</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'colours'+shuffledNumbersto[2],
+        },
+      ],
+    },
+    incolourscorrectq2: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Yellow"</strong>',
+      answers: [
+        {
+          nextId: 'colours'+shuffledNumbersto[2],
+        },
+      ],
+    },
+    
+    //3
+    ['colours'+shuffledNumbersto[2]]: {
+    botPrompt: 'What is the colour of banana?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['Green', 'Brown', "White","Yellow"]),
+      answers: [
+        {
+          answer: 'Green',
+          nextId: 'incolourscorrectq3',
+        },
+        {
+          answer: 'Brown',
+          nextId: 'incolourscorrectq3',
+        },
+        {
+          answer: "White",
+          nextId: 'incolourscorrectq3',
+        },
+        {
+          answer: "Yellow",
+          nextId: 'colourscorrectq3',
+        },
+      ],
+    },
+    
+    colourscorrectq3: {
+    botPrompt: 'Hurray! <strong>Yellow</strong> is the correct answer ! 😎',
+    answers: [
+      {
+        nextId: 'colours'+shuffledNumbersto[3],
+      },
+    ],
+    },
+    incolourscorrectq3: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Yellow"</strong>',
+    answers: [
+      {
+        nextId: 'colours'+shuffledNumbersto[3],
+      },
+    ],
+    },
+    
+    //4
+    ['colours'+shuffledNumbersto[3]]: {
+    botPrompt: 'What is the colour of radish?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['Blue', 'Black', "Red","White"]),
+      answers: [
+        {
+          answer: 'Blue',
+          nextId: 'incolourscorrectq4',
+        },
+        {
+          answer: 'Black',
+          nextId: 'incolourscorrectq4',
+        },
+        {
+          answer: "Red",
+          nextId: 'incolourscorrectq4',
+        },
+        {
+          answer: "White",
+          nextId: 'colourscorrectq4',
+        },
+      ],
+    },
+    
+    colourscorrectq4: {
+    botPrompt: 'Hurray! <strong>White</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'colours'+shuffledNumbersto[4],
+      },
+    ],
+    },
+    incolourscorrectq4: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"White"</strong>',
+    answers: [
+      {
+        nextId: 'colours'+shuffledNumbersto[4],
+      },
+    ],
+    },
+    
+    //5
+    ['colours'+shuffledNumbersto[4]]: {
+    botPrompt: 'What is the colour of brinjal?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['Blue', 'Purple', "Red","Yellow"]),
+      answers: [
+        {
+          answer: 'Blue',
+          nextId: 'incolourscorrectq5',
+        },
+        {
+          answer: 'Purple',
+          nextId: 'colourscorrectq5',
+        },
+        {
+          answer: "Red",
+          nextId: 'incolourscorrectq5',
+        },
+        {
+          answer: "Yellow",
+          nextId: 'incolourscorrectq5',
+        },
+      ],
+    },
+    
+    colourscorrectq5: {
+    botPrompt: 'Hurray! <strong>Purple</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'colours'+shuffledNumbersto[5],
+      },
+    ],
+    },
+    incolourscorrectq5: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Purple"</strong>',
+    answers: [
+      {
+        nextId: 'colours'+shuffledNumbersto[5],
+      },
+    ],
+    },
+    
+    //6
+    ['colours'+shuffledNumbersto[5]]: {
+    botPrompt: 'What is the colour of tomato?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['Blue', 'Green', "Purple","Red"]),
+      answers: [
+        {
+          answer: 'Blue',
+          nextId: 'incolourscorrectq6',
+        },
+        {
+          answer: 'Green',
+          nextId: 'incolourscorrectq6',
+        },
+        {
+          answer: "Purple",
+          nextId: 'incolourscorrectq6',
+        },
+        {
+          answer: "Red",
+          nextId: 'colourscorrectq6',
+        },
+      ],
+    },
+    
+    colourscorrectq6: {
+    botPrompt: 'Hurray! <strong>Red</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'colours'+shuffledNumbersto[6],
+      },
+    ],
+    },
+    incolourscorrectq6: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>Red</strong> answer is <strong>"Red"</strong>',
+    answers: [
+      {
+        nextId: 'colours'+shuffledNumbersto[6],
+      },
+    ],
+    },
+  
+    //7
+    ['colours'+shuffledNumbersto[6]]: {
+    botPrompt: 'What is the colour of the flower?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['Blue', 'Red', "Orange","Pink"]),
+      answers: [
+        {
+          answer: 'Blue',
+          nextId: 'incolourscorrectq7',
+        },
+        {
+          answer: 'Red',
+          nextId: 'colourscorrectq7',
+        },
+        {
+          answer: "Orange",
+          nextId: 'colourscorrectq7',
+        },
+        {
+          answer: "Pink",
+          nextId: 'colourscorrectq7',
+        },
+      ],
+    },
+    
+    colourscorrectq7: {
+    botPrompt: 'Hurray! <strong>Orange or Red or Pink</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'colours'+shuffledNumbersto[7],
+      },
+    ],
+    },
+    incolourscorrectq7: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Orange or Red or Pink"</strong>',
+    answers: [
+      {
+        nextId: 'colours'+shuffledNumbersto[7],
+      },
+    ],
+    },
+    
+    
+    //8
+    ['colours'+shuffledNumbersto[7]]: {
+    botPrompt: 'What is the colour of the orange?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['Blue', 'Orange', "Purple","Pink"]),
+      answers: [
+        {
+          answer: 'Blue',
+          nextId: 'incolourscorrectq8',
+        },
+        {
+          answer: 'Orange',
+          nextId: 'colourscorrectq8',
+        },
+        {
+          answer: "Purple",
+          nextId: 'incolourscorrectq8',
+        },
+        {
+          answer: "Pink",
+          nextId: 'incolourscorrectq8',
+        },
+      ],
+    },
+    
+    colourscorrectq8: {
+    botPrompt: 'Hurray! <strong>Orange</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'colours'+shuffledNumbersto[8],
+      },
+    ],
+    },
+    incolourscorrectq8: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Orange"</strong>',
+    answers: [
+      {
+        nextId: 'colours'+shuffledNumbersto[8],
+      },
+    ],
+    },
+    
+    //9
+    ['colours'+shuffledNumbersto[8]]: {
+    botPrompt: 'Which colour is the opposite of snow?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['Blue', 'Black', "White","Green"]),
+      answers: [
+        {
+          answer: 'Blue',
+          nextId: 'incolourscorrectq9',
+        },
+        {
+          answer: 'Black',
+          nextId: 'colourscorrectq9',
+        },
+        {
+          answer: "White",
+          nextId: 'incolourscorrectq9',
+        },
+        {
+          answer: "Green",
+          nextId: 'incolourscorrectq9',
+        },
+      ],
+    },
+    
+    colourscorrectq9: {
+    botPrompt: 'Hurray! <strong>Black</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'colours'+shuffledNumbersto[9],
+      },
+    ],
+    },
+    incolourscorrectq9: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Black"</strong>',
+    answers: [
+      {
+        nextId: 'colours'+shuffledNumbersto[9],
+      },
+    ],
+    },
+    
+    
+    //10
+    ['colours'+shuffledNumbersto[9]]: {
+    botPrompt: 'What is the colour of carrot?',
+    type: RTypes.TRANSFORMED_TEXT,
+  
+    input: selectField(['Blue', 'Orange', "Green","Yellow"]),
+      answers: [
+        {
+          answer: 'Blue',
+          nextId: 'colourscorrectq10',
+        },
+        {
+          answer: 'Orange',
+          nextId: 'incolourscorrectq10',
+        },
+        {
+          answer: "Green",
+          nextId: 'incolourscorrectq10',
+        },
+        {
+          answer: "Yellow",
+          nextId: 'incolourscorrectq10',
+        },
+      ],
+    
+    },
+    
+    colourscorrectq10: {
+    botPrompt: 'Hurray! <strong>Orange</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'colours'+shuffledNumbersto[10],
+      },
+    ],
+    },
+    incolourscorrectq10: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Orange"</strong>',
+    answers: [
+      {
+        nextId: 'colours'+shuffledNumbersto[10],
+      },
+    ],
+    },
+    
+    //11
+    ['colours'+shuffledNumbersto[10]]: {
+    botPrompt: 'What is the colour of tuberose?',
+    type: RTypes.TRANSFORMED_TEXT,
+  
+    input: selectField(['White', 'Orange', "Purple","Pink"]),
+      answers: [
+        {
+          answer: 'White',
+          nextId: 'colourscorrectq11',
+        },
+        {
+          answer: 'Orange',
+          nextId: 'incolourscorrectq11',
+        },
+        {
+          answer: "Purple",
+          nextId: 'incolourscorrectq11',
+        },
+        {
+          answer: "Pink",
+          nextId: 'incolourscorrectq11',
+        },
+      ],
+    },
+    
+    colourscorrectq11: {
+    botPrompt: 'Hurray! <strong>White</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'colours'+shuffledNumbersto[11],
+      },
+    ],
+    },
+    incolourscorrectq11: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"White"</strong>',
+    answers: [
+      {
+        nextId: 'colours'+shuffledNumbersto[11],
+      },
+    ],
+    },
+    
+    //12
+    ['colours'+shuffledNumbersto[11]]: {
+    botPrompt: 'What is the colour of pumpkin?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['Blue', 'Orange', "Red","Yellow"]),
+      answers: [
+        {
+          answer: 'Blue',
+          nextId: 'incolourscorrectq12',
+        },
+        {
+          answer: 'Orange',
+          nextId: 'incolourscorrectq12',
+        },
+        {
+          answer: "Red",
+          nextId: 'incolourscorrectq12',
+        },
+        {
+          answer: "Yellow",
+          nextId: 'colourscorrectq12',
+        },
+      ],
+    },
+    
+    colourscorrectq12: {
+    botPrompt: 'Hurray! <strong>Yellow</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'colours'+shuffledNumbersto[12],
+      },
+    ],
+    },
+    incolourscorrectq12: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Yellow"</strong>',
+    answers: [
+      {
+        nextId: 'colours'+shuffledNumbersto[12],
+      },
+    ],
+    },
+    
+    //13
+    ['colours'+shuffledNumbersto[12]]: {
+    botPrompt: 'What is the colour of strawberry milkshake?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['Blue', 'Red', "Yellow"," Pink"]),
+      answers: [
+        {
+          answer: 'Blue',
+          nextId: 'incolourscorrectq13',
+        },
+        {
+          answer: 'Red',
+          nextId: 'incolourscorrectq13',
+        },
+        {
+          answer: "Yellow",
+          nextId: 'incolourscorrectq13',
+        },
+        {
+          answer: "Pink",
+          nextId: 'colourscorrectq13',
+        },
+      ],
+    },
+    
+    colourscorrectq13: {
+    botPrompt: 'Hurray! <strong>Pink</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'colours'+shuffledNumbersto[13],
+      },
+    ],
+    },
+    incolourscorrectq13: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Pink"</strong>',
+    answers: [
+      {
+        nextId: 'colours'+shuffledNumbersto[13],
+      },
+    ],
+    },
+    
+    //14
+    ['colours'+shuffledNumbersto[13]]: {
+    botPrompt: 'What is the colour of a lime?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['Blue', 'Green', "Purple","Yellow"]),
+      answers: [
+        {
+          answer: 'Blue',
+          nextId: 'incolourscorrectq14',
+        },
+        {
+          answer: 'Green',
+          nextId: 'colourscorrectq14',
+        },
+        {
+          answer: "Purple",
+          nextId: 'incolourscorrectq14',
+        },
+        {
+          answer: "Yellow",
+          nextId: 'incolourscorrectq14',
+        },
+      ],
+    },
+    
+    colourscorrectq14: {
+    botPrompt: 'Hurray! <strong>Green</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'colours'+shuffledNumbersto[14],
+      },
+    ],
+    },
+    incolourscorrectq14: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Green"</strong>',
+    answers: [
+      {
+        nextId: 'colours'+shuffledNumbersto[14],
+      },
+    ],
+    },
+    
+    
+    //15
+    ['colours'+shuffledNumbersto[14]]: {
+    botPrompt: 'What is the colour of an apple?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['Blue', 'Red', "Yellow","Pink"]),
+      answers: [
+        {
+          answer: 'Blue',
+          nextId: 'incolourscorrectq15',
+        },
+        {
+          answer: 'Red',
+          nextId: 'colourscorrectq15',
+        },
+        {
+          answer: "Yellow",
+          nextId: 'incolourscorrectq15',
+        },
+        {
+          answer: "Pink",
+          nextId: 'incolourscorrectq15',
+        },
+      ],
+    },
+  
+    colourscorrectq15: {
+    botPrompt: 'Hurray! <strong>Red</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'colours'+shuffledNumbersto[15],
+      },
+    ],
+    },
+    incolourscorrectq15: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Red"</strong>',
+    answers: [
+      {
+        nextId: 'colours'+shuffledNumbersto[15],
+      },
+    ],
+    },
+    
+    //16
+    ['colours'+shuffledNumbersto[15]]: {
+      botPrompt: 'What is the colour of sky?',
+      type: RTypes.TRANSFORMED_TEXT,
+      input: selectField(['Blue', 'Red', "Green","Pink"]),
+      answers: [
+        {
+          answer: 'Blue',
+          nextId: 'colourscorrectq16',
+        },
+        {
+          answer: 'Red',
+          nextId: 'incolourscorrectq16',
+        },
+        {
+          answer: "Green",
+          nextId: 'incolourscorrectq16',
+        },
+        {
+          answer: "Pink",
+          nextId: 'incolourscorrectq16',
+        },
+      ],
+    },
+    colourscorrectq16: {
+      botPrompt: 'You Have Selected correct Anwser 🎉! <strong>Blue</strong> 😎',
+      answers: [
+        {
+          nextId: 'colours'+shuffledNumbersto[16],
+        },
+      ],
+    },
+    incolourscorrectq16: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Blue"</strong>',
+      answers: [
+        {
+          nextId: 'colours'+shuffledNumbersto[16],
+        },
+      ],
+    },
+    
+    //17
+    ['colours'+shuffledNumbersto[16]]: {
+    botPrompt: 'What is the colour of the watermelon?',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['Blue', 'Green', "Red","Yellow"]),
+      answers: [
+        {
+          answer: 'Blue',
+          nextId: 'incolourscorrectq17',
+        },
+        {
+          answer: 'Green',
+          nextId: 'colourscorrectq17',
+        },
+        {
+          answer: "Red",
+          nextId: 'incolourscorrectq17',
+        },
+        {
+          answer: "Yellow",
+          nextId: 'incolourscorrectq17',
+        },
+      ],
+    },
+    colourscorrectq17: {
+    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>Green</strong> 😎',
+    answers: [
+      {
+        nextId: 'colours'+shuffledNumbersto[17],
+      },
+    ],
+    },
+    incolourscorrectq17: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Green"</strong>',
+    answers: [
+      {
+        nextId: 'colours'+shuffledNumbersto[17],
+      },
+    ],
+    },
+    
+    //18
+    ['colours'+shuffledNumbersto[17]]: {
+    botPrompt: 'What is the colour of snowman?.   ',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['Blue', 'White', "Purple","Pink"]),
+    answers: [
+      {
+        answer: 'Blue',
+        nextId: 'incolourscorrectq18',
+      },
+      {
+        answer: 'White',
+        nextId: 'colourscorrectq18',
+      },
+      {
+        answer: "Purple",
+        nextId: 'incolourscorrectq18',
+      },
+      {
+        answer: "Pink",
+        nextId: 'incolourscorrectq18',
+      },
+    ],
+    },
+    colourscorrectq18: {
+    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>White</strong> 😎',
+    answers: [
+      {
+        nextId: 'colours'+shuffledNumbersto[18],
+      },
+    ],
+    },
+    incolourscorrectq18: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"White"</strong>',
+    answers: [
+      {
+        nextId: 'colours'+shuffledNumbersto[18],
+      },
+    ],
+    },
+    
+    //19
+    ['colours'+shuffledNumbersto[18]]: {
+    botPrompt: 'What is the colour of butterfly?',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['Blue', 'Red', "Orange","Yellow"]),
+    answers: [
+      {
+        answer: 'Blue',
+        nextId: 'colourscorrectq19',
+      },
+      {
+        answer: 'Red',
+        nextId: 'colourscorrectq19',
+      },
+      {
+        answer: "Orange",
+        nextId: 'colourscorrectq19',
+      },
+      {
+        answer: "Yellow",
+        nextId: 'colourscorrectq19',
+      },
+    ],
+    },
+    colourscorrectq19: {
+    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>Blue or Red or Orange or Yellow</strong> Answers! 😎',
+    answers: [
+      {
+        nextId: 'colours'+shuffledNumbersto[19],
+      },
+    ],
+    },
+    incolourscorrectq19: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Blue or Red or Orange or Yellow"</strong>',
+    answers: [
+      {
+        nextId: 'colours'+shuffledNumbersto[19],
+      },
+    ],
+    },
+    
+    //20
+    ['colours'+shuffledNumbersto[19]]: {
+    botPrompt: 'What is the colour of hair?',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['Black', 'Red', "Green","Yellow"]),
+    answers: [
+      {
+        answer: 'Black',
+        nextId: 'colourscorrectq20',
+      },
+      {
+        answer: 'Red',
+        nextId: 'incolourscorrectq20',
+      },
+      {
+        answer: "Green",
+        nextId: 'incolourscorrectq20',
+      },
+      {
+        answer: "Yellow",
+        nextId: 'incolourscorrectq20',
+      },
+    ],
+    },
+    colourscorrectq20: {
+    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>Black</strong> 😎',
+    answers: [
+      {
+        nextId: 'colours'+shuffledNumbersto[20],
+      },
+    ],
+    },
+    incolourscorrectq20: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Black"</strong>',
+    answers: [
+      {
+        nextId: 'colours'+shuffledNumbersto[20],
+      },
+    ],
+    },
+    
+    //21
+    ["colours"+shuffledNumbersto[20]]: {
+      botPrompt: 'Which colour is the opposite of black?',
+      type: RTypes.TRANSFORMED_TEXT,
+      input: selectField(['Blue', 'Red', "Yellow","White"]),
+    answers: [
+      {
+        answer: 'Blue',
+        nextId: 'incolourscorrectq21',
+      },
+      {
+        answer: 'Red',
+        nextId: 'incolourscorrectq21',
+      },
+      {
+        answer: "Yellow",
+        nextId: 'incolourscorrectq21',
+      },
+      {
+        answer: "White",
+        nextId: 'colourscorrectq21',
+      },
+    ],
+    },
+    colourscorrectq21: {
+      botPrompt: 'Hurray <strong>White</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'colours'+shuffledNumbersto[21],
+        },
+      ],
+    },
+    incolourscorrectq21: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"White"</strong>',
+      answers: [
+        {
+          nextId: 'colours'+shuffledNumbersto[21],
+        },
+      ],
+    },
+    
+    //22
+    ['colours'+shuffledNumbersto[21]]: {
+      botPrompt: 'Which colour is the result of mixing red and blue?',
+      type: RTypes.TRANSFORMED_TEXT,
+    
+      input: selectField(['Yellow', 'Green', "Purple","Pink"]),
+    answers: [
+      {
+        answer: 'Yellow',
+        nextId: 'incolourscorrectq22',
+      },
+      {
+        answer: 'Green',
+        nextId: 'incolourscorrectq22',
+      },
+      {
+        answer: "Purple",
+        nextId: 'colourscorrectq22',
+      },
+      {
+        answer: "Pink",
+        nextId: 'incolourscorrectq22',
+      },
+    ],
+    },
+    
+    colourscorrectq22: {
+      botPrompt: 'Hurray! <strong>Purple</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'colours'+shuffledNumbersto[22],
+        },
+      ],
+    },
+    incolourscorrectq22: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Purple"</strong>',
+      answers: [
+        {
+          nextId: 'colours'+shuffledNumbersto[22],
+        },
+      ],
+    },
+    
+    //23
+    ['colours'+shuffledNumbersto[22]]: {
+    botPrompt: 'Which colour is the result of mixing red and yellow?',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['Green', 'Blue', "Orange","Pink"]),
+    answers: [
+      {
+        answer: 'Green',
+        nextId: 'incolourscorrectq23',
+      },
+      {
+        answer: 'Blue',
+        nextId: 'incolourscorrectq23',
+      },
+      {
+        answer: "Orange",
+        nextId: 'colourscorrectq23',
+      },
+      {
+        answer: "Pink",
+        nextId: 'incolourscorrectq23',
+      },
+    ],
+    },
+    
+    colourscorrectq23: {
+    botPrompt: 'Hurray! <strong>Orange</strong> is the correct answer ! 😎',
+    answers: [
+      {
+        nextId: 'colours'+shuffledNumbersto[23],
+      },
+    ],
+    },
+    incolourscorrectq23: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Orange"</strong>',
+    answers: [
+      {
+        nextId: 'colours'+shuffledNumbersto[23],
+      },
+    ],
+    },
+    
+    //24
+    ['colours'+shuffledNumbersto[23]]: {
+    botPrompt: 'Which colour is the result of mixing blue and yellow?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['Red', 'Green', "Orange","Pink"]),
+    answers: [
+      {
+        answer: 'Red',
+        nextId: 'incolourscorrectq24',
+      },
+      {
+        answer: 'Green',
+        nextId: 'colourscorrectq24',
+      },
+      {
+        answer: "Orange",
+        nextId: 'incolourscorrectq24',
+      },
+      {
+        answer: "Pink",
+        nextId: 'incolourscorrectq24',
+      },
+    ],
+    },
+    
+    colourscorrectq24: {
+    botPrompt: 'Hurray! <strong>Green</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'colours'+shuffledNumbersto[24],
+      },
+    ],
+    },
+    incolourscorrectq24: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Green"</strong>',
+    answers: [
+      {
+        nextId: 'colours'+shuffledNumbersto[24],
+      },
+    ],
+    },
+    
+    //25
+    ['colours'+shuffledNumbersto[24]]: {
+    botPrompt: 'Which color is often associated with sunshine?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['Blue ', 'Green', "Brown","Yellow"]),
+    answers: [
+      {
+        answer: 'Blue ',
+        nextId: 'incolourscorrectq25',
+      },
+      {
+        answer: 'Green',
+        nextId: 'incolourscorrectq25',
+      },
+      {
+        answer: "Brown",
+        nextId: 'incolourscorrectq25',
+      },
+      {
+        answer: "Yellow",
+        nextId: 'colourscorrectq25',
+      },
+    ],
+    },
+  
+    colourscorrectq25: {
+    botPrompt: 'Hurray! <strong>Yellow</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'wishtocontinue29',
+      },
+    ],
+    },
+    incolourscorrectq25: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Yellow"</strong>',
+    answers: [
+      {
+        nextId: 'wishtocontinue29',
+      },
+    ],
+    },
+    
+  
+    //endcoloursletter
+
+    wishtocontinue29: {
+      botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
+      input: selectField(['Yes!', 'No!']),
+      answers: [
+          {
+            answer: 'Yes!',
+            nextId: 'day30',
+          },
+          {
+            answer: 'No!',
+            nextId: 'endConv',
+          },
+      ],
+    },
+
+    day30: {
+      botPrompt: '<strong> Day 30 : </strong> Number Formation',
+      answers: [
+              { nextId: 'day30link' },
+      ],
+      sumToBags: [{ name: 'd', points: 30 }],
+
+    },
+    
+    day30link: {
+      botPrompt: 'https://youtu.be/ZYNjszXpkMk',
+      type: RTypes.LINK,
+      answers: [
+        {
+          nextId: 'day303comment',
+        },
+      ],
+    },
+    
+    day303comment: {
+      botPrompt: 'Let’s look into the pages of the book',
+      answers: [
+              { nextId: 'day303link' },
+      ],
+    },
+    day303link: {
+      botPrompt: 'https://drive.google.com/file/d/1qAYGEXTHC5Plk-pslthp8liGEBWWYQmV/view?usp=share_link',
+      type: RTypes.LINK,
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[0],
+        },
+      ],
+    },
+    
+    
+    //onceTens
+    
+    
+    ["onceTens"+shuffledNumbersto[0]]: {
+        botPrompt: 'What is the number at units place in 76?',
+        type: RTypes.TRANSFORMED_TEXT,
+        input: selectField(['6', '7', "8","9"]),
+        answers: [
+          {
+            answer: '6',
+            nextId: 'onceTenscorrect',
+          },
+          {
+            answer: '7',
+            nextId: 'inonceTenscorrect',
+          },
+          {
+            answer: "8",
+            nextId: 'inonceTenscorrect',
+          },
+          {
+            answer: "9",
+            nextId: 'inonceTenscorrect',
+          },
+        ],
+      },
+      onceTenscorrect: {
+        botPrompt: 'Hurray <strong>6</strong> is the correct answer  ! 😎',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[1],
+          },
+        ],
+      },
+      inonceTenscorrect: {
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"6"</strong>',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[1],
+          },
+        ],
+      },
+      
+      ['onceTens'+shuffledNumbersto[1]]: {
+        botPrompt: 'What is the number at tens place in 58?',
+        type: RTypes.TRANSFORMED_TEXT,
+      
+        input: selectField(['4', '5', "6","8"]),
+        answers: [
+          {
+            answer: '4',
+            nextId: 'inonceTenscorrectq2',
+          },
+          {
+            answer: '5',
+            nextId: 'onceTenscorrectq2',
+          },
+          {
+            answer: "6",
+            nextId: 'inonceTenscorrectq2',
+          },
+          {
+            answer: "8",
+            nextId: 'inonceTenscorrectq2',
+          },
+        ],
+      },
+      
+      onceTenscorrectq2: {
+        botPrompt: 'Hurray! <strong>58</strong> is the correct answer  ! 😎',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[2],
+          },
+        ],
+      },
+      inonceTenscorrectq2: {
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"58"</strong>',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[2],
+          },
+        ],
+      },
+      
+      //3
+      ['onceTens'+shuffledNumbersto[2]]: {
+      botPrompt: "What is the number at units place in 234?",
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['2', '3', "4","5"]),
+        answers: [
+          {
+            answer: '2',
+            nextId: 'inonceTenscorrectq3',
+          },
+          {
+            answer: '3',
+            nextId: 'inonceTenscorrectq3',
+          },
+          {
+            answer: "4",
+            nextId: 'onceTenscorrectq3',
+          },
+          {
+            answer: "5",
+            nextId: 'inonceTenscorrectq3',
+          },
+        ],
+      },
+      
+      onceTenscorrectq3: {
+      botPrompt: 'Hurray! <strong>4</strong> is the correct answer ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[3],
+        },
+      ],
+      },
+      inonceTenscorrectq3: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[3],
+        },
+      ],
+      },
+      
+      //4
+      ['onceTens'+shuffledNumbersto[3]]: {
+      botPrompt: 'What is the number at tens place in 456?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['4', '5', "6","7"]),
+        answers: [
+          {
+            answer: '4',
+            nextId: 'inonceTenscorrectq4',
+          },
+          {
+            answer: '5',
+            nextId: 'onceTenscorrectq4',
+          },
+          {
+            answer: "6",
+            nextId: 'inonceTenscorrectq4',
+          },
+          {
+            answer: "7",
+            nextId: 'inonceTenscorrectq4',
+          },
+        ],
+      },
+      
+      onceTenscorrectq4: {
+      botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[4],
+        },
+      ],
+      },
+      inonceTenscorrectq4: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[4],
+        },
+      ],
+      },
+      
+      //5
+      ['onceTens'+shuffledNumbersto[4]]: {
+      botPrompt: 'What is the number at hundreds place in 789?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['7', '8', "9","1"]),
+        answers: [
+          {
+            answer: '7',
+            nextId: 'inonceTenscorrectq5',
+          },
+          {
+            answer: '8',
+            nextId: 'inonceTenscorrectq5',
+          },
+          {
+            answer: "9",
+            nextId: 'onceTenscorrectq5',
+          },
+          {
+            answer: "1",
+            nextId: 'inonceTenscorrectq5',
+          },
+        ],
+      },
+      
+      onceTenscorrectq5: {
+      botPrompt: 'Hurray! <strong>7</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[5],
+        },
+      ],
+      },
+      inonceTenscorrectq5: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"7"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[5],
+        },
+      ],
+      },
+      
+      //6
+      ['onceTens'+shuffledNumbersto[5]]: {
+      botPrompt: 'What is the number at units place in 1523?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['1', '2', "3","5"]),
+        answers: [
+          {
+            answer: '1',
+            nextId: 'inonceTenscorrectq6',
+          },
+          {
+            answer: '2',
+            nextId: 'inonceTenscorrectq6',
+          },
+          {
+            answer: "3",
+            nextId: 'onceTenscorrectq6',
+          },
+          {
+            answer: "5",
+            nextId: 'inonceTenscorrectq6',
+          },
+        ],
+      },
+      
+      onceTenscorrectq6: {
+      botPrompt: 'Hurray! <strong>3</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[6],
+        },
+      ],
+      },
+      inonceTenscorrectq6: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"3"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[6],
+        },
+      ],
+      },
+      
+      //7
+      ['onceTens'+shuffledNumbersto[6]]: {
+      botPrompt: 'What is the number at tens place in 7896?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['7', '8', "9","6"]),
+        answers: [
+          {
+            answer: '7',
+            nextId: 'inonceTenscorrectq7',
+          },
+          {
+            answer: '8',
+            nextId: 'inonceTenscorrectq7',
+          },
+          {
+            answer: "9",
+            nextId: 'onceTenscorrectq7',
+          },
+          {
+            answer: "6",
+            nextId: 'inonceTenscorrectq7',
+          },
+        ],
+      },
+      
+      onceTenscorrectq7: {
+      botPrompt: 'Hurray! <strong>9</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[7],
+        },
+      ],
+      },
+      inonceTenscorrectq7: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"9"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[7],
+        },
+      ],
+      },
+      
+      
+      //8
+      ['onceTens'+shuffledNumbersto[7]]: {
+      botPrompt: 'What is the number at hundreds place in 2345?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['2', '3', "4","5"]),
+        answers: [
+          {
+            answer: '2',
+            nextId: 'inonceTenscorrectq8',
+          },
+          {
+            answer: '3',
+            nextId: 'onceTenscorrectq8',
+          },
+          {
+            answer: "4",
+            nextId: 'inonceTenscorrectq8',
+          },
+          {
+            answer: "5",
+            nextId: 'inonceTenscorrectq8',
+          },
+        ],
+      },
+      
+      onceTenscorrectq8: {
+      botPrompt: 'Hurray! <strong>3</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[8],
+        },
+      ],
+      },
+      inonceTenscorrectq8: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"3"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[8],
+        },
+      ],
+      },
+      
+      //9
+      ['onceTens'+shuffledNumbersto[8]]: {
+      botPrompt: 'What is the number at units place in 6789?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['6', '7', "8","9"]),
+        answers: [
+          {
+            answer: '6',
+            nextId: 'inonceTenscorrectq9',
+          },
+          {
+            answer: '7',
+            nextId: 'inonceTenscorrectq9',
+          },
+          {
+            answer: "8",
+            nextId: 'inonceTenscorrectq9',
+          },
+          {
+            answer: "9",
+            nextId: 'onceTenscorrectq9',
+          },
+        ],
+      },
+      
+      onceTenscorrectq9: {
+      botPrompt: 'Hurray! <strong>9</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[9],
+        },
+      ],
+      },
+      inonceTenscorrectq9: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"9"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[9],
+        },
+      ],
+      },
+      
+      
+      //10
+      ['onceTens'+shuffledNumbersto[9]]: {
+      botPrompt: 'What is the number at tens place in 1234?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['1', '2', "3","4"]),
+        answers: [
+          {
+            answer: '1',
+            nextId: 'inonceTenscorrectq10',
+          },
+          {
+            answer: '2',
+            nextId: 'inonceTenscorrectq10',
+          },
+          {
+            answer: "3",
+            nextId: 'onceTenscorrectq10',
+          },
+          {
+            answer: "4",
+            nextId: 'inonceTenscorrectq10',
+          },
+        ],
+      
+      },
+      
+      onceTenscorrectq10: {
+      botPrompt: 'Hurray! <strong>3</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[10],
+        },
+      ],
+      },
+      inonceTenscorrectq10: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"3"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[10],
+        },
+      ],
+      },
+      
+      //11
+      ['onceTens'+shuffledNumbersto[10]]: {
+      botPrompt: 'What is the digit in the tens place in the number 27?',
+      type: RTypes.TRANSFORMED_TEXT,
+    
+      input: selectField(['2', '7', "0","9"]),
+        answers: [
+          {
+            answer: '2',
+            nextId: 'onceTenscorrectq11',
+          },
+          {
+            answer: '7',
+            nextId: 'inonceTenscorrectq11',
+          },
+          {
+            answer: "0",
+            nextId: 'inonceTenscorrectq11',
+          },
+          {
+            answer: "9",
+            nextId: 'inonceTenscorrectq11',
+          },
+        ],
+      },
+      
+      onceTenscorrectq11: {
+      botPrompt: 'Hurray! <strong>2</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[11],
+        },
+      ],
+      },
+      inonceTenscorrectq11: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"2"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[11],
+        },
+      ],
+      },
+      
+      //12
+      ['onceTens'+shuffledNumbersto[11]]: {
+      botPrompt: 'What is the digit in the ones place in the number 42?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['2', '4', "0","9"]),
+        answers: [
+          {
+            answer: '2',
+            nextId: 'onceTenscorrectq12',
+          },
+          {
+            answer: '4',
+            nextId: 'inonceTenscorrectq12',
+          },
+          {
+            answer: "0",
+            nextId: 'inonceTenscorrectq12',
+          },
+          {
+            answer: "9",
+            nextId: 'inonceTenscorrectq12',
+          },
+        ],
+      },
+      
+      onceTenscorrectq12: {
+      botPrompt: 'Hurray! <strong>2</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[12],
+        },
+      ],
+      },
+      inonceTenscorrectq12: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"2"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[12],
+        },
+      ],
+      },
+      
+      //13
+      ['onceTens'+shuffledNumbersto[12]]: {
+      botPrompt: 'Which number comes after 63?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['64', '65', "66","67"]),
+        answers: [
+          {
+            answer: '64',
+            nextId: 'onceTenscorrectq13',
+          },
+          {
+            answer: '65',
+            nextId: 'inonceTenscorrectq13',
+          },
+          {
+            answer: "66",
+            nextId: 'inonceTenscorrectq13',
+          },
+          {
+            answer: "67",
+            nextId: 'inonceTenscorrectq13',
+          },
+        ],
+      },
+      
+      onceTenscorrectq13: {
+      botPrompt: 'Hurray! <strong>64</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[13],
+        },
+      ],
+      },
+      inonceTenscorrectq13: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"64"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[13],
+        },
+      ],
+      },
+      
+      //14
+      ['onceTens'+shuffledNumbersto[13]]: {
+      botPrompt: 'Which number comes before 48?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['46', '47', "49","50"]),
+        answers: [
+          {
+            answer: '46',
+            nextId: 'inonceTenscorrectq14',
+          },
+          {
+            answer: '47',
+            nextId: 'onceTenscorrectq14',
+          },
+          {
+            answer: "49",
+            nextId: 'inonceTenscorrectq14',
+          },
+          {
+            answer: "50",
+            nextId: 'inonceTenscorrectq14',
+          },
+        ],
+      },
+      
+      onceTenscorrectq14: {
+      botPrompt: 'Hurray! <strong>47</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[14],
+        },
+      ],
+      },
+      inonceTenscorrectq14: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"47"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[14],
+        },
+      ],
+      },
+      
+      
+      //15
+      ['onceTens'+shuffledNumbersto[14]]: {
+      botPrompt: 'Which number comes between 5 and 7?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['6', '8', "9","10"]),
+        answers: [
+          {
+            answer: '6',
+            nextId: 'onceTenscorrectq15',
+          },
+          {
+            answer: '8',
+            nextId: 'inonceTenscorrectq15',
+          },
+          {
+            answer: "9",
+            nextId: 'inonceTenscorrectq15',
+          },
+          {
+            answer: "10",
+            nextId: 'inonceTenscorrectq15',
+          },
+        ],
+      },
+      
+      onceTenscorrectq15: {
+      botPrompt: 'Hurray! <strong>6</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[15],
+        },
+      ],
+      },
+      inonceTenscorrectq15: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"6"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[15],
+        },
+      ],
+      },
+      
+      //16
+      ['onceTens'+shuffledNumbersto[15]]: {
+        botPrompt: 'What is the digit in the hundreds place in the number 123?',
+        type: RTypes.TRANSFORMED_TEXT,
+        input: selectField(['1', '2', "3","0"]),
+        answers: [
+          {
+            answer: '1',
+            nextId: 'onceTenscorrectq16',
+          },
+          {
+            answer: '2',
+            nextId: 'inonceTenscorrectq16',
+          },
+          {
+            answer: "3",
+            nextId: 'inonceTenscorrectq16',
+          },
+          {
+            answer: "0",
+            nextId: 'inonceTenscorrectq16',
+          },
+        ],
+      },
+      onceTenscorrectq16: {
+        botPrompt: 'You Have Selected correct Anwser 🎉! <strong>1</strong> 😎',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[16],
+          },
+        ],
+      },
+      inonceTenscorrectq16: {
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"1"</strong>',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[16],
+          },
+        ],
+      },
+      
+      //17
+      ['onceTens'+shuffledNumbersto[16]]: {
+      botPrompt: 'Which number comes after 25?',
+      type: RTypes.TRANSFORMED_TEXT,
+      input: selectField(['26', '27', "28","29"]),
+        answers: [
+          {
+            answer: '26',
+            nextId: 'onceTenscorrectq17',
+          },
+          {
+            answer: '27',
+            nextId: 'inonceTenscorrectq17',
+          },
+          {
+            answer: "28",
+            nextId: 'inonceTenscorrectq17',
+          },
+          {
+            answer: "29",
+            nextId: 'inonceTenscorrectq17',
+          },
+        ],
+      },
+      onceTenscorrectq17: {
+      botPrompt: 'You Have Selected correct Anwser 🎉! <strong>26</strong> 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[17],
+        },
+      ],
+      },
+      inonceTenscorrectq17: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"26"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[17],
+        },
+      ],
+      },
+      
+      //18
+      ['onceTens'+shuffledNumbersto[17]]: {
+      botPrompt: 'Which number comes before 12?   ',
+      type: RTypes.TRANSFORMED_TEXT,
+      input: selectField(['9', '10', "11","13"]),
+      answers: [
+        {
+          answer: '9',
+          nextId: 'inonceTenscorrectq18',
+        },
+        {
+          answer: '10',
+          nextId: 'inonceTenscorrectq18',
+        },
+        {
+          answer: "11",
+          nextId: 'onceTenscorrectq18',
+        },
+        {
+          answer: "13",
+          nextId: 'inonceTenscorrectq18',
+        },
+      ],
+      },
+      onceTenscorrectq18: {
+      botPrompt: 'You Have Selected correct Anwser 🎉! <strong>11</strong> 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[18],
+        },
+      ],
+      },
+      inonceTenscorrectq18: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"11"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[18],
+        },
+      ],
+      },
+      
+      //19
+      ['onceTens'+shuffledNumbersto[18]]: {
+      botPrompt: 'What is the value of the digit 3 in the number 345?',
+      type: RTypes.TRANSFORMED_TEXT,
+      input: selectField(['300', '3', "30","3000"]),
+      answers: [
+        {
+          answer: '300',
+          nextId: 'onceTenscorrectq19',
+        },
+        {
+          answer: '3',
+          nextId: 'inonceTenscorrectq19',
+        },
+        {
+          answer: "30",
+          nextId: 'inonceTenscorrectq19',
+        },
+        {
+          answer: "3000",
+          nextId: 'inonceTenscorrectq19',
+        },
+      ],
+      },
+      onceTenscorrectq19: {
+      botPrompt: 'You Have Selected correct Anwser 🎉! <strong>300</strong> Answers! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[19],
+        },
+      ],
+      },
+      inonceTenscorrectq19: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"300"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[19],
+        },
+      ],
+      },
+      
+      //20
+      ['onceTens'+shuffledNumbersto[19]]: {
+      botPrompt: 'What is the digit in the ones place in the number 86?',
+      type: RTypes.TRANSFORMED_TEXT,
+      input: selectField(['8', '6', "0","2"]),
+      answers: [
+        {
+          answer: '8',
+          nextId: 'inonceTenscorrectq20',
+        },
+        {
+          answer: '6',
+          nextId: 'onceTenscorrectq20',
+        },
+        {
+          answer: "0",
+          nextId: 'inonceTenscorrectq20',
+        },
+        {
+          answer: "2",
+          nextId: 'inonceTenscorrectq20',
+        },
+      ],
+      },
+      onceTenscorrectq20: {
+      botPrompt: 'You Have Selected correct Anwser 🎉! <strong>22</strong> 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[20],
+        },
+      ],
+      },
+      inonceTenscorrectq20: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"22"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[20],
+        },
+      ],
+      },
+      
+      //21
+      ["onceTens"+shuffledNumbersto[20]]: {
+        botPrompt: 'Which number comes between 18 and 20?',
+        type: RTypes.TRANSFORMED_TEXT,
+        input: selectField(['17', '19', "21","22"]),
+      answers: [
+        {
+          answer: '17',
+          nextId: 'inonceTenscorrectq21',
+        },
+        {
+          answer: '19',
+          nextId: 'onceTenscorrectq21',
+        },
+        {
+          answer: "21",
+          nextId: 'inonceTenscorrectq21',
+        },
+        {
+          answer: "22",
+          nextId: 'inonceTenscorrectq21',
+        },
+      ],
+      },
+      onceTenscorrectq21: {
+        botPrompt: 'Hurray <strong>19</strong> is the correct answer  ! 😎',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[21],
+          },
+        ],
+      },
+      inonceTenscorrectq21: {
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>19</strong> answer is <strong>"23"</strong>',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[21],
+          },
+        ],
+      },
+      
+      //22
+      ['onceTens'+shuffledNumbersto[21]]: {
+        botPrompt: 'What is the digit in the tens place in the number 56?',
+        type: RTypes.TRANSFORMED_TEXT,
+      
+        input: selectField(['5', '6', "0","2"]),
+      answers: [
+        {
+          answer: '5',
+          nextId: 'onceTenscorrectq22',
+        },
+        {
+          answer: '6',
+          nextId: 'inonceTenscorrectq22',
+        },
+        {
+          answer: "0",
+          nextId: 'inonceTenscorrectq22',
+        },
+        {
+          answer: "2",
+          nextId: 'inonceTenscorrectq22',
+        },
+      ],
+      },
+      
+      onceTenscorrectq22: {
+        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[22],
+          },
+        ],
+      },
+      inonceTenscorrectq22: {
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[22],
+          },
+        ],
+      },
+      
+      //23
+      ['onceTens'+shuffledNumbersto[22]]: {
+      botPrompt: "What is the value of the digit 2 in the number 825?",
+      type: RTypes.TRANSFORMED_TEXT,
+      input: selectField(['2', '20', "200","2000"]),
+      answers: [
+        {
+          answer: '2',
+          nextId: 'inonceTenscorrectq23',
+        },
+        {
+          answer: '20',
+          nextId: 'onceTenscorrectq23',
+        },
+        {
+          answer: "200",
+          nextId: 'inonceTenscorrectq23',
+        },
+        {
+          answer: "2000",
+          nextId: 'inonceTenscorrectq23',
+        },
+      ],
+      },
+      
+      onceTenscorrectq23: {
+      botPrompt: 'Hurray! <strong>20</strong> is the correct answer ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[23],
+        },
+      ],
+      },
+      inonceTenscorrectq23: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"20"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[23],
+        },
+      ],
+      },
+      
+      //24
+      ['onceTens'+shuffledNumbersto[23]]: {
+      botPrompt: 'What is the digit in the ones place in the number 73?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['7', '3', "0","4"]),
+      answers: [
+        {
+          answer: '7',
+          nextId: 'inonceTenscorrectq24',
+        },
+        {
+          answer: '3',
+          nextId: 'onceTenscorrectq24',
+        },
+        {
+          answer: "0",
+          nextId: 'inonceTenscorrectq24',
+        },
+        {
+          answer: "4",
+          nextId: 'inonceTenscorrectq24',
+        },
+      ],
+      },
+      
+      onceTenscorrectq24: {
+      botPrompt: 'Hurray! <strong>3</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[24],
+        },
+      ],
+      },
+      inonceTenscorrectq24: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"3"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[24],
+        },
+      ],
+      },
+      
+      //25
+      ['onceTens'+shuffledNumbersto[24]]: {
+      botPrompt: 'What is the number at the units place in 124?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['1', '2', "4","0"]),
+      answers: [
+        {
+          answer: '1',
+          nextId: 'inonceTenscorrectq25',
+        },
+        {
+          answer: '2',
+          nextId: 'inonceTenscorrectq25',
+        },
+        {
+          answer: "4",
+          nextId: 'onceTenscorrectq25',
+        },
+        {
+          answer: "0",
+          nextId: 'inonceTenscorrectq25',
+        },
+      ],
+      },
+      
+      onceTenscorrectq25: {
+      botPrompt: 'Hurray! <strong>4</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[25],
+        },
+      ],
+      },
+      inonceTenscorrectq25: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[25],
+        },
+      ],
+      },
+      
+      //26
+      ['onceTens'+shuffledNumbersto[25]]: {
+      botPrompt: 'What is the number at the tens place in 379?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['3', '7', "9","0"]),
+      answers: [
+        {
+          answer: '3',
+          nextId: 'inonceTenscorrectq26',
+        },
+        {
+          answer: '7',
+          nextId: 'onceTenscorrectq26',
+        },
+        {
+          answer: "9",
+          nextId: 'inonceTenscorrectq26',
+        },
+        {
+          answer: "0",
+          nextId: 'inonceTenscorrectq26',
+        },
+      ],
+      },
+      
+      onceTenscorrectq26: {
+      botPrompt: 'Hurray! <strong>7</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[26],
+        },
+      ],
+      },
+      inonceTenscorrectq26: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"7"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[26],
+        },
+      ],
+      },
+      
+      //27
+      ['onceTens'+shuffledNumbersto[26]]: {
+      botPrompt: 'What is the number at the hundreds place in 548?',
+      type: RTypes.TRANSFORMED_TEXT,
+      input: selectField(['5', '4', "8","0"]),
+        answers: [
+          {
+            answer: '5',
+            nextId: 'onceTenscorrectq27',
+          },
+          {
+            answer: '4',
+            nextId: 'inonceTenscorrectq27',
+          },
+          {
+            answer: "8",
+            nextId: 'inonceTenscorrectq27',
+          },
+          {
+            answer: "0",
+            nextId: 'inonceTenscorrectq27',
+          },
+        ],
+      },
+      
+      onceTenscorrectq27: {
+      botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[27],
+        },
+      ],
+      },
+      inonceTenscorrectq27: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[27],
+        },
+      ],
+      },
+      
+      
+      //28
+      ['onceTens'+shuffledNumbersto[27]]: {
+      botPrompt: 'Which of the following is the sum of digits at the units and tens place in the number 56?',
+      type: RTypes.TRANSFORMED_TEXT,
+      input: selectField(['9', '10', "11","12"]),
+      answers: [
+        {
+          answer: '9',
+          nextId: 'inonceTenscorrectq28',
+        },
+        {
+          answer: '10',
+          nextId: 'inonceTenscorrectq28',
+        },
+        {
+          answer: "11",
+          nextId: 'onceTenscorrectq28',
+        },
+        {
+          answer: "12",
+          nextId: 'inonceTenscorrectq28',
+        },
+      ],
+      },
+      
+      onceTenscorrectq28: {
+      botPrompt: 'Hurray! <strong>11</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[28],
+        },
+      ],
+      },
+      inonceTenscorrectq28: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"11"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[28],
+        },
+      ],
+      },
+      
+      //29
+      ['onceTens'+shuffledNumbersto[28]]: {
+      botPrompt: 'What is the sum of digits at the tens and hundreds place in the number 387?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['6', '10', "15","18"]),
+        answers: [
+          {
+            answer: '6',
+            nextId: 'inonceTenscorrectq29',
+          },
+          {
+            answer: '10',
+            nextId: 'inonceTenscorrectq29',
+          },
+          {
+            answer: "15",
+            nextId: 'onceTenscorrectq29',
+          },
+          {
+            answer: "18",
+            nextId: 'inonceTenscorrectq29',
+          },
+        ],
+      },
+      
+      onceTenscorrectq29: {
+      botPrompt: 'Hurray! <strong>15</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[29],
+        },
+      ],
+      },
+      inonceTenscorrectq29: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"15"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[29],
+        },
+      ],
+      },
+      
+      
+      //30
+      ['onceTens'+shuffledNumbersto[29]]: {
+      botPrompt: 'What is the number formed by the digits 5, 2, and 8?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['285', '582', "258","852"]),
+      answers: [
+        {
+          answer: '285',
+          nextId: 'inonceTenscorrectq30',
+        },
+        {
+          answer: '582',
+          nextId: 'inonceTenscorrectq30',
+        },
+        {
+          answer: "258",
+          nextId: 'onceTenscorrectq30',
+        },
+        {
+          answer: "852",
+          nextId: 'inonceTenscorrectq30',
+        },
+      ],
+      },
+    
+      onceTenscorrectq30: {
+      botPrompt: 'Hurray! <strong>258</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[30],
+        },
+      ],
+      },
+      inonceTenscorrectq30: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"258"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[30],
+        },
+      ],
+      },
+      
+      //31
+      ['onceTens'+shuffledNumbersto[30]]: {
+      botPrompt: 'What is the sum of digits at the units place and hundreds place in the number 763?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['7', '9', "10","13"]),
+        answers: [
+          {
+            answer: '7',
+            nextId: 'inonceTenscorrectq31',
+          },
+          {
+            answer: '9',
+            nextId: 'inonceTenscorrectq31',
+          },
+          {
+            answer: "10",
+            nextId: 'onceTenscorrectq31',
+          },
+          {
+            answer: "13",
+            nextId: 'inonceTenscorrectq31',
+          },
+        ],
+      },
+      
+      onceTenscorrectq31: {
+      botPrompt: 'Hurray! <strong>10</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[31],
+        },
+      ],
+      },
+      inonceTenscorrectq31: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"10"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[31],
+        },
+      ],
+      },
+      
+      //32
+      ['onceTens'+shuffledNumbersto[31]]: {
+      botPrompt: 'What is the number formed by the digits 4, 6, and 2?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['642', '426', "264","462"]),
+      answers: [
+        {
+          answer: '642',
+          nextId: 'inonceTenscorrectq32',
+        },
+        {
+          answer: '426',
+          nextId: 'inonceTenscorrectq32',
+        },
+        {
+          answer: "264",
+          nextId: 'inonceTenscorrectq32',
+        },
+        {
+          answer: "462",
+          nextId: 'onceTenscorrectq32',
+        },
+      ],
+      },
+      
+      onceTenscorrectq32: {
+      botPrompt: 'Hurray! <strong>462</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[32],
+        },
+      ],
+      },
+      inonceTenscorrectq32: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"462"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[32],
+        },
+      ],
+      },
+      
+      //33
+      ['onceTens'+shuffledNumbersto[32]]: {
+      botPrompt: 'Which of the following is the sum of digits at the tens and units place in the number 73?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      
+      input: selectField(['5', '10', "11","12"]),
+      answers: [
+        {
+          answer: '5',
+          nextId: 'inonceTenscorrectq33',
+        },
+        {
+          answer: '10',
+          nextId: 'onceTenscorrectq33',
+        },
+        {
+          answer: "11",
+          nextId: 'inonceTenscorrectq33',
+        },
+        {
+          answer: "12",
+          nextId: 'inonceTenscorrectq33',
+        },
+      ],
+      },
+      
+      onceTenscorrectq33: {
+      botPrompt: 'Hurray! <strong>10</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[33],
+        },
+      ],
+      },
+      inonceTenscorrectq33: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"10"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[33],
+        },
+      ],
+      },
+      
+      //34
+      ['onceTens'+shuffledNumbersto[33]]: {
+      botPrompt: 'What is the number formed by the digits 9, 0, and 1?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['109', '901', "190","910"]),
+        answers: [
+          {
+            answer: '109',
+            nextId: 'inonceTenscorrectq34',
+          },
+          {
+            answer: '901',
+            nextId: 'inonceTenscorrectq34',
+          },
+          {
+            answer: "190",
+            nextId: 'onceTenscorrectq34',
+          },
+          {
+            answer: "910",
+            nextId: 'inonceTenscorrectq34',
+          },
+        ],
+      },
+      
+      onceTenscorrectq34: {
+      botPrompt: 'Hurray! <strong>190</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[34],
+        },
+      ],
+      },
+      inonceTenscorrectq34: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"190"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[34],
+        },
+      ],
+      },
+      
+      
+      //35
+      ['onceTens'+shuffledNumbersto[34]]: {
+      botPrompt: 'What is the sum of digits at the units place and tens place in the number 48?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+    
+      input: selectField(['6', '8', "10","12"]),
+      answers: [
+        {
+          answer: '6',
+          nextId: 'inonceTenscorrectq35',
+        },
+        {
+          answer: '8',
+          nextId: 'inonceTenscorrectq35',
+        },
+        {
+          answer: "10",
+          nextId: 'inonceTenscorrectq35',
+        },
+        {
+          answer: "12",
+          nextId: 'onceTenscorrectq35',
+        },
+      ],
+      },
+      
+      onceTenscorrectq35: {
+      botPrompt: 'Hurray! <strong>12</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[35],
+        },
+      ],
+      },
+      inonceTenscorrectq35: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"12"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[35],
+        },
+      ],
+      },
+      
+      //36
+      ['onceTens'+shuffledNumbersto[35]]: {
+        botPrompt: 'What is the number formed by the digits 6, 3, and 7?',
+        type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['367', '376', "736","763"]),
+      answers: [
+        {
+          answer: '367',
+          nextId: 'onceTenscorrectq36',
+        },
+        {
+          answer: '376',
+          nextId: 'inonceTenscorrectq36',
+        },
+        {
+          answer: "736",
+          nextId: 'inonceTenscorrectq36',
+        },
+        {
+          answer: "48",
+          nextId: 'inonceTenscorrectq36',
+        },
+      ],
+      },
+      onceTenscorrectq36: {
+        botPrompt: 'You Have Selected correct Anwser 🎉! <strong>367</strong> 😎',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[36],
+          },
+        ],
+      },
+      inonceTenscorrectq36: {
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"367"</strong>',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[36],
+          },
+        ],
+      },
+      
+      //37
+      ['onceTens'+shuffledNumbersto[36]]: {
+      botPrompt: 'Which of the following is the sum of digits at the hundreds and units place in the number 549?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['8', '9', "10","14"]),
+      answers: [
+        {
+          answer: '8',
+          nextId: 'inonceTenscorrectq37',
+        },
+        {
+          answer: '9',
+          nextId: 'onceTenscorrectq37',
+        },
+        {
+          answer: "10",
+          nextId: 'inonceTenscorrectq37',
+        },
+        {
+          answer: "14",
+          nextId: 'inonceTenscorrectq37',
+        },
+      ],
+      },
+      onceTenscorrectq37: {
+      botPrompt: 'You Have Selected correct Anwser 🎉! <strong>9</strong> 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[37],
+        },
+      ],
+      },
+      inonceTenscorrectq37: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"9"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[37],
+        },
+      ],
+      },
+      
+      //38
+      ['onceTens'+shuffledNumbersto[37]]: {
+      botPrompt: 'What is the largest number formed by the digits 8, 5, and 2?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['285', '852', "528","582"]),
+        answers: [
+          {
+            answer: '285',
+            nextId: 'inonceTenscorrectq38',
+          },
+          {
+            answer: '852',
+            nextId: 'onceTenscorrectq38',
+          },
+          {
+            answer: "528",
+            nextId: 'inonceTenscorrectq38',
+          },
+          {
+            answer: "582",
+            nextId: 'inonceTenscorrectq38',
+          },
+        ],
+      },
+      onceTenscorrectq38: {
+      botPrompt: 'You Have Selected correct Anwser 🎉! <strong>852</strong> 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[38],
+        },
+      ],
+      },
+      inonceTenscorrectq38: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"852"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[38],
+        },
+      ],
+      },
+      
+      //39
+      ['onceTens'+shuffledNumbersto[38]]: {
+      botPrompt: 'What is the sum of digits at the tens place and units place in the number 37?',
+      type: RTypes.TRANSFORMED_TEXT,
+      input: selectField(['3', '7', "10","13"]),
+      answers: [
+        {
+          answer: '3',
+          nextId: 'inonceTenscorrectq310',
+        },
+        {
+          answer: '7',
+          nextId: 'inonceTenscorrectq39',
+        },
+        {
+          answer: "10",
+          nextId: 'onceTenscorrectq39',
+        },
+        {
+          answer: "13",
+          nextId: 'inonceTenscorrectq39',
+        },
+      ],
+      },
+      onceTenscorrectq39: {
+      botPrompt: 'You Have Selected correct Anwser 🎉! <strong>10</strong> Answers! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[39],
+        },
+      ],
+      },
+      inonceTenscorrectq39: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"10"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[39],
+        },
+      ],
+      },
+      
+      //40
+      ['onceTens'+shuffledNumbersto[39]]: {
+      botPrompt: 'What is the number at the units place in the number 43?',
+      type: RTypes.TRANSFORMED_TEXT,
+      input: selectField(['3', '4', "5","32"]),
+        answers: [
+          {
+            answer: '3',
+            nextId: 'onceTenscorrectq40',
+          },
+          {
+            answer: '4',
+            nextId: 'inonceTenscorrectq40',
+          },
+          {
+            answer: "5",
+            nextId: 'inonceTenscorrectq40',
+          },
+          {
+            answer: "6",
+            nextId: 'inonceTenscorrectq40',
+          },
+        ],
+      },
+      onceTenscorrectq40: {
+      botPrompt: 'You Have Selected correct Anwser 🎉! <strong>3</strong> 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[40],
+        },
+      ],
+      },
+      inonceTenscorrectq40: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"3"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[40],
+        },
+      ],
+      },
+      
+      //41
+      ["onceTens"+shuffledNumbersto[40]]: {
+        botPrompt: 'What is the number at the tens place in the number 65?',
+        type: RTypes.TRANSFORMED_TEXT,
+        input: selectField(['4', '5', "6","7"]),
+        answers: [
+          {
+            answer: '4',
+            nextId: 'inonceTenscorrectq41',
+          },
+          {
+            answer: '5',
+            nextId: 'onceTenscorrectq41',
+          },
+          {
+            answer: "6",
+            nextId: 'inonceTenscorrectq41',
+          },
+          {
+            answer: "7",
+            nextId: 'inonceTenscorrectq41',
+          },
+        ],
+      },
+      onceTenscorrectq41: {
+        botPrompt: 'Hurray <strong>5</strong> is the correct answer  ! 😎',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[41],
+          },
+        ],
+      },
+      inonceTenscorrectq41: {
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[41],
+          },
+        ],
+      },
+      
+      //42
+      
+      ['onceTens'+shuffledNumbersto[41]]: {
+        botPrompt: 'What is the sum of digits at the units place and tens place in the number 28?',
+        type: RTypes.TRANSFORMED_TEXT,
+      
+        input: selectField(['6', '7', "8","9"]),
+        answers: [
+          {
+            answer: '6',
+            nextId: 'inonceTenscorrectq42',
+          },
+          {
+            answer: '7',
+            nextId: 'inonceTenscorrectq42',
+          },
+          {
+            answer: "8",
+            nextId: 'onceTenscorrectq42',
+          },
+          {
+            answer: "9",
+            nextId: 'inonceTenscorrectq42',
+          },
+        ],
+      },
+      
+      onceTenscorrectq42: {
+        botPrompt: 'Hurray! <strong>8</strong> is the correct answer  ! 😎',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[42],
+          },
+        ],
+      },
+      inonceTenscorrectq42: {
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"8"</strong>',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[42],
+          },
+        ],
+      },
+      
+      //43
+      ['onceTens'+shuffledNumbersto[42]]: {
+      botPrompt: "What is the number at the units place in the number 91?",
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['0', '1', "2","3"]),
+        answers: [
+          {
+            answer: '0',
+            nextId: 'inonceTenscorrectq43',
+          },
+          {
+            answer: '1',
+            nextId: 'onceTenscorrectq43',
+          },
+          {
+            answer: "2",
+            nextId: 'inonceTenscorrectq43',
+          },
+          {
+            answer: "3",
+            nextId: 'inonceTenscorrectq43',
+          },
+        ],
+      },
+      
+      onceTenscorrectq43: {
+      botPrompt: 'Hurray! <strong>1</strong> is the correct answer ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[43],
+        },
+      ],
+      },
+      inonceTenscorrectq43: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"1"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[43],
+        },
+      ],
+      },
+      
+      //44
+      ['onceTens'+shuffledNumbersto[43]]: {
+      botPrompt: 'What is the number at the tens place in the number 25?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['2', '5', "8","9"]),
+        answers: [
+          {
+            answer: '2',
+            nextId: 'onceTenscorrectq44',
+          },
+          {
+            answer: '5',
+            nextId: 'inonceTenscorrectq44',
+          },
+          {
+            answer: "8",
+            nextId: 'inonceTenscorrectq44',
+          },
+          {
+            answer: "9",
+            nextId: 'inonceTenscorrectq44',
+          },
+        ],
+      },
+      
+      onceTenscorrectq44: {
+      botPrompt: 'Hurray! <strong>2</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[44],
+        },
+      ],
+      },
+      inonceTenscorrectq44: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"2"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[44],
+        },
+      ],
+      },
+      
+      //45
+      ['onceTens'+shuffledNumbersto[44]]: {
+      botPrompt: 'What is the sum of digits at the units place and tens place in the number 57?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['11', '12', "13","14"]),
+        answers: [
+          {
+            answer: '11',
+            nextId: 'inonceTenscorrectq45',
+          },
+          {
+            answer: '12',
+            nextId: 'onceTenscorrectq45',
+          },
+          {
+            answer: "13",
+            nextId: 'inonceTenscorrectq45',
+          },
+          {
+            answer: "14",
+            nextId: 'inonceTenscorrectq45',
+          },
+        ],
+      },
+      
+      onceTenscorrectq45: {
+      botPrompt: 'Hurray! <strong>12</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[45],
+        },
+      ],
+      },
+      inonceTenscorrectq45: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"12"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[45],
+        },
+      ],
+      },
+      
+      //46
+      ['onceTens'+shuffledNumbersto[45]]: {
+      botPrompt: 'What is the number at the units place in the number 76?',
+      type: RTypes.TRANSFORMED_TEXT,
+      input: selectField(['5', '6', "7","8"]),
+        answers: [
+          {
+            answer: '5',
+            nextId: 'inonceTenscorrectq46',
+          },
+          {
+            answer: '6',
+            nextId: 'onceTenscorrectq46',
+          },
+          {
+            answer: "7",
+            nextId: 'inonceTenscorrectq46',
+          },
+          {
+            answer: "8",
+            nextId: 'inonceTenscorrectq46',
+          },
+        ],
+      },
+      
+      onceTenscorrectq46: {
+      botPrompt: 'Hurray! <strong>6</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[46],
+        },
+      ],
+      },
+      inonceTenscorrectq46: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"6"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[46],
+        },
+      ],
+      },
+      
+      //47
+      ['onceTens'+shuffledNumbersto[46]]: {
+      botPrompt: 'What is the number at the tens place in the number 38?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['3', '5', "8","9"]),
+        answers: [
+          {
+            answer: '3',
+            nextId: 'onceTenscorrectq47',
+          },
+          {
+            answer: '5',
+            nextId: 'inonceTenscorrectq47',
+          },
+          {
+            answer: "8",
+            nextId: 'inonceTenscorrectq47',
+          },
+          {
+            answer: "9",
+            nextId: 'inonceTenscorrectq47',
+          },
+        ],
+      },
+      
+      onceTenscorrectq47: {
+      botPrompt: 'Hurray! <strong>3</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[47],
+        },
+      ],
+      },
+      inonceTenscorrectq47: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"3"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[47],
+        },
+      ],
+      },
+    
+    
+      //48
+      ['onceTens'+shuffledNumbersto[47]]: {
+      botPrompt: 'What is the sum of digits at the units place and tens place in the number 39?',
+      type: RTypes.TRANSFORMED_TEXT,
+    
+      input: selectField(['9', '11', "13","15"]),
+        answers: [
+          {
+            answer: '9',
+            nextId: 'onceTenscorrectq48',
+          },
+          {
+            answer: '11',
+            nextId: 'inonceTenscorrectq48',
+          },
+          {
+            answer: "13",
+            nextId: 'inonceTenscorrectq48',
+          },
+          {
+            answer: "15",
+            nextId: 'inonceTenscorrectq48',
+          },
+        ],
+      },
+      
+      onceTenscorrectq48: {
+      botPrompt: 'Hurray! <strong>9</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[48],
+        },
+      ],
+      },
+      inonceTenscorrectq48: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"9"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[48],
+        },
+      ],
+      },
+      
+      //49
+      ['onceTens'+shuffledNumbersto[48]]: {
+      botPrompt: 'What is the sum of digits at the units place and tens place in the number 39?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['9', '11', "13","15"]),
+        answers: [
+          {
+            answer: '9',
+            nextId: 'onceTenscorrectq49',
+          },
+          {
+            answer: '11',
+            nextId: 'inonceTenscorrectq49',
+          },
+          {
+            answer: "13",
+            nextId: 'inonceTenscorrectq49',
+          },
+          {
+            answer: "15",
+            nextId: 'inonceTenscorrectq49',
+          },
+        ],
+      },
+      
+      onceTenscorrectq49: {
+      botPrompt: 'Hurray! <strong>9</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[49],
+        },
+      ],
+      },
+      inonceTenscorrectq49: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"9"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[49],
+        },
+      ],
+      },
+      
+      
+      //50
+      ['onceTens'+shuffledNumbersto[49]]: {
+      botPrompt: 'What is the number at the units place in the number 52?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['2', '5', "7","9"]),
+        answers: [
+          {
+            answer: '2',
+            nextId: 'inonceTenscorrectq50',
+          },
+          {
+            answer: '5',
+            nextId: 'onceTenscorrectq50',
+          },
+          {
+            answer: "7",
+            nextId: 'inonceTenscorrectq50',
+          },
+          {
+            answer: "9",
+            nextId: 'inonceTenscorrectq50',
+          },
+        ],
+      },
+      
+      onceTenscorrectq50: {
+      botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[50],
+        },
+      ],
+      },
+      inonceTenscorrectq50: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[50],
+        },
+      ],
+      },
+      
+      //51
+      ['onceTens'+shuffledNumbersto[50]]: {
+      botPrompt: 'What is the number at the tens place in the number 74?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['4', '6', "7","9"]),
+        answers: [
+          {
+            answer: '7',
+            nextId: 'inonceTenscorrectq51',
+          },
+          {
+            answer: '6',
+            nextId: 'inonceTenscorrectq51',
+          },
+          {
+            answer: "7",
+            nextId: 'onceTenscorrectq51',
+          },
+          {
+            answer: "9",
+            nextId: 'inonceTenscorrectq51',
+          },
+        ],
+      },
+      
+      onceTenscorrectq51: {
+      botPrompt: 'Hurray! <strong>4</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[51],
+        },
+      ],
+      },
+      inonceTenscorrectq51: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[51],
+        },
+      ],
+      },
+      
+      //52
+      ['onceTens'+shuffledNumbersto[51]]: {
+      botPrompt: 'What is the sum of digits at the units place and tens place in the number 43?',
+      type: RTypes.TRANSFORMED_TEXT,
+      input: selectField(['7', '8', "9","10"]),
+        answers: [
+          {
+            answer: '7',
+            nextId: 'onceTenscorrectq52',
+          },
+          {
+            answer: '8',
+            nextId: 'inonceTenscorrectq52',
+          },
+          {
+            answer: "9",
+            nextId: 'inonceTenscorrectq52',
+          },
+          {
+            answer: "10",
+            nextId: 'inonceTenscorrectq52',
+          },
+        ],
+      },
+      
+      onceTenscorrectq52: {
+      botPrompt: 'Hurray! <strong>7</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[52],
+        },
+      ],
+      },
+      inonceTenscorrectq52: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"7"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[52],
+        },
+      ],
+      },
+      
+      //53
+      ['onceTens'+shuffledNumbersto[52]]: {
+      botPrompt: 'What is the number at the units place in the number 85?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['3', '5', "8","9"]),
+        answers: [
+          {
+            answer: '3',
+            nextId: 'inonceTenscorrectq53',
+          },
+          {
+            answer: '5',
+            nextId: 'onceTenscorrectq53',
+          },
+          {
+            answer: "8",
+            nextId: 'inonceTenscorrectq53',
+          },
+          {
+            answer: "9",
+            nextId: 'inonceTenscorrectq53',
+          },
+        ],
+      },
+    
+      onceTenscorrectq53: {
+      botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[53],
+        },
+      ],
+      },
+      inonceTenscorrectq53: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[53],
+        },
+      ],
+      },
+      
+      //54
+      ['onceTens'+shuffledNumbersto[53]]: {
+      botPrompt: 'What is the number at the tens place in the number 36?',
+      type: RTypes.TRANSFORMED_TEXT,
+    
+      input: selectField(['2', '3', "6","8"]),
+        answers: [
+          {
+            answer: '2',
+            nextId: 'inonceTenscorrectq54',
+          },
+          {
+            answer: '3',
+            nextId: 'onceTenscorrectq54',
+          },
+          {
+            answer: "6",
+            nextId: 'inonceTenscorrectq54',
+          },
+          {
+            answer: "8",
+            nextId: 'inonceTenscorrectq54',
+          },
+        ],
+      },
+      
+      onceTenscorrectq54: {
+      botPrompt: 'Hurray! <strong>3</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[54],
+        },
+      ],
+      },
+      inonceTenscorrectq54: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"3"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[54],
+        },
+      ],
+      },
+      
+      
+      //55
+      ['onceTens'+shuffledNumbersto[54]]: {
+      botPrompt: 'What is the sum of digits at the units place and tens place in the number 61?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['6', '7', "8","9"]),
+        answers: [
+          {
+            answer: '6',
+            nextId: 'inonceTenscorrectq55',
+          },
+          {
+            answer: '7',
+            nextId: 'inonceTenscorrectq55',
+          },
+          {
+            answer: "8",
+            nextId: 'onceTenscorrectq55',
+          },
+          {
+            answer: "9",
+            nextId: 'inonceTenscorrectq55',
+          },
+        ],
+      },
+      
+      onceTenscorrectq55: {
+      botPrompt: 'Hurray! <strong>8</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[55],
+        },
+      ],
+      },
+      inonceTenscorrectq55: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"8"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[55],
+        },
+      ],
+      },
+      
+      //56
+      ['onceTens'+shuffledNumbersto[55]]: {
+        botPrompt: 'What is the value of the digit in the units place in the number 537?',
+        type: RTypes.TRANSFORMED_TEXT,
+        input: selectField(['3', '5', "7","9"]),
+        answers: [
+          {
+            answer: '3',
+            nextId: 'inonceTenscorrectq56',
+          },
+          {
+            answer: '5',
+            nextId: 'inonceTenscorrectq56',
+          },
+          {
+            answer: "7",
+            nextId: 'onceTenscorrectq56',
+          },
+          {
+            answer: "9",
+            nextId: 'inonceTenscorrectq56',
+          },
+        ],
+      },
+      onceTenscorrectq56: {
+        botPrompt: 'You Have Selected correct Anwser 🎉! <strong>7</strong> 😎',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[56],
+          },
+        ],
+      },
+      inonceTenscorrectq56: {
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"7"</strong>',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[56],
+          },
+        ],
+      },
+    
+      //57
+      ['onceTens'+shuffledNumbersto[56]]: {
+      botPrompt: 'What is the value of the digit in the tens place in the number 864?',
+      type: RTypes.TRANSFORMED_TEXT,
+      input: selectField(['4', '6', "8","3"]),
+        answers: [
+          {
+            answer: '4',
+            nextId: 'inonceTenscorrectq57',
+          },
+          {
+            answer: '6',
+            nextId: 'onceTenscorrectq57',
+          },
+          {
+            answer: "8",
+            nextId: 'inonceTenscorrectq57',
+          },
+          {
+            answer: "3",
+            nextId: 'inonceTenscorrectq57',
+          },
+        ],
+      },
+      onceTenscorrectq57: {
+      botPrompt: 'You Have Selected correct Anwser 🎉! <strong>6</strong> 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[57],
+        },
+      ],
+      },
+      inonceTenscorrectq57: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"6"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[57],
+        },
+      ],
+      },
+      
+      //58
+      ['onceTens'+shuffledNumbersto[57]]: {
+      botPrompt: 'What number can be formed by using the digits 2 and 7 at units and tens place respectively?',
+      type: RTypes.TRANSFORMED_TEXT,
+      input: selectField(['72', '27', "52","25"]),
+      answers: [
+        {
+          answer: '72',
+          nextId: 'inonceTenscorrectq58',
+        },
+        {
+          answer: '27',
+          nextId: 'onceTenscorrectq58',
+        },
+        {
+          answer: "52",
+          nextId: 'inonceTenscorrectq58',
+        },
+        {
+          answer: "25",
+          nextId: 'inonceTenscorrectq58',
+        },
+      ],
+      },
+      onceTenscorrectq58: {
+      botPrompt: 'You Have Selected correct Anwser 🎉! <strong>27</strong> 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[58],
+        },
+      ],
+      },
+      inonceTenscorrectq58: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"27"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[58],
+        },
+      ],
+      },
+      
+      //59
+      ['onceTens'+shuffledNumbersto[58]]: {
+      botPrompt: 'What is the sum of the digits at units and tens place in the number 458?',
+      type: RTypes.TRANSFORMED_TEXT,
+      input: selectField(['12', '13', "14","9"]),
+        answers: [
+          {
+            answer: '12',
+            nextId: 'onceTenscorrectq57',
+          },
+          {
+            answer: '13',
+            nextId: 'inonceTenscorrectq57',
+          },
+          {
+            answer: "11",
+            nextId: 'inonceTenscorrectq57',
+          },
+          {
+            answer: "9",
+            nextId: 'inonceTenscorrectq57',
+          },
+        ],
+      },
+      onceTenscorrectq59: {
+      botPrompt: 'You Have Selected correct Anwser 🎉! <strong>12</strong> Answers! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[59],
+        },
+      ],
+      },
+      inonceTenscorrectq59: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"12"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[59],
+        },
+      ],
+      },
+      
+      //60
+      ['onceTens'+shuffledNumbersto[59]]: {
+      botPrompt: 'What is the largest possible number that can be formed using the digits 5 and 8 at units place?',
+      type: RTypes.TRANSFORMED_TEXT,
+      input: selectField(['85', '58', "95","59"]),
+      answers: [
+        {
+          answer: '85',
+          nextId: 'inonceTenscorrectq60',
+        },
+        {
+          answer: '58',
+          nextId: 'onceTenscorrectq60',
+        },
+        {
+          answer: "95",
+          nextId: 'inonceTenscorrectq60',
+        },
+        {
+          answer: "59",
+          nextId: 'inonceTenscorrectq60',
+        },
+      ],
+      },
+      onceTenscorrectq20: {
+      botPrompt: 'You Have Selected correct Anwser 🎉! <strong>58</strong> 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[60],
+        },
+      ],
+      },
+      inonceTenscorrectq20: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"58"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[60],
+        },
+      ],
+      },
+      
+      //61
+      ["onceTens"+shuffledNumbersto[60]]: {
+        botPrompt: 'What is the smallest possible number that can be formed using the digits 2 and 6 at tens place?',
+        type: RTypes.TRANSFORMED_TEXT,
+        input: selectField(['26', '62', "20","6"]),
+        answers: [
+          {
+            answer: '26',
+            nextId: 'onceTenscorrectq61',
+          },
+          {
+            answer: '62',
+            nextId: 'inonceTenscorrectq61',
+          },
+          {
+            answer: "20",
+            nextId: 'inonceTenscorrectq61',
+          },
+          {
+            answer: "6",
+            nextId: 'inonceTenscorrectq61',
+          },
+        ],
+      },
+      onceTenscorrectq61: {
+        botPrompt: 'Hurray <strong>26</strong> is the correct answer  ! 😎',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[61],
+          },
+        ],
+      },
+      inonceTenscorrectq61: {
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"26"</strong>',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[61],
+          },
+        ],
+      },
+      
+      //62
+      ['onceTens'+shuffledNumbersto[61]]: {
+        botPrompt: 'What is the sum of the digits at units and tens place in the number 973?',
+        type: RTypes.TRANSFORMED_TEXT,
+        input: selectField(['10', '18', "19","16"]),
+        answers: [
+          {
+            answer: '10',
+            nextId: 'inonceTenscorrectq62',
+          },
+          {
+            answer: '18',
+            nextId: 'inonceTenscorrectq62',
+          },
+          {
+            answer: "19",
+            nextId: 'inonceTenscorrectq62',
+          },
+          {
+            answer: "16",
+            nextId: 'onceTenscorrectq62',
+          },
+        ],
+      },
+      
+      onceTenscorrectq62: {
+        botPrompt: 'Hurray! <strong>16</strong> is the correct answer  ! 😎',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[62],
+          },
+        ],
+      },
+      inonceTenscorrectq62: {
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"16"</strong>',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[62],
+          },
+        ],
+      },
+      
+      //63
+      ['onceTens'+shuffledNumbersto[62]]: {
+      botPrompt: "What is the value of the digit in the units place in the number 674?",
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['3', '6', "4","7"]),
+        answers: [
+          {
+            answer: '3',
+            nextId: 'inonceTenscorrectq63',
+          },
+          {
+            answer: '6',
+            nextId: 'inonceTenscorrectq63',
+          },
+          {
+            answer: "4",
+            nextId: 'onceTenscorrectq63',
+          },
+          {
+            answer: "7",
+            nextId: 'inonceTenscorrectq63',
+          },
+        ],
+      },
+      
+      onceTenscorrectq63: {
+      botPrompt: 'Hurray! <strong>4</strong> is the correct answer ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[63],
+        },
+      ],
+      },
+      inonceTenscorrectq63: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[63],
+        },
+      ],
+      },
+    
+      //64
+      ['onceTens'+shuffledNumbersto[63]]: {
+      botPrompt: 'What is the value of the digit in the tens place in the number 157?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['1', '5', "7","9"]),
+      answers: [
+        {
+          answer: '1',
+          nextId: 'inonceTenscorrectq64',
+        },
+        {
+          answer: '5',
+          nextId: 'onceTenscorrectq64',
+        },
+        {
+          answer: "7",
+          nextId: 'inonceTenscorrectq64',
+        },
+        {
+          answer: "9",
+          nextId: 'inonceTenscorrectq64',
+        },
+      ],
+      },
+      
+      onceTenscorrectq64: {
+      botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[64],
+        },
+      ],
+      },
+      inonceTenscorrectq2: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[64],
+        },
+      ],
+      },
+      
+      //65
+      ['onceTens'+shuffledNumbersto[64]]: {
+      botPrompt: 'What number can be formed by using the digits 3 and 6 at units and tens place respectively?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['36', '63', "32","23"]),
+        answers: [
+          {
+            answer: '36',
+            nextId: 'inonceTenscorrectq65',
+          },
+          {
+            answer: '63',
+            nextId: 'onceTenscorrectq65',
+          },
+          {
+            answer: "32",
+            nextId: 'inonceTenscorrectq65',
+          },
+          {
+            answer: "23",
+            nextId: 'inonceTenscorrectq65',
+          },
+        ],
+      },
+      
+      onceTenscorrectq65: {
+      botPrompt: 'Hurray! <strong>63</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[65],
+        },
+      ],
+      },
+      inonceTenscorrectq65: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"63"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[65],
+        },
+      ],
+      },
+      
+      //66
+      ['onceTens'+shuffledNumbersto[65]]: {
+      botPrompt: 'What is the sum of the digits at units and tens place in the number 538?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['11', '16', "13","14"]),
+      answers: [
+        {
+          answer: '11',
+          nextId: 'onceTenscorrectq66',
+        },
+        {
+          answer: '16',
+          nextId: 'inonceTenscorrectq66',
+        },
+        {
+          answer: "13",
+          nextId: 'inonceTenscorrectq66',
+        },
+        {
+          answer: "14",
+          nextId: 'inonceTenscorrectq66',
+        },
+      ],
+      },
+      
+      onceTenscorrectq66: {
+      botPrompt: 'Hurray! <strong>11</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[66],
+        },
+      ],
+      },
+      inonceTenscorrectq66: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"11"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[66],
+        },
+      ],
+      },
+      
+      //67
+      ['onceTens'+shuffledNumbersto[66]]: {
+      botPrompt: 'What is the number with 4 in the units place and 6 in the tens place?',
+      type: RTypes.TRANSFORMED_TEXT,
+      input: selectField(['46', '64', "56","54"]),
+      answers: [
+        {
+          answer: '46',
+          nextId: 'onceTenscorrectq67',
+        },
+        {
+          answer: '64',
+          nextId: 'inonceTenscorrectq67',
+        },
+        {
+          answer: "56",
+          nextId: 'inonceTenscorrectq67',
+        },
+        {
+          answer: "54",
+          nextId: 'inonceTenscorrectq67',
+        },
+      ],
+      },
+      
+      onceTenscorrectq67: {
+      botPrompt: 'Hurray! <strong>46</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[67],
+        },
+      ],
+      },
+      inonceTenscorrectq67: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"46"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[67],
+        },
+      ],
+      },
+      
+      
+      //68
+      ['onceTens'+shuffledNumbersto[67]]: {
+      botPrompt: 'Which of these numbers has a digit sum of 8 in the units and tens place?',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      
+      input: selectField(['44', '17', "53","26"]),
+        answers: [
+          {
+            answer: '44',
+            nextId: 'onceTenscorrectq68',
+          },
+          {
+            answer: '17',
+            nextId: 'inonceTenscorrectq68',
+          },
+          {
+            answer: "53",
+            nextId: 'inonceTenscorrectq68',
+          },
+          {
+            answer: "26",
+            nextId: 'inonceTenscorrectq68',
+          },
+        ],
+      },
+      
+      onceTenscorrectq68: {
+      botPrompt: 'Hurray! <strong>44</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[68],
+        },
+      ],
+      },
+      inonceTenscorrectq68: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"44"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[68],
+        },
+      ],
+      },
+      
+      //69
+      ['onceTens'+shuffledNumbersto[68]]: {
+      botPrompt: 'What is the number with 5 in the units place, 6 in the tens place, and 3 in the hundreds place?',
+      type: RTypes.TRANSFORMED_TEXT,
+      input: selectField(['653', '536', "365","356"]),
+      answers: [
+        {
+          answer: '653',
+          nextId: 'inonceTenscorrectq69',
+        },
+        {
+          answer: '536',
+          nextId: 'inonceTenscorrectq69',
+        },
+        {
+          answer: "365",
+          nextId: 'inonceTenscorrectq69',
+        },
+        {
+          answer: "356",
+          nextId: 'onceTenscorrectq69',
+        },
+      ],
+      },
+      
+      onceTenscorrectq69: {
+      botPrompt: 'Hurray! <strong>356</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[69],
+        },
+      ],
+      },
+      inonceTenscorrectq69: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"356"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[69],
+        },
+      ],
+      },
+    
+      
+      //70
+      ['onceTens'+shuffledNumbersto[69]]: {
+      botPrompt: 'Which of these numbers has a digit sum of 12 in the units, tens, and hundreds place?',
+      type: RTypes.TRANSFORMED_TEXT,
+    
+      input: selectField(['543', '555', "222","111"]),
+      answers: [
+        {
+          answer: '543',
+          nextId: 'onceTenscorrectq70',
+        },
+        {
+          answer: '555',
+          nextId: 'inonceTenscorrectq70',
+        },
+        {
+          answer: "222",
+          nextId: 'inonceTenscorrectq70',
+        },
+        {
+          answer: "111",
+          nextId: 'inonceTenscorrectq70',
+        },
+      ],
+      },
+    
+      onceTenscorrectq70: {
+      botPrompt: 'Hurray! <strong>543</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[70],
+        },
+      ],
+      },
+      inonceTenscorrectq70: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"543"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[70],
+        },
+      ],
+      },
+    
+      //71
+      ['onceTens'+shuffledNumbersto[70]]: {
+      botPrompt: 'What is the number with 8 in the units place, 7 in the tens place, and 2 in the hundreds place?',
+      type: RTypes.TRANSFORMED_TEXT,
+      input: selectField(['278', '782', "872","728"]),
+        answers: [
+          {
+            answer: '278',
+            nextId: 'inonceTenscorrectq71',
+          },
+          {
+            answer: '782',
+            nextId: 'inonceTenscorrectq71',
+          },
+          {
+            answer: "872",
+            nextId: 'inonceTenscorrectq71',
+          },
+          {
+            answer: "728",
+            nextId: 'onceTenscorrectq71',
+          },
+        ],
+      },
+    
+      onceTenscorrectq71: {
+      botPrompt: 'Hurray! <strong>728</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[71],
+        },
+      ],
+      },
+      inonceTenscorrectq71: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"728"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[71],
+        },
+      ],
+      },
+    
+      //72
+      ['onceTens'+shuffledNumbersto[71]]: {
+      botPrompt: 'Which of these numbers has a digit sum of 15 in the units, tens, and hundreds place?',
+      type: RTypes.TRANSFORMED_TEXT,
+      input: selectField(['888', '777', "555","333"]),
+      answers: [
+        {
+          answer: '888',
+          nextId: 'onceTenscorrectq72',
+        },
+        {
+          answer: '777',
+          nextId: 'inonceTenscorrectq72',
+        },
+        {
+          answer: "555",
+          nextId: 'inonceTenscorrectq72',
+        },
+        {
+          answer: "333",
+          nextId: 'inonceTenscorrectq72',
+        },
+      ],
+      },
+    
+      onceTenscorrectq72: {
+      botPrompt: 'Hurray! <strong>888</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[72],
+        },
+      ],
+      },
+      inonceTenscorrectq72: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"888"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[72],
+        },
+      ],
+      },
+    
+      //73
+      ['onceTens'+shuffledNumbersto[72]]: {
+      botPrompt: 'What is the number with 9 in the units place and 2 in the tens place?',
+      type: RTypes.TRANSFORMED_TEXT,
+    
+      input: selectField(['92', '29', "19","91"]),
+        answers: [
+          {
+            answer: '92',
+            nextId: 'onceTenscorrectq73',
+          },
+          {
+            answer: '29',
+            nextId: 'inonceTenscorrectq73',
+          },
+          {
+            answer: "19",
+            nextId: 'inonceTenscorrectq73',
+          },
+          {
+            answer: "91",
+            nextId: 'inonceTenscorrectq73',
+          },
+        ],
+      },
+    
+      onceTenscorrectq73: {
+      botPrompt: 'Hurray! <strong>92</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[73],
+        },
+      ],
+      },
+      inonceTenscorrectq73: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"92"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[73],
+        },
+      ],
+      },
+    
+      //74
+      ['onceTens'+shuffledNumbersto[73]]: {
+      botPrompt: 'Which of these numbers has a digit sum of 9 in the units and tens place?',
+      type: RTypes.TRANSFORMED_TEXT,
+    
+      input: selectField(['54', '18', "72","45"]),
+      answers: [
+        {
+          answer: '54',
+          nextId: 'inonceTenscorrectq74',
+        },
+        {
+          answer: '18',
+          nextId: 'inonceTenscorrectq74',
+        },
+        {
+          answer: "72",
+          nextId: 'inonceTenscorrectq74',
+        },
+        {
+          answer: "45",
+          nextId: 'onceTenscorrectq74',
+        },
+      ],
+      },
+    
+      onceTenscorrectq74: {
+      botPrompt: 'Hurray! <strong>45</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[74],
+        },
+      ],
+      },
+      inonceTenscorrectq74: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"45"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[74],
+        },
+      ],
+      },
+    
+    
+      //75
+      ['onceTens'+shuffledNumbersto[74]]: {
+      botPrompt: 'What is the number with 7 in the units place, 5 in the tens place, and 1 in the hundreds place?',
+      type: RTypes.TRANSFORMED_TEXT,
+    
+    
+      input: selectField(['157', '517', "571","751"]),
+        answers: [
+          {
+            answer: '157',
+            nextId: 'inonceTenscorrectq75',
+          },
+          {
+            answer: '517',
+            nextId: 'inonceTenscorrectq75',
+          },
+          {
+            answer: "571",
+            nextId: 'inonceTenscorrectq75',
+          },
+          {
+            answer: "751",
+            nextId: 'onceTenscorrectq75',
+          },
+        ],
+      },
+    
+      onceTenscorrectq75: {
+      botPrompt: 'Hurray! <strong>751</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[75],
+        },
+      ],
+      },
+      inonceTenscorrectq75: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"751"</strong>',
+      answers: [
+        {
+          nextId: 'onceTens'+shuffledNumbersto[75],
+        },
+      ],
+      },
+    
+      //76
+      ['onceTens'+shuffledNumbersto[75]]: {
+        botPrompt: 'Which of these numbers has a digit sum of 11 in the units, tens, and hundreds place?',
+        type: RTypes.TRANSFORMED_TEXT,
+    
+        input: selectField(['818', '727', "535","242"]),
+        answers: [
+          {
+            answer: '818',
+            nextId: 'onceTenscorrectq76',
+          },
+          {
+            answer: '727',
+            nextId: 'inonceTenscorrectq76',
+          },
+          {
+            answer: "535",
+            nextId: 'inonceTenscorrectq76',
+          },
+          {
+            answer: "242",
+            nextId: 'inonceTenscorrectq76',
+          },
+        ],
+      },
+      onceTenscorrectq76: {
+        botPrompt: 'You Have Selected correct Anwser 🎉! <strong>818</strong> 😎',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[76],
+          },
+        ],
+      },
+      inonceTenscorrectq76: {
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"818"</strong>',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[76],
+          },
+        ],
+      },
+    
+      //77
+      ['onceTens'+shuffledNumbersto[76]]: {
+      botPrompt: 'What is the number with 3 in the units place and 9 in the tens place?',
+      type: RTypes.TRANSFORMED_TEXT,
+    
+      input: selectField(['93', '39', "49","94"]),
+        answers: [
+          {
+            answer: '93',
+            nextId: 'inonceTenscorrectq77',
+          },
+          {
+            answer: '39',
+            nextId: 'onceTenscorrectq77',
+          },
+          {
+            answer: "49",
+            nextId: 'inonceTenscorrectq77',
+          },
+          {
+            answer: "94",
+            nextId: 'inonceTenscorrectq77',
+          },
+        ],
+      },
+      onceTenscorrectq77: {
+      botPrompt: 'You Have Selected correct Anwser 🎉! <strong>39</strong> 😎',
+      answers: [
+        {
+          nextId: 'wishtocontinue17',
+        },
+      ],
+      },
+      inonceTenscorrectq77: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"39"</strong>',
+      answers: [
+        {
+          nextId: 'wishtocontinue17',
+        },
+      ],
+      },
+    
+    
+    
+      //78
+      ['onceTens'+shuffledNumbersto[77]]: {
+        botPrompt: 'Which of these numbers has a digit sum of 7 in the units and tens place? ',
+        type: RTypes.TRANSFORMED_TEXT,
+    
+        input: selectField(['25', '16', "34","71"]),
+          answers: [
+            {
+              answer: '25',
+              nextId: 'inonceTenscorrectq78',
+            },
+            {
+              answer: '16',
+              nextId: 'onceTenscorrectq78',
+            },
+            {
+              answer: "34",
+              nextId: 'inonceTenscorrectq78',
+            },
+            {
+              answer: "71",
+              nextId: 'inonceTenscorrectq78',
+            },
+          ],
+        },
+        
+        onceTenscorrectq78: {
+        botPrompt: 'Hurray! <strong>16</strong> is the correct answer  ! 😎',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[78],
+          },
+        ],
+        },
+        inonceTenscorrectq78: {
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"16"</strong>',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[78],
+          },
+        ],
+        },
+        
+        //79
+        ['onceTens'+shuffledNumbersto[78]]: {
+        botPrompt: 'What is the number with 1 in the units place, 6 in the tens place, and 4 in the hundreds place?',
+        type: RTypes.TRANSFORMED_TEXT,
+        
+        input: selectField(['461', '164', "466","614"]),
+          answers: [
+            {
+              answer: '416',
+              nextId: 'inonceTenscorrectq79',
+            },
+            {
+              answer: '164',
+              nextId: 'onceTenscorrectq79',
+            },
+            {
+              answer: "466",
+              nextId: 'inonceTenscorrectq79',
+            },
+            {
+              answer: "614",
+              nextId: 'inonceTenscorrectq79',
+            },
+          ],
+        },
+        
+        onceTenscorrectq79: {
+        botPrompt: 'Hurray! <strong>416</strong> is the correct answer  ! 😎',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[79],
+          },
+        ],
+        },
+        inonceTenscorrectq79: {
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"416"</strong>',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[79],
+          },
+        ],
+        },
+        
+        
+        //80
+        ['onceTens'+shuffledNumbersto[79]]: {
+        botPrompt: 'Which of these numbers has a digit sum of 10 in the units, tens, and hundreds place?',
+        type: RTypes.TRANSFORMED_TEXT,
+        
+        input: selectField(['881', '791', "604","475"]),
+          answers: [
+            {
+              answer: '881',
+              nextId: 'inonceTenscorrectq80',
+            },
+            {
+              answer: '791',
+              nextId: 'inonceTenscorrectq80',
+            },
+            {
+              answer: "604",
+              nextId: 'onceTenscorrectq80',
+            },
+            {
+              answer: "475",
+              nextId: 'inonceTenscorrectq80',
+            },
+          ],
+        },
+        
+        onceTenscorrectq80: {
+        botPrompt: 'Hurray! <strong>604</strong> is the correct answer  ! 😎',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[80],
+          },
+        ],
+        },
+        inonceTenscorrectq80: {
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"604"</strong>',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[80],
+          },
+        ],
+        },
+        
+        //81
+        ['onceTens'+shuffledNumbersto[80]]: {
+        botPrompt: 'What is the number with 5 in the units place and 7 in the tens place?',
+        type: RTypes.TRANSFORMED_TEXT,
+        
+        input: selectField(['357', '537', "775","375"]),
+          answers: [
+            {
+              answer: '357',
+              nextId: 'inonceTenscorrectq51',
+            },
+            {
+              answer: '537',
+              nextId: 'inonceTenscorrectq51',
+            },
+            {
+              answer: "775",
+              nextId: 'onceTenscorrectq51',
+            },
+            {
+              answer: "375",
+              nextId: 'inonceTenscorrectq51',
+            },
+          ],
+        },
+        
+        onceTenscorrectq51: {
+        botPrompt: 'Hurray! <strong>775</strong> is the correct answer  ! 😎',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[51],
+          },
+        ],
+        },
+        inonceTenscorrectq51: {
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"775"</strong>',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[51],
+          },
+        ],
+        },
+        
+        //82
+        ['onceTens'+shuffledNumbersto[81]]: {
+        botPrompt: 'What number has 4 in the tens place and 7 in the units place?',
+        type: RTypes.TRANSFORMED_TEXT,
+        input: selectField(['43', '74', "27","47"]),
+          answers: [
+            {
+              answer: '43',
+              nextId: 'inonceTenscorrectq82',
+            },
+            {
+              answer: '74',
+              nextId: 'onceTenscorrectq82',
+            },
+            {
+              answer: "27",
+              nextId: 'inonceTenscorrectq82',
+            },
+            {
+              answer: "47",
+              nextId: 'inonceTenscorrectq82',
+            },
+          ],
+        },
+        
+        onceTenscorrectq82: {
+        botPrompt: 'Hurray! <strong>74</strong> is the correct answer  ! 😎',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[82],
+          },
+        ],
+        },
+        inonceTenscorrectq82: {
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"74"</strong>',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[82],
+          },
+        ],
+        },
+        
+        //83
+        ['onceTens'+shuffledNumbersto[82]]: {
+        botPrompt: 'What is the sum of digits in the tens place and units place of 37?',
+        type: RTypes.TRANSFORMED_TEXT,
+        
+        input: selectField(['3', '7', "10","4"]),
+          answers: [
+            {
+              answer: '3',
+              nextId: 'inonceTenscorrectq83',
+            },
+            {
+              answer: '7',
+              nextId: 'inonceTenscorrectq83',
+            },
+            {
+              answer: "10",
+              nextId: 'inonceTenscorrectq83',
+            },
+            {
+              answer: "4",
+              nextId: 'onceTenscorrectq83',
+            },
+          ],
+        },
+      
+        onceTenscorrectq83: {
+        botPrompt: 'Hurray! <strong>4</strong> is the correct answer  ! 😎',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[83],
+          },
+        ],
+        },
+        inonceTenscorrectq83: {
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[83],
+          },
+        ],
+        },
+        
+        //84
+        ['onceTens'+shuffledNumbersto[83]]: {
+        botPrompt: 'Which number has 2 in the units place and 5 in the tens place?',
+        type: RTypes.TRANSFORMED_TEXT,
+        
+        input: selectField(['52', '25', "23","32"]),
+          answers: [
+            {
+              answer: '52',
+              nextId: 'inonceTenscorrectq84',
+            },
+            {
+              answer: '25',
+              nextId: 'onceTenscorrectq84',
+            },
+            {
+              answer: "23",
+              nextId: 'inonceTenscorrectq84',
+            },
+            {
+              answer: "32",
+              nextId: 'inonceTenscorrectq84',
+            },
+          ],
+        },
+        
+        onceTenscorrectq84: {
+        botPrompt: 'Hurray! <strong>25</strong> is the correct answer  ! 😎',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[84],
+          },
+        ],
+        },
+        inonceTenscorrectq84: {
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"25"</strong>',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[84],
+          },
+        ],
+        },
+        
+        
+        //85
+        ['onceTens'+shuffledNumbersto[84]]: {
+        botPrompt: 'What is the sum of digits in the tens place and units place of 58?',
+        type: RTypes.TRANSFORMED_TEXT,
+        
+        input: selectField(['8', '13', "5","11"]),
+          answers: [
+            {
+              answer: '8',
+              nextId: 'onceTenscorrectq85',
+            },
+            {
+              answer: '13',
+              nextId: 'inonceTenscorrectq85',
+            },
+            {
+              answer: "5",
+              nextId: 'inonceTenscorrectq85',
+            },
+            {
+              answer: "11",
+              nextId: 'inonceTenscorrectq85',
+            },
+          ],
+        },
+        
+        onceTenscorrectq85: {
+        botPrompt: 'Hurray! <strong>8</strong> is the correct answer  ! 😎',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[85],
+          },
+        ],
+        },
+        inonceTenscorrectq85: {
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"8"</strong>',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[85],
+          },
+        ],
+        },
+        
+        //86
+        ['onceTens'+shuffledNumbersto[85]]: {
+          botPrompt: 'What number has 3 in the tens place and 9 in the units place?',
+          type: RTypes.TRANSFORMED_TEXT,
+          input: selectField(['39', '93', "29","32"]),
+          answers: [
+            {
+              answer: '39',
+              nextId: 'inonceTenscorrectq86',
+            },
+            {
+              answer: '93',
+              nextId: 'onceTenscorrectq86',
+            },
+            {
+              answer: "29",
+              nextId: 'inonceTenscorrectq86',
+            },
+            {
+              answer: "32",
+              nextId: 'inonceTenscorrectq86',
+            },
+          ],
+        },
+        onceTenscorrectq86: {
+          botPrompt: 'You Have Selected correct Anwser 🎉! <strong>93</strong> 😎',
+          answers: [
+            {
+              nextId: 'onceTens'+shuffledNumbersto[86],
+            },
+          ],
+        },
+        inonceTenscorrectq86: {
+          botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"93"</strong>',
+          answers: [
+            {
+              nextId: 'onceTens'+shuffledNumbersto[86],
+            },
+          ],
+        },
+      
+        //87
+        ['onceTens'+shuffledNumbersto[86]]: {
+        botPrompt: 'What is the sum of digits in the tens place and units place of 62?',
+        type: RTypes.TRANSFORMED_TEXT,
+        input: selectField(['8', '6', "2","12"]),
+          answers: [
+            {
+              answer: '8',
+              nextId: 'inonceTenscorrectq87',
+            },
+            {
+              answer: '6',
+              nextId: 'onceTenscorrectq87',
+            },
+            {
+              answer: "2",
+              nextId: 'inonceTenscorrectq87',
+            },
+            {
+              answer: "12",
+              nextId: 'inonceTenscorrectq87',
+            },
+          ],
+        },
+        onceTenscorrectq87: {
+        botPrompt: 'You Have Selected correct Anwser 🎉! <strong>6</strong> 😎',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[87],
+          },
+        ],
+        },
+        inonceTenscorrectq87: {
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"6"</strong>',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[87],
+          },
+        ],
+        },
+        
+        //88
+        ['onceTens'+shuffledNumbersto[87]]: {
+        botPrompt: 'Which number has 7 in the tens place and 6 in the units place?',
+        type: RTypes.TRANSFORMED_TEXT,
+        input: selectField(['76', '67', "86","97"]),
+        answers: [
+          {
+            answer: '76',
+            nextId: 'onceTenscorrectq88',
+          },
+          {
+            answer: '67',
+            nextId: 'inonceTenscorrectq88',
+          },
+          {
+            answer: "86",
+            nextId: 'inonceTenscorrectq88',
+          },
+          {
+            answer: "97",
+            nextId: 'inonceTenscorrectq88',
+          },
+        ],
+        },
+        onceTenscorrectq88: {
+        botPrompt: 'You Have Selected correct Anwser 🎉! <strong>76</strong> 😎',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[88],
+          },
+        ],
+        },
+        inonceTenscorrectq88: {
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"76"</strong>',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[88],
+          },
+        ],
+        },
+        
+        //89
+        ['onceTens'+shuffledNumbersto[88]]: {
+        botPrompt: 'What is the sum of digits in the tens place and units place of 44?',
+        type: RTypes.TRANSFORMED_TEXT,
+        input: selectField(['8', '4', "12","6"]),
+          answers: [
+            {
+              answer: '8',
+              nextId: 'inonceTenscorrectq87',
+            },
+            {
+              answer: '4',
+              nextId: 'onceTenscorrectq87',
+            },
+            {
+              answer: "12",
+              nextId: 'inonceTenscorrectq87',
+            },
+            {
+              answer: "6",
+              nextId: 'inonceTenscorrectq87',
+            },
+          ],
+        },
+        onceTenscorrectq89: {
+        botPrompt: 'You Have Selected correct Anwser 🎉! <strong>4</strong> Answers! 😎',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[89],
+          },
+        ],
+        },
+        inonceTenscorrectq89: {
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[89],
+          },
+        ],
+        },
+        
+        //90
+        ['onceTens'+shuffledNumbersto[89]]: {
+        botPrompt: 'What number has 5 in the tens place and 8 in the units place?',
+        type: RTypes.TRANSFORMED_TEXT,
+        input: selectField(['85', '58', "87","56"]),
+        answers: [
+          {
+            answer: '85',
+            nextId: 'inonceTenscorrectq90',
+          },
+          {
+            answer: '58',
+            nextId: 'onceTenscorrectq90',
+          },
+          {
+            answer: "87",
+            nextId: 'inonceTenscorrectq90',
+          },
+          {
+            answer: "56",
+            nextId: 'inonceTenscorrectq90',
+          },
+        ],
+        },
+        onceTenscorrectq20: {
+        botPrompt: 'You Have Selected correct Anwser 🎉! <strong>58</strong> 😎',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[90],
+          },
+        ],
+        },
+        inonceTenscorrectq20: {
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"58"</strong>',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[90],
+          },
+        ],
+        },
+        
+        //91
+        ["onceTens"+shuffledNumbersto[90]]: {
+          botPrompt: 'What is the sum of digits in the tens place and units place of 69?',
+          type: RTypes.TRANSFORMED_TEXT,
+          input: selectField(['6', '9', "12","15"]),
+          answers: [
+            {
+              answer: '6',
+              nextId: 'onceTenscorrectq91',
+            },
+            {
+              answer: '9',
+              nextId: 'inonceTenscorrectq91',
+            },
+            {
+              answer: "12",
+              nextId: 'inonceTenscorrectq91',
+            },
+            {
+              answer: "15",
+              nextId: 'inonceTenscorrectq91',
+            },
+          ],
+        },
+        onceTenscorrectq91: {
+          botPrompt: 'Hurray <strong>6</strong> is the correct answer  ! 😎',
+          answers: [
+            {
+              nextId: 'onceTens'+shuffledNumbersto[91],
+            },
+          ],
+        },
+        inonceTenscorrectq91: {
+          botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"6"</strong>',
+          answers: [
+            {
+              nextId: 'onceTens'+shuffledNumbersto[91],
+            },
+          ],
+        },
+
+        //92
+        ['onceTens'+shuffledNumbersto[91]]: {
+          botPrompt: 'Which number has 1 in the tens place and 3 in the units place?',
+          type: RTypes.TRANSFORMED_TEXT,
+          input: selectField(['31', '13', "30","33"]),
+          answers: [
+            {
+              answer: '31',
+              nextId: 'onceTenscorrectq92',
+            },
+            {
+              answer: '13',
+              nextId: 'inonceTenscorrectq92',
+            },
+            {
+              answer: "30",
+              nextId: 'inonceTenscorrectq92',
+            },
+            {
+              answer: "33",
+              nextId: 'inonceTenscorrectq92',
+            },
+          ],
+        },
+
+        onceTenscorrectq92: {
+          botPrompt: 'Hurray! <strong>31</strong> is the correct answer  ! 😎',
+          answers: [
+            {
+              nextId: 'onceTens'+shuffledNumbersto[92],
+            },
+          ],
+        },
+        inonceTenscorrectq92: {
+          botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"31"</strong>',
+          answers: [
+            {
+              nextId: 'onceTens'+shuffledNumbersto[92],
+            },
+          ],
+        },
+        
+        //93
+        ['onceTens'+shuffledNumbersto[92]]: {
+        botPrompt: "What is the sum of digits in the tens place and units place of 79?",
+        type: RTypes.TRANSFORMED_TEXT,
+        
+        input: selectField(['7', '16', "9","14"]),
+          answers: [
+            {
+              answer: '7',
+              nextId: 'inonceTenscorrectq93',
+            },
+            {
+              answer: '16',
+              nextId: 'inonceTenscorrectq93',
+            },
+            {
+              answer: "9",
+              nextId: 'inonceTenscorrectq93',
+            },
+            {
+              answer: "14",
+              nextId: 'onceTenscorrectq93',
+            },
+          ],
+        },
+        
+        onceTenscorrectq93: {
+        botPrompt: 'Hurray! <strong>14</strong> is the correct answer ! 😎',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[93],
+          },
+        ],
+        },
+        inonceTenscorrectq93: {
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"14"</strong>',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[93],
+          },
+        ],
+        },
+      
+        //94
+        ['onceTens'+shuffledNumbersto[93]]: {
+        botPrompt: 'What number has 4 in the tens place and 6 in the units place?',
+        type: RTypes.TRANSFORMED_TEXT,
+        
+        input: selectField(['46', '64', "26","42"]),
+        answers: [
+          {
+            answer: '46',
+            nextId: 'onceTenscorrectq94',
+          },
+          {
+            answer: '64',
+            nextId: 'inonceTenscorrectq94',
+          },
+          {
+            answer: "26",
+            nextId: 'inonceTenscorrectq94',
+          },
+          {
+            answer: "42",
+            nextId: 'inonceTenscorrectq94',
+          },
+        ],
+        },
+        
+        onceTenscorrectq94: {
+        botPrompt: 'Hurray! <strong>46</strong> is the correct answer  ! 😎',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[94],
+          },
+        ],
+        },
+        inonceTenscorrectq2: {
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"46"</strong>',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[94],
+          },
+        ],
+        },
+        
+        //95
+        ['onceTens'+shuffledNumbersto[94]]: {
+        botPrompt: 'What is the sum of digits in the tens place and units place of 97?',
+        type: RTypes.TRANSFORMED_TEXT,
+        
+        input: selectField(['9', '7', "16","13"]),
+          answers: [
+            {
+              answer: '9',
+              nextId: 'inonceTenscorrectq95',
+            },
+            {
+              answer: '7',
+              nextId: 'inonceTenscorrectq95',
+            },
+            {
+              answer: "16",
+              nextId: 'onceTenscorrectq95',
+            },
+            {
+              answer: "13",
+              nextId: 'inonceTenscorrectq95',
+            },
+          ],
+        },
+        
+        onceTenscorrectq95: {
+        botPrompt: 'Hurray! <strong>16</strong> is the correct answer  ! 😎',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[95],
+          },
+        ],
+        },
+        inonceTenscorrectq95: {
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"16"</strong>',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[95],
+          },
+        ],
+        },
+        
+        //96
+        ['onceTens'+shuffledNumbersto[95]]: {
+        botPrompt: 'What is the number formed by the digits 2 and 3 in the units and tens place respectively?',
+        type: RTypes.TRANSFORMED_TEXT,
+        
+        input: selectField(['23', '32', "25","52"]),
+        answers: [
+          {
+            answer: '23',
+            nextId: 'onceTenscorrectq96',
+          },
+          {
+            answer: '32',
+            nextId: 'inonceTenscorrectq96',
+          },
+          {
+            answer: "25",
+            nextId: 'inonceTenscorrectq96',
+          },
+          {
+            answer: "52",
+            nextId: 'inonceTenscorrectq96',
+          },
+        ],
+        },
+        
+        onceTenscorrectq96: {
+        botPrompt: 'Hurray! <strong>23</strong> is the correct answer  ! 😎',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[96],
+          },
+        ],
+        },
+        inonceTenscorrectq96: {
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"23"</strong>',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[96],
+          },
+        ],
+        },
+    
+        //97
+        ['onceTens'+shuffledNumbersto[96]]: {
+        botPrompt: 'Which of the following has a digit 4 in the units place and a digit 5 in the tens place?',
+        type: RTypes.TRANSFORMED_TEXT,
+        input: selectField(['54', '45', "64","46"]),
+        answers: [
+          {
+            answer: '54',
+            nextId: 'onceTenscorrectq97',
+          },
+          {
+            answer: '45',
+            nextId: 'inonceTenscorrectq97',
+          },
+          {
+            answer: "64",
+            nextId: 'inonceTenscorrectq97',
+          },
+          {
+            answer: "46",
+            nextId: 'inonceTenscorrectq97',
+          },
+        ],
+        },
+    
+        onceTenscorrectq97: {
+        botPrompt: 'Hurray! <strong>54</strong> is the correct answer  ! 😎',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[97],
+          },
+        ],
+        },
+        inonceTenscorrectq97: {
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"54"</strong>',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[97],
+          },
+        ],
+        },
+    
+    
+        //98
+        ['onceTens'+shuffledNumbersto[97]]: {
+        botPrompt: 'What number is formed by the digits 1 in the tens place and 7 in the units place?',
+        type: RTypes.TRANSFORMED_TEXT,
+    
+    
+        input: selectField(['71', '17', "27","72"]),
+          answers: [
+            {
+              answer: '71',
+              nextId: 'inonceTenscorrectq98',
+            },
+            {
+              answer: '17',
+              nextId: 'onceTenscorrectq98',
+            },
+            {
+              answer: "27",
+              nextId: 'inonceTenscorrectq98',
+            },
+            {
+              answer: "72",
+              nextId: 'inonceTenscorrectq98',
+            },
+          ],
+        },
+    
+        onceTenscorrectq98: {
+        botPrompt: 'Hurray! <strong>17</strong> is the correct answer  ! 😎',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[98],
+          },
+        ],
+        },
+        inonceTenscorrectq98: {
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"17"</strong>',
+        answers: [
+          {
+            nextId: 'onceTens'+shuffledNumbersto[98],
+          },
+        ],
+        },
+        
+        //99
+        ['onceTens'+shuffledNumbersto[98]]: {
+          botPrompt: 'What is the number formed by the digits 8 in the units place and 2 in the tens place?',
+          type: RTypes.TRANSFORMED_TEXT,
+      
+
+          input: selectField(['28', '82', "88","18"]),
+            answers: [
+              {
+                answer: '28',
+                nextId: 'onceTenscorrectq99',
+              },
+              {
+                answer: '82',
+                nextId: 'inonceTenscorrectq99',
+              },
+              {
+                answer: "88",
+                nextId: 'inonceTenscorrectq99',
+              },
+              {
+                answer: "18",
+                nextId: 'inonceTenscorrectq99',
+              },
+            ],
+          },
+      
+          onceTenscorrectq99: {
+          botPrompt: 'Hurray! <strong>28</strong> is the correct answer  ! 😎',
+          answers: [
+            {
+              nextId: 'onceTens'+shuffledNumbersto[99],
+            },
+          ],
+          },
+          inonceTenscorrectq99: {
+          botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"28"</strong>',
+          answers: [
+            {
+              nextId: 'onceTens'+shuffledNumbersto[99],
+            },
+          ],
+          },    //100
+          ['onceTens'+shuffledNumbersto[99]]: {
+          botPrompt: 'Which number has a digit 3 in the tens place and a digit 6 in the units place?',
+          type: RTypes.TRANSFORMED_TEXT,
+      
+      
+          input: selectField(['63', '36', "64","46"]),
+            answers: [
+              {
+                answer: '63',
+                nextId: 'onceTenscorrectq100',
+              },
+              {
+                answer: '36',
+                nextId: 'inonceTenscorrectq100',
+              },
+              {
+                answer: "64",
+                nextId: 'inonceTenscorrectq100',
+              },
+              {
+                answer: "46",
+                nextId: 'inonceTenscorrectq100',
+              },
+            ],
+          },
+      
+          onceTenscorrectq100: {
+          botPrompt: 'Hurray! <strong>63</strong> is the correct answer  ! 😎',
+          answers: [
+            {
+              nextId: 'onceTens'+shuffledNumbersto[100],
+            },
+          ],
+          },
+          inonceTenscorrectq100: {
+          botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"63"</strong>',
+          answers: [
+            {
+              nextId: 'onceTens'+shuffledNumbersto[100],
+            },
+          ],
+          },
+    
+          //101
+          ['onceTens'+shuffledNumbersto[100]]: {
+          botPrompt: 'What number is formed by the digits 2 in the tens place and 0 in the units place?',
+          type: RTypes.TRANSFORMED_TEXT,
+      
+      
+          input: selectField(['71', '17', "27","72"]),
+            answers: [
+              {
+                answer: '71',
+                nextId: 'inonceTenscorrectq101',
+              },
+              {
+                answer: '17',
+                nextId: 'onceTenscorrectq101',
+              },
+              {
+                answer: "27",
+                nextId: 'inonceTenscorrectq101',
+              },
+              {
+                answer: "72",
+                nextId: 'inonceTenscorrectq101',
+              },
+            ],
+          },
+      
+          onceTenscorrectq101: {
+          botPrompt: 'Hurray! <strong>17</strong> is the correct answer  ! 😎',
+          answers: [
+            {
+              nextId: 'onceTens'+shuffledNumbersto[101],
+            },
+          ],
+          },
+          inonceTenscorrectq101: {
+          botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"17"</strong>',
+          answers: [
+            {
+              nextId: 'onceTens'+shuffledNumbersto[101],
+            },
+          ],
+          },
+    
+          //102
+          ['onceTens'+shuffledNumbersto[101]]: {
+          botPrompt: 'What number is formed by the digits 2 in the tens place and 0 in the units place?',
+          type: RTypes.TRANSFORMED_TEXT,
+      
+      
+          input: selectField(['20', '2', "22","0"]),
+            answers: [
+              {
+                answer: '20',
+                nextId: 'onceTenscorrectq102',
+              },
+              {
+                answer: '2',
+                nextId: 'inonceTenscorrectq102',
+              },
+              {
+                answer: "22",
+                nextId: 'inonceTenscorrectq102',
+              },
+              {
+                answer: "0",
+                nextId: 'inonceTenscorrectq102',
+              },
+            ],
+          },
+      
+          onceTenscorrectq102: {
+          botPrompt: 'Hurray! <strong>20</strong> is the correct answer  ! 😎',
+          answers: [
+            {
+              nextId: 'onceTens'+shuffledNumbersto[102],
+            },
+          ],
+          },
+          inonceTenscorrectq102: {
+          botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"20"</strong>',
+          answers: [
+            {
+              nextId: 'onceTens'+shuffledNumbersto[102],
+            },
+          ],
+          },
+    
+          //103
+          ['onceTens'+shuffledNumbersto[102]]: {
+          botPrompt: 'Which number has a digit 9 in the tens place and a digit 1 in the units place?',
+          type: RTypes.TRANSFORMED_TEXT,
+      
+      
+          input: selectField(['91', '19', "99","11"]),
+            answers: [
+              {
+                answer: '91',
+                nextId: 'onceTenscorrectq103',
+              },
+              {
+                answer: '19',
+                nextId: 'inonceTenscorrectq103',
+              },
+              {
+                answer: "99",
+                nextId: 'inonceTenscorrectq103',
+              },
+              {
+                answer: "11",
+                nextId: 'inonceTenscorrectq103',
+              },
+            ],
+          },
+      
+          onceTenscorrectq103: {
+          botPrompt: 'Hurray! <strong>91</strong> is the correct answer  ! 😎',
+          answers: [
+            {
+              nextId: 'onceTens'+shuffledNumbersto[103],
+            },
+          ],
+          },
+          inonceTenscorrectq103: {
+          botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"91"</strong>',
+          answers: [
+            {
+              nextId: 'onceTens'+shuffledNumbersto[103],
+            },
+          ],
+          },
+    
+    
+          //104
+          ['onceTens'+shuffledNumbersto[103]]: {
+          botPrompt: 'What number is formed by the digits 5 in the tens place and 8 in the units place?',
+          type: RTypes.TRANSFORMED_TEXT,
+    
+
+          input: selectField(['58', '85', "88","18"]),
+            answers: [
+              {
+                answer: '58',
+                nextId: 'inonceTenscorrectq104',
+              },
+              {
+                answer: '85',
+                nextId: 'onceTenscorrectq104',
+              },
+              {
+                answer: "88",
+                nextId: 'inonceTenscorrectq104',
+              },
+              {
+                answer: "18",
+                nextId: 'inonceTenscorrectq104',
+              },
+            ],
+          },
+      
+          onceTenscorrectq104: {
+          botPrompt: 'Hurray! <strong>58</strong> is the correct answer  ! 😎',
+          answers: [
+            {
+              nextId: 'onceTens'+shuffledNumbersto[104],
+            },
+          ],
+          },
+          inonceTenscorrectq104: {
+          botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"58"</strong>',
+          answers: [
+            {
+              nextId: 'onceTens'+shuffledNumbersto[104],
+            },
+          ],
+          },
+    
+    
+          //105
+          ['onceTens'+shuffledNumbersto[104]]: {
+          botPrompt: 'Which of the following has a digit 2 in the tens place and a digit 4 in the units place?',
+          type: RTypes.TRANSFORMED_TEXT,
+    
+    
+          input: selectField(['42', '24', "64","46"]),
+            answers: [
+              {
+                answer: '42',
+                nextId: 'inonceTenscorrectq105',
+              },
+              {
+                answer: '24',
+                nextId: 'onceTenscorrectq105',
+              },
+              {
+                answer: "64",
+                nextId: 'inonceTenscorrectq105',
+              },
+              {
+                answer: "46",
+                nextId: 'inonceTenscorrectq105',
+              },
+            ],
+          },
+    
+          onceTenscorrectq105: {
+          botPrompt: 'Hurray! <strong>24</strong> is the correct answer  ! 😎',
+          answers: [
+            {
+              nextId: 'onceTens'+shuffledNumbersto[105],
+            },
+          ],
+          },
+          inonceTenscorrectq105: {
+          botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"24"</strong>',
+          answers: [
+            {
+              nextId: 'onceTens'+shuffledNumbersto[105],
+            },
+          ],
+          },
+    
+           //106
+           ['onceTens'+shuffledNumbersto[105]]: {
+            botPrompt: 'What is the number formed by the digits 3 in the tens place and 9 in the units place?',
+            type: RTypes.TRANSFORMED_TEXT,
+    
+    
+            input: selectField(['39', '93', "33","99"]),
+              answers: [
+                {
+                  answer: '39',
+                  nextId: 'onceTenscorrectq106',
+                },
+                {
+                  answer: '93',
+                  nextId: 'inonceTenscorrectq106',
+                },
+                {
+                  answer: "33",
+                  nextId: 'inonceTenscorrectq106',
+                },
+                {
+                  answer: "99",
+                  nextId: 'inonceTenscorrectq106',
+                },
+              ],
+            },
+      
+            onceTenscorrectq106: {
+            botPrompt: 'Hurray! <strong>39</strong> is the correct answer  ! 😎',
+            answers: [
+              {
+                nextId: 'wishtoContinue30',
+              },
+            ],
+            },
+            inonceTenscorrectq106: {
+            botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"39"</strong>',
+            answers: [
+              {
+                nextId: 'wishtoContinue30',
+              },
+            ],
+            },
+    
+      //endonceTensletter
+
+      wishtoContinue30: {
+        botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
+        input: selectField(['Yes!', 'No!']),
+        answers: [
+            {
+              answer: 'Yes!',
+              nextId: 'day31',
+            },
+            {
+              answer: 'No!',
+              nextId: 'endConv',
+            },
+        ],
+      },
+
+
+
 
 
 
@@ -27558,7 +41812,7 @@ endConv: {
     },
   ],
 },
-  
+
   select: {
     botPrompt: 'I can also offer <strong>predefined options</strong> to choose from:',
     varName: 'userName',
@@ -27587,7 +41841,7 @@ endConv: {
             { nextId: 'question1' },
     ],
   },
-  
+
   question1: {
     botPrompt: 'Tell me <strong>@varName</strong>: Do you like to have fun?',
     type: RTypes.TRANSFORMED_TEXT,
