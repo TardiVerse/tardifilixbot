@@ -1,30 +1,30 @@
-day1: {
+day49: {
   botPrompt: '<strong> Day 49 : </strong> Shapes play a crucial role in kindergarten as they lay the foundation for understanding the world around us',
   answers: [
-          { nextId: 'day1ushvshgb' },
+          { nextId: 'day49link' },
   ],
 },
-day1ushvshgb: {
+day49link: {
 
   botPrompt: 'https://youtu.be/WzyELzv_CRQ',
   type: RTypes.LINK,
   answers: [
-          { nextId: 'sdggsdyuf' },
+          { nextId: 'day49comment' },
   ],
 },
 
-sdggsdyuf: {
+day49comment: {
   botPrompt: 'Along with exercising children learn essential English vocabulary and action words which they will soon use in sentences.',
   answers: [
-          { nextId: 'day492link' },
+          { nextId: 'day49comment1' },
   ],
 },
-day492link: {
+day49comment1: {
   botPrompt: 'https://drive.google.com/file/d/1q1KG4qtxXnB1oxP7bat-aqAa4q64HR-D/view?usp=share_link',
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'positionWords'+shuffledNumbersto[0],
+      nextId: 'shapes'+shuffledNumbersto[0],
     },
   ],
 },
@@ -123,19 +123,19 @@ day492link: {
     answers: [
       {
         answer: 'Circle',
-        nextId: 'shapescorrectq2',
+        nextId: 'shapescorrectq3',
       },
       {
         answer: 'Rectangle',
-        nextId: 'inshapescorrectq2',
+        nextId: 'inshapescorrectq3',
       },
       {
         answer: "Square",
-        nextId: 'inshapescorrectq2',
+        nextId: 'inshapescorrectq3',
       },
       {
         answer: "Triangle",
-        nextId: 'inshapescorrectq2',
+        nextId: 'inshapescorrectq3',
       },
     ],
   },
@@ -166,19 +166,19 @@ day492link: {
   answers: [
     {
       answer: '1',
-      nextId: 'inshapescorrectq2',
+      nextId: 'inshapescorrectq4',
     },
     {
       answer: '2',
-      nextId: 'inshapescorrectq2',
+      nextId: 'inshapescorrectq4',
     },
     {
       answer: "3",
-      nextId: 'inshapescorrectq2',
+      nextId: 'inshapescorrectq4',
     },
     {
       answer: "4",
-      nextId: 'shapescorrectq2',
+      nextId: 'shapescorrectq4',
     },
   ],
   },
@@ -295,19 +295,19 @@ day492link: {
   answers: [
     {
       answer: 'Circle',
-      nextId: 'inshapescorrectq6',
+      nextId: 'inshapescorrectq7',
     },
     {
       answer: 'Rectangle',
-      nextId: 'inshapescorrectq6',
+      nextId: 'inshapescorrectq7',
     },
     {
       answer: "Square",
-      nextId: 'shapescorrectq6',
+      nextId: 'shapescorrectq7',
     },
     {
       answer: "Triangle",
-      nextId: 'inshapescorrectq6',
+      nextId: 'inshapescorrectq7',
     },
   ],
   },
@@ -339,19 +339,19 @@ day492link: {
   answers: [
     {
       answer: 'Circle',
-      nextId: 'shapescorrectq6',
+      nextId: 'shapescorrectq8',
     },
     {
       answer: 'Rectangle',
-      nextId: 'inshapescorrectq6',
+      nextId: 'inshapescorrectq8',
     },
     {
       answer: "Square",
-      nextId: 'inshapescorrectq6',
+      nextId: 'inshapescorrectq8',
     },
     {
       answer: "Triangle",
-      nextId: 'inshapescorrectq6',
+      nextId: 'inshapescorrectq8',
     },
   ],
   },
@@ -426,19 +426,19 @@ day492link: {
   answers: [
     {
       answer: 'Circle',
-      nextId: 'shapescorrectq6',
+      nextId: 'shapescorrectq10',
     },
     {
       answer: 'Rectangle',
-      nextId: 'inshapescorrectq6',
+      nextId: 'inshapescorrectq10',
     },
     {
       answer: "Square",
-      nextId: 'inshapescorrectq6',
+      nextId: 'inshapescorrectq10',
     },
     {
       answer: "Triangle",
-      nextId: 'inshapescorrectq6',
+      nextId: 'inshapescorrectq10',
     },
   ],
   

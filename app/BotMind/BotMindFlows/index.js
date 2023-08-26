@@ -412,14 +412,14 @@ wishtocontinue: {
       {
         answer: 'Yes!',
         nextId: 'day2',
-   
+
 
       },
       {
         answer: 'No!',
         nextId: 'endConv',
       },
-     
+
   ],
 },
 
@@ -43149,8 +43149,7253 @@ wishtocontinue33: {
   ],
 },
 
-          
+//day34
+day34: {
+  botPrompt: '<strong> Day 34 : </strong> Morning Meeting activity',
+  answers: [
+          { nextId: 'day34comment' },
+  ],
+  sumToBags: [{ name: 'd', points: 34 }],
 
+},
+day34comment: {
+  botPrompt: 'Topics of morning meeting',
+  answers: [
+          { nextId: 'wishtocontinue34' },
+  ],
+},
+
+wishtocontinue34: {
+  botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
+  input: selectField(['Yes!', 'No!']),
+  answers: [
+      {
+        answer: 'Yes!',
+        nextId: 'day36',
+      },
+      {
+        answer: 'No!',
+        nextId: 'endConv',
+
+      },
+  ],
+},
+
+day36: {
+  botPrompt: '<strong> Day 36 : </strong> Combining words is crucial in kindergarten as it lays the foundation for language development, enabling children to express ideas and interact effectively.',
+  answers: [
+          { nextId: 'day36link' },
+  ],
+},
+day36link: {
+
+  botPrompt: 'https://youtu.be/Wh5lyHhbZws',
+  type: RTypes.LINK,
+  answers: [
+          { nextId: 'day361comment' },
+  ],
+},
+day361comment: {
+  botPrompt: 'TLM Video',
+  answers: [
+          { nextId: 'day361link' },
+  ],
+},
+day361link: {
+  botPrompt: 'https://youtu.be/82rUPIxSVgs',
+  type: RTypes.LINK,
+  answers: [
+          { nextId: 'day362comment' },
+  ],
+},
+day362comment: {
+  botPrompt: 'Let’s look into the pages of the book',
+  answers: [
+          { nextId: 'day362link' },
+  ],
+},
+day362link: {
+  botPrompt: 'https://drive.google.com/file/d/11N-63h5FAD2gYJwbOdqiEZTZSmqV4iBC/view?usp=sharing',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'combinedWords'+shuffledNumbersto[0],
+    },
+  ],
+},
+
+
+//combinedWords
+
+
+["combinedWords"+shuffledNumbersto[0]]: {
+    botPrompt: 'Which picture represents the word "rainbow"?',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['Blue', 'Red', "Green","Yellow"]),
+    answers: [
+      {
+        answer: 'Blue',
+        nextId: 'incombinedWordscorrect',
+      },
+      {
+        answer: 'Red',
+        nextId: 'combinedWordscorrect',
+      },
+      {
+        answer: "Green",
+        nextId: 'incombinedWordscorrect',
+      },
+      {
+        answer: "Yellow",
+        nextId: 'incombinedWordscorrect',
+      },
+    ],
+  },
+  combinedWordscorrect: {
+    botPrompt: 'Hurray <strong>Red</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'combinedWords'+shuffledNumbersto[1],
+      },
+    ],
+  },
+  incombinedWordscorrect: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Red"</strong>',
+    answers: [
+      {
+        nextId: 'combinedWords'+shuffledNumbersto[1],
+      },
+    ],
+  },
+  
+  ['combinedWords'+shuffledNumbersto[1]]: {
+    botPrompt: 'Which word is a combination of "cup" and "cake"?',
+    type: RTypes.TRANSFORMED_TEXT,
+  
+    input: selectField(['CakeTree', 'Cupcake', "Sunbutter","Honeydog"]),
+    answers: [
+      {
+        answer: 'CakeTree',
+        nextId: 'incombinedWordscorrectq2',
+      },
+      {
+        answer: 'Cupcake',
+        nextId: 'combinedWordscorrectq2',
+      },
+      {
+        answer: "Sunbutter",
+        nextId: 'incombinedWordscorrectq2',
+      },
+      {
+        answer: "Honeydog",
+        nextId: 'incombinedWordscorrectq2',
+      },
+    ],
+  },
+  
+  combinedWordscorrectq2: {
+    botPrompt: 'Hurray! <strong>Cupcake</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'combinedWords'+shuffledNumbersto[2],
+      },
+    ],
+  },
+  incombinedWordscorrectq2: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Cupcake"</strong>',
+    answers: [
+      {
+        nextId: 'combinedWords'+shuffledNumbersto[2],
+      },
+    ],
+  },
+  
+  //3
+  ['combinedWords'+shuffledNumbersto[2]]: {
+  botPrompt: 'Which picture represents the word "snowman"?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['Green', 'Brown', "White","Yellow"]),
+    answers: [
+      {
+        answer: 'Green',
+        nextId: 'incombinedWordscorrectq3',
+      },
+      {
+        answer: 'Brown',
+        nextId: 'incombinedWordscorrectq3',
+      },
+      {
+        answer: "White",
+        nextId: 'incombinedWordscorrectq3',
+      },
+      {
+        answer: "Yellow",
+        nextId: 'combinedWordscorrectq3',
+      },
+    ],
+  },
+  
+  combinedWordscorrectq3: {
+  botPrompt: 'Hurray! <strong>Yellow</strong> is the correct answer ! 😎',
+  answers: [
+    {
+      nextId: 'combinedWords'+shuffledNumbersto[3],
+    },
+  ],
+  },
+  incombinedWordscorrectq3: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Yellow"</strong>',
+  answers: [
+    {
+      nextId: 'combinedWords'+shuffledNumbersto[3],
+    },
+  ],
+  },
+  
+  //4
+  ['combinedWords'+shuffledNumbersto[3]]: {
+  botPrompt: 'Which word is a combination of "honey" and "bee"?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['Honeybee', 'Dogstar', "Butterdog","Blackcup"]),
+    answers: [
+      {
+        answer: 'Honeybee',
+        nextId: 'combinedWordscorrectq4',
+      },
+      {
+        answer: 'Dogstar',
+        nextId: 'incombinedWordscorrectq4',
+      },
+      {
+        answer: "Butterdog",
+        nextId: 'incombinedWordscorrectq4',
+      },
+      {
+        answer: "Blackcup",
+        nextId: 'incombinedWordscorrectq4',
+      },
+    ],
+  },
+  
+  combinedWordscorrectq4: {
+  botPrompt: 'Hurray! <strong>Honeybee</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'combinedWords'+shuffledNumbersto[4],
+    },
+  ],
+  },
+  incombinedWordscorrectq4: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Honeybee"</strong>',
+  answers: [
+    {
+      nextId: 'combinedWords'+shuffledNumbersto[4],
+    },
+  ],
+  },
+  
+  //5
+  ['combinedWords'+shuffledNumbersto[4]]: {
+  botPrompt: 'Which picture represents a sunflower?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['Blue', 'Purple', "Red","Yellow"]),
+    answers: [
+      {
+        answer: 'Blue',
+        nextId: 'incombinedWordscorrectq5',
+      },
+      {
+        answer: 'Purple',
+        nextId: 'combinedWordscorrectq5',
+      },
+      {
+        answer: "Red",
+        nextId: 'incombinedWordscorrectq5',
+      },
+      {
+        answer: "Yellow",
+        nextId: 'incombinedWordscorrectq5',
+      },
+    ],
+  },
+  
+  combinedWordscorrectq5: {
+  botPrompt: 'Hurray! <strong>Purple</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'combinedWords'+shuffledNumbersto[5],
+    },
+  ],
+  },
+  incombinedWordscorrectq5: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Purple"</strong>',
+  answers: [
+    {
+      nextId: 'combinedWords'+shuffledNumbersto[5],
+    },
+  ],
+  },
+  
+  //6
+  ['combinedWords'+shuffledNumbersto[5]]: {
+  botPrompt: 'Which word is a combination of "tree" and "house"?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['Treehouse', 'Sunrain', "Butterdog","Blackcup"]),
+    answers: [
+      {
+        answer: 'Treehouse',
+        nextId: 'combinedWordscorrectq6',
+      },
+      {
+        answer: 'Sunrain',
+        nextId: 'incombinedWordscorrectq6',
+      },
+      {
+        answer: "Butterdog",
+        nextId: 'incombinedWordscorrectq6',
+      },
+      {
+        answer: "Blackcup",
+        nextId: 'incombinedWordscorrectq6',
+      },
+    ],
+  },
+  
+  combinedWordscorrectq6: {
+  botPrompt: 'Hurray! <strong>Treehouse</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'combinedWords'+shuffledNumbersto[6],
+    },
+  ],
+  },
+  incombinedWordscorrectq6: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>Right</strong> answer is <strong>"Treehouse"</strong>',
+  answers: [
+    {
+      nextId: 'combinedWords'+shuffledNumbersto[6],
+    },
+  ],
+  },
+
+  //7
+  ['combinedWords'+shuffledNumbersto[6]]: {
+  botPrompt: 'Which picture represents a  butterfly?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['Blue', 'Red', "Orange","Pink"]),
+    answers: [
+      {
+        answer: 'Blue',
+        nextId: 'incombinedWordscorrectq7',
+      },
+      {
+        answer: 'Red',
+        nextId: 'combinedWordscorrectq7',
+      },
+      {
+        answer: "Orange",
+        nextId: 'combinedWordscorrectq7',
+      },
+      {
+        answer: "Pink",
+        nextId: 'combinedWordscorrectq7',
+      },
+    ],
+  },
+  
+  combinedWordscorrectq7: {
+  botPrompt: 'Hurray! <strong>Orange or Red or Pink</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'combinedWords'+shuffledNumbersto[7],
+    },
+  ],
+  },
+  incombinedWordscorrectq7: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Orange or Red or Pink"</strong>',
+  answers: [
+    {
+      nextId: 'combinedWords'+shuffledNumbersto[7],
+    },
+  ],
+  },
+  
+  
+  //8
+  ['combinedWords'+shuffledNumbersto[7]]: {
+  botPrompt: 'Which word is a combination of "rain" and "coat"?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['Rainboar', 'Honeydog', "treestar","raincoat"]),
+    answers: [
+      {
+        answer: 'Rainboar',
+        nextId: 'incombinedWordscorrectq8',
+      },
+      {
+        answer: 'Honeydog',
+        nextId: 'incombinedWordscorrectq8',
+      },
+      {
+        answer: "treestar",
+        nextId: 'incombinedWordscorrectq8',
+      },
+      {
+        answer: "raincoat",
+        nextId: 'combinedWordscorrectq8',
+      },
+    ],
+  },
+  
+  combinedWordscorrectq8: {
+  botPrompt: 'Hurray! <strong>raincoat</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'combinedWords'+shuffledNumbersto[8],
+    },
+  ],
+  },
+  incombinedWordscorrectq8: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"raincoat"</strong>',
+  answers: [
+    {
+      nextId: 'combinedWords'+shuffledNumbersto[8],
+    },
+  ],
+  },
+  
+  //9
+  ['combinedWords'+shuffledNumbersto[8]]: {
+  botPrompt: 'Which word is a combination of "black" and "board"?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['Dogtree', 'Blackboard', "Sunrain","Buttercup"]),
+    answers: [
+      {
+        answer: 'Dogtree',
+        nextId: 'incombinedWordscorrectq9',
+      },
+      {
+        answer: 'Blackboard',
+        nextId: 'combinedWordscorrectq9',
+      },
+      {
+        answer: "Sunrain",
+        nextId: 'incombinedWordscorrectq9',
+      },
+      {
+        answer: "Buttercup",
+        nextId: 'incombinedWordscorrectq9',
+      },
+    ],
+  },
+  
+  combinedWordscorrectq9: {
+  botPrompt: 'Hurray! <strong>Blackboard</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'combinedWords'+shuffledNumbersto[9],
+    },
+  ],
+  },
+  incombinedWordscorrectq9: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Blackboard"</strong>',
+  answers: [
+    {
+      nextId: 'combinedWords'+shuffledNumbersto[9],
+    },
+  ],
+  },
+  
+  
+  //10
+  ['combinedWords'+shuffledNumbersto[9]]: {
+  botPrompt: 'Which picture represents a  sunshine?',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['Blue', 'Orange', "Green","Yellow"]),
+    answers: [
+      {
+        answer: 'Blue',
+        nextId: 'combinedWordscorrectq10',
+      },
+      {
+        answer: 'Orange',
+        nextId: 'incombinedWordscorrectq10',
+      },
+      {
+        answer: "Green",
+        nextId: 'incombinedWordscorrectq10',
+      },
+      {
+        answer: "Yellow",
+        nextId: 'incombinedWordscorrectq10',
+      },
+    ],
+  
+  },
+  
+  combinedWordscorrectq10: {
+  botPrompt: 'Hurray! <strong>Orange</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'combinedWords'+shuffledNumbersto[10],
+    },
+  ],
+  },
+  incombinedWordscorrectq10: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Orange"</strong>',
+  answers: [
+    {
+      nextId: 'combinedWords'+shuffledNumbersto[10],
+    },
+  ],
+  },
+  
+  //11
+  ['combinedWords'+shuffledNumbersto[10]]: {
+  botPrompt: 'Which picture represents a  starfish?',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['White', 'Orange', "Purple","Pink"]),
+    answers: [
+      {
+        answer: 'White',
+        nextId: 'combinedWordscorrectq11',
+      },
+      {
+        answer: 'Orange',
+        nextId: 'incombinedWordscorrectq11',
+      },
+      {
+        answer: "Purple",
+        nextId: 'incombinedWordscorrectq11',
+      },
+      {
+        answer: "Pink",
+        nextId: 'incombinedWordscorrectq11',
+      },
+    ],
+  },
+  
+  combinedWordscorrectq11: {
+  botPrompt: 'Hurray! <strong>White</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'combinedWords'+shuffledNumbersto[11],
+    },
+  ],
+  },
+  incombinedWordscorrectq11: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"White"</strong>',
+  answers: [
+    {
+      nextId: 'combinedWords'+shuffledNumbersto[11],
+    },
+  ],
+  },
+  
+  //12
+  ['combinedWords'+shuffledNumbersto[11]]: {
+  botPrompt: 'Which word is a combination of "dog" and "house"?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['Honeyrain', 'Buttercup', "Doghouse","Blackstar"]),
+    answers: [
+      {
+        answer: 'Honeyrain',
+        nextId: 'incombinedWordscorrectq12',
+      },
+      {
+        answer: 'Buttercup',
+        nextId: 'incombinedWordscorrectq12',
+      },
+      {
+        answer: "Doghouse",
+        nextId: 'combinedWordscorrectq12',
+      },
+      {
+        answer: "Blackstar",
+        nextId: 'incombinedWordscorrectq12',
+      },
+    ],
+  },
+  
+  combinedWordscorrectq12: {
+  botPrompt: 'Hurray! <strong>Doghouse</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'combinedWords'+shuffledNumbersto[12],
+    },
+  ],
+  },
+  incombinedWordscorrectq12: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Doghouse"</strong>',
+  answers: [
+    {
+      nextId: 'combinedWords'+shuffledNumbersto[12],
+    },
+  ],
+  },
+  
+  //13
+  ['combinedWords'+shuffledNumbersto[12]]: {
+  botPrompt: 'Which picture represents a  grasshopper?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['Blue', 'Red', "Yellow"," Pink"]),
+    answers: [
+      {
+        answer: 'Blue',
+        nextId: 'incombinedWordscorrectq13',
+      },
+      {
+        answer: 'Red',
+        nextId: 'incombinedWordscorrectq13',
+      },
+      {
+        answer: "Yellow",
+        nextId: 'incombinedWordscorrectq13',
+      },
+      {
+        answer: "Pink",
+        nextId: 'combinedWordscorrectq13',
+      },
+    ],
+  },
+  
+  combinedWordscorrectq13: {
+  botPrompt: 'Hurray! <strong>Pink</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'combinedWords'+shuffledNumbersto[13],
+    },
+  ],
+  },
+  incombinedWordscorrectq13: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Pink"</strong>',
+  answers: [
+    {
+      nextId: 'combinedWords'+shuffledNumbersto[13],
+    },
+  ],
+  },
+  
+  //14
+  ['combinedWords'+shuffledNumbersto[13]]: {
+  botPrompt: 'Moon can be combined with which word to make a new word?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['Light', 'Beam', "Tree","Star"]),
+    answers: [
+      {
+        answer: 'Light',
+        nextId: 'combinedWordscorrectq14',
+      },
+      {
+        answer: 'Beam',
+        nextId: 'incombinedWordscorrectq14',
+      },
+      {
+        answer: "Tree",
+        nextId: 'incombinedWordscorrectq14',
+      },
+      {
+        answer: "Star",
+        nextId: 'incombinedWordscorrectq14',
+      },
+    ],
+  },
+  
+  combinedWordscorrectq14: {
+  botPrompt: 'Hurray! <strong>Light</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'combinedWords'+shuffledNumbersto[14],
+    },
+  ],
+  },
+  incombinedWordscorrectq14: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Light"</strong>',
+  answers: [
+    {
+      nextId: 'combinedWords'+shuffledNumbersto[14],
+    },
+  ],
+  },
+  
+  
+  //15
+  ['combinedWords'+shuffledNumbersto[14]]: {
+  botPrompt: 'Jelly can be combined with which word to make a new word?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['Honey', 'Fish', "Tree","Star"]),
+    answers: [
+      {
+        answer: 'Honey',
+        nextId: 'incombinedWordscorrectq15',
+      },
+      {
+        answer: 'Fish',
+        nextId: 'combinedWordscorrectq15',
+      },
+      {
+        answer: "Tree",
+        nextId: 'incombinedWordscorrectq15',
+      },
+      {
+        answer: "Star",
+        nextId: 'incombinedWordscorrectq15',
+      },
+    ],
+  },
+
+  combinedWordscorrectq15: {
+  botPrompt: 'Hurray! <strong>Fish</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'combinedWords'+shuffledNumbersto[15],
+    },
+  ],
+  },
+  incombinedWordscorrectq15: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Fish"</strong>',
+  answers: [
+    {
+      nextId: 'combinedWords'+shuffledNumbersto[15],
+    },
+  ],
+  },
+  
+  //16
+  ['combinedWords'+shuffledNumbersto[15]]: {
+    botPrompt: 'Apple can be combined with which word to make  new word?',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['Black', 'Tree', "Rain","Pie"]),
+    answers: [
+      {
+        answer: 'Black',
+        nextId: 'incombinedWordscorrectq16',
+      },
+      {
+        answer: 'Tree',
+        nextId: 'incombinedWordscorrectq16',
+      },
+      {
+        answer: "Rain",
+        nextId: 'incombinedWordscorrectq16',
+      },
+      {
+        answer: "Pie",
+        nextId: 'combinedWordscorrectq16',
+      },
+    ],
+  },
+  combinedWordscorrectq16: {
+    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>Pie</strong> 😎',
+    answers: [
+      {
+        nextId: 'combinedWords'+shuffledNumbersto[16],
+      },
+    ],
+  },
+  incombinedWordscorrectq16: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Pie"</strong>',
+    answers: [
+      {
+        nextId: 'combinedWords'+shuffledNumbersto[16],
+      },
+    ],
+  },
+  
+  //17
+  ['combinedWords'+shuffledNumbersto[16]]: {
+  botPrompt: 'Dragon can be combined with which word to make  a  new word?',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['Castle', 'ButterFly', "Fly","Self"]),
+    answers: [
+      {
+        answer: 'Castle',
+        nextId: 'incombinedWordscorrectq17',
+      },
+      {
+        answer: 'ButterFly',
+        nextId: 'incombinedWordscorrectq17',
+      },
+      {
+        answer: "Fly",
+        nextId: 'combinedWordscorrectq17',
+      },
+      {
+        answer: "Self",
+        nextId: 'incombinedWordscorrectq17',
+      },
+    ],
+  },
+  combinedWordscorrectq17: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>Fly</strong> 😎',
+  answers: [
+    {
+      nextId: 'combinedWords'+shuffledNumbersto[17],
+    },
+  ],
+  },
+  incombinedWordscorrectq17: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Fly"</strong>',
+  answers: [
+    {
+      nextId: 'combinedWords'+shuffledNumbersto[17],
+    },
+  ],
+  },
+  
+  //18
+  ['combinedWords'+shuffledNumbersto[17]]: {
+  botPrompt: 'Tree can be combined with which word to make a new word? ',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['House', 'Tree', "Bug","Ball"]),
+  answers: [
+    {
+      answer: 'House',
+      nextId: 'combinedWordscorrectq18',
+    },
+    {
+      answer: 'Tree',
+      nextId: 'incombinedWordscorrectq18',
+    },
+    {
+      answer: "Bug",
+      nextId: 'incombinedWordscorrectq18',
+    },
+    {
+      answer: "Ball",
+      nextId: 'incombinedWordscorrectq18',
+    },
+  ],
+  },
+  combinedWordscorrectq18: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>House</strong> 😎',
+  answers: [
+    {
+      nextId: 'combinedWords'+shuffledNumbersto[18],
+    },
+  ],
+  },
+  incombinedWordscorrectq18: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"House"</strong>',
+  answers: [
+    {
+      nextId: 'combinedWords'+shuffledNumbersto[18],
+    },
+  ],
+  },
+  
+  //19
+  ['combinedWords'+shuffledNumbersto[18]]: {
+  botPrompt: 'Water can be combined with which word to make a new word?',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['Truck', 'JellyFish', "Case","Melon"]),
+  answers: [
+    {
+      answer: 'Truck',
+      nextId: 'combinedWordscorrectq19',
+    },
+    {
+      answer: 'JellyFish',
+      nextId: 'combinedWordscorrectq19',
+    },
+    {
+      answer: "Case",
+      nextId: 'combinedWordscorrectq19',
+    },
+    {
+      answer: "Melon",
+      nextId: 'combinedWordscorrectq19',
+    },
+  ],
+  },
+  combinedWordscorrectq19: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>Melon</strong> Answers! 😎',
+  answers: [
+    {
+      nextId: 'combinedWords'+shuffledNumbersto[19],
+    },
+  ],
+  },
+  incombinedWordscorrectq19: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Melon"</strong>',
+  answers: [
+    {
+      nextId: 'combinedWords'+shuffledNumbersto[19],
+    },
+  ],
+  },
+  
+  //20
+  ['combinedWords'+shuffledNumbersto[19]]: {
+  botPrompt: 'Snow can be combined with which word to make a new word?',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['Truck', 'Man', "Case","Melon"]),
+  answers: [
+    {
+      answer: 'Truck',
+      nextId: 'incombinedWordscorrectq20',
+    },
+    {
+      answer: 'Man',
+      nextId: 'combinedWordscorrectq20',
+    },
+    {
+      answer: "Case",
+      nextId: 'incombinedWordscorrectq20',
+    },
+    {
+      answer: "Melon",
+      nextId: 'incombinedWordscorrectq20',
+    },
+  ],
+  },
+  combinedWordscorrectq20: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>Man</strong> 😎',
+  answers: [
+    {
+      nextId: 'combinedWords'+shuffledNumbersto[20],
+    },
+  ],
+  },
+  incombinedWordscorrectq20: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Man"</strong>',
+  answers: [
+    {
+      nextId: 'combinedWords'+shuffledNumbersto[20],
+    },
+  ],
+  },
+  
+  //21
+  ["combinedWords"+shuffledNumbersto[20]]: {
+    botPrompt: 'Lady can be combined with which word to make a new word?',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['Bird', 'Rain', "Dog","Bug"]),
+  answers: [
+    {
+      answer: 'Bird',
+      nextId: 'incombinedWordscorrectq21',
+    },
+    {
+      answer: 'Rain',
+      nextId: 'incombinedWordscorrectq21',
+    },
+    {
+      answer: "Dog",
+      nextId: 'incombinedWordscorrectq21',
+    },
+    {
+      answer: "Bug",
+      nextId: 'combinedWordscorrectq21',
+    },
+  ],
+  },
+  combinedWordscorrectq21: {
+    botPrompt: 'Hurray <strong>Bug</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'combinedWords'+shuffledNumbersto[21],
+      },
+    ],
+  },
+  incombinedWordscorrectq21: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Bug"</strong>',
+    answers: [
+      {
+        nextId: 'combinedWords'+shuffledNumbersto[21],
+      },
+    ],
+  },
+  
+  //22
+  ['combinedWords'+shuffledNumbersto[21]]: {
+    botPrompt: 'Grass can be combined with which word to make a new word?',
+    type: RTypes.TRANSFORMED_TEXT,
+  
+    input: selectField(['Truck', 'Water', "Case","Hopper"]),
+  answers: [
+    {
+      answer: 'Truck',
+      nextId: 'incombinedWordscorrectq22',
+    },
+    {
+      answer: 'Water',
+      nextId: 'incombinedWordscorrectq22',
+    },
+    {
+      answer: "Case",
+      nextId: 'incombinedWordscorrectq22',
+    },
+    {
+      answer: "Hopper",
+      nextId: 'combinedWordscorrectq22',
+    },
+  ],
+  },
+  
+  combinedWordscorrectq22: {
+    botPrompt: 'Hurray! <strong>Hopper</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'wishtocontinue36',
+      },
+    ],
+  },
+  incombinedWordscorrectq22: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Hopper"</strong>',
+    answers: [
+      {
+        nextId: 'wishtocontinue36',
+      },
+    ],
+  },
+  
+  //endcombinedWordsletter
+
+  wishtocontinue36: {
+    botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
+    input: selectField(['Yes!', 'No!']),
+    answers: [
+        {
+          answer: 'Yes!',
+          nextId: 'day37',
+        },
+        {
+          answer: 'No!',
+          nextId: 'endConv',
+  
+        },
+    ],
+  },
+
+//day37
+day37: {
+  botPrompt: '<strong> Day 37 : </strong> Understanding the purpose',
+  answers: [
+          { nextId: 'day37comment' },
+  ],
+  sumToBags: [{ name: 'd', points: 37 }],
+
+},
+day37comment: {
+  botPrompt: 'TLM making',
+  answers: [
+          { nextId: 'day37comment1' },
+  ],
+},
+day37comment1: {
+  botPrompt: 'Using it in class',
+  answers: [
+          { nextId: 'wishtocontinue37' },
+  ],
+},
+
+wishtocontinue37: {
+  botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
+  input: selectField(['Yes!', 'No!']),
+  answers: [
+      {
+        answer: 'Yes!',
+        nextId: 'day38',
+      },
+      {
+        answer: 'No!',
+        nextId: 'endConv',
+
+      },
+  ],
+},
+
+day38: {
+  botPrompt: '<strong> Day 38 : </strong> Understanding concepts like "above," "below," "beside," and "in front" lays the foundation for effective communication and reading abilities., enabling children to express ideas and interact effectively.',
+  answers: [
+          { nextId: 'day38link' },
+  ],
+},
+day38link: {
+
+  botPrompt: 'https://youtu.be/d70QvTi1Y2E,https://youtu.be/FG2aEUX2RXk',
+  type: RTypes.LINK,
+  answers: [
+          { nextId: 'day382comment' },
+  ],
+},
+
+day382comment: {
+  botPrompt: 'Let’s look into the pages of the book',
+  answers: [
+          { nextId: 'day382link' },
+  ],
+},
+day382link: {
+  botPrompt: 'https://drive.google.com/file/d/1e0RvqhSnTorOMiUZeDM9hTL-CBzER5V4/view?usp=sharing',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'positionWords'+shuffledNumbersto[0],
+    },
+  ],
+},
+
+
+//positionWords
+
+
+["positionWords"+shuffledNumbersto[0]]: {
+    botPrompt: '1. The cat is ____ the table.',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['On', 'In', "Under","Behind"]),
+    answers: [
+      {
+        answer: 'On',
+        nextId: 'positionWordscorrect',
+      },
+      {
+        answer: 'In',
+        nextId: 'inpositionWordscorrect',
+      },
+      {
+        answer: "Under",
+        nextId: 'inpositionWordscorrect',
+      },
+      {
+        answer: "Behind",
+        nextId: 'inpositionWordscorrect',
+      },
+    ],
+  },
+  positionWordscorrect: {
+    botPrompt: 'Hurray <strong>On</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'positionWords'+shuffledNumbersto[1],
+      },
+    ],
+  },
+  inpositionWordscorrect: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"On"</strong>',
+    answers: [
+      {
+        nextId: 'positionWords'+shuffledNumbersto[1],
+      },
+    ],
+  },
+  
+  ['positionWords'+shuffledNumbersto[1]]: {
+    botPrompt: '2. The toy is ____ the box.',
+    type: RTypes.TRANSFORMED_TEXT,
+
+    input: selectField(['On', 'In', "Under","Behind"]),
+    answers: [
+      {
+        answer: 'On',
+        nextId: 'inpositionWordscorrectq2',
+      },
+      {
+        answer: 'In',
+        nextId: 'positionWordscorrectq2',
+      },
+      {
+        answer: "Under",
+        nextId: 'inpositionWordscorrectq2',
+      },
+      {
+        answer: "Behind",
+        nextId: 'inpositionWordscorrectq2',
+      },
+    ],
+  },
+
+  positionWordscorrectq2: {
+    botPrompt: 'Hurray! <strong>In</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'positionWords'+shuffledNumbersto[2],
+      },
+    ],
+  },
+  inpositionWordscorrectq2: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"In"</strong>',
+    answers: [
+      {
+        nextId: 'positionWords'+shuffledNumbersto[2],
+      },
+    ],
+  },
+
+  //3
+  ['positionWords'+shuffledNumbersto[2]]: {
+  botPrompt: '3. The flower vase  is ____ the table.',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['On', 'In', "Under","Behind"]),
+    answers: [
+      {
+        answer: 'On',
+        nextId: 'positionWordscorrectq3',
+      },
+      {
+        answer: 'In',
+        nextId: 'inpositionWordscorrectq3',
+      },
+      {
+        answer: "Under",
+        nextId: 'inpositionWordscorrectq3',
+      },
+      {
+        answer: "Behind",
+        nextId: 'inpositionWordscorrectq3',
+      },
+    ],
+  },
+  
+  positionWordscorrectq3: {
+  botPrompt: 'Hurray! <strong>On</strong> is the correct answer ! 😎',
+  answers: [
+    {
+      nextId: 'positionWords'+shuffledNumbersto[3],
+    },
+  ],
+  },
+  inpositionWordscorrectq3: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"On"</strong>',
+  answers: [
+    {
+      nextId: 'positionWords'+shuffledNumbersto[3],
+    },
+  ],
+  },
+
+  //4
+  ['positionWords'+shuffledNumbersto[3]]: {
+  botPrompt: '4. The boy is ____ the table.',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['On', 'In', "Under","Behind"]),
+    answers: [
+      {
+        answer: 'On',
+        nextId: 'inpositionWordscorrectq4',
+      },
+      {
+        answer: 'In',
+        nextId: 'inpositionWordscorrectq4',
+      },
+      {
+        answer: "Under",
+        nextId: 'positionWordscorrectq4',
+      },
+      {
+        answer: "Behind",
+        nextId: 'inpositionWordscorrectq4',
+      },
+    ],
+  },
+
+  positionWordscorrectq4: {
+  botPrompt: 'Hurray! <strong>Under</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'positionWords'+shuffledNumbersto[4],
+    },
+  ],
+  },
+  inpositionWordscorrectq4: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Under"</strong>',
+  answers: [
+    {
+      nextId: 'positionWords'+shuffledNumbersto[4],
+    },
+  ],
+  },
+  
+  //5
+  ['positionWords'+shuffledNumbersto[4]]: {
+  botPrompt: '5. The cup is ____ the table.',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['On', 'In', "Under","Behind"]),
+  answers: [
+    {
+      answer: 'On',
+      nextId: 'positionWordscorrectq5',
+    },
+    {
+      answer: 'In',
+      nextId: 'inpositionWordscorrectq5',
+    },
+    {
+      answer: "Under",
+      nextId: 'inpositionWordscorrectq5',
+    },
+    {
+      answer: "Behind",
+      nextId: 'inpositionWordscorrectq5',
+    },
+  ],
+  },
+  
+  positionWordscorrectq5: {
+  botPrompt: 'Hurray! <strong>On</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'positionWords'+shuffledNumbersto[5],
+    },
+  ],
+  },
+  inpositionWordscorrectq5: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"On"</strong>',
+  answers: [
+    {
+      nextId: 'positionWords'+shuffledNumbersto[5],
+    },
+  ],
+  },
+  
+  //6
+  ['positionWords'+shuffledNumbersto[5]]: {
+  botPrompt: '6. The car is ____ the garage.',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['On', 'In', "Under","Behind"]),
+  answers: [
+    {
+      answer: 'On',
+      nextId: 'inpositionWordscorrectq6',
+    },
+    {
+      answer: 'In',
+      nextId: 'positionWordscorrectq6',
+    },
+    {
+      answer: "Under",
+      nextId: 'inpositionWordscorrectq6',
+    },
+    {
+      answer: "Behind",
+      nextId: 'inpositionWordscorrectq6',
+    },
+  ],
+  },
+
+  positionWordscorrectq6: {
+  botPrompt: 'Hurray! <strong>In</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'positionWords'+shuffledNumbersto[6],
+    },
+  ],
+  },
+  inpositionWordscorrectq6: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>Right</strong> answer is <strong>"In"</strong>',
+  answers: [
+    {
+      nextId: 'positionWords'+shuffledNumbersto[6],
+    },
+  ],
+  },
+
+  //7
+  ['positionWords'+shuffledNumbersto[6]]: {
+  botPrompt: '7. The pencils are ____ the bag.',
+  type: RTypes.TRANSFORMED_TEXT,
+
+
+  input: selectField(['On', 'In', "Under","Behind"]),
+  answers: [
+    {
+      answer: 'On',
+      nextId: 'inpositionWordscorrectq7',
+    },
+    {
+      answer: 'In',
+      nextId: 'positionWordscorrectq7',
+    },
+    {
+      answer: "Under",
+      nextId: 'inpositionWordscorrectq7',
+    },
+    {
+      answer: "Behind",
+      nextId: 'inpositionWordscorrectq7',
+    },
+  ],
+  },
+  
+  positionWordscorrectq7: {
+  botPrompt: 'Hurray! <strong>In</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'positionWords'+shuffledNumbersto[7],
+    },
+  ],
+  },
+  inpositionWordscorrectq7: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"In"</strong>',
+  answers: [
+    {
+      nextId: 'positionWords'+shuffledNumbersto[7],
+    },
+  ],
+  },
+  
+  
+  //8
+  ['positionWords'+shuffledNumbersto[7]]: {
+  botPrompt: '8. The teddy bear is ____ the bed.',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['On', 'In', "Under","Behind"]),
+  answers: [
+    {
+      answer: 'On',
+      nextId: 'positionWordscorrectq8',
+    },
+    {
+      answer: 'In',
+      nextId: 'inpositionWordscorrectq8',
+    },
+    {
+      answer: "Under",
+      nextId: 'inpositionWordscorrectq8',
+    },
+    {
+      answer: "Behind",
+      nextId: 'inpositionWordscorrectq8',
+    },
+  ],
+  },
+  
+  positionWordscorrectq8: {
+  botPrompt: 'Hurray! <strong>On</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'positionWords'+shuffledNumbersto[8],
+    },
+  ],
+  },
+  inpositionWordscorrectq8: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"On"</strong>',
+  answers: [
+    {
+      nextId: 'positionWords'+shuffledNumbersto[8],
+    },
+  ],
+  },
+  
+  //9
+  ['positionWords'+shuffledNumbersto[8]]: {
+  botPrompt: '9. The teacher is sitting _____ the girls',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['On', 'In', "Under","Between"]),
+  answers: [
+    {
+      answer: 'On',
+      nextId: 'inpositionWordscorrectq9',
+    },
+    {
+      answer: 'In',
+      nextId: 'inpositionWordscorrectq9',
+    },
+    {
+      answer: "Under",
+      nextId: 'inpositionWordscorrectq9',
+    },
+    {
+      answer: "Between",
+      nextId: 'positionWordscorrectq9',
+    },
+  ],
+  },
+  
+  positionWordscorrectq9: {
+  botPrompt: 'Hurray! <strong>Between</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'positionWords'+shuffledNumbersto[9],
+    },
+  ],
+  },
+  inpositionWordscorrectq9: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Between"</strong>',
+  answers: [
+    {
+      nextId: 'positionWords'+shuffledNumbersto[9],
+    },
+  ],
+  },
+  
+  
+  //10
+  ['positionWords'+shuffledNumbersto[9]]: {
+  botPrompt: '10. The spoon is ____ the bowl.',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['On', 'In', "Under","Between"]),
+  answers: [
+    {
+      answer: 'On',
+      nextId: 'inpositionWordscorrectq10',
+    },
+    {
+      answer: 'In',
+      nextId: 'positionWordscorrectq10',
+    },
+    {
+      answer: "Under",
+      nextId: 'inpositionWordscorrectq10',
+    },
+    {
+      answer: "Between",
+      nextId: 'inpositionWordscorrectq10',
+    },
+  ],
+  
+  },
+  
+  positionWordscorrectq10: {
+  botPrompt: 'Hurray! <strong>In</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'positionWords'+shuffledNumbersto[10],
+    },
+  ],
+  },
+  inpositionWordscorrectq10: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"In"</strong>',
+  answers: [
+    {
+      nextId: 'positionWords'+shuffledNumbersto[10],
+    },
+  ],
+  },
+  
+  //11
+  ['positionWords'+shuffledNumbersto[10]]: {
+  botPrompt: '11. The dog is ____ the house.',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['On', 'In', "infront of","Between"]),
+  answers: [
+    {
+      answer: 'On',
+      nextId: 'inpositionWordscorrectq11',
+    },
+    {
+      answer: 'In',
+      nextId: 'inpositionWordscorrectq11',
+    },
+    {
+      answer: "infront of",
+      nextId: 'positionWordscorrectq11',
+    },
+    {
+      answer: "Between",
+      nextId: 'inpositionWordscorrectq11',
+    },
+  ],
+  },
+  
+  positionWordscorrectq11: {
+  botPrompt: 'Hurray! <strong>infront of</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'positionWords'+shuffledNumbersto[11],
+    },
+  ],
+  },
+  inpositionWordscorrectq11: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"infront of"</strong>',
+  answers: [
+    {
+      nextId: 'positionWords'+shuffledNumbersto[11],
+    },
+  ],
+  },
+  
+  //12
+  ['positionWords'+shuffledNumbersto[11]]: {
+  botPrompt: '12. The girl is _____ the bed.',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['On', 'In', "Under","Between"]),
+  answers: [
+    {
+      answer: 'On',
+      nextId: 'positionWordscorrectq12',
+    },
+    {
+      answer: 'In',
+      nextId: 'inpositionWordscorrectq12',
+    },
+    {
+      answer: "Under",
+      nextId: 'inpositionWordscorrectq12',
+    },
+    {
+      answer: "Between",
+      nextId: 'inpositionWordscorrectq12',
+    },
+  ],
+  },
+  
+  positionWordscorrectq12: {
+  botPrompt: 'Hurray! <strong>On</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'positionWords'+shuffledNumbersto[12],
+    },
+  ],
+  },
+  inpositionWordscorrectq12: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"On"</strong>',
+  answers: [
+    {
+      nextId: 'positionWords'+shuffledNumbersto[12],
+    },
+  ],
+  },
+  
+  //13
+  ['positionWords'+shuffledNumbersto[12]]: {
+  botPrompt: '13. The flower is ____ the vase.',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+
+  input: selectField(['On', 'In', "Under","Between"]),
+  answers: [
+    {
+      answer: 'On',
+      nextId: 'inpositionWordscorrectq13',
+    },
+    {
+      answer: 'In',
+      nextId: 'positionWordscorrectq13',
+    },
+    {
+      answer: "Under",
+      nextId: 'inpositionWordscorrectq13',
+    },
+    {
+      answer: "Between",
+      nextId: 'inpositionWordscorrectq13',
+    },
+  ],
+  },
+  
+  positionWordscorrectq13: {
+  botPrompt: 'Hurray! <strong>In</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'positionWords'+shuffledNumbersto[13],
+    },
+  ],
+  },
+  inpositionWordscorrectq13: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"In"</strong>',
+  answers: [
+    {
+      nextId: 'positionWords'+shuffledNumbersto[13],
+    },
+  ],
+  },
+  
+  //14
+  ['positionWords'+shuffledNumbersto[13]]: {
+  botPrompt: '14. The plate is in _____ the fork and spoon.',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['On', 'In', "Under","Between"]),
+  answers: [
+    {
+      answer: 'On',
+      nextId: 'inpositionWordscorrectq14',
+    },
+    {
+      answer: 'In',
+      nextId: 'inpositionWordscorrectq14',
+    },
+    {
+      answer: "Under",
+      nextId: 'inpositionWordscorrectq14',
+    },
+    {
+      answer: "Between",
+      nextId: 'positionWordscorrectq14',
+    },
+  ],
+  },
+  
+  positionWordscorrectq14: {
+  botPrompt: 'Hurray! <strong>Between</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'positionWords'+shuffledNumbersto[14],
+    },
+  ],
+  },
+  inpositionWordscorrectq14: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Between"</strong>',
+  answers: [
+    {
+      nextId: 'positionWords'+shuffledNumbersto[14],
+    },
+  ],
+  },
+  
+  
+  //15
+  ['positionWords'+shuffledNumbersto[14]]: {
+  botPrompt: '15. The dog is ____ the chair.',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+
+  input: selectField(['On', 'In', "Under","Behind"]),
+  answers: [
+    {
+      answer: 'On',
+      nextId: 'inpositionWordscorrectq15',
+    },
+    {
+      answer: 'In',
+      nextId: 'inpositionWordscorrectq15',
+    },
+    {
+      answer: "Under",
+      nextId: 'positionWordscorrectq15',
+    },
+    {
+      answer: "Behind",
+      nextId: 'inpositionWordscorrectq15',
+    },
+  ],
+  },
+
+  positionWordscorrectq15: {
+  botPrompt: 'Hurray! <strong>Under</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'positionWords'+shuffledNumbersto[15],
+    },
+  ],
+  },
+  inpositionWordscorrectq15: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Under"</strong>',
+  answers: [
+    {
+      nextId: 'positionWords'+shuffledNumbersto[15],
+    },
+  ],
+  },
+  
+  //16
+  ['positionWords'+shuffledNumbersto[15]]: {
+    botPrompt: '16. The car is  ____ the tree',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['On', 'In', "Under","Behind"]),
+    answers: [
+      {
+        answer: 'On',
+        nextId: 'inpositionWordscorrectq16',
+      },
+      {
+        answer: 'Between',
+        nextId: 'inpositionWordscorrectq16',
+      },
+      {
+        answer: "Under",
+        nextId: 'inpositionWordscorrectq16',
+      },
+      {
+        answer: "Behind",
+        nextId: 'positionWordscorrectq16',
+      },
+    ],
+  },
+  positionWordscorrectq16: {
+    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>Behind</strong> 😎',
+    answers: [
+      {
+        nextId: 'positionWords'+shuffledNumbersto[16],
+      },
+    ],
+  },
+  inpositionWordscorrectq16: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Behind"</strong>',
+    answers: [
+      {
+        nextId: 'positionWords'+shuffledNumbersto[16],
+      },
+    ],
+  },
+  
+  //17
+  ['positionWords'+shuffledNumbersto[16]]: {
+  botPrompt: '17. The boy is _____ the father and mother.',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['On', 'In', "Under","Behind"]),
+  answers: [
+    {
+      answer: 'On',
+      nextId: 'inpositionWordscorrectq17',
+    },
+    {
+      answer: 'Between',
+      nextId: 'positionWordscorrectq17',
+    },
+    {
+      answer: "Under",
+      nextId: 'inpositionWordscorrectq17',
+    },
+    {
+      answer: "Behind",
+      nextId: 'inpositionWordscorrectq17',
+    },
+  ],
+  },
+  positionWordscorrectq17: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>Between</strong> 😎',
+  answers: [
+    {
+      nextId: 'positionWords'+shuffledNumbersto[17],
+    },
+  ],
+  },
+  inpositionWordscorrectq17: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Between"</strong>',
+  answers: [
+    {
+      nextId: 'positionWords'+shuffledNumbersto[17],
+    },
+  ],
+  },
+  
+  //18
+  ['positionWords'+shuffledNumbersto[17]]: {
+  botPrompt: '18.The boy is _______ of the car.',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['On', 'In', "Under","inside"]),
+  answers: [
+    {
+      answer: 'On',
+      nextId: 'inpositionWordscorrectq17',
+    },
+    {
+      answer: 'Between',
+      nextId: 'inpositionWordscorrectq17',
+    },
+    {
+      answer: "Under",
+      nextId: 'inpositionWordscorrectq17',
+    },
+    {
+      answer: "inside",
+      nextId: 'positionWordscorrectq17',
+    },
+  ],
+  },
+  positionWordscorrectq18: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>inside</strong> 😎',
+  answers: [
+    {
+      nextId: 'wishtocontinue38'
+    },
+  ],
+  },
+  inpositionWordscorrectq18: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"inside"</strong>',
+  answers: [
+    {
+      nextId: 'wishtocontinue38'
+    },
+  ],
+  },
+
+  
+  //endpositionWordsletter
+
+  wishtocontinue38: {
+    botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
+    input: selectField(['Yes!', 'No!']),
+    answers: [
+        {
+          answer: 'Yes!',
+          nextId: 'day40',
+        },
+        {
+          answer: 'No!',
+          nextId: 'endConv',
+  
+        },
+    ],
+  },
+  
+  //day40
+day40: {
+  botPrompt: '<strong> Day 40 : </strong> The "Hello Game" in kindergarten fosters social skills and helps children build friendships by encouraging interaction and positive communication from an early age.',
+  answers: [
+          { nextId: 'day40comment' },
+  ],
+  sumToBags: [{ name: 'd', points: 40 }],
+
+},
+
+day40link: {
+  botPrompt: 'https://youtu.be/-7h-H2344cE',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'wishtocontinue40',
+    },
+  ],
+},
+
+wishtocontinue40: {
+  botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
+  input: selectField(['Yes!', 'No!']),
+  answers: [
+      {
+        answer: 'Yes!',
+        nextId: 'day41',
+      },
+      {
+        answer: 'No!',
+        nextId: 'endConv',
+
+      },
+  ],
+},
+
+day41: {
+  botPrompt: '<strong> Day 41 : </strong> Through rhyming activities, children develop sound recognition and expand their vocabulary',
+  answers: [
+          { nextId: 'day41link' },
+  ],
+},
+day41link: {
+
+  botPrompt: 'https://youtu.be/FgBlTNWH3To',
+  type: RTypes.LINK,
+  answers: [
+          { nextId: 'day412comment' },
+  ],
+},
+
+day412comment: {
+  botPrompt: 'Let’s look into the pages of the book',
+  answers: [
+          { nextId: 'day412link' },
+  ],
+},
+day412link: {
+  botPrompt: 'https://drive.google.com/file/d/1e0RvqhSnTorOMiUZeDM9hTL-CBzER5V4/view?usp=sharing',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[0],
+    },
+  ],
+},
+
+//rhymingWords
+
+
+["rhymingWords"+shuffledNumbersto[0]]: {
+    botPrompt: '1. Which word rhymes with "cat"?',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['Hat', 'Dog', "Ball","Sun"]),
+    answers: [
+      {
+        answer: 'Hat',
+        nextId: 'rhymingWordscorrect',
+      },
+      {
+        answer: 'Dog',
+        nextId: 'inrhymingWordscorrect',
+      },
+      {
+        answer: "Ball",
+        nextId: 'inrhymingWordscorrect',
+      },
+      {
+        answer: "Sun",
+        nextId: 'inrhymingWordscorrect',
+      },
+    ],
+  },
+  rhymingWordscorrect: {
+    botPrompt: 'Hurray <strong>Hat</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'rhymingWords'+shuffledNumbersto[1],
+      },
+    ],
+  },
+  inrhymingWordscorrect: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Hat"</strong>',
+    answers: [
+      {
+        nextId: 'rhymingWords'+shuffledNumbersto[1],
+      },
+    ],
+  },
+  
+  ['rhymingWords'+shuffledNumbersto[1]]: {
+    botPrompt: '2. Which word rhymes with "book"?',
+    type: RTypes.TRANSFORMED_TEXT,
+
+    input: selectField(['Look.', 'Chair', "Tree","Car"]),
+    answers: [
+      {
+        answer: 'Look',
+        nextId: 'rhymingWordscorrectq2',
+      },
+      {
+        answer: 'Chair',
+        nextId: 'inrhymingWordscorrectq2',
+      },
+      {
+        answer: "Tree",
+        nextId: 'inrhymingWordscorrectq2',
+      },
+      {
+        answer: "Car",
+        nextId: 'inrhymingWordscorrectq2',
+      },
+    ],
+  },
+  
+  rhymingWordscorrectq2: {
+    botPrompt: 'Hurray! <strong>Look</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'rhymingWords'+shuffledNumbersto[2],
+      },
+    ],
+  },
+  inrhymingWordscorrectq2: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Look"</strong>',
+    answers: [
+      {
+        nextId: 'rhymingWords'+shuffledNumbersto[2],
+      },
+    ],
+  },
+  
+  //3
+  ['rhymingWords'+shuffledNumbersto[2]]: {
+  botPrompt: "3. Which word rhymes with 'sun'?",
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['Run', 'Cup', "Hat.","Car"]),
+    answers: [
+      {
+        answer: 'Run',
+        nextId: 'rhymingWordscorrectq3',
+      },
+      {
+        answer: 'Cup',
+        nextId: 'inrhymingWordscorrectq3',
+      },
+      {
+        answer: "Hat",
+        nextId: 'inrhymingWordscorrectq3',
+      },
+      {
+        answer: "Car",
+        nextId: 'inrhymingWordscorrectq3',
+      },
+    ],
+  },
+  
+  rhymingWordscorrectq3: {
+  botPrompt: 'Hurray! <strong>Run</strong> is the correct answer ! 😎',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[3],
+    },
+  ],
+  },
+  inrhymingWordscorrectq3: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Run"</strong>',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[3],
+    },
+  ],
+  },
+  
+  //4
+  ['rhymingWords'+shuffledNumbersto[3]]: {
+  botPrompt: '4. Which word rhymes with "hat"?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['Cat', 'Dog', "Cup","Sun"]),
+    answers: [
+      {
+        answer: 'Cat',
+        nextId: 'rhymingWordscorrectq4',
+      },
+      {
+        answer: 'Dog',
+        nextId: 'inrhymingWordscorrectq4',
+      },
+      {
+        answer: "Cup",
+        nextId: 'inrhymingWordscorrectq4',
+      },
+      {
+        answer: "Sun",
+        nextId: 'inrhymingWordscorrectq4',
+      },
+    ],
+  },
+  
+  rhymingWordscorrectq4: {
+  botPrompt: 'Hurray! <strong>Cat</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[4],
+    },
+  ],
+  },
+  inrhymingWordscorrectq4: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Cat"</strong>',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[4],
+    },
+  ],
+  },
+  
+  //5
+  ['rhymingWords'+shuffledNumbersto[4]]: {
+  botPrompt: '5. Which word rhymes with "tree"?',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['Bee.', 'Chair', "Ball","Car"]),
+    answers: [
+      {
+        answer: 'Bee',
+        nextId: 'inrhymingWordscorrectq5',
+      },
+      {
+        answer: 'Chair',
+        nextId: 'rhymingWordscorrectq5',
+      },
+      {
+        answer: "Ball",
+        nextId: 'inrhymingWordscorrectq5',
+      },
+      {
+        answer: "Car",
+        nextId: 'inrhymingWordscorrectq5',
+      },
+    ],
+  },
+  
+  rhymingWordscorrectq5: {
+  botPrompt: 'Hurray! <strong>Chair</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[5],
+    },
+  ],
+  },
+  inrhymingWordscorrectq5: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Chair"</strong>',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[5],
+    },
+  ],
+  },
+  
+  //6
+  ['rhymingWords'+shuffledNumbersto[5]]: {
+  botPrompt: '6. Which word rhymes with "bed"?',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['Hat', 'cup', "red","ball"]),
+    answers: [
+      {
+        answer: 'Hat',
+        nextId: 'inrhymingWordscorrectq6',
+      },
+      {
+        answer: 'cup',
+        nextId: 'inrhymingWordscorrectq6',
+      },
+      {
+        answer: "red",
+        nextId: 'rhymingWordscorrectq6',
+      },
+      {
+        answer: "ball",
+        nextId: 'inrhymingWordscorrectq6',
+      },
+    ],
+  },
+  
+  rhymingWordscorrectq6: {
+  botPrompt: 'Hurray! <strong>red</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[6],
+    },
+  ],
+  },
+  inrhymingWordscorrectq6: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"red"</strong>',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[6],
+    },
+  ],
+  },
+  
+  //7
+  ['rhymingWords'+shuffledNumbersto[6]]: {
+  botPrompt: '7. Which word rhymes with "pear"?',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['Beer', 'Door', "Ball","Chair"]),
+    answers: [
+      {
+        answer: 'Beer',
+        nextId: 'inrhymingWordscorrectq7',
+      },
+      {
+        answer: 'Door',
+        nextId: 'rhymingWordscorrectq7',
+      },
+      {
+        answer: "Ball",
+        nextId: 'inrhymingWordscorrectq7',
+      },
+      {
+        answer: "Chair",
+        nextId: 'inrhymingWordscorrectq7',
+      },
+    ],
+  },
+  
+  rhymingWordscorrectq7: {
+  botPrompt: 'Hurray! <strong>Chair</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[7],
+    },
+  ],
+  },
+  inrhymingWordscorrectq7: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Chair"</strong>',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[7],
+    },
+  ],
+  },
+  
+  
+  //8
+  ['rhymingWords'+shuffledNumbersto[7]]: {
+  botPrompt: '8. Which word rhymes with "run"?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['Fun', 'Cup', "Hat","Bed"]),
+    answers: [
+      {
+        answer: 'Fun',
+        nextId: 'rhymingWordscorrectq8',
+      },
+      {
+        answer: 'Cup',
+        nextId: 'inrhymingWordscorrectq8',
+      },
+      {
+        answer: "Hat",
+        nextId: 'inrhymingWordscorrectq8',
+      },
+      {
+        answer: "Bed",
+        nextId: 'inrhymingWordscorrectq8',
+      },
+    ],
+  },
+  
+  rhymingWordscorrectq8: {
+  botPrompt: 'Hurray! <strong>Fun</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[8],
+    },
+  ],
+  },
+  inrhymingWordscorrectq8: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Fun"</strong>',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[8],
+    },
+  ],
+  },
+  
+  //9
+  ['rhymingWords'+shuffledNumbersto[8]]: {
+  botPrompt: '9. Which word rhymes with "cat"?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['Rat', 'Dog', "Ball","Sun"]),
+    answers: [
+      {
+        answer: 'Rat',
+        nextId: 'rhymingWordscorrectq9',
+      },
+      {
+        answer: 'Dog',
+        nextId: 'inrhymingWordscorrectq9',
+      },
+      {
+        answer: "Ball",
+        nextId: 'inrhymingWordscorrectq9',
+      },
+      {
+        answer: "Sun",
+        nextId: 'inrhymingWordscorrectq9',
+      },
+    ],
+  },
+  
+  rhymingWordscorrectq9: {
+  botPrompt: 'Hurray! <strong>Rat</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[9],
+    },
+  ],
+  },
+  inrhymingWordscorrectq9: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Rat"</strong>',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[9],
+    },
+  ],
+  },
+  
+  
+  //10
+  ['rhymingWords'+shuffledNumbersto[9]]: {
+  botPrompt: '10. Which word rhymes with "book"?',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['Cook', 'Chair', "Tree","Car"]),
+    answers: [
+      {
+        answer: 'Cook',
+        nextId: 'rhymingWordscorrectq10',
+      },
+      {
+        answer: 'Chair',
+        nextId: 'inrhymingWordscorrectq10',
+      },
+      {
+        answer: "Tree",
+        nextId: 'inrhymingWordscorrectq10',
+      },
+      {
+        answer: "Car",
+        nextId: 'inrhymingWordscorrectq10',
+      },
+    ],
+  
+  },
+  
+  rhymingWordscorrectq10: {
+  botPrompt: 'Hurray! <strong>Cook</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[10],
+    },
+  ],
+  },
+  inrhymingWordscorrectq10: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Cook"</strong>',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[10],
+    },
+  ],
+  },
+  
+  //11
+  ['rhymingWords'+shuffledNumbersto[10]]: {
+  botPrompt: '11. Which word rhymes with "pet"?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['Net', 'Dog', "Bat","Sun"]),
+    answers: [
+      {
+        answer: 'Net',
+        nextId: 'rhymingWordscorrectq11',
+      },
+      {
+        answer: 'Dog',
+        nextId: 'inrhymingWordscorrectq11',
+      },
+      {
+        answer: "Bat",
+        nextId: 'inrhymingWordscorrectq11',
+      },
+      {
+        answer: "Sun",
+        nextId: 'inrhymingWordscorrectq11',
+      },
+    ],
+  },
+  
+  rhymingWordscorrectq11: {
+  botPrompt: 'Hurray! <strong>Net</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[11],
+    },
+  ],
+  },
+  inrhymingWordscorrectq11: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Net"</strong>',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[11],
+    },
+  ],
+  },
+  
+  //12
+  ['rhymingWords'+shuffledNumbersto[11]]: {
+  botPrompt: '12. Which word rhymes with "mob"?',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['Frog', 'Dog', "Job","Bat"]),
+    answers: [
+      {
+        answer: 'Frog',
+        nextId: 'inrhymingWordscorrectq12',
+      },
+      {
+        answer: 'Dog',
+        nextId: 'inrhymingWordscorrectq12',
+      },
+      {
+        answer: "Job",
+        nextId: 'rhymingWordscorrectq12',
+      },
+      {
+        answer: "Bat",
+        nextId: 'inrhymingWordscorrectq12',
+      },
+    ],
+  },
+  
+  rhymingWordscorrectq12: {
+  botPrompt: 'Hurray! <strong>Job</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[12],
+    },
+  ],
+  },
+  inrhymingWordscorrectq12: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Job"</strong>',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[12],
+    },
+  ],
+  },
+  
+  //13
+  ['rhymingWords'+shuffledNumbersto[12]]: {
+  botPrompt: '13. Which word rhymes with "cut"?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['Hut', 'Dog', "Bin","Run"]),
+    answers: [
+      {
+        answer: 'Hut',
+        nextId: 'rhymingWordscorrectq13',
+      },
+      {
+        answer: 'Dog',
+        nextId: 'inrhymingWordscorrectq13',
+      },
+      {
+        answer: "Bin",
+        nextId: 'inrhymingWordscorrectq13',
+      },
+      {
+        answer: "Run",
+        nextId: 'inrhymingWordscorrectq13',
+      },
+    ],
+  },
+  
+  rhymingWordscorrectq13: {
+  botPrompt: 'Hurray! <strong>Hut</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[13],
+    },
+  ],
+  },
+  inrhymingWordscorrectq13: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Hut"</strong>',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[13],
+    },
+  ],
+  },
+  
+  //14
+  ['rhymingWords'+shuffledNumbersto[13]]: {
+  botPrompt: '14. Which word rhymes with "lip"?',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['Dip', 'Dog', "Bat","Sun"]),
+    answers: [
+      {
+        answer: 'Dip',
+        nextId: 'rhymingWordscorrectq14',
+      },
+      {
+        answer: 'Dog',
+        nextId: 'inrhymingWordscorrectq14',
+      },
+      {
+        answer: "Bat",
+        nextId: 'inrhymingWordscorrectq14',
+      },
+      {
+        answer: "Sun",
+        nextId: 'inrhymingWordscorrectq14',
+      },
+    ],
+  },
+  
+  rhymingWordscorrectq14: {
+  botPrompt: 'Hurray! <strong>Dip</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[14],
+    },
+  ],
+  },
+  inrhymingWordscorrectq14: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Dip"</strong>',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[14],
+    },
+  ],
+  },
+  
+  
+  //15
+  ['rhymingWords'+shuffledNumbersto[14]]: {
+  botPrompt: '15. Which word rhymes with "bug"?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['Dog', 'Jog', "Mug","Hat"]),
+    answers: [
+      {
+        answer: 'Dog',
+        nextId: 'inrhymingWordscorrectq15',
+      },
+      {
+        answer: 'Jog',
+        nextId: 'inrhymingWordscorrectq15',
+      },
+      {
+        answer: "Mug",
+        nextId: 'rhymingWordscorrectq15',
+      },
+      {
+        answer: "Hat",
+        nextId: 'inrhymingWordscorrectq15',
+      },
+    ],
+  },
+  
+  rhymingWordscorrectq15: {
+  botPrompt: 'Hurray! <strong>Mug</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[15],
+    },
+  ],
+  },
+  inrhymingWordscorrectq15: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Mug"</strong>',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[15],
+    },
+  ],
+  },
+  
+  //16
+  ['rhymingWords'+shuffledNumbersto[15]]: {
+    botPrompt: '16. Which word rhymes with "mad"?',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['Pad', 'Dog', "Pin","Sun"]),
+    answers: [
+      {
+        answer: 'Pad',
+        nextId: 'rhymingWordscorrectq16',
+      },
+      {
+        answer: 'Dog',
+        nextId: 'inrhymingWordscorrectq16',
+      },
+      {
+        answer: 'Pin',
+        nextId: 'inrhymingWordscorrectq16',
+      },
+      {
+        answer: 'Sun',
+        nextId: 'inrhymingWordscorrectq16',
+      },
+
+    ],
+  },
+  rhymingWordscorrectq16: {
+    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>Pad</strong> 😎',
+    answers: [
+      {
+        nextId: 'rhymingWords'+shuffledNumbersto[16],
+      },
+    ],
+  },
+  inrhymingWordscorrectq16: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Pad"</strong>',
+    answers: [
+      {
+        nextId: 'rhymingWords'+shuffledNumbersto[16],
+      },
+    ],
+  },
+  
+  //17
+  ['rhymingWords'+shuffledNumbersto[16]]: {
+  botPrompt: '17. Which word rhymes with "pen"?',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['Hen', 'Dog', "Pin","Sun"]),
+    answers: [
+      {
+        answer: 'Hen',
+        nextId: 'rhymingWordscorrectq17',
+      },
+      {
+        answer: 'Dog',
+        nextId: 'inrhymingWordscorrectq17',
+      },
+      {
+        answer: 'Pin',
+        nextId: 'inrhymingWordscorrectq17',
+      },
+      {
+        answer: 'Sun',
+        nextId: 'inrhymingWordscorrectq17',
+      },
+
+    ],
+  },
+  rhymingWordscorrectq17: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>Hen</strong> 😎',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[17],
+    },
+  ],
+  },
+  inrhymingWordscorrectq17: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Hen"</strong>',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[17],
+    },
+  ],
+  },
+  
+  //18
+  ['rhymingWords'+shuffledNumbersto[17]]: {
+  botPrompt: '18. Which word rhymes with "get"?',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['Jog', 'Dog', "Log","Jet"]),
+  answers: [
+    {
+      answer: 'Jog',
+      nextId: 'rhymingWordscorrectq18',
+    },
+    {
+      answer: 'Dog',
+      nextId: 'inrhymingWordscorrectq18',
+    },
+    {
+      answer: 'Log',
+      nextId: 'inrhymingWordscorrectq18',
+    },
+    {
+      answer: 'Jet',
+      nextId: 'inrhymingWordscorrectq18',
+    },
+
+  ],
+  },
+  rhymingWordscorrectq18: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>Jog</strong> 😎',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[18],
+    },
+  ],
+  },
+  inrhymingWordscorrectq18: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Jog"</strong>',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[18],
+    },
+  ],
+  },
+  
+  //19
+  ['rhymingWords'+shuffledNumbersto[18]]: {
+  botPrompt: '19. Which word rhymes with "nut"?',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['Hut', 'Dog', "Log","Jet"]),
+  answers: [
+    {
+      answer: 'Hut',
+      nextId: 'inrhymingWordscorrectq19',
+    },
+    {
+      answer: 'Dog',
+      nextId: 'rhymingWordscorrectq19',
+    },
+    {
+      answer: 'Log',
+      nextId: 'rhymingWordscorrectq19',
+    },
+    {
+      answer: 'Jet',
+      nextId: 'rhymingWordscorrectq19',
+    },
+
+  ],
+  },
+  rhymingWordscorrectq19: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>Hut</strong> Answers! 😎',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[19],
+    },
+  ],
+  },
+  inrhymingWordscorrectq19: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Hut"</strong>',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[19],
+    },
+  ],
+  },
+  
+  //20
+  ['rhymingWords'+shuffledNumbersto[19]]: {
+  botPrompt: '20. Which word rhymes with "den"?',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['Hen', 'Dog', "Bin","Sun"]),
+  answers: [
+    {
+      answer: 'Hen',
+      nextId: 'rhymingWordscorrectq20',
+    },
+    {
+      answer: 'Dog',
+      nextId: 'inrhymingWordscorrectq20',
+    },
+    {
+      answer: 'Bin',
+      nextId: 'inrhymingWordscorrectq20',
+    },
+    {
+      answer: 'Sun',
+      nextId: 'inrhymingWordscorrectq20',
+    },
+
+  ],
+  },
+  rhymingWordscorrectq20: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>Hen</strong> 😎',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[20],
+    },
+  ],
+  },
+  inrhymingWordscorrectq20: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Hen"</strong>',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[20],
+    },
+  ],
+  },
+  
+  //21
+  ["rhymingWords"+shuffledNumbersto[20]]: {
+    botPrompt: "21. Which word does not rhyme with 'cat'?",
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['Mat', 'Bed', "Hat","Sun"]),
+  answers: [
+    {
+      answer: 'Mat',
+      nextId: 'inrhymingWordscorrectq21',
+    },
+    {
+      answer: 'Bed',
+      nextId: 'rhymingWordscorrectq21',
+    },
+    {
+      answer: 'Hat',
+      nextId: 'rhymingWordscorrectq21',
+    },
+    {
+      answer: 'Sun',
+      nextId: 'rhymingWordscorrectq21',
+    },
+
+  ],
+  },
+  rhymingWordscorrectq21: {
+    botPrompt: 'Hurray <strong>Bed</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'rhymingWords'+shuffledNumbersto[21],
+      },
+    ],
+  },
+  inrhymingWordscorrectq21: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Bed"</strong>',
+    answers: [
+      {
+        nextId: 'rhymingWords'+shuffledNumbersto[21],
+      },
+    ],
+  },
+  
+  //22
+  ['rhymingWords'+shuffledNumbersto[21]]: {
+    botPrompt: '22. Which word does not rhyme with "bed"?',
+    type: RTypes.TRANSFORMED_TEXT,
+  
+    input: selectField(['Red', 'Fed', "Lit","Wed"]),
+  answers: [
+    {
+      answer: 'Red',
+      nextId: 'inrhymingWordscorrectq22',
+    },
+    {
+      answer: 'Fed',
+      nextId: 'inrhymingWordscorrectq22',
+    },
+    {
+      answer: 'Lit',
+      nextId: 'rhymingWordscorrectq22',
+    },
+    {
+      answer: 'Wed',
+      nextId: 'inrhymingWordscorrectq22',
+    },
+
+  ],
+  },
+  
+  rhymingWordscorrectq22: {
+    botPrompt: 'Hurray! <strong>Lit</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'rhymingWords'+shuffledNumbersto[22],
+      },
+    ],
+  },
+  inrhymingWordscorrectq22: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Lit"</strong>',
+    answers: [
+      {
+        nextId: 'rhymingWords'+shuffledNumbersto[22],
+      },
+    ],
+  },
+  
+  //23
+  ['rhymingWords'+shuffledNumbersto[22]]: {
+  botPrompt: "23. Which word does not rhyme with 'sit'?",
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['Fit', 'Hit', "Lit","Kite"]),
+  answers: [
+    {
+      answer: 'Fit',
+      nextId: 'inrhymingWordscorrectq23',
+    },
+    {
+      answer: 'Hit',
+      nextId: 'inrhymingWordscorrectq23',
+    },
+    {
+      answer: 'Lit',
+      nextId: 'inrhymingWordscorrectq23',
+    },
+    {
+      answer: 'Kite',
+      nextId: 'rhymingWordscorrectq23',
+    },
+
+  ],
+  },
+  
+  rhymingWordscorrectq23: {
+  botPrompt: 'Hurray! <strong>Kite</strong> is the correct answer ! 😎',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[23],
+    },
+  ],
+  },
+  inrhymingWordscorrectq23: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Kite"</strong>',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[23],
+    },
+  ],
+  },
+  
+  //24
+  ['rhymingWords'+shuffledNumbersto[23]]: {
+  botPrompt: '24. Which word does not rhyme with "pot"?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['Dot', 'Hot', "Hat","Lot"]),
+  answers: [
+    {
+      answer: 'Dot',
+      nextId: 'inrhymingWordscorrectq24',
+    },
+    {
+      answer: 'Hot',
+      nextId: 'inrhymingWordscorrectq24',
+    },
+    {
+      answer: 'Hat',
+      nextId: 'rhymingWordscorrectq24',
+    },
+    {
+      answer: 'Lot',
+      nextId: 'inrhymingWordscorrectq24',
+    },
+
+  ],
+  },
+
+  rhymingWordscorrectq24: {
+  botPrompt: 'Hurray! <strong>Ha</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[24],
+    },
+  ],
+  },
+  inrhymingWordscorrectq24: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Hat"</strong>',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[24],
+    },
+  ],
+  },
+  
+  //25
+  ['rhymingWords'+shuffledNumbersto[24]]: {
+  botPrompt: '25. Which word does not rhyme with "run"?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['Fun', 'Sun', "Bun","Fit"]),
+  answers: [
+    {
+      answer: 'Fun',
+      nextId: 'inrhymingWordscorrectq25',
+    },
+    {
+      answer: 'Sun',
+      nextId: 'inrhymingWordscorrectq25',
+    },
+    {
+      answer: 'Bun',
+      nextId: 'inrhymingWordscorrectq25',
+    },
+    {
+      answer: 'Fit',
+      nextId: 'rhymingWordscorrectq25',
+    },
+
+  ],
+  },
+  
+  rhymingWordscorrectq25: {
+  botPrompt: 'Hurray! <strong>Fit</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[25],
+    },
+  ],
+  },
+  inrhymingWordscorrectq25: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Fit"</strong>',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[25],
+    },
+  ],
+  },
+  
+  //26
+  ['rhymingWords'+shuffledNumbersto[25]]: {
+  botPrompt: '26. Which word does not rhyme with "jet"?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['Get', 'Set', "Log","Bet"]),
+  answers: [
+    {
+      answer: 'Get',
+      nextId: 'inrhymingWordscorrectq26',
+    },
+    {
+      answer: 'Set',
+      nextId: 'inrhymingWordscorrectq26',
+    },
+    {
+      answer: 'Log',
+      nextId: 'rhymingWordscorrectq26',
+    },
+    {
+      answer: 'Bet',
+      nextId: 'inrhymingWordscorrectq26',
+    },
+
+  ],
+  },
+  
+  rhymingWordscorrectq26: {
+  botPrompt: 'Hurray! <strong>Log</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[26],
+    },
+  ],
+  },
+  inrhymingWordscorrectq26: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Log"</strong>',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[26],
+    },
+  ],
+  },
+  
+  //27
+  ['rhymingWords'+shuffledNumbersto[26]]: {
+  botPrompt: '27. Which word does not rhyme with "cut"?',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['Hut', 'Nut', "Mad","But"]),
+    answers: [
+      {
+        answer: 'Hut',
+        nextId: 'rhymingWordscorrectq27',
+      },
+      {
+        answer: 'Nut',
+        nextId: 'inrhymingWordscorrectq27',
+      },
+      {
+        answer: 'Mad',
+        nextId: 'rhymingWordscorrectq27',
+      },
+      {
+        answer: 'But',
+        nextId: 'inrhymingWordscorrectq27',
+      },
+
+    ],
+  },
+  
+  rhymingWordscorrectq27: {
+  botPrompt: 'Hurray! <strong>Mad</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[27],
+    },
+  ],
+  },
+  inrhymingWordscorrectq27: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Mad"</strong>',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[27],
+    },
+  ],
+  },
+  
+  
+  //28
+  ['rhymingWords'+shuffledNumbersto[27]]: {
+  botPrompt: '28. Which word does not rhyme with "pen"?',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['Hen', 'Dog', "Ken","Den"]),
+  answers: [
+    {
+      answer: 'Hen',
+      nextId: 'inrhymingWordscorrectq28',
+    },
+    {
+      answer: 'Dog',
+      nextId: 'rhymingWordscorrectq28',
+    },
+    {
+      answer: 'Ken',
+      nextId: 'inrhymingWordscorrectq28',
+    },
+    {
+      answer: 'Den',
+      nextId: 'inrhymingWordscorrectq28',
+    },
+  ],
+  },
+  
+  rhymingWordscorrectq28: {
+  botPrompt: 'Hurray! <strong>Dog</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[28],
+    },
+  ],
+  },
+  inrhymingWordscorrectq28: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Dog"</strong>',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[28],
+    },
+  ],
+  },
+  
+  //29
+  ['rhymingWords'+shuffledNumbersto[28]]: {
+  botPrompt: '29. Which word does not rhyme with "nut"?',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['Hut', 'Cut', "Sun","Gut"]),
+    answers: [
+      {
+        answer: 'Hut',
+        nextId: 'inrhymingWordscorrectq29',
+      },
+      {
+        answer: 'Cut',
+        nextId: 'inrhymingWordscorrectq29',
+      },
+      {
+        answer: 'Sun',
+        nextId: 'rhymingWordscorrectq29',
+      },
+      {
+        answer: 'Gut',
+        nextId: 'inrhymingWordscorrectq29',
+      },
+
+    ],
+  },
+  
+  rhymingWordscorrectq29: {
+  botPrompt: 'Hurray! <strong>Sun</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[29],
+    },
+  ],
+  },
+  inrhymingWordscorrectq29: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Sun"</strong>',
+  answers: [
+    {
+      nextId: 'rhymingWords'+shuffledNumbersto[29],
+    },
+  ],
+  },
+  
+
+  //30
+  ['rhymingWords'+shuffledNumbersto[29]]: {
+  botPrompt: "30. Which word does not rhyme with 'bug'?",
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['Rug', 'Mug', "Hat","Jug"]),
+  answers: [
+    {
+      answer: 'Rug',
+      nextId: 'inrhymingWordscorrectq30',
+    },
+    {
+      answer: 'Mug',
+      nextId: 'inrhymingWordscorrectq30',
+    },
+    {
+      answer: 'Hat',
+      nextId: 'rhymingWordscorrectq30',
+    },
+    {
+      answer: 'Jug',
+      nextId: 'inrhymingWordscorrectq30',
+    },
+
+  ],
+  },
+  
+  rhymingWordscorrectq30: {
+  botPrompt: 'Hurray! <strong>Hat</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'wishToContinue41',
+    },
+  ],
+  },
+  inrhymingWordscorrectq30: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Hat"</strong>',
+  answers: [
+    {
+      nextId: 'wishToContinue41',
+    },
+  ],
+  },
+
+  //endrhymingWordsletter
+
+  wishToContinue41: {
+    botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
+    input: selectField(['Yes!', 'No!']),
+    answers: [
+        {
+          answer: 'Yes!',
+          nextId: 'day42',
+        },
+        {
+          answer: 'No!',
+          nextId: 'endConv',
+  
+        },
+    ],
+  },
+
+  //day42
+day42: {
+  botPrompt: '<strong> Day 42 : </strong> Wheels on the bus : Song Video',
+  answers: [
+          { nextId: 'day42comment' },
+  ],
+  sumToBags: [{ name: 'd', points: 42 }],
+
+},
+day42comment: {
+  botPrompt: 'Practice',
+  answers: [
+          { nextId: 'wishtocontinue42' },
+  ],
+},
+
+wishtocontinue42: {
+  botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
+  input: selectField(['Yes!', 'No!']),
+  answers: [
+      {
+        answer: 'Yes!',
+        nextId: 'day44',
+      },
+      {
+        answer: 'No!',
+        nextId: 'endConv',
+
+      },
+  ],
+},
+
+//day44
+
+day44: {
+  botPrompt: 'https://youtu.be/7CpiCbBsh5A',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'wishtocontinue44',
+    },
+  ],
+  sumToBags: [{ name: 'd', points: 44 }],
+
+},
+
+
+
+wishtocontinue44: {
+  botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
+  input: selectField(['Yes!', 'No!']),
+  answers: [
+      {
+        answer: 'Yes!',
+        nextId: 'day45',
+      },
+      {
+        answer: 'No!',
+        nextId: 'endConv',
+      },
+  ],
+},
+
+day45: {
+  botPrompt: '<strong> Day 45 : </strong> Division is essential in kindergarten as it helps children develop their basic math skills by understanding sharing and equal distribution',
+  answers: [
+          { nextId: 'day452comment' },
+  ],
+},
+
+day452comment: {
+  botPrompt: 'Let’s look into the pages of the book',
+  answers: [
+          { nextId: 'day451link' },
+  ],
+},
+day451link: {
+
+  botPrompt: 'https://drive.google.com/file/d/1m3PAK02sWCi7IEPF8fPiGHVFo6frm_8G/view?usp=sharing',
+  type: RTypes.LINK,
+  answers: [
+          { nextId: 'day452link' },
+  ],
+},
+day452link: {
+
+  botPrompt: 'https://drive.google.com/file/d/1pHs1-6e0iESjWr1GDbOVcVwrrasFovej/view?usp=sharing',
+  type: RTypes.LINK,
+  answers: [
+          { nextId: 'day454link' },
+  ],
+},
+day454link: {
+  botPrompt: 'https://drive.google.com/file/d/1U1x8FyRcRDggFyLa_glAjblejOVpbGh8/view?usp=sharing',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'division'+shuffledNumbersto[0],
+    },
+  ],
+},
+//myHeShe
+
+
+["myHeShe"+shuffledNumbersto[0]]: {
+    botPrompt: '_______ going to the park to play.',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['I aam', 'am', "I amm","I am"]),
+    answers: [
+      {
+        answer: 'I aam',
+        nextId: 'inmyHeShecorrect',
+      },
+      {
+        answer: 'am',
+        nextId: 'inmyHeShecorrect',
+      },
+      {
+        answer: "I amm",
+        nextId: 'inmyHeShecorrect',
+      },
+      {
+        answer: "I am",
+        nextId: 'myHeShecorrect',
+      },
+    ],
+  },
+  myHeShecorrect: {
+    botPrompt: 'Hurray <strong>I am</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'myHeShe'+shuffledNumbersto[1],
+      },
+    ],
+  },
+  inmyHeShecorrect: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"I am"</strong>',
+    answers: [
+      {
+        nextId: 'myHeShe'+shuffledNumbersto[1],
+      },
+    ],
+  },
+  
+  ['myHeShe'+shuffledNumbersto[1]]: {
+    botPrompt: '_______ drawing a picture.?',
+    type: RTypes.TRANSFORMED_TEXT,
+
+    input: selectField(['I aam', 'am', "I amm","I am"]),
+    answers: [
+      {
+        answer: 'I aam',
+        nextId: 'inmyHeShecorrectq2',
+      },
+      {
+        answer: 'am',
+        nextId: 'inmyHeShecorrectq2',
+      },
+      {
+        answer: "I amm",
+        nextId: 'inmyHeShecorrectq2',
+      },
+      {
+        answer: "I am",
+        nextId: 'myHeShecorrectq2',
+      },
+    ],
+  },
+  
+  myHeShecorrectq2: {
+    botPrompt: 'Hurray! <strong>I am</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'myHeShe'+shuffledNumbersto[2],
+      },
+    ],
+  },
+  inmyHeShecorrectq2: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"I am"</strong>',
+    answers: [
+      {
+        nextId: 'myHeShe'+shuffledNumbersto[2],
+      },
+    ],
+  },
+  
+  //3
+  ['myHeShe'+shuffledNumbersto[2]]: {
+  botPrompt: "_______ wearing a blue shirt today.",
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['I aam', 'am', "I amm","I am"]),
+    answers: [
+        {
+            answer: 'I aam',
+            nextId: 'inmyHeShecorrectq3',
+          },
+          {
+            answer: 'am',
+            nextId: 'inmyHeShecorrectq3',
+          },
+          {
+            answer: "I amm",
+            nextId: 'inmyHeShecorrectq3',
+          },
+          {
+            answer: "I am",
+            nextId: 'myHeShecorrectq3',
+          },
+        ],
+  },
+  
+  myHeShecorrectq3: {
+  botPrompt: 'Hurray! <strong>I am</strong> is the correct answer ! 😎',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[3],
+    },
+  ],
+  },
+  inmyHeShecorrectq3: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"I am"</strong>',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[3],
+    },
+  ],
+  },
+  
+  //4
+  ['myHeShe'+shuffledNumbersto[3]]: {
+  botPrompt: '_______ playing with my friends.',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['I aam', 'am', "I amm","I am"]),
+  answers: [
+    {
+        answer: 'I aam',
+        nextId: 'myHeShecorrectq4',
+      },
+      {
+        answer: 'am',
+        nextId: 'inmyHeShecorrectq4',
+      },
+      {
+        answer: "I amm",
+        nextId: 'inmyHeShecorrectq4',
+      },
+      {
+        answer: "I am",
+        nextId: 'inmyHeShecorrectq4',
+      },
+    ],
+  },
+  
+  myHeShecorrectq4: {
+  botPrompt: 'Hurray! <strong>I aam</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[4],
+    },
+  ],
+  },
+  inmyHeShecorrectq4: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"I aam"</strong>',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[4],
+    },
+  ],
+  },
+  
+  //5
+  ['myHeShe'+shuffledNumbersto[4]]: {
+  botPrompt: '_______ eating an apple for snack.',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['I aam', 'am', "I amm","I am"]),
+    answers: [
+        {
+            answer: 'I aam',
+            nextId: 'myHeShecorrectq5',
+          },
+          {
+            answer: 'am',
+            nextId: 'inmyHeShecorrectq5',
+          },
+          {
+            answer: "I amm",
+            nextId: 'inmyHeShecorrectq5',
+          },
+          {
+            answer: "I am",
+            nextId: 'inmyHeShecorrectq5',
+          },
+    ],
+  },
+  
+  myHeShecorrectq5: {
+  botPrompt: 'Hurray! <strong>I aam</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[5],
+    },
+  ],
+  },
+  inmyHeShecorrectq5: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"I aam"</strong>',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[5],
+    },
+  ],
+  },
+  
+  //6
+  ['myHeShe'+shuffledNumbersto[5]]: {
+  botPrompt: '_______ favourite colour is blue.',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['I am', 'Me', "I","My"]),
+    answers: [
+      {
+        answer: 'I am',
+        nextId: 'inmyHeShecorrectq6',
+      },
+      {
+        answer: 'Me',
+        nextId: 'inmyHeShecorrectq6',
+      },
+      {
+        answer: "I",
+        nextId: 'inmyHeShecorrectq6',
+      },
+      {
+        answer: "My",
+        nextId: 'myHeShecorrectq6',
+      },
+    ],
+  },
+  
+  myHeShecorrectq6: {
+  botPrompt: 'Hurray! <strong>My</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[6],
+    },
+  ],
+  },
+  inmyHeShecorrectq6: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"My"</strong>',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[6],
+    },
+  ],
+  },
+  
+  //7
+  ['myHeShe'+shuffledNumbersto[6]]: {
+  botPrompt: '_______ teacher is kind and helpful.',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['I am', 'Me', "I","My"]),
+    answers: [
+      {
+        answer: 'I am',
+        nextId: 'inmyHeShecorrectq7',
+      },
+      {
+        answer: 'Me',
+        nextId: 'inmyHeShecorrectq7',
+      },
+      {
+        answer: "I",
+        nextId: 'myHeShecorrectq7',
+      },
+      {
+        answer: "My",
+        nextId: 'inmyHeShecorrectq7',
+      },
+    ],
+  },
+  
+  myHeShecorrectq7: {
+  botPrompt: 'Hurray! <strong>I</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[7],
+    },
+  ],
+  },
+  inmyHeShecorrectq7: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"I"</strong>',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[7],
+    },
+  ],
+  },
+  
+  
+  //8
+  ['myHeShe'+shuffledNumbersto[7]]: {
+  botPrompt: '_______ birthday is in September.',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['I am', 'Me', "I","My"]),
+    answers: [
+        {
+            answer: 'I am',
+            nextId: 'inmyHeShecorrectq7',
+          },
+          {
+            answer: 'Me',
+            nextId: 'inmyHeShecorrectq7',
+          },
+          {
+            answer: "I",
+            nextId: 'inmyHeShecorrectq7',
+          },
+          {
+            answer: "My",
+            nextId: 'myHeShecorrectq7',
+          },
+    ],
+  },
+  
+  myHeShecorrectq8: {
+  botPrompt: 'Hurray! <strong>My</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[8],
+    },
+  ],
+  },
+  inmyHeShecorrectq8: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"My"</strong>',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[8],
+    },
+  ],
+  },
+  
+  //9
+  ['myHeShe'+shuffledNumbersto[8]]: {
+  botPrompt: '_______ pet is a cute cat.',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['My', 'Me', "I","Mine"]),
+    answers: [
+      {
+        answer: 'My',
+        nextId: 'myHeShecorrectq9',
+      },
+      {
+        answer: 'Me',
+        nextId: 'inmyHeShecorrectq9',
+      },
+      {
+        answer: "I",
+        nextId: 'inmyHeShecorrectq9',
+      },
+      {
+        answer: "Mine",
+        nextId: 'inmyHeShecorrectq9',
+      },
+    ],
+  },
+  
+  myHeShecorrectq9: {
+  botPrompt: 'Hurray! <strong>My</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[9],
+    },
+  ],
+  },
+  inmyHeShecorrectq9: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"My"</strong>',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[9],
+    },
+  ],
+  },
+  
+  
+  //10
+  ['myHeShe'+shuffledNumbersto[9]]: {
+  botPrompt: '_______ mom makes delicious cookies.',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['My', 'Me', "I","Mine"]),
+    answers: [
+      {
+        answer: 'My',
+        nextId: 'myHeShecorrectq10',
+      },
+      {
+        answer: 'Me',
+        nextId: 'inmyHeShecorrectq10',
+      },
+      {
+        answer: "I",
+        nextId: 'inmyHeShecorrectq10',
+      },
+      {
+        answer: "Mine",
+        nextId: 'inmyHeShecorrectq10',
+      },
+    ],
+  
+  },
+  
+  myHeShecorrectq10: {
+  botPrompt: 'Hurray! <strong>My</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[10],
+    },
+  ],
+  },
+  inmyHeShecorrectq10: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"My"</strong>',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[10],
+    },
+  ],
+  },
+  
+  //11
+  ['myHeShe'+shuffledNumbersto[10]]: {
+  botPrompt: 'Look at _______ colourful artwork.',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['I aam', 'My', "I amm","I am"]),
+    answers: [
+      {
+        answer: 'I aam',
+        nextId: 'inmyHeShecorrectq11',
+      },
+      {
+        answer: 'My',
+        nextId: 'myHeShecorrectq11',
+      },
+      {
+        answer: "I amm",
+        nextId: 'inmyHeShecorrectq11',
+      },
+      {
+        answer: "I am",
+        nextId: 'inmyHeShecorrectq11',
+      },
+    ],
+  },
+  
+  myHeShecorrectq11: {
+  botPrompt: 'Hurray! <strong>My</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[11],
+    },
+  ],
+  },
+  inmyHeShecorrectq11: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"My"</strong>',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[11],
+    },
+  ],
+  },
+  
+  //12
+  ['myHeShe'+shuffledNumbersto[11]]: {
+  botPrompt: '_______ going to visit my grandma.',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['I am', "I'mm", "I amm","I aam"]),
+    answers: [
+      {
+        answer: 'I am',
+        nextId: 'myHeShecorrectq12',
+      },
+      {
+        answer: "I'mm",
+        nextId: 'inmyHeShecorrectq12',
+      },
+      {
+        answer: "I amm",
+        nextId: 'inmyHeShecorrectq12',
+      },
+      {
+        answer: "I aam",
+        nextId: 'inmyHeShecorrectq12',
+      },
+    ],
+  },
+  
+  myHeShecorrectq12: {
+  botPrompt: 'Hurray! <strong>I am</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[12],
+    },
+  ],
+  },
+  inmyHeShecorrectq12: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"I am"</strong>',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[12],
+    },
+  ],
+  },
+  
+  //13
+  ['myHeShe'+shuffledNumbersto[12]]: {
+  botPrompt: '_______ helping my mom in the kitchen.',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['I am', "I'mm", "I amm","I aam"]),
+    answers: [
+      {
+        answer: 'I am',
+        nextId: 'myHeShecorrectq13',
+      },
+      {
+        answer: "I'mm",
+        nextId: 'inmyHeShecorrectq13',
+      },
+      {
+        answer: "I amm",
+        nextId: 'inmyHeShecorrectq13',
+      },
+      {
+        answer: "I aam",
+        nextId: 'inmyHeShecorrectq13',
+      },
+    ],
+  },
+  
+  myHeShecorrectq13: {
+  botPrompt: 'Hurray! <strong>I am</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[13],
+    },
+  ],
+  },
+  inmyHeShecorrectq13: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"I am"</strong>',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[13],
+    },
+  ],
+  },
+  
+  //14
+  ['myHeShe'+shuffledNumbersto[13]]: {
+  botPrompt: '_______ wearing a hat on my head.',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['I am', "I'mm", "I amm","I aam"]),
+    answers: [
+        {
+            answer: 'I am',
+            nextId: 'myHeShecorrectq14',
+          },
+          {
+            answer: "I'mm",
+            nextId: 'inmyHeShecorrectq14',
+          },
+          {
+            answer: "I amm",
+            nextId: 'inmyHeShecorrectq14',
+          },
+          {
+            answer: "I aam",
+            nextId: 'inmyHeShecorrectq14',
+          },
+    ],
+  },
+  
+  myHeShecorrectq14: {
+  botPrompt: 'Hurray! <strong>I am</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[14],
+    },
+  ],
+  },
+  inmyHeShecorrectq14: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"I am"</strong>',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[14],
+    },
+  ],
+  },
+  
+  
+  //15
+  ['myHeShe'+shuffledNumbersto[14]]: {
+  botPrompt: '_______ playing with my favourite toy.',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['I am', "I'mm", "I amm","I aam"]),
+    answers: [
+        {
+            answer: 'I am',
+            nextId: 'myHeShecorrectq15',
+          },
+          {
+            answer: "I'mm",
+            nextId: 'inmyHeShecorrectq15',
+          },
+          {
+            answer: "I amm",
+            nextId: 'inmyHeShecorrectq15',
+          },
+          {
+            answer: "I aam",
+            nextId: 'inmyHeShecorrectq15',
+          },
+    ],
+  },
+  
+  myHeShecorrectq15: {
+  botPrompt: 'Hurray! <strong>I am</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[15],
+    },
+  ],
+  },
+  inmyHeShecorrectq15: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"I am"</strong>',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[15],
+    },
+  ],
+  },
+  
+  //16
+  ['myHeShe'+shuffledNumbersto[15]]: {
+    botPrompt: 'Look at _______ cute teddy bear.',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['Myy', "Me", "My","Mine"]),
+    answers: [
+        {
+            answer: 'Myy',
+            nextId: 'inmyHeShecorrectq16',
+          },
+          {
+            answer: "Me",
+            nextId: 'inmyHeShecorrectq16',
+          },
+          {
+            answer: "My",
+            nextId: 'myHeShecorrectq16',
+          },
+          {
+            answer: "Mine",
+            nextId: 'inmyHeShecorrectq16',
+          },
+
+    ],
+  },
+  myHeShecorrectq16: {
+    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>My</strong> 😎',
+    answers: [
+      {
+        nextId: 'myHeShe'+shuffledNumbersto[16],
+      },
+    ],
+  },
+  inmyHeShecorrectq16: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"My"</strong>',
+    answers: [
+      {
+        nextId: 'myHeShe'+shuffledNumbersto[16],
+      },
+    ],
+  },
+  
+  //17
+  ['myHeShe'+shuffledNumbersto[16]]: {
+  botPrompt: '_______ grandparents live in the town.',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['Myy', "Me", "I","Mine"]),
+    answers: [
+        {
+            answer: 'Myy',
+            nextId: 'myHeShecorrectq16',
+          },
+          {
+            answer: "Me",
+            nextId: 'inmyHeShecorrectq16',
+          },
+          {
+            answer: "I",
+            nextId: 'inmyHeShecorrectq16',
+          },
+          {
+            answer: "Mine",
+            nextId: 'inmyHeShecorrectq16',
+          },
+
+    ],
+  },
+  myHeShecorrectq17: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>Myy</strong> 😎',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[17],
+    },
+  ],
+  },
+  inmyHeShecorrectq17: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Myy"</strong>',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[17],
+    },
+  ],
+  },
+  
+  //18
+  ['myHeShe'+shuffledNumbersto[17]]: {
+  botPrompt: '_______ backpack has a picture of a dinosaur.',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['My', "Me", "I","Mine"]),
+  answers: [
+    {
+        answer: 'My',
+        nextId: 'myHeShecorrectq16',
+      },
+      {
+        answer: "Me",
+        nextId: 'inmyHeShecorrectq16',
+      },
+      {
+        answer: "I",
+        nextId: 'inmyHeShecorrectq16',
+      },
+      {
+        answer: "Mine",
+        nextId: 'inmyHeShecorrectq16',
+      },
+
+  ],
+  },
+  myHeShecorrectq18: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>My</strong> 😎',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[18],
+    },
+  ],
+  },
+  inmyHeShecorrectq18: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"My"</strong>',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[18],
+    },
+  ],
+  },
+  
+  //19
+  ['myHeShe'+shuffledNumbersto[18]]: {
+  botPrompt: '_______ room is tidy and organized.',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['Me', 'My', "I","Mine"]),
+  answers: [
+    {
+      answer: 'Me',
+      nextId: 'inmyHeShecorrectq19',
+    },
+    {
+      answer: 'My',
+      nextId: 'myHeShecorrectq19',
+    },
+    {
+      answer: 'I',
+      nextId: 'myHeShecorrectq19',
+    },
+    {
+      answer: 'Mine',
+      nextId: 'myHeShecorrectq19',
+    },
+
+  ],
+  },
+  myHeShecorrectq19: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>My</strong> Answers! 😎',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[19],
+    },
+  ],
+  },
+  inmyHeShecorrectq19: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"My"</strong>',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[19],
+    },
+  ],
+  },
+  
+  //20
+  ['myHeShe'+shuffledNumbersto[19]]: {
+  botPrompt: '_______ favourite book is about animals.',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['Me', 'My', "I","Mine"]),
+  answers: [
+    {
+      answer: 'Me',
+      nextId: 'inmyHeShecorrectq20',
+    },
+    {
+      answer: 'My',
+      nextId: 'myHeShecorrectq20',
+    },
+    {
+      answer: 'I',
+      nextId: 'myHeShecorrectq20',
+    },
+    {
+      answer: 'Mine',
+      nextId: 'myHeShecorrectq20',
+    },
+
+  ],
+  },
+  myHeShecorrectq20: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>My</strong> 😎',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[20],
+    },
+  ],
+  },
+  inmyHeShecorrectq20: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"My"</strong>',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[20],
+    },
+  ],
+  },
+  
+  //21
+  ["myHeShe"+shuffledNumbersto[20]]: {
+    botPrompt: "Look at _______ beautiful drawing.",
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['Me', 'My', "I","Mine"]),
+    answers: [
+      {
+        answer: 'Me',
+        nextId: 'inmyHeShecorrectq21',
+      },
+      {
+        answer: 'My',
+        nextId: 'myHeShecorrectq21',
+      },
+      {
+        answer: 'I',
+        nextId: 'myHeShecorrectq21',
+      },
+      {
+        answer: 'Mine',
+        nextId: 'myHeShecorrectq21',
+      },
+  
+    ],
+  },
+  myHeShecorrectq21: {
+    botPrompt: 'Hurray <strong>My</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'myHeShe'+shuffledNumbersto[21],
+      },
+    ],
+  },
+  inmyHeShecorrectq21: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"My"</strong>',
+    answers: [
+      {
+        nextId: 'myHeShe'+shuffledNumbersto[21],
+      },
+    ],
+  },
+  
+  //22
+  ['myHeShe'+shuffledNumbersto[21]]: {
+    botPrompt: 'What is a pronoun used to refer to objects or animals?',
+    type: RTypes.TRANSFORMED_TEXT,
+  
+    input: selectField(['He', 'She', "It","They"]),
+  answers: [
+    {
+      answer: 'He',
+      nextId: 'inmyHeShecorrectq22',
+    },
+    {
+      answer: 'She',
+      nextId: 'inmyHeShecorrectq22',
+    },
+    {
+      answer: 'It',
+      nextId: 'myHeShecorrectq22',
+    },
+    {
+      answer: 'They',
+      nextId: 'inmyHeShecorrectq22',
+    },
+
+  ],
+  },
+  
+  myHeShecorrectq22: {
+    botPrompt: 'Hurray! <strong>It</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'myHeShe'+shuffledNumbersto[22],
+      },
+    ],
+  },
+  inmyHeShecorrectq22: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"It"</strong>',
+    answers: [
+      {
+        nextId: 'myHeShe'+shuffledNumbersto[22],
+      },
+    ],
+  },
+  
+  //23
+  ['myHeShe'+shuffledNumbersto[22]]: {
+  botPrompt: "Which word can be used to talk about a toy or a book?",
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['He', 'She', "It","They"]),
+  answers: [
+    {
+      answer: 'He',
+      nextId: 'inmyHeShecorrectq23',
+    },
+    {
+      answer: 'She',
+      nextId: 'inmyHeShecorrectq23',
+    },
+    {
+      answer: 'It',
+      nextId: 'myHeShecorrectq23',
+    },
+    {
+      answer: 'They',
+      nextId: 'inmyHeShecorrectq23',
+    },
+
+  ],
+  },
+  
+  myHeShecorrectq23: {
+  botPrompt: 'Hurray! <strong>It</strong> is the correct answer ! 😎',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[23],
+    },
+  ],
+  },
+  inmyHeShecorrectq23: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"It"</strong>',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[23],
+    },
+  ],
+  },
+  
+  //24
+  ['myHeShe'+shuffledNumbersto[23]]: {
+  botPrompt: 'Complete the sentence: ___ is a red ball.',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['He', 'She', "It","They"]),
+  answers: [
+    {
+      answer: 'He',
+      nextId: 'inmyHeShecorrectq24',
+    },
+    {
+      answer: 'She',
+      nextId: 'inmyHeShecorrectq24',
+    },
+    {
+      answer: 'It',
+      nextId: 'myHeShecorrectq24',
+    },
+    {
+      answer: 'They',
+      nextId: 'inmyHeShecorrectq24',
+    },
+
+  ],
+  },
+
+  myHeShecorrectq24: {
+  botPrompt: 'Hurray! <strong>It</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[24],
+    },
+  ],
+  },
+  inmyHeShecorrectq24: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"It"</strong>',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[24],
+    },
+  ],
+  },
+
+  //25
+  ['myHeShe'+shuffledNumbersto[24]]: {
+  botPrompt: 'Complete the sentence: ___ is a cute puppy.',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['He', 'She', "It","They"]),
+  answers: [
+    {
+      answer: 'He',
+      nextId: 'inmyHeShecorrectq24',
+    },
+    {
+      answer: 'She',
+      nextId: 'inmyHeShecorrectq24',
+    },
+    {
+      answer: 'It',
+      nextId: 'myHeShecorrectq24',
+    },
+    {
+      answer: 'They',
+      nextId: 'inmyHeShecorrectq24',
+    },
+
+  ],
+  },
+  
+  myHeShecorrectq25: {
+  botPrompt: 'Hurray! <strong>It</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[25],
+    },
+  ],
+  },
+  inmyHeShecorrectq25: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"It"</strong>',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[25],
+    },
+  ],
+  },
+  
+  //26
+  ['myHeShe'+shuffledNumbersto[25]]: {
+  botPrompt: 'Complete the sentence: ___ is raining outside.',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['He', 'She', "It","They"]),
+  answers: [
+    {
+      answer: 'He',
+      nextId: 'inmyHeShecorrectq24',
+    },
+    {
+      answer: 'She',
+      nextId: 'inmyHeShecorrectq24',
+    },
+    {
+      answer: 'It',
+      nextId: 'myHeShecorrectq24',
+    },
+    {
+      answer: 'They',
+      nextId: 'inmyHeShecorrectq24',
+    },
+
+  ],
+  },
+  
+  myHeShecorrectq26: {
+  botPrompt: 'Hurray! <strong>It</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[26],
+    },
+  ],
+  },
+  inmyHeShecorrectq26: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"It"</strong>',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[26],
+    },
+  ],
+  },
+  
+  //27
+  ['myHeShe'+shuffledNumbersto[26]]: {
+  botPrompt: '_______ room has a big window.',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['Me', 'I', "My","A"]),
+    answers: [
+      {
+        answer: 'Me',
+        nextId: 'myHeShecorrectq27',
+      },
+      {
+        answer: 'My',
+        nextId: 'inmyHeShecorrectq27',
+      },
+      {
+        answer: 'I',
+        nextId: 'myHeShecorrectq27',
+      },
+      {
+        answer: 'A',
+        nextId: 'inmyHeShecorrectq27',
+      },
+
+    ],
+  },
+  
+  myHeShecorrectq27: {
+  botPrompt: 'Hurray! <strong>I</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[27],
+    },
+  ],
+  },
+  inmyHeShecorrectq27: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"I"</strong>',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[27],
+    },
+  ],
+  },
+
+  
+  //28
+  ['myHeShe'+shuffledNumbersto[27]]: {
+  botPrompt: '_______ best friend name is Neha',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['My', 'Me', "I","Mine"]),
+  answers: [
+    {
+      answer: 'My',
+      nextId: 'myHeShecorrectq28',
+    },
+    {
+      answer: 'Me',
+      nextId: 'inmyHeShecorrectq28',
+    },
+    {
+      answer: 'I',
+      nextId: 'inmyHeShecorrectq28',
+    },
+    {
+      answer: 'Mine',
+      nextId: 'inmyHeShecorrectq28',
+    },
+  ],
+  },
+
+  myHeShecorrectq28: {
+  botPrompt: 'Hurray! <strong>My</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[28],
+    },
+  ],
+  },
+  inmyHeShecorrectq28: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"My"</strong>',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[28],
+    },
+  ],
+  },
+  
+  //29
+  ['myHeShe'+shuffledNumbersto[28]]: {
+  botPrompt: '_______ dog is friendly.',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['My', 'Me', "I","Mine"]),
+  answers: [
+    {
+      answer: 'My',
+      nextId: 'myHeShecorrectq29',
+    },
+    {
+      answer: 'Me',
+      nextId: 'inmyHeShecorrectq29',
+    },
+    {
+      answer: 'I',
+      nextId: 'inmyHeShecorrectq29',
+    },
+    {
+      answer: 'Mine',
+      nextId: 'inmyHeShecorrectq29',
+    },
+  ],
+  },
+
+  myHeShecorrectq29: {
+  botPrompt: 'Hurray! <strong>My</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[29],
+    },
+  ],
+  },
+  inmyHeShecorrectq29: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"My"</strong>',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[29],
+    },
+  ],
+  },
+
+
+  //30
+  ['myHeShe'+shuffledNumbersto[29]]: {
+  botPrompt: "Look at _______ colorful drawing.",
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['My', 'Me', "I","Mine"]),
+  answers: [
+    {
+      answer: 'My',
+      nextId: 'myHeShecorrectq30',
+    },
+    {
+      answer: 'Me',
+      nextId: 'inmyHeShecorrectq30',
+    },
+    {
+      answer: 'I',
+      nextId: 'inmyHeShecorrectq30',
+    },
+    {
+      answer: 'Mine',
+      nextId: 'inmyHeShecorrectq30',
+    },
+  ],
+  },
+
+  myHeShecorrectq30: {
+  botPrompt: 'Hurray! <strong>My</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[30],
+    },
+  ],
+  },
+  inmyHeShecorrectq30: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"My"</strong>',
+  answers: [
+    {
+      nextId: 'myHeShe'+shuffledNumbersto[30],
+    },
+  ],
+  },
+
+    //31
+    ['myHeShe'+shuffledNumbersto[30]]: {
+        botPrompt: "Which word can be used to refer to a sun or a cloud?",
+        type: RTypes.TRANSFORMED_TEXT,
+      
+        input: selectField(['He', 'She', "It","They"]),
+        answers: [
+          {
+            answer: 'He',
+            nextId: 'inmyHeShecorrectq31',
+          },
+          {
+            answer: 'She',
+            nextId: 'inmyHeShecorrectq31',
+          },
+          {
+            answer: 'It',
+            nextId: 'myHeShecorrectq31',
+          },
+          {
+            answer: 'They',
+            nextId: 'inmyHeShecorrectq31',
+          },
+        ],
+        },
+      
+        myHeShecorrectq31: {
+        botPrompt: 'Hurray! <strong>It</strong> is the correct answer  ! 😎',
+        answers: [
+          {
+            nextId: 'myHeShe'+shuffledNumbersto[31],
+          },
+        ],
+        },
+        inmyHeShecorrectq31: {
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"It"</strong>',
+        answers: [
+          {
+            nextId: 'myHeShe'+shuffledNumbersto[31],
+          },
+        ],
+        },
+
+          //32
+  ['myHeShe'+shuffledNumbersto[31]]: {
+    botPrompt: "Which word can be used to refer to a book or a pencil?",
+    type: RTypes.TRANSFORMED_TEXT,
+  
+    input: selectField(['He', 'She', "It","They"]),
+    answers: [
+      {
+        answer: 'He',
+        nextId: 'inmyHeShecorrectq32',
+      },
+      {
+        answer: 'She',
+        nextId: 'inmyHeShecorrectq32',
+      },
+      {
+        answer: 'It',
+        nextId: 'myHeShecorrectq32',
+      },
+      {
+        answer: 'They',
+        nextId: 'inmyHeShecorrectq32',
+      },
+    ],
+    },
+  
+    myHeShecorrectq32: {
+    botPrompt: 'Hurray! <strong>It</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'myHeShe'+shuffledNumbersto[32],
+      },
+    ],
+    },
+    inmyHeShecorrectq32: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"It"</strong>',
+    answers: [
+      {
+        nextId: 'myHeShe'+shuffledNumbersto[32],
+      },
+    ],
+    },
+
+      //33
+  ['myHeShe'+shuffledNumbersto[32]]: {
+    botPrompt: "Which word can be used to refer to a flower or a tree?",
+    type: RTypes.TRANSFORMED_TEXT,
+
+    input: selectField(['He', 'She', "It","They"]),
+    answers: [
+      {
+        answer: 'He',
+        nextId: 'inmyHeShecorrectq33',
+      },
+      {
+        answer: 'She',
+        nextId: 'inmyHeShecorrectq33',
+      },
+      {
+        answer: 'It',
+        nextId: 'myHeShecorrectq33',
+      },
+      {
+        answer: 'They',
+        nextId: 'inmyHeShecorrectq33',
+      },
+    ],
+    },
+  
+    myHeShecorrectq33: {
+    botPrompt: 'Hurray! <strong>It</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'myHeShe'+shuffledNumbersto[33],
+      },
+    ],
+    },
+    inmyHeShecorrectq33: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"It"</strong>',
+    answers: [
+      {
+        nextId: 'myHeShe'+shuffledNumbersto[33],
+      },
+    ],
+    },
+
+      //34
+  ['myHeShe'+shuffledNumbersto[33]]: {
+    botPrompt: "Which word can be used to refer to a cat or a dog?",
+    type: RTypes.TRANSFORMED_TEXT,
+
+
+    input: selectField(['He', 'She', "It","They"]),
+    answers: [
+      {
+        answer: 'He',
+        nextId: 'inmyHeShecorrectq33',
+      },
+      {
+        answer: 'She',
+        nextId: 'inmyHeShecorrectq33',
+      },
+      {
+        answer: 'It',
+        nextId: 'myHeShecorrectq33',
+      },
+      {
+        answer: 'They',
+        nextId: 'inmyHeShecorrectq33',
+      },
+    ],
+    },
+  
+    myHeShecorrectq34: {
+    botPrompt: 'Hurray! <strong>It</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'myHeShe'+shuffledNumbersto[34],
+      },
+    ],
+    },
+    inmyHeShecorrectq34: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"It"</strong>',
+    answers: [
+      {
+        nextId: 'myHeShe'+shuffledNumbersto[34],
+      },
+    ],
+    },
+
+      //35
+  ['myHeShe'+shuffledNumbersto[34]]: {
+    botPrompt: "Which word can be used to refer to a chair or a table?",
+    type: RTypes.TRANSFORMED_TEXT,
+  
+    input: selectField(['He', 'She', "It","They"]),
+    answers: [
+      {
+        answer: 'He',
+        nextId: 'inmyHeShecorrectq33',
+      },
+      {
+        answer: 'She',
+        nextId: 'inmyHeShecorrectq33',
+      },
+      {
+        answer: 'It',
+        nextId: 'myHeShecorrectq33',
+      },
+      {
+        answer: 'They',
+        nextId: 'inmyHeShecorrectq33',
+      },
+    ],
+    },
+  
+    myHeShecorrectq35: {
+    botPrompt: 'Hurray! <strong>It</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'wishToContinue45'
+      },
+    ],
+    },
+    inmyHeShecorrectq35: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"It"</strong>',
+    answers: [
+      {
+        nextId: 'wishToContinue45'
+      },
+    ],
+    },
+
+  //endmyHeSheletter
+
+
+  wishToContinue45: {
+  botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
+  input: selectField(['Yes!', 'No!']),
+  answers: [
+      {
+        answer: 'Yes!',
+        nextId: 'day46',
+      },
+      {
+        answer: 'No!',
+        nextId: 'endConv',
+
+      },
+  ],
+},
+
+
+//day46
+day46: {
+  botPrompt: '<strong> Day 46 : </strong> Activity',
+  answers: [
+          { nextId: 'day46comment' },
+  ],
+  sumToBags: [{ name: 'd', points: 46 }],
+
+},
+day46comment: {
+  botPrompt: 'Pages from the book',
+  answers: [
+          { nextId: 'wishtocontinue46' },
+  ],
+},
+
+wishtocontinue46: {
+  botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
+  input: selectField(['Yes!', 'No!']),
+  answers: [
+      {
+        answer: 'Yes!',
+        nextId: 'day47',
+      },
+      {
+        answer: 'No!',
+        nextId: 'endConv',
+
+      },
+  ],
+},
+
+day47: {
+  botPrompt: '<strong> Day 47 : </strong> "there" and "their" is essential in kindergarten as it helps children express location and possession accurately in their early writing and communication.',
+  answers: [
+          { nextId: 'day471comment' },
+  ],
+},
+
+day471comment: {
+  botPrompt: 'TLM Video',
+  answers: [
+          { nextId: 'day472comment' },
+  ],
+},
+
+day472comment: {
+  botPrompt: 'Let’s look into the pages of the book',
+  answers: [
+          { nextId: 'day472link' },
+  ],
+},
+day472link: {
+  botPrompt: 'https://drive.google.com/file/d/1Y9KGC1PRO_g5CmDkydkAWYQeH2X7Xq3k/view?usp=sharing',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'thierThere'+shuffledNumbersto[0],
+    },
+  ],
+},
+//thierThere
+
+
+["thierThere"+shuffledNumbersto[0]]: {
+    botPrompt: '________ toys are on the shelf.',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['Their', 'There', "They're","Them"]),
+    answers: [
+      {
+        answer: 'Their',
+        nextId: 'thierTherecorrect',
+      },
+      {
+        answer: 'There',
+        nextId: 'inthierTherecorrect',
+      },
+      {
+        answer: "They're",
+        nextId: 'inthierTherecorrect',
+      },
+      {
+        answer: "Them",
+        nextId: 'inthierTherecorrect',
+      },
+    ],
+  },
+  thierTherecorrect: {
+    botPrompt: 'Hurray <strong>Their</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'thierThere'+shuffledNumbersto[1],
+      },
+    ],
+  },
+  inthierTherecorrect: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Their"</strong>',
+    answers: [
+      {
+        nextId: 'thierThere'+shuffledNumbersto[1],
+      },
+    ],
+  },
+  
+  ['thierThere'+shuffledNumbersto[1]]: {
+    botPrompt: 'We saw a bird flying ________.',
+    type: RTypes.TRANSFORMED_TEXT,
+  
+    input: selectField(['Their', 'There', "They're","Them"]),
+    answers: [
+      {
+        answer: 'Their',
+        nextId: 'inthierTherecorrectq2',
+      },
+      {
+        answer: 'There',
+        nextId: 'thierTherecorrectq2',
+      },
+      {
+        answer: "They're",
+        nextId: 'inthierTherecorrectq2',
+      },
+      {
+        answer: "Them",
+        nextId: 'inthierTherecorrectq2',
+      },
+    ],
+  },
+  
+  thierTherecorrectq2: {
+    botPrompt: 'Hurray! <strong>There</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'thierThere'+shuffledNumbersto[2],
+      },
+    ],
+  },
+  inthierTherecorrectq2: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"There"</strong>',
+    answers: [
+      {
+        nextId: 'thierThere'+shuffledNumbersto[2],
+      },
+    ],
+  },
+  
+  //3
+  ['thierThere'+shuffledNumbersto[2]]: {
+  botPrompt: 'My friends are sitting ________.',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+
+ 
+  input: selectField(['Their', 'There', "They're","Them"]),
+  answers: [
+    {
+      answer: 'Their',
+      nextId: 'inthierTherecorrectq3',
+    },
+    {
+      answer: 'There',
+      nextId: 'inthierTherecorrectq3',
+    },
+    {
+      answer: "They're",
+      nextId: 'thierTherecorrectq3',
+    },
+    {
+      answer: "Them",
+      nextId: 'inthierTherecorrectq3',
+    },
+  ],
+  },
+  
+  thierTherecorrectq3: {
+  botPrompt: 'Hurray! <strong>"Theyre"</strong> is the correct answer ! 😎',
+  answers: [
+    {
+      nextId: 'thierThere'+shuffledNumbersto[3],
+    },
+  ],
+  },
+  inthierTherecorrectq3: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Theyre"</strong>',
+  answers: [
+    {
+      nextId: 'thierThere'+shuffledNumbersto[3],
+    },
+  ],
+  },
+  
+  //4
+  ['thierThere'+shuffledNumbersto[3]]: {
+  botPrompt: 'The children played ________ in the park.',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['Their', 'There', "They're","Them"]),
+  answers: [
+    {
+      answer: 'Their',
+      nextId: 'inthierTherecorrectq4',
+    },
+    {
+      answer: 'There',
+      nextId: 'thierTherecorrectq4',
+    },
+    {
+      answer: "They're",
+      nextId: 'inthierTherecorrectq4',
+    },
+    {
+      answer: "Them",
+      nextId: 'inthierTherecorrectq4',
+    },
+  ],
+  },
+  
+  thierTherecorrectq4: {
+  botPrompt: 'Hurray! <strong>There</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'thierThere'+shuffledNumbersto[4],
+    },
+  ],
+  },
+  inthierTherecorrectq4: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"There"</strong>',
+  answers: [
+    {
+      nextId: 'thierThere'+shuffledNumbersto[4],
+    },
+  ],
+  },
+  
+  //5
+  ['thierThere'+shuffledNumbersto[4]]: {
+  botPrompt: '________ is a cat sitting on the wall.',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  
+  input: selectField(['Their', 'There', "They're","Them"]),
+  answers: [
+    {
+      answer: 'Their',
+      nextId: 'inthierTherecorrectq5',
+    },
+    {
+      answer: 'There',
+      nextId: 'thierTherecorrectq5',
+    },
+    {
+      answer: "They're",
+      nextId: 'inthierTherecorrectq5',
+    },
+    {
+      answer: "Them",
+      nextId: 'inthierTherecorrectq5',
+    },
+  ],
+  },
+  
+  thierTherecorrectq5: {
+  botPrompt: 'Hurray! <strong>There</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'thierThere'+shuffledNumbersto[5],
+    },
+  ],
+  },
+  inthierTherecorrectq5: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"There"</strong>',
+  answers: [
+    {
+      nextId: 'thierThere'+shuffledNumbersto[5],
+    },
+  ],
+  },
+  
+  //6
+  ['thierThere'+shuffledNumbersto[5]]: {
+  botPrompt: '________ are many flowers in the garden.',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['Their', 'There', "They're","Them"]),
+  answers: [
+    {
+      answer: 'Their',
+      nextId: 'inthierTherecorrectq6',
+    },
+    {
+      answer: 'There',
+      nextId: 'thierTherecorrectq6',
+    },
+    {
+      answer: "They're",
+      nextId: 'inthierTherecorrectq6',
+    },
+    {
+      answer: "Them",
+      nextId: 'inthierTherecorrectq6',
+    },
+  ],
+  },
+  
+  thierTherecorrectq6: {
+  botPrompt: 'Hurray! <strong>There</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'thierThere'+shuffledNumbersto[6],
+    },
+  ],
+  },
+  inthierTherecorrectq6: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"There"</strong>',
+  answers: [
+    {
+      nextId: 'thierThere'+shuffledNumbersto[6],
+    },
+  ],
+  },
+  
+  //7
+  ['thierThere'+shuffledNumbersto[6]]: {
+  botPrompt: 'Look, ________ is a rainbow in the sky.',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  
+  input: selectField(['Their', 'There', "They're","Them"]),
+  answers: [
+    {
+      answer: 'Their',
+      nextId: 'inthierTherecorrectq7',
+    },
+    {
+      answer: 'There',
+      nextId: 'thierTherecorrectq7',
+    },
+    {
+      answer: "They're",
+      nextId: 'inthierTherecorrectq7',
+    },
+    {
+      answer: "Them",
+      nextId: 'inthierTherecorrectq7',
+    },
+  ],
+  },
+  
+  thierTherecorrectq7: {
+  botPrompt: 'Hurray! <strong>There</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'thierThere'+shuffledNumbersto[7],
+    },
+  ],
+  },
+  inthierTherecorrectq7: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"There"</strong>',
+  answers: [
+    {
+      nextId: 'thierThere'+shuffledNumbersto[7],
+    },
+  ],
+  },
+  
+  
+  //8
+  ['thierThere'+shuffledNumbersto[7]]: {
+  botPrompt: 'The children went to ________ favourite park.',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['Their', 'There', "They're","Them"]),
+  answers: [
+    {
+      answer: 'Their',
+      nextId: 'thierTherecorrectq8',
+    },
+    {
+      answer: 'There',
+      nextId: 'inthierTherecorrectq8',
+    },
+    {
+      answer: "They're",
+      nextId: 'inthierTherecorrectq8',
+    },
+    {
+      answer: "Them",
+      nextId: 'inthierTherecorrectq8',
+    },
+  ],
+  },
+  
+  thierTherecorrectq8: {
+  botPrompt: 'Hurray! <strong>Their</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'thierThere'+shuffledNumbersto[8],
+    },
+  ],
+  },
+  inthierTherecorrectq8: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Their"</strong>',
+  answers: [
+    {
+      nextId: 'thierThere'+shuffledNumbersto[8],
+    },
+  ],
+  },
+  
+  //9
+  ['thierThere'+shuffledNumbersto[8]]: {
+  botPrompt: '________ is a dog chasing a ball.',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['Their', 'There', "They're","Them"]),
+  answers: [
+    {
+      answer: 'Their',
+      nextId: 'inthierTherecorrectq9',
+    },
+    {
+      answer: 'There',
+      nextId: 'thierTherecorrectq9',
+    },
+    {
+      answer: "They're",
+      nextId: 'inthierTherecorrectq9',
+    },
+    {
+      answer: "Them",
+      nextId: 'inthierTherecorrectq9',
+    },
+  ],
+  },
+  
+  thierTherecorrectq9: {
+  botPrompt: 'Hurray! <strong>There</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'thierThere'+shuffledNumbersto[9],
+    },
+  ],
+  },
+  inthierTherecorrectq9: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"There"</strong>',
+  answers: [
+    {
+      nextId: 'thierThere'+shuffledNumbersto[9],
+    },
+  ],
+  },
+  
+  
+  //10
+  ['thierThere'+shuffledNumbersto[9]]: {
+  botPrompt: 'The toys belong to ________ friends.',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['Their', 'There', "They're","Them"]),
+  answers: [
+    {
+      answer: 'Their',
+      nextId: 'thierTherecorrectq10',
+    },
+    {
+      answer: 'There',
+      nextId: 'inthierTherecorrectq10',
+    },
+    {
+      answer: "They're",
+      nextId: 'inthierTherecorrectq10',
+    },
+    {
+      answer: "Them",
+      nextId: 'inthierTherecorrectq10',
+    },
+  ],
+  
+  },
+  
+  thierTherecorrectq10: {
+  botPrompt: 'Hurray! <strong>Their</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'thierThere'+shuffledNumbersto[10],
+    },
+  ],
+  },
+  inthierTherecorrectq10: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Their"</strong>',
+  answers: [
+    {
+      nextId: 'thierThere'+shuffledNumbersto[10],
+    },
+  ],
+  },
+  
+  //11
+  ['thierThere'+shuffledNumbersto[10]]: {
+  botPrompt: 'The children are playing with ________ toys.',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['Their', 'There', "They're","Them"]),
+  answers: [
+    {
+      answer: 'Their',
+      nextId: 'thierTherecorrectq11',
+    },
+    {
+      answer: 'There',
+      nextId: 'inthierTherecorrectq11',
+    },
+    {
+      answer: "They're",
+      nextId: 'inthierTherecorrectq11',
+    },
+    {
+      answer: "Them",
+      nextId: 'inthierTherecorrectq11',
+    },
+  ],
+  },
+  
+  thierTherecorrectq11: {
+  botPrompt: 'Hurray! <strong>Their</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'thierThere'+shuffledNumbersto[11],
+    },
+  ],
+  },
+  inthierTherecorrectq11: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Their"</strong>',
+  answers: [
+    {
+      nextId: 'thierThere'+shuffledNumbersto[11],
+    },
+  ],
+  },
+  
+  //12
+  ['thierThere'+shuffledNumbersto[11]]: {
+  botPrompt: 'Look at ________ cute little kittens!',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['Their', 'There', "They're","Them"]),
+  answers: [
+    {
+      answer: 'Their',
+      nextId: 'thierTherecorrectq12',
+    },
+    {
+      answer: 'There',
+      nextId: 'inthierTherecorrectq12',
+    },
+    {
+      answer: "They're",
+      nextId: 'inthierTherecorrectq12',
+    },
+    {
+      answer: "Them",
+      nextId: 'inthierTherecorrectq12',
+    },
+  ],
+  },
+  
+  thierTherecorrectq12: {
+  botPrompt: 'Hurray! <strong>Their</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'thierThere'+shuffledNumbersto[12],
+    },
+  ],
+  },
+  inthierTherecorrectq12: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Their"</strong>',
+  answers: [
+    {
+      nextId: 'thierThere'+shuffledNumbersto[12],
+    },
+  ],
+  },
+  
+  //13
+  ['thierThere'+shuffledNumbersto[12]]: {
+  botPrompt: '________ are some birds in the tree.',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['Their', 'There', "They're","Them"]),
+  answers: [
+    {
+      answer: 'Their',
+      nextId: 'inthierTherecorrectq13',
+    },
+    {
+      answer: 'There',
+      nextId: 'thierTherecorrectq13',
+    },
+    {
+      answer: "They're",
+      nextId: 'inthierTherecorrectq13',
+    },
+    {
+      answer: "Them",
+      nextId: 'inthierTherecorrectq13',
+    },
+  ],
+  },
+  
+  thierTherecorrectq13: {
+  botPrompt: 'Hurray! <strong>There</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'thierThere'+shuffledNumbersto[13],
+    },
+  ],
+  },
+  inthierTherecorrectq13: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"There"</strong>',
+  answers: [
+    {
+      nextId: 'thierThere'+shuffledNumbersto[13],
+    },
+  ],
+  },
+  
+  //14
+  ['thierThere'+shuffledNumbersto[13]]: {
+  botPrompt: 'The kids went to ________ friends house.',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['Their', 'There', "They're","Them"]),
+  answers: [
+    {
+      answer: 'Their',
+      nextId: 'thierTherecorrectq14',
+    },
+    {
+      answer: 'There',
+      nextId: 'inthierTherecorrectq14',
+    },
+    {
+      answer: "They're",
+      nextId: 'inthierTherecorrectq14',
+    },
+    {
+      answer: "Them",
+      nextId: 'inthierTherecorrectq14',
+    },
+  ],
+  },
+  
+  thierTherecorrectq14: {
+  botPrompt: 'Hurray! <strong>Their</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'thierThere'+shuffledNumbersto[14],
+    },
+  ],
+  },
+  inthierTherecorrectq14: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Their"</strong>',
+  answers: [
+    {
+      nextId: 'thierThere'+shuffledNumbersto[14],
+    },
+  ],
+  },
+  
+  
+  //15
+  ['thierThere'+shuffledNumbersto[14]]: {
+  botPrompt: '________ are cookies on the table.',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['Their', 'There', "They're","Them"]),
+  answers: [
+    {
+      answer: 'Their',
+      nextId: 'inthierTherecorrectq15',
+    },
+    {
+      answer: 'There',
+      nextId: 'thierTherecorrectq15',
+    },
+    {
+      answer: "They're",
+      nextId: 'inthierTherecorrectq15',
+    },
+    {
+      answer: "Them",
+      nextId: 'inthierTherecorrectq15',
+    },
+  ],
+  },
+
+  thierTherecorrectq15: {
+  botPrompt: 'Hurray! <strong>There</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'thierThere'+shuffledNumbersto[15],
+    },
+  ],
+  },
+  inthierTherecorrectq15: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"There"</strong>',
+  answers: [
+    {
+      nextId: 'thierThere'+shuffledNumbersto[15],
+    },
+  ],
+  },
+  
+  //16
+  ['thierThere'+shuffledNumbersto[15]]: {
+    botPrompt: 'The children saw ________ favourite movie.',
+    type: RTypes.TRANSFORMED_TEXT,
+
+    input: selectField(['Their', 'There', "They're","Them"]),
+    answers: [
+      {
+        answer: 'Their',
+        nextId: 'thierTherecorrectq16',
+      },
+      {
+        answer: 'There',
+        nextId: 'inthierTherecorrectq16',
+      },
+      {
+        answer: "They're",
+        nextId: 'inthierTherecorrectq16',
+      },
+      {
+        answer: "Them",
+        nextId: 'inthierTherecorrectq16',
+      },
+    ],
+  },
+  thierTherecorrectq16: {
+    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>Their</strong> 😎',
+    answers: [
+      {
+        nextId: 'thierThere'+shuffledNumbersto[16],
+      },
+    ],
+  },
+  inthierTherecorrectq16: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Their"</strong>',
+    answers: [
+      {
+        nextId: 'thierThere'+shuffledNumbersto[16],
+      },
+    ],
+  },
+  
+  //17
+  ['thierThere'+shuffledNumbersto[16]]: {
+  botPrompt: '________ is a squirrel climbing the tree.',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['Their', 'There', "They're","Them"]),
+  answers: [
+    {
+      answer: 'Their',
+      nextId: 'inthierTherecorrectq17',
+    },
+    {
+      answer: 'There',
+      nextId: 'thierTherecorrectq17',
+    },
+    {
+      answer: "They're",
+      nextId: 'inthierTherecorrectq17',
+    },
+    {
+      answer: "Them",
+      nextId: 'inthierTherecorrectq17',
+    },
+  ],
+  },
+  thierTherecorrectq17: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>There</strong> 😎',
+  answers: [
+    {
+      nextId: 'thierThere'+shuffledNumbersto[17],
+    },
+  ],
+  },
+  inthierTherecorrectq17: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"There"</strong>',
+  answers: [
+    {
+      nextId: 'thierThere'+shuffledNumbersto[17],
+    },
+  ],
+  },
+  
+  //18
+  ['thierThere'+shuffledNumbersto[17]]: {
+  botPrompt: 'The students brought ________ lunchboxes to school.  ',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['Their', 'There', "They're","Them"]),
+  answers: [
+    {
+      answer: 'Their',
+      nextId: 'thierTherecorrectq18',
+    },
+    {
+      answer: 'There',
+      nextId: 'inthierTherecorrectq18',
+    },
+    {
+      answer: "They're",
+      nextId: 'inthierTherecorrectq18',
+    },
+    {
+      answer: "Them",
+      nextId: 'inthierTherecorrectq18',
+    },
+  ],
+  },
+  thierTherecorrectq18: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>Their</strong> 😎',
+  answers: [
+    {
+      nextId: 'thierThere'+shuffledNumbersto[18],
+    },
+  ],
+  },
+  inthierTherecorrectq18: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Their"</strong>',
+  answers: [
+    {
+      nextId: 'thierThere'+shuffledNumbersto[18],
+    },
+  ],
+  },
+  
+  //19
+  ['thierThere'+shuffledNumbersto[18]]: {
+  botPrompt: '________ are some flowers in the vase.',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['Their', 'There', "They're","Them"]),
+  answers: [
+    {
+      answer: 'Their',
+      nextId: 'inthierTherecorrectq19',
+    },
+    {
+      answer: 'There',
+      nextId: 'thierTherecorrectq19',
+    },
+    {
+      answer: "They're",
+      nextId: 'inthierTherecorrectq19',
+    },
+    {
+      answer: "Them",
+      nextId: 'inthierTherecorrectq19',
+    },
+  ],
+  },
+  thierTherecorrectq19: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>There</strong> Answers! 😎',
+  answers: [
+    {
+      nextId: 'thierThere'+shuffledNumbersto[19],
+    },
+  ],
+  },
+  inthierTherecorrectq19: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"There"</strong>',
+  answers: [
+    {
+      nextId: 'thierThere'+shuffledNumbersto[19],
+    },
+  ],
+  },
+  
+  //20
+  ['thierThere'+shuffledNumbersto[19]]: {
+  botPrompt: 'The children played with ________ new toys.',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['Their', 'There', "They're","Them"]),
+  answers: [
+    {
+      answer: 'Their',
+      nextId: 'thierTherecorrectq20',
+    },
+    {
+      answer: 'There',
+      nextId: 'inthierTherecorrectq20',
+    },
+    {
+      answer: "They're",
+      nextId: 'inthierTherecorrectq20',
+    },
+    {
+      answer: "Them",
+      nextId: 'inthierTherecorrectq20',
+    },
+  ],
+  },
+  thierTherecorrectq20: {
+  botPrompt: 'You Have Selected correct Anwser 🎉! <strong>Their</strong> 😎',
+  answers: [
+    {
+      nextId: 'wishToContinue47'
+    },
+  ],
+  },
+  inthierTherecorrectq20: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Their"</strong>',
+  answers: [
+    {
+      nextId: 'wishToContinue47'
+    },
+  ],
+  },
+  
+
+  //endthierThereletter
+
+  wishToContinue47: {
+    botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
+    input: selectField(['Yes!', 'No!']),
+    answers: [
+        {
+          answer: 'Yes!',
+          nextId: 'day48',
+        },
+        {
+          answer: 'No!',
+          nextId: 'endConv',
+  
+        },
+    ],
+  },
+
+
+  day48: {
+    botPrompt: '<strong> Day 48 : </strong> Classroom demo',
+    answers: [
+            { nextId: 'day482comment' },
+    ],
+  },
+  
+  
+  
+  day482comment: {
+    botPrompt: 'Let’s look into the pages of the book',
+    answers: [
+            { nextId: 'day482link' },
+    ],
+  },
+  day482link: {
+    botPrompt: 'https://drive.google.com/file/d/1dVuNlxtFrb2dWif0Xh1mLU3nLuyD4JNJ/view?usp=sharing',
+    type: RTypes.LINK,
+    answers: [
+      {
+        nextId: 'whWords'+shuffledNumbersto[0],
+      },
+    ],
+  },
+  //whWords
+  
+  
+  ["whWords"+shuffledNumbersto[0]]: {
+      botPrompt: '___ is used to ask questions about people?',
+      type: RTypes.TRANSFORMED_TEXT,
+      input: selectField(['Who', 'Where', "What","When"]),
+      answers: [
+        {
+          answer: 'Who',
+          nextId: 'whWordscorrect',
+        },
+        {
+          answer: 'Where',
+          nextId: 'inwhWordscorrect',
+        },
+        {
+          answer: "What",
+          nextId: 'inwhWordscorrect',
+        },
+        {
+          answer: "When",
+          nextId: 'inwhWordscorrect',
+        },
+      ],
+    },
+    whWordscorrect: {
+      botPrompt: 'Hurray <strong>Who</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'whWords'+shuffledNumbersto[1],
+        },
+      ],
+    },
+    inwhWordscorrect: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Who"</strong>',
+      answers: [
+        {
+          nextId: 'whWords'+shuffledNumbersto[1],
+        },
+      ],
+    },
+    
+    ['whWords'+shuffledNumbersto[1]]: {
+      botPrompt: '____ is used to ask questions about things?',
+      type: RTypes.TRANSFORMED_TEXT,
+  
+      input: selectField(['Who', 'What', "Where","When"]),
+      answers: [
+        {
+          answer: 'Who',
+          nextId: 'inwhWordscorrectq2',
+        },
+        {
+          answer: 'What',
+          nextId: 'whWordscorrectq2',
+        },
+        {
+          answer: "Where",
+          nextId: 'inwhWordscorrectq2',
+        },
+        {
+          answer: "When",
+          nextId: 'inwhWordscorrectq2',
+        },
+      ],
+    },
+  
+    whWordscorrectq2: {
+      botPrompt: 'Hurray! <strong>What</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'whWords'+shuffledNumbersto[2],
+        },
+      ],
+    },
+    inwhWordscorrectq2: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"What"</strong>',
+      answers: [
+        {
+          nextId: 'whWords'+shuffledNumbersto[2],
+        },
+      ],
+    },
+    
+    //3
+    ['whWords'+shuffledNumbersto[2]]: {
+    botPrompt: '_____is used to ask questions about locations?',
+    type: RTypes.TRANSFORMED_TEXT,
+  
+    input: selectField(['Who', 'What', "Where","When"]),
+    answers: [
+      {
+        answer: 'Who',
+        nextId: 'inwhWordscorrectq3',
+      },
+      {
+        answer: 'What',
+        nextId: 'inwhWordscorrectq3',
+      },
+      {
+        answer: "Where",
+        nextId: 'whWordscorrectq3',
+      },
+      {
+        answer: "When",
+        nextId: 'inwhWordscorrectq3',
+      },
+    ],
+    },
+    
+    whWordscorrectq3: {
+    botPrompt: 'Hurray! <strong>"Where"</strong> is the correct answer ! 😎',
+    answers: [
+      {
+        nextId: 'whWords'+shuffledNumbersto[3],
+      },
+    ],
+    },
+    inwhWordscorrectq3: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Where"</strong>',
+    answers: [
+      {
+        nextId: 'whWords'+shuffledNumbersto[3],
+      },
+    ],
+    },
+  
+    //4
+    ['whWords'+shuffledNumbersto[3]]: {
+    botPrompt: '____ is used to ask questions about time?',
+    type: RTypes.TRANSFORMED_TEXT,
+  
+    input: selectField(['Who', 'What', "Where","When"]),
+    answers: [
+      {
+        answer: 'Who',
+        nextId: 'inwhWordscorrectq4',
+      },
+      {
+        answer: 'What',
+        nextId: 'inwhWordscorrectq4',
+      },
+      {
+        answer: "Where",
+        nextId: 'inwhWordscorrectq4',
+      },
+      {
+        answer: "When",
+        nextId: 'whWordscorrectq4',
+      },
+    ],
+    },
+    
+    whWordscorrectq4: {
+    botPrompt: 'Hurray! <strong>When</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'whWords'+shuffledNumbersto[4],
+      },
+    ],
+    },
+    inwhWordscorrectq4: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"When"</strong>',
+    answers: [
+      {
+        nextId: 'whWords'+shuffledNumbersto[4],
+      },
+    ],
+    },
+    
+    //5
+    ['whWords'+shuffledNumbersto[4]]: {
+    botPrompt: '______ is used to ask questions about reasons?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    
+    input: selectField(['Their', 'There', "They're","When"]),
+    answers: [
+      {
+        answer: 'Their',
+        nextId: 'inwhWordscorrectq5',
+      },
+      {
+        answer: 'There',
+        nextId: 'inwhWordscorrectq5',
+      },
+      {
+        answer: "They're",
+        nextId: 'inwhWordscorrectq5',
+      },
+      {
+        answer: "When",
+        nextId: 'whWordscorrectq5',
+      },
+    ],
+    },
+    
+    whWordscorrectq5: {
+    botPrompt: 'Hurray! <strong>When</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'whWords'+shuffledNumbersto[5],
+      },
+    ],
+    },
+    inwhWordscorrectq5: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"When"</strong>',
+    answers: [
+      {
+        nextId: 'whWords'+shuffledNumbersto[5],
+      },
+    ],
+    },
+    
+    //6
+    ['whWords'+shuffledNumbersto[5]]: {
+    botPrompt: 'The cat is sleeping.',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['Who is sleeping?', 'What is sleeping?', "Where is the cat?","How is the cat?"]),
+    answers: [
+      {
+        answer: 'Who is sleeping?',
+        nextId: 'whWordscorrectq6',
+      },
+      {
+        answer: 'What is sleeping?',
+        nextId: 'inwhWordscorrectq6',
+      },
+      {
+        answer: "Where is the cat?",
+        nextId: 'inwhWordscorrectq6',
+      },
+      {
+        answer: "How is the cat?",
+        nextId: 'inwhWordscorrectq6',
+      },
+    ],
+    },
+    
+    whWordscorrectq6: {
+    botPrompt: 'Hurray! <strong>Who is sleeping?</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'whWords'+shuffledNumbersto[6],
+      },
+    ],
+    },
+    inwhWordscorrectq6: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Who is sleeping?"</strong>',
+    answers: [
+      {
+        nextId: 'whWords'+shuffledNumbersto[6],
+      },
+    ],
+    },
+    
+    //7
+    ['whWords'+shuffledNumbersto[6]]: {
+    botPrompt: 'I ate an apple.',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    
+    input: selectField(['Who ate an apple?', 'What did I eat?', "Where is the apple?","When did I eat?"]),
+    answers: [
+      {
+        answer: 'Who ate an apple?',
+        nextId: 'whWordscorrectq7',
+      },
+      {
+        answer: 'What did I eat?',
+        nextId: 'inwhWordscorrectq7',
+      },
+      {
+        answer: "Where is the apple?",
+        nextId: 'inwhWordscorrectq7',
+      },
+      {
+        answer: "When did I eat?",
+        nextId: 'inwhWordscorrectq7',
+      },
+    ],
+    },
+    
+    whWordscorrectq7: {
+    botPrompt: 'Hurray! <strong>Who ate an apple?</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'whWords'+shuffledNumbersto[7],
+      },
+    ],
+    },
+    inwhWordscorrectq7: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Who ate an apple?"</strong>',
+    answers: [
+      {
+        nextId: 'whWords'+shuffledNumbersto[7],
+      },
+    ],
+    },
+    
+    
+    //8
+    ['whWords'+shuffledNumbersto[7]]: {
+    botPrompt: 'The book is on the table.',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['What is the book?', 'Where is the book?', "Who placed the book?","Why is the book there?"]),
+    answers: [
+      {
+        answer: 'What is the book?',
+        nextId: 'inwhWordscorrectq8',
+      },
+      {
+        answer: 'Where is the book?',
+        nextId: 'whWordscorrectq8',
+      },
+      {
+        answer: "They're",
+        nextId: 'inwhWordscorrectq8',
+      },
+      {
+        answer: "Why is the book there?",
+        nextId: 'inwhWordscorrectq8',
+      },
+    ],
+    },
+    
+    whWordscorrectq8: {
+    botPrompt: 'Hurray! <strong>Where is the book?</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'whWords'+shuffledNumbersto[8],
+      },
+    ],
+    },
+    inwhWordscorrectq8: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Where is the book?"</strong>',
+    answers: [
+      {
+        nextId: 'whWords'+shuffledNumbersto[8],
+      },
+    ],
+    },
+    
+    //9
+    ['whWords'+shuffledNumbersto[8]]: {
+    botPrompt: 'We went to the park.',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['When did we go?', 'Where did we go?', "What did we do at the park?","Why did we go?"]),
+    answers: [
+      {
+        answer: 'When did we go?',
+        nextId: 'inwhWordscorrectq9',
+      },
+      {
+        answer: 'Where did we go?',
+        nextId: 'whWordscorrectq9',
+      },
+      {
+        answer: "What did we do at the park?",
+        nextId: 'inwhWordscorrectq9',
+      },
+      {
+        answer: "Why did we go?",
+        nextId: 'inwhWordscorrectq9',
+      },
+    ],
+    },
+    
+    whWordscorrectq9: {
+    botPrompt: 'Hurray! <strong>Where did we go?</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'whWords'+shuffledNumbersto[9],
+      },
+    ],
+    },
+    inwhWordscorrectq9: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Where did we go?"</strong>',
+    answers: [
+      {
+        nextId: 'whWords'+shuffledNumbersto[9],
+      },
+    ],
+    },
+    
+    
+    //10
+    ['whWords'+shuffledNumbersto[9]]: {
+    botPrompt: 'It is raining outside.',
+    type: RTypes.TRANSFORMED_TEXT,
+  
+    input: selectField(['What is happening?', 'When is raining?', "Where is it raining?","Who is raining?"]),
+    answers: [
+      {
+        answer: 'What is happening?',
+        nextId: 'inwhWordscorrectq10',
+      },
+      {
+        answer: 'When is raining?',
+        nextId: 'inwhWordscorrectq10',
+      },
+      {
+        answer: "Where is it raining?",
+        nextId: 'whWordscorrectq10',
+      },
+      {
+        answer: "Who is raining?",
+        nextId: 'inwhWordscorrectq10',
+      },
+    ],
+    
+    },
+    
+    whWordscorrectq10: {
+    botPrompt: 'Hurray! <strong>Where is it raining?</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'whWords'+shuffledNumbersto[10],
+      },
+    ],
+    },
+    inwhWordscorrectq10: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Where is it raining?"</strong>',
+    answers: [
+      {
+        nextId: 'whWords'+shuffledNumbersto[10],
+      },
+    ],
+    },
+    
+    //11
+    ['whWords'+shuffledNumbersto[10]]: {
+    botPrompt: 'The dog is barking.',
+    type: RTypes.TRANSFORMED_TEXT,
+  
+    input: selectField(['Who is barking?', 'What is barking?', "Where is the dog?","How is the dog?"]),
+    answers: [
+      {
+        answer: 'Who is barking?',
+        nextId: 'whWordscorrectq11',
+      },
+      {
+        answer: 'What is barking?',
+        nextId: 'inwhWordscorrectq11',
+      },
+      {
+        answer: "Where is the dog?",
+        nextId: 'inwhWordscorrectq11',
+      },
+      {
+        answer: "How is the dog?",
+        nextId: 'inwhWordscorrectq11',
+      },
+    ],
+    },
+    
+    whWordscorrectq11: {
+    botPrompt: 'Hurray! <strong>Who is barking?</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'whWords'+shuffledNumbersto[11],
+      },
+    ],
+    },
+    inwhWordscorrectq11: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Who is barking?"</strong>',
+    answers: [
+      {
+        nextId: 'whWords'+shuffledNumbersto[11],
+      },
+    ],
+    },
+    
+    //12
+    ['whWords'+shuffledNumbersto[11]]: {
+    botPrompt: 'She is playing with a ball.',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['Who is playing?', 'What is she playing with?', "Where is the ball?","When did she start playing?"]),
+    answers: [
+      {
+        answer: 'Who is playing?',
+        nextId: 'inwhWordscorrectq12',
+      },
+      {
+        answer: 'What is she playing with?',
+        nextId: 'whWordscorrectq12',
+      },
+      {
+        answer: "Where is the ball?",
+        nextId: 'inwhWordscorrectq12',
+      },
+      {
+        answer: "When did she start playing?",
+        nextId: 'inwhWordscorrectq12',
+      },
+    ],
+    },
+    
+    whWordscorrectq12: {
+    botPrompt: 'Hurray! <strong>What is she playing with?</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'whWords'+shuffledNumbersto[12],
+      },
+    ],
+    },
+    inwhWordscorrectq12: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"What is she playing with?"</strong>',
+    answers: [
+      {
+        nextId: 'whWords'+shuffledNumbersto[12],
+      },
+    ],
+    },
+    
+    //13
+    ['whWords'+shuffledNumbersto[12]]: {
+    botPrompt: 'The car is red in color.',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['What color is the car?', 'Why is the car red?', "Where is the car?","Who painted the car?"]),
+    answers: [
+      {
+        answer: 'What color is the car?',
+        nextId: 'whWordscorrectq13',
+      },
+      {
+        answer: 'Why is the car red?',
+        nextId: 'inwhWordscorrectq13',
+      },
+      {
+        answer: "Where is the car?",
+        nextId: 'inwhWordscorrectq13',
+      },
+      {
+        answer: "Who painted the car?",
+        nextId: 'inwhWordscorrectq13',
+      },
+    ],
+    },
+    
+    whWordscorrectq13: {
+    botPrompt: 'Hurray! <strong>What color is the car?</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'whWords'+shuffledNumbersto[13],
+      },
+    ],
+    },
+    inwhWordscorrectq13: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"What color is the car?"</strong>',
+    answers: [
+      {
+        nextId: 'whWords'+shuffledNumbersto[13],
+      },
+    ],
+    },
+    
+    //14
+    ['whWords'+shuffledNumbersto[13]]: {
+    botPrompt: 'We are singing a song.',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['Who is singing?', 'What are we doing?', "Where are we singing?","When did we start singing?"]),
+    answers: [
+      {
+        answer: 'Who is singing?',
+        nextId: 'inwhWordscorrectq14',
+      },
+      {
+        answer: 'What are we doing?',
+        nextId: 'whWordscorrectq14',
+      },
+      {
+        answer: "Where are we singing?",
+        nextId: 'inwhWordscorrectq14',
+      },
+      {
+        answer: "When did we start singing?",
+        nextId: 'inwhWordscorrectq14',
+      },
+    ],
+    },
+    
+    whWordscorrectq14: {
+    botPrompt: 'Hurray! <strong>What are we doing?</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'whWords'+shuffledNumbersto[14],
+      },
+    ],
+    },
+    inwhWordscorrectq14: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"What are we doing?"</strong>',
+    answers: [
+      {
+        nextId: 'whWords'+shuffledNumbersto[14],
+      },
+    ],
+    },
+    
+    
+    //15
+    ['whWords'+shuffledNumbersto[14]]: {
+    botPrompt: 'The sun is shining brightly.',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['What is shining?', 'Why is the sun shining?', "Where is the sun?","Where is the sun?"]),
+    answers: [
+      {
+        answer: 'What is shining?',
+        nextId: 'whWordscorrectq15',
+      },
+      {
+        answer: 'Why is the sun shining?',
+        nextId: 'inwhWordscorrectq15',
+      },
+      {
+        answer: "Where is the sun?",
+        nextId: 'inwhWordscorrectq15',
+      },
+      {
+        answer: "Where is the sun?",
+        nextId: 'inwhWordscorrectq15',
+      },
+    ],
+    },
+  
+    whWordscorrectq15: {
+    botPrompt: 'Hurray! <strong>What is shining?</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'whWords'+shuffledNumbersto[15],
+      },
+    ],
+    },
+    inwhWordscorrectq15: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"What is shining?"</strong>',
+    answers: [
+      {
+        nextId: 'whWords'+shuffledNumbersto[15],
+      },
+    ],
+    },
+    
+    //16
+    ['whWords'+shuffledNumbersto[15]]: {
+      botPrompt: 'They are taking lunch.',
+      type: RTypes.TRANSFORMED_TEXT,
+  
+      input: selectField(['Who is taking?', 'What are they taking?', "Where are they taking?","When did they start taking?"]),
+      answers: [
+        {
+          answer: 'Who is taking?',
+          nextId: 'inwhWordscorrectq16',
+        },
+        {
+          answer: 'What are they taking?',
+          nextId: 'whWordscorrectq16',
+        },
+        {
+          answer: "Where are they taking?",
+          nextId: 'inwhWordscorrectq16',
+        },
+        {
+          answer: "When did they start taking?",
+          nextId: 'inwhWordscorrectq16',
+        },
+      ],
+    },
+    whWordscorrectq16: {
+      botPrompt: 'You Have Selected correct Anwser 🎉! <strong>What are they taking?</strong> 😎',
+      answers: [
+        {
+          nextId: 'whWords'+shuffledNumbersto[16],
+        },
+      ],
+    },
+    inwhWordscorrectq16: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"What are they taking?"</strong>',
+      answers: [
+        {
+          nextId: 'whWords'+shuffledNumbersto[16],
+        },
+      ],
+    },
+    
+    //17
+    ['whWords'+shuffledNumbersto[16]]: {
+    botPrompt: 'The bird is flying in the sky.',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['Who is flying?', 'What is flying?', "Where is the bird?","How is the bird flying?"]),
+    answers: [
+      {
+        answer: 'Who is flying?',
+        nextId: 'inwhWordscorrectq17',
+      },
+      {
+        answer: 'What is flying?',
+        nextId: 'whWordscorrectq17',
+      },
+      {
+        answer: "Where is the bird?",
+        nextId: 'inwhWordscorrectq17',
+      },
+      {
+        answer: "How is the bird flying?",
+        nextId: 'inwhWordscorrectq17',
+      },
+    ],
+    },
+    whWordscorrectq17: {
+    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>What is flying?</strong> 😎',
+    answers: [
+      {
+        nextId: 'whWords'+shuffledNumbersto[17],
+      },
+    ],
+    },
+    inwhWordscorrectq17: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"What is flying?"</strong>',
+    answers: [
+      {
+        nextId: 'whWords'+shuffledNumbersto[17],
+      },
+    ],
+    },
+    
+    //18
+    ['whWords'+shuffledNumbersto[17]]: {
+    botPrompt: 'I saw a butterfly in the garden. ',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['Where I saw a butterfly?', 'What did I see in the garden?', "Where did I see the butterfly?","When did I see the butterfly?"]),
+    answers: [
+      {
+        answer: 'Where I saw a butterfly?',
+        nextId: 'inwhWordscorrectq18',
+      },
+      {
+        answer: 'What did I see in the garden?',
+        nextId: 'whWordscorrectq18',
+      },
+      {
+        answer: "Where did I see the butterfly?",
+        nextId: 'inwhWordscorrectq18',
+      },
+      {
+        answer: "When did I see the butterfly?",
+        nextId: 'inwhWordscorrectq18',
+      },
+    ],
+    },
+    whWordscorrectq18: {
+    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>What did I see in the garden?</strong> 😎',
+    answers: [
+      {
+        nextId: 'whWords'+shuffledNumbersto[18],
+      },
+    ],
+    },
+    inwhWordscorrectq18: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"What did I see in the garden?"</strong>',
+    answers: [
+      {
+        nextId: 'whWords'+shuffledNumbersto[18],
+      },
+    ],
+    },
+    
+    //19
+    ['whWords'+shuffledNumbersto[18]]: {
+    botPrompt: 'The train is moving on the tracks.',
+    type: RTypes.TRANSFORMED_TEXT,
+  
+    input: selectField(['How is the train?', 'Why is the train moving?', "Where is the train moving?","Who is moving the train?"]),
+    answers: [
+      {
+        answer: 'How is the train?',
+        nextId: 'inwhWordscorrectq19',
+      },
+      {
+        answer: 'Why is the train moving?',
+        nextId: 'inwhWordscorrectq19',
+      },
+      {
+        answer: "Where is the train moving?",
+        nextId: 'whWordscorrectq19',
+      },
+      {
+        answer: "Who is moving the train?",
+        nextId: 'inwhWordscorrectq19',
+      },
+    ],
+    },
+    whWordscorrectq19: {
+    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>Where is the train moving?</strong> Answers! 😎',
+    answers: [
+      {
+        nextId: 'whWords'+shuffledNumbersto[19],
+      },
+    ],
+    },
+    inwhWordscorrectq19: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Where is the train moving?"</strong>',
+    answers: [
+      {
+        nextId: 'whWords'+shuffledNumbersto[19],
+      },
+    ],
+    },
+    
+    //20
+    ['whWords'+shuffledNumbersto[19]]: {
+    botPrompt: 'She is wearing a blue dress.',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['Who is the dress?', 'What is she wearing?', "Where is the dress?","When did she wear the dress?"]),
+    answers: [
+      {
+        answer: 'Who is the dress?',
+        nextId: 'inwhWordscorrectq20',
+      },
+      {
+        answer: 'What is she wearing?',
+        nextId: 'whWordscorrectq20',
+      },
+      {
+        answer: "Where is the dress?",
+        nextId: 'inwhWordscorrectq20',
+      },
+      {
+        answer: "When did she wear the dress?",
+        nextId: 'inwhWordscorrectq20',
+      },
+    ],
+    },
+    whWordscorrectq20: {
+    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>What is she wearing?</strong> 😎',
+    answers: [
+      {
+        nextId: 'wishToContinue48'
+      },
+    ],
+    },
+    inwhWordscorrectq20: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"What is she wearing?"</strong>',
+    answers: [
+      {
+        nextId: 'wishToContinue48'
+      },
+    ],
+    },
+    
+   
+    //endwhWordsletter
+
+
+    wishToContinue48: {
+  botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
+  input: selectField(['Yes!', 'No!']),
+  answers: [
+      {
+        answer: 'Yes!',
+        nextId: 'day49',
+      },
+      {
+        answer: 'No!',
+        nextId: 'endConv',
+
+      },
+  ],
+},
+
+day49: {
+  botPrompt: '<strong> Day 49 : </strong> Shapes play a crucial role in kindergarten as they lay the foundation for understanding the world around us',
+  answers: [
+          { nextId: 'day49link' },
+  ],
+},
+day49link: {
+
+  botPrompt: 'https://youtu.be/WzyELzv_CRQ',
+  type: RTypes.LINK,
+  answers: [
+          { nextId: 'day49comment' },
+  ],
+},
+
+day49comment: {
+  botPrompt: 'Along with exercising children learn essential English vocabulary and action words which they will soon use in sentences.',
+  answers: [
+          { nextId: 'day49comment1' },
+  ],
+},
+day49comment1: {
+  botPrompt: 'https://drive.google.com/file/d/1q1KG4qtxXnB1oxP7bat-aqAa4q64HR-D/view?usp=share_link',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'shapes'+shuffledNumbersto[0],
+    },
+  ],
+},
+
+//shapes
+
+
+["shapes"+shuffledNumbersto[0]]: {
+    botPrompt: 'Which shape has three sides?',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['Circle', 'Rectangle', "Square","Triangle"]),
+    answers: [
+      {
+        answer: 'Circle',
+        nextId: 'inshapescorrect',
+      },
+      {
+        answer: 'Rectangle',
+        nextId: 'inshapescorrect',
+      },
+      {
+        answer: "Square",
+        nextId: 'inshapescorrect',
+      },
+      {
+        answer: "Triangle",
+        nextId: 'shapescorrect',
+      },
+    ],
+  },
+  shapescorrect: {
+    botPrompt: 'Hurray <strong>Triangle</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'shapes'+shuffledNumbersto[1],
+      },
+    ],
+  },
+  inshapescorrect: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Triangle"</strong>',
+    answers: [
+      {
+        nextId: 'shapes'+shuffledNumbersto[1],
+      },
+    ],
+  },
+  
+  //2
+  ['shapes'+shuffledNumbersto[1]]: {
+    botPrompt: 'Which shape has four sides of equal length?',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['Circle', 'Rectangle', "Square","Triangle"]),
+    answers: [
+      {
+        answer: 'Circle',
+        nextId: 'inshapescorrectq2',
+      },
+      {
+        answer: 'Rectangle',
+        nextId: 'inshapescorrectq2',
+      },
+      {
+        answer: "Square",
+        nextId: 'shapescorrectq2',
+      },
+      {
+        answer: "Triangle",
+        nextId: 'inshapescorrectq2',
+      },
+    ],
+  },
+
+  shapescorrectq2: {
+    botPrompt: 'Hurray! <strong>Square</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'shapes'+shuffledNumbersto[2],
+      },
+    ],
+  },
+  inshapescorrectq2: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Square"</strong>',
+    answers: [
+      {
+        nextId: 'shapes'+shuffledNumbersto[2],
+      },
+    ],
+  },
+  
+  //3
+  ['shapes'+shuffledNumbersto[2]]: {
+  botPrompt: 'Which shape is round with no lines?',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['Circle', 'Rectangle', "Square","Triangle"]),
+    answers: [
+      {
+        answer: 'Circle',
+        nextId: 'shapescorrectq3',
+      },
+      {
+        answer: 'Rectangle',
+        nextId: 'inshapescorrectq3',
+      },
+      {
+        answer: "Square",
+        nextId: 'inshapescorrectq3',
+      },
+      {
+        answer: "Triangle",
+        nextId: 'inshapescorrectq3',
+      },
+    ],
+  },
+
+  shapescorrectq3: {
+  botPrompt: 'Hurray! <strong>"Circle"</strong> is the correct answer ! 😎',
+  answers: [
+    {
+      nextId: 'shapes'+shuffledNumbersto[3],
+    },
+  ],
+  },
+  inshapescorrectq3: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Circle"</strong>',
+  answers: [
+    {
+      nextId: 'shapes'+shuffledNumbersto[3],
+    },
+  ],
+  },
+
+  //4
+  ['shapes'+shuffledNumbersto[3]]: {
+  botPrompt: 'How many sides does a rectangle have? ',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['1', '2', "3","4"]),
+  answers: [
+    {
+      answer: '1',
+      nextId: 'inshapescorrectq4',
+    },
+    {
+      answer: '2',
+      nextId: 'inshapescorrectq4',
+    },
+    {
+      answer: "3",
+      nextId: 'inshapescorrectq4',
+    },
+    {
+      answer: "4",
+      nextId: 'shapescorrectq4',
+    },
+  ],
+  },
+  
+  shapescorrectq4: {
+  botPrompt: 'Hurray! <strong>4</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'shapes'+shuffledNumbersto[4],
+    },
+  ],
+  },
+  inshapescorrectq4: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
+  answers: [
+    {
+      nextId: 'shapes'+shuffledNumbersto[4],
+    },
+  ],
+  },
+  
+  //5
+  ['shapes'+shuffledNumbersto[4]]: {
+  botPrompt: 'How many corners does a triangle have?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  
+  input: selectField(['2', '3', "4","5"]),
+  answers: [
+    {
+      answer: '2',
+      nextId: 'inshapescorrectq5',
+    },
+    {
+      answer: '3',
+      nextId: 'shapescorrectq5',
+    },
+    {
+      answer: "4",
+      nextId: 'inshapescorrectq5',
+    },
+    {
+      answer: "5",
+      nextId: 'inshapescorrectq5',
+    },
+  ],
+  },
+  
+  shapescorrectq5: {
+  botPrompt: 'Hurray! <strong>3</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'shapes'+shuffledNumbersto[5],
+    },
+  ],
+  },
+  inshapescorrectq5: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"3"</strong>',
+  answers: [
+    {
+      nextId: 'shapes'+shuffledNumbersto[5],
+    },
+  ],
+  },
+  
+  //6
+  ['shapes'+shuffledNumbersto[5]]: {
+  botPrompt: 'Which shape has 3 sides?',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['Circle', 'Rectangle', "Square","Triangle"]),
+  answers: [
+    {
+      answer: 'Circle',
+      nextId: 'inshapescorrectq6',
+    },
+    {
+      answer: 'Rectangle',
+      nextId: 'inshapescorrectq6',
+    },
+    {
+      answer: "Square",
+      nextId: 'inshapescorrectq6',
+    },
+    {
+      answer: "Triangle",
+      nextId: 'shapescorrectq6',
+    },
+  ],
+  },
+  
+  shapescorrectq6: {
+  botPrompt: 'Hurray! <strong>Triangle</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'shapes'+shuffledNumbersto[6],
+    },
+  ],
+  },
+  inshapescorrectq6: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Triangle"</strong>',
+  answers: [
+    {
+      nextId: 'shapes'+shuffledNumbersto[6],
+    },
+  ],
+  },
+  
+  //7
+  ['shapes'+shuffledNumbersto[6]]: {
+  botPrompt: 'Which shape has straight sides and four corners?',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['Circle', 'Rectangle', "Square","Triangle"]),
+  answers: [
+    {
+      answer: 'Circle',
+      nextId: 'inshapescorrectq7',
+    },
+    {
+      answer: 'Rectangle',
+      nextId: 'inshapescorrectq7',
+    },
+    {
+      answer: "Square",
+      nextId: 'shapescorrectq7',
+    },
+    {
+      answer: "Triangle",
+      nextId: 'inshapescorrectq7',
+    },
+  ],
+  },
+
+  shapescorrectq7: {
+  botPrompt: 'Hurray! <strong>Square</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'shapes'+shuffledNumbersto[7],
+    },
+  ],
+  },
+  inshapescorrectq7: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Square"</strong>',
+  answers: [
+    {
+      nextId: 'shapes'+shuffledNumbersto[7],
+    },
+  ],
+  },
+  
+  
+  //8
+  ['shapes'+shuffledNumbersto[7]]: {
+  botPrompt: 'Which shape has no sides or corners?',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['Circle', 'Rectangle', "Square","Triangle"]),
+  answers: [
+    {
+      answer: 'Circle',
+      nextId: 'shapescorrectq8',
+    },
+    {
+      answer: 'Rectangle',
+      nextId: 'inshapescorrectq8',
+    },
+    {
+      answer: "Square",
+      nextId: 'inshapescorrectq8',
+    },
+    {
+      answer: "Triangle",
+      nextId: 'inshapescorrectq8',
+    },
+  ],
+  },
+  
+  shapescorrectq8: {
+  botPrompt: 'Hurray! <strong>Circle</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'shapes'+shuffledNumbersto[8],
+    },
+  ],
+  },
+  inshapescorrectq8: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Circle"</strong>',
+  answers: [
+    {
+      nextId: 'shapes'+shuffledNumbersto[8],
+    },
+  ],
+  },
+  
+  //9
+  ['shapes'+shuffledNumbersto[8]]: {
+  botPrompt: 'How many corners does a square have?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['4', '5', "6","7"]),
+  answers: [
+    {
+      answer: '4',
+      nextId: 'shapescorrectq9',
+    },
+    {
+      answer: '5',
+      nextId: 'inshapescorrectq9',
+    },
+    {
+      answer: "6",
+      nextId: 'inshapescorrectq9',
+    },
+    {
+      answer: "7",
+      nextId: 'inshapescorrectq9',
+    },
+  ],
+  },
+  
+  shapescorrectq9: {
+  botPrompt: 'Hurray! <strong>4</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'shapes'+shuffledNumbersto[9],
+    },
+  ],
+  },
+  inshapescorrectq9: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
+  answers: [
+    {
+      nextId: 'shapes'+shuffledNumbersto[9],
+    },
+  ],
+  },
+  
+  
+  //10
+  ['shapes'+shuffledNumbersto[9]]: {
+  botPrompt: 'What is the shape of a laddoo?',
+  type: RTypes.TRANSFORMED_TEXT,
+
+  input: selectField(['Circle', 'Rectangle', "Square","Triangle"]),
+  answers: [
+    {
+      answer: 'Circle',
+      nextId: 'shapescorrectq10',
+    },
+    {
+      answer: 'Rectangle',
+      nextId: 'inshapescorrectq10',
+    },
+    {
+      answer: "Square",
+      nextId: 'inshapescorrectq10',
+    },
+    {
+      answer: "Triangle",
+      nextId: 'inshapescorrectq10',
+    },
+  ],
+  
+  },
+  
+  shapescorrectq10: {
+  botPrompt: 'Hurray! <strong>Circle</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'wishToContinue49'
+    },
+  ],
+  },
+  inshapescorrectq10: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Circle"</strong>',
+  answers: [
+    {
+      nextId: 'wishToContinue49'
+    },
+  ],
+  },
+
+  //endshapesletter
+  wishToContinue49: {
+    botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
+    input: selectField(['Yes!', 'No!']),
+    answers: [
+        {
+          answer: 'Yes!',
+          nextId: 'day50',
+        },
+        {
+          answer: 'No!',
+          nextId: 'endConv',
+  
+        },
+    ],
+  },
+//day50
+day50: {
+  botPrompt: '<strong> Day 50 : </strong> Activity',
+  answers: [
+          { nextId: 'day50comment' },
+  ],
+  sumToBags: [{ name: 'd', points: 50 }],
+
+},
+day50comment: {
+  botPrompt: 'Pages from the book ',
+  answers: [
+          { nextId: 'wishtocontinue50' },
+  ],
+},
+
+wishtocontinue50: {
+  botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
+  input: selectField(['Yes!', 'No!']),
+  answers: [
+      {
+        answer: 'Yes!',
+        nextId: 'endConv',
+      },
+      {
+        answer: 'No!',
+        nextId: 'endConv',
+
+      },
+  ],
+},
 
 endConv: {
   botPrompt: 'Thank you Will Meet you tomorrow ',
