@@ -106,15 +106,7 @@ const questions = {
       },
     ],
   },
- Welcomeback: {
-  botPrompt: welcomebackgif,
-  type: RTypes.MEDIA,
-    answers: [
-      {
-        nextId: 'day1',
-      },
-    ],
-  },
+
 
   yourName: {
     botPrompt: 'So, What`s your name?',
@@ -223,6 +215,19 @@ tfidgenrationtext: {
     },
   ],
 },
+
+
+Welcomeback: {
+  botPrompt: 'Welcome Back.@varName ',
+  type: RTypes.TRANSFORMED_TEXT,
+  varName: 'userName',
+  answers: [
+    {
+      nextId: "opposites"+shuffleArraylot[0],
+    },
+  ],
+},
+
 
 
 
@@ -4041,7 +4046,6 @@ endConv: {
 
 
 };
-
 
 
 

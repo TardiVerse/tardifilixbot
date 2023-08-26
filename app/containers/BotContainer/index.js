@@ -77,7 +77,7 @@ signup = () => {
 
 fetch(
     // `https://devapitardifilix-6bf804c0e6f9.herokuapp.com/chatbot/save/TF2601/hjgbjhg`,
-    `https://devapitardifilix-6bf804c0e6f9.herokuapp.com/auth/signUp`,
+    `http://filibot.ap-south-1.elasticbeanstalk.com/auth/signUp`,
     {
       method: 'POST',
 
@@ -122,7 +122,7 @@ saveChatList = () => {
     let daycount=this.props.botContainer.bags.d;
     fetch(
       // `https://devapitardifilix-6bf804c0e6f9.herokuapp.com/chatbot/save/TF2601/hjgbjhg`,
-      `https://devapitardifilix-6bf804c0e6f9.herokuapp.com/chatbot/save/TF2601/${dbid}`,
+      `http://filibot.ap-south-1.elasticbeanstalk.com/chatbot/save/TF2601/${dbid}`,
       {
         method: 'POST',
 

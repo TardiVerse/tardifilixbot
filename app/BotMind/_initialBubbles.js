@@ -13,8 +13,8 @@ export const getInitialBubble = () => {
   } else {
     // Session data is set to 'someValue', return an alternate bubble
     return {
-      hash: questions[sessionDay], // Change this to the appropriate hash
-      key: sessionDay
+      hash: questions["Welcomeback"], // Change this to the appropriate hash
+      key: "Welcomeback"
     };
   }
 };
@@ -33,8 +33,8 @@ export const getRestartBubble = () => {
   } else {
     // Session data is set to 'someValue', return an alternate bubble
     return {
-      hash: questions[sessionDay], // Change this to the appropriate hash
-      key: sessionDay
+      hash: questions["Welcomeback"], // Change this to the appropriate hash
+      key: "Welcomeback"
     };
   }
 };
