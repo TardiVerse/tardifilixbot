@@ -1,20 +1,20 @@
-day49: {
+day1: {
   botPrompt: '<strong> Day 49 : </strong> Shapes play a crucial role in kindergarten as they lay the foundation for understanding the world around us',
   answers: [
-          { nextId: 'day49link' },
+          { nextId: 'day1ushvshgb' },
   ],
 },
-day49link: {
+day1ushvshgb: {
 
-  botPrompt: 'https://youtu.be/RM1rc5j-sww',
+  botPrompt: 'https://youtu.be/WzyELzv_CRQ',
   type: RTypes.LINK,
   answers: [
-          { nextId: 'day492comment' },
+          { nextId: 'sdggsdyuf' },
   ],
 },
 
-day492comment: {
-  botPrompt: 'Let’s look into the pages of the book',
+sdggsdyuf: {
+  botPrompt: 'Along with exercising children learn essential English vocabulary and action words which they will soon use in sentences.',
   answers: [
           { nextId: 'day492link' },
   ],
@@ -72,6 +72,7 @@ day492link: {
     ],
   },
   
+  //2
   ['shapes'+shuffledNumbersto[1]]: {
     botPrompt: 'Which shape has four sides of equal length?',
     type: RTypes.TRANSFORMED_TEXT,
