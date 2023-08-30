@@ -121,7 +121,7 @@ saveChatList = () => {
     const dbid = localStorage.getItem('dbid');
     let daycount=this.props.botContainer.bags.d;
     fetch(
-      // `https://devapitardifilix-6bf804c0e6f9.herokuapp.com/chatbot/save/TF2601/hjgbjhg`,
+     
       `https://api.filibot.org/chatbot/save/TF2601/${dbid}`,
       {
         method: 'POST',
