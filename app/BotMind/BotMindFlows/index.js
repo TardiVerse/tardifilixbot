@@ -31,7 +31,7 @@ const numbers = Array.from({ length: 34 }, (_, i) => i + 1);
 // Shuffle the array
 const shuffledNumbers = shuffleArray(numbers);
 
-
+//checked indexjs
 function shuffleArrayto(array) {
   const shuffledArrayto = array.slice();
   for (let i = shuffledArrayto.length - 1; i > 0; i--) {
