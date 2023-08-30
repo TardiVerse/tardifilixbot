@@ -41790,11 +41790,11 @@ day283comment: {
       day31: {
         botPrompt: '<strong> Day 30 : </strong> Monster box addition in kindergarten is a playful and engaging way to introduce children to basic math concepts',
         answers: [
-                { nextId: 'day31link' },
+                { nextId: 'day31linknew' },
         ],
       },
       
-      day31link: {
+      day31linknew: {
         botPrompt: 'https://youtu.be/8r9-bUm96kY',
         type: RTypes.LINK,
         answers: [
