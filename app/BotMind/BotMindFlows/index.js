@@ -11,7 +11,6 @@ import * as RTypes from '../responseTypes';
 import apple from './assest/apple.jpg';
 import orange from './assest/orange.jpg';
 import pomegranate from './assest/pomegranate.jpg';
-import welcomebackgif from './assest/welcomeback.gif';
 
 const common_greetings = /(^hello|^hllo|^hi|^hey|^hola|^sup)\b\s?.*$/i;
 const common_greetings_negative = /(?!(^hello|^hi|^hey|^hllo|^sup|^hola)\b)\w+/i;
@@ -214,15 +213,6 @@ const questions = {
       {
         answer: common_greetings_negative,
         catchTFID: true,
-        nextId: 'Welcomeback',
-      },
-    ],
-  },
- Welcomeback: {
-  botPrompt: welcomebackgif,
-  type: RTypes.MEDIA,
-    answers: [
-      {
         nextId: 'day1',
       },
     ],
