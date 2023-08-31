@@ -150,25 +150,26 @@ const questions = {
     ],
   },
   emailcollection: {
-      botPrompt: 'Please enter<strong> your 📧 email id </strong>?',
-      input: textField(),
-      answers: [
-        {
-          answer: common_greetings_negative,  
-          nextId: 'mobilecollection',
-        },
-      ],
-  },
-  mobilecollection: {
-    botPrompt: 'Please enter<strong> your Mobile Number </strong>?',
+    botPrompt: 'Please enter<strong> your 📧 email id </strong>?',
     input: textField(),
-    
     answers: [
       {
         answer: common_greetings_negative,  
-        nextId: 'chooseclass',
+        catchMail:true,
+        nextId: 'mobilecollection',
       },
     ],
+},
+mobilecollection: {
+  botPrompt: 'Please enter<strong> your Mobile Number </strong>?',
+  input: textField(),
+  answers: [
+    {
+      answer: common_greetings_negative,  
+      catchPhone:true,
+      nextId: 'chooseclass',
+    },
+  ],
 },
 chooseclass: {
   botPrompt: 'Choose your <strong>Class</strong> @varName  ?',
