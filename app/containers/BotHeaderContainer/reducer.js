@@ -8,7 +8,7 @@ import { fromJS } from 'immutable';
 import * as C from './constants';
 
 const initialState = fromJS({
-  botName: 'FiliBot Assessment',
+  botName: 'FiliBot Day Class',
   active: true,
   expanded: false,
 });
