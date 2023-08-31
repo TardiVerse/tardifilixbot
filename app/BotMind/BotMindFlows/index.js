@@ -172,7 +172,7 @@ const questions = {
 
 
   myPurpose: {
-    botPrompt: '<strong>Education For All </strong> (EFA) team of Filix School of Education has asked me to help you!',
+    botPrompt: '<strong>Education For All </strong> (EFA) team of Filix School of Education has asked me to help you !',
     answers: [
       {
         nextId: 'imageshare',
