@@ -1,13 +1,13 @@
 const recommendationBags = [
 	{
-		name: "ac",
+		name: "c",
 		defaultValue: 0,
-		goToBubbleId: "ac",
+		goToBubbleId: "c",
 	},
 	{
-		name: "ai",
+		name: "i",
 		defaultValue: 0,
-		goToBubbleId: "ai",
+		goToBubbleId: "i",
 	},
 	{
 		name: "d",
