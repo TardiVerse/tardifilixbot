@@ -62,6 +62,7 @@ module.exports = require('./webpack.base.babel')({
       },
 
       // Removes warning for about `additional` section usage
+      
       safeToUseOptionalCaches: true,
 
       AppCache: false,
