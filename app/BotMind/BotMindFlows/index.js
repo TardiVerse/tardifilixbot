@@ -162,6 +162,7 @@ const questions = {
   mobilecollection: {
     botPrompt: 'Please enter<strong> your Mobile Number </strong>?',
     input: textField(),
+    
     answers: [
       {
         answer: common_greetings_negative,  

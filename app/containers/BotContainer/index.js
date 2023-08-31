@@ -18,7 +18,7 @@ export class BotContainer extends React.Component { // eslint-disable-line react
   constructor(props) {
     super(props);
     this.state = {
-      botnameonfly: 'filibot Assessment',
+      botnameonfly: 'filibot Demo',
       pathname: window.location.pathname,
       signupnotdone:true,
       dbid:"",
@@ -76,7 +76,7 @@ signup = () => {
 
 
 fetch(
-    // `https://devapitardifilix-6bf804c0e6f9.herokuapp.com/chatbot/save/TF2601/hjgbjhg`,
+    
     `https://api.filibot.org/auth/signUp`,
     {
       method: 'POST',
@@ -121,7 +121,6 @@ saveChatList = () => {
     const dbid = localStorage.getItem('dbid');
     let daycount=this.props.botContainer.bags.d;
     fetch(
-      // `https://devapitardifilix-6bf804c0e6f9.herokuapp.com/chatbot/save/TF2601/hjgbjhg`,
       `https://api.filibot.org/chatbot/save/TF2601/${dbid}`,
       {
         method: 'POST',
@@ -157,7 +156,7 @@ saveChatList = () => {
     return (
       <div>
         <Helmet
-          title="FiliBot Assessment"
+          title="FiliBot Demo"
           meta={[
             { name: 'description', content: 'Description of BotContainer' },
           ]}
