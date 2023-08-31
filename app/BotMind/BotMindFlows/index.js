@@ -484,7 +484,5 @@ day123q: {
 
 
 
-console.log("myrand",questions)
-
 
 export default questions;
