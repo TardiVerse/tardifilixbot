@@ -8,9 +8,7 @@ import {
   endOfConversation,
 } from '../StateFormatter';
 import * as RTypes from '../responseTypes';
-import apple from './assest/apple.jpg';
-import orange from './assest/orange.jpg';
-import pomegranate from './assest/pomegranate.jpg';
+
 
 const common_greetings = /(^hello|^hllo|^hi|^hey|^hola|^sup)\b\s?.*$/i;
 const common_greetings_negative = /(?!(^hello|^hi|^hey|^hllo|^sup|^hola)\b)\w+/i;
@@ -207,6 +205,9 @@ const questions = {
       },
     ],
   },
+
+
+  
 
   tardiidcollection: {
     botPrompt: 'Do you have TardiFilix ID ?',

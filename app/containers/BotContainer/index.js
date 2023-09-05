@@ -96,7 +96,10 @@ fetch(
     .then((res) => {
       if (res.status === true) {
         this.setState({ signupnotdone: false,dbid:res.id });
+        localStorage.setItem('tfid',res.tardi_id);
         localStorage.setItem('dbid', res.id);
+ const dayadd= parseInt(res.day)+1;
+ localStorage.setItem('dayc', "day"+dayadd);
         console.log(res.status);
       } else {
         console.log('Failed');
