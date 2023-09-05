@@ -184,6 +184,25 @@ const questions = {
     type: RTypes.MEDIA,
     answers: [
       {
+        nextId: 'usertype',
+      },
+    ],
+  },
+  usertype: {
+    botPrompt: 'you are ?',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['Student', "Parent","Teacher"]),
+    answers: [
+      {
+        answer: 'Student',
+        nextId: 'tardiidcollection',
+      },
+      {
+        answer: "Parent",
+        nextId: 'tardiidcollection',
+      },
+      {
+        answer: "Teacher",
         nextId: 'tardiidcollection',
       },
     ],
@@ -294,63 +313,13 @@ chooseclass: {
   botPrompt: 'Choose your <strong>Class</strong> @varName  ?',
   type: RTypes.TRANSFORMED_TEXT,
   varName: 'userName',
-  input: tagsField(['Pre-kG','L.K.G','U.K.G','CLASS I','CLASS II', 'CLASS III','CLASS IV','CLASS V','CLASS VI','CLASS VII','CLASS VIII','CLASS IX','CLASS X']),
+  input: selectField(['FLN','Pre-kG','L.K.G','U.K.G','CLASS I','CLASS II', 'CLASS III','CLASS IV','CLASS V','CLASS VI','CLASS VII','CLASS VIII','CLASS IX','CLASS X']),
   answers: [
           { nextId: 'tfidgenration' },
   ],
 },
 
-chooseapple: {
-  botPrompt: "From the below options find an Apple?",
-  input: imageSelectField(
-    [
-      { label: 'Apple', image: apple },
-      { label: 'Orange', image: orange },
-      { label: 'Pomegranate', image: pomegranate },
-    ],
-    'Select any one:'
-  ),
-  answers: [
-    {
-      answer: 'Apple',
-      nextId: 'choosecorrect',
-    },
-    {
-      answer: 'Orange',
-      nextId: 'chooseincorrect',
-    },
-    {
-      answer: 'Pomegranate',
-      nextId: 'chooseincorrect',
-    },
-  ],
-},
-choosecorrect: {
-  botPrompt: 'Hurray you have Choosed the correct answer  ! 😎',
-  answers: [
-    {
-      nextId: 'tfidgenration',
-    },
-  ],
-},
 
-chooseincorrect: {
-  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is ',
-  answers: [
-    {
-      nextId: 'chooseincorrectans',
-    },
-  ],
-},
-chooseincorrectans: {
-  botPrompt: apple,
-  type: RTypes.MEDIA,
-  answers: [
-    {
-      nextId: 'tfidgenration',
-    },
-  ],
-},
 tfidgenration: {
   botPrompt: 'Your TFID is <strong>'+ random12DigitNumber +'</strong> .',
   answers: [
