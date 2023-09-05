@@ -207,7 +207,7 @@ const questions = {
   },
 
 
-  
+
 
   tardiidcollection: {
     botPrompt: 'Do you have TardiFilix ID ?',
@@ -316,8 +316,90 @@ chooseclass: {
   varName: 'userName',
   input: selectField(['FLN','Pre-kG','L.K.G','U.K.G','CLASS I','CLASS II', 'CLASS III','CLASS IV','CLASS V','CLASS VI','CLASS VII','CLASS VIII','CLASS IX','CLASS X']),
   answers: [
-          { nextId: 'tfidgenration' },
-  ],
+    {
+      answer: 'Pre-kG',
+      nextId: 'tfidgenration',
+
+
+    },
+    {
+      answer: 'L.K.G',
+      nextId: 'tfidgenration',
+
+
+    },
+    {
+      answer: 'U.K.G',
+      nextId: 'tfidgenration',
+
+
+    },
+    {
+      answer: 'CLASS I',
+      nextId: 'tfidgenration',
+
+
+    },
+    {
+      answer: 'CLASS II',
+      nextId: 'tfidgenration',
+
+
+    },
+    {
+      answer: 'CLASS III',
+      nextId: 'tfidgenration',
+
+
+    },
+    {
+      answer: 'CLASS IV',
+      nextId: 'tfidgenration',
+
+
+    },
+    {
+      answer: 'CLASS V',
+      nextId: 'tfidgenration',
+
+
+    },
+    {
+      answer: 'CLASS VI',
+      nextId: 'tfidgenration',
+
+
+    },
+    {
+      answer: 'CLASS VII',
+      nextId: 'tfidgenration',
+
+
+    },
+    {
+      answer: 'CLASS VIII',
+      nextId: 'tfidgenration',
+
+
+    },
+    {
+      answer: 'CLASS IX',
+      nextId: 'tfidgenration',
+
+
+    },
+    {
+      answer: 'CLASS X',
+      nextId: 'tfidgenration',
+
+
+    },
+    {
+      answer: 'FLN',
+      nextId: 'flnlink',
+    },
+
+],
 },
 
 
@@ -29378,6 +29460,26 @@ endConv: {
   answers: [
     {
       nextId: 'endConv',
+    },
+  ],
+},
+
+flnlink: {
+  botPrompt: 'https://fln.filibot.org/',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'flnend',
+    },
+  ],
+},
+
+flnend: {
+  botPrompt: 'Thank you click on above link to access FLN ',
+  input: endOfConversation(),
+  answers: [
+    {
+      nextId: 'flnend',
     },
   ],
 },

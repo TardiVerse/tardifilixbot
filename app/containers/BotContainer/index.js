@@ -69,6 +69,49 @@ if(dbid !== null)
     this.props.initConversation();
   }
 
+
+//login
+
+login = () => {
+
+
+  fetch(
+      // `https://devapitardifilix-6bf804c0e6f9.herokuapp.com/chatbot/save/TF2601/hjgbjhg`,
+      `https://api.filibot.org/auth/signUp`,
+      {
+        method: 'POST',
+  
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: this.props.botContainer.userName,
+          sessId: this.state.id,
+          mobile_no: this.props.botContainer.userPhone,
+          email_id: this.props.botContainer.userEmail,
+        }),
+      }
+    )
+      .then((response) => response.json())
+      .then((res) => {
+        if (res.status === true) {
+          this.setState({ signupnotdone: false,dbid:res.id });
+          localStorage.setItem('tfid',res.tardi_id);
+          localStorage.setItem('dbid', res.id);
+   const dayadd= parseInt(res.day)+1;
+   localStorage.setItem('dayc', "day"+dayadd);
+          console.log(res.status);
+        } else {
+          console.log('Failed');
+        }
+      });
+  
+  
+  };
+
+
+
 //signup
 
 signup = () => {
