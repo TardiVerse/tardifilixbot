@@ -205,15 +205,15 @@ usertype: {
   answers: [
     {
       answer: 'Student',
-      nextId: 'tardiidcollection',
+      nextId: 'tfidgenration',
     },
     {
       answer: "Parent",
-      nextId: 'tardiidcollection',
+      nextId: 'tfidgenration',
     },
     {
       answer: "Teacher",
-      nextId: 'tardiidcollection',
+      nextId: 'tfidgenration',
     },
   ],
 },
