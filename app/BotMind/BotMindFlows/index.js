@@ -186,16 +186,35 @@ chooseclass: {
   varName: 'userName',
   input: tagsField(['Pre-kG','L.K.G','U.K.G','CLASS I','CLASS II', 'CLASS III','CLASS IV','CLASS V','CLASS VI','CLASS VII','CLASS VIII','CLASS IX','CLASS X']),
   answers: [
-          { nextId: 'choosedistrict' },
+          { nextId: 'choosestate' },
   ],
 },
-choosedistrict: {
-  botPrompt: 'Choose your <strong>District</strong> @varName  ?',
+choosestate: {
+  botPrompt: 'Choose your <strong>State</strong>   ?',
   type: RTypes.TRANSFORMED_TEXT,
-  varName: 'userName',
-  input: tagsField(['Bankura','Birbhum','Hooghly']),
+  input: tagsField(['Andaman and Nicobar Islands', 'Andhra Pradesh', 'Arunachal Pradesh', 'Assam', 'Bihar', 'Chandigarh', 'Chattisgarh', 'Dadra and Nagar Haveli and Daman and Diu', 'Delhi', 'Goa', 'Gujarat', 'Haryana', 'Himachal Pradesh', 'Jammu and Kashmir', 'Jharkhand', 'Karnataka', 'Kerala', 'Ladakh', 'Lakshadweep', 'Madhya Pradesh', 'Maharashtra', 'Manipur', 'Meghalaya', 'Mizoram', 'Nagaland', 'Odisha', 'Puducherry', 'Punjab', 'Rajasthan', 'Sikkim', 'Tamil Nadu', 'Telangana', 'Tripura', 'Uttar Pradesh', 'Uttarakhand', 'West Bengal']),
   answers: [
-          { nextId: 'tfidgenration' },
+          { nextId: 'usertype' },
+  ],
+},
+
+usertype: {
+  botPrompt: 'you are ?',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['Student', "Parent","Teacher"]),
+  answers: [
+    {
+      answer: 'Student',
+      nextId: 'tardiidcollection',
+    },
+    {
+      answer: "Parent",
+      nextId: 'tardiidcollection',
+    },
+    {
+      answer: "Teacher",
+      nextId: 'tardiidcollection',
+    },
   ],
 },
 
