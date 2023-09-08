@@ -728,7 +728,7 @@ input: selectField(['Dirty', 'Funny', "Brave","Angry"]),
   answers: [
     {
       answer: 'Dirty',
-      nextId: 'oppositescorrectqAngry',
+      nextId: 'oppositescorrectq10',
         sumToBags: [{ name: 'ac', points: 1 }],
 
     },
