@@ -155,9 +155,21 @@ const questions = {
     type: RTypes.TRANSFORMED_TEXT,
     varName: 'userName',
     answers: [
-            { nextId: 'emailcollection' },
+            { nextId: 'teacherid' },
     ],
   },
+  teacherid: {
+    botPrompt: 'Please enter<strong> your Teacher id! </strong>?',
+    input: textField(),
+    answers: [
+      {
+        answer: common_greetings_negative,  
+        catchCompanyName:true,
+        nextId: 'emailcollection',
+      },
+    ],
+},
+
   emailcollection: {
       botPrompt: 'Please enter<strong> your 📧 email id </strong>?',
       input: textField(),

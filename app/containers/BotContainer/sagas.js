@@ -120,7 +120,7 @@ export function* sendMessageFromUserNow(action) {
           foundNames.push(finding);
         }
       });
-      const companyName = foundNames[0] || 'Really';
+      const companyName = userMessage;
       yield put(saveCompanyName(companyName));
     }
 

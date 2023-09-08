@@ -86,6 +86,7 @@ fetch(
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
+        teaid:this.props.botContainer.companyName,
         name: this.props.botContainer.userName,
         sessId: this.state.id,
         mobile_no: this.props.botContainer.userPhone,
