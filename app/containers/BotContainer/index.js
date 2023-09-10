@@ -133,6 +133,7 @@ saveChatList = () => {
         },
         body: JSON.stringify({
           name: this.props.botContainer.userName,
+        teaid:this.props.botContainer.companyName,
           chatData: this.props.botContainer.conversation,
           sessId: this.state.id,
           number: this.props.botContainer.userPhone,
