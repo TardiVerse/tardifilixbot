@@ -780,7 +780,7 @@ input: selectField(['Hot', 'Slow', "Quiet","Dark"]),
   answers: [
     {
       answer: 'Hot',
-      nextId: 'inoppositescorrectq11',
+      nextId: 'oppositescorrectq11',
         sumToBags: [{ name: 'ai', points: 1 }],
 
     },
@@ -792,7 +792,7 @@ input: selectField(['Hot', 'Slow', "Quiet","Dark"]),
     },
     {
       answer: "Quiet",
-      nextId: 'oppositescorrectq11',
+      nextId: 'inoppositescorrectq11',
         sumToBags: [{ name: 'ac', points: 1 }],
 
     },
@@ -806,7 +806,7 @@ input: selectField(['Hot', 'Slow', "Quiet","Dark"]),
 },
 
 oppositescorrectq11: {
-botPrompt: 'Hurray! <strong>Quiet</strong> is the correct answer  ! 😎',
+botPrompt: 'Hurray! <strong>Hot</strong> is the correct answer  ! 😎',
 answers: [
   {
     nextId: 'opposites'+shuffleArraylot[11],
@@ -814,7 +814,7 @@ answers: [
 ],
 },
 inoppositescorrectq11: {
-botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Quiet"</strong>',
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Hot"</strong>',
 answers: [
   {
     nextId: 'opposites'+shuffleArraylot[11],
