@@ -8,7 +8,7 @@ injectGlobal`
 ${boilerplateCSS}
 
 body {
-  font-family: sans-serif;
+  font-family: Segoe UI;
   font-size: 14px;
   position: relative;
   background: ${variables.background};
