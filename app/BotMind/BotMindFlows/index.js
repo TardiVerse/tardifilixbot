@@ -1944,7 +1944,7 @@ answers: [
     botPrompt: 'You Have Selected correct Anwser 🎉! <strong>3</strong> 😎',
     answers: [
       {
-        nextId: 'endConv',
+        nextId: 'thisstart',
       },
     ],
     },
@@ -1952,7 +1952,7 @@ answers: [
     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"3"</strong>',
     answers: [
       {
-        nextId: 'endConv',
+        nextId: 'thisstart',
       },
     ],
     },
@@ -1962,6 +1962,105 @@ answers: [
 //endnewquest
 
 //lotendrhymingWordsletter
+
+thisstart: {
+  botPrompt: '"<strong>This</strong>" is used when we talk about an object which is near to us',
+  answers: [
+    {
+      nextId: 'thisexampleimage',
+    },
+  ],
+},
+thisexampleimage: { 
+  botPrompt: 'https://tardimeet.s3.ap-south-1.amazonaws.com/bag.png',
+  type: RTypes.MEDIA,
+  answers: [
+    {
+      nextId: 'thisexampletext',
+    },
+  ],
+},
+thisexampletext: {
+  botPrompt: 'Answer is : <strong>This</strong> (EFA) is a bag.',
+  answers: [
+    {
+      nextId: 'thisexampleimageq',
+    },
+  ],
+},
+thisexampleimageq: { 
+  botPrompt: 'https://tardimeet.s3.ap-south-1.amazonaws.com/orange.jpg',
+  type: RTypes.MEDIA,
+  answers: [
+    {
+      nextId: 'thisq',
+    },
+  ],
+},
+
+thisq: {
+  botPrompt: 'Now try with above Image!',
+  input: textField(),
+  answers: [
+    {
+      answer: common_greetings_negative,
+      catchTFID: true,
+      nextId: 'thatstart',
+    },
+  ],
+},
+
+//that
+
+thatstart: {
+  botPrompt: '"<strong>That</strong>" is used when we talk about an object which is far from us',
+  answers: [
+    {
+      nextId: 'thatexampleimage',
+    },
+  ],
+},
+thatexampleimage: { 
+  botPrompt: 'https://tardimeet.s3.ap-south-1.amazonaws.com/flight.png',
+  type: RTypes.MEDIA,
+  answers: [
+    {
+      nextId: 'thatexampletext',
+    },
+  ],
+},
+thatexampletext: {
+  botPrompt: 'Answer is : <strong>That</strong> (EFA) is an Aeroplane.',
+  answers: [
+    {
+      nextId: 'thatexampleimageq',
+    },
+  ],
+},
+thatexampleimageq: { 
+  botPrompt: 'https://tardimeet.s3.ap-south-1.amazonaws.com/tree.png',
+  type: RTypes.MEDIA,
+  answers: [
+    {
+      nextId: 'thatq',
+    },
+  ],
+},
+
+thatq: {
+  botPrompt: 'Now try with above Image!',
+  input: textField(),
+  answers: [
+    {
+      answer: common_greetings_negative,
+      catchTFID: true,
+      nextId: 'endConv',
+    },
+  ],
+},
+
+
+
 endConv: {
   botPrompt: 'Thank you Will Meet you tomorrow ',
   input: endOfConversation(),
