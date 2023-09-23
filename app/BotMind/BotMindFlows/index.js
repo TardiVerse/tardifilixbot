@@ -185,7 +185,7 @@ chooseclass: {
   botPrompt: 'Choose your <strong>Class</strong> @varName  ?',
   type: RTypes.TRANSFORMED_TEXT,
   varName: 'userName',
-  input: selectField(['Pre-kG','L.K.G','U.K.G','CLASS I','CLASS II', 'CLASS III','CLASS IV','CLASS V','CLASS VI','CLASS VII','CLASS VIII','CLASS IX','CLASS X']),
+  input: selectField(['FLN','Pre-kG','L.K.G','U.K.G','CLASS I','CLASS II', 'CLASS III','CLASS IV','CLASS V','CLASS VI','CLASS VII','CLASS VIII','CLASS IX','CLASS X']),
   answers: [
           { nextId: 'choosestate' },
   ],
