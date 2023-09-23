@@ -1964,7 +1964,7 @@ answers: [
 //lotendrhymingWordsletter
 
 thisstart: {
-  botPrompt: '"<strong>This</strong>" is used when we talk about an object which is near to us',
+  botPrompt: '"<strong>This</strong>" is used when we talk about an object which is near to us. 🕺 --> 🎒 ',
   answers: [
     {
       nextId: 'thisexampleimage',
@@ -2013,7 +2013,7 @@ thisq: {
 //that
 
 thatstart: {
-  botPrompt: '"<strong>That</strong>" is used when we talk about an object which is far from us',
+  botPrompt: '"<strong>That</strong>" is used when we talk about an object which is far from us 🕺 -----------------> ✈️',
   answers: [
     {
       nextId: 'thatexampleimage',
