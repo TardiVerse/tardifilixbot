@@ -1,7 +1,7 @@
 import questions from './BotMindFlows/';
 
 export const getInitialBubble = () => {
-  const sessionDay = localStorage.getItem('dayc'); // Replace 'yourSessionKey' with the actual key you're using
+  const sessionDay = localStorage.getItem('dbid'); // Replace 'yourSessionKey' with the actual key you're using
 
 
   if (sessionDay === null) {
@@ -21,7 +21,7 @@ export const getInitialBubble = () => {
 
 
 export const getRestartBubble = () => {
-  const sessionDay = localStorage.getItem('dayc'); // Replace 'yourSessionKey' with the actual key you're using
+  const sessionDay = localStorage.getItem('dbid'); // Replace 'yourSessionKey' with the actual key you're using
 
 
   if (sessionDay === null) {
