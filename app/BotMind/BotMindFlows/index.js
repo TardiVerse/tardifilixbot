@@ -1090,7 +1090,7 @@ answers: [
   botPrompt: 'You Have Selected correct Anwser 🎉! <strong>Short</strong> 😎',
   answers: [
     {
-      nextId: 'fln'+shuffleArraylot[20],
+      nextId: 'fln'+shuffleArraylot[21],
     },
   ],
   },
@@ -1098,52 +1098,12 @@ answers: [
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Short"</strong>',
   answers: [
     {
-      nextId: 'fln'+shuffleArraylot[20],
+      nextId: 'fln'+shuffleArraylot[21],
     },
   ],
   },
   
-  //21
-  ["fln"+shuffleArraylot[20]]: {
-    botPrompt: 'Short',
-    type: RTypes.TRANSFORMED_TEXT,
-    input: selectField(['Short', 'Young', "Soft","Full"]),
-  answers: [
-    {
-      answer: 'Short',
-      nextId: 'inflncorrectq21',
-    },
-    {
-      answer: 'Young',
-      nextId: 'inflncorrectq21',
-    },
-    {
-      answer: "Soft",
-      nextId: 'flncorrectq21',
-    },
-    {
-      answer: "Full",
-      nextId: 'inflncorrectq21',
-    },
-  ],
-  },
-  flncorrectq21: {
-    botPrompt: 'Hurray <strong>Soft</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'fln'+shuffleArraylot[21],
-      },
-    ],
-  },
-  inflncorrectq21: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Soft"</strong>',
-    answers: [
-      {
-        nextId: 'fln'+shuffleArraylot[21],
-      },
-    ],
-  },
-  
+
   //22
   ['fln'+shuffleArraylot[21]]: {
     botPrompt: 'Opposite of "old"',
@@ -1753,8 +1713,7 @@ answers: [
     ['fln'+shuffleArraylot[35]]: {
       botPrompt: 'What is the number formed by the digits 6, 3, and 7?',
       type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['367', '376', "736","763"]),
+    input: selectField(['367', '376', '736','763']),
     answers: [
       {
         answer: '367',
@@ -1765,11 +1724,11 @@ answers: [
         nextId: 'inonceTensHundredscorrectq36',
       },
       {
-        answer: "736",
+        answer: '736',
         nextId: 'inonceTensHundredscorrectq36',
       },
       {
-        answer: "48",
+        answer: '763',
         nextId: 'inonceTensHundredscorrectq36',
       },
     ],
