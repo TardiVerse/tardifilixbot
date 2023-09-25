@@ -260,18 +260,22 @@ Welcomeback: {
     {
       answer: 'is',
       nextId: 'flncorrect',
+      sumToBags: [{ name: 'ac', points: 1 }],
     },
     {
       answer: 'are',
       nextId: 'inflncorrect',
+      sumToBags: [{ name: 'ai', points: 1 }],
     },
     {
       answer: "here",
       nextId: 'inflncorrect',
+      sumToBags: [{ name: 'ai', points: 1 }],
     },
     {
       answer: "where",
       nextId: 'inflncorrect',
+      sumToBags: [{ name: 'ai', points: 1 }],
     },
   ],
 },
@@ -301,18 +305,22 @@ inflncorrect: {
     {
       answer: 'are',
       nextId: 'flncorrectq2',
+      sumToBags: [{ name: 'ac', points: 1 }],
     },
     {
       answer: 'is',
       nextId: 'inflncorrectq2',
+      sumToBags: [{ name: 'ai', points: 1 }],
     },
     {
       answer: "here",
       nextId: 'inflncorrectq2',
+      sumToBags: [{ name: 'ai', points: 1 }],
     },
     {
       answer: "where",
       nextId: 'inflncorrectq2',
+      sumToBags: [{ name: 'ai', points: 1 }],
     },
   ],
 },
@@ -344,18 +352,22 @@ input: selectField(['are', 'is', "here","where"]),
     {
       answer: 'are',
       nextId: 'flncorrectq3',
+      sumToBags: [{ name: 'ac', points: 1 }],
     },
     {
       answer: 'is',
       nextId: 'inflncorrectq3',
+      sumToBags: [{ name: 'ai', points: 1 }],
     },
     {
       answer: "here",
       nextId: 'inflncorrectq3',
+      sumToBags: [{ name: 'ai', points: 1 }],
     },
     {
       answer: "where",
       nextId: 'inflncorrectq3',
+      sumToBags: [{ name: 'ai', points: 1 }],
     },
   ],
 },
@@ -387,18 +399,22 @@ input: selectField(['is', 'are', "here","where"]),
     {
       answer: 'is',
       nextId: 'flncorrectq4',
+      sumToBags: [{ name: 'ac', points: 1 }],
     },
     {
       answer: 'are',
       nextId: 'inflncorrectq4',
+      sumToBags: [{ name: 'ai', points: 1 }],
     },
     {
       answer: "here",
       nextId: 'inflncorrectq4',
+      sumToBags: [{ name: 'ai', points: 1 }],
     },
     {
       answer: "where",
       nextId: 'inflncorrectq4',
+      sumToBags: [{ name: 'ai', points: 1 }],
     },
   ],
 },
@@ -430,18 +446,22 @@ input: selectField(['are', 'is', "here","where"]),
     {
       answer: 'are',
       nextId: 'flncorrectq5',
+      sumToBags: [{ name: 'ac', points: 1 }],
     },
     {
       answer: 'is',
       nextId: 'inflncorrectq5',
+      sumToBags: [{ name: 'ai', points: 1 }],
     },
     {
       answer: "here",
       nextId: 'inflncorrectq5',
+      sumToBags: [{ name: 'ai', points: 1 }],
     },
     {
       answer: "where",
       nextId: 'inflncorrectq5',
+      sumToBags: [{ name: 'ai', points: 1 }],
     },
   ],
 },
@@ -473,18 +493,22 @@ answers: [
         {
           answer: '3',
           nextId: 'inflncorrectq6',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
         {
           answer: '2',
           nextId: 'inflncorrectq6',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
         {
           answer: "6",
           nextId: 'inflncorrectq6',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
         {
           answer: "5",
           nextId: 'flncorrectq6',
+          sumToBags: [{ name: 'ac', points: 1 }],
         },
       ],
     },
@@ -516,18 +540,22 @@ answers: [
         {
           answer: '3',
           nextId: 'inflncorrectq7',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
         {
           answer: '4',
           nextId: 'inflncorrectq7',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
         {
           answer: "5",
           nextId: 'inflncorrectq7',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
         {
           answer: "7",
           nextId: 'flncorrectq7',
+          sumToBags: [{ name: 'ac', points: 1 }],
         },
       ],
     },
@@ -560,18 +588,22 @@ answers: [
         {
           answer: '3',
           nextId: 'inflncorrectq8',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
         {
           answer: '4',
           nextId: 'inflncorrectq8',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
         {
           answer: "6",
           nextId: 'flncorrectq8',
+          sumToBags: [{ name: 'ac', points: 1 }],
         },
         {
           answer: "7",
           nextId: 'inflncorrectq8',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
       ],
     },
@@ -603,18 +635,22 @@ answers: [
         {
           answer: '15',
           nextId: 'flncorrectq9',
+          sumToBags: [{ name: 'ac', points: 1 }],
         },
         {
           answer: '13',
           nextId: 'inflncorrectq9',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
         {
           answer: "16",
           nextId: 'inflncorrectq9',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
         {
           answer: "17",
           nextId: 'inflncorrectq9',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
       ],
     },
@@ -647,18 +683,22 @@ answers: [
         {
           answer: '14',
           nextId: 'inflncorrectq10',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
         {
           answer: '11',
           nextId: 'inflncorrectq10',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
         {
           answer: "13",
           nextId: 'flncorrectq10',
+          sumToBags: [{ name: 'ac', points: 1 }],
         },
         {
           answer: "10",
           nextId: 'inflncorrectq10',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
       ],
     
@@ -691,18 +731,22 @@ answers: [
         {
           answer: '14',
           nextId: 'inflncorrectq11',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
         {
           answer: '16',
           nextId: 'inflncorrectq11',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
         {
           answer: "7",
           nextId: 'inflncorrectq11',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
         {
           answer: "17",
           nextId: 'flncorrectq11',
+          sumToBags: [{ name: 'ac', points: 1 }],
         },
       ],
     },
@@ -735,18 +779,22 @@ answers: [
       {
         answer: 'But',
         nextId: 'inflncorrectq12',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
         answer: 'And',
         nextId: 'flncorrectq12',
+        sumToBags: [{ name: 'ac', points: 1 }],
       },
       {
         answer: "Or",
         nextId: 'inflncorrectq12',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
         answer: "Not",
         nextId: 'inflncorrectq12',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
     ],
     },
@@ -778,18 +826,22 @@ answers: [
         {
           answer: 'book and pen',
           nextId: 'flncorrectq13',
+          sumToBags: [{ name: 'ac', points: 1 }],
         },
         {
           answer: 'book or pen',
           nextId: 'inflncorrectq13',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
         {
           answer: "book not pen",
           nextId: 'inflncorrectq13',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
         {
           answer: "book but pen",
           nextId: 'inflncorrectq13',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
       ],
     },
@@ -821,18 +873,22 @@ answers: [
       {
         answer: 'But',
         nextId: 'inflncorrectq14',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
         answer: 'And',
         nextId: 'flncorrectq14',
+        sumToBags: [{ name: 'ac', points: 1 }],
       },
       {
         answer: "Or",
         nextId: 'inflncorrectq14',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
         answer: "Not",
         nextId: 'inflncorrectq14',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
     ],
     },
@@ -865,18 +921,22 @@ answers: [
       {
         answer: 'But',
         nextId: 'inflncorrectq15',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
         answer: 'And',
         nextId: 'flncorrectq15',
+        sumToBags: [{ name: 'ac', points: 1 }],
       },
       {
         answer: "Or",
         nextId: 'inflncorrectq15',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
         answer: "Not",
         nextId: 'inflncorrectq15',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
     ],
     },
@@ -907,18 +967,22 @@ answers: [
         {
           answer: 'flower and butterfly',
           nextId: 'flncorrectq16',
+          sumToBags: [{ name: 'ac', points: 1 }],
         },
         {
           answer: 'flower or butterfly',
           nextId: 'inflncorrectq16',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
         {
           answer: "flower not butterfly",
           nextId: 'inflncorrectq16',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
         {
           answer: "flower but butterfly",
           nextId: 'inflncorrectq16',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
       ],
     },
@@ -948,18 +1012,22 @@ answers: [
       {
         answer: 'Sad',
         nextId: 'flncorrectq17',
+        sumToBags: [{ name: 'ac', points: 1 }],
       },
       {
         answer: 'Funny',
         nextId: 'inflncorrectq17',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
         answer: "Brave",
         nextId: 'inflncorrectq17',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
         answer: "Angry",
         nextId: 'inflncorrectq17',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
     ],
   },
@@ -989,18 +1057,22 @@ answers: [
     {
       answer: 'Far',
       nextId: 'inflncorrectq18',
+      sumToBags: [{ name: 'ai', points: 1 }],
     },
     {
       answer: 'Soft',
       nextId: 'inflncorrectq18',
+      sumToBags: [{ name: 'ai', points: 1 }],
     },
     {
       answer: "Loud",
       nextId: 'flncorrectq18',
+      sumToBags: [{ name: 'ac', points: 1 }],
     },
     {
       answer: "Near",
       nextId: 'inflncorrectq18',
+      sumToBags: [{ name: 'ai', points: 1 }],
     },
   ],
   },
@@ -1030,18 +1102,22 @@ answers: [
     {
       answer: 'Heavy',
       nextId: 'inflncorrectq19',
+      sumToBags: [{ name: 'ai', points: 1 }],
     },
     {
       answer: 'Fast',
       nextId: 'inflncorrectq19',
+      sumToBags: [{ name: 'ai', points: 1 }],
     },
     {
       answer: "Thin",
       nextId: 'flncorrectq19',
+      sumToBags: [{ name: 'ac', points: 1 }],
     },
     {
       answer: "Tall",
       nextId: 'inflncorrectq19',
+      sumToBags: [{ name: 'ai', points: 1 }],
     },
   ],
   },
@@ -1071,18 +1147,22 @@ answers: [
     {
       answer: 'Short',
       nextId: 'flncorrectq20',
+      sumToBags: [{ name: 'ac', points: 1 }],
     },
     {
       answer: 'Young',
       nextId: 'inflncorrectq20',
+      sumToBags: [{ name: 'ai', points: 1 }],
     },
     {
       answer: "Soft",
       nextId: 'inflncorrectq20',
+      sumToBags: [{ name: 'ai', points: 1 }],
     },
     {
       answer: "Full",
       nextId: 'inflncorrectq20',
+      sumToBags: [{ name: 'ai', points: 1 }],
     },
   ],
   },
@@ -1114,18 +1194,22 @@ answers: [
     {
       answer: 'Fast',
       nextId: 'inflncorrectq22',
+      sumToBags: [{ name: 'ai', points: 1 }],
     },
     {
       answer: 'young',
       nextId: 'flncorrectq22',
+      sumToBags: [{ name: 'ac', points: 1 }],
     },
     {
       answer: "Loud",
       nextId: 'inflncorrectq22',
+      sumToBags: [{ name: 'ai', points: 1 }],
     },
     {
       answer: "Bright",
       nextId: 'inflncorrectq22',
+      sumToBags: [{ name: 'ai', points: 1 }],
     },
   ],
   },
@@ -1156,18 +1240,22 @@ answers: [
     {
       answer: 'Short',
       nextId: 'inflncorrectq23',
+      sumToBags: [{ name: 'ai', points: 1 }],
     },
     {
       answer: 'Young',
       nextId: 'inflncorrectq23',
+      sumToBags: [{ name: 'ai', points: 1 }],
     },
     {
       answer: "girl",
       nextId: 'flncorrectq23',
+      sumToBags: [{ name: 'ac', points: 1 }],
     },
     {
       answer: "Full",
       nextId: 'inflncorrectq23',
+      sumToBags: [{ name: 'ai', points: 1 }],
     },
   ],
   },
@@ -1199,18 +1287,22 @@ answers: [
     {
       answer: 'Asleep',
       nextId: 'flncorrectq24',
+      sumToBags: [{ name: 'ac', points: 1 }],
     },
     {
       answer: 'Young',
       nextId: 'inflncorrectq24',
+      sumToBags: [{ name: 'ai', points: 1 }],
     },
     {
       answer: "Soft",
       nextId: 'inflncorrectq24',
+      sumToBags: [{ name: 'ai', points: 1 }],
     },
     {
       answer: "salt",
       nextId: 'inflncorrectq24',
+      sumToBags: [{ name: 'ai', points: 1 }],
     },
   ],
   },
@@ -1243,18 +1335,22 @@ answers: [
       {
         answer: '1',
         nextId: 'inonceTensHundredscorrectq25',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
         answer: '2',
         nextId: 'inonceTensHundredscorrectq25',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
         answer: "4",
         nextId: 'onceTensHundredscorrectq25',
+        sumToBags: [{ name: 'ac', points: 1 }],
       },
       {
         answer: "0",
         nextId: 'inonceTensHundredscorrectq25',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
     ],
     },
@@ -1286,18 +1382,22 @@ answers: [
       {
         answer: '3',
         nextId: 'inonceTensHundredscorrectq26',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
         answer: '7',
         nextId: 'onceTensHundredscorrectq26',
+        sumToBags: [{ name: 'ac', points: 1 }],
       },
       {
         answer: "9",
         nextId: 'inonceTensHundredscorrectq26',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
         answer: "0",
         nextId: 'inonceTensHundredscorrectq26',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
     ],
     },
@@ -1328,18 +1428,22 @@ answers: [
         {
           answer: '5',
           nextId: 'onceTensHundredscorrectq27',
+          sumToBags: [{ name: 'ac', points: 1 }],
         },
         {
           answer: '4',
           nextId: 'inonceTensHundredscorrectq27',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
         {
           answer: "8",
           nextId: 'inonceTensHundredscorrectq27',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
         {
           answer: "0",
           nextId: 'inonceTensHundredscorrectq27',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
       ],
     },
@@ -1371,18 +1475,22 @@ answers: [
       {
         answer: '9',
         nextId: 'inonceTensHundredscorrectq28',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
         answer: '10',
         nextId: 'inonceTensHundredscorrectq28',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
         answer: "11",
         nextId: 'onceTensHundredscorrectq28',
+        sumToBags: [{ name: 'ac', points: 1 }],
       },
       {
         answer: "12",
         nextId: 'inonceTensHundredscorrectq28',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
     ],
     },
@@ -1414,18 +1522,22 @@ answers: [
         {
           answer: '6',
           nextId: 'inonceTensHundredscorrectq29',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
         {
           answer: '10',
           nextId: 'inonceTensHundredscorrectq29',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
         {
           answer: "15",
           nextId: 'onceTensHundredscorrectq29',
+          sumToBags: [{ name: 'ac', points: 1 }],
         },
         {
           answer: "18",
           nextId: 'inonceTensHundredscorrectq29',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
       ],
     },
@@ -1458,18 +1570,22 @@ answers: [
       {
         answer: '285',
         nextId: 'inonceTensHundredscorrectq30',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
         answer: '582',
         nextId: 'inonceTensHundredscorrectq30',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
         answer: "258",
         nextId: 'inonceTensHundredscorrectq30',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
         answer: "852",
         nextId: 'onceTensHundredscorrectq30',
+        sumToBags: [{ name: 'ac', points: 1 }],
       },
     ],
     },
@@ -1501,18 +1617,22 @@ answers: [
         {
           answer: '7',
           nextId: 'inonceTensHundredscorrectq31',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
         {
           answer: '9',
           nextId: 'inonceTensHundredscorrectq31',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
         {
           answer: "10",
           nextId: 'onceTensHundredscorrectq31',
+          sumToBags: [{ name: 'ac', points: 1 }],
         },
         {
           answer: "13",
           nextId: 'inonceTensHundredscorrectq31',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
       ],
     },
@@ -1544,18 +1664,22 @@ answers: [
       {
         answer: '642',
         nextId: 'inonceTensHundredscorrectq32',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
         answer: '426',
         nextId: 'inonceTensHundredscorrectq32',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
         answer: "264",
         nextId: 'inonceTensHundredscorrectq32',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
         answer: "462",
         nextId: 'onceTensHundredscorrectq32',
+        sumToBags: [{ name: 'ac', points: 1 }],
       },
     ],
     },
@@ -1588,18 +1712,22 @@ answers: [
       {
         answer: '5',
         nextId: 'inonceTensHundredscorrectq33',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
         answer: '10',
         nextId: 'onceTensHundredscorrectq33',
+        sumToBags: [{ name: 'ac', points: 1 }],
       },
       {
         answer: "11",
         nextId: 'inonceTensHundredscorrectq33',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
         answer: "12",
         nextId: 'inonceTensHundredscorrectq33',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
     ],
     },
@@ -1631,18 +1759,22 @@ answers: [
         {
           answer: '49',
           nextId: 'inmoreLesscorrectq34',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
         {
           answer: '48',
           nextId: 'moreLesscorrectq34',
+          sumToBags: [{ name: 'ac', points: 1 }],
         },
         {
           answer: "46",
           nextId: 'inmoreLesscorrectq34',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
         {
           answer: "45",
           nextId: 'inmoreLesscorrectq34',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
       ],
     },
@@ -1676,18 +1808,22 @@ answers: [
       {
         answer: '39',
         nextId: 'inmoreLesscorrectq35',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
         answer: '41',
         nextId: 'moreLesscorrectq35',
+        sumToBags: [{ name: 'ac', points: 1 }],
       },
       {
         answer: "42",
         nextId: 'inmoreLesscorrectq35',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
         answer: "44",
         nextId: 'inmoreLesscorrectq35',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
     ],
     },
@@ -1719,18 +1855,22 @@ answers: [
       {
         answer: '44',
         nextId: 'moreLesscorrectq36',
+        sumToBags: [{ name: 'ac', points: 1 }],
       },
       {
         answer: '46',
         nextId: 'inmoreLesscorrectq36',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
         answer: "45",
         nextId: 'inmoreLesscorrectq36',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
         answer: "48",
         nextId: 'inmoreLesscorrectq36',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
     ],
     },
@@ -1761,18 +1901,22 @@ answers: [
       {
         answer: '49',
         nextId: 'inmoreLesscorrectq37',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
         answer: '42',
         nextId: 'inmoreLesscorrectq37',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
         answer: "47",
         nextId: 'moreLesscorrectq37',
+        sumToBags: [{ name: 'ac', points: 1 }],
       },
       {
         answer: "45",
         nextId: 'inmoreLesscorrectq37',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
     ],
     },
@@ -1803,18 +1947,22 @@ answers: [
         {
           answer: '49',
           nextId: 'moreLesscorrectq38',
+          sumToBags: [{ name: 'ac', points: 1 }],
         },
         {
           answer: '47',
           nextId: 'inmoreLesscorrectq38',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
         {
           answer: "46",
           nextId: 'inmoreLesscorrectq38',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
         {
           answer: "50",
           nextId: 'inmoreLesscorrectq38',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
       ],
     },
@@ -1844,18 +1992,22 @@ answers: [
       {
         answer: '43',
         nextId: 'inmoreLesscorrectq39',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
         answer: '46',
         nextId: 'inmoreLesscorrectq39',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
         answer: "42",
         nextId: 'moreLesscorrectq39',
+        sumToBags: [{ name: 'ac', points: 1 }],
       },
       {
         answer: "44",
         nextId: 'inmoreLesscorrectq39',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
     ],
     },
@@ -1885,18 +2037,22 @@ answers: [
         {
           answer: '37',
           nextId: 'inmoreLesscorrectq40',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
         {
           answer: '39',
           nextId: 'moreLesscorrectq40',
+          sumToBags: [{ name: 'ac', points: 1 }],
         },
         {
           answer: "40",
           nextId: 'inmoreLesscorrectq40',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
         {
           answer: "32",
           nextId: 'inmoreLesscorrectq40',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
       ],
     },
