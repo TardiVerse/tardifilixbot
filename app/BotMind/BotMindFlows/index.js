@@ -1450,7 +1450,7 @@ answers: [
     
     //30
     ['fln'+shuffleArraylot[29]]: {
-    botPrompt: 'What is the number formed by the digits 5, 2, and 8?',
+    botPrompt: 'What is the number formed by the digits 5, 2, 8  Where 2 will be in once place,8 will be in hundred`s place and 5 will be in ten`s place?',
     type: RTypes.TRANSFORMED_TEXT,
     
     input: selectField(['285', '582', "258","852"]),
@@ -1465,17 +1465,17 @@ answers: [
       },
       {
         answer: "258",
-        nextId: 'onceTensHundredscorrectq30',
+        nextId: 'inonceTensHundredscorrectq30',
       },
       {
         answer: "852",
-        nextId: 'inonceTensHundredscorrectq30',
+        nextId: 'onceTensHundredscorrectq30',
       },
     ],
     },
   
     onceTensHundredscorrectq30: {
-    botPrompt: 'Hurray! <strong>258</strong> is the correct answer  ! 😎',
+    botPrompt: 'Hurray! <strong>852</strong> is the correct answer  ! 😎',
     answers: [
       {
         nextId: 'fln'+shuffleArraylot[30],
@@ -1483,7 +1483,7 @@ answers: [
     ],
     },
     inonceTensHundredscorrectq30: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"258"</strong>',
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"852"</strong>',
     answers: [
       {
         nextId: 'fln'+shuffleArraylot[30],
@@ -1536,7 +1536,7 @@ answers: [
     
     //32
     ['fln'+shuffleArraylot[31]]: {
-    botPrompt: 'What is the number formed by the digits 4, 6, and 2?',
+    botPrompt: 'What is the number formed by the digits 4, 6, and 2? Where 4 will be in Hundred`s place , 6 in Ten`s place and 2 in once place.  ',
     type: RTypes.TRANSFORMED_TEXT,
     
     input: selectField(['642', '426', "264","462"]),
@@ -1621,42 +1621,42 @@ answers: [
     ],
     },
     
-    //34
-    ['fln'+shuffleArraylot[33]]: {
-    botPrompt: 'What is the number formed by the digits 9, 0, and 1?',
+  //34
+  ['fln'+shuffleArraylot[33]]: {
+    botPrompt: 'What is 1 more than 47?',
     type: RTypes.TRANSFORMED_TEXT,
     
-    input: selectField(['109', '901', "190","910"]),
+    input: selectField(['49', '48', "46","45"]),
       answers: [
         {
-          answer: '109',
-          nextId: 'inonceTensHundredscorrectq34',
+          answer: '49',
+          nextId: 'inmoreLesscorrectq34',
         },
         {
-          answer: '901',
-          nextId: 'inonceTensHundredscorrectq34',
+          answer: '48',
+          nextId: 'moreLesscorrectq34',
         },
         {
-          answer: "190",
-          nextId: 'onceTensHundredscorrectq34',
+          answer: "46",
+          nextId: 'inmoreLesscorrectq34',
         },
         {
-          answer: "910",
-          nextId: 'inonceTensHundredscorrectq34',
+          answer: "45",
+          nextId: 'inmoreLesscorrectq34',
         },
       ],
     },
     
-    onceTensHundredscorrectq34: {
-    botPrompt: 'Hurray! <strong>190</strong> is the correct answer  ! 😎',
+    moreLesscorrectq34: {
+    botPrompt: 'Hurray! <strong>48</strong> is the correct answer  ! 😎',
     answers: [
       {
         nextId: 'fln'+shuffleArraylot[34],
       },
     ],
     },
-    inonceTensHundredscorrectq34: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"190"</strong>',
+    inmoreLesscorrectq34: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"48"</strong>',
     answers: [
       {
         nextId: 'fln'+shuffleArraylot[34],
@@ -1667,41 +1667,41 @@ answers: [
     
     //35
     ['fln'+shuffleArraylot[34]]: {
-    botPrompt: 'What is the sum of digits at the units place and tens place in the number 48?',
+    botPrompt: 'What is the number that is 1 more than 40?',
     type: RTypes.TRANSFORMED_TEXT,
     
   
-    input: selectField(['6', '8', "10","12"]),
+    input: selectField(['39', '41', "42","44"]),
     answers: [
       {
-        answer: '6',
-        nextId: 'inonceTensHundredscorrectq35',
+        answer: '39',
+        nextId: 'inmoreLesscorrectq35',
       },
       {
-        answer: '8',
-        nextId: 'inonceTensHundredscorrectq35',
+        answer: '41',
+        nextId: 'moreLesscorrectq35',
       },
       {
-        answer: "10",
-        nextId: 'inonceTensHundredscorrectq35',
+        answer: "42",
+        nextId: 'inmoreLesscorrectq35',
       },
       {
-        answer: "12",
-        nextId: 'onceTensHundredscorrectq35',
+        answer: "44",
+        nextId: 'inmoreLesscorrectq35',
       },
     ],
     },
     
-    onceTensHundredscorrectq35: {
-    botPrompt: 'Hurray! <strong>12</strong> is the correct answer  ! 😎',
+    moreLesscorrectq35: {
+    botPrompt: 'Hurray! <strong>41</strong> is the correct answer  ! 😎',
     answers: [
       {
         nextId: 'fln'+shuffleArraylot[35],
       },
     ],
     },
-    inonceTensHundredscorrectq35: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"12"</strong>',
+    inmoreLesscorrectq35: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"41"</strong>',
     answers: [
       {
         nextId: 'fln'+shuffleArraylot[35],
@@ -1711,38 +1711,39 @@ answers: [
     
     //36
     ['fln'+shuffleArraylot[35]]: {
-      botPrompt: 'What is the number formed by the digits 6, 3, and 7?',
+      botPrompt: 'What is the number that is 1 more than 43?',
       type: RTypes.TRANSFORMED_TEXT,
-    input: selectField(['367', '376', '736','763']),
+    
+    input: selectField(['44', '46', "45","48"]),
     answers: [
       {
-        answer: '367',
-        nextId: 'onceTensHundredscorrectq36',
+        answer: '44',
+        nextId: 'moreLesscorrectq36',
       },
       {
-        answer: '376',
-        nextId: 'inonceTensHundredscorrectq36',
+        answer: '46',
+        nextId: 'inmoreLesscorrectq36',
       },
       {
-        answer: '736',
-        nextId: 'inonceTensHundredscorrectq36',
+        answer: "45",
+        nextId: 'inmoreLesscorrectq36',
       },
       {
-        answer: '763',
-        nextId: 'inonceTensHundredscorrectq36',
+        answer: "48",
+        nextId: 'inmoreLesscorrectq36',
       },
     ],
     },
-    onceTensHundredscorrectq36: {
-      botPrompt: 'You Have Selected correct Anwser 🎉! <strong>367</strong> 😎',
+    moreLesscorrectq36: {
+      botPrompt: 'You Have Selected correct Anwser 🎉! <strong>44</strong> 😎',
       answers: [
         {
           nextId: 'fln'+shuffleArraylot[36],
         },
       ],
     },
-    inonceTensHundredscorrectq36: {
-      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"367"</strong>',
+    inmoreLesscorrectq36: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"44"</strong>',
       answers: [
         {
           nextId: 'fln'+shuffleArraylot[36],
@@ -1752,39 +1753,39 @@ answers: [
     
     //37
     ['fln'+shuffleArraylot[36]]: {
-    botPrompt: 'Which of the following is the sum of digits at the hundreds and units place in the number 549?',
+    botPrompt: 'What is the number that is 1 more than 46?',
     type: RTypes.TRANSFORMED_TEXT,
     
-    input: selectField(['8', '9', "10","14"]),
+    input: selectField(['49', '42', "47","45"]),
     answers: [
       {
-        answer: '8',
-        nextId: 'inonceTensHundredscorrectq37',
+        answer: '49',
+        nextId: 'inmoreLesscorrectq37',
       },
       {
-        answer: '9',
-        nextId: 'onceTensHundredscorrectq37',
+        answer: '42',
+        nextId: 'inmoreLesscorrectq37',
       },
       {
-        answer: "10",
-        nextId: 'inonceTensHundredscorrectq37',
+        answer: "47",
+        nextId: 'moreLesscorrectq37',
       },
       {
-        answer: "14",
-        nextId: 'inonceTensHundredscorrectq37',
+        answer: "45",
+        nextId: 'inmoreLesscorrectq37',
       },
     ],
     },
-    onceTensHundredscorrectq37: {
-    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>9</strong> 😎',
+    moreLesscorrectq37: {
+    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>47</strong> 😎',
     answers: [
       {
         nextId: 'fln'+shuffleArraylot[37],
       },
     ],
     },
-    inonceTensHundredscorrectq37: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"9"</strong>',
+    inmoreLesscorrectq37: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"47"</strong>',
     answers: [
       {
         nextId: 'fln'+shuffleArraylot[37],
@@ -1794,39 +1795,39 @@ answers: [
     
     //38
     ['fln'+shuffleArraylot[37]]: {
-    botPrompt: 'What is the largest number formed by the digits 8, 5, and 2?',
+    botPrompt: 'What is 1 more than 48?',
     type: RTypes.TRANSFORMED_TEXT,
     
-    input: selectField(['285', '852', "528","582"]),
+    input: selectField(['49', '47', "46","50"]),
       answers: [
         {
-          answer: '285',
-          nextId: 'inonceTensHundredscorrectq38',
+          answer: '49',
+          nextId: 'moreLesscorrectq38',
         },
         {
-          answer: '852',
-          nextId: 'onceTensHundredscorrectq38',
+          answer: '47',
+          nextId: 'inmoreLesscorrectq38',
         },
         {
-          answer: "528",
-          nextId: 'inonceTensHundredscorrectq38',
+          answer: "46",
+          nextId: 'inmoreLesscorrectq38',
         },
         {
-          answer: "582",
-          nextId: 'inonceTensHundredscorrectq38',
+          answer: "50",
+          nextId: 'inmoreLesscorrectq38',
         },
       ],
     },
-    onceTensHundredscorrectq38: {
-    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>852</strong> 😎',
+    moreLesscorrectq38: {
+    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>49</strong> 😎',
     answers: [
       {
         nextId: 'fln'+shuffleArraylot[38],
       },
     ],
     },
-    inonceTensHundredscorrectq38: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"852"</strong>',
+    inmoreLesscorrectq38: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"49"</strong>',
     answers: [
       {
         nextId: 'fln'+shuffleArraylot[38],
@@ -1836,38 +1837,38 @@ answers: [
     
     //39
     ['fln'+shuffleArraylot[38]]: {
-    botPrompt: 'What is the sum of digits at the tens place and units place in the number 37?',
+    botPrompt: 'What is 1 more than 41?',
     type: RTypes.TRANSFORMED_TEXT,
-    input: selectField(['3', '7', "10","13"]),
+    input: selectField(['43', '46', "42","44"]),
     answers: [
       {
-        answer: '3',
-        nextId: 'inonceTensHundredscorrectq310',
+        answer: '43',
+        nextId: 'inmoreLesscorrectq39',
       },
       {
-        answer: '7',
-        nextId: 'inonceTensHundredscorrectq39',
+        answer: '46',
+        nextId: 'inmoreLesscorrectq39',
       },
       {
-        answer: "10",
-        nextId: 'onceTensHundredscorrectq39',
+        answer: "42",
+        nextId: 'moreLesscorrectq39',
       },
       {
-        answer: "13",
-        nextId: 'inonceTensHundredscorrectq39',
+        answer: "44",
+        nextId: 'inmoreLesscorrectq39',
       },
     ],
     },
-    onceTensHundredscorrectq39: {
-    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>10</strong> Answers! 😎',
+    moreLesscorrectq39: {
+    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>42</strong> Answers! 😎',
     answers: [
       {
         nextId: 'fln'+shuffleArraylot[39],
       },
     ],
     },
-    inonceTensHundredscorrectq39: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"10"</strong>',
+    inmoreLesscorrectq39: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"42"</strong>',
     answers: [
       {
         nextId: 'fln'+shuffleArraylot[39],
@@ -1877,46 +1878,45 @@ answers: [
     
     //40
     ['fln'+shuffleArraylot[39]]: {
-    botPrompt: 'What is the number at the units place in the number 43?',
+    botPrompt: 'What is the number that is 1 more than 38?',
     type: RTypes.TRANSFORMED_TEXT,
-    input: selectField(['3', '4', "5","32"]),
+    input: selectField(['37', '39', "40","32"]),
       answers: [
         {
-          answer: '3',
-          nextId: 'onceTensHundredscorrectq40',
+          answer: '37',
+          nextId: 'inmoreLesscorrectq40',
         },
         {
-          answer: '4',
-          nextId: 'inonceTensHundredscorrectq40',
+          answer: '39',
+          nextId: 'moreLesscorrectq40',
         },
         {
-          answer: "5",
-          nextId: 'inonceTensHundredscorrectq40',
+          answer: "40",
+          nextId: 'inmoreLesscorrectq40',
         },
         {
-          answer: "6",
-          nextId: 'inonceTensHundredscorrectq40',
+          answer: "32",
+          nextId: 'inmoreLesscorrectq40',
         },
       ],
     },
-    onceTensHundredscorrectq40: {
-    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>3</strong> 😎',
+    moreLesscorrectq40: {
+    botPrompt: 'You Have Selected correct Anwser 🎉! <strong>39</strong> 😎',
     answers: [
       {
         nextId: 'thisstart',
       },
     ],
     },
-    inonceTensHundredscorrectq40: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"3"</strong>',
+    inmoreLesscorrectq40: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"39"</strong>',
     answers: [
       {
         nextId: 'thisstart',
       },
     ],
     },
-
-
+    
 
 //endnewquest
 
@@ -1940,7 +1940,7 @@ thisexampleimage: {
   ],
 },
 thisexampletext: {
-  botPrompt: 'Answer is : <strong>This</strong> (EFA) is a bag.',
+  botPrompt: 'Answer is : <strong>This</strong>  is a bag.',
   answers: [
     {
       nextId: 'thisexampleimageq',
@@ -1989,7 +1989,7 @@ thatexampleimage: {
   ],
 },
 thatexampletext: {
-  botPrompt: 'Answer is : <strong>That</strong> (EFA) is an Aeroplane.',
+  botPrompt: 'Answer is : <strong>That</strong> is an Aeroplane.',
   answers: [
     {
       nextId: 'thatexampleimageq',

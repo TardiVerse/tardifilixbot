@@ -179,7 +179,7 @@ export function* rootSaga() {
 
 function botThinkingTime(message) {
   if (!message) {
-    return 2000;
+    return 1000;
   }
   let time = 1000;
   if (window.location.href.indexOf('localhost') > -1) {
