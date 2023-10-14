@@ -5375,7 +5375,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         input: selectField(['lengths', 'heights', "weights","both options a and b"]),
           answers: [
             {
-              answer: 'lenghts',
+              answer: 'lengths',
               nextId: 'insecondMathscorrectq8',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
