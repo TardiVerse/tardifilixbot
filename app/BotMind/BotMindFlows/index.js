@@ -2290,7 +2290,7 @@ classi: {
   },
   
   firstEnglishcorrectq1: {
-  botPrompt: 'Hurray! <strong>"an"</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>an</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'firstEnglish'+shuffleArraylottwo[2],
@@ -2333,7 +2333,7 @@ classi: {
       },
       
       firstEnglishcorrectq2: {
-      botPrompt: 'Hurray! <strong>""An""</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>An</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'firstEnglish'+shuffleArraylottwo[3],
@@ -2376,7 +2376,7 @@ classi: {
       },
       
       firstEnglishcorrectq3: {
-      botPrompt: 'Hurray! <strong>"a"</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>a</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'firstEnglish'+shuffleArraylottwo[4],
@@ -2419,7 +2419,7 @@ classi: {
       },
       
       firstEnglishcorrectq4: {
-      botPrompt: 'Hurray! <strong>"Nouns"</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>Nouns</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'firstEnglish'+shuffleArraylottwo[5],
@@ -2462,7 +2462,7 @@ classi: {
       },
       
       firstEnglishcorrectq5: {
-      botPrompt: 'Hurray! <strong>"Cat"</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>Cat</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'firstEnglish'+shuffleArraylottwo[6],
@@ -2506,7 +2506,7 @@ classi: {
       },
       
       firstEnglishcorrectq6: {
-      botPrompt: 'Hurray! <strong>"ball"</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>ball</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'firstEnglish'+shuffleArraylottwo[7],
@@ -2550,7 +2550,7 @@ classi: {
       },
       
       firstEnglishcorrectq7: {
-      botPrompt: 'Hurray! <strong>"City"</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>City</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'firstEnglish'+shuffleArraylottwo[8],
@@ -2594,7 +2594,7 @@ classi: {
       },
       
       firstEnglishcorrectq8: {
-      botPrompt: 'Hurray! <strong>"sun"</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>sun</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'firstEnglish'+shuffleArraylottwo[9],
@@ -2638,7 +2638,7 @@ classi: {
       },
       
       firstEnglishcorrectq9: {
-      botPrompt: 'Hurray! <strong>"Proper nouns"</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>Proper nouns</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'firstEnglish'+shuffleArraylottwo[10],
@@ -2659,10 +2659,10 @@ classi: {
         botPrompt: 'What type of noun is "Eiffel Tower" in the sentence: "The Eiffel Tower is in Paris"?      ',
         type: RTypes.TRANSFORMED_TEXT,
         
-        input: selectField(['Common noun', ' Proper noun ', "Animal noun"]),
+        input: selectField(['Common noun', 'Proper noun', "Animal noun"]),
           answers: [
             {
-              answer: ' Common noun',
+              answer: 'Common noun',
               nextId: 'infirstEnglishcorrectq10',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
@@ -2681,7 +2681,7 @@ classi: {
         },
         
         firstEnglishcorrectq10: {
-        botPrompt: 'Hurray! <strong>"Animal noun"</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>Animal noun</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'firstEnglish'+shuffleArraylottwo[11],
@@ -2703,10 +2703,10 @@ classi: {
         botPrompt: 'What kind of nouns are words like "teacher," "dog," and "book"?" ',
         type: RTypes.TRANSFORMED_TEXT,
         
-        input: selectField(['Common nouns ', ' Proper noun ', "Super nouns"]),
+        input: selectField(['Common noun', 'Proper noun', "Super nouns"]),
           answers: [
             {
-              answer: ' Common noun',
+              answer: 'Common noun',
               nextId: 'firstEnglishcorrectq11',
               sumToBags: [{ name: 'ac', points: 1 }],
             },
@@ -2725,7 +2725,7 @@ classi: {
         },
         
         firstEnglishcorrectq11: {
-        botPrompt: 'Hurray! <strong>"Common noun"</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>Common noun</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'firstEnglish'+shuffleArraylottwo[12],
@@ -2747,40 +2747,40 @@ classi: {
         botPrompt: 'Complete the sentence: "We went to ____ beach." ',
         type: RTypes.TRANSFORMED_TEXT,
         
-        input: selectField(['a', ' an  ', "the"]),
+        input: selectField(['a', 'an', "the"]),
           answers: [
             {
-              answer: '  a',
-              nextId: 'infirstEnglishcorrectq11',
+              answer: 'a',
+              nextId: 'infirstEnglishcorrectq12',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
             {
               answer: 'an',
-              nextId: 'infirstEnglishcorrectq11',
+              nextId: 'infirstEnglishcorrectq12',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
             {
               answer: "the",
-              nextId: 'firstEnglishcorrectq11',
+              nextId: 'firstEnglishcorrectq12',
               sumToBags: [{ name: 'ac', points: 1 }],
             },
             
           ],
         },
         
-        firstEnglishcorrectq11: {
-        botPrompt: 'Hurray! <strong>"the"</strong> is the correct answer  ! 😎',
+        firstEnglishcorrectq12: {
+        botPrompt: 'Hurray! <strong>the</strong> is the correct answer  ! 😎',
         answers: [
           {
-            nextId: 'firstEnglish'+shuffleArraylottwo[12],
+            nextId: 'firstEnglish'+shuffleArraylottwo[13],
           },
         ],
         },
-        infirstEnglishcorrectq11: {
+        infirstEnglishcorrectq12: {
         botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"the"</strong>',
         answers: [
           {
-            nextId: 'firstEnglish'+shuffleArraylottwo[12],
+            nextId: 'firstEnglish'+shuffleArraylottwo[13],
           },
         ],
         },
@@ -2813,7 +2813,7 @@ classi: {
         },
         
         firstEnglishcorrectq13: {
-        botPrompt: 'Hurray! <strong>"Proper nouns"</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>Proper nouns</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'firstEnglish'+shuffleArraylottwo[14],
@@ -2835,7 +2835,7 @@ classi: {
         botPrompt: 'Which of these words is a verb: "apple," "run," or "table"? ',
         type: RTypes.TRANSFORMED_TEXT,
         
-        input: selectField(['apple', ' run', "table"]),
+        input: selectField(['apple', 'run', "table"]),
           answers: [
             {
               answer: 'apple',
@@ -2857,7 +2857,7 @@ classi: {
         },
         
         firstEnglishcorrectq14: {
-        botPrompt: 'Hurray! <strong>"run"</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>run</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'firstEnglish'+shuffleArraylottwo[15],
@@ -2879,7 +2879,7 @@ classi: {
         botPrompt: 'What are words that show what someone or something is doing called?',
         type: RTypes.TRANSFORMED_TEXT,
         
-        input: selectField(['Adjectives', ' Verbs', "Pronouns"]),
+        input: selectField(['Adjectives', 'Verbs', "Pronouns"]),
           answers: [
             {
               answer: ' Adjectives',
@@ -2901,7 +2901,7 @@ classi: {
         },
         
         firstEnglishcorrectq15: {
-        botPrompt: 'Hurray! <strong>"Verbs"</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>Verbs</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'firstEnglish'+shuffleArraylottwo[16],
@@ -2947,7 +2947,7 @@ classi: {
         },
         
         firstEnglishcorrectq16: {
-        botPrompt: 'Hurray! <strong>"Verbs"</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>Verbs</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'firstEnglish'+shuffleArraylottwo[17],
@@ -2969,10 +2969,10 @@ classi: {
         botPrompt: 'Which word is a verb in this sentence: "The big dog barked loudly"?',
         type: RTypes.TRANSFORMED_TEXT,
         
-        input: selectField(['big', ' dog', "Adverbs"]),
+        input: selectField(['big', 'dog', "Adverbs"]),
           answers: [
             {
-              answer: ' big',
+              answer: 'big',
               nextId: 'infirstEnglishcorrectq17',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
@@ -2991,7 +2991,7 @@ classi: {
         },
         
         firstEnglishcorrectq17: {
-        botPrompt: 'Hurray! <strong>"barked"</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>barked</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'firstEnglish'+shuffleArraylottwo[18],
@@ -3013,10 +3013,10 @@ classi: {
         botPrompt: 'Which of the following is an adjective?',
         type: RTypes.TRANSFORMED_TEXT,
         
-        input: selectField(['Jump', ' Big', "Run"]),
+        input: selectField(['Jump', 'Big', "Run"]),
           answers: [
             {
-              answer: ' Jump',
+              answer: 'Jump',
               nextId: 'infirstEnglishcorrectq18',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
@@ -3035,7 +3035,7 @@ classi: {
         },
         
         firstEnglishcorrectq18: {
-        botPrompt: 'Hurray! <strong>"Big"</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>Big</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'firstEnglish'+shuffleArraylottwo[19],
@@ -3057,10 +3057,10 @@ classi: {
         botPrompt: 'Which word is an adjective in this sentence: "The small, red ball bounced"? ',
         type: RTypes.TRANSFORMED_TEXT,
         
-        input: selectField(['The', ' small', "bounced"]),
+        input: selectField(['The', 'small', "bounced"]),
           answers: [
             {
-              answer: ' The',
+              answer: 'The',
               nextId: 'infirstEnglishcorrectq19',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
@@ -3079,7 +3079,7 @@ classi: {
         },
         
         firstEnglishcorrectq19: {
-        botPrompt: 'Hurray! <strong>"small"</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>small</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'firstEnglish'+shuffleArraylottwo[20],
@@ -3101,7 +3101,7 @@ classi: {
         botPrompt: 'What type of word is "shiny" in the sentence: "She found a shiny coin"?',
         type: RTypes.TRANSFORMED_TEXT,
         
-        input: selectField(['Nouns', ' Verbs', "Adjective"]),
+        input: selectField(['Nouns', 'Verbs', "Adjective"]),
           answers: [
             {
               answer: ' Nouns',
@@ -3123,7 +3123,7 @@ classi: {
         },
         
         firstEnglishcorrectq20: {
-        botPrompt: 'Hurray! <strong>"AdvAdjective"</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>AdvAdjective</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'wishtocountinefirstenglish',
@@ -3160,7 +3160,7 @@ classi: {
 
 //1
 ['firstMaths'+shuffleArraylottwo[1]]: {
-  botPrompt: 'Question 1: What is the missing number in the number bond: 7 + ___ = 10?"',
+  botPrompt: 'What is the missing number in the number bond: 7 + ___ = 10?"',
   type: RTypes.TRANSFORMED_TEXT,
   
   input: selectField(['2', '3', "4",]),
@@ -3185,7 +3185,7 @@ classi: {
   },
   
   firstMathscorrectq1: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>3</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'firstMaths'+shuffleArraylottwo[2],
@@ -3228,7 +3228,7 @@ classi: {
       },
       
       firstMathscorrectq2: {
-      botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>85</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'firstMaths'+shuffleArraylottwo[3],
@@ -3271,7 +3271,7 @@ classi: {
       },
       
       firstMathscorrectq3: {
-      botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>3</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'firstMaths'+shuffleArraylottwo[4],
@@ -3292,10 +3292,10 @@ classi: {
       botPrompt: 'What is the number name for 42?',
       type: RTypes.TRANSFORMED_TEXT,
       
-      input: selectField([' forty-two', 'twenty-four', "fifty-two"]),
+      input: selectField(['forty-two', 'twenty-four', "fifty-two"]),
         answers: [
           {
-            answer: ' forty-two',
+            answer: 'forty-two',
             nextId: 'firstMathscorrectq4',
             sumToBags: [{ name: 'ac', points: 1 }],
           },
@@ -3314,7 +3314,7 @@ classi: {
       },
       
       firstMathscorrectq4: {
-      botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>forty-two</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'firstMaths'+shuffleArraylottwo[5],
@@ -3357,7 +3357,7 @@ classi: {
       },
       
       firstMathscorrectq5: {
-      botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>6</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'firstMaths'+shuffleArraylottwo[6],
@@ -3401,7 +3401,7 @@ classi: {
       },
       
       firstMathscorrectq6: {
-      botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>sixty-seven</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'firstMaths'+shuffleArraylottwo[7],
@@ -3432,20 +3432,20 @@ classi: {
           },
           {
             answer: '9',
-            nextId: 'firstMathscorrectq7',
-            sumToBags: [{ name: 'ac', points: 1 }],
+            nextId: 'infirstMathscorrectq7',
+            sumToBags: [{ name: 'ai', points: 1 }],
           },
           {
             answer: "29",
-            nextId: 'infinirstMathscorrectq7',
-            sumToBags: [{ name: 'ai', points: 1 }],
+            nextId: 'finirstMathscorrectq7',
+            sumToBags: [{ name: 'ac', points: 1 }],
           },
           
         ],
       },
       
       firstMathscorrectq7: {
-      botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>29</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'firstMaths'+shuffleArraylottwo[8],
@@ -3453,7 +3453,7 @@ classi: {
       ],
       },
       infirstMathscorrectq7: {
-      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"9"</strong>',
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"29"</strong>',
       answers: [
         {
           nextId: 'firstMaths'+shuffleArraylottwo[8],
@@ -3489,7 +3489,7 @@ classi: {
       },
       
       firstMathscorrectq8: {
-      botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>7</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'firstMaths'+shuffleArraylottwo[9],
@@ -3511,10 +3511,10 @@ classi: {
       botPrompt: 'What is the value of the digit 7 in the number 743?',
       type: RTypes.TRANSFORMED_TEXT,
       
-      input: selectField(['7 ', '70', "700"]),
+      input: selectField(['7', '70', "700"]),
         answers: [
           {
-            answer: ' 7',
+            answer: '7',
             nextId: 'infirstMathscorrectq9',
             sumToBags: [{ name: 'ai', points: 1 }],
           },
@@ -3533,7 +3533,7 @@ classi: {
       },
       
       firstMathscorrectq9: {
-      botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>700</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'firstMaths'+shuffleArraylottwo[10],
@@ -3554,10 +3554,10 @@ classi: {
         botPrompt: 'Which of the following represents the number "seventy-nine" in digits? ',
         type: RTypes.TRANSFORMED_TEXT,
         
-        input: selectField(['97', ' 79 ', "59"]),
+        input: selectField(['97', '79', "59"]),
           answers: [
             {
-              answer: ' 97',
+              answer: '97',
               nextId: 'infirstMathscorrectq10',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
@@ -3576,7 +3576,7 @@ classi: {
         },
         
         firstMathscorrectq10: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>79</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'firstMaths'+shuffleArraylottwo[11],
@@ -3598,10 +3598,10 @@ classi: {
         botPrompt: 'How many tens are there in the number 52?',
         type: RTypes.TRANSFORMED_TEXT,
         
-        input: selectField(['5 ', ' 2 ', "50"]),
+        input: selectField(['5', '2', "50"]),
           answers: [
             {
-              answer: ' 5',
+              answer: '5',
               nextId: 'firstMathscorrectq11',
               sumToBags: [{ name: 'ac', points: 1 }],
             },
@@ -3639,39 +3639,39 @@ classi: {
   
           //12
       ['firstMaths'+shuffleArraylottwo[12]]: {
-        botPrompt: 'Write the number name for 28. ',
+        botPrompt: 'Write the number name for 28.',
         type: RTypes.TRANSFORMED_TEXT,
         
-        input: selectField(['twenty-eight', ' twenty-two  ', "eighty-two"]),
+        input: selectField(['twenty-eight', 'twenty-two', "eighty-two"]),
           answers: [
             {
               answer: 'twenty-eight',
-              nextId: 'firstMathscorrectq11',
+              nextId: 'firstMathscorrectq12',
               sumToBags: [{ name: 'ac', points: 1 }],
             },
             {
               answer: 'twenty-two',
-              nextId: 'infirstMathscorrectq11',
+              nextId: 'infirstMathscorrectq12',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
             {
               answer: "eighty-two",
-              nextId: 'infirstMathscorrectq11',
+              nextId: 'infirstMathscorrectq12',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
             
           ],
         },
         
-        firstMathscorrectq11: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        firstMathscorrectq12: {
+        botPrompt: 'Hurray! <strong>twenty-eight</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'firstMaths'+shuffleArraylottwo[12],
           },
         ],
         },
-        infirstMathscorrectq11: {
+        infirstMathscorrectq12: {
         botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"twenty-eight"</strong>',
         answers: [
           {
@@ -3686,7 +3686,7 @@ classi: {
         botPrompt: 'Find the missing number in the number bond: 6 + ___ = 10  ',
         type: RTypes.TRANSFORMED_TEXT,
         
-        input: selectField(['4', ' 5 ', "6"]),
+        input: selectField(['4', '5', "6"]),
           answers: [
             {
               answer: ' 4',
@@ -3708,7 +3708,7 @@ classi: {
         },
         
         firstMathscorrectq13: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>4</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'firstMaths'+shuffleArraylottwo[14],
@@ -3730,7 +3730,7 @@ classi: {
         botPrompt: 'What is the value of the digit 3 in the number 325?',
         type: RTypes.TRANSFORMED_TEXT,
         
-        input: selectField(['3', ' 30', "300"]),
+        input: selectField(['3', '30', "300"]),
           answers: [
             {
               answer: '3',
@@ -3752,7 +3752,7 @@ classi: {
         },
         
         firstMathscorrectq14: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>300</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'firstMaths'+shuffleArraylottwo[15],
@@ -3774,10 +3774,10 @@ classi: {
         botPrompt: 'Which of the following represents the number "fifty-three" in digits?',
         type: RTypes.TRANSFORMED_TEXT,
         
-        input: selectField(['53', ' 35', "23"]),
+        input: selectField(['53', '35', "23"]),
           answers: [
             {
-              answer: ' 53',
+              answer: '53',
               nextId: 'firstMathscorrectq15',
               sumToBags: [{ name: 'ac', points: 1 }],
             },
@@ -3796,7 +3796,7 @@ classi: {
         },
         
         firstMathscorrectq15: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>53</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'firstMaths'+shuffleArraylottwo[16],
@@ -3820,10 +3820,10 @@ classi: {
         botPrompt: 'What is the sum of 36 and 25?',
         type: RTypes.TRANSFORMED_TEXT,
         
-        input: selectField(['51', ' 61', "71"]),
+        input: selectField(['51', '61', "71"]),
           answers: [
             {
-              answer: ' 51',
+              answer: '51',
               nextId: 'infirstMathscorrectq16',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
@@ -3842,7 +3842,7 @@ classi: {
         },
         
         firstMathscorrectq16: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>61</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'firstMaths'+shuffleArraylottwo[17],
@@ -3864,17 +3864,17 @@ classi: {
         botPrompt: 'If you have 42 candies and you get 28 more, how many candies do you have now?',
         type: RTypes.TRANSFORMED_TEXT,
         
-        input: selectField(['60', ' 70', "80"]),
+        input: selectField(['60', '70', "80"]),
           answers: [
             {
-              answer: ' 60',
-              nextId: 'firstMathscorrectq17',
-              sumToBags: [{ name: 'ac', points: 1 }],
+              answer: '60',
+              nextId: 'infirstMathscorrectq17',
+              sumToBags: [{ name: 'ai', points: 1 }],
             },
             {
               answer: '70',
-              nextId: 'infirstMathscorrectq17',
-              sumToBags: [{ name: 'ai', points: 1 }],
+              nextId: 'firstMathscorrectq17',
+              sumToBags: [{ name: 'ac', points: 1 }],
             },
             {
               answer: "80",
@@ -3886,7 +3886,7 @@ classi: {
         },
         
         firstMathscorrectq17: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>70</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'firstMaths'+shuffleArraylottwo[18],
@@ -3894,7 +3894,7 @@ classi: {
         ],
         },
         infirstMathscorrectq17: {
-        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"60"</strong>',
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"70"</strong>',
         answers: [
           {
             nextId: 'firstMaths'+shuffleArraylottwo[18],
@@ -3908,7 +3908,7 @@ classi: {
         botPrompt: 'What is the result of 57 minus 23?',
         type: RTypes.TRANSFORMED_TEXT,
         
-        input: selectField(['34', ' 44', "54"]),
+        input: selectField(['34', '44', "54"]),
           answers: [
             {
               answer: ' 34',
@@ -3930,7 +3930,7 @@ classi: {
         },
         
         firstMathscorrectq18: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>34</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'firstMaths'+shuffleArraylottwo[19],
@@ -3952,17 +3952,17 @@ classi: {
         botPrompt: 'Maria had 58 stickers. She gave 37 to her friend. How many stickers does Maria have now?',
         type: RTypes.TRANSFORMED_TEXT,
         
-        input: selectField(['21', ' 31', "41"]),
+        input: selectField(['21', '31', "41"]),
           answers: [
             {
-              answer: ' 21',
-              nextId: 'infirstMathscorrectq19',
-              sumToBags: [{ name: 'ai', points: 1 }],
+              answer: '21',
+              nextId: 'firstMathscorrectq19',
+              sumToBags: [{ name: 'ac', points: 1 }],
             },
             {
               answer: '31',
-              nextId: 'firstMathscorrectq19',
-              sumToBags: [{ name: 'ac', points: 1 }],
+              nextId: 'infirstMathscorrectq19',
+              sumToBags: [{ name: 'ai', points: 1 }],
             },
             {
               answer: "41",
@@ -3974,7 +3974,7 @@ classi: {
         },
         
         firstMathscorrectq19: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>21</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'firstMaths'+shuffleArraylottwo[20],
@@ -3982,7 +3982,7 @@ classi: {
         ],
         },
         infirstMathscorrectq19: {
-        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"31"</strong>',
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"21"</strong>',
         answers: [
           {
             nextId: 'firstMaths'+shuffleArraylottwo[20],
@@ -3996,29 +3996,29 @@ classi: {
         botPrompt: 'What is the sum of 48 and 29?',
         type: RTypes.TRANSFORMED_TEXT,
         
-        input: selectField(['67', ' 77', "87"]),
+        input: selectField(['67', '77', "87"]),
           answers: [
             {
-              answer: ' 67',
+              answer: '67',
               nextId: 'infirstMathscorrectq20',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
             {
               answer: '77',
-              nextId: 'infirstMathscorrectq20',
-              sumToBags: [{ name: 'ai', points: 1 }],
+              nextId: 'firstMathscorrectq20',
+              sumToBags: [{ name: 'ac', points: 1 }],
             },
             {
               answer: "87",
-              nextId: 'firstMathscorrectq20',
-              sumToBags: [{ name: 'ac', points: 1 }],
+              nextId: 'infirstMathscorrectq20',
+              sumToBags: [{ name: 'ai', points: 1 }],
             },
             
           ],
         },
         
         firstMathscorrectq20: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>77</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'wishtocountinefirstMaths',
@@ -4026,7 +4026,7 @@ classi: {
         ],
         },
         infirstMathscorrectq16: {
-        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"87"</strong>',
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"77"</strong>',
         answers: [
           {
             nextId: 'wishtocountinefirstMaths',
@@ -6081,7 +6081,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
 
   
   thirdMathscorrectq1: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>30</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'thirdMaths'+shuffleArraylottwo[2],
@@ -8034,8 +8034,7 @@ classiv: {
     {
       answer: "Science",
       nextId: "fourthScience"+randomNumberclass,
-    },
-      
+    },  
   ],
 },
 
@@ -8891,16 +8890,15 @@ classiv: {
             sumToBags: [{ name: 'ai', points: 1 }],
           },
           {
-            answer: "Saturn",
+            answer: "saturn",
             nextId: 'infourthSciencecorrectq18',
             sumToBags: [{ name: 'ai', points: 1 }],
           },
           {
-            answer: "Jupiter",
-            nextId: 'fourthSciencecorrectq18',
-            sumToBags: [{ name: 'ai', points: 1 }],
-          },
-      
+              answer: "jupiter",
+              nextId: 'fourthSciencecorrectq18',
+              sumToBags: [{ name: 'ac', points: 1 }],
+            },
         ],
       },
       
@@ -9725,26 +9723,26 @@ classiv: {
       botPrompt: 'In the sentence "The detective solved the mystery effortlessly," what type of adverb is "effortlessly"?',
       type: RTypes.TRANSFORMED_TEXT,
       
-      input: selectField(['ran', 'runs', "running"]),
+      input: selectField(['Adverb of manner', 'Adverb of frequency', "Adverb of place", "Adverb of time"]),
         answers: [
           {
             answer: 'Adverb of manner',
-            nextId: 'fourthEnglishcorrectq14',
+            nextId: 'fourthEnglishcorrectq15',
             sumToBags: [{ name: 'ac', points: 1 }],
           },
           {
             answer: 'Adverb of frequency',
-            nextId: 'infourthEnglishcorrectq14',
+            nextId: 'infourthEnglishcorrectq15',
             sumToBags: [{ name: 'ai', points: 1 }],
           },
           {
             answer: "Adverb of place",
-            nextId: 'infourthEnglishcorrectq14',
+            nextId: 'infourthEnglishcorrectq15',
             sumToBags: [{ name: 'ai', points: 1 }],
           },
           {
             answer: 'Adverb of time',
-            nextId: 'infourthEnglishcorrectq14',
+            nextId: 'infourthEnglishcorrectq15',
             sumToBags: [{ name: 'ai', points: 1 }],
           },
           
@@ -9875,7 +9873,7 @@ classiv: {
       botPrompt: 'Select the adverb in the sentence:"He plays soccer very skillfully."',
       type: RTypes.TRANSFORMED_TEXT,
       
-      input: selectField(['He', 'playes', "soccer", "skillfully"]),
+      input: selectField(['He', 'plays', "soccer", "skillfully"]),
         answers: [
           {
             answer: 'he',
