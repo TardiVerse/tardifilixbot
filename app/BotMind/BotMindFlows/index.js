@@ -59,7 +59,7 @@ console.log(randomNumber);
 
 const minclass = 1;
 const maxclass = 19;
-const randomNumberclass = Math.floor(Math.random() * (maxclass - minclass + 1)) + minclass;
+const randomNumberclass = Math.floor(Math.random() * (max - min + 1)) + min;
 
 console.log(randomNumberclass);
 
@@ -2265,7 +2265,7 @@ classi: {
 //classienglish
 //1
 ['firstEnglish'+shuffleArraylottwo[1]]: {
-  botPrompt: 'Question 1:Complete the sentence: "I have ____ apple."',
+  botPrompt: 'Complete the sentence: "I have ____ apple."',
   type: RTypes.TRANSFORMED_TEXT,
   
   input: selectField(['a', 'an', "the",]),
@@ -2340,7 +2340,7 @@ classi: {
         },
       ],
       },
-      infirstEnglishcorrectq3: {
+      infirstEnglishcorrectq2: {
       botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"An"</strong>',
       answers: [
         {
@@ -8088,7 +8088,7 @@ classiv: {
   ],
   },
   
-  //fourth science
+  
     //2
     ['fourthScience'+shuffleArraylottwo[2]]: {
       botPrompt: 'Which of the following is NOT a part of the digestive system?',
@@ -10031,7 +10031,7 @@ classiv: {
 
 //classfourthMaths
 //1
-["fourthMaths"+shuffleArraylottwo[1]]: {
+['fourthMaths'+shuffleArraylottwo[1]]: {
   botPrompt: 'What are the factors of 12?',
   type: RTypes.TRANSFORMED_TEXT,
   
@@ -10371,7 +10371,7 @@ classiv: {
       botPrompt: 'If the clock shows 2:45 PM, how many minutes are there until 4:00 PM?',
       type: RTypes.TRANSFORMED_TEXT,
       
-      input: selectField(['15 minutes', '30 minutes', "75 minutes","105 minutes"]),
+      input: selectField(['15 minutes', '30 minutes', " 75 minutes"," 105 minutes"]),
         answers: [
           {
             answer: '15 minutes',
@@ -10384,12 +10384,12 @@ classiv: {
             sumToBags: [{ name: 'ai', points: 1 }],
           },
           {
-            answer: '75 minutes',
+            answer: "75 minutes",
             nextId: 'fourthMathscorrectq8',
             sumToBags: [{ name: 'ac', points: 1 }],
           },
           {
-            answer: '105 minutes',
+            answer: "105 minutes",
             nextId: 'infourthMathscorrectq8',
             sumToBags: [{ name: 'ai', points: 1 }],
           },
@@ -10474,13 +10474,13 @@ classiv: {
         answers: [
           {
             answer: 'Rs. 6',
-            nextId: 'infourthMathscorrectq10',
-            sumToBags: [{ name: 'ai', points: 1 }],
+            nextId: 'fourthMathscorrectq10',
+            sumToBags: [{ name: 'ac', points: 1 }],
           },
           {
             answer: 'Rs. 10',
-            nextId: 'fourthMathscorrectq10',
-            sumToBags: [{ name: 'ac', points: 1 }],
+            nextId: 'infourthMathscorrectq10',
+            sumToBags: [{ name: 'ai', points: 1 }],
           },
           {
             answer: "Rs. 12",
@@ -10496,7 +10496,7 @@ classiv: {
       },
       
       fourthMathscorrectq10: {
-      botPrompt: 'Hurray! <strong>Rs. 10</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>Rs. 6</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'fourthMaths'+shuffleArraylottwo[11],
@@ -10504,7 +10504,7 @@ classiv: {
       ],
       },
       infourthMathscorrectq10: {
-      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Rs. 10"</strong>',
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Rs. 6"</strong>',
       answers: [
         {
           nextId: 'fourthMaths'+shuffleArraylottwo[11],
@@ -10618,7 +10618,7 @@ classiv: {
       botPrompt: 'Which of the following shapes has 4 equal sides and 4 right angles?',
       type: RTypes.TRANSFORMED_TEXT,
       
-      input: selectField(['rectangle', 'square', "triangle", "cirlce"]),
+      input: selectField(['rectangle', 'square', "triagle", "cirlce"]),
         answers: [
           {
             answer: 'rectagle',
@@ -10627,8 +10627,8 @@ classiv: {
           },
           {
             answer: 'square',
-            nextId: 'fourthMathscorrectq13',
-            sumToBags: [{ name: 'ac', points: 1 }],
+            nextId: 'infourthMathscorrectq13',
+            sumToBags: [{ name: 'ai', points: 1 }],
           },
           {
             answer: "triangle",
@@ -10637,15 +10637,15 @@ classiv: {
           },
           {
             answer: "circle",
-            nextId: 'infourthMathscorrectq13',
-            sumToBags: [{ name: 'ai', points: 1 }],
+            nextId: 'fourthMathscorrectq13',
+            sumToBags: [{ name: 'ac', points: 1 }],
           },
           
         ],
       },
       
       fourthMathscorrectq13: {
-      botPrompt: 'Hurray! <strong>square</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>circle</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'fourthMaths'+shuffleArraylottwo[14],
@@ -10653,7 +10653,7 @@ classiv: {
       ],
       },
       infourthMathscorrectq13: {
-      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"square"</strong>',
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"circle"</strong>',
       answers: [
         {
           nextId: 'fourthMaths'+shuffleArraylottwo[14],
@@ -10676,13 +10676,13 @@ classiv: {
           },
           {
             answer: '26 metres',
-            nextId: 'fourthMathscorrectq14',
-            sumToBags: [{ name: 'ac', points: 1 }],
+            nextId: 'infourthMathscorrectq14',
+            sumToBags: [{ name: 'ai', points: 1 }],
           },
           {
             answer: "35 metres",
-            nextId: 'infourthMathscorrectq14',
-            sumToBags: [{ name: 'ai', points: 1 }],
+            nextId: 'fourthMathscorrectq14',
+            sumToBags: [{ name: 'ac', points: 1 }],
           },
           {
             answer: '40 metres',
@@ -10694,7 +10694,7 @@ classiv: {
       },
       
       fourthMathscorrectq14: {
-      botPrompt: 'Hurray! <strong>26 metres</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>35 metres</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'fourthMaths'+shuffleArraylottwo[15],
@@ -10702,7 +10702,7 @@ classiv: {
       ],
       },
       infourthMathscorrectq14: {
-      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"26 metres"</strong>',
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"35 metres"</strong>',
       answers: [
         {
           nextId: 'fourthMaths'+shuffleArraylottwo[15],
@@ -10782,7 +10782,7 @@ classiv: {
             sumToBags: [{ name: 'ai', points: 1 }],
           },
           {
-            answer: "12 square metres",
+            answer: "12 square metres ",
             nextId: 'infourthMathscorrectq16',
             sumToBags: [{ name: 'ai', points: 1 }],
           },
@@ -10827,13 +10827,13 @@ classiv: {
           },
           {
             answer: '30 metres',
-            nextId: 'fourthMathscorrectq17',
-            sumToBags: [{ name: 'ac', points: 1 }],
+            nextId: 'infourthMathscorrectq17',
+            sumToBags: [{ name: 'ai', points: 1 }],
           },
           {
             answer: "40 metres",
-            nextId: 'infourthMathscorrectq17',
-            sumToBags: [{ name: 'ai', points: 1 }],
+            nextId: 'fourthMathscorrectq17',
+            sumToBags: [{ name: 'ac', points: 1 }],
           },
           {
             answer: "50 metres",
@@ -10844,7 +10844,7 @@ classiv: {
       },
       
       fourthMathscorrectq17: {
-      botPrompt: 'Hurray! <strong>30 metres</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>40 metres</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'fourthMaths'+shuffleArraylottwo[18],
@@ -10852,7 +10852,7 @@ classiv: {
       ],
       },
       infourthMathscorrectq17: {
-      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"30 metres"</strong>',
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"40 metres"</strong>',
       answers: [
         {
           nextId: 'fourthMaths'+shuffleArraylottwo[18],
@@ -11030,8 +11030,6 @@ classiv: {
           type: RTypes.TRANSFORMED_TEXT,
           input: selectField(['Maths', "English", "Science"]),
           answers: [
-            
-            
             {
               answer: 'Maths',
               nextId: 'fiveMaths'+randomNumberclass,
