@@ -36,7 +36,7 @@ const shuffleArraylot = shuffleNumberArraylot(numberslot);
 
 function shuffleNumberArraylottwo(array) {
   const shuffleNumberArraylottwo = array.slice();
-  for (let i = shuffleNumberArraylot.length - 1; i > 0; i--) {
+  for (let i = shuffleNumberArraylot.length - 1; i > 1; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [shuffleNumberArraylottwo[i], shuffleNumberArraylottwo[j]] = [shuffleNumberArraylottwo[j], shuffleNumberArraylottwo[i]];
   }
@@ -57,7 +57,7 @@ const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
 
 console.log(randomNumber);
 
-const minclass = 0;
+const minclass = 1;
 const maxclass = 19;
 const randomNumberclass = Math.floor(Math.random() * (max - min + 1)) + min;
 
@@ -319,7 +319,7 @@ Welcomeback: {
 //newquest
 
 
-["fln"+shuffleArraylot[0]]: {
+["fln"+shuffleArraylot[1]]: {
   botPrompt: ' The cat ___ playing. ',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['is', 'are', "here","where"]),
@@ -396,7 +396,7 @@ flncorrectq2: {
   botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'fln'+shuffleArraylot[2],
+      nextId: 'fln'+shuffleArraylot[1],
     },
   ],
 },
@@ -404,13 +404,13 @@ inflncorrectq2: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
   answers: [
     {
-      nextId: 'fln'+shuffleArraylot[2],
+      nextId: 'fln'+shuffleArraylot[1],
     },
   ],
 },
 
 //3
-['fln'+shuffleArraylot[2]]: {
+['fln'+shuffleArraylot[3]]: {
 botPrompt: "The flowers ___ beautiful.",
 type: RTypes.TRANSFORMED_TEXT,
 
@@ -2252,11 +2252,11 @@ classi: {
   answers: [
     {
       answer: 'Maths',
-      nextId: 'firstMaths'+shuffleArraylottwo[1][1],
+      nextId: 'firstMaths'+randomNumberclass,
     },
     {
       answer: "English",
-      nextId: "firstEnglish"+shuffleArraylottwo[1],
+      nextId: "firstEnglish"+randomNumberclass,
     },
   
   ],
@@ -2297,7 +2297,7 @@ classi: {
     },
   ],
   },
-  infirstEnglishcorrectq5: {
+  infirstEnglishcorrectq1: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"an"</strong>',
   answers: [
     {
@@ -4062,11 +4062,11 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
   answers: [
     {
       answer: 'Maths',
-      nextId: 'secondMaths'+shuffleArraylottwo[1],
+      nextId: 'secondMaths'+randomNumberclass,
     },
     {
       answer: "English",
-      nextId: "secondEnglish"+shuffleArraylottwo[1],
+      nextId: "secondEnglish"+randomNumberclass,
     },
   
   ],
@@ -6034,15 +6034,15 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
           answers: [
             {
               answer: 'Maths',
-              nextId: 'thirdMaths'+shuffleArraylottwo[1],
+              nextId: 'thirdMaths'+randomNumberclass,
             },
             {
               answer: "English",
-              nextId: "thirdEnglish"+shuffleArraylottwo[1],
+              nextId: "thirdEnglish"+randomNumberclass,
             },
             {
               answer: "Science",
-              nextId: "thirdEnglish"+shuffleArraylottwo[1],
+              nextId: "thirdEnglish"+randomNumberclass,
             },
       
           ],
@@ -8014,22 +8014,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
             },
           ],
           },
-          wishtocontinuefourthScience: {
-            botPrompt: 'You have Completed Science. Do you Wish to Continue ?',
-            type: RTypes.TRANSFORMED_TEXT,
-            input: selectField(['Yes', "No"]),
-            answers: [
-              {
-                answer: 'Yes',
-                nextId: 'chooseclass',
-              },
-              {
-                answer: "No",
-                nextId: 'endConv',
-              },
-            
-            ],
-          },
+         
         
  
 //classiv
@@ -8049,22 +8034,6 @@ classiv: {
     {
       answer: "Science",
       nextid: "fourthScience"+randomNumberclass,
-    }
-  
-  ],
-},
-wishtocontinuefourthScience: {
-  botPrompt: 'You have Completed Science. Do you Wish to Continue ?',
-  type: RTypes.TRANSFORMED_TEXT,
-  input: selectField(['Yes', "No"]),
-  answers: [
-    {
-      answer: 'Yes',
-      nextId: 'chooseclass',
-    },
-    {
-      answer: "No",
-      nextId: 'endConv',
     },
   
   ],
@@ -11064,15 +11033,15 @@ wishtocontinuefourthScience: {
           answers: [
             {
               answer: 'Maths',
-              nextId: 'fiveMaths'+shuffleArraylottwo[1],
+              nextId: 'fiveMaths'+randomNumberclass,
             },
             {
               answer: "English",
-              nextId: "fiveEnglish"+shuffleArraylottwo[1],
+              nextId: "fiveEnglish"+randomNumberclass,
             },
             {
               answer: "Science",
-              nextId: "fiveScience"+shuffleArraylottwo[1],
+              nextId: "fiveScience"+randomNumberclass,
             },
           ],
         
@@ -14065,15 +14034,15 @@ classvi: {
   answers: [
     {
       answer: 'Maths',
-      nextId: 'sixthMaths'+shuffleArraylottwo[1],
+      nextId: 'sixthMaths'+randomNumberclass,
     },
     {
       answer: "English",
-      nextId: 'sixthEnglish'+shuffleArraylottwo[1],
+      nextId: 'sixthEnglish'+randomNumberclass,
     },
     {
       answer: "Science",
-      nextid: 'sixthScience'+shuffleArraylottwo[1],
+      nextid: 'sixthScience'+randomNumberclass,
     }
   
   ],
@@ -17071,19 +17040,19 @@ classvii: {
   answers: [
     {
       answer: 'Maths',
-      nextId: 'seventhMaths'+shuffleArraylottwo[1],
+      nextId: 'seventhMaths'+randomNumberclass,
     },
     {
       answer: "English",
-      nextId: 'seventhEnglish'+shuffleArraylottwo[1],
+      nextId: 'seventhEnglish'+randomNumberclass,
     },
     {
       answer: "Science",
-      nextid: "seventhScience"+shuffleArraylottwo[1],
+      nextid: "seventhScience"+randomNumberclass,
     },
     {
       answer: "Biology",
-      nextId: "sevenBiology"+shuffleArraylottwo[1],
+      nextId: "sevenBiology"+randomNumberclass,
     },
   
   ],
@@ -20033,15 +20002,15 @@ classviii: {
     answers: [
       {
         answer: 'Maths',
-        nextId: 'eightMaths'+shuffleArraylottwo[1],
+        nextId: 'eightMaths'+randomNumberclass,
       },
       {
         answer: "English",
-        nextId: "eightEnglish"+shuffleArraylottwo[1],
+        nextId: "eightEnglish"+randomNumberclass,
       },
       {
         answer: "Science",
-        nextId: "eightScience"+shuffleArraylottwo[1],
+        nextId: "eightScience"+randomNumberclass,
       }
 
     ],
