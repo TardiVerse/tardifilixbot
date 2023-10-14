@@ -6042,7 +6042,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
             },
             {
               answer: "Science",
-              nextId: "thirdEnglish"+randomNumberclass,
+              nextId: "thirdScience"+randomNumberclass,
             },
       
           ],
@@ -8890,12 +8890,12 @@ classiv: {
             sumToBags: [{ name: 'ai', points: 1 }],
           },
           {
-            answer: "saturn",
+            answer: "Saturn",
             nextId: 'infourthSciencecorrectq18',
             sumToBags: [{ name: 'ai', points: 1 }],
           },
           {
-              answer: "jupiter",
+              answer: "Jupiter",
               nextId: 'fourthSciencecorrectq18',
               sumToBags: [{ name: 'ac', points: 1 }],
             },
@@ -20488,10 +20488,10 @@ answers: [
 
 //11
 ['eightMaths'+shuffleArraylottwo[11]]: {
-botPrompt: '64 - x2 = ?',
+botPrompt: '64 - x^2 = ?',
 type: RTypes.TRANSFORMED_TEXT,
 
-input: selectField(['(8+x)', '(8-x)', "both(a) and (b)","(8+x)(8-x)"]),
+input: selectField(['(8+x)', "(8-x)","(8+x)(8-x)"]),
   answers: [
     {
       answer: '(8+x)',
@@ -20499,17 +20499,12 @@ input: selectField(['(8+x)', '(8-x)', "both(a) and (b)","(8+x)(8-x)"]),
       sumToBags: [{ name: 'ai', points: 1 }],
     },
     {
-      answer: '(8-x)',
+      answer: "(8-x)",
       nextId: 'ineightMathscorrectq11',
       sumToBags: [{ name: 'ai', points: 1 }],
     },
     {
-      answer: "both (a) and (b)",
-      nextId: 'ineightMathscorrectq11',
-      sumToBags: [{ name: 'ai', points: 1 }],
-    },
-    {
-      answer: "(8+x)(8-x))",
+      answer: "(8+x)(8-x)",
       nextId: 'eightMathscorrectq11',
       sumToBags: [{ name: 'ac', points: 1 }],
     },
