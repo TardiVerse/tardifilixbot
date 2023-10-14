@@ -8033,9 +8033,9 @@ classiv: {
     },
     {
       answer: "Science",
-      nextid: "fourthScience"+randomNumberclass,
+      nextId: "fourthScience"+randomNumberclass,
     },
-  
+      
   ],
 },
 
@@ -8778,7 +8778,7 @@ classiv: {
           
       //16
   ['fourthScience'+shuffleArraylottwo[16]]: {
-      botPrompt: 'A garden is in the shape of a right triangle with one side of length 4 metres and the other side of length 3 metres. What is the area of the garden?',
+      botPrompt: 'What adaptation helps a snake catch its prey?',
       type: RTypes.TRANSFORMED_TEXT,
       
       input: selectField(['Sharp claws', 'Long tail', "Venomous fangs", "Strong wings"]),
@@ -8794,7 +8794,7 @@ classiv: {
             sumToBags: [{ name: 'ai', points: 1 }],
           },
           {
-            answer: "Venomous fangs ",
+            answer: "Venomous fangs",
             nextId: 'fourthSciencecorrectq16',
             sumToBags: [{ name: 'ac', points: 1 }],
           },
@@ -8891,15 +8891,16 @@ classiv: {
             sumToBags: [{ name: 'ai', points: 1 }],
           },
           {
-            answer: "saturn",
+            answer: "Saturn",
             nextId: 'infourthSciencecorrectq18',
             sumToBags: [{ name: 'ai', points: 1 }],
           },
           {
-              answer: "jupiter",
-              nextId: 'fourthSciencecorrectq18',
-              sumToBags: [{ name: 'ac', points: 1 }],
-            },
+            answer: "Jupiter",
+            nextId: 'fourthSciencecorrectq18',
+            sumToBags: [{ name: 'ai', points: 1 }],
+          },
+      
         ],
       },
       
