@@ -36,7 +36,7 @@ const shuffleArraylot = shuffleNumberArraylot(numberslot);
 
 function shuffleNumberArraylottwo(array) {
   const shuffleNumberArraylottwo = array.slice();
-  for (let i = shuffleNumberArraylot.length - 1; i > 1; i--) {
+  for (let i = shuffleNumberArraylot.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [shuffleNumberArraylottwo[i], shuffleNumberArraylottwo[j]] = [shuffleNumberArraylottwo[j], shuffleNumberArraylottwo[i]];
   }
@@ -2308,7 +2308,7 @@ classi: {
   
     //2
     ['firstEnglish'+shuffleArraylottwo[2]]: {
-      botPrompt: ' Which article should be used before words that start with a vowel sound?',
+      botPrompt: 'Which article should be used before words that start with a vowel sound?',
       type: RTypes.TRANSFORMED_TEXT,
       
       input: selectField(['A', 'An', "The"]),
@@ -2340,7 +2340,7 @@ classi: {
         },
       ],
       },
-      infirstEnglishcorrectq3: {
+      infirstEnglishcorrectq2: {
       botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"An"</strong>',
       answers: [
         {
@@ -2357,17 +2357,17 @@ classi: {
       input: selectField(['A', 'An', "The"]),
         answers: [
           {
-            answer: 'a',
+            answer: 'A',
             nextId: 'firstEnglishcorrectq3',
             sumToBags: [{ name: 'ac', points: 1 }],
           },
           {
-            answer: 'an',
+            answer: 'An',
             nextId: 'infirstEnglishcorrectq3',
             sumToBags: [{ name: 'ai', points: 1 }],
           },
           {
-            answer: "the",
+            answer: "The",
             nextId: 'infirstEnglishcorrectq3',
             sumToBags: [{ name: 'ai', points: 1 }],
           },
@@ -2396,7 +2396,7 @@ classi: {
     ['firstEnglish'+shuffleArraylottwo[4]]: {
       botPrompt: 'What are naming words called in English?',
       type: RTypes.TRANSFORMED_TEXT,
-      
+  
       input: selectField(['Verbs', 'Nouns', "Adjectives"]),
         answers: [
           {
@@ -2791,10 +2791,10 @@ classi: {
         botPrompt: 'What are the names of specific people, places, or things like "New York" and "Cinderella" called? ',
         type: RTypes.TRANSFORMED_TEXT,
         
-        input: selectField(['General nouns', ' Common nouns ', "Proper nouns"]),
+        input: selectField(['General nouns', 'Common nouns', "Proper nouns"]),
           answers: [
             {
-              answer: ' General nouns',
+              answer: 'General nouns',
               nextId: 'infirstEnglishcorrectq13',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
@@ -3104,7 +3104,7 @@ classi: {
         input: selectField(['Nouns', 'Verbs', "Adjective"]),
           answers: [
             {
-              answer: ' Nouns',
+              answer: 'Nouns',
               nextId: 'infirstEnglishcorrectq20',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
@@ -3114,7 +3114,7 @@ classi: {
               sumToBags: [{ name: 'ai', points: 1 }],
             },
             {
-              answer: "AdvAdjective",
+              answer: "Adjective",
               nextId: 'firstEnglishcorrectq20',
               sumToBags: [{ name: 'ac', points: 1 }],
             },
@@ -11046,7 +11046,7 @@ classiv: {
             },
           ],
         
-
+        },
        //class5English
        ['fiveEnglish'+shuffleArraylottwo[1]]: {
         botPrompt: 'Identify the imperative sentence:',
@@ -11078,7 +11078,7 @@ classiv: {
         },
         
         fiveEnglishcorrectq1: {
-        botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>Please pass the salt.</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'fiveEnglish'+shuffleArraylottwo[2],
@@ -11127,7 +11127,7 @@ classiv: {
       },
       
       fiveEnglishcorrectq2: {
-      botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>on</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'fiveEnglish'+shuffleArraylottwo[3],
@@ -11176,7 +11176,7 @@ classiv: {
       },
       
       fiveEnglishcorrectq3: {
-      botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>can</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'fiveEnglish'+shuffleArraylottwo[4],
@@ -11225,7 +11225,7 @@ classiv: {
       },
       
       fiveEnglishcorrectq4: {
-      botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>hers</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'fiveEnglish'+shuffleArraylottwo[5],
@@ -11274,7 +11274,7 @@ classiv: {
       },
       
       fiveEnglishcorrectq5: {
-      botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>but</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'fiveEnglish'+shuffleArraylottwo[6],
@@ -11323,7 +11323,7 @@ classiv: {
       },
       
       fiveEnglishcorrectq6: {
-      botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>taller</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'fiveEnglish'+shuffleArraylottwo[7],
@@ -11372,7 +11372,7 @@ classiv: {
       },
       
       fiveEnglishcorrectq7: {
-      botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>Wow</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'fiveEnglish'+shuffleArraylottwo[8],
@@ -11421,7 +11421,7 @@ classiv: {
       },
       
       fiveEnglishcorrectq8: {
-      botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>but</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'fiveEnglish'+shuffleArraylottwo[9],
@@ -11470,7 +11470,7 @@ classiv: {
       },
       
       fiveEnglishcorrectq9: {
-      botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>The cat chases the mouse.</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'fiveEnglish'+shuffleArraylottwo[10],
@@ -11519,7 +11519,7 @@ classiv: {
       },
       
       fiveEnglishcorrectq10: {
-      botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>quickly</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'fiveEnglish'+shuffleArraylottwo[11],
@@ -11568,7 +11568,7 @@ classiv: {
       },
       
       fiveEnglishcorrectq11: {
-      botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>pretty</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'fiveEnglish'+shuffleArraylottwo[12],
@@ -11617,7 +11617,7 @@ classiv: {
       },
       
       fiveEnglishcorrectq12: {
-      botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>went</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'fiveEnglish'+shuffleArraylottwo[13],
@@ -11666,7 +11666,7 @@ classiv: {
       },
       
       fiveEnglishcorrectq13: {
-      botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>book</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'fiveEnglish'+shuffleArraylottwo[14],
@@ -11715,7 +11715,7 @@ classiv: {
       },
       
       fiveEnglishcorrectq14: {
-      botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>He had finished his homework.</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'fiveEnglish'+shuffleArraylottwo[15],
@@ -11764,7 +11764,7 @@ classiv: {
       },
       
       fiveEnglishcorrectq15: {
-      botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>She will be dancing at the party.</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'fiveEnglish'+shuffleArraylottwo[16],
@@ -11813,7 +11813,7 @@ classiv: {
       },
       
       fiveEnglishcorrectq16: {
-      botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>The team is playing well.</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'fiveEnglish'+shuffleArraylottwo[17],
@@ -11836,7 +11836,7 @@ classiv: {
       botPrompt: ' Complete the sentence with the appropriate articles: I found _________ interesting book on _________ unicorn at the library.',
       type: RTypes.TRANSFORMED_TEXT,
       
-      input: selectField(['a, the', ' an, an', "an, a","the, an"]),
+      input: selectField(['a, the', 'an, an', "an, a","the, an"]),
         answers: [
           {
             answer: 'a, the',
@@ -11844,7 +11844,7 @@ classiv: {
             sumToBags: [{ name: 'ai', points: 1 }],
           },
           {
-            answer: ' an, an',
+            answer: 'an, an',
             nextId: 'infiveEnglishcorrectq17',
             sumToBags: [{ name: 'ai', points: 1 }],
           },
@@ -11862,7 +11862,7 @@ classiv: {
       },
       
       fiveEnglishcorrectq17: {
-      botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>an, a</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'fiveEnglish'+shuffleArraylottwo[18],
@@ -11911,7 +11911,7 @@ classiv: {
       },
       
       fiveEnglishcorrectq18: {
-      botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>finish</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'fiveEnglish'+shuffleArraylottwo[19],
@@ -11960,7 +11960,7 @@ classiv: {
       },
       
       fiveEnglishcorrectq19: {
-      botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>cleverly</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'fiveEnglish'+shuffleArraylottwo[20],
@@ -12009,7 +12009,7 @@ classiv: {
       },
       
       fiveEnglishcorrectq20: {
-      botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>highest</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'wishtocountinefiveEnglish',
@@ -12072,7 +12072,7 @@ classiv: {
     },
     
     fiveMathscorrectq1: {
-    botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+    botPrompt: 'Hurray! <strong>35</strong> is the correct answer  ! 😎',
     answers: [
       {
         nextId: 'fiveMaths'+shuffleArraylottwo[2],
@@ -12119,7 +12119,7 @@ classiv: {
         },
         
         fiveMathscorrectq2: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>12</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'fiveMaths'+shuffleArraylottwo[3],
@@ -12166,7 +12166,7 @@ classiv: {
   },
   
   fiveMathscorrectq3: {
-  botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>70 km/h</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'fiveMaths'+shuffleArraylottwo[4],
@@ -12214,7 +12214,7 @@ classiv: {
     },
     
     fiveMathscorrectq4: {
-    botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+    botPrompt: 'Hurray! <strong>I = P * R * T</strong> is the correct answer  ! 😎',
     answers: [
       {
         nextId: 'fiveMaths'+shuffleArraylottwo[5],
@@ -12262,7 +12262,7 @@ classiv: {
       },
       
       fiveMathscorrectq5: {
-      botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>Rs.80</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'fiveMaths'+shuffleArraylottwo[6],
@@ -12310,7 +12310,7 @@ classiv: {
         },
         
         fiveMathscorrectq6: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>Obtuse angle</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'fiveMaths'+shuffleArraylottwo[7],
@@ -12358,7 +12358,7 @@ classiv: {
         },
         
         fiveMathscorrectq7: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>Isosceles triangle</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'fiveMaths'+shuffleArraylottwo[8],
@@ -12406,7 +12406,7 @@ classiv: {
         },
         
         fiveMathscorrectq8: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>50%</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'fiveMaths'+shuffleArraylottwo[9],
@@ -12454,7 +12454,7 @@ classiv: {
         },
         
         fiveMathscorrectq9: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>Milli-</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'fiveMaths'+shuffleArraylottwo[10],
@@ -12502,7 +12502,7 @@ classiv: {
         },
         
         fiveMathscorrectq10: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>2 kg</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'fiveMaths'+shuffleArraylottwo[11],
@@ -12550,7 +12550,7 @@ classiv: {
         },
         
         fiveMathscorrectq11: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>2/3</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'fiveMaths'+shuffleArraylottwo[12],
@@ -12599,7 +12599,7 @@ classiv: {
         },
         
         fiveMathscorrectq12: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>11</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'fiveMaths'+shuffleArraylottwo[13],
@@ -12648,7 +12648,7 @@ classiv: {
         },
         
         fiveMathscorrectq13: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>72 cubic centimeters</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'fiveMaths'+shuffleArraylottwo[14],
@@ -12698,7 +12698,7 @@ classiv: {
         },
         
         fiveMathscorrectq14: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>The cube with a side length of 4 cm</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'fiveMaths'+shuffleArraylottwo[15],
@@ -12747,7 +12747,7 @@ classiv: {
         },
         
         fiveMathscorrectq15: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>60%</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'fiveMaths'+shuffleArraylottwo[16],
@@ -12798,7 +12798,7 @@ classiv: {
         },
         
         fiveMathscorrectq16: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>2.25</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'fiveMaths'+shuffleArraylottwo[17],
@@ -12848,7 +12848,7 @@ classiv: {
         },
         
         fiveMathscorrectq17: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>0.65</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'fiveMaths'+shuffleArraylottwo[18],
@@ -12898,7 +12898,7 @@ classiv: {
         },
         
         fiveMathscorrectq18: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>7</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'fiveMaths'+shuffleArraylottwo[19],
@@ -12948,7 +12948,7 @@ classiv: {
         },
         
         fiveMathscorrectq19: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>29</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'fiveMaths'+shuffleArraylottwo[20],
@@ -12997,7 +12997,7 @@ classiv: {
         },
         
         fiveMathscorrectq20: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>40 square cm</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'wishtocountinefiveMaths',
@@ -13031,7 +13031,7 @@ classiv: {
         },
 
 
-},
+
 //class5Science
 //1
 ['fiveScience'+shuffleArraylottwo[1]]: {
@@ -13064,7 +13064,7 @@ classiv: {
   },
   
   fiveSciencecorrectq1: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>Anchoring the plant and absorbing water and nutrients</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'fiveScience'+shuffleArraylottwo[2],
@@ -13114,7 +13114,7 @@ classiv: {
   },
   
   fiveSciencecorrectq2: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>Sharing personal hygiene items with others</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'fiveScience'+shuffleArraylottwo[3],
@@ -13163,7 +13163,7 @@ classiv: {
   },
   
   fiveSciencecorrectq3: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>Dry mouth and throat</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'fiveScience'+shuffleArraylottwo[4],
@@ -13212,7 +13212,7 @@ classiv: {
   },
   
   fiveSciencecorrectq4: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>Photosynthesis</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'fiveScience'+shuffleArraylottwo[5],
@@ -13261,7 +13261,7 @@ classiv: {
   },
   
   fiveSciencecorrectq5: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>Run the burn under cold water for a few minutes</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'fiveScience'+shuffleArraylottwo[6],
@@ -13310,7 +13310,7 @@ classiv: {
   },
   
   fiveSciencecorrectq6: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>Playing with matches</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'fiveScience'+shuffleArraylottwo[7],
@@ -13359,7 +13359,7 @@ classiv: {
   },
   
   fiveSciencecorrectq7: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>Sublimation</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'fiveScience'+shuffleArraylottwo[8],
@@ -13408,7 +13408,7 @@ classiv: {
   },
   
   fiveSciencecorrectq8: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>Gas</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'fiveScience'+shuffleArraylottwo[9],
@@ -13457,7 +13457,7 @@ classiv: {
   },
   
   fiveSciencecorrectq9: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>Sandstone</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'fiveScience'+shuffleArraylottwo[10],
@@ -13506,7 +13506,7 @@ classiv: {
   },
   
   fiveSciencecorrectq10: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>Igneous rock</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'fiveScience'+shuffleArraylottwo[11],
@@ -13555,7 +13555,7 @@ classiv: {
   },
   
   fiveSciencecorrectq11: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>Chameleon</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'fiveScience'+shuffleArraylottwo[12],
@@ -13604,7 +13604,7 @@ classiv: {
   },
   
   fiveSciencecorrectq12: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>Processing information and controlling the body</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'fiveScience'+shuffleArraylottwo[13],
@@ -13653,7 +13653,7 @@ classiv: {
   },
   
   fiveSciencecorrectq13: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>Phalanges</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'fiveScience'+shuffleArraylottwo[14],
@@ -13702,7 +13702,7 @@ classiv: {
   },
   
   fiveSciencecorrectq14: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>Wheel and axle</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'fiveScience'+shuffleArraylottwo[15],
@@ -13751,7 +13751,7 @@ classiv: {
   },
   
   fiveSciencecorrectq15: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>Kinetic energy</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'fiveScience'+shuffleArraylottwo[16],
@@ -13800,7 +13800,7 @@ classiv: {
   },
   
   fiveSciencecorrectq16: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>It supports life by allowing the exchange of gases</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'fiveScience'+shuffleArraylottwo[17],
@@ -13849,7 +13849,7 @@ classiv: {
   },
   
   fiveSciencecorrectq17: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>Full Moon</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'fiveScience'+shuffleArraylottwo[18],
@@ -13898,7 +13898,7 @@ classiv: {
   },
   
   fiveSciencecorrectq18: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>The rotation of the Earth on its axis</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'fiveScience'+shuffleArraylottwo[19],
@@ -13947,7 +13947,7 @@ classiv: {
   },
   
   fiveSciencecorrectq19: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>Crater</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'fiveScience'+shuffleArraylottwo[20],
@@ -13996,7 +13996,7 @@ classiv: {
   },
   
   fiveSciencecorrectq20: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>It warms up the Earth</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'wishtocountinefiveScience',
