@@ -47,7 +47,7 @@ function shuffleNumberArraylottwo(array) {
 const numberslottwo = Array.from({ length: 20 }, (_, i) => i + 1);
 
 // Shuffle the array
-const shuffleArraylottwo = shuffleNumberArraylot(numberslottwo);
+const shuffleArraylottwo = shuffleNumberArraylottwo(numberslottwo);
 
 
 
@@ -56,6 +56,14 @@ const max = 15;
 const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
 
 console.log(randomNumber);
+
+const minclass = 0;
+const maxclass = 19;
+const randomNumberclass = Math.floor(Math.random() * (max - min + 1)) + min;
+
+console.log(randomNumberclass);
+
+
 
 
 const questions = {
@@ -7999,7 +8007,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
           ],
           },
           inthirdSciencecorrectq16: {
-          botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+          botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Moon"</strong>',
           answers: [
             {
               nextId: 'wishtocountinethirdScience',
@@ -8032,15 +8040,15 @@ classiv: {
   answers: [
     {
       answer: 'Maths',
-      nextId: "fourthMaths"+shuffleArraylottwo[1],
+      nextId: "fourthMaths"+randomNumberclass,
     },
     {
       answer: "English",
-      nextId: "fourthEnglish"+shuffleArraylottwo[1],
+      nextId: "fourthEnglish"+randomNumberclass,
     },
     {
       answer: "Science",
-      nextid: "fourthScience"+shuffleArraylottwo[1],
+      nextid: "fourthScience"+randomNumberclass,
     }
   
   ],
@@ -10203,7 +10211,7 @@ wishtocontinuefourthScience: {
       botPrompt: 'What is the sum of 1/4 and 2/4?',
       type: RTypes.TRANSFORMED_TEXT,
       
-      input: selectField(['₹0.45', '₹0.54', "₹0.04","₹0.55"]),
+      input: selectField(['3/4', '1/8', "1/2","2/8"]),
         answers: [
           {
             answer: '3/4',
@@ -10251,7 +10259,7 @@ wishtocontinuefourthScience: {
       botPrompt: 'Which of the following numbers is written correctly as a decimal?',
       type: RTypes.TRANSFORMED_TEXT,
       
-      input: selectField(['25/100', '15%', "0.25","2.5"]),
+      input: selectField(['25/100', '15%', "0.25","100/25"]),
         answers: [
           {
             answer: '25/100',
@@ -10269,7 +10277,7 @@ wishtocontinuefourthScience: {
             sumToBags: [{ name: 'ac', points: 1 }],
           },
           {
-            answer: "2.5",
+            answer: "100/25",
             nextId: 'infourthMathscorrectq5',
             sumToBags: [{ name: 'ai', points: 1 }],
           },
@@ -10356,8 +10364,8 @@ wishtocontinuefourthScience: {
           },
           {
             answer: '2.0',
-            nextId: 'infourthMathscorrectq7',
-            sumToBags: [{ name: 'ai', points: 1 }],
+            nextId: 'fourthMathscorrectq7',
+            sumToBags: [{ name: 'ac', points: 1 }],
           },
           {
             answer: "1.0",
@@ -10366,14 +10374,14 @@ wishtocontinuefourthScience: {
           },
           {
             answer: "2.3",
-            nextId: 'fourthMathscorrectq7',
-            sumToBags: [{ name: 'ac', points: 1 }],
+            nextId: 'infourthMathscorrectq7',
+            sumToBags: [{ name: 'ai', points: 1 }],
           },
         ],
       },
       
       fourthMathscorrectq7: {
-      botPrompt: 'Hurray! <strong>2.3</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>2.0</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'fourthMaths'+shuffleArraylottwo[8],
@@ -10381,7 +10389,7 @@ wishtocontinuefourthScience: {
       ],
       },
       infourthMathscorrectq7: {
-      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"2.3"</strong>',
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"2.0"</strong>',
       answers: [
         {
           nextId: 'fourthMaths'+shuffleArraylottwo[8],
@@ -10404,13 +10412,13 @@ wishtocontinuefourthScience: {
           },
           {
             answer: '30 minutes',
-            nextId: 'fourthMathscorrectq8',
-            sumToBags: [{ name: 'ac', points: 1 }],
+            nextId: 'infourthMathscorrectq8',
+            sumToBags: [{ name: 'ai', points: 1 }],
           },
           {
             answer: "75 minutes",
-            nextId: 'infourthMathscorrectq8',
-            sumToBags: [{ name: 'ai', points: 1 }],
+            nextId: 'fourthMathscorrectq8',
+            sumToBags: [{ name: 'ac', points: 1 }],
           },
           {
             answer: "105 minutes",
@@ -10421,7 +10429,7 @@ wishtocontinuefourthScience: {
       },
       
       fourthMathscorrectq8: {
-      botPrompt: 'Hurray! <strong>30 minutes</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>75 minutes</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'fourthMaths'+shuffleArraylottwo[9],
@@ -10429,7 +10437,7 @@ wishtocontinuefourthScience: {
       ],
       },
       infourthMathscorrectq8: {
-      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"30 minutes"</strong>',
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"75 minutes"</strong>',
       answers: [
         {
           nextId: 'fourthMaths'+shuffleArraylottwo[9],
@@ -22915,4 +22923,7 @@ wishtocontinueeightEnglish: {
   
 
 }
+
+
+console.log("sukdeb",questions)
 export default questions;
