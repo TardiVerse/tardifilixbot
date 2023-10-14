@@ -2252,7 +2252,7 @@ classi: {
   answers: [
     {
       answer: 'Maths',
-      nextId: 'tfidgenrationtext',
+      nextId: 'firstMaths'+shuffleArraylottwo[1][1],
     },
     {
       answer: "English",
@@ -2290,7 +2290,7 @@ classi: {
   },
   
   firstEnglishcorrectq1: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>"an"</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'firstEnglish'+shuffleArraylottwo[2],
@@ -2298,7 +2298,7 @@ classi: {
   ],
   },
   infirstEnglishcorrectq5: {
-  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"an"</strong>',
   answers: [
     {
       nextId: 'firstEnglish'+shuffleArraylottwo[2],
@@ -2333,7 +2333,7 @@ classi: {
       },
       
       firstEnglishcorrectq2: {
-      botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>""An""</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'firstEnglish'+shuffleArraylottwo[3],
@@ -2341,7 +2341,7 @@ classi: {
       ],
       },
       infirstEnglishcorrectq3: {
-      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"An"</strong>',
       answers: [
         {
           nextId: 'firstEnglish'+shuffleArraylottwo[3],
@@ -2376,7 +2376,7 @@ classi: {
       },
       
       firstEnglishcorrectq3: {
-      botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>"a"</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'firstEnglish'+shuffleArraylottwo[4],
@@ -2384,7 +2384,7 @@ classi: {
       ],
       },
       infirstEnglishcorrectq3: {
-      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"a"</strong>',
       answers: [
         {
           nextId: 'firstEnglish'+shuffleArraylottwo[4],
@@ -2419,7 +2419,7 @@ classi: {
       },
       
       firstEnglishcorrectq4: {
-      botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>"Nouns"</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'firstEnglish'+shuffleArraylottwo[5],
@@ -2427,7 +2427,7 @@ classi: {
       ],
       },
       infirstEnglishcorrectq4: {
-      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Nouns"</strong>',
       answers: [
         {
           nextId: 'firstEnglish'+shuffleArraylottwo[5],
@@ -2462,7 +2462,7 @@ classi: {
       },
       
       firstEnglishcorrectq5: {
-      botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>"Cat"</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'firstEnglish'+shuffleArraylottwo[6],
@@ -2470,7 +2470,7 @@ classi: {
       ],
       },
       infirstEnglishcorrectq5: {
-      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Cat"</strong>',
       answers: [
         {
           nextId: 'firstEnglish'+shuffleArraylottwo[6],
@@ -2506,7 +2506,7 @@ classi: {
       },
       
       firstEnglishcorrectq6: {
-      botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>"ball"</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'firstEnglish'+shuffleArraylottwo[7],
@@ -2514,7 +2514,7 @@ classi: {
       ],
       },
       infirstEnglishcorrectq6: {
-      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"ball"</strong>',
       answers: [
         {
           nextId: 'firstEnglish'+shuffleArraylottwo[7],
@@ -2550,7 +2550,7 @@ classi: {
       },
       
       firstEnglishcorrectq7: {
-      botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>"City"</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'firstEnglish'+shuffleArraylottwo[8],
@@ -2558,7 +2558,7 @@ classi: {
       ],
       },
       infirstEnglishcorrectq7: {
-      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"City"</strong>',
       answers: [
         {
           nextId: 'firstEnglish'+shuffleArraylottwo[8],
@@ -2594,7 +2594,7 @@ classi: {
       },
       
       firstEnglishcorrectq8: {
-      botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>"sun"</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'firstEnglish'+shuffleArraylottwo[9],
@@ -2602,7 +2602,7 @@ classi: {
       ],
       },
       infirstEnglishcorrectq8: {
-      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"sun"</strong>',
       answers: [
         {
           nextId: 'firstEnglish'+shuffleArraylottwo[9],
@@ -2638,7 +2638,7 @@ classi: {
       },
       
       firstEnglishcorrectq9: {
-      botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>"Proper nouns"</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'firstEnglish'+shuffleArraylottwo[10],
@@ -2646,7 +2646,7 @@ classi: {
       ],
       },
       infirstEnglishcorrectq9: {
-      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Proper Nouns"</strong>',
       answers: [
         {
           nextId: 'firstEnglish'+shuffleArraylottwo[10],
@@ -2681,7 +2681,7 @@ classi: {
         },
         
         firstEnglishcorrectq10: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>"Animal noun"</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'firstEnglish'+shuffleArraylottwo[11],
@@ -2689,7 +2689,7 @@ classi: {
         ],
         },
         infirstEnglishcorrectq10: {
-        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Animal Nouns"</strong>',
         answers: [
           {
             nextId: 'firstEnglish'+shuffleArraylottwo[11],
@@ -2725,7 +2725,7 @@ classi: {
         },
         
         firstEnglishcorrectq11: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>"Common noun"</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'firstEnglish'+shuffleArraylottwo[12],
@@ -2733,7 +2733,7 @@ classi: {
         ],
         },
         infirstEnglishcorrectq11: {
-        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Common Noun"</strong>',
         answers: [
           {
             nextId: 'firstEnglish'+shuffleArraylottwo[12],
@@ -2769,7 +2769,7 @@ classi: {
         },
         
         firstEnglishcorrectq11: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>"the"</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'firstEnglish'+shuffleArraylottwo[12],
@@ -2777,7 +2777,7 @@ classi: {
         ],
         },
         infirstEnglishcorrectq11: {
-        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"the"</strong>',
         answers: [
           {
             nextId: 'firstEnglish'+shuffleArraylottwo[12],
@@ -2813,7 +2813,7 @@ classi: {
         },
         
         firstEnglishcorrectq13: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>"Proper nouns"</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'firstEnglish'+shuffleArraylottwo[14],
@@ -2821,7 +2821,7 @@ classi: {
         ],
         },
         infirstEnglishcorrectq13: {
-        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Proper Nouns"</strong>',
         answers: [
           {
             nextId: 'firstEnglish'+shuffleArraylottwo[14],
@@ -2857,7 +2857,7 @@ classi: {
         },
         
         firstEnglishcorrectq14: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>"run"</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'firstEnglish'+shuffleArraylottwo[15],
@@ -2865,7 +2865,7 @@ classi: {
         ],
         },
         infirstEnglishcorrectq14: {
-        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"run"</strong>',
         answers: [
           {
             nextId: 'firstEnglish'+shuffleArraylottwo[15],
@@ -2901,7 +2901,7 @@ classi: {
         },
         
         firstEnglishcorrectq15: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>"Verbs"</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'firstEnglish'+shuffleArraylottwo[16],
@@ -2909,7 +2909,7 @@ classi: {
         ],
         },
         infirstEnglishcorrectq15: {
-        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Verbs"</strong>',
         answers: [
           {
             nextId: 'firstEnglish'+shuffleArraylottwo[16],
@@ -2947,7 +2947,7 @@ classi: {
         },
         
         firstEnglishcorrectq16: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>"Verbs"</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'firstEnglish'+shuffleArraylottwo[17],
@@ -2955,7 +2955,7 @@ classi: {
         ],
         },
         infirstEnglishcorrectq16: {
-        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Verbs"</strong>',
         answers: [
           {
             nextId: 'firstEnglish'+shuffleArraylottwo[17],
@@ -2991,7 +2991,7 @@ classi: {
         },
         
         firstEnglishcorrectq17: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>"barked"</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'firstEnglish'+shuffleArraylottwo[18],
@@ -2999,7 +2999,7 @@ classi: {
         ],
         },
         infirstEnglishcorrectq17: {
-        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"barked"</strong>',
         answers: [
           {
             nextId: 'firstEnglish'+shuffleArraylottwo[18],
@@ -3035,7 +3035,7 @@ classi: {
         },
         
         firstEnglishcorrectq18: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>"Big"</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'firstEnglish'+shuffleArraylottwo[19],
@@ -3043,7 +3043,7 @@ classi: {
         ],
         },
         infirstEnglishcorrectq18: {
-        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Big"</strong>',
         answers: [
           {
             nextId: 'firstEnglish'+shuffleArraylottwo[19],
@@ -3079,7 +3079,7 @@ classi: {
         },
         
         firstEnglishcorrectq19: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>"small"</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'firstEnglish'+shuffleArraylottwo[20],
@@ -3087,7 +3087,7 @@ classi: {
         ],
         },
         infirstEnglishcorrectq19: {
-        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"small"</strong>',
         answers: [
           {
             nextId: 'firstEnglish'+shuffleArraylottwo[20],
@@ -3123,7 +3123,7 @@ classi: {
         },
         
         firstEnglishcorrectq20: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>"AdvAdjective"</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'wishtocountinefirstenglish',
@@ -3131,7 +3131,7 @@ classi: {
         ],
         },
         infirstEnglishcorrectq16: {
-        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"AdvAdjective"</strong>',
         answers: [
           {
             nextId: 'wishtocountinefirstenglish',
@@ -17083,7 +17083,7 @@ classvii: {
     },
     {
       answer: "Biology",
-      nextId: "eightBiology"+shuffleArraylottwo[1],
+      nextId: "sevenBiology"+shuffleArraylottwo[1],
     },
   
   ],
@@ -19993,7 +19993,7 @@ classvii: {
       botPrompt: 'Hurray! <strong>Tree trunks and large branches</strong> is the correct answer  ! 😎',
       answers: [
         {
-            nextId: 'wishtocountinesevenBiology',
+            nextId: 'wishtocountinesevenBiology'+shuffleArraylottwo[7],
         },
       ],
       },
@@ -20001,7 +20001,7 @@ classvii: {
       botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Tree trunks and large branches"</strong>',
       answers: [
         {
-            nextId: 'wishtocountinesevenBiology',
+            nextId: 'wishtocountinesevenBiology'+shuffleArraylottwo[7],
         },
       ],
       },
@@ -20029,7 +20029,7 @@ classvii: {
 classviii: {
   botPrompt: 'You Have Selected CLASS VIII. Which subject you would like to start',
     type: RTypes.TRANSFORMED_TEXT,
-    input: selectField(['Maths', "English","Science","Biology"]),
+    input: selectField(['Maths', "English","Science"]),
     answers: [
       {
         answer: 'Maths',
@@ -20042,7 +20042,7 @@ classviii: {
       {
         answer: "Science",
         nextId: "eightScience"+shuffleArraylottwo[1],
-      },
+      }
 
     ],
   },  
@@ -22924,6 +22924,5 @@ wishtocontinueeightEnglish: {
 
 }
 
-
-console.log("sukdeb",questions)
+console.log("hey sartak this is what you want",questions)
 export default questions;
