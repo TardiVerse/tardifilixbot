@@ -9356,7 +9356,7 @@ classiv: {
   
        //10
   ['fourthScience'+shuffleArraylottwo[10]]: {
-      botPrompt: 'What is the process of water turning into water vapor called?',
+      botPrompt: 'What is the process of water turning into water vapour called?',
       type: RTypes.TRANSFORMED_TEXT,
       
       input: selectField(['Freezing', 'Evaporation', "Condensation", "Sublimation"]),
@@ -9707,7 +9707,7 @@ classiv: {
       botPrompt: 'What is the process by which water vapor turns into water droplets in the air?',
       type: RTypes.TRANSFORMED_TEXT,
       
-      input: selectField(['Condensation', 'Evaporaton', "Precipitation", "Sublimation"]),
+      input: selectField(['Condensation', 'Evaporation', "Precipitation", "Sublimation"]),
         answers: [
           {
             answer: 'Condensation',
@@ -10255,7 +10255,7 @@ classiv: {
       botPrompt: 'Which sentence is in the Simple Past Tense?',
       type: RTypes.TRANSFORMED_TEXT,
       
-      input: selectField(['We are going to the party tonight.', 'He is watching a movie at the moment.', "They walked to school yesterday","She will sing a song later."]),
+      input: selectField(['We are going to the party tonight.', 'He is watching a movie at the moment.', "They walked to school yesterday.", "She will sing a song later."]),
         answers: [
           {
             answer: 'We are going to the party tonight.',
@@ -10354,7 +10354,7 @@ classiv: {
       botPrompt: 'Identify the sentence in the Simple Past Tense:',
       type: RTypes.TRANSFORMED_TEXT,
       
-      input: selectField(['We are having dinner tonight.', 'He is studying for the test right now.', "She always helped her friends.","d) They were riding bicycles this morning"]),
+      input: selectField(['We are having dinner tonight.', 'He is studying for the test right now.', "She always helped her friends.","They were riding bicycles this morning"]),
         answers: [
           {
             answer: 'We are having dinner tonight.',
@@ -10380,7 +10380,7 @@ classiv: {
       },
       
       fourthEnglishcorrectq10: {
-      botPrompt: 'Hurray! <strong>d) They were riding bicycles this morning</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>They were riding bicycles this morning</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'fourthEnglish'+shuffleArraylottwo[11],
@@ -10388,7 +10388,7 @@ classiv: {
       ],
       },
       infourthEnglishcorrectq10: {
-      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"d) They were riding bicycles this morning"</strong>',
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"They were riding bicycles this morning"</strong>',
       answers: [
         {
           nextId: 'fourthEnglish'+shuffleArraylottwo[11],
@@ -10452,7 +10452,7 @@ classiv: {
       botPrompt: 'Choose the sentence in the Simple Future Tense:',
       type: RTypes.TRANSFORMED_TEXT,
       
-      input: selectField(['I am going to the park today.', 'She is singing a song at the moment.', "They are watching a movie tomorrow.", "He helped his friend yesterday."]),
+      input: selectField(['I am going to the park today.', 'She is singing a song at the moment.', "They will watch a movie tomorrow.", "He helped his friend yesterday."]),
         answers: [
           {
             answer: 'I am going to the park today.',
@@ -10465,7 +10465,7 @@ classiv: {
             sumToBags: [{ name: 'ai', points: 1 }],
           },
           {
-            answer: 'They are watching a movie tomorrow.',
+            answer: 'They will watch a movie tomorrow.',
             nextId: 'fourthEnglishcorrectq12',
             sumToBags: [{ name: 'ac', points: 1 }],
           },
@@ -10479,7 +10479,7 @@ classiv: {
       },
       
       fourthEnglishcorrectq12: {
-      botPrompt: 'Hurray! <strong>They are watching a movie tomorrow.</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>They will watch a movie tomorrow.</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'fourthEnglish'+shuffleArraylottwo[13],
@@ -10487,7 +10487,7 @@ classiv: {
       ],
       },
       infourthEnglishcorrectq12: {
-      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"They are watching a movie tomorrow."</strong>',
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"They will watch a movie tomorrow."</strong>',
       answers: [
         {
           nextId: 'fourthEnglish'+shuffleArraylottwo[13],
@@ -10796,7 +10796,7 @@ classiv: {
   
       //19
   ['fourthEnglish'+shuffleArraylottwo[19]]: {
-      botPrompt: 'Fill in the blank with proper form of Adjective The red car is _____ (fast) than the blue one.',
+      botPrompt: 'Fill in the blank with proper form of Adjective. The red car is _____ (fast) than the blue one.',
       type: RTypes.TRANSFORMED_TEXT,
       
       input: selectField(['fast', 'faster', "fastest", "more fast"]),
@@ -11249,7 +11249,7 @@ classiv: {
       botPrompt: 'If the clock shows 2:45 PM, how many minutes are there until 4:00 PM?',
       type: RTypes.TRANSFORMED_TEXT,
       
-      input: selectField(['15 minutes', '30 minutes', " 75 minutes"," 105 minutes"]),
+      input: selectField(['15 minutes', '30 minutes', "75 minutes"," 105 minutes"]),
         answers: [
           {
             answer: '15 minutes',
@@ -11352,13 +11352,13 @@ classiv: {
         answers: [
           {
             answer: 'Rs. 6',
-            nextId: 'fourthMathscorrectq10',
-            sumToBags: [{ name: 'ac', points: 1 }],
+            nextId: 'infourthMathscorrectq10',
+            sumToBags: [{ name: 'ai', points: 1 }],
           },
           {
             answer: 'Rs. 10',
-            nextId: 'infourthMathscorrectq10',
-            sumToBags: [{ name: 'ai', points: 1 }],
+            nextId: 'fourthMathscorrectq10',
+            sumToBags: [{ name: 'ac', points: 1 }],
           },
           {
             answer: "Rs. 12",
@@ -11374,7 +11374,7 @@ classiv: {
       },
       
       fourthMathscorrectq10: {
-      botPrompt: 'Hurray! <strong>Rs. 6</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>Rs. 10</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'fourthMaths'+shuffleArraylottwo[11],
@@ -11382,7 +11382,7 @@ classiv: {
       ],
       },
       infourthMathscorrectq10: {
-      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Rs. 6"</strong>',
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Rs. 10"</strong>',
       answers: [
         {
           nextId: 'fourthMaths'+shuffleArraylottwo[11],
@@ -11496,7 +11496,7 @@ classiv: {
       botPrompt: 'Which of the following shapes has 4 equal sides and 4 right angles?',
       type: RTypes.TRANSFORMED_TEXT,
       
-      input: selectField(['rectangle', 'square', "triagle", "cirlce"]),
+      input: selectField(['rectangle', 'square', "triangle", "circle"]),
         answers: [
           {
             answer: 'rectagle',
@@ -11505,8 +11505,8 @@ classiv: {
           },
           {
             answer: 'square',
-            nextId: 'infourthMathscorrectq13',
-            sumToBags: [{ name: 'ai', points: 1 }],
+            nextId: 'fourthMathscorrectq13',
+            sumToBags: [{ name: 'ac', points: 1 }],
           },
           {
             answer: "triangle",
@@ -11515,15 +11515,15 @@ classiv: {
           },
           {
             answer: "circle",
-            nextId: 'fourthMathscorrectq13',
-            sumToBags: [{ name: 'ac', points: 1 }],
+            nextId: 'infourthMathscorrectq13',
+            sumToBags: [{ name: 'ai', points: 1 }],
           },
           
         ],
       },
       
       fourthMathscorrectq13: {
-      botPrompt: 'Hurray! <strong>circle</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>square</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'fourthMaths'+shuffleArraylottwo[14],
@@ -11531,7 +11531,7 @@ classiv: {
       ],
       },
       infourthMathscorrectq13: {
-      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"circle"</strong>',
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"square"</strong>',
       answers: [
         {
           nextId: 'fourthMaths'+shuffleArraylottwo[14],
@@ -11542,7 +11542,7 @@ classiv: {
   
           //14
   ['fourthMaths'+shuffleArraylottwo[14]]: {
-      botPrompt: 'Find the perimetres of a rectangle that has a length of 8 metress and a width of 5 metress.',
+      botPrompt: 'Find the perimetres of a rectangle that has a length of 8 metres and a width of 5 metres.',
       type: RTypes.TRANSFORMED_TEXT,
       
       input: selectField(['13 metres', '26 metres', "35 metres", "40 metres"]),
@@ -11554,13 +11554,13 @@ classiv: {
           },
           {
             answer: '26 metres',
-            nextId: 'infourthMathscorrectq14',
-            sumToBags: [{ name: 'ai', points: 1 }],
+            nextId: 'fourthMathscorrectq14',
+            sumToBags: [{ name: 'ac', points: 1 }],
           },
           {
             answer: "35 metres",
-            nextId: 'fourthMathscorrectq14',
-            sumToBags: [{ name: 'ac', points: 1 }],
+            nextId: 'infourthMathscorrectq14',
+            sumToBags: [{ name: 'ai', points: 1 }],
           },
           {
             answer: '40 metres',
@@ -11572,7 +11572,7 @@ classiv: {
       },
       
       fourthMathscorrectq14: {
-      botPrompt: 'Hurray! <strong>35 metres</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>26 metres</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'fourthMaths'+shuffleArraylottwo[15],
@@ -11580,7 +11580,7 @@ classiv: {
       ],
       },
       infourthMathscorrectq14: {
-      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"35 metres"</strong>',
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"26 metres"</strong>',
       answers: [
         {
           nextId: 'fourthMaths'+shuffleArraylottwo[15],
@@ -11705,13 +11705,13 @@ classiv: {
           },
           {
             answer: '30 metres',
-            nextId: 'infourthMathscorrectq17',
-            sumToBags: [{ name: 'ai', points: 1 }],
+            nextId: 'fourthMathscorrectq17',
+            sumToBags: [{ name: 'ac', points: 1 }],
           },
           {
             answer: "40 metres",
-            nextId: 'fourthMathscorrectq17',
-            sumToBags: [{ name: 'ac', points: 1 }],
+            nextId: 'infourthMathscorrectq17',
+            sumToBags: [{ name: 'ai', points: 1 }],
           },
           {
             answer: "50 metres",
@@ -11722,7 +11722,7 @@ classiv: {
       },
       
       fourthMathscorrectq17: {
-      botPrompt: 'Hurray! <strong>40 metres</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>30 metres</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'fourthMaths'+shuffleArraylottwo[18],
@@ -11730,7 +11730,7 @@ classiv: {
       ],
       },
       infourthMathscorrectq17: {
-      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"40 metres"</strong>',
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"30 metres"</strong>',
       answers: [
         {
           nextId: 'fourthMaths'+shuffleArraylottwo[18],
