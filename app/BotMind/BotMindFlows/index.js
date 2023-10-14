@@ -5619,7 +5619,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         botPrompt: 'A ___________ has 3 sides and 3 corners.',
         type: RTypes.TRANSFORMED_TEXT,
         
-        input: selectField(['rectangle', 'square', "triagle", "cone"]),
+        input: selectField(['rectangle', 'square', "triangle", "cone"]),
           answers: [
             {
               answer: 'rectagle',
@@ -5668,25 +5668,25 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         botPrompt: '10 O"clock is 1 hour _____________ than 9 o"clock ',
         type: RTypes.TRANSFORMED_TEXT,
         
-        input: selectField(['Earlier', 'later', "past", "Quater"]),
+        input: selectField(['Earlier', 'Later', "Past", "Quater"]),
           answers: [
             {
-              answer: 'earlier',
+              answer: 'Earlier',
               nextId: 'insecondMathscorrectq14',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
             {
-              answer: 'Past',
-              nextId: 'insecondMathscorrectq14',
-              sumToBags: [{ name: 'ai', points: 1 }],
-            },
-            {
-              answer: "later",
+              answer: 'Later',
               nextId: 'secondMathscorrectq14',
               sumToBags: [{ name: 'ac', points: 1 }],
             },
             {
-              answer: 'Quater',
+              answer: "Past",
+              nextId: 'inecondMathscorrectq14',
+              sumToBags: [{ name: 'ai', points: 1 }],
+            },
+            {
+              answer: "Quater",
               nextId: 'insecondMathscorrectq14',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
