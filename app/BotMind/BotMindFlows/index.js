@@ -19046,7 +19046,7 @@ eightMathscorrectq20: {
 botPrompt: 'Hurray! <strong>9</strong> is the correct answer  ! 😎',
 answers: [
   {
-    nextId: 'wishtocontinueeightMaths,
+    nextId: 'wishtocontinueeightMaths',
   },
 ],
 },
