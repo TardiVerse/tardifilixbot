@@ -15864,7 +15864,7 @@ classiv: {
   },
 //classvi
 classvi: {
-  botPrompt: 'You Have Selected CLASS VI . Which subject you would like to start',
+  botPrompt: 'You Have Selected CLASS VI. Which subject you would like to start',
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['Maths', "English", "Science"]),
   answers: [
@@ -15883,6 +15883,9 @@ classvi: {
   
   ],
 },
+
+
+
 //sixth Maths
  //1
  ['sixthMaths'+shuffleArraylottwo[1]]: {
@@ -17871,7 +17874,7 @@ classvi: {
                 ],
               },
               
-//sixth science
+//sixthscience
     //1
     ['sixthScience'+shuffleArraylottwo[1]]: {
       botPrompt: 'What is the SI unit of distance?',
@@ -21648,7 +21651,7 @@ classviii: {
                     botPrompt: 'Which type of respiration, aerobic or anaerobic, produces more ATP (energy) per glucose molecule?',
                     type: RTypes.TRANSFORMED_TEXT,
                     
-                    input: selectField(['Aerobic respiration', 'Anaerobic respiration', "Both produce the same amount of ATP","Neither produces ATP"]),
+                    input: selectField(['Aerobic respiration', 'Anaerobic respiration', "Both produce the same amount of ATP", "Neither produces ATP"]),
                       answers: [
                         {
                           answer: 'Aerobic respiration',
@@ -21696,7 +21699,7 @@ classviii: {
                     botPrompt: 'Which of the following is an example of a plant propagation method that does NOT involve seeds?',
                     type: RTypes.TRANSFORMED_TEXT,
                     
-                    input: selectField(['Germination', 'Vegetative propagation', "Pollination","Fertilization"]),
+                    input: selectField(['Germination', 'Vegetative propagation', "Pollination", "Fertilization"]),
                       answers: [
                         {
                           answer: 'Germination',
@@ -21750,7 +21753,7 @@ classviii: {
                         {
                           answer: 'Transpiration',
                           nextId: 'seventhBiologycorrectq5',
-                          sumToBags: [{ name: 'aC', points: 1 }],
+                          sumToBags: [{ name: 'ac', points: 1 }],
                         },
                         {
                           answer: 'Evaporation',
@@ -21822,7 +21825,7 @@ classviii: {
                     botPrompt: 'Hurray! <strong>Tree trunks and large branches</strong> is the correct answer  ! 😎',
                     answers: [
                       {
-                          nextId: 'wishtocountineseventhBiology'+shuffleArraylottwo[7],
+                          nextId: 'wishtocountineseventhBiology,
                       },
                     ],
                     },
@@ -21830,7 +21833,7 @@ classviii: {
                     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Tree trunks and large branches"</strong>',
                     answers: [
                       {
-                          nextId: 'wishtocountineseventhBiology'+shuffleArraylottwo[7],
+                          nextId: 'wishtocountineseventhBiology',
                       },
                     ],
                     },
@@ -22394,7 +22397,7 @@ input: selectField(['2/5', '3/5', "4/5","1/5"]),
 },
 
 eightMathscorrectq12: {
-botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+botPrompt: 'Hurray! <strong>4/5</strong> is the correct answer  ! 😎',
 answers: [
   {
     nextId: 'eightMaths'+shuffleArraylottwo[13],
@@ -22441,7 +22444,7 @@ input: selectField(['0.65', '65', "6.5","none of these"]),
 },
 
 eightMathscorrectq13: {
-botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+botPrompt: 'Hurray! <strong>0.65</strong> is the correct answer  ! 😎',
 answers: [
   {
     nextId: 'eightMaths'+shuffleArraylottwo[14],
@@ -22462,7 +22465,7 @@ answers: [
 botPrompt: ' 0.0000123 written in standard form is ____________.',
 type: RTypes.TRANSFORMED_TEXT,
 
-input: selectField(['123*10^-5', '123*10^5', "12.3*10^5","1.23*10^5"]),
+input: selectField(['123*10^-5', '123*10^5', "12.3*10^5", "1.23*10^5"]),
   answers: [
     {
       answer: '123*10^-5',
@@ -23324,7 +23327,7 @@ answers: [
 botPrompt: 'Find the grammatical error in the sentence and choose the corrected sentence: "The book is laying on the table waiting to be read."',
 type: RTypes.TRANSFORMED_TEXT,
 
-input: selectField(['The book is laying in the table waiting to be read.', 'The book is laying under  the table waiting to be read.', "The book is lying on the table waiting to be read.","35"]),
+input: selectField(['The book is laying in the table waiting to be read.', 'The book is laying under  the table waiting to be read.', "The book is lying on the table waiting to be read.","The book is laying on table waiting to be read."]),
   answers: [
     {
       answer: 'The book is laying in the table waiting to be read.',
