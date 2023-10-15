@@ -2668,20 +2668,20 @@ classi: {
             },
             {
               answer: 'Proper noun',
-              nextId: 'infirstEnglishcorrectq10',
-              sumToBags: [{ name: 'ai', points: 1 }],
+              nextId: 'firstEnglishcorrectq10',
+              sumToBags: [{ name: 'ac', points: 1 }],
             },
             {
               answer: "Animal noun",
-              nextId: 'firstEnglishcorrectq10',
-              sumToBags: [{ name: 'ac', points: 1 }],
+              nextId: 'infirstEnglishcorrectq10',
+              sumToBags: [{ name: 'ai', points: 1 }],
             },
             
           ],
         },
         
         firstEnglishcorrectq10: {
-        botPrompt: 'Hurray! <strong>Animal noun</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>proper noun</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'firstEnglish'+shuffleArraylottwo[11],
@@ -2689,7 +2689,7 @@ classi: {
         ],
         },
         infirstEnglishcorrectq10: {
-        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Animal Nouns"</strong>',
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"proper Nouns"</strong>',
         answers: [
           {
             nextId: 'firstEnglish'+shuffleArraylottwo[11],
@@ -2882,7 +2882,7 @@ classi: {
         input: selectField(['Adjectives', 'Verbs', "Pronouns"]),
           answers: [
             {
-              answer: ' Adjectives',
+              answer: 'Adjectives',
               nextId: 'infirstEnglishcorrectq15',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
@@ -2925,7 +2925,7 @@ classi: {
         botPrompt: 'What are words like "jump," "eat," and "dance" called?',
         type: RTypes.TRANSFORMED_TEXT,
         
-        input: selectField(['Nouns', ' Verbs', "Adverbs"]),
+        input: selectField(['Nouns', 'Verbs', "Adverbs"]),
           answers: [
             {
               answer: ' Nouns',
@@ -2969,7 +2969,7 @@ classi: {
         botPrompt: 'Which word is a verb in this sentence: "The big dog barked loudly"?',
         type: RTypes.TRANSFORMED_TEXT,
         
-        input: selectField(['big', 'dog', "Adverbs"]),
+        input: selectField(['big', 'barked', "loudly"]),
           answers: [
             {
               answer: 'big',
@@ -2977,14 +2977,14 @@ classi: {
               sumToBags: [{ name: 'ai', points: 1 }],
             },
             {
-              answer: 'dog',
-              nextId: 'infirstEnglishcorrectq17',
-              sumToBags: [{ name: 'ai', points: 1 }],
-            },
-            {
-              answer: "barked",
+              answer: 'barked',
               nextId: 'firstEnglishcorrectq17',
               sumToBags: [{ name: 'ac', points: 1 }],
+            },
+            {
+              answer: "loudly",
+              nextId: 'infirstEnglishcorrectq17',
+              sumToBags: [{ name: 'ai', points: 1 }],
             },
             
           ],
@@ -3123,18 +3123,18 @@ classi: {
         },
         
         firstEnglishcorrectq20: {
-        botPrompt: 'Hurray! <strong>AdvAdjective</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>Adjective</strong> is the correct answer  ! 😎',
         answers: [
           {
-            nextId: 'wishtocountinefirstenglish',
+            nextId: 'wishtocountinefirstEnglish',
           },
         ],
         },
         infirstEnglishcorrectq16: {
-        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"AdvAdjective"</strong>',
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Adjective"</strong>',
         answers: [
           {
-            nextId: 'wishtocountinefirstenglish',
+            nextId: 'wishtocountinefirstEnglish',
           },
         ],
         },
@@ -3437,7 +3437,7 @@ classi: {
           },
           {
             answer: "29",
-            nextId: 'finirstMathscorrectq7',
+            nextId: 'firstMathscorrectq7',
             sumToBags: [{ name: 'ac', points: 1 }],
           },
           
@@ -3519,7 +3519,7 @@ classi: {
             sumToBags: [{ name: 'ai', points: 1 }],
           },
           {
-            answer: '70 ',
+            answer: '70',
             nextId: 'infirstMathscorrectq9',
             sumToBags: [{ name: 'ai', points: 1 }],
           },
@@ -3667,7 +3667,7 @@ classi: {
         botPrompt: 'Hurray! <strong>twenty-eight</strong> is the correct answer  ! 😎',
         answers: [
           {
-            nextId: 'firstMaths'+shuffleArraylottwo[12],
+            nextId: 'firstMaths'+shuffleArraylottwo[13],
           },
         ],
         },
@@ -3675,7 +3675,7 @@ classi: {
         botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"twenty-eight"</strong>',
         answers: [
           {
-            nextId: 'firstMaths'+shuffleArraylottwo[12],
+            nextId: 'firstMaths'+shuffleArraylottwo[13],
           },
         ],
         },
@@ -3911,7 +3911,7 @@ classi: {
         input: selectField(['34', '44', "54"]),
           answers: [
             {
-              answer: ' 34',
+              answer: '34',
               nextId: 'firstMathscorrectq18',
               sumToBags: [{ name: 'ac', points: 1 }],
             },
@@ -4025,7 +4025,7 @@ classi: {
           },
         ],
         },
-        infirstMathscorrectq16: {
+        infirstMathscorrectq20: {
         botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"77"</strong>',
         answers: [
           {
@@ -6088,7 +6088,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
     },
   ],
   },
-  inthirdMathscorrectq5: {
+  inthirdMathscorrectq1: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"30"</strong>',
   answers: [
     {
@@ -6121,7 +6121,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
           },
           {
               answer: '4',
-              nextId: 'inthirdMathscorrectq1',
+              nextId: 'inthirdMathscorrectq2',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
           
@@ -6136,7 +6136,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         },
       ],
       },
-      inthirdMathscorrectq3: {
+      inthirdMathscorrectq2: {
       botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"6"</strong>',
       answers: [
         {
@@ -6169,7 +6169,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
           },
           {
               answer: 'multiplying numbers',
-              nextId: 'inthirdMathscorrectq1',
+              nextId: 'inthirdMathscorrectq3',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
           
@@ -6177,7 +6177,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
       },
       
       thirdMathscorrectq3: {
-      botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>haring or grouping  numbers,</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'thirdMaths'+shuffleArraylottwo[4],
@@ -6217,7 +6217,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
           },
           {
               answer: "5/6",
-              nextId: 'inthirdMathscorrectq1',
+              nextId: 'inthirdMathscorrectq4',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
           
@@ -6314,7 +6314,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
           },
           {
               answer: '50 kg',
-              nextId: 'inthirdMathscorrectq1',
+              nextId: 'inthirdMathscorrectq6',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
           
@@ -6322,7 +6322,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
       },
       
       thirdMathscorrectq6: {
-      botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>0.5 kg,</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'thirdMaths'+shuffleArraylottwo[7],
@@ -6363,7 +6363,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
           },
           {
               answer: 'Measures the height of a liquid',
-              nextId: 'inthirdMathscorrectq1',
+              nextId: 'inthirdMathscorrectq7',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
           
@@ -6371,7 +6371,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
       },
       
       thirdMathscorrectq7: {
-      botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>Measures the volume of a container</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'thirdMaths'+shuffleArraylottwo[8],
@@ -6412,7 +6412,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
           },
           {
               answer: '1066 p',
-              nextId: 'inthirdMathscorrectq1',
+              nextId: 'inthirdMathscorrectq8',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
           
@@ -6420,7 +6420,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
       },
       
       thirdMathscorrectq8: {
-      botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>1666 p</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'thirdMaths'+shuffleArraylottwo[9],
@@ -6461,7 +6461,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
           },
           {
               answer: '12',
-              nextId: 'inthirdMathscorrectq1',
+              nextId: 'inthirdMathscorrectq9',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
           
@@ -6469,7 +6469,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
       },
       
       thirdMathscorrectq9: {
-      botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>8</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'thirdMaths'+shuffleArraylottwo[10],
@@ -6509,7 +6509,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
             },
             {
               answer: '10/8',
-              nextId: 'inthirdMathscorrectq1',
+              nextId: 'inthirdMathscorrectq10',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
             
@@ -6517,7 +6517,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         },
         
         thirdMathscorrectq10: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>8/10</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'thirdMaths'+shuffleArraylottwo[11],
@@ -6539,10 +6539,10 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         botPrompt: ' 0 x 21456 = _______________________________ ',
         type: RTypes.TRANSFORMED_TEXT,
         
-        input: selectField(['21456 ', ' 21465 ', "0",'21654']),
+        input: selectField(['21456', '21465', "0",'21654']),
           answers: [
             {
-              answer: ' 21456',
+              answer: '21456',
               nextId: 'inthirdMathscorrectq11',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
@@ -6558,7 +6558,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
             },
             {
               answer: '21654',
-              nextId: 'inthirdMathscorrectq1',
+              nextId: 'inthirdMathscorrectq11',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
             
@@ -6566,7 +6566,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         },
         
         thirdMathscorrectq11: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>0</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'thirdMaths'+shuffleArraylottwo[12],
@@ -6584,7 +6584,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
   
   
           //12
-      ['thirdMaths'+shuffleArraylottwo[12]]: {
+      ['thirdMaths'+shuffleArraylottwo[11]]: {
         botPrompt: ' The perimeter of a square is ______________ if the length of each side is 6 cm.',
         type: RTypes.TRANSFORMED_TEXT,
         
@@ -6592,41 +6592,41 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
           answers: [
             {
               answer: ' 42cm',
-              nextId: 'inthirdMathscorrectq11',
+              nextId: 'inthirdMathscorrectq12',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
             {
               answer: '24cm',
-              nextId: 'thirdMathscorrectq11',
+              nextId: 'thirdMathscorrectq12',
               sumToBags: [{ name: 'ac', points: 1 }],
             },
             {
               answer: "12cm",
-              nextId: 'inthirdMathscorrectq11',
+              nextId: 'inthirdMathscorrectq12',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
             {
               answer: '18cm',
-              nextId: 'inthirdMathscorrectq1',
+              nextId: 'inthirdMathscorrectq12',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
             
           ],
         },
         
-        thirdMathscorrectq11: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        thirdMathscorrectq12: {
+        botPrompt: 'Hurray! <strong>24cm</strong> is the correct answer  ! 😎',
         answers: [
           {
-            nextId: 'thirdMaths'+shuffleArraylottwo[12],
+            nextId: 'thirdMaths'+shuffleArraylottwo[13],
           },
         ],
         },
-        inthirdMathscorrectq11: {
+        inthirdMathscorrectq12: {
         botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"24cm"</strong>',
         answers: [
           {
-            nextId: 'thirdMaths'+shuffleArraylottwo[12],
+            nextId: 'thirdMaths'+shuffleArraylottwo[13],
           },
         ],
         },
@@ -6656,7 +6656,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
             },
             {
               answer: '1324',
-              nextId: 'inthirdMathscorrectq1',
+              nextId: 'inthirdMathscorrectq13',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
           ],
@@ -6704,7 +6704,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
             },
             {
               answer: '1502',
-              nextId: 'inthirdMathscorrectq1',
+              nextId: 'inthirdMathscorrectq14',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
             
@@ -6712,7 +6712,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         },
         
         thirdMathscorrectq14: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>1025</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'thirdMaths'+shuffleArraylottwo[15],
@@ -6753,7 +6753,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
             },
             {
               answer: '5000',
-              nextId: 'thirdMathscorrectq1',
+              nextId: 'thirdMathscorrectq15',
               sumToBags: [{ name: 'ac', points: 1 }],
             },
             
@@ -6761,7 +6761,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         },
         
         thirdMathscorrectq15: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>5000</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'thirdMaths'+shuffleArraylottwo[16],
@@ -6804,7 +6804,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
             },
             {
               answer: '10,0000',
-              nextId: 'inthirdMathscorrectq1',
+              nextId: 'inthirdMathscorrectq16',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
             
@@ -6812,7 +6812,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         },
         
         thirdMathscorrectq16: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>10,000,</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'thirdMaths'+shuffleArraylottwo[17],
@@ -6837,12 +6837,12 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         input: selectField(['67,909', ' 76,999 ', "67,999 ",'67,990']),
           answers: [
             {
-              answer: ' 67,909',
+              answer: '67,909',
               nextId: 'thirdMathscorrectq17',
               sumToBags: [{ name: 'ac', points: 1 }],
             },
             {
-              answer: '76,999 ',
+              answer: ' 76,999 ',
               nextId: 'inthirdMathscorrectq17',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
@@ -6853,7 +6853,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
             },
             {
               answer: '67,990',
-              nextId: 'inthirdMathscorrectq1',
+              nextId: 'inthirdMathscorrectq17',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
             
@@ -6861,7 +6861,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         },
         
         thirdMathscorrectq17: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>67,909</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'thirdMaths'+shuffleArraylottwo[18],
@@ -6886,12 +6886,12 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         input: selectField(['9088', ' 9090', "9089",'9091']),
           answers: [
             {
-              answer: ' 9088',
+              answer: '9088',
               nextId: 'thirdMathscorrectq18',
               sumToBags: [{ name: 'ac', points: 1 }],
             },
             {
-              answer: '9090',
+              answer: ' 9090',
               nextId: 'inthirdMathscorrectq18',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
@@ -6902,7 +6902,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
             },
             {
               answer: '9091',
-              nextId: 'inthirdMathscorrectq1',
+              nextId: 'inthirdMathscorrectq18',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
             
@@ -6910,7 +6910,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         },
         
         thirdMathscorrectq18: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>9088</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'thirdMaths'+shuffleArraylottwo[19],
@@ -6932,7 +6932,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         botPrompt: '6660 – 1 = __________________ ',
         type: RTypes.TRANSFORMED_TEXT,
         
-        input: selectField(['6660', ' 6661', "6659",'6658']),
+        input: selectField(['6660', '6661', "6659",'6658']),
           answers: [
             {
               answer: ' 6660',
@@ -6941,7 +6941,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
             },
             {
               answer: '6661',
-              nextId: 'thirdMathscorrectq19',
+              nextId: 'inthirdMathscorrectq19',
               sumToBags: [{ name: 'ac', points: 1 }],
             },
             {
@@ -6951,7 +6951,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
             },
             {
               answer: '6658',
-              nextId: 'inthirdMathscorrectq1',
+              nextId: 'inthirdMathscorrectq19',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
             
@@ -6959,7 +6959,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         },
         
         thirdMathscorrectq19: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>6659</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'thirdMaths'+shuffleArraylottwo[20],
@@ -6981,10 +6981,10 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         botPrompt: '82351 – 100 = ______________________ ',
         type: RTypes.TRANSFORMED_TEXT,
         
-        input: selectField(['82251', ' 82250', "82051"],'82001'),
+        input: selectField(['82251', ' 82250', "82051",'82001']),
           answers: [
             {
-              answer: ' 82251',
+              answer: '82251',
               nextId: 'thirdMathscorrectq20',
               sumToBags: [{ name: 'ac', points: 1 }],
             },
@@ -7000,7 +7000,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
             },
             {
               answer: '82001',
-              nextId: 'inthirdMathscorrectq1',
+              nextId: 'inthirdMathscorrectq20',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
             
@@ -7008,18 +7008,18 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         },
         
         thirdMathscorrectq20: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>82251</strong> is the correct answer  ! 😎',
         answers: [
           {
-            nextId: 'wishtocountinethirdMaths',
+            nextId: 'wishtocontinuethirdMaths',
           },
         ],
         },
-        inthirdMathscorrectq16: {
+        inthirdMathscorrectq20: {
         botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"82251"</strong>',
         answers: [
           {
-            nextId: 'wishtocountinethirdMaths',
+            nextId: 'wishtocontinuethirdMaths',
           },
         ],
         },
@@ -7072,7 +7072,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
     },
     
     thirdSciencecorrectq1: {
-    botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+    botPrompt: 'Hurray! <strong>Bear</strong> is the correct answer  ! 😎',
     answers: [
       {
         nextId: 'thirdScience'+shuffleArraylottwo[2],
@@ -7080,7 +7080,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
     ],
     },
     inthirdSciencecorrectq5: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Bear"</strong>',
     answers: [
       {
         nextId: 'thirdScience'+shuffleArraylottwo[2],
@@ -7112,7 +7112,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
             },
             {
                 answer: 'Because your parents said so',
-                nextId: 'inthirdSciencecorrectq1',
+                nextId: 'inthirdSciencecorrectq2',
                 sumToBags: [{ name: 'ai', points: 1 }],
               },
             
@@ -7120,15 +7120,15 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         },
         
         thirdSciencecorrectq2: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>Because it can cause fires and harm you</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'thirdScience'+shuffleArraylottwo[3],
           },
         ],
         },
-        inthirdSciencecorrectq3: {
-        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+        inthirdSciencecorrectq2: {
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Because it can cause fires and harm you"</strong>',
         answers: [
           {
             nextId: 'thirdScience'+shuffleArraylottwo[3],
@@ -7160,7 +7160,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
             },
             {
                 answer: 'To make it easier to get out of the car',
-                nextId: 'inthirdSciencecorrectq1',
+                nextId: 'inthirdSciencecorrectq3',
                 sumToBags: [{ name: 'ai', points: 1 }],
               },
             
@@ -7168,7 +7168,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         },
         
         thirdSciencecorrectq3: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>To avoid accidents</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'thirdScience'+shuffleArraylottwo[4],
@@ -7176,7 +7176,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         ],
         },
         inthirdSciencecorrectq3: {
-        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"To avoid accidents"</strong>',
         answers: [
           {
             nextId: 'thirdScience'+shuffleArraylottwo[4],
@@ -7208,7 +7208,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
             },
             {
                 answer: 'To block all sounds ',
-                nextId: 'inthirdSciencecorrectq1',
+                nextId: 'inthirdSciencecorrectq4',
                 sumToBags: [{ name: 'ai', points: 1 }],
               },
             
@@ -7216,7 +7216,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         },
         
         thirdSciencecorrectq4: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>To let in light and air</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'thirdScience'+shuffleArraylottwo[5],
@@ -7224,7 +7224,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         ],
         },
         inthirdSciencecorrectq4: {
-        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"To let in light and air"</strong>',
         answers: [
           {
             nextId: 'thirdScience'+shuffleArraylottwo[5],
@@ -7256,7 +7256,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
             },
             {
                 answer: 'Rubber',
-                nextId: 'inthirdSciencecorrectq1',
+                nextId: 'inthirdSciencecorrectq5',
                 sumToBags: [{ name: 'ai', points: 1 }],
               },
             
@@ -7264,7 +7264,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         },
         
         thirdSciencecorrectq5: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>Plastic</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'thirdScience'+shuffleArraylottwo[6],
@@ -7272,7 +7272,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         ],
         },
         inthirdSciencecorrectq5: {
-        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Plastic"</strong>',
         answers: [
           {
             nextId: 'thirdScience'+shuffleArraylottwo[6],
@@ -7305,7 +7305,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
             },
             {
                 answer: 'Rocky soil',
-                nextId: 'inthirdSciencecorrectq1',
+                nextId: 'inthirdSciencecorrectq6',
                 sumToBags: [{ name: 'ai', points: 1 }],
               },
             
@@ -7313,7 +7313,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         },
         
         thirdSciencecorrectq6: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>Loamy soil,</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'thirdScience'+shuffleArraylottwo[7],
@@ -7321,7 +7321,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         ],
         },
         inthirdSciencecorrectq6: {
-        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Loamy soil,"</strong>',
         answers: [
           {
             nextId: 'thirdScience'+shuffleArraylottwo[7],
@@ -7354,7 +7354,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
             },
             {
                 answer: 'By scaring away animals ',
-                nextId: 'inthirdSciencecorrectq1',
+                nextId: 'inthirdSciencecorrectq7',
                 sumToBags: [{ name: 'ai', points: 1 }],
               },
             
@@ -7362,7 +7362,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         },
         
         thirdSciencecorrectq7: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>By holding water and nutrients</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'thirdScience'+shuffleArraylottwo[8],
@@ -7370,7 +7370,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         ],
         },
         inthirdSciencecorrectq7: {
-        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"By holding water and nutrients"</strong>',
         answers: [
           {
             nextId: 'thirdScience'+shuffleArraylottwo[8],
@@ -7403,7 +7403,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
             },
             {
                 answer: 'Digestion',
-                nextId: 'inthirdSciencecorrectq1',
+                nextId: 'inthirdSciencecorrectq8',
                 sumToBags: [{ name: 'ai', points: 1 }],
               },
             
@@ -7411,7 +7411,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         },
         
         thirdSciencecorrectq8: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>Photosynthesis</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'thirdScience'+shuffleArraylottwo[9],
@@ -7419,7 +7419,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         ],
         },
         inthirdSciencecorrectq8: {
-        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Photosynthesis"</strong>',
         answers: [
           {
             nextId: 'thirdScience'+shuffleArraylottwo[9],
@@ -7452,7 +7452,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
             },
             {
                 answer: 'Flowers',
-                nextId: 'inthirdSciencecorrectq1',
+                nextId: 'inthirdSciencecorrectq9',
                 sumToBags: [{ name: 'ai', points: 1 }],
               },
             
@@ -7460,7 +7460,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         },
         
         thirdSciencecorrectq9: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>Roots</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'thirdScience'+shuffleArraylottwo[10],
@@ -7468,7 +7468,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         ],
         },
         inthirdSciencecorrectq9: {
-        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Roots"</strong>',
         answers: [
           {
             nextId: 'thirdScience'+shuffleArraylottwo[10],
@@ -7500,7 +7500,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
               },
               {
                 answer: 'Branches',
-                nextId: 'inthirdSciencecorrectq1',
+                nextId: 'inthirdSciencecorrectq10',
                 sumToBags: [{ name: 'ai', points: 1 }],
               },
               
@@ -7508,7 +7508,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
           },
           
           thirdSciencecorrectq10: {
-          botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+          botPrompt: 'Hurray! <strong>Stomata</strong> is the correct answer  ! 😎',
           answers: [
             {
               nextId: 'thirdScience'+shuffleArraylottwo[11],
@@ -7516,7 +7516,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
           ],
           },
           inthirdSciencecorrectq10: {
-          botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+          botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Stomata"</strong>',
           answers: [
             {
               nextId: 'thirdScience'+shuffleArraylottwo[11],
@@ -7549,7 +7549,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
               },
               {
                 answer: 'To attract a mate',
-                nextId: 'inthirdSciencecorrectq1',
+                nextId: 'inthirdSciencecorrectq11',
                 sumToBags: [{ name: 'ai', points: 1 }],
               },
               
@@ -7557,7 +7557,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
           },
           
           thirdSciencecorrectq11: {
-          botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+          botPrompt: 'Hurray! <strong>To provide a safe place for the bird to lay eggs and raise its young</strong> is the correct answer  ! 😎',
           answers: [
             {
               nextId: 'thirdScience'+shuffleArraylottwo[12],
@@ -7565,7 +7565,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
           ],
           },
           inthirdSciencecorrectq11: {
-          botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+          botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"To provide a safe place for the bird to lay eggs and raise its young"</strong>',
           answers: [
             {
               nextId: 'thirdScience'+shuffleArraylottwo[12],
@@ -7583,41 +7583,41 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
             answers: [
               {
                 answer: ' Pump blood',
-                nextId: 'inthirdSciencecorrectq11',
+                nextId: 'inthirdSciencecorrectq12',
                 sumToBags: [{ name: 'ai', points: 1 }],
               },
               {
                 answer: 'Filter waste',
-                nextId: 'inthirdSciencecorrectq11',
+                nextId: 'inthirdSciencecorrectq12',
                 sumToBags: [{ name: 'ai', points: 1 }],
               },
               {
                 answer: "Breathe in oxygen",
-                nextId: 'thirdSciencecorrectq11',
+                nextId: 'thirdSciencecorrectq12',
                 sumToBags: [{ name: 'ac', points: 1 }],
               },
               {
                 answer: 'Digest food ',
-                nextId: 'inthirdSciencecorrectq1',
+                nextId: 'inthirdSciencecorrectq12',
                 sumToBags: [{ name: 'ai', points: 1 }],
               },
               
             ],
           },
           
-          thirdSciencecorrectq11: {
-          botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+          thirdSciencecorrectq12: {
+          botPrompt: 'Hurray! <strong>Breathe in oxygen</strong> is the correct answer  ! 😎',
           answers: [
             {
-              nextId: 'thirdScience'+shuffleArraylottwo[12],
+              nextId: 'thirdScience'+shuffleArraylottwo[13],
             },
           ],
           },
-          inthirdSciencecorrectq11: {
-          botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+          inthirdSciencecorrectq12: {
+          botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Breathe in oxygen"</strong>',
           answers: [
             {
-              nextId: 'thirdScience'+shuffleArraylottwo[12],
+              nextId: 'thirdScience'+shuffleArraylottwo[13],
             },
           ],
           },
@@ -7647,14 +7647,14 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
               },
               {
                 answer: 'To clean your teeth',
-                nextId: 'inthirdSciencecorrectq1',
+                nextId: 'inthirdSciencecorrectq13',
                 sumToBags: [{ name: 'ai', points: 1 }],
               },
             ],
           },
           
           thirdSciencecorrectq13: {
-          botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+          botPrompt: 'Hurray! <strong>To keep your body hydrated and healthy</strong> is the correct answer  ! 😎',
           answers: [
             {
               nextId: 'thirdScience'+shuffleArraylottwo[14],
@@ -7662,7 +7662,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
           ],
           },
           inthirdSciencecorrectq13: {
-          botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+          botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"To keep your body hydrated and healthy"</strong>',
           answers: [
             {
               nextId: 'thirdScience'+shuffleArraylottwo[14],
@@ -7695,7 +7695,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
               },
               {
                 answer: 'Throwing garbage in the street',
-                nextId: 'inthirdSciencecorrectq1',
+                nextId: 'inthirdSciencecorrectq14',
                 sumToBags: [{ name: 'ai', points: 1 }],
               },
               
@@ -7703,7 +7703,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
           },
           
           thirdSciencecorrectq14: {
-          botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+          botPrompt: 'Hurray! <strong>Planting more trees</strong> is the correct answer  ! 😎',
           answers: [
             {
               nextId: 'thirdScience'+shuffleArraylottwo[15],
@@ -7711,7 +7711,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
           ],
           },
           inthirdSciencecorrectq14: {
-          botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+          botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Planting more trees"</strong>',
           answers: [
             {
               nextId: 'thirdScience'+shuffleArraylottwo[15],
@@ -7744,7 +7744,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
               },
               {
                 answer: 'Meter',
-                nextId: 'inthirdSciencecorrectq1',
+                nextId: 'inthirdSciencecorrectq15',
                 sumToBags: [{ name: 'ai', points: 1 }],
               },
               
@@ -7752,7 +7752,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
           },
           
           thirdSciencecorrectq15: {
-          botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+          botPrompt: 'Hurray! <strong>Second</strong> is the correct answer  ! 😎',
           answers: [
             {
               nextId: 'thirdScience'+shuffleArraylottwo[16],
@@ -7760,7 +7760,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
           ],
           },
           inthirdSciencecorrectq15: {
-          botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+          botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Second"</strong>',
           answers: [
             {
               nextId: 'thirdScience'+shuffleArraylottwo[16],
@@ -7795,7 +7795,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
               },
               {
                 answer: 'Brick',
-                nextId: 'inthirdSciencecorrectq1',
+                nextId: 'inthirdSciencecorrectq16',
                 sumToBags: [{ name: 'ai', points: 1 }],
               },
               
@@ -7803,7 +7803,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
           },
           
           thirdSciencecorrectq16: {
-          botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+          botPrompt: 'Hurray! <strong>Glass</strong> is the correct answer  ! 😎',
           answers: [
             {
               nextId: 'thirdScience'+shuffleArraylottwo[17],
@@ -7811,7 +7811,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
           ],
           },
           inthirdSciencecorrectq16: {
-          botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+          botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Glass"</strong>',
           answers: [
             {
               nextId: 'thirdScience'+shuffleArraylottwo[17],
@@ -7828,7 +7828,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
           input: selectField(['Sun', ' Moon ', "Guitar ",'Star']),
             answers: [
               {
-                answer: ' Sun',
+                answer: 'Sun',
                 nextId: 'inthirdSciencecorrectq17',
                 sumToBags: [{ name: 'ai', points: 1 }],
               },
@@ -7844,7 +7844,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
               },
               {
                 answer: 'Star',
-                nextId: 'inthirdSciencecorrectq1',
+                nextId: 'inthirdSciencecorrectq17',
                 sumToBags: [{ name: 'ai', points: 1 }],
               },
               
@@ -7852,7 +7852,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
           },
           
           thirdSciencecorrectq17: {
-          botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+          botPrompt: 'Hurray! <strong>Guitar</strong> is the correct answer  ! 😎',
           answers: [
             {
               nextId: 'thirdScience'+shuffleArraylottwo[18],
@@ -7860,7 +7860,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
           ],
           },
           inthirdSciencecorrectq17: {
-          botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+          botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Guitar"</strong>',
           answers: [
             {
               nextId: 'thirdScience'+shuffleArraylottwo[18],
@@ -7877,7 +7877,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
           input: selectField(['Sun', ' Moon', "Tree",'Flashlight']),
             answers: [
               {
-                answer: ' Sun',
+                answer: 'Sun',
                 nextId: 'thirdSciencecorrectq18',
                 sumToBags: [{ name: 'ac', points: 1 }],
               },
@@ -7893,7 +7893,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
               },
               {
                 answer: 'Flashlight',
-                nextId: 'inthirdSciencecorrectq1',
+                nextId: 'inthirdSciencecorrectq18',
                 sumToBags: [{ name: 'ai', points: 1 }],
               },
               
@@ -7901,7 +7901,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
           },
           
           thirdSciencecorrectq18: {
-          botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+          botPrompt: 'Hurray! <strong>Sun</strong> is the correct answer  ! 😎',
           answers: [
             {
               nextId: 'thirdScience'+shuffleArraylottwo[19],
@@ -7909,7 +7909,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
           ],
           },
           inthirdSciencecorrectq18: {
-          botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+          botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Sun"</strong>',
           answers: [
             {
               nextId: 'thirdScience'+shuffleArraylottwo[19],
@@ -7942,7 +7942,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
               },
               {
                 answer: 'Sound energy',
-                nextId: 'inthirdSciencecorrectq1',
+                nextId: 'inthirdSciencecorrectq19',
                 sumToBags: [{ name: 'ai', points: 1 }],
               },
               
@@ -7950,7 +7950,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
           },
           
           thirdSciencecorrectq19: {
-          botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+          botPrompt: 'Hurray! <strong>Solar energy</strong> is the correct answer  ! 😎',
           answers: [
             {
               nextId: 'thirdScience'+shuffleArraylottwo[20],
@@ -7958,7 +7958,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
           ],
           },
           inthirdSciencecorrectq19: {
-          botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5"</strong>',
+          botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Solar energy"</strong>',
           answers: [
             {
               nextId: 'thirdScience'+shuffleArraylottwo[20],
@@ -7999,7 +7999,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
           },
           
           thirdSciencecorrectq20: {
-          botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+          botPrompt: 'Hurray! <strong>Moon</strong> is the correct answer  ! 😎',
           answers: [
             {
               nextId: 'wishtocountinethirdScience',
@@ -8015,6 +8015,901 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
           ],
           },
 
+          wishtocountinethirdScience: {
+          botPrompt: 'You have Completed Science. Do you Wish to Continue ?',
+          type: RTypes.TRANSFORMED_TEXT,
+          input: selectField(['Yes', "No"]),
+          answers: [
+            {
+              answer: 'Yes',
+              nextId: 'chooseclass',
+            },
+            {
+              answer: "No",
+              nextId: 'endConv',
+            },
+          
+          ],
+        },
+
+//           //thirdEnglish
+//           //1
+// ['thirdEnglish'+shuffleArraylot[1]]: {
+//   botPrompt: 'Question 1:In the sentence, "The sky is cloudy," what is the adjective?',
+//   type: RTypes.TRANSFORMED_TEXT,
+  
+//   input: selectField(['The','Sky',"Cloudy",]),
+//     answers: [
+//       {
+//         answer: 'The',
+//         nextId: 'inthirdEnglishcorrectq1',
+//         sumToBags: [{ name: 'ai', points: 1 }],
+//       },
+//       {
+//         answer: 'Sky',
+//         nextId: 'inthirdEnglishcorrectq1',
+//         sumToBags: [{ name: 'ai', points: 1 }],
+//       },
+//       {
+//         answer: "Cloudy",
+//         nextId: 'thirdEnglishcorrectq1',
+//         sumToBags: [{ name: 'ac', points: 1 }],
+//       },
+      
+//     ],
+//   },
+  
+//   thirdEnglishcorrectq1: {
+//   botPrompt: 'Hurray! <strong>Cloudy</strong> is the correct answer  ! 😎',
+//   answers: [
+//     {
+//       nextId: 'thirdEnglish'+shuffleArraylot[2],
+//     },
+//   ],
+//   },
+//   inthirdEnglishcorrectq5: {
+//   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Cloudy"</strong>',
+//   answers: [
+//     {
+//       nextId: 'thirdEnglish'+shuffleArraylot[2],
+//     },
+//   ],
+//   },
+  
+//     //2
+//     ['thirdEnglish'+shuffleArraylot[2]]: {
+//       botPrompt: ' Which word is an adjective in the sentence, "The tall giraffe stretched its neck"?',
+//       type: RTypes.TRANSFORMED_TEXT,
+      
+//       input: selectField(['The','Giraffe',"Tall"]),
+//         answers: [
+//           {
+//             answer: 'The',
+//             nextId: 'inthirdEnglishcorrectq2',
+//             sumToBags: [{ name: 'ai', points: 1 }],
+//           },
+//           {
+//             answer: 'Giraffe',
+//             nextId: 'inthirdEnglishcorrectq2',
+//             sumToBags: [{ name: 'ai', points: 1 }],
+//           },
+//           {
+//             answer: "Tall",
+//             nextId: 'thirdEnglishcorrectq2',
+//             sumToBags: [{ name: 'ac', points: 1 }],
+//           },
+          
+//         ],
+//       },
+      
+//       thirdEnglishcorrectq2: {
+//       botPrompt: 'Hurray! <strong>Tall</strong> is the correct answer  ! 😎',
+//       answers: [
+//         {
+//           nextId: 'thirdEnglish'+shuffleArraylot[3],
+//         },
+//       ],
+//       },
+//       inthirdEnglishcorrectq3: {
+//       botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Tall"</strong>',
+//       answers: [
+//         {
+//           nextId: 'thirdEnglish'+shuffleArraylot[3],
+//         },
+//       ],
+//       },
+  
+//       //3
+//     ['thirdEnglish'+shuffleArraylot[3]]: {
+//       botPrompt: 'What are the adjectives in the sentence, "The small, brown puppy barked"?',
+//       type: RTypes.TRANSFORMED_TEXT,
+      
+//       input: selectField(['Brown','Barked',"Small"]),
+//         answers: [
+//           {
+//             answer: 'Brown',
+//             nextId: 'thirdEnglishcorrectq3',
+//             sumToBags: [{ name: 'ac', points: 1 }],
+//           },
+//           {
+//             answer: 'Barked',
+//             nextId: 'inthirdEnglishcorrectq3',
+//             sumToBags: [{ name: 'ai', points: 1 }],
+//           },
+//           {
+//             answer: "the",
+//             nextId: 'inthirdEnglishcorrectq3',
+//             sumToBags: [{ name: 'ai', points: 1 }],
+//           },
+          
+//         ],
+//       },
+      
+//       thirdEnglishcorrectq3: {
+//       botPrompt: 'Hurray! <strong>Brown</strong> is the correct answer  ! 😎',
+//       answers: [
+//         {
+//           nextId: 'thirdEnglish'+shuffleArraylot[4],
+//         },
+//       ],
+//       },
+//       inthirdEnglishcorrectq3: {
+//       botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Brown"</strong>',
+//       answers: [
+//         {
+//           nextId: 'thirdEnglish'+shuffleArraylot[4],
+//         },
+//       ],
+//       },
+  
+//       //4
+//     ['thirdEnglish'+shuffleArraylot[4]]: {
+//       botPrompt: 'What is the adjective in the sentence, "She has a cute puppy"?',
+//       type: RTypes.TRANSFORMED_TEXT,
+      
+//       input: selectField(['She','Puppy',"Cute"]),
+//         answers: [
+//           {
+//             answer: 'She',
+//             nextId: 'inthirdEnglishcorrectq4',
+//             sumToBags: [{ name: 'ai', points: 1 }],
+//           },
+//           {
+//             answer: 'Puppy',
+//             nextId: 'inthirdEnglishcorrectq4',
+//             sumToBags: [{ name: 'ai', points: 1 }],
+//           },
+//           {
+//             answer: "Cute",
+//             nextId: 'thirdEnglishcorrectq4',
+//             sumToBags: [{ name: 'ac', points: 1 }],
+//           },
+          
+//         ],
+//       },
+      
+//       thirdEnglishcorrectq4: {
+//       botPrompt: 'Hurray! <strong>Cute</strong> is the correct answer  ! 😎',
+//       answers: [
+//         {
+//           nextId: 'thirdEnglish'+shuffleArraylot[5],
+//         },
+//       ],
+//       },
+//       inthirdEnglishcorrectq4: {
+//       botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Cute"</strong>',
+//       answers: [
+//         {
+//           nextId: 'thirdEnglish'+shuffleArraylot[5],
+//         },
+//       ],
+//       },
+  
+//       //5
+//     ['thirdEnglish'+shuffleArraylot[5]]: {
+//       botPrompt: 'Which adjective best describes a fast car?',
+//       type: RTypes.TRANSFORMED_TEXT,
+      
+//       input: selectField(['Car','Fast',"Red"]),
+//         answers: [
+//           {
+//             answer: 'Car',
+//             nextId: 'inthirdEnglishcorrectq5',
+//             sumToBags: [{ name: 'ai', points: 1 }],
+//           },
+//           {
+//             answer: 'Fast',
+//             nextId: 'thirdEnglishcorrectq5',
+//             sumToBags: [{ name: 'ac', points: 1 }],
+//           },
+//           {
+//             answer: "Red",
+//             nextId: 'inthirdEnglishcorrectq5',
+//             sumToBags: [{ name: 'ai', points: 1 }],
+//           },
+          
+//         ],
+//       },
+      
+//       thirdEnglishcorrectq5: {
+//       botPrompt: 'Hurray! <strong>Fast</strong> is the correct answer  ! 😎',
+//       answers: [
+//         {
+//           nextId: 'thirdEnglish'+shuffleArraylot[6],
+//         },
+//       ],
+//       },
+//       inthirdEnglishcorrectq5: {
+//       botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Fast"</strong>',
+//       answers: [
+//         {
+//           nextId: 'thirdEnglish'+shuffleArraylot[6],
+//         },
+//       ],
+//       },
+  
+  
+//        //6
+//     ['thirdEnglish'+shuffleArraylot[6]]: {
+//       botPrompt: 'Which article should replace the blank: "He needs ____ umbrella because it"s raining"?',
+//       type: RTypes.TRANSFORMED_TEXT,
+      
+//       input: selectField(['a','an',"the"]),
+//         answers: [
+//           {
+//             answer: 'a',
+//             nextId: 'inthirdEnglishcorrectq6',
+//             sumToBags: [{ name: 'ai', points: 1 }],
+//           },
+//           {
+//             answer: 'an',
+//             nextId: 'thirdEnglishcorrectq6',
+//             sumToBags: [{ name: 'ac', points: 1 }],
+//           },
+//           {
+//             answer: "the",
+//             nextId: 'inthirdEnglishcorrectq6',
+//             sumToBags: [{ name: 'ai', points: 1 }],
+//           },
+          
+//         ],
+//       },
+      
+//       thirdEnglishcorrectq6: {
+//       botPrompt: 'Hurray! <strong>an</strong> is the correct answer  ! 😎',
+//       answers: [
+//         {
+//           nextId: 'thirdEnglish'+shuffleArraylot[7],
+//         },
+//       ],
+//       },
+//       inthirdEnglishcorrectq6: {
+//       botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"an"</strong>',
+//       answers: [
+//         {
+//           nextId: 'thirdEnglish'+shuffleArraylot[7],
+//         },
+//       ],
+//       },
+  
+  
+//        //7
+//     ['thirdEnglish'+shuffleArraylot[7]]: {
+//       botPrompt: 'Fill in the blank with the appropriate article: ---- Kaveri is a river.',
+//       type: RTypes.TRANSFORMED_TEXT,
+      
+//       input: selectField(['an','the',"a"]),
+//         answers: [
+//           {
+//             answer: 'an',
+//             nextId: 'inthirdEnglishcorrectq7',
+//             sumToBags: [{ name: 'ai', points: 1 }],
+//           },
+//           {
+//             answer: 'the',
+//             nextId: 'thirdEnglishcorrectq7',
+//             sumToBags: [{ name: 'ac', points: 1 }],
+//           },
+//           {
+//             answer: "a",
+//             nextId: 'inthirdEnglishcorrectq7',
+//             sumToBags: [{ name: 'ai', points: 1 }],
+//           },
+          
+//         ],
+//       },
+      
+//       thirdEnglishcorrectq7: {
+//       botPrompt: 'Hurray! <strong>the</strong> is the correct answer  ! 😎',
+//       answers: [
+//         {
+//           nextId: 'thirdEnglish'+shuffleArraylot[8],
+//         },
+//       ],
+//       },
+//       inthirdEnglishcorrectq7: {
+//       botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"the"</strong>',
+//       answers: [
+//         {
+//           nextId: 'thirdEnglish'+shuffleArraylot[8],
+//         },
+//       ],
+//       },
+  
+  
+//        //8
+//     ['thirdEnglish'+shuffleArraylot[8]]: {
+//       botPrompt: 'What article should go in the blank: "My brother is ___ doctor"?',
+//       type: RTypes.TRANSFORMED_TEXT,
+      
+//       input: selectField(['a','an',"the"]),
+//         answers: [
+//           {
+//             answer: 'a',
+//             nextId: 'thirdEnglishcorrectq8',
+//             sumToBags: [{ name: 'ac', points: 1 }],
+//           },
+//           {
+//             answer: 'an',
+//             nextId: 'inthirdEnglishcorrectq8',
+//             sumToBags: [{ name: 'ai', points: 1 }],
+//           },
+//           {
+//             answer: "the",
+//             nextId: 'inthirdEnglishcorrectq8',
+//             sumToBags: [{ name: 'ai', points: 1 }],
+//           },
+          
+//         ],
+//       },
+      
+//       thirdEnglishcorrectq8: {
+//       botPrompt: 'Hurray! <strong>a</strong> is the correct answer  ! 😎',
+//       answers: [
+//         {
+//           nextId: 'thirdEnglish'+shuffleArraylot[9],
+//         },
+//       ],
+//       },
+//       inthirdEnglishcorrectq8: {
+//       botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"a"</strong>',
+//       answers: [
+//         {
+//           nextId: 'thirdEnglish'+shuffleArraylot[9],
+//         },
+//       ],
+//       },
+  
+  
+//        //9
+//     ['thirdEnglish'+shuffleArraylot[9]]: {
+//       botPrompt: 'Which article should go in the blank: "She found ____ interesting book in the library"?',
+//       type: RTypes.TRANSFORMED_TEXT,
+      
+//       input: selectField(['a','an',"the"]),
+//         answers: [
+//           {
+//             answer: 'a',
+//             nextId: 'inthirdEnglishcorrectq9',
+//             sumToBags: [{ name: 'ai', points: 1 }],
+//           },
+//           {
+//             answer: 'an',
+//             nextId: 'inthirdEnglishcorrectq9',
+//             sumToBags: [{ name: 'ai', points: 1 }],
+//           },
+//           {
+//             answer: "the",
+//             nextId: 'thirdEnglishcorrectq9',
+//             sumToBags: [{ name: 'ac', points: 1 }],
+//           },
+          
+//         ],
+//       },
+      
+//       thirdEnglishcorrectq9: {
+//       botPrompt: 'Hurray! <strong>the</strong> is the correct answer  ! 😎',
+//       answers: [
+//         {
+//           nextId: 'thirdEnglish'+shuffleArraylot[10],
+//         },
+//       ],
+//       },
+//       inthirdEnglishcorrectq9: {
+//       botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"the"</strong>',
+//       answers: [
+//         {
+//           nextId: 'thirdEnglish'+shuffleArraylot[10],
+//         },
+//       ],
+//       },
+  
+//   //10
+//       ['thirdEnglish'+shuffleArraylot[10]]: {
+//         botPrompt: 'Fill in the blank with the appropriate article: "Please pass me ____ orange."',
+//         type: RTypes.TRANSFORMED_TEXT,
+        
+//         input: selectField(['a','an',"the"]),
+//           answers: [
+//             {
+//               answer: 'a',
+//               nextId: 'inthirdEnglishcorrectq10',
+//               sumToBags: [{ name: 'ai', points: 1 }],
+//             },
+//             {
+//               answer: 'an',
+//               nextId: 'thirdEnglishcorrectq10',
+//               sumToBags: [{ name: 'ac', points: 1 }],
+//             },
+//             {
+//               answer: "the",
+//               nextId: 'inthirdEnglishcorrectq10',
+//               sumToBags: [{ name: 'ai', points: 1 }],
+//             },
+            
+//           ],
+//         },
+        
+//         thirdEnglishcorrectq10: {
+//         botPrompt: 'Hurray! <strong>an</strong> is the correct answer  ! 😎',
+//         answers: [
+//           {
+//             nextId: 'thirdEnglish'+shuffleArraylot[11],
+//           },
+//         ],
+//         },
+//         inthirdEnglishcorrectq10: {
+//         botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"an"</strong>',
+//         answers: [
+//           {
+//             nextId: 'thirdEnglish'+shuffleArraylot[11],
+//           },
+//         ],
+//         },
+  
+  
+//         //11
+//       ['thirdEnglish'+shuffleArraylot[11]]: {
+//         botPrompt: 'Which sentence is in the simple present tense?',
+//         type: RTypes.TRANSFORMED_TEXT,
+        
+//         input: selectField(['She will go to the store.','They are playing in the park.',"He reads books every night."]),
+//           answers: [
+//             {
+//               answer: 'She will go to the store.',
+//               nextId: 'inthirdEnglishcorrectq11',
+//               sumToBags: [{ name: 'ai', points: 1 }],
+//             },
+//             {
+//               answer: 'They are playing in the park.',
+//               nextId: 'inthirdEnglishcorrectq11',
+//               sumToBags: [{ name: 'ai', points: 1 }],
+//             },
+//             {
+//               answer: "He reads books every night.",
+//               nextId: 'thirdEnglishcorrectq11',
+//               sumToBags: [{ name: 'ac', points: 1 }],
+//             },
+            
+//           ],
+//         },
+        
+//         thirdEnglishcorrectq11: {
+//         botPrompt: 'Hurray! <strong>He reads books every night.</strong> is the correct answer  ! 😎',
+//         answers: [
+//           {
+//             nextId: 'thirdEnglish'+shuffleArraylot[12],
+//           },
+//         ],
+//         },
+//         inthirdEnglishcorrectq11: {
+//         botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"He reads books every night."</strong>',
+//         answers: [
+//           {
+//             nextId: 'thirdEnglish'+shuffleArraylot[12],
+//           },
+//         ],
+//         },
+  
+  
+//           //12
+//       ['thirdEnglish'+shuffleArraylot[12]]: {
+//         botPrompt: 'What is the correct simple present tense form of the verb "to eat" for "I"?',
+//         type: RTypes.TRANSFORMED_TEXT,
+        
+//         input: selectField(['eat','eats',"eating"]),
+//           answers: [
+//             {
+//               answer: 'eat',
+//               nextId: 'inthirdEnglishcorrectq12',
+//               sumToBags: [{ name: 'ai', points: 1 }],
+//             },
+//             {
+//               answer: 'eats',
+//               nextId: 'thirdEnglishcorrectq12',
+//               sumToBags: [{ name: 'ac', points: 1 }],
+//             },
+//             {
+//               answer: "eating",
+//               nextId: 'inthirdEnglishcorrectq12',
+//               sumToBags: [{ name: 'ai', points: 1 }],
+//             },
+            
+//           ],
+//         },
+        
+//         thirdEnglishcorrectq12: {
+//         botPrompt: 'Hurray! <strong>eats</strong> is the correct answer  ! 😎',
+//         answers: [
+//           {
+//             nextId: 'thirdEnglish'+shuffleArraylot[12],
+//           },
+//         ],
+//         },
+//         inthirdEnglishcorrectq12: {
+//         botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"eats"</strong>',
+//         answers: [
+//           {
+//             nextId: 'thirdEnglish'+shuffleArraylot[12],
+//           },
+//         ],
+//         },
+  
+  
+//           //13
+//       ['thirdEnglish'+shuffleArraylot[13]]: {
+//         botPrompt: 'What is the simple present tense form of the verb "to dance" for "She"?',
+//         type: RTypes.TRANSFORMED_TEXT,
+        
+//         input: selectField(['dances', ' danced', "dancing"]),
+//           answers: [
+//             {
+//               answer: ' dances',
+//               nextId: 'thirdEnglishcorrectq13',
+//               sumToBags: [{ name: 'ac', points: 1 }],
+//             },
+//             {
+//               answer: 'danced',
+//               nextId: 'inthirdEnglishcorrectq13',
+//               sumToBags: [{ name: 'ai', points: 1 }],
+//             },
+//             {
+//               answer: "dancing",
+//               nextId: 'inthirdEnglishcorrectq13',
+//               sumToBags: [{ name: 'ai', points: 1 }],
+//             },
+            
+//           ],
+//         },
+        
+//         thirdEnglishcorrectq13: {
+//         botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+//         answers: [
+//           {
+//             nextId: 'thirdEnglish'+shuffleArraylot[14],
+//           },
+//         ],
+//         },
+//         inthirdEnglishcorrectq13: {
+//         botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"dances"</strong>',
+//         answers: [
+//           {
+//             nextId: 'thirdEnglish'+shuffleArraylot[14],
+//           },
+//         ],
+//         },
+      
+  
+//             //14
+//       ['thirdEnglish'+shuffleArraylot[14]]: {
+//         botPrompt: 'Which sentence is NOT in the simple present tense?',
+//         type: RTypes.TRANSFORMED_TEXT,
+        
+//         input: selectField(['They sing songs beautifully.', ' We will bake cookies this weekend.', "I play with my toys in the"]),
+//           answers: [
+//             {
+//               answer: 'They sing songs beautifully.',
+//               nextId: 'inthirdEnglishcorrectq14',
+//               sumToBags: [{ name: 'ai', points: 1 }],
+//             },
+//             {
+//               answer: 'We will bake cookies this weekend.',
+//               nextId: 'thirdEnglishcorrectq14',
+//               sumToBags: [{ name: 'ac', points: 1 }],
+//             },
+//             {
+//               answer: "I play with my toys in the",
+//               nextId: 'inthirdEnglishcorrectq14',
+//               sumToBags: [{ name: 'ai', points: 1 }],
+//             },
+            
+//           ],
+//         },
+        
+//         thirdEnglishcorrectq14: {
+//         botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+//         answers: [
+//           {
+//             nextId: 'thirdEnglish'+shuffleArraylot[15],
+//           },
+//         ],
+//         },
+//         inthirdEnglishcorrectq14: {
+//         botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"We will bake cookies this weekend."</strong>',
+//         answers: [
+//           {
+//             nextId: 'thirdEnglish'+shuffleArraylot[15],
+//           },
+//         ],
+//         },
+      
+  
+//             //15
+//       ['thirdEnglish'+shuffleArraylot[15]]: {
+//         botPrompt: 'Identify the sentence in the simple present tense:',
+//         type: RTypes.TRANSFORMED_TEXT,
+        
+//         input: selectField(['We travelled in the summer.', ' He reads a book every evening.', " I am doing my homework right now."]),
+//           answers: [
+//             {
+//               answer: ' We travelled in the summer.',
+//               nextId: 'inthirdEnglishcorrectq15',
+//               sumToBags: [{ name: 'ai', points: 1 }],
+//             },
+//             {
+//               answer: 'He reads a book every evening.',
+//               nextId: 'thirdEnglishcorrectq15',
+//               sumToBags: [{ name: 'ac', points: 1 }],
+//             },
+//             {
+//               answer: " I am doing my homework right now.",
+//               nextId: 'inthirdEnglishcorrectq15',
+//               sumToBags: [{ name: 'ai', points: 1 }],
+//             },
+            
+//           ],
+//         },
+        
+//         thirdEnglishcorrectq15: {
+//         botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+//         answers: [
+//           {
+//             nextId: 'thirdEnglish'+shuffleArraylot[16],
+//           },
+//         ],
+//         },
+//         inthirdEnglishcorrectq15: {
+//         botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"He reads a book every evening."</strong>',
+//         answers: [
+//           {
+//             nextId: 'thirdEnglish'+shuffleArraylot[16],
+//           },
+//         ],
+//         },
+      
+  
+  
+  
+//             //16
+//       ['thirdEnglish'+shuffleArraylot[16]]: {
+//         botPrompt: 'What is the present continuous tense form of the verb "to write" for "She"?',
+//         type: RTypes.TRANSFORMED_TEXT,
+        
+//         input: selectField(['write', ' writes', "writing"]),
+//           answers: [
+//             {
+//               answer: ' write',
+//               nextId: 'inthirdEnglishcorrectq16',
+//               sumToBags: [{ name: 'ai', points: 1 }],
+//             },
+//             {
+//               answer: 'writes',
+//               nextId: 'inthirdEnglishcorrectq16',
+//               sumToBags: [{ name: 'ai', points: 1 }],
+//             },
+//             {
+//               answer: "writing",
+//               nextId: 'thirdEnglishcorrectq16',
+//               sumToBags: [{ name: 'ac', points: 1 }],
+//             },
+            
+//           ],
+//         },
+        
+//         thirdEnglishcorrectq16: {
+//         botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+//         answers: [
+//           {
+//             nextId: 'thirdEnglish'+shuffleArraylot[17],
+//           },
+//         ],
+//         },
+//         inthirdEnglishcorrectq16: {
+//         botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"writing"</strong>',
+//         answers: [
+//           {
+//             nextId: 'thirdEnglish'+shuffleArraylot[17],
+//           },
+//         ],
+//         },
+      
+  
+//            //17
+//       ['thirdEnglish'+shuffleArraylot[17]]: {
+//         botPrompt: 'Select the sentence in the present continuous tense:',
+//         type: RTypes.TRANSFORMED_TEXT,
+        
+//         input: selectField(['I went to the beach last summer', ' He writes stories every day.', "They are swimming in the pool"]),
+//           answers: [
+//             {
+//               answer: ' I went to the beach last summer.',
+//               nextId: 'inthirdEnglishcorrectq17',
+//               sumToBags: [{ name: 'ai', points: 1 }],
+//             },
+//             {
+//               answer: 'He writes stories every day.',
+//               nextId: 'inthirdEnglishcorrectq17',
+//               sumToBags: [{ name: 'ai', points: 1 }],
+//             },
+//             {
+//               answer: "They are swimming in the pool",
+//               nextId: 'thirdEnglishcorrectq17',
+//               sumToBags: [{ name: 'ac', points: 1 }],
+//             },
+            
+//           ],
+//         },
+        
+//         thirdEnglishcorrectq17: {
+//         botPrompt: 'Hurray! <strong>They are swimming in the pool</strong> is the correct answer  ! 😎',
+//         answers: [
+//           {
+//             nextId: 'thirdEnglish'+shuffleArraylot[18],
+//           },
+//         ],
+//         },
+//         inthirdEnglishcorrectq17: {
+//         botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"They are swimming in the pool"</strong>',
+//         answers: [
+//           {
+//             nextId: 'thirdEnglish'+shuffleArraylot[18],
+//           },
+//         ],
+//         },
+  
+  
+//            //18
+//       ['thirdEnglish'+shuffleArraylot[18]]: {
+//         botPrompt: 'Which sentence is NOT in the present continuous tense?',
+//         type: RTypes.TRANSFORMED_TEXT,
+        
+//         input: selectField(['They are building a sandcastle.', ' I will visit the zoo tomorrow', "He is drawing a picture."]),
+//           answers: [
+//             {
+//               answer: ' They are building a sandcastle.',
+//               nextId: 'inthirdEnglishcorrectq18',
+//               sumToBags: [{ name: 'ai', points: 1 }],
+//             },
+//             {
+//               answer: 'I will visit the zoo tomorrow',
+//               nextId: 'thirdEnglishcorrectq18',
+//               sumToBags: [{ name: 'ac', points: 1 }],
+//             },
+//             {
+//               answer: "He is drawing a picture.",
+//               nextId: 'inthirdEnglishcorrectq18',
+//               sumToBags: [{ name: 'ai', points: 1 }],
+//             },
+            
+//           ],
+//         },
+        
+//         thirdEnglishcorrectq18: {
+//         botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+//         answers: [
+//           {
+//             nextId: 'thirdEnglish'+shuffleArraylot[19],
+//           },
+//         ],
+//         },
+//         inthirdEnglishcorrectq18: {
+//         botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"I will visit the zoo tomorrow"</strong>',
+//         answers: [
+//           {
+//             nextId: 'thirdEnglish'+shuffleArraylot[19],
+//           },
+//         ],
+//         },
+  
+  
+//            //19
+//       ['thirdEnglish'+shuffleArraylot[19]]: {
+//         botPrompt: 'Which sentence is in the present continuous tense?',
+//         type: RTypes.TRANSFORMED_TEXT,
+        
+//         input: selectField(['She reads books every day.', ' They played soccer yesterday.', "He is eating dinner right now"]),
+//           answers: [
+//             {
+//               answer: ' She reads books every day.',
+//               nextId: 'inthirdEnglishcorrectq19',
+//               sumToBags: [{ name: 'ai', points: 1 }],
+//             },
+//             {
+//               answer: 'They played soccer yesterday.',
+//               nextId: 'inthirdEnglishcorrectq19',
+//               sumToBags: [{ name: 'ai', points: 1 }],
+//             },
+//             {
+//               answer: "He is eating dinner right now",
+//               nextId: 'thirdEnglishcorrectq19',
+//               sumToBags: [{ name: 'ac', points: 1 }],
+//             },
+            
+//           ],
+//         },
+        
+//         thirdEnglishcorrectq19: {
+//         botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+//         answers: [
+//           {
+//             nextId: 'thirdEnglish'+shuffleArraylot[20],
+//           },
+//         ],
+//         },
+//         inthirdEnglishcorrectq19: {
+//         botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"He is eating dinner right now"</strong>',
+//         answers: [
+//           {
+//             nextId: 'thirdEnglish'+shuffleArraylot[20],
+//           },
+//         ],
+//         },
+  
+  
+//            //20
+//       ['thirdEnglish'+shuffleArraylottwo[20]]: {
+//         botPrompt: 'Choose the sentence in the present continuous tense:',
+//         type: RTypes.TRANSFORMED_TEXT,
+        
+//         input: selectField([' We will go to the park later.', ' She dances in the ballet class.', "They are playing in the garden"]),
+//           answers: [
+//             {
+//               answer: '  We will go to the park later.',
+//               nextId: 'inthirdEnglishcorrectq20',
+//               sumToBags: [{ name: 'ai', points: 1 }],
+//             },
+//             {
+//               answer: 'She dances in the ballet class.',
+//               nextId: 'inthirdEnglishcorrectq20',
+//               sumToBags: [{ name: 'ai', points: 1 }],
+//             },
+//             {
+//               answer: "They are playing in the garden",
+//               nextId: 'thirdEnglishcorrectq20',
+//               sumToBags: [{ name: 'ac', points: 1 }],
+//             },
+            
+//           ],
+//         },
+        
+//         thirdEnglishcorrectq20: {
+//         botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+//         answers: [
+//           {
+//             nextId: 'wishtocountinethirdEnglish',
+//           },
+//         ],
+//         },
+//         inthirdEnglishcorrectq16: {
+//         botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"They are playing in the garden"</strong>',
+//         answers: [
+//           {
+//             nextId: 'wishtocountinethirdEnglish',
+//           },
+//         ],
+//         },
+         
+         
 
           //thirdEnglish
           //1
@@ -8526,7 +9421,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         botPrompt: 'Hurray! <strong>eats</strong> is the correct answer  ! 😎',
         answers: [
           {
-            nextId: 'thirdEnglish'+shuffleArraylot[12],
+            nextId: 'thirdEnglish'+shuffleArraylot[13],
           },
         ],
         },
@@ -8534,7 +9429,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"eats"</strong>',
         answers: [
           {
-            nextId: 'thirdEnglish'+shuffleArraylot[12],
+            nextId: 'thirdEnglish'+shuffleArraylot[13],
           },
         ],
         },
@@ -8567,7 +9462,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         },
         
         thirdEnglishcorrectq13: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>dances</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'thirdEnglish'+shuffleArraylot[14],
@@ -8611,7 +9506,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         },
         
         thirdEnglishcorrectq14: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>We will bake cookies this weekend.</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'thirdEnglish'+shuffleArraylot[15],
@@ -8655,7 +9550,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         },
         
         thirdEnglishcorrectq15: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>He reads a book every evening.</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'thirdEnglish'+shuffleArraylot[16],
@@ -8701,7 +9596,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         },
         
         thirdEnglishcorrectq16: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>writing</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'thirdEnglish'+shuffleArraylot[17],
@@ -8745,7 +9640,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         },
         
         thirdEnglishcorrectq17: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>They are swimming in the pool</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'thirdEnglish'+shuffleArraylot[18],
@@ -8789,7 +9684,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         },
         
         thirdEnglishcorrectq18: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>I will visit the zoo tomorrow</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'thirdEnglish'+shuffleArraylot[19],
@@ -8833,7 +9728,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         },
         
         thirdEnglishcorrectq19: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>He is eating dinner right now</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'thirdEnglish'+shuffleArraylot[20],
@@ -8877,7 +9772,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         },
         
         thirdEnglishcorrectq20: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>They are playing in the garden</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'wishtocountinethirdEnglish',
@@ -8893,884 +9788,22 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         ],
         },
          
-         
-          //thirdEnglish
-          //1
-['thirdEnglish'+shuffleArraylot[1]]: {
-  botPrompt: 'Question 1:In the sentence, "The sky is cloudy," what is the adjective?',
-  type: RTypes.TRANSFORMED_TEXT,
-  
-  input: selectField(['The','Sky',"Cloudy",]),
-    answers: [
-      {
-        answer: 'The',
-        nextId: 'inthirdEnglishcorrectq1',
-        sumToBags: [{ name: 'ai', points: 1 }],
-      },
-      {
-        answer: 'Sky',
-        nextId: 'inthirdEnglishcorrectq1',
-        sumToBags: [{ name: 'ai', points: 1 }],
-      },
-      {
-        answer: "Cloudy",
-        nextId: 'thirdEnglishcorrectq1',
-        sumToBags: [{ name: 'ac', points: 1 }],
-      },
-      
-    ],
-  },
-  
-  thirdEnglishcorrectq1: {
-  botPrompt: 'Hurray! <strong>Cloudy</strong> is the correct answer  ! 😎',
-  answers: [
-    {
-      nextId: 'thirdEnglish'+shuffleArraylot[2],
-    },
-  ],
-  },
-  inthirdEnglishcorrectq5: {
-  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Cloudy"</strong>',
-  answers: [
-    {
-      nextId: 'thirdEnglish'+shuffleArraylot[2],
-    },
-  ],
-  },
-  
-    //2
-    ['thirdEnglish'+shuffleArraylot[2]]: {
-      botPrompt: ' Which word is an adjective in the sentence, "The tall giraffe stretched its neck"?',
-      type: RTypes.TRANSFORMED_TEXT,
-      
-      input: selectField(['The','Giraffe',"Tall"]),
-        answers: [
-          {
-            answer: 'The',
-            nextId: 'inthirdEnglishcorrectq2',
-            sumToBags: [{ name: 'ai', points: 1 }],
-          },
-          {
-            answer: 'Giraffe',
-            nextId: 'inthirdEnglishcorrectq2',
-            sumToBags: [{ name: 'ai', points: 1 }],
-          },
-          {
-            answer: "Tall",
-            nextId: 'thirdEnglishcorrectq2',
-            sumToBags: [{ name: 'ac', points: 1 }],
-          },
+        wishtocountinethirdEnglish: {
+          botPrompt: 'You have Completed Englisn. Do you Wish to Continue ?',
+          type: RTypes.TRANSFORMED_TEXT,
+          input: selectField(['Yes', "No"]),
+          answers: [
+            {
+              answer: 'Yes',
+              nextId: 'chooseclass',
+            },
+            {
+              answer: "No",
+              nextId: 'endConv',
+            },
           
-        ],
-      },
-      
-      thirdEnglishcorrectq2: {
-      botPrompt: 'Hurray! <strong>Tall</strong> is the correct answer  ! 😎',
-      answers: [
-        {
-          nextId: 'thirdEnglish'+shuffleArraylot[3],
-        },
-      ],
-      },
-      inthirdEnglishcorrectq3: {
-      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Tall"</strong>',
-      answers: [
-        {
-          nextId: 'thirdEnglish'+shuffleArraylot[3],
-        },
-      ],
-      },
-  
-      //3
-    ['thirdEnglish'+shuffleArraylot[3]]: {
-      botPrompt: 'What are the adjectives in the sentence, "The small, brown puppy barked"?',
-      type: RTypes.TRANSFORMED_TEXT,
-      
-      input: selectField(['Brown','Barked',"Small"]),
-        answers: [
-          {
-            answer: 'Brown',
-            nextId: 'thirdEnglishcorrectq3',
-            sumToBags: [{ name: 'ac', points: 1 }],
-          },
-          {
-            answer: 'Barked',
-            nextId: 'inthirdEnglishcorrectq3',
-            sumToBags: [{ name: 'ai', points: 1 }],
-          },
-          {
-            answer: "the",
-            nextId: 'inthirdEnglishcorrectq3',
-            sumToBags: [{ name: 'ai', points: 1 }],
-          },
-          
-        ],
-      },
-      
-      thirdEnglishcorrectq3: {
-      botPrompt: 'Hurray! <strong>Brown</strong> is the correct answer  ! 😎',
-      answers: [
-        {
-          nextId: 'thirdEnglish'+shuffleArraylot[4],
-        },
-      ],
-      },
-      inthirdEnglishcorrectq3: {
-      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Brown"</strong>',
-      answers: [
-        {
-          nextId: 'thirdEnglish'+shuffleArraylot[4],
-        },
-      ],
-      },
-  
-      //4
-    ['thirdEnglish'+shuffleArraylot[4]]: {
-      botPrompt: 'What is the adjective in the sentence, "She has a cute puppy"?',
-      type: RTypes.TRANSFORMED_TEXT,
-      
-      input: selectField(['She','Puppy',"Cute"]),
-        answers: [
-          {
-            answer: 'She',
-            nextId: 'inthirdEnglishcorrectq4',
-            sumToBags: [{ name: 'ai', points: 1 }],
-          },
-          {
-            answer: 'Puppy',
-            nextId: 'inthirdEnglishcorrectq4',
-            sumToBags: [{ name: 'ai', points: 1 }],
-          },
-          {
-            answer: "Cute",
-            nextId: 'thirdEnglishcorrectq4',
-            sumToBags: [{ name: 'ac', points: 1 }],
-          },
-          
-        ],
-      },
-      
-      thirdEnglishcorrectq4: {
-      botPrompt: 'Hurray! <strong>Cute</strong> is the correct answer  ! 😎',
-      answers: [
-        {
-          nextId: 'thirdEnglish'+shuffleArraylot[5],
-        },
-      ],
-      },
-      inthirdEnglishcorrectq4: {
-      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Cute"</strong>',
-      answers: [
-        {
-          nextId: 'thirdEnglish'+shuffleArraylot[5],
-        },
-      ],
-      },
-  
-      //5
-    ['thirdEnglish'+shuffleArraylot[5]]: {
-      botPrompt: 'Which adjective best describes a fast car?',
-      type: RTypes.TRANSFORMED_TEXT,
-      
-      input: selectField(['Car','Fast',"Red"]),
-        answers: [
-          {
-            answer: 'Car',
-            nextId: 'inthirdEnglishcorrectq5',
-            sumToBags: [{ name: 'ai', points: 1 }],
-          },
-          {
-            answer: 'Fast',
-            nextId: 'thirdEnglishcorrectq5',
-            sumToBags: [{ name: 'ac', points: 1 }],
-          },
-          {
-            answer: "Red",
-            nextId: 'inthirdEnglishcorrectq5',
-            sumToBags: [{ name: 'ai', points: 1 }],
-          },
-          
-        ],
-      },
-      
-      thirdEnglishcorrectq5: {
-      botPrompt: 'Hurray! <strong>Fast</strong> is the correct answer  ! 😎',
-      answers: [
-        {
-          nextId: 'thirdEnglish'+shuffleArraylot[6],
-        },
-      ],
-      },
-      inthirdEnglishcorrectq5: {
-      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Fast"</strong>',
-      answers: [
-        {
-          nextId: 'thirdEnglish'+shuffleArraylot[6],
-        },
-      ],
-      },
-  
-  
-       //6
-    ['thirdEnglish'+shuffleArraylot[6]]: {
-      botPrompt: 'Which article should replace the blank: "He needs ____ umbrella because it"s raining"?',
-      type: RTypes.TRANSFORMED_TEXT,
-      
-      input: selectField(['a','an',"the"]),
-        answers: [
-          {
-            answer: 'a',
-            nextId: 'inthirdEnglishcorrectq6',
-            sumToBags: [{ name: 'ai', points: 1 }],
-          },
-          {
-            answer: 'an',
-            nextId: 'thirdEnglishcorrectq6',
-            sumToBags: [{ name: 'ac', points: 1 }],
-          },
-          {
-            answer: "the",
-            nextId: 'inthirdEnglishcorrectq6',
-            sumToBags: [{ name: 'ai', points: 1 }],
-          },
-          
-        ],
-      },
-      
-      thirdEnglishcorrectq6: {
-      botPrompt: 'Hurray! <strong>an</strong> is the correct answer  ! 😎',
-      answers: [
-        {
-          nextId: 'thirdEnglish'+shuffleArraylot[7],
-        },
-      ],
-      },
-      inthirdEnglishcorrectq6: {
-      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"an"</strong>',
-      answers: [
-        {
-          nextId: 'thirdEnglish'+shuffleArraylot[7],
-        },
-      ],
-      },
-  
-  
-       //7
-    ['thirdEnglish'+shuffleArraylot[7]]: {
-      botPrompt: 'Fill in the blank with the appropriate article: ---- Kaveri is a river.',
-      type: RTypes.TRANSFORMED_TEXT,
-      
-      input: selectField(['an','the',"a"]),
-        answers: [
-          {
-            answer: 'an',
-            nextId: 'inthirdEnglishcorrectq7',
-            sumToBags: [{ name: 'ai', points: 1 }],
-          },
-          {
-            answer: 'the',
-            nextId: 'thirdEnglishcorrectq7',
-            sumToBags: [{ name: 'ac', points: 1 }],
-          },
-          {
-            answer: "a",
-            nextId: 'inthirdEnglishcorrectq7',
-            sumToBags: [{ name: 'ai', points: 1 }],
-          },
-          
-        ],
-      },
-      
-      thirdEnglishcorrectq7: {
-      botPrompt: 'Hurray! <strong>the</strong> is the correct answer  ! 😎',
-      answers: [
-        {
-          nextId: 'thirdEnglish'+shuffleArraylot[8],
-        },
-      ],
-      },
-      inthirdEnglishcorrectq7: {
-      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"the"</strong>',
-      answers: [
-        {
-          nextId: 'thirdEnglish'+shuffleArraylot[8],
-        },
-      ],
-      },
-  
-  
-       //8
-    ['thirdEnglish'+shuffleArraylot[8]]: {
-      botPrompt: 'What article should go in the blank: "My brother is ___ doctor"?',
-      type: RTypes.TRANSFORMED_TEXT,
-      
-      input: selectField(['a','an',"the"]),
-        answers: [
-          {
-            answer: 'a',
-            nextId: 'thirdEnglishcorrectq8',
-            sumToBags: [{ name: 'ac', points: 1 }],
-          },
-          {
-            answer: 'an',
-            nextId: 'inthirdEnglishcorrectq8',
-            sumToBags: [{ name: 'ai', points: 1 }],
-          },
-          {
-            answer: "the",
-            nextId: 'inthirdEnglishcorrectq8',
-            sumToBags: [{ name: 'ai', points: 1 }],
-          },
-          
-        ],
-      },
-      
-      thirdEnglishcorrectq8: {
-      botPrompt: 'Hurray! <strong>a</strong> is the correct answer  ! 😎',
-      answers: [
-        {
-          nextId: 'thirdEnglish'+shuffleArraylot[9],
-        },
-      ],
-      },
-      inthirdEnglishcorrectq8: {
-      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"a"</strong>',
-      answers: [
-        {
-          nextId: 'thirdEnglish'+shuffleArraylot[9],
-        },
-      ],
-      },
-  
-  
-       //9
-    ['thirdEnglish'+shuffleArraylot[9]]: {
-      botPrompt: 'Which article should go in the blank: "She found ____ interesting book in the library"?',
-      type: RTypes.TRANSFORMED_TEXT,
-      
-      input: selectField(['a','an',"the"]),
-        answers: [
-          {
-            answer: 'a',
-            nextId: 'inthirdEnglishcorrectq9',
-            sumToBags: [{ name: 'ai', points: 1 }],
-          },
-          {
-            answer: 'an',
-            nextId: 'inthirdEnglishcorrectq9',
-            sumToBags: [{ name: 'ai', points: 1 }],
-          },
-          {
-            answer: "the",
-            nextId: 'thirdEnglishcorrectq9',
-            sumToBags: [{ name: 'ac', points: 1 }],
-          },
-          
-        ],
-      },
-      
-      thirdEnglishcorrectq9: {
-      botPrompt: 'Hurray! <strong>the</strong> is the correct answer  ! 😎',
-      answers: [
-        {
-          nextId: 'thirdEnglish'+shuffleArraylot[10],
-        },
-      ],
-      },
-      inthirdEnglishcorrectq9: {
-      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"the"</strong>',
-      answers: [
-        {
-          nextId: 'thirdEnglish'+shuffleArraylot[10],
-        },
-      ],
-      },
-  
-  //10
-      ['thirdEnglish'+shuffleArraylot[10]]: {
-        botPrompt: 'Fill in the blank with the appropriate article: "Please pass me ____ orange."',
-        type: RTypes.TRANSFORMED_TEXT,
-        
-        input: selectField(['a','an',"the"]),
-          answers: [
-            {
-              answer: 'a',
-              nextId: 'inthirdEnglishcorrectq10',
-              sumToBags: [{ name: 'ai', points: 1 }],
-            },
-            {
-              answer: 'an',
-              nextId: 'thirdEnglishcorrectq10',
-              sumToBags: [{ name: 'ac', points: 1 }],
-            },
-            {
-              answer: "the",
-              nextId: 'inthirdEnglishcorrectq10',
-              sumToBags: [{ name: 'ai', points: 1 }],
-            },
-            
           ],
         },
-        
-        thirdEnglishcorrectq10: {
-        botPrompt: 'Hurray! <strong>an</strong> is the correct answer  ! 😎',
-        answers: [
-          {
-            nextId: 'thirdEnglish'+shuffleArraylot[11],
-          },
-        ],
-        },
-        inthirdEnglishcorrectq10: {
-        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"an"</strong>',
-        answers: [
-          {
-            nextId: 'thirdEnglish'+shuffleArraylot[11],
-          },
-        ],
-        },
-  
-  
-        //11
-      ['thirdEnglish'+shuffleArraylot[11]]: {
-        botPrompt: 'Which sentence is in the simple present tense?',
-        type: RTypes.TRANSFORMED_TEXT,
-        
-        input: selectField(['She will go to the store.','They are playing in the park.',"He reads books every night."]),
-          answers: [
-            {
-              answer: 'She will go to the store.',
-              nextId: 'inthirdEnglishcorrectq11',
-              sumToBags: [{ name: 'ai', points: 1 }],
-            },
-            {
-              answer: 'They are playing in the park.',
-              nextId: 'inthirdEnglishcorrectq11',
-              sumToBags: [{ name: 'ai', points: 1 }],
-            },
-            {
-              answer: "He reads books every night.",
-              nextId: 'thirdEnglishcorrectq11',
-              sumToBags: [{ name: 'ac', points: 1 }],
-            },
-            
-          ],
-        },
-        
-        thirdEnglishcorrectq11: {
-        botPrompt: 'Hurray! <strong>He reads books every night.</strong> is the correct answer  ! 😎',
-        answers: [
-          {
-            nextId: 'thirdEnglish'+shuffleArraylot[12],
-          },
-        ],
-        },
-        inthirdEnglishcorrectq11: {
-        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"He reads books every night."</strong>',
-        answers: [
-          {
-            nextId: 'thirdEnglish'+shuffleArraylot[12],
-          },
-        ],
-        },
-  
-  
-          //12
-      ['thirdEnglish'+shuffleArraylot[12]]: {
-        botPrompt: 'What is the correct simple present tense form of the verb "to eat" for "I"?',
-        type: RTypes.TRANSFORMED_TEXT,
-        
-        input: selectField(['eat','eats',"eating"]),
-          answers: [
-            {
-              answer: 'eat',
-              nextId: 'inthirdEnglishcorrectq12',
-              sumToBags: [{ name: 'ai', points: 1 }],
-            },
-            {
-              answer: 'eats',
-              nextId: 'thirdEnglishcorrectq12',
-              sumToBags: [{ name: 'ac', points: 1 }],
-            },
-            {
-              answer: "eating",
-              nextId: 'inthirdEnglishcorrectq12',
-              sumToBags: [{ name: 'ai', points: 1 }],
-            },
-            
-          ],
-        },
-        
-        thirdEnglishcorrectq12: {
-        botPrompt: 'Hurray! <strong>eats</strong> is the correct answer  ! 😎',
-        answers: [
-          {
-            nextId: 'thirdEnglish'+shuffleArraylot[12],
-          },
-        ],
-        },
-        inthirdEnglishcorrectq12: {
-        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"eats"</strong>',
-        answers: [
-          {
-            nextId: 'thirdEnglish'+shuffleArraylot[12],
-          },
-        ],
-        },
-  
-  
-          //13
-      ['thirdEnglish'+shuffleArraylot[13]]: {
-        botPrompt: 'What is the simple present tense form of the verb "to dance" for "She"?',
-        type: RTypes.TRANSFORMED_TEXT,
-        
-        input: selectField(['dances', ' danced', "dancing"]),
-          answers: [
-            {
-              answer: ' dances',
-              nextId: 'thirdEnglishcorrectq13',
-              sumToBags: [{ name: 'ac', points: 1 }],
-            },
-            {
-              answer: 'danced',
-              nextId: 'inthirdEnglishcorrectq13',
-              sumToBags: [{ name: 'ai', points: 1 }],
-            },
-            {
-              answer: "dancing",
-              nextId: 'inthirdEnglishcorrectq13',
-              sumToBags: [{ name: 'ai', points: 1 }],
-            },
-            
-          ],
-        },
-        
-        thirdEnglishcorrectq13: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
-        answers: [
-          {
-            nextId: 'thirdEnglish'+shuffleArraylot[14],
-          },
-        ],
-        },
-        inthirdEnglishcorrectq13: {
-        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"dances"</strong>',
-        answers: [
-          {
-            nextId: 'thirdEnglish'+shuffleArraylot[14],
-          },
-        ],
-        },
-      
-  
-            //14
-      ['thirdEnglish'+shuffleArraylot[14]]: {
-        botPrompt: 'Which sentence is NOT in the simple present tense?',
-        type: RTypes.TRANSFORMED_TEXT,
-        
-        input: selectField(['They sing songs beautifully.', ' We will bake cookies this weekend.', "I play with my toys in the"]),
-          answers: [
-            {
-              answer: 'They sing songs beautifully.',
-              nextId: 'inthirdEnglishcorrectq14',
-              sumToBags: [{ name: 'ai', points: 1 }],
-            },
-            {
-              answer: 'We will bake cookies this weekend.',
-              nextId: 'thirdEnglishcorrectq14',
-              sumToBags: [{ name: 'ac', points: 1 }],
-            },
-            {
-              answer: "I play with my toys in the",
-              nextId: 'inthirdEnglishcorrectq14',
-              sumToBags: [{ name: 'ai', points: 1 }],
-            },
-            
-          ],
-        },
-        
-        thirdEnglishcorrectq14: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
-        answers: [
-          {
-            nextId: 'thirdEnglish'+shuffleArraylot[15],
-          },
-        ],
-        },
-        inthirdEnglishcorrectq14: {
-        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"We will bake cookies this weekend."</strong>',
-        answers: [
-          {
-            nextId: 'thirdEnglish'+shuffleArraylot[15],
-          },
-        ],
-        },
-      
-  
-            //15
-      ['thirdEnglish'+shuffleArraylot[15]]: {
-        botPrompt: 'Identify the sentence in the simple present tense:',
-        type: RTypes.TRANSFORMED_TEXT,
-        
-        input: selectField(['We travelled in the summer.', ' He reads a book every evening.', " I am doing my homework right now."]),
-          answers: [
-            {
-              answer: ' We travelled in the summer.',
-              nextId: 'inthirdEnglishcorrectq15',
-              sumToBags: [{ name: 'ai', points: 1 }],
-            },
-            {
-              answer: 'He reads a book every evening.',
-              nextId: 'thirdEnglishcorrectq15',
-              sumToBags: [{ name: 'ac', points: 1 }],
-            },
-            {
-              answer: " I am doing my homework right now.",
-              nextId: 'inthirdEnglishcorrectq15',
-              sumToBags: [{ name: 'ai', points: 1 }],
-            },
-            
-          ],
-        },
-        
-        thirdEnglishcorrectq15: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
-        answers: [
-          {
-            nextId: 'thirdEnglish'+shuffleArraylot[16],
-          },
-        ],
-        },
-        inthirdEnglishcorrectq15: {
-        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"He reads a book every evening."</strong>',
-        answers: [
-          {
-            nextId: 'thirdEnglish'+shuffleArraylot[16],
-          },
-        ],
-        },
-      
-  
-  
-  
-            //16
-      ['thirdEnglish'+shuffleArraylot[16]]: {
-        botPrompt: 'What is the present continuous tense form of the verb "to write" for "She"?',
-        type: RTypes.TRANSFORMED_TEXT,
-        
-        input: selectField(['write', ' writes', "writing"]),
-          answers: [
-            {
-              answer: ' write',
-              nextId: 'inthirdEnglishcorrectq16',
-              sumToBags: [{ name: 'ai', points: 1 }],
-            },
-            {
-              answer: 'writes',
-              nextId: 'inthirdEnglishcorrectq16',
-              sumToBags: [{ name: 'ai', points: 1 }],
-            },
-            {
-              answer: "writing",
-              nextId: 'thirdEnglishcorrectq16',
-              sumToBags: [{ name: 'ac', points: 1 }],
-            },
-            
-          ],
-        },
-        
-        thirdEnglishcorrectq16: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
-        answers: [
-          {
-            nextId: 'thirdEnglish'+shuffleArraylot[17],
-          },
-        ],
-        },
-        inthirdEnglishcorrectq16: {
-        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"writing"</strong>',
-        answers: [
-          {
-            nextId: 'thirdEnglish'+shuffleArraylot[17],
-          },
-        ],
-        },
-      
-  
-           //17
-      ['thirdEnglish'+shuffleArraylot[17]]: {
-        botPrompt: 'Select the sentence in the present continuous tense:',
-        type: RTypes.TRANSFORMED_TEXT,
-        
-        input: selectField(['I went to the beach last summer', ' He writes stories every day.', "They are swimming in the pool"]),
-          answers: [
-            {
-              answer: ' I went to the beach last summer.',
-              nextId: 'inthirdEnglishcorrectq17',
-              sumToBags: [{ name: 'ai', points: 1 }],
-            },
-            {
-              answer: 'He writes stories every day.',
-              nextId: 'inthirdEnglishcorrectq17',
-              sumToBags: [{ name: 'ai', points: 1 }],
-            },
-            {
-              answer: "They are swimming in the pool",
-              nextId: 'thirdEnglishcorrectq17',
-              sumToBags: [{ name: 'ac', points: 1 }],
-            },
-            
-          ],
-        },
-        
-        thirdEnglishcorrectq17: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
-        answers: [
-          {
-            nextId: 'thirdEnglish'+shuffleArraylot[18],
-          },
-        ],
-        },
-        inthirdEnglishcorrectq17: {
-        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"They are swimming in the pool"</strong>',
-        answers: [
-          {
-            nextId: 'thirdEnglish'+shuffleArraylot[18],
-          },
-        ],
-        },
-  
-  
-           //18
-      ['thirdEnglish'+shuffleArraylot[18]]: {
-        botPrompt: 'Which sentence is NOT in the present continuous tense?',
-        type: RTypes.TRANSFORMED_TEXT,
-        
-        input: selectField(['They are building a sandcastle.', ' I will visit the zoo tomorrow', "He is drawing a picture."]),
-          answers: [
-            {
-              answer: ' They are building a sandcastle.',
-              nextId: 'inthirdEnglishcorrectq18',
-              sumToBags: [{ name: 'ai', points: 1 }],
-            },
-            {
-              answer: 'I will visit the zoo tomorrow',
-              nextId: 'thirdEnglishcorrectq18',
-              sumToBags: [{ name: 'ac', points: 1 }],
-            },
-            {
-              answer: "He is drawing a picture.",
-              nextId: 'inthirdEnglishcorrectq18',
-              sumToBags: [{ name: 'ai', points: 1 }],
-            },
-            
-          ],
-        },
-        
-        thirdEnglishcorrectq18: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
-        answers: [
-          {
-            nextId: 'thirdEnglish'+shuffleArraylot[19],
-          },
-        ],
-        },
-        inthirdEnglishcorrectq18: {
-        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"I will visit the zoo tomorrow"</strong>',
-        answers: [
-          {
-            nextId: 'thirdEnglish'+shuffleArraylot[19],
-          },
-        ],
-        },
-  
-  
-           //19
-      ['thirdEnglish'+shuffleArraylot[19]]: {
-        botPrompt: 'Which sentence is in the present continuous tense?',
-        type: RTypes.TRANSFORMED_TEXT,
-        
-        input: selectField(['She reads books every day.', ' They played soccer yesterday.', "He is eating dinner right now"]),
-          answers: [
-            {
-              answer: ' She reads books every day.',
-              nextId: 'inthirdEnglishcorrectq19',
-              sumToBags: [{ name: 'ai', points: 1 }],
-            },
-            {
-              answer: 'They played soccer yesterday.',
-              nextId: 'inthirdEnglishcorrectq19',
-              sumToBags: [{ name: 'ai', points: 1 }],
-            },
-            {
-              answer: "He is eating dinner right now",
-              nextId: 'thirdEnglishcorrectq19',
-              sumToBags: [{ name: 'ac', points: 1 }],
-            },
-            
-          ],
-        },
-        
-        thirdEnglishcorrectq19: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
-        answers: [
-          {
-            nextId: 'thirdEnglish'+shuffleArraylot[20],
-          },
-        ],
-        },
-        inthirdEnglishcorrectq19: {
-        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"He is eating dinner right now"</strong>',
-        answers: [
-          {
-            nextId: 'thirdEnglish'+shuffleArraylot[20],
-          },
-        ],
-        },
-  
-  
-           //20
-      ['thirdEnglish'+shuffleArraylottwo[20]]: {
-        botPrompt: 'Choose the sentence in the present continuous tense:',
-        type: RTypes.TRANSFORMED_TEXT,
-        
-        input: selectField([' We will go to the park later.', ' She dances in the ballet class.', "They are playing in the garden"]),
-          answers: [
-            {
-              answer: '  We will go to the park later.',
-              nextId: 'inthirdEnglishcorrectq20',
-              sumToBags: [{ name: 'ai', points: 1 }],
-            },
-            {
-              answer: 'She dances in the ballet class.',
-              nextId: 'inthirdEnglishcorrectq20',
-              sumToBags: [{ name: 'ai', points: 1 }],
-            },
-            {
-              answer: "They are playing in the garden",
-              nextId: 'thirdEnglishcorrectq20',
-              sumToBags: [{ name: 'ac', points: 1 }],
-            },
-            
-          ],
-        },
-        
-        thirdEnglishcorrectq20: {
-        botPrompt: 'Hurray! <strong>5</strong> is the correct answer  ! 😎',
-        answers: [
-          {
-            nextId: 'wishtocountinethirdEnglish',
-          },
-        ],
-        },
-        inthirdEnglishcorrectq16: {
-        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"They are playing in the garden"</strong>',
-        answers: [
-          {
-            nextId: 'wishtocountinethirdEnglish',
-          },
-        ],
-        },
-         
         
  
 //classiv
