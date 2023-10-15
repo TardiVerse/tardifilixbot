@@ -18907,8 +18907,8 @@ classviii: {
                     nextId: 'seventhEnglish'+randomNumberclass,
                   },
                   {
-                    answer: "Science",
-                    nextid: "seventhScience"+randomNumberclass,
+                    answer: 'Science',
+                    nextId: 'seventhScience'+randomNumberclass,
                   },
                   {
                     answer: "Biology",
@@ -21883,7 +21883,7 @@ classviii: {
   },
   
   eightMathscorrectq1: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>4 cm</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'eightMaths'+shuffleArraylottwo[2],
@@ -21930,7 +21930,7 @@ input: selectField(['16/81', '-16/81', "81/16","-81/16"]),
 },
 
 eightMathscorrectq2: {
-botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+botPrompt: 'Hurray! <strong>81/16</strong> is the correct answer  ! 😎',
 answers: [
   {
     nextId: 'eightMaths'+shuffleArraylottwo[3],
@@ -21977,7 +21977,7 @@ input: selectField(['18', '16', "14","22"]),
 },
 
 eightMathscorrectq3: {
-botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+botPrompt: 'Hurray! <strong>16</strong> is the correct answer  ! 😎',
 answers: [
   {
     nextId: 'eightMaths'+shuffleArraylottwo[4],
@@ -22024,7 +22024,7 @@ input: selectField(['16', '18', "-14","14"]),
 },
 
 eightMathscorrectq4: {
-botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+botPrompt: 'Hurray! <strong>14</strong> is the correct answer  ! 😎',
 answers: [
   {
     nextId: 'eightMaths'+shuffleArraylottwo[5],
@@ -22071,7 +22071,7 @@ input: selectField(['1', '2', "4","none of these"]),
 },
 
 eightMathscorrectq5: {
-botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+botPrompt: 'Hurray! <strong>none of these</strong> is the correct answer  ! 😎',
 answers: [
   {
     nextId: 'eightMaths'+shuffleArraylottwo[6],
@@ -22117,7 +22117,7 @@ input: selectField(['(mn+1)(m+n)', '(mn + m)(n + 1)', "n(m + 1)"," (n + 1)(m + 1
 },
 
 eightMathscorrectq6: {
-botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+botPrompt: 'Hurray! <strong> (n + 1)(m + 1)</strong> is the correct answer  ! 😎',
 answers: [
   {
     nextId: 'eightMaths'+shuffleArraylottwo[7],
@@ -22164,7 +22164,7 @@ input: selectField(['It becomes half', 'It doubles', "It quadruples","It remains
 },
 
 eightMathscorrectq7: {
-botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+botPrompt: 'Hurray! <strong>It quadruples</strong> is the correct answer  ! 😎',
 answers: [
   {
     nextId: 'eightMaths'+shuffleArraylottwo[8],
@@ -22211,7 +22211,7 @@ input: selectField(['8', '16', "18","20"]),
 },
 
 eightMathscorrectq8: {
-botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+botPrompt: 'Hurray! <strong>20</strong> is the correct answer  ! 😎',
 answers: [
   {
     nextId: 'eightMaths'+shuffleArraylottwo[9],
@@ -22258,7 +22258,7 @@ input: selectField(['5', '2', "3","4"]),
 },
 
 eightMathscorrectq9: {
-botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+botPrompt: 'Hurray! <strong>4</strong> is the correct answer  ! 😎',
 answers: [
   {
     nextId: 'eightMaths'+shuffleArraylottwo[10],
@@ -22305,7 +22305,7 @@ input: selectField(['rectangle', 'square', "rhombus","isosceles trapezium"]),
 },
 
 eightMathscorrectq10: {
-botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+botPrompt: 'Hurray! <strong>rhombus</strong> is the correct answer  ! 😎',
 answers: [
   {
     nextId: 'eightMaths'+shuffleArraylottwo[11],
@@ -22347,7 +22347,7 @@ input: selectField(['(8+x)', "(8-x)","(8+x)(8-x)"]),
 },
 
 eightMathscorrectq11: {
-botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+botPrompt: 'Hurray! <strong>(8+x)(8-x)</strong> is the correct answer  ! 😎',
 answers: [
   {
     nextId: 'eightMaths'+shuffleArraylottwo[12],
@@ -22394,7 +22394,7 @@ input: selectField(['2/5', '3/5', "4/5","1/5"]),
 },
 
 eightMathscorrectq12: {
-botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+botPrompt: 'Hurray! <strong>4/5</strong> is the correct answer  ! 😎',
 answers: [
   {
     nextId: 'eightMaths'+shuffleArraylottwo[13],
@@ -22441,7 +22441,7 @@ input: selectField(['0.65', '65', "6.5","none of these"]),
 },
 
 eightMathscorrectq13: {
-botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+botPrompt: 'Hurray! <strong>0.65</strong> is the correct answer  ! 😎',
 answers: [
   {
     nextId: 'eightMaths'+shuffleArraylottwo[14],
@@ -22488,7 +22488,7 @@ input: selectField(['123*10^-5', '123*10^5', "12.3*10^5","1.23*10^5"]),
 },
 
 eightMathscorrectq14: {
-botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+botPrompt: 'Hurray! <strong>123*10^-5</strong> is the correct answer  ! 😎',
 answers: [
   {
     nextId: 'eightMaths'+shuffleArraylottwo[15],
@@ -22535,7 +22535,7 @@ input: selectField(['its opposite sides are equal', 'its opposite angles are equ
 },
 
 eightMathscorrectq15: {
-botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+botPrompt: 'Hurray! <strong>all of these</strong> is the correct answer  ! 😎',
 answers: [
   {
     nextId: 'eightMaths'+shuffleArraylottwo[16],
@@ -22582,7 +22582,7 @@ input: selectField([' ab²', '4a²b', "-4ab²","-4a²b"]),
 },
 
 eightMathscorrectq16: {
-botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+botPrompt: 'Hurray! <strong>-4ab²</strong> is the correct answer  ! 😎',
 answers: [
   {
     nextId: 'eightMaths'+shuffleArraylottwo[17],
@@ -22629,7 +22629,7 @@ input: selectField(['28/15', '-28/15', "-4/5","-4/15"]),
 },
 
 eightMathscorrectq17: {
-botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+botPrompt: 'Hurray! <strong>-28/15</strong> is the correct answer  ! 😎',
 answers: [
   {
     nextId: 'eightMaths'+shuffleArraylottwo[18],
@@ -22676,7 +22676,7 @@ input: selectField(['180° ', '360° ', "540° ","720° "]),
 },
 
 eightMathscorrectq18: {
-botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+botPrompt: 'Hurray! <strong>720</strong> is the correct answer  ! 😎',
 answers: [
   {
     nextId: 'eightMaths'+shuffleArraylottwo[19],
@@ -22723,7 +22723,7 @@ input: selectField(['Equal', 'Supplementary', "Complementary","Congruent"]),
 },
 
 eightMathscorrectq19: {
-botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+botPrompt: 'Hurray! <strong>Equal</strong> is the correct answer  ! 😎',
 answers: [
   {
     nextId: 'eightMaths'+shuffleArraylottwo[20],
@@ -22769,7 +22769,7 @@ input: selectField(['81', '9', "729","6561"]),
 },
 
 eightMathscorrectq20: {
-botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+botPrompt: 'Hurray! <strong>9</strong> is the correct answer  ! 😎',
 answers: [
   {
     nextId: 'eightMaths'+shuffleArraylottwo[21],
@@ -22833,7 +22833,7 @@ wishtocontinueeightMaths: {
   },
   
   eightEnglishcorrectq1: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>She said that she would meet you at the park the day after.</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'eightEnglish'+shuffleArraylottwo[2],
@@ -22880,7 +22880,7 @@ input: selectField(['He asked if you are coming to the party tonight. ', 'He ask
 },
 
 eightEnglishcorrectq2: {
-botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+botPrompt: 'Hurray! <strong>He asked if you were coming to the party that night..</strong> is the correct answer  ! 😎',
 answers: [
   {
     nextId: 'eightEnglish'+shuffleArraylottwo[3],
@@ -22927,7 +22927,7 @@ input: selectField(['She asked to close the window politely. ', 'She said to ple
 },
 
 eightEnglishcorrectq3: {
-botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+botPrompt: 'Hurray! <strong>She requested to close the window.</strong> is the correct answer  ! 😎',
 answers: [
   {
     nextId: 'eightEnglish'+shuffleArraylottwo[4],
@@ -22974,7 +22974,7 @@ input: selectField(['She exclaimed that it was a beautiful painting.', 'She excl
 },
 
 eightEnglishcorrectq4: {
-botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+botPrompt: 'Hurray! <strong>She exclaimed that it was a beautiful painting.</strong> is the correct answer  ! 😎',
 answers: [
   {
     nextId: 'eightEnglish'+shuffleArraylottwo[5],
@@ -23021,7 +23021,7 @@ input: selectField(['Tom said in amazement if you can believe it, he won the rac
 },
 
 eightEnglishcorrectq5: {
-botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+botPrompt: 'Hurray! <strong>Tom asked in astonishment if you could believe it, he had won the race.</strong> is the correct answer  ! 😎',
 answers: [
   {
     nextId: 'eightEnglish'+shuffleArraylottwo[6],
@@ -23061,14 +23061,14 @@ input: selectField(['"Is your best friend assisting you in this venture?"', ' "I
     },
     {
       answer: "Is your best friend participating in the venture's inauguration?",
-      nextId: 'eightEnglishcorrectq6',
-      sumToBags: [{ name: 'ac', points: 1 }],
+      nextId: 'ineightEnglishcorrectq6',
+      sumToBags: [{ name: 'ai', points: 1 }],
     },
   ],
 },
 
 eightEnglishcorrectq6: {
-botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+botPrompt: 'Hurray! <strong>Is your best friend assisting you in this venture?</strong> is the correct answer  ! 😎',
 answers: [
   {
     nextId: 'eightEnglish'+shuffleArraylottwo[7],
@@ -23115,7 +23115,7 @@ input: selectField(['this', 'then', "that","those"]),
 },
 
 eightEnglishcorrectq7: {
-botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+botPrompt: 'Hurray! <strong>this</strong> is the correct answer  ! 😎',
 answers: [
   {
     nextId: 'eightEnglish'+shuffleArraylottwo[8],
@@ -23162,7 +23162,7 @@ input: selectField(['felt', 'feeling', "feels","have felt"]),
 },
 
 eightEnglishcorrectq8: {
-botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+botPrompt: 'Hurray! <strong>feeling</strong> is the correct answer  ! 😎',
 answers: [
   {
     nextId: 'eightEnglish'+shuffleArraylottwo[9],
@@ -23209,7 +23209,7 @@ input: selectField(['he was pleased to be back this month.', ' he had been away 
 },
 
 eightEnglishcorrectq9: {
-botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+botPrompt: 'Hurray! <strong> he had been away for quite some time that month.</strong> is the correct answer  ! 😎',
 answers: [
   {
     nextId: 'eightEnglish'+shuffleArraylottwo[10],
@@ -23256,7 +23256,7 @@ input: selectField(['had won', 'wins', "will win","winning"]),
 },
 
 eightEnglishcorrectq10: {
-botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+botPrompt: 'Hurray! <strong>wins</strong> is the correct answer  ! 😎',
 answers: [
   {
     nextId: 'eightEnglish'+shuffleArraylottwo[11],
@@ -23303,7 +23303,7 @@ input: selectField(['John is better  in playing the guitar.', 'John is good in p
 },
 
 eightEnglishcorrectq11: {
-botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+botPrompt: 'Hurray! <strong>John is good at playing the guitar.</strong> is the correct answer  ! 😎',
 answers: [
   {
     nextId: 'eightEnglish'+shuffleArraylottwo[12],
@@ -23350,7 +23350,7 @@ input: selectField(['The book is laying in the table waiting to be read.', 'The 
 },
 
 eightEnglishcorrectq12: {
-botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+botPrompt: 'Hurray! <strong>The book is lying on the table waiting to be read.</strong> is the correct answer  ! 😎',
 answers: [
   {
     nextId: 'eightEnglish'+shuffleArraylottwo[13],
@@ -23397,7 +23397,7 @@ input: selectField(['He enjoys playing soccer every Saturday afternoon.', 'He en
 },
 
 eightEnglishcorrectq13: {
-botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+botPrompt: 'Hurray! <strong>He enjoys playing soccer every Saturday afternoon.</strong> is the correct answer  ! 😎',
 answers: [
   {
     nextId: 'eightEnglish'+shuffleArraylottwo[14],
@@ -23444,7 +23444,7 @@ input: selectField([' A new car has been bought by them.', 'A new car was bought
 },
 
 eightEnglishcorrectq14: {
-botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+botPrompt: 'Hurray! <strong> A new car has been bought by them.</strong> is the correct answer  ! 😎',
 answers: [
   {
     nextId: 'eightEnglish'+shuffleArraylottwo[15],
@@ -23491,7 +23491,7 @@ input: selectField(['The team prepares the report.', 'The team had prepared the 
 },
 
 eightEnglishcorrectq15: {
-botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+botPrompt: 'Hurray! <strong>The team prepared the report.</strong> is the correct answer  ! 😎',
 answers: [
   {
     nextId: 'eightEnglish'+shuffleArraylottwo[16],
@@ -23538,7 +23538,7 @@ input: selectField(['will have traveled', 'traveled', "travels","will travel"]),
 },
 
 eightEnglishcorrectq16: {
-botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+botPrompt: 'Hurray! <strong>will have traveled</strong> is the correct answer  ! 😎',
 answers: [
   {
     nextId: 'eightEnglish'+shuffleArraylottwo[17],
@@ -23585,7 +23585,7 @@ input: selectField(['were eating', 'have eaten', "are eating","will eat"]),
 },
 
 eightEnglishcorrectq17: {
-botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+botPrompt: 'Hurray! <strong>were eating</strong> is the correct answer  ! 😎',
 answers: [
   {
     nextId: 'eightEnglish'+shuffleArraylottwo[18],
@@ -23632,7 +23632,7 @@ input: selectField(["don't come", 'not come', "won't come","not coming"]),
 },
 
 eightEnglishcorrectq18: {
-botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+botPrompt: "Hurray! <strong>don't come </strong> is the correct answer  ! 😎",
 answers: [
   {
     nextId: 'eightEnglish'+shuffleArraylottwo[19],
@@ -23679,7 +23679,7 @@ input: selectField(['had lived', 'lived', "have lived","were living"]),
 },
 
 eightEnglishcorrectq19: {
-botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+botPrompt: 'Hurray! <strong>had lived</strong> is the correct answer  ! 😎',
 answers: [
   {
     nextId: 'eightEnglish'+shuffleArraylottwo[20],
@@ -23726,7 +23726,7 @@ input: selectField(['would study', 'have studied', "had studied","will study"]),
 },
 
 eightEnglishcorrectq20: {
-botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+botPrompt: 'Hurray! <strong>had studied</strong> is the correct answer  ! 😎',
 answers: [
   {
     nextId: 'wishtocontinueeightEnglish',
@@ -23790,7 +23790,7 @@ wishtocontinueeightEnglish: {
   },
   
   eightSciencecorrectq1: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>Oxygen</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'eightScience'+shuffleArraylottwo[2],
@@ -23838,7 +23838,7 @@ wishtocontinueeightEnglish: {
   },
   
   eightSciencecorrectq2: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>Silver</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'eightScience'+shuffleArraylottwo[3],
@@ -23886,7 +23886,7 @@ wishtocontinueeightEnglish: {
   },
   
   eightSciencecorrectq3: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>Petruleum</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'eightScience'+shuffleArraylottwo[4],
@@ -23933,7 +23933,7 @@ wishtocontinueeightEnglish: {
   },
   
   eightSciencecorrectq4: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>Methane</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'eightScience'+shuffleArraylottwo[5],
@@ -23980,7 +23980,7 @@ wishtocontinueeightEnglish: {
   },
   
   eightSciencecorrectq5: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>Combustion</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'eightScience'+shuffleArraylottwo[6],
@@ -24027,7 +24027,7 @@ wishtocontinueeightEnglish: {
   },
   
   eightSciencecorrectq6: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>Carbon dioxide</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'eightScience'+shuffleArraylottwo[7],
@@ -24074,7 +24074,7 @@ wishtocontinueeightEnglish: {
   },
   
   eightSciencecorrectq7: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>Newton</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'eightScience'+shuffleArraylottwo[8],
@@ -24121,7 +24121,7 @@ wishtocontinueeightEnglish: {
   },
   
   eightSciencecorrectq8: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>Area</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'eightScience'+shuffleArraylottwo[9],
@@ -24168,7 +24168,7 @@ wishtocontinueeightEnglish: {
   },
   
   eightSciencecorrectq9: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>Motion</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'eightScience'+shuffleArraylottwo[10],
@@ -24215,7 +24215,7 @@ wishtocontinueeightEnglish: {
   },
   
   eightSciencecorrectq10: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>Oil</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'eightScience'+shuffleArraylottwo[11],
@@ -24262,7 +24262,7 @@ wishtocontinueeightEnglish: {
   },
   
   eightSciencecorrectq11: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>Steel</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'eightScience'+shuffleArraylottwo[12],
@@ -24309,7 +24309,7 @@ wishtocontinueeightEnglish: {
   },
   
   eightSciencecorrectq12: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>Eardrum</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'eightScience'+shuffleArraylottwo[13],
@@ -24356,7 +24356,7 @@ wishtocontinueeightEnglish: {
   },
   
   eightSciencecorrectq13: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>Sublimation</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'eightScience'+shuffleArraylottwo[14],
@@ -24403,7 +24403,7 @@ wishtocontinueeightEnglish: {
   },
   
   eightSciencecorrectq14: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>Electrolysis</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'eightScience'+shuffleArraylottwo[15],
@@ -24450,7 +24450,7 @@ wishtocontinueeightEnglish: {
   },
   
   eightSciencecorrectq15: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>Nitrogen</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'eightScience'+shuffleArraylottwo[16],
@@ -24474,7 +24474,7 @@ wishtocontinueeightEnglish: {
   input: selectField(['Both DNA and RNA', 'DNA only', "RNA only","Neither DNA nor RNA"]),
     answers: [
       {
-        answer: 'Both DNA and RNA ',
+        answer: 'Both DNA and RNA',
         nextId: 'eightSciencecorrectq16',
         sumToBags: [{ name: 'ac', points: 1 }],
       },
@@ -24497,7 +24497,7 @@ wishtocontinueeightEnglish: {
   },
   
   eightSciencecorrectq16: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>Both DNA and RNA</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'eightScience'+shuffleArraylottwo[17],
@@ -24544,7 +24544,7 @@ wishtocontinueeightEnglish: {
   },
   
   eightSciencecorrectq17: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>Species that are critically threatened with extinction</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'eightScience'+shuffleArraylottwo[18],
@@ -24591,7 +24591,7 @@ wishtocontinueeightEnglish: {
   },
   
   eightSciencecorrectq18: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>Free ribosomes are found in the cytoplasm, while bound ribosomes are attached to the endoplasmic reticulum.</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'eightScience'+shuffleArraylottwo[19],
@@ -24638,7 +24638,7 @@ wishtocontinueeightEnglish: {
   },
   
   eightSciencecorrectq19: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>Testosterone</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'eightScience'+shuffleArraylottwo[20],
@@ -24685,7 +24685,7 @@ wishtocontinueeightEnglish: {
   },
   
   eightSciencecorrectq20: {
-  botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>Excessive fertilizer runoff</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'wishtocontineueightScience',
