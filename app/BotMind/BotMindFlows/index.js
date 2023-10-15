@@ -2326,7 +2326,7 @@ classlkg: {
 classi: {
   botPrompt: 'You Have Selected CLASS I . Which subject you would like to start',
   type: RTypes.TRANSFORMED_TEXT,
-  input: selectField(['Maths', "English"]),
+  input: selectField(['Maths', 'English']),
   answers: [
     {
       answer: 'Maths',
@@ -2334,7 +2334,7 @@ classi: {
     },
     {
       answer: "English",
-      nextId: "firstEnglish"+randomNumberclass,
+      nextId: 'firstEnglish'+randomNumberclass,
     },
   
   ],
@@ -3745,7 +3745,7 @@ classi: {
         botPrompt: 'Hurray! <strong>twenty-eight</strong> is the correct answer  ! 😎',
         answers: [
           {
-            nextId: 'firstMaths'+shuffleArraylottwo[12],
+            nextId: 'firstMaths'+shuffleArraylottwo[13],
           },
         ],
         },
@@ -3753,7 +3753,7 @@ classi: {
         botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"twenty-eight"</strong>',
         answers: [
           {
-            nextId: 'firstMaths'+shuffleArraylottwo[12],
+            nextId: 'firstMaths'+shuffleArraylottwo[13],
           },
         ],
         },
@@ -4136,7 +4136,7 @@ classi: {
 classii: {
 botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
   type: RTypes.TRANSFORMED_TEXT,
-  input: selectField(['Maths', "English"]),
+  input: selectField(['Maths', 'English']),
   answers: [
     {
       answer: 'Maths',
@@ -4144,7 +4144,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
     },
     {
       answer: "English",
-      nextId: "secondEnglish"+randomNumberclass,
+      nextId: 'secondEnglish'+randomNumberclass,
     },
   
   ],
@@ -15170,7 +15170,7 @@ classviii: {
               classvii: {
                 botPrompt: 'You Have Selected CLASS VII . Which subject you would like to start',
                 type: RTypes.TRANSFORMED_TEXT,
-                input: selectField(['Maths', 'English', "Science", "Biology"]),
+                input: selectField(['Maths', 'English', "Science"]),
                 answers: [
                   {
                     answer: 'Maths',
@@ -15184,10 +15184,7 @@ classviii: {
                     answer: 'Science',
                     nextId: 'seventhScience'+randomNumberclass,
                   },
-                  {
-                    answer: "Biology",
-                    nextId: "seventhBiology"+randomNumberclass,
-                  },
+                  
                 
                 ],
               },
