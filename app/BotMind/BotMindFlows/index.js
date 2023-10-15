@@ -13103,12 +13103,12 @@ classiv: {
       botPrompt: 'Identify the interjection in the following sentence: __________! I won the game.',
       type: RTypes.TRANSFORMED_TEXT,
       
-      input: selectField(['Wow', 'Alas', "Oh no","Green"]),
+      input: selectField(['Wow', 'Alas', "Oh no", "Hurray"]),
         answers: [
           {
             answer: 'Wow',
-            nextId: 'fiveEnglishcorrectq7',
-            sumToBags: [{ name: 'ac', points: 1 }],
+            nextId: 'infiveEnglishcorrectq7',
+            sumToBags: [{ name: 'ai', points: 1 }],
           },
           {
             answer: 'Alas',
@@ -13121,15 +13121,15 @@ classiv: {
             sumToBags: [{ name: 'ai', points: 1 }],
           },
           {
-            answer: "Green",
-            nextId: 'infiveEnglishcorrectq7',
-            sumToBags: [{ name: 'ai', points: 1 }],
+            answer: "Hurray",
+            nextId: 'fiveEnglishcorrectq7',
+            sumToBags: [{ name: 'ac', points: 1 }],
           },
         ],
       },
       
       fiveEnglishcorrectq7: {
-      botPrompt: 'Hurray! <strong>Wow</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>Hurray</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'fiveEnglish'+shuffleArraylottwo[8],
@@ -13137,7 +13137,7 @@ classiv: {
       ],
       },
       infiveEnglishcorrectq7: {
-      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Wow"</strong>',
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Hurray"</strong>',
       answers: [
         {
           nextId: 'fiveEnglish'+shuffleArraylottwo[8],
@@ -13642,7 +13642,7 @@ classiv: {
       botPrompt: 'Choose the correct verb form to complete the sentence: The students ____________ their homework every day.',
       type: RTypes.TRANSFORMED_TEXT,
       
-      input: selectField(['finish', 'finished', "finishing","finishes"]),
+      input: selectField(['finish', 'finished', "finishing", "finishes"]),
         answers: [
           {
             answer: 'finish',
@@ -13687,7 +13687,7 @@ classiv: {
     
     
       //19
-    ['fiveEnglish'+shuffleArraylottwo[1]]: {
+    ['fiveEnglish'+shuffleArraylottwo[19]]: {
       botPrompt: 'Complete the sentence with an adverb: He solved the puzzle ___________.',
       type: RTypes.TRANSFORMED_TEXT,
       
@@ -15801,7 +15801,7 @@ classvi: {
     {
       answer: "Science",
       nextid: 'sixthScience'+randomNumberclass,
-    }
+    },
   
   ],
 },
@@ -16344,7 +16344,7 @@ classvi: {
       botPrompt: 'The largest negative integer is __________.',
       type: RTypes.TRANSFORMED_TEXT,
       
-      input: selectField(['-1', '0', "1",  "-2"]),
+      input: selectField(['-1', '0', "1", "-2"]),
         answers: [
           {
             answer: '-1',
@@ -16549,13 +16549,13 @@ classvi: {
         answers: [
           {
             answer: '2100',
-            nextId: 'sixthMathscorrectq16',
-            sumToBags: [{ name: 'ac', points: 1 }],
+            nextId: 'insixthMathscorrectq16',
+            sumToBags: [{ name: 'ai', points: 1 }],
           },
           {
             answer: '2368',
-            nextId: 'insixthMathscorrectq16',
-            sumToBags: [{ name: 'ai', points: 1 }],
+            nextId: 'sixthMathscorrectq16',
+            sumToBags: [{ name: 'ac', points: 1 }],
           },
           {
             answer: "2400", 
@@ -16572,7 +16572,7 @@ classvi: {
       },
       
       sixthMathscorrectq16: {
-      botPrompt: 'Hurray! <strong>2100</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>2368</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'sixthMaths'+shuffleArraylottwo[17],
@@ -16580,7 +16580,7 @@ classvi: {
       ],
       },
       insixthMathscorrectq16: {
-      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"2100"</strong>',
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"2368"</strong>',
       answers: [
         {
           nextId: 'sixthMaths'+shuffleArraylottwo[17],
@@ -16739,7 +16739,7 @@ classvi: {
       botPrompt: 'In a classroom, 60% of the students are girls. If there are 30 students in total, how many of them are boys?',
       type: RTypes.TRANSFORMED_TEXT,
       
-      input: selectField(['6', '9', "12",  "18"]),
+      input: selectField(['6', '9', "12", "18"]),
         answers: [
           {
             answer: '6',
@@ -16769,7 +16769,7 @@ classvi: {
       botPrompt: 'Hurray! <strong>12</strong> is the correct answer  ! 😎',
       answers: [
         {
-          nextId: 'wishtocontinuesixthMaths',
+          nextId: 'wishtocountinuesixthMaths',
         },
       ],
       },
@@ -16777,12 +16777,12 @@ classvi: {
       botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"12"</strong>',
       answers: [
         {
-          nextId: 'wishtocontinuesixthMaths',
+          nextId: 'wishtocountinuesixthMaths',
         },
   
       ],
       },
-      wishtocountinesixthMaths: {
+      wishtocountinuesixthMaths: {
         botPrompt: 'You have Completed Maths. Do you Wish to Continue ?',
         type: RTypes.TRANSFORMED_TEXT,
         input: selectField(['Yes', "No"]),
@@ -17684,10 +17684,10 @@ classvi: {
               botPrompt: ' MCQ: In which of the following sentences is the reported speech correctly transformed from direct to indirect speech?',
               type: RTypes.TRANSFORMED_TEXT,
               
-              input: selectField(['She said, "I will visit the museum yesterday."', 'He said, "I am going to the party tomorrow."', "They said,'We have finished our homework.'",  "He said,'I had already seen that movie.'"]),
+              input: selectField(['She said, "I will visit the museum tomorrow."', 'He said, "I am going to the party tomorrow."', "They said,'We have finished our homework.'",  "He said,'I had already seen that movie.'"]),
                 answers: [
                   {
-                    answer: 'She said, "I will visit the museum yesterday."',
+                    answer: 'She said, "I will visit the museum tomorrow."',
                     nextId: 'insixthEnglishcorrectq19',
                     sumToBags: [{ name: 'ai', points: 1 }],
                   },
@@ -17763,7 +17763,7 @@ classvi: {
               botPrompt: 'Hurray! <strong>had gotten</strong> is the correct answer  ! 😎',
               answers: [
                 {
-                  nextId: 'wishtocontinuesixthEnglish',
+                  nextId: 'wishtocountinuesixthEnglish',
                 },
               ],
               },
@@ -17771,12 +17771,12 @@ classvi: {
               botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"had gotten"</strong>',
               answers: [
                 {
-                  nextId: 'wishtocontinuesixthEnglish',
+                  nextId: 'wishtocountinuesixthEnglish',
                 },
           
               ],
               },
-              wishtocountinesixthEnglish: {
+              wishtocountinuesixthEnglish: {
                 botPrompt: 'You have Completed English. Do you Wish to Continue ?',
                 type: RTypes.TRANSFORMED_TEXT,
                 input: selectField(['Yes', "No"]),
@@ -18790,2966 +18790,6 @@ classvi: {
   
               
 
-              //classVII
-classvii: {
-  botPrompt: 'You Have Selected CLASS VII . Which subject you would like to start',
-  type: RTypes.TRANSFORMED_TEXT,
-  input: selectField(['Maths', "English", "Science","Biology"]),
-  answers: [
-    {
-      answer: 'Maths',
-      nextId: 'seventhMaths'+randomNumberclass,
-    },
-    {
-      answer: "English",
-      nextId: 'seventhEnglish'+randomNumberclass,
-    },
-    {
-      answer: "Science",
-      nextid: "seventhScience"+randomNumberclass,
-    },
-    {
-      answer: "Biology",
-      nextId: "sevenBiology"+randomNumberclass,
-    },
-  
-  ],
-},
-//seventhEnglish
-//1
-['sevenEnglish'+shuffleArraylottwo[1]]: {
-  botPrompt: '(Identify the non-finite verb in the sentence: "She enjoys singing."',
-  type: RTypes.TRANSFORMED_TEXT,
-  
-  input: selectField(['She', 'enjoys', "singing","enjoys singing"]),
-    answers: [
-      {
-        answer: 'She',
-        nextId: 'insevenEnglishcorrectq1',
-        sumToBags: [{ name: 'ai', points: 1 }],
-      },
-      {
-        answer: 'enjoys',
-        nextId: 'insevenEnglishcorrectq1',
-        sumToBags: [{ name: 'ai', points: 1 }],
-      },
-      {
-        answer: "singing",
-        nextId: 'sevenEnglishcorrectq1',
-        sumToBags: [{ name: 'ac', points: 1 }],
-      },
-      {
-        answer: "enjoys singing",
-        nextId: 'insevenEnglishcorrectq1',
-        sumToBags: [{ name: 'ai', points: 1 }],
-      },
-    ],
-  },
-  
-  sevenEnglishcorrectq1: {
-  botPrompt: 'Hurray! <strong>singing</strong> is the correct answer  ! 😎',
-  answers: [
-    {
-      nextId: 'sevenEnglish'+shuffleArraylottwo[2],
-    },
-  ],
-  },
-  insevenEnglishcorrectq1: {
-  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right/strong> answer is <strong>"singing"</strong>',
-  answers: [
-    {
-      nextId: 'sevenEnglish'+shuffleArraylottwo[2],
-    },
-  ],
-  },
-  
-  
-  //2
-  ['sevenEnglish'+shuffleArraylottwo[2]]: {
-    botPrompt: 'In the following sentence, which subject-verb agreement is correct? "Neither the teacher nor the students ___ happy with the result."',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['is', "are"]),
-      answers: [
-        {
-          answer: 'is',
-          nextId: 'sevenEnglishcorrectq2',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: 'are',
-          nextId: 'insevenEnglishcorrectq2',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenEnglishcorrectq2: {
-    botPrompt: 'Hurray! <strong>is</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenEnglish'+shuffleArraylottwo[3],
-      },
-    ],
-    },
-    insevenEnglishcorrectq2: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"is"</strong>',
-    answers: [
-      {
-        nextId: 'sevenEnglish'+shuffleArraylottwo[3],
-      },
-    ],
-    },
-  
-    //3
-  ['sevenEnglish'+shuffleArraylottwo[3]]: {
-    botPrompt: 'What type of conjunction is "although" in the sentence "Although it rained, we went for a walk"?',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['Coordinating conjunction', 'Subordinating conjunction', "Correlative conjunction","Conjunctive adverb"]),
-      answers: [
-        {
-          answer: 'Coordinating conjunction',
-          nextId: 'insevenEnglishcorrectq3',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: 'Subordinating conjunction',
-          nextId: 'sevenEnglishcorrectq3',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: "Correlative conjunction",
-          nextId: 'insevenEnglishcorrectq3',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "Conjunctive adverb",
-          nextId: 'insevenEnglishcorrectq3',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenEnglishcorrectq3: {
-    botPrompt: 'Hurray! <strong>Subordinating conjunction</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenEnglish'+shuffleArraylottwo[4],
-      },
-    ],
-    },
-    insevenEnglishcorrectq3: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Subordinating conjunction"</strong>',
-    answers: [
-      {
-        nextId: 'sevenEnglish'+shuffleArraylottwo[4],
-      },
-    ],
-    },
-  
-  
-  //4
-  ['sevenEnglish'+shuffleArraylottwo[4]]: {
-    botPrompt: 'What is the meaning of the phrasal verb "break down" in the sentence: "The car broke down"?',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['Disassemble', 'Fail to function', "Break into pieces","Break a promise"]),
-      answers: [
-        {
-          answer: 'Disassemble',
-          nextId: 'insevenEnglishcorrectq4',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: 'Fail to function',
-          nextId: 'sevenEnglishcorrectq4',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: "Break into pieces",
-          nextId: 'insevenEnglishcorrectq4',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "Break a promise",
-          nextId: 'insevenEnglishcorrectq4',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenEnglishcorrectq4: {
-    botPrompt: 'Hurray! <strong>Fail to function</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenEnglish'+shuffleArraylottwo[5],
-      },
-    ],
-    },
-    insevenEnglishcorrectq4: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Fail to function"</strong>',
-    answers: [
-      {
-        nextId: 'sevenEnglish'+shuffleArraylottwo[5],
-      },
-    ],
-    },
-  
-  
-  
-    //5
-  ['sevenEnglish'+shuffleArraylottwo[5]]: {
-    botPrompt: 'Identify the preposition in the sentence: "The cat jumped onto the table."',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['cat', 'jumped', "onto","table"]),
-      answers: [
-        {
-          answer: 'cat',
-          nextId: 'insevenEnglishcorrectq5',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: 'jumped',
-          nextId: 'insevenEnglishcorrectq5',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "onto",
-          nextId: 'sevenEnglishcorrectq5',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: "table",
-          nextId: 'insevenEnglishcorrectq5',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenEnglishcorrectq5: {
-    botPrompt: 'Hurray! <strong>onto</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenEnglish'+shuffleArraylottwo[6],
-      },
-    ],
-    },
-    insevenEnglishcorrectq5: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"onto"</strong>',
-    answers: [
-      {
-        nextId: 'sevenEnglish'+shuffleArraylottwo[6],
-      },
-    ],
-    },
-  
-  
-    //6
-  ['sevenEnglish'+shuffleArraylottwo[6]]: {
-    botPrompt: 'Identify the type of clause in the sentence: "Although it rained heavily, they still had a great time."',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['Independent clause', 'Dependent clause', "Adjective clause","Noun clause"]),
-      answers: [
-        {
-          answer: 'Independent clause',
-          nextId: 'insevenEnglishcorrectq6',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: 'Dependent clause',
-          nextId: 'sevenEnglishcorrectq6',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: "Adjective clause",
-          nextId: 'insevenEnglishcorrectq6',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "Noun clause",
-          nextId: 'insevenEnglishcorrectq6',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenEnglishcorrectq6: {
-    botPrompt: 'Hurray! <strong>Dependent clause</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenEnglish'+shuffleArraylottwo[7],
-      },
-    ],
-    },
-    insevenEnglishcorrectq6: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Dependent clause"</strong>',
-    answers: [
-      {
-        nextId: 'sevenEnglish'+shuffleArraylottwo[7],
-      },
-    ],
-    },
-  
-  
-  
-    //7
-  ['sevenEnglish'+shuffleArraylottwo[7]]: {
-    botPrompt: 'Read the line: "The police caught the thief red-handed." Change the sentence to passive voice.',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['The thief had been caught red-handed by the police.', 'The thief was caught red-handed by the police.', " The thief caught the police red-handed.","The thief has been catching the police red-handed."]),
-      answers: [
-        {
-          answer: 'The thief had been caught red-handed by the police.',
-          nextId: 'insevenEnglishcorrectq7',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: 'The thief was caught red-handed by the police.',
-          nextId: 'sevenEnglishcorrectq7',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: " The thief caught the police red-handed.",
-          nextId: 'insevenEnglishcorrectq7',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "The thief has been catching the police red-handed.",
-          nextId: 'insevenEnglishcorrectq7',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenEnglishcorrectq7: {
-    botPrompt: 'Hurray! <strong>The thief was caught red-handed by the police.</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenEnglish'+shuffleArraylottwo[8],
-      },
-    ],
-    },
-    insevenEnglishcorrectq7: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"The thief was caught red-handed by the police."</strong>',
-    answers: [
-      {
-        nextId: 'sevenEnglish'+shuffleArraylottwo[8],
-      },
-    ],
-    },
-  
-  
-    //8
-  ['sevenEnglish'+shuffleArraylottwo[8]]: {
-    botPrompt: "Change the following direct speech into indirect speech: She said, 'I will meet you tomorrow.'",
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['She said that she would meet me tomorrow.', 'She says that she will meet me tomorrow.', 'She says, "I will meet you tomorrow."','She said, "I will meet you tomorrow."']),
-      answers: [
-        {
-          answer: 'She said that she would meet me tomorrow.',
-          nextId: 'sevenEnglishcorrectq8',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: 'She says that she will meet me tomorrow.',
-          nextId: 'insevenEnglishcorrectq8',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: 'She says, "I will meet you tomorrow."',
-          nextId: 'insevenEnglishcorrectq8',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: 'She said, "I will meet you tomorrow."',
-          nextId: 'insevenEnglishcorrectq8',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenEnglishcorrectq8: {
-    botPrompt: 'Hurray! <strong>She said that she would meet me tomorrow.</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenEnglish'+shuffleArraylottwo[9],
-      },
-    ],
-    },
-    insevenEnglishcorrectq8: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"She said that she would meet me tomorrow."</strong>',
-    answers: [
-      {
-        nextId: 'sevenEnglish'+shuffleArraylottwo[9],
-      },
-    ],
-    },
-  
-  
-    //9
-  ['sevenEnglish'+shuffleArraylottwo[9]]: {
-    botPrompt: 'In the sentence "He had been studying for hours," which tense is used?',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['Present continuous', 'Past continuous', "Present perfect continuous","Past perfect continuous"]),
-      answers: [
-        {
-          answer: 'Present continuous',
-          nextId: 'insevenEnglishcorrectq9',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: 'Past continuous',
-          nextId: 'insevenEnglishcorrectq9',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "Present perfect continuous",
-          nextId: 'insevenEnglishcorrectq9',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "Past perfect continuous",
-          nextId: 'sevenEnglishcorrectq9',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenEnglishcorrectq9: {
-    botPrompt: 'Hurray! <strong>Past perfect continuous</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenEnglish'+shuffleArraylottwo[10],
-      },
-    ],
-    },
-    insevenEnglishcorrectq9: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Past perfect continuous"</strong>',
-    answers: [
-      {
-        nextId: 'sevenEnglish'+shuffleArraylottwo[10],
-      },
-    ],
-    },
-  
-  
-  
-    //10
-  ['sevenEnglish'+shuffleArraylottwo[10]]: {
-    botPrompt: 'Read the line: "She said she ________ to the museum yesterday."Which tense should fill in the blank to maintain proper sequence of tenses?',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['goes', 'gone', "went","going"]),
-      answers: [
-        {
-          answer: 'goes',
-          nextId: 'insevenEnglishcorrectq10',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: 'gone',
-          nextId: 'insevenEnglishcorrectq10',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "went",
-          nextId: 'sevenEnglishcorrectq10',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: "going",
-          nextId: 'insevenEnglishcorrectq10',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenEnglishcorrectq10: {
-    botPrompt: 'Hurray! <strong>went</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenEnglish'+shuffleArraylottwo[11],
-      },
-    ],
-    },
-    insevenEnglishcorrectq10: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"went"</strong>',
-    answers: [
-      {
-        nextId: 'sevenEnglish'+shuffleArraylottwo[11],
-      },
-    ],
-    },
-  
-  
-    //11
-  ['sevenEnglish'+shuffleArraylottwo[11]]: {
-    botPrompt: 'Read the line: "After the storm had passed, the children went outside to play."What type of clause is "After the storm had passed" in the passage?',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['Adverb clause', 'Noun clause', "Independent clause","Dependent clause"]),
-      answers: [
-        {
-          answer: 'Adverb clause',
-          nextId: 'sevenEnglishcorrectq11',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: 'Noun clause',
-          nextId: 'insevenEnglishcorrectq11',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "Independent clause",
-          nextId: 'insevenEnglishcorrectq11',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "Dependent clause",
-          nextId: 'insevenEnglishcorrectq11',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenEnglishcorrectq11: {
-    botPrompt: 'Hurray! <strong>Adverb clause</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenEnglish'+shuffleArraylottwo[12],
-      },
-    ],
-    },
-    insevenEnglishcorrectq11: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Adverb clause"</strong>',
-    answers: [
-      {
-        nextId: 'sevenEnglish'+shuffleArraylottwo[12],
-      },
-    ],
-    },
-  
-  
-    //12
-  ['sevenEnglish'+shuffleArraylottwo[12]]: {
-    botPrompt: 'Which sentence contains a participial phrase?',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['The cat, always curious, explored the garden.', 'Running quickly, she reached the finish line.', "They went to the store, which was crowded.","He loves to read books."]),
-      answers: [
-        {
-          answer: 'The cat, always curious, explored the garden.',
-          nextId: 'insevenEnglishcorrectq12',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: 'Running quickly, she reached the finish line.',
-          nextId: 'sevenEnglishcorrectq12',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: "They went to the store, which was crowded.",
-          nextId: 'insevenEnglishcorrectq12',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "He loves to read books.",
-          nextId: 'insevenEnglishcorrectq12',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenEnglishcorrectq12: {
-    botPrompt: 'Hurray! <strong>Running quickly, she reached the finish line.</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenEnglish'+shuffleArraylottwo[13],
-      },
-    ],
-    },
-    insevenEnglishcorrectq12: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Running quickly, she reached the finish line."</strong>',
-    answers: [
-      {
-        nextId: 'sevenEnglish'+shuffleArraylottwo[13],
-      },
-    ],
-    },
-  
-  
-    //13
-  ['sevenEnglish'+shuffleArraylottwo[13]]: {
-    botPrompt: 'Which sentence contains a finite verb?',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['He is cooking dinner.', 'Cooking dinner takes time.', "She danced all night.","The song was beautiful."]),
-      answers: [
-        {
-          answer: 'He is cooking dinner.',
-          nextId: 'sevenEnglishcorrectq13',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: 'Cooking dinner takes time.',
-          nextId: 'insevenEnglishcorrectq13',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "She danced all night.",
-          nextId: 'insevenEnglishcorrectq13',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "The song was beautiful.",
-          nextId: 'insevenEnglishcorrectq13',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenEnglishcorrectq13: {
-    botPrompt: 'Hurray! <strong>He is cooking dinner.</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenEnglish'+shuffleArraylottwo[14],
-      },
-    ],
-    },
-    insevenEnglishcorrectq13: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"He is cooking dinner."</strong>',
-    answers: [
-      {
-        nextId: 'sevenEnglish'+shuffleArraylottwo[14],
-      },
-    ],
-    },
-  
-  
-    //14
-  ['sevenEnglish'+shuffleArraylottwo[14]]: {
-    botPrompt: 'Identify the transitive verb in the sentence: "The children laughed."',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['children', 'laughed', "The","at"]),
-      answers: [
-        {
-          answer: 'children',
-          nextId: 'insevenEnglishcorrectq14',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: 'laughed',
-          nextId: 'sevenEnglishcorrectq14',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: "The",
-          nextId: 'insevenEnglishcorrectq14',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "at",
-          nextId: 'insevenEnglishcorrectq14',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenEnglishcorrectq14: {
-    botPrompt: 'Hurray! <strong>laughed</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenEnglish'+shuffleArraylottwo[15],
-      },
-    ],
-    },
-    insevenEnglishcorrectq14: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"laughed"</strong>',
-    answers: [
-      {
-        nextId: 'sevenEnglish'+shuffleArraylottwo[15],
-      },
-    ],
-    },
-  
-  
-    //15
-  ['sevenEnglish'+shuffleArraylottwo[15]]: {
-    botPrompt: 'Which phrasal verb means "to endure or tolerate"?',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['Break up', 'Put up with', "Take off","Look up"]),
-      answers: [
-        {
-          answer: 'Break up',
-          nextId: 'insevenEnglishcorrectq15',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: 'Put up with',
-          nextId: 'sevenEnglishcorrectq15',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: "Take off",
-          nextId: 'insevenEnglishcorrectq15',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "Look up",
-          nextId: 'insevenEnglishcorrectq15',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenEnglishcorrectq15: {
-    botPrompt: 'Hurray! <strong>Put up with</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenEnglish'+shuffleArraylottwo[16],
-      },
-    ],
-    },
-    insevenEnglishcorrectq15: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Put up with"</strong>',
-    answers: [
-      {
-        nextId: 'sevenEnglish'+shuffleArraylottwo[16],
-      },
-    ],
-    },
-  
-  
-    //16
-  ['sevenEnglish'+shuffleArraylottwo[16]]: {
-    botPrompt: 'Which conjunction is used to indicate a choice between two alternatives?',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['And', 'But', "Or","So"]),
-      answers: [
-        {
-          answer: 'And',
-          nextId: 'insevenEnglishcorrectq16',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: 'But',
-          nextId: 'insevenEnglishcorrectq16',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "Or",
-          nextId: 'sevenEnglishcorrectq16',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: "So",
-          nextId: 'insevenEnglishcorrectq16',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenEnglishcorrectq16: {
-    botPrompt: 'Hurray! <strong>Or</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenEnglish'+shuffleArraylottwo[17],
-      },
-    ],
-    },
-    insevenEnglishcorrectq16: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Or"</strong>',
-    answers: [
-      {
-        nextId: 'sevenEnglish'+shuffleArraylottwo[17],
-      },
-    ],
-    },
-  
-  
-    //17
-  ['sevenEnglish'+shuffleArraylottwo[17]]: {
-    botPrompt: 'Choose the sentence with a correct preposition:',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['She jumped into the river.', 'She jumped over the river.', "She jumped the river.","She jumped under the river."]),
-      answers: [
-        {
-          answer: 'She jumped into the river.',
-          nextId: 'sevenEnglishcorrectq17',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: 'She jumped over the river.',
-          nextId: 'insevenEnglishcorrectq17',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "She jumped the river.",
-          nextId: 'insevenEnglishcorrectq17',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "She jumped under the river.",
-          nextId: 'insevenEnglishcorrectq17',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenEnglishcorrectq17: {
-    botPrompt: 'Hurray! <strong>She jumped into the river.</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenEnglish'+shuffleArraylottwo[18],
-      },
-    ],
-    },
-    insevenEnglishcorrectq17: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"She jumped into the river."</strong>',
-    answers: [
-      {
-        nextId: 'sevenEnglish'+shuffleArraylottwo[18],
-      },
-    ],
-    },
-  
-  
-    //18
-  ['sevenEnglish'+shuffleArraylottwo[18]]: {
-    botPrompt: 'What type of conjunction is "although" in the sentence "Although it rained, we went for a walk"?',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['Coordinating conjunction', 'Subordinating conjunction', "Correlative conjunction","Conjunctive adverb"]),
-      answers: [
-        {
-          answer: 'Coordinating conjunction',
-          nextId: 'insevenEnglishcorrectq18',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: 'Subordinating conjunction',
-          nextId: 'sevenEnglishcorrectq18',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: "Correlative conjunction",
-          nextId: 'insevenEnglishcorrectq18',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "Conjunctive adverb",
-          nextId: 'insevenEnglishcorrectq18',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenEnglishcorrectq18: {
-    botPrompt: 'Hurray! <strong>Subordinating conjunction</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenEnglish'+shuffleArraylottwo[19],
-      },
-    ],
-    },
-    insevenEnglishcorrectq18: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Subordinating conjunction"</strong>',
-    answers: [
-      {
-        nextId: 'sevenEnglish'+shuffleArraylottwo[19],
-      },
-    ],
-    },
-  
-    //19
-  ['sevenEnglish'+shuffleArraylottwo[19]]: {
-    botPrompt: 'What is the non-finite verb in the phrase "to swim"?',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['to', 'swim', "the","to swim"]),
-      answers: [
-        {
-          answer: 'to',
-          nextId: 'insevenEnglishcorrectq19',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: 'swim',
-          nextId: 'sevenEnglishcorrectq19',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: "the",
-          nextId: 'insevenEnglishcorrectq19',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "to swim",
-          nextId: 'insevenEnglishcorrectq19',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenEnglishcorrectq19: {
-    botPrompt: 'Hurray! <strong>swim</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenEnglish'+shuffleArraylottwo[20],
-      },
-    ],
-    },
-    insevenEnglishcorrectq19: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"swim"</strong>',
-    answers: [
-      {
-        nextId: 'sevenEnglish'+shuffleArraylottwo[20],
-      },
-    ],
-    },
-  
-    //20
-  ['sevenEnglish'+shuffleArraylottwo[20]]: {
-    botPrompt: 'Which of the following verbs is ALWAYS intransitive?',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['Swim', 'Break', "Hit","Read"]),
-      answers: [
-        {
-          answer: 'Swim',
-          nextId: 'sevenEnglishcorrectq20',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: 'Break',
-          nextId: 'insevenEnglishcorrectq20',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "Hit",
-          nextId: 'insevenEnglishcorrectq20',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "Read",
-          nextId: 'insevenEnglishcorrectq20',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenEnglishcorrectq20: {
-    botPrompt: 'Hurray! <strong>Swim</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'wishtocountinesevenEnglish',
-      },
-    ],
-    },
-    insevenEnglishcorrectq20: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Swim"</strong>',
-    answers: [
-      {
-        nextId: 'wishtocountinesevenEnglish',
-      },
-    ],
-  },
-  wishtocountinesevenththEnglish: {
-    botPrompt: 'You have Completed Maths. Do you Wish to Continue ?',
-    type: RTypes.TRANSFORMED_TEXT,
-    input: selectField(['Yes', "No"]),
-    answers: [
-      {
-        answer: 'Yes',
-        nextId: 'chooseclass',
-      },
-      {
-        answer: "No",
-        nextId: 'endConv',
-      },
-    
-    ],
-  },
-  //seventhMaths
-  //1
-['sevenMaths'+shuffleArraylottwo[1]]: {
-  botPrompt: '(2-1 × 3-1)2 = ? ',
-  type: RTypes.TRANSFORMED_TEXT,
-  
-  input: selectField(['1/6', '16', "1/36","36"]),
-    answers: [
-      {
-        answer: '1/6',
-        nextId: 'insevenMathscorrectq1',
-        sumToBags: [{ name: 'ai', points: 1 }],
-      },
-      {
-        answer: '16',
-        nextId: 'insevenMathscorrectq1',
-        sumToBags: [{ name: 'ai', points: 1 }],
-      },
-      {
-        answer: "1/36",
-        nextId: 'sevenMathscorrectq1',
-        sumToBags: [{ name: 'ac', points: 1 }],
-      },
-      {
-        answer: "36",
-        nextId: 'insevenMathscorrectq1',
-        sumToBags: [{ name: 'ai', points: 1 }],
-      },
-    ],
-  },
-  
-  sevenMathscorrectq1: {
-  botPrompt: 'Hurray! <strong>1/36</strong> is the correct answer  ! 😎',
-  answers: [
-    {
-      nextId: 'sevenMaths'+shuffleArraylottwo[2],
-    },
-  ],
-  },
-  insevenMathscorrectq1: {
-  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right/strong> answer is <strong>"1/36"</strong>',
-  answers: [
-    {
-      nextId: 'sevenMaths'+shuffleArraylottwo[2],
-    },
-  ],
-  },
-  
-  
-  //2
-  ['sevenMaths'+shuffleArraylottwo[2]]: {
-    botPrompt: 'If 9 × 3n = 36, then n = ___________.',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['2', '4', "1","0"]),
-      answers: [
-        {
-          answer: '2',
-          nextId: 'insevenMathscorrectq2',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: '4',
-          nextId: 'sevenMathscorrectq2',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: "1",
-          nextId: 'insevenMathscorrectq2',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "0",
-          nextId: 'insevenMathscorrectq2',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenMathscorrectq2: {
-    botPrompt: 'Hurray! <strong>4</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenMaths'+shuffleArraylottwo[3],
-      },
-    ],
-    },
-    insevenMathscorrectq2: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
-    answers: [
-      {
-        nextId: 'sevenMaths'+shuffleArraylottwo[3],
-      },
-    ],
-    },
-  
-    //3
-  ['sevenMaths'+shuffleArraylottwo[3]]: {
-    botPrompt: 'The sum of two consecutive odd numbers is 36. The smaller number is',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['15', '17', "19","13"]),
-      answers: [
-        {
-          answer: '15',
-          nextId: 'sevenMathscorrectq3',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: '17',
-          nextId: 'insevenMathscorrectq3',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "19",
-          nextId: 'insevenMathscorrectq3',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "13",
-          nextId: 'insevenMathscorrectq3',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenMathscorrectq3: {
-    botPrompt: 'Hurray! <strong>15</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenMaths'+shuffleArraylottwo[4],
-      },
-    ],
-    },
-    insevenMathscorrectq3: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"15"</strong>',
-    answers: [
-      {
-        nextId: 'sevenMaths'+shuffleArraylottwo[4],
-      },
-    ],
-    },
-  
-  
-  //4
-  ['sevenMaths'+shuffleArraylottwo[4]]: {
-    botPrompt: 'In ΔABC, if  ∠A = 72° and ∠B = 63°, then ∠C = ?',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['45°', '32°', "49°","50°"]),
-      answers: [
-        {
-          answer: '45°',
-          nextId: 'sevenMathscorrectq4',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: '32°',
-          nextId: 'insevenMathscorrectq4',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "49°",
-          nextId: 'insevenMathscorrectq4',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "50°",
-          nextId: 'insevenMathscorrectq4',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenMathscorrectq4: {
-    botPrompt: 'Hurray! <strong>45°</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenMaths'+shuffleArraylottwo[5],
-      },
-    ],
-    },
-    insevenMathscorrectq4: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"45°"</strong>',
-    answers: [
-      {
-        nextId: 'sevenMaths'+shuffleArraylottwo[5],
-      },
-    ],
-    },
-  
-  
-  
-    //5
-  ['sevenMaths'+shuffleArraylottwo[5]]: {
-    botPrompt: 'A cylinder has ________________ vertex.',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['1', '2', "3","none of these"]),
-      answers: [
-        {
-          answer: '1',
-          nextId: 'insevenMathscorrectq5',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: '2',
-          nextId: 'insevenMathscorrectq5',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "3",
-          nextId: 'insevenMathscorrectq5',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "none of these",
-          nextId: 'sevenMathscorrectq5',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenMathscorrectq5: {
-    botPrompt: 'Hurray! <strong>none of these</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenMaths'+shuffleArraylottwo[6],
-      },
-    ],
-    },
-    insevenMathscorrectq5: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"none of these"</strong>',
-    answers: [
-      {
-        nextId: 'sevenMaths'+shuffleArraylottwo[6],
-      },
-    ],
-    },
-  
-  
-    //6
-  ['sevenMaths'+shuffleArraylottwo[6]]: {
-    botPrompt: 'How many lines of symmetry does an equilateral triangle have?',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['4', '3', "2","1"]),
-      answers: [
-        {
-          answer: '4',
-          nextId: 'insevenMathscorrectq6',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: '3',
-          nextId: 'sevenMathscorrectq6',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: "2",
-          nextId: 'insevenMathscorrectq6',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "1",
-          nextId: 'insevenMathscorrectq6',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenMathscorrectq6: {
-    botPrompt: 'Hurray! <strong>3</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenMaths'+shuffleArraylottwo[7],
-      },
-    ],
-    },
-    insevenMathscorrectq6: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"3"</strong>',
-    answers: [
-      {
-        nextId: 'sevenMaths'+shuffleArraylottwo[7],
-      },
-    ],
-    },
-  
-  
-  
-    //7
-  ['sevenMaths'+shuffleArraylottwo[7]]: {
-    botPrompt: 'If p/q = r/s, then ps = _____________.',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['qr', 'pq', " rs","all of these"]),
-      answers: [
-        {
-          answer: 'qr',
-          nextId: 'sevenMathscorrectq7',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: 'pq',
-          nextId: 'insevenMathscorrectq7',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: " rs",
-          nextId: 'insevenMathscorrectq7',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "all of these",
-          nextId: 'insevenMathscorrectq7',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenMathscorrectq7: {
-    botPrompt: 'Hurray! <strong>qr</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenMaths'+shuffleArraylottwo[8],
-      },
-    ],
-    },
-    insevenMathscorrectq7: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"qr"</strong>',
-    answers: [
-      {
-        nextId: 'sevenMaths'+shuffleArraylottwo[8],
-      },
-    ],
-    },
-  
-  
-    //8
-  ['sevenMaths'+shuffleArraylottwo[8]]: {
-    botPrompt: '(3⁰ × 4⁰ × 5⁰) = ?',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['1', '12⁰', "12","both (a) and (b)"]),
-      answers: [
-        {
-          answer: '1',
-          nextId: 'insevenMathscorrectq8',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: '12⁰',
-          nextId: 'insevenMathscorrectq8',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "12",
-          nextId: 'insevenMathscorrectq8',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "both (a) and (b)",
-          nextId: 'sevenMathscorrectq8',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenMathscorrectq8: {
-    botPrompt: 'Hurray! <strong>both (a) and (b)</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenMaths'+shuffleArraylottwo[9],
-      },
-    ],
-    },
-    insevenMathscorrectq8: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"both (a) and (b)"</strong>',
-    answers: [
-      {
-        nextId: 'sevenMaths'+shuffleArraylottwo[9],
-      },
-    ],
-    },
-  
-  
-    //9
-  ['sevenMaths'+shuffleArraylottwo[9]]: {
-    botPrompt: '7xy - (-8xy) = ?',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['15xy', '-15xy', "xy","23xy"]),
-      answers: [
-        {
-          answer: '15xy',
-          nextId: 'sevenMathscorrectq9',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: '-15xy',
-          nextId: 'insevenMathscorrectq9',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "xy",
-          nextId: 'insevenMathscorrectq9',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "23xy",
-          nextId: 'insevenMathscorrectq9',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenMathscorrectq9: {
-    botPrompt: 'Hurray! <strong>15xy</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenMaths'+shuffleArraylottwo[10],
-      },
-    ],
-    },
-    insevenMathscorrectq9: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"15xy"</strong>',
-    answers: [
-      {
-        nextId: 'sevenMaths'+shuffleArraylottwo[10],
-      },
-    ],
-    },
-  
-  
-  
-    //10
-  ['sevenMaths'+shuffleArraylottwo[10]]: {
-    botPrompt: 'If 3a - 5 = 1, then a = ?',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['6', '-6', "2","-2"]),
-      answers: [
-        {
-          answer: '6',
-          nextId: 'insevenMathscorrectq10',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: '-6',
-          nextId: 'insevenMathscorrectq10',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "2",
-          nextId: 'sevenMathscorrectq10',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: "-2",
-          nextId: 'insevenMathscorrectq10',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenMathscorrectq10: {
-    botPrompt: 'Hurray! <strong>2</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenMaths'+shuffleArraylottwo[11],
-      },
-    ],
-    },
-    insevenMathscorrectq10: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"2"</strong>',
-    answers: [
-      {
-        nextId: 'sevenMaths'+shuffleArraylottwo[11],
-      },
-    ],
-    },
-  
-  
-    //11
-  ['sevenMaths'+shuffleArraylottwo[11]]: {
-    botPrompt: 'The sum of all angles around a point is',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['90°', '180°', "270°","360°"]),
-      answers: [
-        {
-          answer: '90°',
-          nextId: 'insevenMathscorrectq11',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: '180°',
-          nextId: 'insevenMathscorrectq11',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "270°",
-          nextId: 'insevenMathscorrectq11',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "360°",
-          nextId: 'sevenMathscorrectq11',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenMathscorrectq11: {
-    botPrompt: 'Hurray! <strong>360°</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenMaths'+shuffleArraylottwo[12],
-      },
-    ],
-    },
-    insevenMathscorrectq11: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"360°"</strong>',
-    answers: [
-      {
-        nextId: 'sevenMaths'+shuffleArraylottwo[12],
-      },
-    ],
-    },
-  
-  
-    //12
-  ['sevenMaths'+shuffleArraylottwo[12]]: {
-    botPrompt: 'The sum of two consecutive interior angles is',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['90°', '120°', "180°","360°"]),
-      answers: [
-        {
-          answer: '90°',
-          nextId: 'insevenMathscorrectq12',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: '120°',
-          nextId: 'insevenMathscorrectq12',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "180°",
-          nextId: 'sevenMathscorrectq12',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: "360°",
-          nextId: 'insevenMathscorrectq12',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenMathscorrectq12: {
-    botPrompt: 'Hurray! <strong>180°</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenMaths'+shuffleArraylottwo[13],
-      },
-    ],
-    },
-    insevenMathscorrectq12: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"180°"</strong>',
-    answers: [
-      {
-        nextId: 'sevenMaths'+shuffleArraylottwo[13],
-      },
-    ],
-    },
-  
-  
-    //13
-  ['sevenMaths'+shuffleArraylottwo[13]]: {
-    botPrompt: 'The letter O of the English alphabet has ___________ lines of symmetry.',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['0', '1', "2","none of these"]),
-      answers: [
-        {
-          answer: '0',
-          nextId: 'insevenMathscorrectq13',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: '1',
-          nextId: 'insevenMathscorrectq13',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "2",
-          nextId: 'sevenMathscorrectq13',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: "none of these",
-          nextId: 'insevenMathscorrectq13',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenMathscorrectq13: {
-    botPrompt: 'Hurray! <strong>2</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenMaths'+shuffleArraylottwo[14],
-      },
-    ],
-    },
-    insevenMathscorrectq13: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"2"</strong>',
-    answers: [
-      {
-        nextId: 'sevenMaths'+shuffleArraylottwo[14],
-      },
-    ],
-    },
-  
-  
-    //14
-  ['sevenMaths'+shuffleArraylottwo[14]]: {
-    botPrompt: 'The number of vertices of a cube is ______________.',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['0', '8', "2","4"]),
-      answers: [
-        {
-          answer: '0',
-          nextId: 'insevenMathscorrectq14',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: '8',
-          nextId: 'sevenMathscorrectq14',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: "2",
-          nextId: 'insevenMathscorrectq14',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "4",
-          nextId: 'insevenMathscorrectq14',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenMathscorrectq14: {
-    botPrompt: 'Hurray! <strong>8</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenMaths'+shuffleArraylottwo[15],
-      },
-    ],
-    },
-    insevenMathscorrectq14: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"8"</strong>',
-    answers: [
-      {
-        nextId: 'sevenMaths'+shuffleArraylottwo[15],
-      },
-    ],
-    },
-  
-  
-    //15
-  ['sevenMaths'+shuffleArraylottwo[15]]: {
-    botPrompt: 'If a = 3 and b = 4, what is the value of a² + b²?',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['7', '12', "25","9"]),
-      answers: [
-        {
-          answer: '7',
-          nextId: 'insevenMathscorrectq15',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: '12',
-          nextId: 'insevenMathscorrectq15',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "25",
-          nextId: 'sevenMathscorrectq15',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: "9",
-          nextId: 'insevenMathscorrectq15',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenMathscorrectq15: {
-    botPrompt: 'Hurray! <strong>25</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenMaths'+shuffleArraylottwo[16],
-      },
-    ],
-    },
-    insevenMathscorrectq15: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"25"</strong>',
-    answers: [
-      {
-        nextId: 'sevenMaths'+shuffleArraylottwo[16],
-      },
-    ],
-    },
-  
-  
-    //16
-  ['sevenMaths'+shuffleArraylottwo[16]]: {
-    botPrompt: 'The product of additive inverse of 1 and its multiplicative inverse is',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['1', '0', "-1","none of these"]),
-      answers: [
-        {
-          answer: '1',
-          nextId: 'insevenMathscorrectq16',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: '0',
-          nextId: 'insevenMathscorrectq16',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "-1",
-          nextId: 'sevenMathscorrectq16',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: "none of these",
-          nextId: 'insevenMathscorrectq16',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenMathscorrectq16: {
-    botPrompt: 'Hurray! <strong>-1</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenMaths'+shuffleArraylottwo[17],
-      },
-    ],
-    },
-    insevenMathscorrectq16: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"-1"</strong>',
-    answers: [
-      {
-        nextId: 'sevenMaths'+shuffleArraylottwo[17],
-      },
-    ],
-    },
-  
-  
-    //17
-  ['sevenMaths'+shuffleArraylottwo[17]]: {
-    botPrompt: 'Which of the following is a pair of complementary angles?',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['45° and 45°', '30° and 30°', "90° and 90°","120° and 60°"]),
-      answers: [
-        {
-          answer: '45° and 45°',
-          nextId: 'sevenMathscorrectq17',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: '30° and 30°',
-          nextId: 'insevenMathscorrectq17',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "90° and 90°",
-          nextId: 'insevenMathscorrectq17',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "120° and 60°",
-          nextId: 'insevenMathscorrectq17',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenMathscorrectq17: {
-    botPrompt: 'Hurray! <strong>45° and 45°</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenMaths'+shuffleArraylottwo[18],
-      },
-    ],
-    },
-    insevenMathscorrectq17: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"45° and 45°"</strong>',
-    answers: [
-      {
-        nextId: 'sevenMaths'+shuffleArraylottwo[18],
-      },
-    ],
-    },
-  
-  
-    //18
-  ['sevenMaths'+shuffleArraylottwo[18]]: {
-    botPrompt: 'If the radius of a circle is 6 cm, what is its circumference (rounded to the nearest centimeter)?',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['18 cm', '36 cm', "37 cm","38 cm"]),
-      answers: [
-        {
-          answer: '18 cm',
-          nextId: 'insevenMathscorrectq18',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: '36 cm',
-          nextId: 'insevenMathscorrectq18',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "37 cm",
-          nextId: 'insevenMathscorrectq18',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "38 cm",
-          nextId: 'sevenMathscorrectq18',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenMathscorrectq18: {
-    botPrompt: 'Hurray! <strong>38 cm</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenMaths'+shuffleArraylottwo[19],
-      },
-    ],
-    },
-    insevenMathscorrectq18: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"38 cm"</strong>',
-    answers: [
-      {
-        nextId: 'sevenMaths'+shuffleArraylottwo[19],
-      },
-    ],
-    },
-  
-    //19
-  ['sevenMaths'+shuffleArraylottwo[19]]: {
-    botPrompt: 'A triangle with all sides of different lengths is called:',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['Scalene', 'Isosceles', "Equilateral","Right-angled"]),
-      answers: [
-        {
-          answer: 'Scalene',
-          nextId: 'sevenMathscorrectq19',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: 'Isosceles',
-          nextId: 'insevenMathscorrectq19',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "Equilateral",
-          nextId: 'insevenMathscorrectq19',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "Right-angled",
-          nextId: 'insevenMathscorrectq19',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenMathscorrectq19: {
-    botPrompt: 'Hurray! <strong>Scalene</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenMaths'+shuffleArraylottwo[20],
-      },
-    ],
-    },
-    insevenMathscorrectq19: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Scalene"</strong>',
-    answers: [
-      {
-        nextId: 'sevenMaths'+shuffleArraylottwo[20],
-      },
-    ],
-    },
-  
-    //20
-  ['sevenMaths'+shuffleArraylottwo[20]]: {
-    botPrompt: 'What is the value of 4³?',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['12', '64', "16","256"]),
-      answers: [
-        {
-          answer: '12',
-          nextId: 'insevenMathscorrectq20',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: '64',
-          nextId: 'sevenMathscorrectq20',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: "16",
-          nextId: 'insevenMathscorrectq20',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "256",
-          nextId: 'insevenMathscorrectq20',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenMathscorrectq20: {
-    botPrompt: 'Hurray! <strong>64</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'wishtocountinesevenMaths',
-      },
-    ],
-    },
-    insevenMathscorrectq20: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"64"</strong>',
-    answers: [
-      {
-        nextId: 'wishtocountinesevenMaths',
-      },
-    ],
-    },
-    wishtocountinesevenththMaths: {
-      botPrompt: 'You have Completed Maths. Do you Wish to Continue ?',
-      type: RTypes.TRANSFORMED_TEXT,
-      input: selectField(['Yes', "No"]),
-      answers: [
-        {
-          answer: 'Yes',
-          nextId: 'chooseclass',
-        },
-        {
-          answer: "No",
-          nextId: 'endConv',
-        },
-      
-      ],
-    },
-    //science
-    //1
-['sevenScience'+shuffleArraylottwo[1]]: {
-  botPrompt: 'Which mineral acid is a key component of acid rain?',
-  type: RTypes.TRANSFORMED_TEXT,
-  
-  input: selectField(['Sulphuric acid', 'Hydrochloric acid', "Nitric acid","Carbonic acid"]),
-    answers: [
-      {
-        answer: 'Sulphuric acid',
-        nextId: 'insevenSciencecorrectq1',
-        sumToBags: [{ name: 'ai', points: 1 }],
-      },
-      {
-        answer: 'Hydrochloric acid',
-        nextId: 'insevenSciencecorrectq1',
-        sumToBags: [{ name: 'ai', points: 1 }],
-      },
-      {
-        answer: "Nitric acid",
-        nextId: 'sevenSciencecorrectq1',
-        sumToBags: [{ name: 'ac', points: 1 }],
-      },
-      {
-        answer: "Carbonic acid",
-        nextId: 'insevenSciencecorrectq1',
-        sumToBags: [{ name: 'ai', points: 1 }],
-      },
-    ],
-  },
-  
-  sevenSciencecorrectq1: {
-  botPrompt: 'Hurray! <strong>Nitric acid</strong> is the correct answer  ! 😎',
-  answers: [
-    {
-      nextId: 'sevenScience'+shuffleArraylottwo[2],
-    },
-  ],
-  },
-  insevenSciencecorrectq1: {
-  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right/strong> answer is <strong>"Nitric acid"</strong>',
-  answers: [
-    {
-      nextId: 'sevenScience'+shuffleArraylottwo[2],
-    },
-  ],
-  },
-  
-  
-  //2
-  ['sevenScience'+shuffleArraylottwo[2]]: {
-    botPrompt: 'Which of the following is a strong base?',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['Ammonia (NH3)', 'Sodium hydroxide (NaOH)', "Calcium hydroxide (Ca(OH)2)","Acetic acid (CH3COOH)"]),
-      answers: [
-        {
-          answer: 'Ammonia (NH3)',
-          nextId: 'insevenSciencecorrectq2',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: 'Sodium hydroxide (NaOH)',
-          nextId: 'sevenSciencecorrectq2',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: "Calcium hydroxide (Ca(OH)2)",
-          nextId: 'insevenSciencecorrectq2',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "Acetic acid (CH3COOH)",
-          nextId: 'insevenSciencecorrectq2',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenSciencecorrectq2: {
-    botPrompt: 'Hurray! <strong>Sodium hydroxide (NaOH)</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenScience'+shuffleArraylottwo[3],
-      },
-    ],
-    },
-    insevenSciencecorrectq2: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Sodium hydroxide (NaOH)"</strong>',
-    answers: [
-      {
-        nextId: 'sevenScience'+shuffleArraylottwo[3],
-      },
-    ],
-    },
-  
-    //3
-  ['sevenScience'+shuffleArraylottwo[3]]: {
-    botPrompt: 'In an acidic solution, what color does phenolphthalein indicator display?',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['Colorless', 'Pink', "Yellow","Blue"]),
-      answers: [
-        {
-          answer: 'Colorless',
-          nextId: 'sevenSciencecorrectq3',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: 'Pink',
-          nextId: 'insevenSciencecorrectq3',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "Yellow",
-          nextId: 'insevenSciencecorrectq3',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "Blue",
-          nextId: 'insevenSciencecorrectq3',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenSciencecorrectq3: {
-    botPrompt: 'Hurray! <strong>Colorless</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenScience'+shuffleArraylottwo[4],
-      },
-    ],
-    },
-    insevenSciencecorrectq3: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Colorless"</strong>',
-    answers: [
-      {
-        nextId: 'sevenScience'+shuffleArraylottwo[4],
-      },
-    ],
-    },
-  
-  
-  //4
-  ['sevenScience'+shuffleArraylottwo[4]]: {
-    botPrompt: 'When an acid reacts with a base in a neutralization reaction, the resulting pH is:',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['7', 'Less than 7', "Greater than 7","Variable depending on the acid and base used"]),
-      answers: [
-        {
-          answer: '7',
-          nextId: 'sevenSciencecorrectq4',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: 'Less than 7',
-          nextId: 'insevenSciencecorrectq4',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "Greater than 7",
-          nextId: 'insevenSciencecorrectq4',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "Variable depending on the acid and base used",
-          nextId: 'insevenSciencecorrectq4',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenSciencecorrectq4: {
-    botPrompt: 'Hurray! <strong>7</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenScience'+shuffleArraylottwo[5],
-      },
-    ],
-    },
-    insevenSciencecorrectq4: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"7"</strong>',
-    answers: [
-      {
-        nextId: 'sevenScience'+shuffleArraylottwo[5],
-      },
-    ],
-    },
-  
-  
-  
-    //5
-  ['sevenScience'+shuffleArraylottwo[5]]: {
-    botPrompt: 'What type of ions do salts typically consist of?',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['Cations and anions', 'Anions and isotopes', "Cations and isotopes","Cations and protons"]),
-      answers: [
-        {
-          answer: 'Cations and anions',
-          nextId: 'sevenSciencecorrectq5',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: 'Anions and isotopes',
-          nextId: 'insevenSciencecorrectq5',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "Cations and isotopes",
-          nextId: 'insevenSciencecorrectq5',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "Cations and protons",
-          nextId: 'insevenSciencecorrectq5',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenSciencecorrectq5: {
-    botPrompt: 'Hurray! <strong>Cations and anions</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenScience'+shuffleArraylottwo[6],
-      },
-    ],
-    },
-    insevenSciencecorrectq5: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Cations and anions"</strong>',
-    answers: [
-      {
-        nextId: 'sevenScience'+shuffleArraylottwo[6],
-      },
-    ],
-    },
-  
-  
-    //6
-  ['sevenScience'+shuffleArraylottwo[6]]: {
-    botPrompt: 'Which of the following is an example of a physical change?',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['Rusting of iron', 'Burning of wood', "Melting of ice","Digestion of food"]),
-      answers: [
-        {
-          answer: 'Rusting of iron',
-          nextId: 'insevenSciencecorrectq6',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: 'Burning of wood',
-          nextId: 'insevenSciencecorrectq6',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "Melting of ice",
-          nextId: 'sevenSciencecorrectq6',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: "Digestion of food",
-          nextId: 'insevenSciencecorrectq6',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenSciencecorrectq6: {
-    botPrompt: 'Hurray! <strong>Melting of ice</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenScience'+shuffleArraylottwo[7],
-      },
-    ],
-    },
-    insevenSciencecorrectq6: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Melting of ice"</strong>',
-    answers: [
-      {
-        nextId: 'sevenScience'+shuffleArraylottwo[7],
-      },
-    ],
-    },
-  
-  
-  
-    //7
-  ['sevenScience'+shuffleArraylottwo[7]]: {
-    botPrompt: 'In a double displacement reaction, what occurs between the reactants?',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['Exchange of ions', 'Formation of a precipitate', "Release of gas","All of the above"]),
-      answers: [
-        {
-          answer: 'Exchange of ions',
-          nextId: 'sevenSciencecorrectq7',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: 'Formation of a precipitate',
-          nextId: 'insevenSciencecorrectq7',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "Release of gas",
-          nextId: 'insevenSciencecorrectq7',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "All of the above",
-          nextId: 'insevenSciencecorrectq7',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenSciencecorrectq7: {
-    botPrompt: 'Hurray! <strong>Exchange of ions</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenScience'+shuffleArraylottwo[8],
-      },
-    ],
-    },
-    insevenSciencecorrectq7: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Exchange of ions"</strong>',
-    answers: [
-      {
-        nextId: 'sevenScience'+shuffleArraylottwo[8],
-      },
-    ],
-    },
-  
-  
-    //8
-  ['sevenScience'+shuffleArraylottwo[8]]: {
-    botPrompt: 'What is the key characteristic of a combination reaction?',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['Formation of new bonds', 'Breaking of existing bonds', "Release of energy","Change in color"]),
-      answers: [
-        {
-          answer: 'Formation of new bonds',
-          nextId: 'sevenSciencecorrectq8',
-          sumToBags: [{ name: 'ao', points: 1 }],
-        },
-        {
-          answer: 'Breaking of existing bonds',
-          nextId: 'insevenSciencecorrectq8',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "Release of energy",
-          nextId: 'insevenSciencecorrectq8',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "Change in color",
-          nextId: 'insevenSciencecorrectq8',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenSciencecorrectq8: {
-    botPrompt: 'Hurray! <strong>Formation of new bonds</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenScience'+shuffleArraylottwo[9],
-      },
-    ],
-    },
-    insevenSciencecorrectq8: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Formation of new bonds"</strong>',
-    answers: [
-      {
-        nextId: 'sevenScience'+shuffleArraylottwo[9],
-      },
-    ],
-    },
-  
-  
-    //9
-  ['sevenScience'+shuffleArraylottwo[9]]: {
-    botPrompt: 'Which factor affects the size of crystals during crystallization?',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['Rate of cooling', 'Volume of solvent', "Temperature of the solvent","Pressure applied"]),
-      answers: [
-        {
-          answer: 'Rate of cooling',
-          nextId: 'sevenSciencecorrectq9',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: 'Volume of solvent',
-          nextId: 'insevenSciencecorrectq9',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "Temperature of the solvent",
-          nextId: 'insevenSciencecorrectq9',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "Pressure applied",
-          nextId: 'insevenSciencecorrectq9',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenSciencecorrectq9: {
-    botPrompt: 'Hurray! <strong>Rate of cooling</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenScience'+shuffleArraylottwo[10],
-      },
-    ],
-    },
-    insevenSciencecorrectq9: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Rate of cooling"</strong>',
-    answers: [
-      {
-        nextId: 'sevenScience'+shuffleArraylottwo[10],
-      },
-    ],
-    },
-  
-  
-  
-    //10
-  ['sevenScience'+shuffleArraylottwo[10]]: {
-    botPrompt: 'The difference between the maximum and minimum temperature in a day is known as:',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['Temperature range', 'Temperature variation', "Temperature difference","All of the above"]),
-      answers: [
-        {
-          answer: 'Temperature range',
-          nextId: 'insevenSciencecorrectq10',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: 'Temperature variation',
-          nextId: 'insevenSciencecorrectq10',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "Temperature difference",
-          nextId: 'insevenSciencecorrectq10',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "All of the above",
-          nextId: 'sevenSciencecorrectq10',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenSciencecorrectq10: {
-    botPrompt: 'Hurray! <strong>All of the above</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenScience'+shuffleArraylottwo[11],
-      },
-    ],
-    },
-    insevenSciencecorrectq10: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"All of the above"</strong>',
-    answers: [
-      {
-        nextId: 'sevenScience'+shuffleArraylottwo[11],
-      },
-    ],
-    },
-  
-  
-    //11
-  ['sevenScience'+shuffleArraylottwo[11]]: {
-    botPrompt: 'The instrument used to measure humidity is called a:',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['Hygrometer', 'Thermometer', "Barometer","Anemometer"]),
-      answers: [
-        {
-          answer: 'Hygrometer',
-          nextId: 'sevenSciencecorrectq11',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: 'Thermometer',
-          nextId: 'insevenSciencecorrectq11',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "Barometer",
-          nextId: 'insevenSciencecorrectq11',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "Anemometer",
-          nextId: 'insevenSciencecorrectq11',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenSciencecorrectq11: {
-    botPrompt: 'Hurray! <strong>Hygrometer</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenScience'+shuffleArraylottwo[12],
-      },
-    ],
-    },
-    insevenSciencecorrectq11: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>Hygrometer</strong>',
-    answers: [
-      {
-        nextId: 'sevenScience'+shuffleArraylottwo[12],
-      },
-    ],
-    },
-  
-  
-    //12
-  ['sevenScience'+shuffleArraylottwo[12]]: {
-    botPrompt: 'The principle that explains why gases expand on heating is known as:',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(["Archimedes' principle", "Charles's law", "Pascal's principle","Boyle's law"]),
-      answers: [
-        {
-          answer: "Archimedes' principle",
-          nextId: 'insevenSciencecorrectq12',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "Charles's law",
-          nextId: 'sevenSciencecorrectq12',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: "Pascal's principle",
-          nextId: 'insevenSciencecorrectq12',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "Boyle's law",
-          nextId: 'insevenSciencecorrectq12',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenSciencecorrectq12: {
-    botPrompt: "Hurray! <strong>Charles's law</strong> is the correct answer  ! 😎",
-    answers: [
-      {
-        nextId: 'sevenScience'+shuffleArraylottwo[13],
-      },
-    ],
-    },
-    insevenSciencecorrectq12: {
-    botPrompt: "You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>Charles's law</strong>",
-    answers: [
-      {
-        nextId: 'sevenScience'+shuffleArraylottwo[13],
-      },
-    ],
-    },
-  
-  
-    //13
-  ['sevenScience'+shuffleArraylottwo[13]]: {
-    botPrompt: 'The movement of warm air upwards is driven by:',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['An increase in air pressure', 'A decrease in air pressure', "Changes in wind patterns","Gravity"]),
-      answers: [
-        {
-          answer: 'An increase in air pressure',
-          nextId: 'insevenSciencecorrectq13',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: 'A decrease in air pressure',
-          nextId: 'sevenSciencecorrectq13',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: "Changes in wind patterns",
-          nextId: 'insevenSciencecorrectq13',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "Gravity",
-          nextId: 'insevenSciencecorrectq13',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenSciencecorrectq13: {
-    botPrompt: 'Hurray! <strong>A decrease in air pressure</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenScience'+shuffleArraylottwo[14],
-      },
-    ],
-    },
-    insevenSciencecorrectq13: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"A decrease in air pressure"</strong>',
-    answers: [
-      {
-        nextId: 'sevenScience'+shuffleArraylottwo[14],
-      },
-    ],
-    },
-  
-  
-    //14
-  ['sevenScience'+shuffleArraylottwo[14]]: {
-    botPrompt: 'In a thunderstorm, what is the role of the downdraft?',
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['It pushes warm air upwards', 'It creates a calm, clear area within the storm', "It generates lightning","It produces heavy rain"]),
-      answers: [
-        {
-          answer: 'It pushes warm air upwards',
-          nextId: 'insevenSciencecorrectq14',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: 'It creates a calm, clear area within the storm',
-          nextId: 'sevenSciencecorrectq14',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-        {
-          answer: "It generates lightning",
-          nextId: 'insevenSciencecorrectq14',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "It produces heavy rain",
-          nextId: 'insevenSciencecorrectq14',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenSciencecorrectq14: {
-    botPrompt: 'Hurray! <strong>It creates a calm, clear area within the storm</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'wishtocountinesevenScience',
-      },
-    ],
-    },
-    insevenSciencecorrectq14: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"It creates a calm, clear area within the storm"</strong>',
-    answers: [
-      {
-        nextId: 'wishtocountinesevenScience',
-      },
-    ],
-  },
-  wishtocountinesevenththScience: {
-    botPrompt: 'You have Completed Science. Do you Wish to Continue ?',
-    type: RTypes.TRANSFORMED_TEXT,
-    input: selectField(['Yes', "No"]),
-    answers: [
-      {
-        answer: 'Yes',
-        nextId: 'chooseclass',
-      },
-      {
-        answer: "No",
-        nextId: 'endConv',
-      },
-    
-    ],
-  },
-
-  //biology
-  //1
-  ['sevenBiology'+shuffleArraylottwo[1]]: {
-    botPrompt: "Which compartment of the cow's stomach is most similar in function to a human stomach?",
-    type: RTypes.TRANSFORMED_TEXT,
-    
-    input: selectField(['Rumen', 'Reticulum', "Omasum","Abomasum"]),
-      answers: [
-        {
-          answer: 'Rumen',
-          nextId: 'insevenBiologycorrectq1',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: 'Reticulum',
-          nextId: 'insevenBiologycorrectq1',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "Omasum",
-          nextId: 'insevenBiologycorrectq1',
-          sumToBags: [{ name: 'ai', points: 1 }],
-        },
-        {
-          answer: "Abomasum",
-          nextId: 'sevenBiologycorrectq1',
-          sumToBags: [{ name: 'ac', points: 1 }],
-        },
-      ],
-    },
-    
-    sevenBiologycorrectq1: {
-    botPrompt: 'Hurray! <strong>Abomasum</strong> is the correct answer  ! 😎',
-    answers: [
-      {
-        nextId: 'sevenBiology'+shuffleArraylottwo[2],
-      },
-    ],
-    },
-    insevenBiologycorrectq1: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right/strong> answer is <strong>"Abomasum"</strong>',
-    answers: [
-      {
-        nextId: 'sevenBiology'+shuffleArraylottwo[2],
-      },
-    ],
-    },
-    
-    
-    //2
-    ['sevenBiology'+shuffleArraylottwo[2]]: {
-      botPrompt: 'What is the primary pigment responsible for capturing light energy during photosynthesis?',
-      type: RTypes.TRANSFORMED_TEXT,
-      
-      input: selectField(['Chlorophyll', 'Carotene', "Xanthophyll","0Anthocyanin"]),
-        answers: [
-          {
-            answer: 'Chlorophyll',
-            nextId: 'sevenBiologycorrectq2',
-            sumToBags: [{ name: 'ac', points: 1 }],
-          },
-          {
-            answer: 'Carotene',
-            nextId: 'insevenBiologycorrectq2',
-            sumToBags: [{ name: 'ac', points: 1 }],
-          },
-          {
-            answer: "Xanthophyll",
-            nextId: 'insevenBiologycorrectq2',
-            sumToBags: [{ name: 'ai', points: 1 }],
-          },
-          {
-            answer: "Anthocyanin",
-            nextId: 'insevenBiologycorrectq2',
-            sumToBags: [{ name: 'ai', points: 1 }],
-          },
-        ],
-      },
-      
-      sevenBiologycorrectq2: {
-      botPrompt: 'Hurray! <strong>Chlorophyll</strong> is the correct answer  ! 😎',
-      answers: [
-        {
-          nextId: 'sevenBiology'+shuffleArraylottwo[3],
-        },
-      ],
-      },
-      insevenBiologycorrectq2: {
-      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Chlorophyll"</strong>',
-      answers: [
-        {
-          nextId: 'sevenBiology'+shuffleArraylottwo[3],
-        },
-      ],
-      },
-    
-      //3
-    ['sevenBiology'+shuffleArraylottwo[3]]: {
-      botPrompt: 'Which type of respiration, aerobic or anaerobic, produces more ATP (energy) per glucose molecule?',
-      type: RTypes.TRANSFORMED_TEXT,
-      
-      input: selectField(['Aerobic respiration', 'Anaerobic respiration', "Both produce the same amount of ATP","Neither produces ATP"]),
-        answers: [
-          {
-            answer: 'Aerobic respiration',
-            nextId: 'sevenBiologycorrectq3',
-            sumToBags: [{ name: 'ac', points: 1 }],
-          },
-          {
-            answer: 'Anaerobic respiration',
-            nextId: 'insevenBiologycorrectq3',
-            sumToBags: [{ name: 'ai', points: 1 }],
-          },
-          {
-            answer: "Both produce the same amount of ATP",
-            nextId: 'insevenBiologycorrectq3',
-            sumToBags: [{ name: 'ai', points: 1 }],
-          },
-          {
-            answer: "Neither produces ATP",
-            nextId: 'insevenBiologycorrectq3',
-            sumToBags: [{ name: 'ai', points: 1 }],
-          },
-        ],
-      },
-      
-      sevenBiologycorrectq3: {
-      botPrompt: 'Hurray! <strong>Aerobic respiration</strong> is the correct answer  ! 😎',
-      answers: [
-        {
-          nextId: 'sevenBiology'+shuffleArraylottwo[4],
-        },
-      ],
-      },
-      insevenBiologycorrectq3: {
-      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Aerobic respiration"</strong>',
-      answers: [
-        {
-          nextId: 'sevenBiology'+shuffleArraylottwo[4],
-        },
-      ],
-      },
-    
-    
-    //4
-    ['sevenBiology'+shuffleArraylottwo[4]]: {
-      botPrompt: 'Which of the following is an example of a plant propagation method that does NOT involve seeds?',
-      type: RTypes.TRANSFORMED_TEXT,
-      
-      input: selectField(['Germination', 'Vegetative propagation', "Pollination","Fertilization"]),
-        answers: [
-          {
-            answer: 'Germination',
-            nextId: 'insevenBiologycorrectq4',
-            sumToBags: [{ name: 'ai', points: 1 }],
-          },
-          {
-            answer: 'Vegetative propagation',
-            nextId: 'sevenBiologycorrectq4',
-            sumToBags: [{ name: 'ac', points: 1 }],
-          },
-          {
-            answer: "Pollination",
-            nextId: 'insevenBiologycorrectq4',
-            sumToBags: [{ name: 'ai', points: 1 }],
-          },
-          {
-            answer: "Fertilization",
-            nextId: 'insevenBiologycorrectq4',
-            sumToBags: [{ name: 'ai', points: 1 }],
-          },
-        ],
-      },
-      
-      sevenBiologycorrectq4: {
-      botPrompt: 'Hurray! <strong>Vegetative propagation</strong> is the correct answer  ! 😎',
-      answers: [
-        {
-          nextId: 'sevenBiology'+shuffleArraylottwo[5],
-        },
-      ],
-      },
-      insevenBiologycorrectq4: {
-      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Vegetative propagation"</strong>',
-      answers: [
-        {
-          nextId: 'sevenBiology'+shuffleArraylottwo[5],
-        },
-      ],
-      },
-    
-    
-    
-      //5
-    ['sevenBiology'+shuffleArraylottwo[5]]: {
-      botPrompt: 'What is the term for the process by which plants release water vapor into the atmosphere through tiny openings in their leaves?',
-      type: RTypes.TRANSFORMED_TEXT,
-      
-      input: selectField(['Transpiration', 'Evaporation', "Sublimation","Precipitation"]),
-        answers: [
-          {
-            answer: 'Transpiration',
-            nextId: 'sevenBiologycorrectq5',
-            sumToBags: [{ name: 'aC', points: 1 }],
-          },
-          {
-            answer: 'Evaporation',
-            nextId: 'insevenBiologycorrectq5',
-            sumToBags: [{ name: 'ai', points: 1 }],
-          },
-          {
-            answer: "Sublimation",
-            nextId: 'insevenBiologycorrectq5',
-            sumToBags: [{ name: 'ai', points: 1 }],
-          },
-          {
-            answer: "Precipitation",
-            nextId: 'insevenBiologycorrectq5',
-            sumToBags: [{ name: 'ai', points: 1 }],
-          },
-        ],
-      },
-      
-      sevenBiologycorrectq5: {
-      botPrompt: 'Hurray! <strong>Transpiration</strong> is the correct answer  ! 😎',
-      answers: [
-        {
-          nextId: 'sevenBiology'+shuffleArraylottwo[6],
-        },
-      ],
-      },
-      insevenBiologycorrectq5: {
-      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Transpiration"</strong>',
-      answers: [
-        {
-          nextId: 'sevenBiology'+shuffleArraylottwo[6],
-        },
-      ],
-      },
-    
-    
-      //6
-    ['sevenBiology'+shuffleArraylottwo[6]]: {
-      botPrompt: 'Which of the following is NOT a component of the forest floor layer?',
-      type: RTypes.TRANSFORMED_TEXT,
-      
-      input: selectField(['Mosses and lichens', 'Leaf litter and decomposing organic matter', "Tree trunks and large branches","Various types of fungi"]),
-        answers: [
-          {
-            answer: 'Mosses and lichens',
-            nextId: 'insevenBiologycorrectq6',
-            sumToBags: [{ name: 'ai', points: 1 }],
-          },
-          {
-            answer: 'Leaf litter and decomposing organic matter',
-            nextId: 'insevenBiologycorrectq6',
-            sumToBags: [{ name: 'ai', points: 1 }],
-          },
-          {
-            answer: "Tree trunks and large branches",
-            nextId: 'sevenBiologycorrectq6',
-            sumToBags: [{ name: 'ac', points: 1 }],
-          },
-          {
-            answer: "Various types of fungi",
-            nextId: 'insevenBiologycorrectq6',
-            sumToBags: [{ name: 'ai', points: 1 }],
-          },
-        ],
-      },
-      
-      sevenBiologycorrectq6: {
-      botPrompt: 'Hurray! <strong>Tree trunks and large branches</strong> is the correct answer  ! 😎',
-      answers: [
-        {
-            nextId: 'wishtocountinesevenBiology'+shuffleArraylottwo[7],
-        },
-      ],
-      },
-      insevenBiologycorrectq6: {
-      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Tree trunks and large branches"</strong>',
-      answers: [
-        {
-            nextId: 'wishtocountinesevenBiology'+shuffleArraylottwo[7],
-        },
-      ],
-      },
-      wishtocountinesevenththBiology: {
-        botPrompt: 'You have Completed Biology. Do you Wish to Continue ?',
-        type: RTypes.TRANSFORMED_TEXT,
-        input: selectField(['Yes', "No"]),
-        answers: [
-          {
-            answer: 'Yes',
-            nextId: 'chooseclass',
-          },
-          {
-            answer: "No",
-            nextId: 'endConv',
-          },
-        
-        ],
-      },
-    
-    
 
 //classVIII
 
@@ -21774,6 +18814,2966 @@ classviii: {
     ],
   },  
 
+              //classVII
+              classvii: {
+                botPrompt: 'You Have Selected CLASS VII . Which subject you would like to start',
+                type: RTypes.TRANSFORMED_TEXT,
+                input: selectField(['Maths', 'English', "Science", "Biology"]),
+                answers: [
+                  {
+                    answer: 'Maths',
+                    nextId: 'seventhMaths'+randomNumberclass,
+                  },
+                  {
+                    answer: 'English',
+                    nextId: 'seventhEnglish'+randomNumberclass,
+                  },
+                  {
+                    answer: "Science",
+                    nextid: "seventhScience"+randomNumberclass,
+                  },
+                  {
+                    answer: "Biology",
+                    nextId: "seventhBiology"+randomNumberclass,
+                  },
+                
+                ],
+              },
+              //seventhEnglish
+              //1
+              ['seventhEnglish'+shuffleArraylottwo[1]]: {
+                botPrompt: '(Identify the non-finite verb in the sentence: "She enjoys singing."',
+                type: RTypes.TRANSFORMED_TEXT,
+                
+                input: selectField(['She', 'enjoys', "singing","enjoys singing"]),
+                  answers: [
+                    {
+                      answer: 'She',
+                      nextId: 'inseventhEnglishcorrectq1',
+                      sumToBags: [{ name: 'ai', points: 1 }],
+                    },
+                    {
+                      answer: 'enjoys',
+                      nextId: 'inseventhEnglishcorrectq1',
+                      sumToBags: [{ name: 'ai', points: 1 }],
+                    },
+                    {
+                      answer: "singing",
+                      nextId: 'seventhEnglishcorrectq1',
+                      sumToBags: [{ name: 'ac', points: 1 }],
+                    },
+                    {
+                      answer: "enjoys singing",
+                      nextId: 'inseventhEnglishcorrectq1',
+                      sumToBags: [{ name: 'ai', points: 1 }],
+                    },
+                  ],
+                },
+                
+                seventhEnglishcorrectq1: {
+                botPrompt: 'Hurray! <strong>singing</strong> is the correct answer  ! 😎',
+                answers: [
+                  {
+                    nextId: 'seventhEnglish'+shuffleArraylottwo[2],
+                  },
+                ],
+                },
+                inseventhEnglishcorrectq1: {
+                botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right/strong> answer is <strong>"singing"</strong>',
+                answers: [
+                  {
+                    nextId: 'seventhEnglish'+shuffleArraylottwo[2],
+                  },
+                ],
+                },
+                
+                
+                //2
+                ['seventhEnglish'+shuffleArraylottwo[2]]: {
+                  botPrompt: 'In the following sentence, which subject-verb agreement is correct? "Neither the teacher nor the students ___ happy with the result."',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['is', "are"]),
+                    answers: [
+                      {
+                        answer: 'is',
+                        nextId: 'seventhEnglishcorrectq2',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: 'are',
+                        nextId: 'inseventhEnglishcorrectq2',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhEnglishcorrectq2: {
+                  botPrompt: 'Hurray! <strong>is</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhEnglish'+shuffleArraylottwo[3],
+                    },
+                  ],
+                  },
+                  inseventhEnglishcorrectq2: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"is"</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhEnglish'+shuffleArraylottwo[3],
+                    },
+                  ],
+                  },
+                
+                  //3
+                ['seventhEnglish'+shuffleArraylottwo[3]]: {
+                  botPrompt: 'What type of conjunction is "although" in the sentence "Although it rained, we went for a walk"?',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['Coordinating conjunction', 'Subordinating conjunction', "Correlative conjunction","Conjunctive adverb"]),
+                    answers: [
+                      {
+                        answer: 'Coordinating conjunction',
+                        nextId: 'inseventhEnglishcorrectq3',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: 'Subordinating conjunction',
+                        nextId: 'seventhEnglishcorrectq3',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: "Correlative conjunction",
+                        nextId: 'inseventhEnglishcorrectq3',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "Conjunctive adverb",
+                        nextId: 'inseventhEnglishcorrectq3',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhEnglishcorrectq3: {
+                  botPrompt: 'Hurray! <strong>Subordinating conjunction</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhEnglish'+shuffleArraylottwo[4],
+                    },
+                  ],
+                  },
+                  inseventhEnglishcorrectq3: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Subordinating conjunction"</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhEnglish'+shuffleArraylottwo[4],
+                    },
+                  ],
+                  },
+                
+                
+                //4
+                ['seventhEnglish'+shuffleArraylottwo[4]]: {
+                  botPrompt: 'What is the meaning of the phrasal verb "break down" in the sentence: "The car broke down"?',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['Disassemble', 'Fail to function', "Break into pieces","Break a promise"]),
+                    answers: [
+                      {
+                        answer: 'Disassemble',
+                        nextId: 'inseventhEnglishcorrectq4',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: 'Fail to function',
+                        nextId: 'seventhEnglishcorrectq4',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: "Break into pieces",
+                        nextId: 'inseventhEnglishcorrectq4',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "Break a promise",
+                        nextId: 'inseventhEnglishcorrectq4',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhEnglishcorrectq4: {
+                  botPrompt: 'Hurray! <strong>Fail to function</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhEnglish'+shuffleArraylottwo[5],
+                    },
+                  ],
+                  },
+                  inseventhEnglishcorrectq4: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Fail to function"</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhEnglish'+shuffleArraylottwo[5],
+                    },
+                  ],
+                  },
+                
+                
+                
+                  //5
+                ['seventhEnglish'+shuffleArraylottwo[5]]: {
+                  botPrompt: 'Identify the preposition in the sentence: "The cat jumped onto the table."',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['cat', 'jumped', "onto","table"]),
+                    answers: [
+                      {
+                        answer: 'cat',
+                        nextId: 'inseventhEnglishcorrectq5',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: 'jumped',
+                        nextId: 'inseventhEnglishcorrectq5',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "onto",
+                        nextId: 'seventhEnglishcorrectq5',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: "table",
+                        nextId: 'inseventhEnglishcorrectq5',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhEnglishcorrectq5: {
+                  botPrompt: 'Hurray! <strong>onto</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhEnglish'+shuffleArraylottwo[6],
+                    },
+                  ],
+                  },
+                  inseventhEnglishcorrectq5: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"onto"</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhEnglish'+shuffleArraylottwo[6],
+                    },
+                  ],
+                  },
+                
+                
+                  //6
+                ['seventhEnglish'+shuffleArraylottwo[6]]: {
+                  botPrompt: 'Identify the type of clause in the sentence: "Although it rained heavily, they still had a great time."',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['Independent clause', 'Dependent clause', "Adjective clause","Noun clause"]),
+                    answers: [
+                      {
+                        answer: 'Independent clause',
+                        nextId: 'inseventhEnglishcorrectq6',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: 'Dependent clause',
+                        nextId: 'seventhEnglishcorrectq6',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: "Adjective clause",
+                        nextId: 'inseventhEnglishcorrectq6',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "Noun clause",
+                        nextId: 'inseventhEnglishcorrectq6',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhEnglishcorrectq6: {
+                  botPrompt: 'Hurray! <strong>Dependent clause</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhEnglish'+shuffleArraylottwo[7],
+                    },
+                  ],
+                  },
+                  inseventhEnglishcorrectq6: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Dependent clause"</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhEnglish'+shuffleArraylottwo[7],
+                    },
+                  ],
+                  },
+                
+                
+                
+                  //7
+                ['seventhEnglish'+shuffleArraylottwo[7]]: {
+                  botPrompt: 'Read the line: "The police caught the thief red-handed." Change the sentence to passive voice.',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['The thief had been caught red-handed by the police.', 'The thief was caught red-handed by the police.', " The thief caught the police red-handed.","The thief has been catching the police red-handed."]),
+                    answers: [
+                      {
+                        answer: 'The thief had been caught red-handed by the police.',
+                        nextId: 'inseventhEnglishcorrectq7',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: 'The thief was caught red-handed by the police.',
+                        nextId: 'seventhEnglishcorrectq7',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: " The thief caught the police red-handed.",
+                        nextId: 'inseventhEnglishcorrectq7',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "The thief has been catching the police red-handed.",
+                        nextId: 'inseventhEnglishcorrectq7',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhEnglishcorrectq7: {
+                  botPrompt: 'Hurray! <strong>The thief was caught red-handed by the police.</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhEnglish'+shuffleArraylottwo[8],
+                    },
+                  ],
+                  },
+                  inseventhEnglishcorrectq7: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"The thief was caught red-handed by the police."</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhEnglish'+shuffleArraylottwo[8],
+                    },
+                  ],
+                  },
+                
+                
+                  //8
+                ['seventhEnglish'+shuffleArraylottwo[8]]: {
+                  botPrompt: "Change the following direct speech into indirect speech: She said, 'I will meet you tomorrow.'",
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['She said that she would meet me tomorrow.', 'She says that she will meet me tomorrow.', 'She says, "I will meet you tomorrow."','She said, "I will meet you tomorrow."']),
+                    answers: [
+                      {
+                        answer: 'She said that she would meet me tomorrow.',
+                        nextId: 'seventhEnglishcorrectq8',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: 'She says that she will meet me tomorrow.',
+                        nextId: 'inseventhEnglishcorrectq8',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: 'She says, "I will meet you tomorrow."',
+                        nextId: 'inseventhEnglishcorrectq8',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: 'She said, "I will meet you tomorrow."',
+                        nextId: 'inseventhEnglishcorrectq8',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhEnglishcorrectq8: {
+                  botPrompt: 'Hurray! <strong>She said that she would meet me tomorrow.</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhEnglish'+shuffleArraylottwo[9],
+                    },
+                  ],
+                  },
+                  inseventhEnglishcorrectq8: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"She said that she would meet me tomorrow."</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhEnglish'+shuffleArraylottwo[9],
+                    },
+                  ],
+                  },
+                
+                
+                  //9
+                ['seventhEnglish'+shuffleArraylottwo[9]]: {
+                  botPrompt: 'In the sentence "He had been studying for hours," which tense is used?',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['Present continuous', 'Past continuous', "Present perfect continuous","Past perfect continuous"]),
+                    answers: [
+                      {
+                        answer: 'Present continuous',
+                        nextId: 'inseventhEnglishcorrectq9',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: 'Past continuous',
+                        nextId: 'inseventhEnglishcorrectq9',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "Present perfect continuous",
+                        nextId: 'inseventhEnglishcorrectq9',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "Past perfect continuous",
+                        nextId: 'seventhEnglishcorrectq9',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhEnglishcorrectq9: {
+                  botPrompt: 'Hurray! <strong>Past perfect continuous</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhEnglish'+shuffleArraylottwo[10],
+                    },
+                  ],
+                  },
+                  inseventhEnglishcorrectq9: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Past perfect continuous"</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhEnglish'+shuffleArraylottwo[10],
+                    },
+                  ],
+                  },
+                
+                
+                
+                  //10
+                ['seventhEnglish'+shuffleArraylottwo[10]]: {
+                  botPrompt: 'Read the line: "She said she ________ to the museum yesterday."Which tense should fill in the blank to maintain proper sequence of tenses?',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['goes', 'gone', "went","going"]),
+                    answers: [
+                      {
+                        answer: 'goes',
+                        nextId: 'inseventhEnglishcorrectq10',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: 'gone',
+                        nextId: 'inseventhEnglishcorrectq10',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "went",
+                        nextId: 'seventhEnglishcorrectq10',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: "going",
+                        nextId: 'inseventhEnglishcorrectq10',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhEnglishcorrectq10: {
+                  botPrompt: 'Hurray! <strong>went</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhEnglish'+shuffleArraylottwo[11],
+                    },
+                  ],
+                  },
+                  inseventhEnglishcorrectq10: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"went"</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhEnglish'+shuffleArraylottwo[11],
+                    },
+                  ],
+                  },
+                
+                
+                  //11
+                ['seventhEnglish'+shuffleArraylottwo[11]]: {
+                  botPrompt: 'Read the line: "After the storm had passed, the children went outside to play."What type of clause is "After the storm had passed" in the passage?',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['Adverb clause', 'Noun clause', "Independent clause","Dependent clause"]),
+                    answers: [
+                      {
+                        answer: 'Adverb clause',
+                        nextId: 'seventhEnglishcorrectq11',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: 'Noun clause',
+                        nextId: 'inseventhEnglishcorrectq11',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "Independent clause",
+                        nextId: 'inseventhEnglishcorrectq11',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "Dependent clause",
+                        nextId: 'inseventhEnglishcorrectq11',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhEnglishcorrectq11: {
+                  botPrompt: 'Hurray! <strong>Adverb clause</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhEnglish'+shuffleArraylottwo[12],
+                    },
+                  ],
+                  },
+                  inseventhEnglishcorrectq11: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Adverb clause"</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhEnglish'+shuffleArraylottwo[12],
+                    },
+                  ],
+                  },
+                
+                
+                  //12
+                ['seventhEnglish'+shuffleArraylottwo[12]]: {
+                  botPrompt: 'Which sentence contains a participial phrase?',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['The cat, always curious, explored the garden.', 'Running quickly, she reached the finish line.', "They went to the store, which was crowded.","He loves to read books."]),
+                    answers: [
+                      {
+                        answer: 'The cat, always curious, explored the garden.',
+                        nextId: 'inseventhEnglishcorrectq12',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: 'Running quickly, she reached the finish line.',
+                        nextId: 'seventhEnglishcorrectq12',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: "They went to the store, which was crowded.",
+                        nextId: 'inseventhEnglishcorrectq12',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "He loves to read books.",
+                        nextId: 'inseventhEnglishcorrectq12',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhEnglishcorrectq12: {
+                  botPrompt: 'Hurray! <strong>Running quickly, she reached the finish line.</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhEnglish'+shuffleArraylottwo[13],
+                    },
+                  ],
+                  },
+                  inseventhEnglishcorrectq12: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Running quickly, she reached the finish line."</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhEnglish'+shuffleArraylottwo[13],
+                    },
+                  ],
+                  },
+                
+                
+                  //13
+                ['seventhEnglish'+shuffleArraylottwo[13]]: {
+                  botPrompt: 'Which sentence contains a finite verb?',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['He is cooking dinner.', 'Cooking dinner takes time.', "She danced all night.","The song was beautiful."]),
+                    answers: [
+                      {
+                        answer: 'He is cooking dinner.',
+                        nextId: 'seventhEnglishcorrectq13',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: 'Cooking dinner takes time.',
+                        nextId: 'inseventhEnglishcorrectq13',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "She danced all night.",
+                        nextId: 'inseventhEnglishcorrectq13',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "The song was beautiful.",
+                        nextId: 'inseventhEnglishcorrectq13',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhEnglishcorrectq13: {
+                  botPrompt: 'Hurray! <strong>He is cooking dinner.</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhEnglish'+shuffleArraylottwo[14],
+                    },
+                  ],
+                  },
+                  inseventhEnglishcorrectq13: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"He is cooking dinner."</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhEnglish'+shuffleArraylottwo[14],
+                    },
+                  ],
+                  },
+                
+                
+                  //14
+                ['seventhEnglish'+shuffleArraylottwo[14]]: {
+                  botPrompt: 'Identify the transitive verb in the sentence: "The children laughed."',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['children', 'laughed', "The","at"]),
+                    answers: [
+                      {
+                        answer: 'children',
+                        nextId: 'inseventhEnglishcorrectq14',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: 'laughed',
+                        nextId: 'seventhEnglishcorrectq14',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: "The",
+                        nextId: 'inseventhEnglishcorrectq14',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "at",
+                        nextId: 'inseventhEnglishcorrectq14',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhEnglishcorrectq14: {
+                  botPrompt: 'Hurray! <strong>laughed</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhEnglish'+shuffleArraylottwo[15],
+                    },
+                  ],
+                  },
+                  inseventhEnglishcorrectq14: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"laughed"</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhEnglish'+shuffleArraylottwo[15],
+                    },
+                  ],
+                  },
+                
+                
+                  //15
+                ['seventhEnglish'+shuffleArraylottwo[15]]: {
+                  botPrompt: 'Which phrasal verb means "to endure or tolerate"?',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['Break up', 'Put up with', "Take off","Look up"]),
+                    answers: [
+                      {
+                        answer: 'Break up',
+                        nextId: 'inseventhEnglishcorrectq15',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: 'Put up with',
+                        nextId: 'seventhEnglishcorrectq15',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: "Take off",
+                        nextId: 'inseventhEnglishcorrectq15',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "Look up",
+                        nextId: 'inseventhEnglishcorrectq15',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhEnglishcorrectq15: {
+                  botPrompt: 'Hurray! <strong>Put up with</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhEnglish'+shuffleArraylottwo[16],
+                    },
+                  ],
+                  },
+                  inseventhEnglishcorrectq15: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Put up with"</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhEnglish'+shuffleArraylottwo[16],
+                    },
+                  ],
+                  },
+                
+                
+                  //16
+                ['seventhEnglish'+shuffleArraylottwo[16]]: {
+                  botPrompt: 'Which conjunction is used to indicate a choice between two alternatives?',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['And', 'But', "Or","So"]),
+                    answers: [
+                      {
+                        answer: 'And',
+                        nextId: 'inseventhEnglishcorrectq16',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: 'But',
+                        nextId: 'inseventhEnglishcorrectq16',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "Or",
+                        nextId: 'seventhEnglishcorrectq16',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: "So",
+                        nextId: 'inseventhEnglishcorrectq16',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhEnglishcorrectq16: {
+                  botPrompt: 'Hurray! <strong>Or</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhEnglish'+shuffleArraylottwo[17],
+                    },
+                  ],
+                  },
+                  inseventhEnglishcorrectq16: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Or"</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhEnglish'+shuffleArraylottwo[17],
+                    },
+                  ],
+                  },
+                
+                
+                  //17
+                ['seventhEnglish'+shuffleArraylottwo[17]]: {
+                  botPrompt: 'Choose the sentence with a correct preposition:',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['She jumped into the river.', 'She jumped over the river.', "She jumped the river.","She jumped under the river."]),
+                    answers: [
+                      {
+                        answer: 'She jumped into the river.',
+                        nextId: 'seventhEnglishcorrectq17',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: 'She jumped over the river.',
+                        nextId: 'inseventhEnglishcorrectq17',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "She jumped the river.",
+                        nextId: 'inseventhEnglishcorrectq17',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "She jumped under the river.",
+                        nextId: 'inseventhEnglishcorrectq17',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhEnglishcorrectq17: {
+                  botPrompt: 'Hurray! <strong>She jumped into the river.</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhEnglish'+shuffleArraylottwo[18],
+                    },
+                  ],
+                  },
+                  inseventhEnglishcorrectq17: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"She jumped into the river."</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhEnglish'+shuffleArraylottwo[18],
+                    },
+                  ],
+                  },
+                
+                
+                  //18
+                ['seventhEnglish'+shuffleArraylottwo[18]]: {
+                  botPrompt: 'What type of conjunction is "although" in the sentence "Although it rained, we went for a walk"?',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['Coordinating conjunction', 'Subordinating conjunction', "Correlative conjunction","Conjunctive adverb"]),
+                    answers: [
+                      {
+                        answer: 'Coordinating conjunction',
+                        nextId: 'inseventhEnglishcorrectq18',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: 'Subordinating conjunction',
+                        nextId: 'seventhEnglishcorrectq18',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: "Correlative conjunction",
+                        nextId: 'inseventhEnglishcorrectq18',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "Conjunctive adverb",
+                        nextId: 'inseventhEnglishcorrectq18',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhEnglishcorrectq18: {
+                  botPrompt: 'Hurray! <strong>Subordinating conjunction</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhEnglish'+shuffleArraylottwo[19],
+                    },
+                  ],
+                  },
+                  inseventhEnglishcorrectq18: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Subordinating conjunction"</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhEnglish'+shuffleArraylottwo[19],
+                    },
+                  ],
+                  },
+                
+                  //19
+                ['seventhEnglish'+shuffleArraylottwo[19]]: {
+                  botPrompt: 'What is the non-finite verb in the phrase "to swim"?',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['to', 'swim', "the","to swim"]),
+                    answers: [
+                      {
+                        answer: 'to',
+                        nextId: 'inseventhEnglishcorrectq19',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: 'swim',
+                        nextId: 'seventhEnglishcorrectq19',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: "the",
+                        nextId: 'inseventhEnglishcorrectq19',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "to swim",
+                        nextId: 'inseventhEnglishcorrectq19',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhEnglishcorrectq19: {
+                  botPrompt: 'Hurray! <strong>swim</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhEnglish'+shuffleArraylottwo[20],
+                    },
+                  ],
+                  },
+                  inseventhEnglishcorrectq19: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"swim"</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhEnglish'+shuffleArraylottwo[20],
+                    },
+                  ],
+                  },
+                
+                  //20
+                ['seventhEnglish'+shuffleArraylottwo[20]]: {
+                  botPrompt: 'Which of the following verbs is ALWAYS intransitive?',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['Swim', 'Break', "Hit","Read"]),
+                    answers: [
+                      {
+                        answer: 'Swim',
+                        nextId: 'seventhEnglishcorrectq20',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: 'Break',
+                        nextId: 'inseventhEnglishcorrectq20',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "Hit",
+                        nextId: 'inseventhEnglishcorrectq20',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "Read",
+                        nextId: 'inseventhEnglishcorrectq20',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhEnglishcorrectq20: {
+                  botPrompt: 'Hurray! <strong>Swim</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'wishtocountineseventhEnglish',
+                    },
+                  ],
+                  },
+                  inseventhEnglishcorrectq20: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Swim"</strong>',
+                  answers: [
+                    {
+                      nextId: 'wishtocountineseventhEnglish',
+                    },
+                  ],
+                },
+                wishtocountineseventhEnglish: {
+                  botPrompt: 'You have Completed English. Do you Wish to Continue ?',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  input: selectField(['Yes', "No"]),
+                  answers: [
+                    {
+                      answer: 'Yes',
+                      nextId: 'chooseclass',
+                    },
+                    {
+                      answer: "No",
+                      nextId: 'endConv',
+                    },
+                  
+                  ],
+                },
+                //seventhMaths
+                //1
+              ['seventhMaths'+shuffleArraylottwo[1]]: {
+                botPrompt: '(2-1 × 3-1)2 = ? ',
+                type: RTypes.TRANSFORMED_TEXT,
+                
+                input: selectField(['1/6', '16', "1/36","36"]),
+                  answers: [
+                    {
+                      answer: '1/6',
+                      nextId: 'inseventhMathscorrectq1',
+                      sumToBags: [{ name: 'ai', points: 1 }],
+                    },
+                    {
+                      answer: '16',
+                      nextId: 'inseventhMathscorrectq1',
+                      sumToBags: [{ name: 'ai', points: 1 }],
+                    },
+                    {
+                      answer: "1/36",
+                      nextId: 'seventhMathscorrectq1',
+                      sumToBags: [{ name: 'ac', points: 1 }],
+                    },
+                    {
+                      answer: "36",
+                      nextId: 'inseventhMathscorrectq1',
+                      sumToBags: [{ name: 'ai', points: 1 }],
+                    },
+                  ],
+                },
+                
+                seventhMathscorrectq1: {
+                botPrompt: 'Hurray! <strong>1/36</strong> is the correct answer  ! 😎',
+                answers: [
+                  {
+                    nextId: 'seventhMaths'+shuffleArraylottwo[2],
+                  },
+                ],
+                },
+                inseventhMathscorrectq1: {
+                botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right/strong> answer is <strong>"1/36"</strong>',
+                answers: [
+                  {
+                    nextId: 'seventhMaths'+shuffleArraylottwo[2],
+                  },
+                ],
+                },
+                
+                
+                //2
+                ['seventhMaths'+shuffleArraylottwo[2]]: {
+                  botPrompt: 'If 9 × 3n = 36, then n = ___________.',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['2', '4', "1","0"]),
+                    answers: [
+                      {
+                        answer: '2',
+                        nextId: 'inseventhMathscorrectq2',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: '4',
+                        nextId: 'seventhMathscorrectq2',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: "1",
+                        nextId: 'inseventhMathscorrectq2',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "0",
+                        nextId: 'inseventhMathscorrectq2',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhMathscorrectq2: {
+                  botPrompt: 'Hurray! <strong>4</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhMaths'+shuffleArraylottwo[3],
+                    },
+                  ],
+                  },
+                  inseventhMathscorrectq2: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4"</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhMaths'+shuffleArraylottwo[3],
+                    },
+                  ],
+                  },
+                
+                  //3
+                ['seventhMaths'+shuffleArraylottwo[3]]: {
+                  botPrompt: 'The sum of two consecutive odd numbers is 36. The smaller number is',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['15', '17', "19","13"]),
+                    answers: [
+                      {
+                        answer: '15',
+                        nextId: 'seventhMathscorrectq3',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: '17',
+                        nextId: 'inseventhMathscorrectq3',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "19",
+                        nextId: 'inseventhMathscorrectq3',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "13",
+                        nextId: 'inseventhMathscorrectq3',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhMathscorrectq3: {
+                  botPrompt: 'Hurray! <strong>15</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhMaths'+shuffleArraylottwo[4],
+                    },
+                  ],
+                  },
+                  inseventhMathscorrectq3: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"15"</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhMaths'+shuffleArraylottwo[4],
+                    },
+                  ],
+                  },
+                
+                
+                //4
+                ['seventhMaths'+shuffleArraylottwo[4]]: {
+                  botPrompt: 'In ΔABC, if  ∠A = 72° and ∠B = 63°, then ∠C = ?',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['45°', '32°', "49°","50°"]),
+                    answers: [
+                      {
+                        answer: '45°',
+                        nextId: 'seventhMathscorrectq4',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: '32°',
+                        nextId: 'inseventhMathscorrectq4',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "49°",
+                        nextId: 'inseventhMathscorrectq4',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "50°",
+                        nextId: 'inseventhMathscorrectq4',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhMathscorrectq4: {
+                  botPrompt: 'Hurray! <strong>45°</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhMaths'+shuffleArraylottwo[5],
+                    },
+                  ],
+                  },
+                  inseventhMathscorrectq4: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"45°"</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhMaths'+shuffleArraylottwo[5],
+                    },
+                  ],
+                  },
+                
+                
+                
+                  //5
+                ['seventhMaths'+shuffleArraylottwo[5]]: {
+                  botPrompt: 'A cylinder has ________________ vertex.',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['1', '2', "3","none of these"]),
+                    answers: [
+                      {
+                        answer: '1',
+                        nextId: 'inseventhMathscorrectq5',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: '2',
+                        nextId: 'inseventhMathscorrectq5',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "3",
+                        nextId: 'inseventhMathscorrectq5',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "none of these",
+                        nextId: 'seventhMathscorrectq5',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhMathscorrectq5: {
+                  botPrompt: 'Hurray! <strong>none of these</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhMaths'+shuffleArraylottwo[6],
+                    },
+                  ],
+                  },
+                  inseventhMathscorrectq5: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"none of these"</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhMaths'+shuffleArraylottwo[6],
+                    },
+                  ],
+                  },
+                
+                
+                  //6
+                ['seventhMaths'+shuffleArraylottwo[6]]: {
+                  botPrompt: 'How many lines of symmetry does an equilateral triangle have?',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['4', '3', "2","1"]),
+                    answers: [
+                      {
+                        answer: '4',
+                        nextId: 'inseventhMathscorrectq6',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: '3',
+                        nextId: 'seventhMathscorrectq6',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: "2",
+                        nextId: 'inseventhMathscorrectq6',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "1",
+                        nextId: 'inseventhMathscorrectq6',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhMathscorrectq6: {
+                  botPrompt: 'Hurray! <strong>3</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhMaths'+shuffleArraylottwo[7],
+                    },
+                  ],
+                  },
+                  inseventhMathscorrectq6: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"3"</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhMaths'+shuffleArraylottwo[7],
+                    },
+                  ],
+                  },
+                
+                
+                
+                  //7
+                ['seventhMaths'+shuffleArraylottwo[7]]: {
+                  botPrompt: 'If p/q = r/s, then ps = _____________.',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['qr', 'pq', " rs","all of these"]),
+                    answers: [
+                      {
+                        answer: 'qr',
+                        nextId: 'seventhMathscorrectq7',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: 'pq',
+                        nextId: 'inseventhMathscorrectq7',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: " rs",
+                        nextId: 'inseventhMathscorrectq7',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "all of these",
+                        nextId: 'inseventhMathscorrectq7',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhMathscorrectq7: {
+                  botPrompt: 'Hurray! <strong>qr</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhMaths'+shuffleArraylottwo[8],
+                    },
+                  ],
+                  },
+                  inseventhMathscorrectq7: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"qr"</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhMaths'+shuffleArraylottwo[8],
+                    },
+                  ],
+                  },
+                
+                
+                  //8
+                ['seventhMaths'+shuffleArraylottwo[8]]: {
+                  botPrompt: '(3⁰ × 4⁰ × 5⁰) = ?',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['1', '12⁰', "12","both (a) and (b)"]),
+                    answers: [
+                      {
+                        answer: '1',
+                        nextId: 'inseventhMathscorrectq8',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: '12⁰',
+                        nextId: 'inseventhMathscorrectq8',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "12",
+                        nextId: 'inseventhMathscorrectq8',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "both (a) and (b)",
+                        nextId: 'seventhMathscorrectq8',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhMathscorrectq8: {
+                  botPrompt: 'Hurray! <strong>both (a) and (b)</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhMaths'+shuffleArraylottwo[9],
+                    },
+                  ],
+                  },
+                  inseventhMathscorrectq8: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"both (a) and (b)"</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhMaths'+shuffleArraylottwo[9],
+                    },
+                  ],
+                  },
+                
+                
+                  //9
+                ['seventhMaths'+shuffleArraylottwo[9]]: {
+                  botPrompt: '7xy - (-8xy) = ?',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['15xy', '-15xy', "xy","23xy"]),
+                    answers: [
+                      {
+                        answer: '15xy',
+                        nextId: 'seventhMathscorrectq9',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: '-15xy',
+                        nextId: 'inseventhMathscorrectq9',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "xy",
+                        nextId: 'inseventhMathscorrectq9',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "23xy",
+                        nextId: 'inseventhMathscorrectq9',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhMathscorrectq9: {
+                  botPrompt: 'Hurray! <strong>15xy</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhMaths'+shuffleArraylottwo[10],
+                    },
+                  ],
+                  },
+                  inseventhMathscorrectq9: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"15xy"</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhMaths'+shuffleArraylottwo[10],
+                    },
+                  ],
+                  },
+                
+                
+                
+                  //10
+                ['seventhMaths'+shuffleArraylottwo[10]]: {
+                  botPrompt: 'If 3a - 5 = 1, then a = ?',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['6', '-6', "2","-2"]),
+                    answers: [
+                      {
+                        answer: '6',
+                        nextId: 'inseventhMathscorrectq10',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: '-6',
+                        nextId: 'inseventhMathscorrectq10',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "2",
+                        nextId: 'seventhMathscorrectq10',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: "-2",
+                        nextId: 'inseventhMathscorrectq10',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhMathscorrectq10: {
+                  botPrompt: 'Hurray! <strong>2</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhMaths'+shuffleArraylottwo[11],
+                    },
+                  ],
+                  },
+                  inseventhMathscorrectq10: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"2"</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhMaths'+shuffleArraylottwo[11],
+                    },
+                  ],
+                  },
+                
+                
+                  //11
+                ['seventhMaths'+shuffleArraylottwo[11]]: {
+                  botPrompt: 'The sum of all angles around a point is',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['90°', '180°', "270°","360°"]),
+                    answers: [
+                      {
+                        answer: '90°',
+                        nextId: 'inseventhMathscorrectq11',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: '180°',
+                        nextId: 'inseventhMathscorrectq11',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "270°",
+                        nextId: 'inseventhMathscorrectq11',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "360°",
+                        nextId: 'seventhMathscorrectq11',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhMathscorrectq11: {
+                  botPrompt: 'Hurray! <strong>360°</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhMaths'+shuffleArraylottwo[12],
+                    },
+                  ],
+                  },
+                  inseventhMathscorrectq11: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"360°"</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhMaths'+shuffleArraylottwo[12],
+                    },
+                  ],
+                  },
+                
+                
+                  //12
+                ['seventhMaths'+shuffleArraylottwo[12]]: {
+                  botPrompt: 'The sum of two consecutive interior angles is',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['90°', '120°', "180°","360°"]),
+                    answers: [
+                      {
+                        answer: '90°',
+                        nextId: 'inseventhMathscorrectq12',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: '120°',
+                        nextId: 'inseventhMathscorrectq12',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "180°",
+                        nextId: 'seventhMathscorrectq12',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: "360°",
+                        nextId: 'inseventhMathscorrectq12',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhMathscorrectq12: {
+                  botPrompt: 'Hurray! <strong>180°</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhMaths'+shuffleArraylottwo[13],
+                    },
+                  ],
+                  },
+                  inseventhMathscorrectq12: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"180°"</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhMaths'+shuffleArraylottwo[13],
+                    },
+                  ],
+                  },
+                
+                
+                  //13
+                ['seventhMaths'+shuffleArraylottwo[13]]: {
+                  botPrompt: 'The letter O of the English alphabet has ___________ lines of symmetry.',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['0', '1', "2","none of these"]),
+                    answers: [
+                      {
+                        answer: '0',
+                        nextId: 'inseventhMathscorrectq13',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: '1',
+                        nextId: 'inseventhMathscorrectq13',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "2",
+                        nextId: 'seventhMathscorrectq13',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: "none of these",
+                        nextId: 'inseventhMathscorrectq13',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhMathscorrectq13: {
+                  botPrompt: 'Hurray! <strong>2</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhMaths'+shuffleArraylottwo[14],
+                    },
+                  ],
+                  },
+                  inseventhMathscorrectq13: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"2"</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhMaths'+shuffleArraylottwo[14],
+                    },
+                  ],
+                  },
+                
+                
+                  //14
+                ['seventhMaths'+shuffleArraylottwo[14]]: {
+                  botPrompt: 'The number of vertices of a cube is ______________.',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['0', '8', "2","4"]),
+                    answers: [
+                      {
+                        answer: '0',
+                        nextId: 'inseventhMathscorrectq14',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: '8',
+                        nextId: 'seventhMathscorrectq14',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: "2",
+                        nextId: 'inseventhMathscorrectq14',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "4",
+                        nextId: 'inseventhMathscorrectq14',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhMathscorrectq14: {
+                  botPrompt: 'Hurray! <strong>8</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhMaths'+shuffleArraylottwo[15],
+                    },
+                  ],
+                  },
+                  inseventhMathscorrectq14: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"8"</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhMaths'+shuffleArraylottwo[15],
+                    },
+                  ],
+                  },
+                
+                
+                  //15
+                ['seventhMaths'+shuffleArraylottwo[15]]: {
+                  botPrompt: 'If a = 3 and b = 4, what is the value of a² + b²?',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['7', '12', "25","9"]),
+                    answers: [
+                      {
+                        answer: '7',
+                        nextId: 'inseventhMathscorrectq15',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: '12',
+                        nextId: 'inseventhMathscorrectq15',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "25",
+                        nextId: 'seventhMathscorrectq15',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: "9",
+                        nextId: 'inseventhMathscorrectq15',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhMathscorrectq15: {
+                  botPrompt: 'Hurray! <strong>25</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhMaths'+shuffleArraylottwo[16],
+                    },
+                  ],
+                  },
+                  inseventhMathscorrectq15: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"25"</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhMaths'+shuffleArraylottwo[16],
+                    },
+                  ],
+                  },
+                
+                
+                  //16
+                ['seventhMaths'+shuffleArraylottwo[16]]: {
+                  botPrompt: 'The product of additive inverse of 1 and its multiplicative inverse is',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['1', '0', "-1", "none of these"]),
+                    answers: [
+                      {
+                        answer: '1',
+                        nextId: 'inseventhMathscorrectq16',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: '0',
+                        nextId: 'inseventhMathscorrectq16',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "-1",
+                        nextId: 'seventhMathscorrectq16',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: "none of these",
+                        nextId: 'inseventhMathscorrectq16',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhMathscorrectq16: {
+                  botPrompt: 'Hurray! <strong>-1</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhMaths'+shuffleArraylottwo[17],
+                    },
+                  ],
+                  },
+                  inseventhMathscorrectq16: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"-1"</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhMaths'+shuffleArraylottwo[17],
+                    },
+                  ],
+                  },
+                
+                
+                  //17
+                ['seventhMaths'+shuffleArraylottwo[17]]: {
+                  botPrompt: 'Which of the following is a pair of complementary angles?',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['45° and 45°', '30° and 30°', "90° and 90°","120° and 60°"]),
+                    answers: [
+                      {
+                        answer: '45° and 45°',
+                        nextId: 'seventhMathscorrectq17',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: '30° and 30°',
+                        nextId: 'inseventhMathscorrectq17',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "90° and 90°",
+                        nextId: 'inseventhMathscorrectq17',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "120° and 60°",
+                        nextId: 'inseventhMathscorrectq17',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhMathscorrectq17: {
+                  botPrompt: 'Hurray! <strong>45° and 45°</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhMaths'+shuffleArraylottwo[18],
+                    },
+                  ],
+                  },
+                  inseventhMathscorrectq17: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"45° and 45°"</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhMaths'+shuffleArraylottwo[18],
+                    },
+                  ],
+                  },
+                
+                
+                  //18
+                ['seventhMaths'+shuffleArraylottwo[18]]: {
+                  botPrompt: 'If the radius of a circle is 6 cm, what is its circumference (rounded to the nearest centimeter)?',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['18 cm', '36 cm', "37 cm","38 cm"]),
+                    answers: [
+                      {
+                        answer: '18 cm',
+                        nextId: 'inseventhMathscorrectq18',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: '36 cm',
+                        nextId: 'inseventhMathscorrectq18',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "37 cm",
+                        nextId: 'inseventhMathscorrectq18',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "38 cm",
+                        nextId: 'seventhMathscorrectq18',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhMathscorrectq18: {
+                  botPrompt: 'Hurray! <strong>38 cm</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhMaths'+shuffleArraylottwo[19],
+                    },
+                  ],
+                  },
+                  inseventhMathscorrectq18: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"38 cm"</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhMaths'+shuffleArraylottwo[19],
+                    },
+                  ],
+                  },
+                
+                  //19
+                ['seventhMaths'+shuffleArraylottwo[19]]: {
+                  botPrompt: 'A triangle with all sides of different lengths is called:',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['Scalene', 'Isosceles', "Equilateral","Right-angled"]),
+                    answers: [
+                      {
+                        answer: 'Scalene',
+                        nextId: 'seventhMathscorrectq19',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: 'Isosceles',
+                        nextId: 'inseventhMathscorrectq19',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "Equilateral",
+                        nextId: 'inseventhMathscorrectq19',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "Right-angled",
+                        nextId: 'inseventhMathscorrectq19',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhMathscorrectq19: {
+                  botPrompt: 'Hurray! <strong>Scalene</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhMaths'+shuffleArraylottwo[20],
+                    },
+                  ],
+                  },
+                  inseventhMathscorrectq19: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Scalene"</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhMaths'+shuffleArraylottwo[20],
+                    },
+                  ],
+                  },
+                
+                  //20
+                ['seventhMaths'+shuffleArraylottwo[20]]: {
+                  botPrompt: 'What is the value of 4³?',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['12', '64', "16","256"]),
+                    answers: [
+                      {
+                        answer: '12',
+                        nextId: 'inseventhMathscorrectq20',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: '64',
+                        nextId: 'seventhMathscorrectq20',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: "16",
+                        nextId: 'inseventhMathscorrectq20',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "256",
+                        nextId: 'inseventhMathscorrectq20',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhMathscorrectq20: {
+                  botPrompt: 'Hurray! <strong>64</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'wishtocountineseventhMaths',
+                    },
+                  ],
+                  },
+                  inseventhMathscorrectq20: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"64"</strong>',
+                  answers: [
+                    {
+                      nextId: 'wishtocountineseventhMaths',
+                    },
+                  ],
+                  },
+                  wishtocountineseventhMaths: {
+                    botPrompt: 'You have Completed Maths. Do you Wish to Continue ?',
+                    type: RTypes.TRANSFORMED_TEXT,
+                    input: selectField(['Yes', "No"]),
+                    answers: [
+                      {
+                        answer: 'Yes',
+                        nextId: 'chooseclass',
+                      },
+                      {
+                        answer: "No",
+                        nextId: 'endConv',
+                      },
+                    
+                    ],
+                  },
+                  //science
+                  //1
+              ['seventhScience'+shuffleArraylottwo[1]]: {
+                botPrompt: 'Which mineral acid is a key component of acid rain?',
+                type: RTypes.TRANSFORMED_TEXT,
+                
+                input: selectField(['Sulphuric acid', 'Hydrochloric acid', "Nitric acid","Carbonic acid"]),
+                  answers: [
+                    {
+                      answer: 'Sulphuric acid',
+                      nextId: 'inseventhSciencecorrectq1',
+                      sumToBags: [{ name: 'ai', points: 1 }],
+                    },
+                    {
+                      answer: 'Hydrochloric acid',
+                      nextId: 'inseventhSciencecorrectq1',
+                      sumToBags: [{ name: 'ai', points: 1 }],
+                    },
+                    {
+                      answer: "Nitric acid",
+                      nextId: 'seventhSciencecorrectq1',
+                      sumToBags: [{ name: 'ac', points: 1 }],
+                    },
+                    {
+                      answer: "Carbonic acid",
+                      nextId: 'inseventhSciencecorrectq1',
+                      sumToBags: [{ name: 'ai', points: 1 }],
+                    },
+                  ],
+                },
+                
+                seventhSciencecorrectq1: {
+                botPrompt: 'Hurray! <strong>Nitric acid</strong> is the correct answer  ! 😎',
+                answers: [
+                  {
+                    nextId: 'seventhScience'+shuffleArraylottwo[2],
+                  },
+                ],
+                },
+                inseventhSciencecorrectq1: {
+                botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right/strong> answer is <strong>"Nitric acid"</strong>',
+                answers: [
+                  {
+                    nextId: 'seventhScience'+shuffleArraylottwo[2],
+                  },
+                ],
+                },
+                
+                
+                //2
+                ['seventhScience'+shuffleArraylottwo[2]]: {
+                  botPrompt: 'Which of the following is a strong base?',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['Ammonia (NH3)', 'Sodium hydroxide (NaOH)', "Calcium hydroxide (Ca(OH)2)","Acetic acid (CH3COOH)"]),
+                    answers: [
+                      {
+                        answer: 'Ammonia (NH3)',
+                        nextId: 'inseventhSciencecorrectq2',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: 'Sodium hydroxide (NaOH)',
+                        nextId: 'seventhSciencecorrectq2',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: "Calcium hydroxide (Ca(OH)2)",
+                        nextId: 'inseventhSciencecorrectq2',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "Acetic acid (CH3COOH)",
+                        nextId: 'inseventhSciencecorrectq2',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhSciencecorrectq2: {
+                  botPrompt: 'Hurray! <strong>Sodium hydroxide (NaOH)</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhScience'+shuffleArraylottwo[3],
+                    },
+                  ],
+                  },
+                  inseventhSciencecorrectq2: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Sodium hydroxide (NaOH)"</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhScience'+shuffleArraylottwo[3],
+                    },
+                  ],
+                  },
+                
+                  //3
+                ['seventhScience'+shuffleArraylottwo[3]]: {
+                  botPrompt: 'In an acidic solution, what color does phenolphthalein indicator display?',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['Colorless', 'Pink', "Yellow","Blue"]),
+                    answers: [
+                      {
+                        answer: 'Colorless',
+                        nextId: 'seventhSciencecorrectq3',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: 'Pink',
+                        nextId: 'inseventhSciencecorrectq3',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "Yellow",
+                        nextId: 'inseventhSciencecorrectq3',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "Blue",
+                        nextId: 'inseventhSciencecorrectq3',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhSciencecorrectq3: {
+                  botPrompt: 'Hurray! <strong>Colorless</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhScience'+shuffleArraylottwo[4],
+                    },
+                  ],
+                  },
+                  inseventhSciencecorrectq3: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Colorless"</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhScience'+shuffleArraylottwo[4],
+                    },
+                  ],
+                  },
+                
+                
+                //4
+                ['seventhScience'+shuffleArraylottwo[4]]: {
+                  botPrompt: 'When an acid reacts with a base in a neutralization reaction, the resulting pH is:',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['7', 'Less than 7', "Greater than 7","Variable depending on the acid and base used"]),
+                    answers: [
+                      {
+                        answer: '7',
+                        nextId: 'seventhSciencecorrectq4',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: 'Less than 7',
+                        nextId: 'inseventhSciencecorrectq4',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "Greater than 7",
+                        nextId: 'inseventhSciencecorrectq4',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "Variable depending on the acid and base used",
+                        nextId: 'inseventhSciencecorrectq4',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhSciencecorrectq4: {
+                  botPrompt: 'Hurray! <strong>7</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhScience'+shuffleArraylottwo[5],
+                    },
+                  ],
+                  },
+                  inseventhSciencecorrectq4: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"7"</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhScience'+shuffleArraylottwo[5],
+                    },
+                  ],
+                  },
+                
+                
+                
+                  //5
+                ['seventhScience'+shuffleArraylottwo[5]]: {
+                  botPrompt: 'What type of ions do salts typically consist of?',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['Cations and anions', 'Anions and isotopes', "Cations and isotopes","Cations and protons"]),
+                    answers: [
+                      {
+                        answer: 'Cations and anions',
+                        nextId: 'seventhSciencecorrectq5',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: 'Anions and isotopes',
+                        nextId: 'inseventhSciencecorrectq5',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "Cations and isotopes",
+                        nextId: 'inseventhSciencecorrectq5',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "Cations and protons",
+                        nextId: 'inseventhSciencecorrectq5',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhSciencecorrectq5: {
+                  botPrompt: 'Hurray! <strong>Cations and anions</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhScience'+shuffleArraylottwo[6],
+                    },
+                  ],
+                  },
+                  inseventhSciencecorrectq5: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Cations and anions"</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhScience'+shuffleArraylottwo[6],
+                    },
+                  ],
+                  },
+                
+                
+                  //6
+                ['seventhScience'+shuffleArraylottwo[6]]: {
+                  botPrompt: 'Which of the following is an example of a physical change?',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['Rusting of iron', 'Burning of wood', "Melting of ice","Digestion of food"]),
+                    answers: [
+                      {
+                        answer: 'Rusting of iron',
+                        nextId: 'inseventhSciencecorrectq6',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: 'Burning of wood',
+                        nextId: 'inseventhSciencecorrectq6',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "Melting of ice",
+                        nextId: 'seventhSciencecorrectq6',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: "Digestion of food",
+                        nextId: 'inseventhSciencecorrectq6',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhSciencecorrectq6: {
+                  botPrompt: 'Hurray! <strong>Melting of ice</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhScience'+shuffleArraylottwo[7],
+                    },
+                  ],
+                  },
+                  inseventhSciencecorrectq6: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Melting of ice"</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhScience'+shuffleArraylottwo[7],
+                    },
+                  ],
+                  },
+                
+                
+                
+                  //7
+                ['seventhScience'+shuffleArraylottwo[7]]: {
+                  botPrompt: 'In a double displacement reaction, what occurs between the reactants?',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['Exchange of ions', 'Formation of a precipitate', "Release of gas","All of the above"]),
+                    answers: [
+                      {
+                        answer: 'Exchange of ions',
+                        nextId: 'seventhSciencecorrectq7',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: 'Formation of a precipitate',
+                        nextId: 'inseventhSciencecorrectq7',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "Release of gas",
+                        nextId: 'inseventhSciencecorrectq7',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "All of the above",
+                        nextId: 'inseventhSciencecorrectq7',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhSciencecorrectq7: {
+                  botPrompt: 'Hurray! <strong>Exchange of ions</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhScience'+shuffleArraylottwo[8],
+                    },
+                  ],
+                  },
+                  inseventhSciencecorrectq7: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Exchange of ions"</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhScience'+shuffleArraylottwo[8],
+                    },
+                  ],
+                  },
+                
+                
+                  //8
+                ['seventhScience'+shuffleArraylottwo[8]]: {
+                  botPrompt: 'What is the key characteristic of a combination reaction?',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['Formation of new bonds', 'Breaking of existing bonds', "Release of energy","Change in color"]),
+                    answers: [
+                      {
+                        answer: 'Formation of new bonds',
+                        nextId: 'seventhSciencecorrectq8',
+                        sumToBags: [{ name: 'ao', points: 1 }],
+                      },
+                      {
+                        answer: 'Breaking of existing bonds',
+                        nextId: 'inseventhSciencecorrectq8',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "Release of energy",
+                        nextId: 'inseventhSciencecorrectq8',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "Change in color",
+                        nextId: 'inseventhSciencecorrectq8',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhSciencecorrectq8: {
+                  botPrompt: 'Hurray! <strong>Formation of new bonds</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhScience'+shuffleArraylottwo[9],
+                    },
+                  ],
+                  },
+                  inseventhSciencecorrectq8: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Formation of new bonds"</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhScience'+shuffleArraylottwo[9],
+                    },
+                  ],
+                  },
+                
+                
+                  //9
+                ['seventhScience'+shuffleArraylottwo[9]]: {
+                  botPrompt: 'Which factor affects the size of crystals during crystallization?',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['Rate of cooling', 'Volume of solvent', "Temperature of the solvent","Pressure applied"]),
+                    answers: [
+                      {
+                        answer: 'Rate of cooling',
+                        nextId: 'seventhSciencecorrectq9',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: 'Volume of solvent',
+                        nextId: 'inseventhSciencecorrectq9',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "Temperature of the solvent",
+                        nextId: 'inseventhSciencecorrectq9',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "Pressure applied",
+                        nextId: 'inseventhSciencecorrectq9',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhSciencecorrectq9: {
+                  botPrompt: 'Hurray! <strong>Rate of cooling</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhScience'+shuffleArraylottwo[10],
+                    },
+                  ],
+                  },
+                  inseventhSciencecorrectq9: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Rate of cooling"</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhScience'+shuffleArraylottwo[10],
+                    },
+                  ],
+                  },
+                
+                
+                
+                  //10
+                ['seventhScience'+shuffleArraylottwo[10]]: {
+                  botPrompt: 'The difference between the maximum and minimum temperature in a day is known as:',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['Temperature range', 'Temperature variation', "Temperature difference","All of the above"]),
+                    answers: [
+                      {
+                        answer: 'Temperature range',
+                        nextId: 'inseventhSciencecorrectq10',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: 'Temperature variation',
+                        nextId: 'inseventhSciencecorrectq10',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "Temperature difference",
+                        nextId: 'inseventhSciencecorrectq10',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "All of the above",
+                        nextId: 'seventhSciencecorrectq10',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhSciencecorrectq10: {
+                  botPrompt: 'Hurray! <strong>All of the above</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhScience'+shuffleArraylottwo[11],
+                    },
+                  ],
+                  },
+                  inseventhSciencecorrectq10: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"All of the above"</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhScience'+shuffleArraylottwo[11],
+                    },
+                  ],
+                  },
+                
+                
+                  //11
+                ['seventhScience'+shuffleArraylottwo[11]]: {
+                  botPrompt: 'The instrument used to measure humidity is called a:',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['Hygrometer', 'Thermometer', "Barometer","Anemometer"]),
+                    answers: [
+                      {
+                        answer: 'Hygrometer',
+                        nextId: 'seventhSciencecorrectq11',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: 'Thermometer',
+                        nextId: 'inseventhSciencecorrectq11',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "Barometer",
+                        nextId: 'inseventhSciencecorrectq11',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "Anemometer",
+                        nextId: 'inseventhSciencecorrectq11',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhSciencecorrectq11: {
+                  botPrompt: 'Hurray! <strong>Hygrometer</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhScience'+shuffleArraylottwo[12],
+                    },
+                  ],
+                  },
+                  inseventhSciencecorrectq11: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>Hygrometer</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhScience'+shuffleArraylottwo[12],
+                    },
+                  ],
+                  },
+                
+                
+                  //12
+                ['seventhScience'+shuffleArraylottwo[12]]: {
+                  botPrompt: 'The principle that explains why gases expand on heating is known as:',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(["Archimedes' principle", "Charles's law", "Pascal's principle","Boyle's law"]),
+                    answers: [
+                      {
+                        answer: "Archimedes' principle",
+                        nextId: 'inseventhSciencecorrectq12',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "Charles's law",
+                        nextId: 'seventhSciencecorrectq12',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: "Pascal's principle",
+                        nextId: 'inseventhSciencecorrectq12',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "Boyle's law",
+                        nextId: 'inseventhSciencecorrectq12',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhSciencecorrectq12: {
+                  botPrompt: "Hurray! <strong>Charles's law</strong> is the correct answer  ! 😎",
+                  answers: [
+                    {
+                      nextId: 'seventhScience'+shuffleArraylottwo[13],
+                    },
+                  ],
+                  },
+                  inseventhSciencecorrectq12: {
+                  botPrompt: "You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>Charles's law</strong>",
+                  answers: [
+                    {
+                      nextId: 'seventhScience'+shuffleArraylottwo[13],
+                    },
+                  ],
+                  },
+                
+                
+                  //13
+                ['seventhScience'+shuffleArraylottwo[13]]: {
+                  botPrompt: 'The movement of warm air upwards is driven by:',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['An increase in air pressure', 'A decrease in air pressure', "Changes in wind patterns","Gravity"]),
+                    answers: [
+                      {
+                        answer: 'An increase in air pressure',
+                        nextId: 'inseventhSciencecorrectq13',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: 'A decrease in air pressure',
+                        nextId: 'seventhSciencecorrectq13',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: "Changes in wind patterns",
+                        nextId: 'inseventhSciencecorrectq13',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "Gravity",
+                        nextId: 'inseventhSciencecorrectq13',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhSciencecorrectq13: {
+                  botPrompt: 'Hurray! <strong>A decrease in air pressure</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhScience'+shuffleArraylottwo[14],
+                    },
+                  ],
+                  },
+                  inseventhSciencecorrectq13: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"A decrease in air pressure"</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhScience'+shuffleArraylottwo[14],
+                    },
+                  ],
+                  },
+                
+                
+                  //14
+                ['seventhScience'+shuffleArraylottwo[14]]: {
+                  botPrompt: 'In a thunderstorm, what is the role of the downdraft?',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['It pushes warm air upwards', 'It creates a calm, clear area within the storm', "It generates lightning","It produces heavy rain"]),
+                    answers: [
+                      {
+                        answer: 'It pushes warm air upwards',
+                        nextId: 'inseventhSciencecorrectq14',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: 'It creates a calm, clear area within the storm',
+                        nextId: 'seventhSciencecorrectq14',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                      {
+                        answer: "It generates lightning",
+                        nextId: 'inseventhSciencecorrectq14',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "It produces heavy rain",
+                        nextId: 'inseventhSciencecorrectq14',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhSciencecorrectq14: {
+                  botPrompt: 'Hurray! <strong>It creates a calm, clear area within the storm</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'wishtocountineseventhScience',
+                    },
+                  ],
+                  },
+                  inseventhSciencecorrectq14: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"It creates a calm, clear area within the storm"</strong>',
+                  answers: [
+                    {
+                      nextId: 'wishtocountineseventhScience',
+                    },
+                  ],
+                },
+                wishtocountineseventhScience: {
+                  botPrompt: 'You have Completed Science. Do you Wish to Continue ?',
+                  type: RTypes.TRANSFORMED_TEXT,
+                  input: selectField(['Yes', "No"]),
+                  answers: [
+                    {
+                      answer: 'Yes',
+                      nextId: 'chooseclass',
+                    },
+                    {
+                      answer: "No",
+                      nextId: 'endConv',
+                    },
+                  
+                  ],
+                },
+              
+                //biology
+                //1
+                ['seventhBiology'+shuffleArraylottwo[1]]: {
+                  botPrompt: "Which compartment of the cow's stomach is most similar in function to a human stomach?",
+                  type: RTypes.TRANSFORMED_TEXT,
+                  
+                  input: selectField(['Rumen', 'Reticulum', "Omasum","Abomasum"]),
+                    answers: [
+                      {
+                        answer: 'Rumen',
+                        nextId: 'inseventhBiologycorrectq1',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: 'Reticulum',
+                        nextId: 'inseventhBiologycorrectq1',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "Omasum",
+                        nextId: 'inseventhBiologycorrectq1',
+                        sumToBags: [{ name: 'ai', points: 1 }],
+                      },
+                      {
+                        answer: "Abomasum",
+                        nextId: 'seventhBiologycorrectq1',
+                        sumToBags: [{ name: 'ac', points: 1 }],
+                      },
+                    ],
+                  },
+                  
+                  seventhBiologycorrectq1: {
+                  botPrompt: 'Hurray! <strong>Abomasum</strong> is the correct answer  ! 😎',
+                  answers: [
+                    {
+                      nextId: 'seventhBiology'+shuffleArraylottwo[2],
+                    },
+                  ],
+                  },
+                  inseventhBiologycorrectq1: {
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right/strong> answer is <strong>"Abomasum"</strong>',
+                  answers: [
+                    {
+                      nextId: 'seventhBiology'+shuffleArraylottwo[2],
+                    },
+                  ],
+                  },
+                  
+                  
+                  //2
+                  ['seventhBiology'+shuffleArraylottwo[2]]: {
+                    botPrompt: 'What is the primary pigment responsible for capturing light energy during photosynthesis?',
+                    type: RTypes.TRANSFORMED_TEXT,
+                    
+                    input: selectField(['Chlorophyll', 'Carotene', "Xanthophyll","0Anthocyanin"]),
+                      answers: [
+                        {
+                          answer: 'Chlorophyll',
+                          nextId: 'seventhBiologycorrectq2',
+                          sumToBags: [{ name: 'ac', points: 1 }],
+                        },
+                        {
+                          answer: 'Carotene',
+                          nextId: 'inseventhBiologycorrectq2',
+                          sumToBags: [{ name: 'ac', points: 1 }],
+                        },
+                        {
+                          answer: "Xanthophyll",
+                          nextId: 'inseventhBiologycorrectq2',
+                          sumToBags: [{ name: 'ai', points: 1 }],
+                        },
+                        {
+                          answer: "Anthocyanin",
+                          nextId: 'inseventhBiologycorrectq2',
+                          sumToBags: [{ name: 'ai', points: 1 }],
+                        },
+                      ],
+                    },
+                    
+                    seventhBiologycorrectq2: {
+                    botPrompt: 'Hurray! <strong>Chlorophyll</strong> is the correct answer  ! 😎',
+                    answers: [
+                      {
+                        nextId: 'seventhBiology'+shuffleArraylottwo[3],
+                      },
+                    ],
+                    },
+                    inseventhBiologycorrectq2: {
+                    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Chlorophyll"</strong>',
+                    answers: [
+                      {
+                        nextId: 'seventhBiology'+shuffleArraylottwo[3],
+                      },
+                    ],
+                    },
+                  
+                    //3
+                  ['seventhBiology'+shuffleArraylottwo[3]]: {
+                    botPrompt: 'Which type of respiration, aerobic or anaerobic, produces more ATP (energy) per glucose molecule?',
+                    type: RTypes.TRANSFORMED_TEXT,
+                    
+                    input: selectField(['Aerobic respiration', 'Anaerobic respiration', "Both produce the same amount of ATP","Neither produces ATP"]),
+                      answers: [
+                        {
+                          answer: 'Aerobic respiration',
+                          nextId: 'seventhBiologycorrectq3',
+                          sumToBags: [{ name: 'ac', points: 1 }],
+                        },
+                        {
+                          answer: 'Anaerobic respiration',
+                          nextId: 'inseventhBiologycorrectq3',
+                          sumToBags: [{ name: 'ai', points: 1 }],
+                        },
+                        {
+                          answer: "Both produce the same amount of ATP",
+                          nextId: 'inseventhBiologycorrectq3',
+                          sumToBags: [{ name: 'ai', points: 1 }],
+                        },
+                        {
+                          answer: "Neither produces ATP",
+                          nextId: 'inseventhBiologycorrectq3',
+                          sumToBags: [{ name: 'ai', points: 1 }],
+                        },
+                      ],
+                    },
+                    
+                    seventhBiologycorrectq3: {
+                    botPrompt: 'Hurray! <strong>Aerobic respiration</strong> is the correct answer  ! 😎',
+                    answers: [
+                      {
+                        nextId: 'seventhBiology'+shuffleArraylottwo[4],
+                      },
+                    ],
+                    },
+                    inseventhBiologycorrectq3: {
+                    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Aerobic respiration"</strong>',
+                    answers: [
+                      {
+                        nextId: 'seventhBiology'+shuffleArraylottwo[4],
+                      },
+                    ],
+                    },
+                  
+                  
+                  //4
+                  ['seventhBiology'+shuffleArraylottwo[4]]: {
+                    botPrompt: 'Which of the following is an example of a plant propagation method that does NOT involve seeds?',
+                    type: RTypes.TRANSFORMED_TEXT,
+                    
+                    input: selectField(['Germination', 'Vegetative propagation', "Pollination","Fertilization"]),
+                      answers: [
+                        {
+                          answer: 'Germination',
+                          nextId: 'inseventhBiologycorrectq4',
+                          sumToBags: [{ name: 'ai', points: 1 }],
+                        },
+                        {
+                          answer: 'Vegetative propagation',
+                          nextId: 'seventhBiologycorrectq4',
+                          sumToBags: [{ name: 'ac', points: 1 }],
+                        },
+                        {
+                          answer: "Pollination",
+                          nextId: 'inseventhBiologycorrectq4',
+                          sumToBags: [{ name: 'ai', points: 1 }],
+                        },
+                        {
+                          answer: "Fertilization",
+                          nextId: 'inseventhBiologycorrectq4',
+                          sumToBags: [{ name: 'ai', points: 1 }],
+                        },
+                      ],
+                    },
+                    
+                    seventhBiologycorrectq4: {
+                    botPrompt: 'Hurray! <strong>Vegetative propagation</strong> is the correct answer  ! 😎',
+                    answers: [
+                      {
+                        nextId: 'seventhBiology'+shuffleArraylottwo[5],
+                      },
+                    ],
+                    },
+                    inseventhBiologycorrectq4: {
+                    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Vegetative propagation"</strong>',
+                    answers: [
+                      {
+                        nextId: 'seventhBiology'+shuffleArraylottwo[5],
+                      },
+                    ],
+                    },
+                  
+                  
+                  
+                    //5
+                  ['seventhBiology'+shuffleArraylottwo[5]]: {
+                    botPrompt: 'What is the term for the process by which plants release water vapor into the atmosphere through tiny openings in their leaves?',
+                    type: RTypes.TRANSFORMED_TEXT,
+                    
+                    input: selectField(['Transpiration', 'Evaporation', "Sublimation","Precipitation"]),
+                      answers: [
+                        {
+                          answer: 'Transpiration',
+                          nextId: 'seventhBiologycorrectq5',
+                          sumToBags: [{ name: 'aC', points: 1 }],
+                        },
+                        {
+                          answer: 'Evaporation',
+                          nextId: 'inseventhBiologycorrectq5',
+                          sumToBags: [{ name: 'ai', points: 1 }],
+                        },
+                        {
+                          answer: "Sublimation",
+                          nextId: 'inseventhBiologycorrectq5',
+                          sumToBags: [{ name: 'ai', points: 1 }],
+                        },
+                        {
+                          answer: "Precipitation",
+                          nextId: 'inseventhBiologycorrectq5',
+                          sumToBags: [{ name: 'ai', points: 1 }],
+                        },
+                      ],
+                    },
+                    
+                    seventhBiologycorrectq5: {
+                    botPrompt: 'Hurray! <strong>Transpiration</strong> is the correct answer  ! 😎',
+                    answers: [
+                      {
+                        nextId: 'seventhBiology'+shuffleArraylottwo[6],
+                      },
+                    ],
+                    },
+                    inseventhBiologycorrectq5: {
+                    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Transpiration"</strong>',
+                    answers: [
+                      {
+                        nextId: 'seventhBiology'+shuffleArraylottwo[6],
+                      },
+                    ],
+                    },
+                  
+                  
+                    //6
+                  ['seventhBiology'+shuffleArraylottwo[6]]: {
+                    botPrompt: 'Which of the following is NOT a component of the forest floor layer?',
+                    type: RTypes.TRANSFORMED_TEXT,
+                    
+                    input: selectField(['Mosses and lichens', 'Leaf litter and decomposing organic matter', "Tree trunks and large branches","Various types of fungi"]),
+                      answers: [
+                        {
+                          answer: 'Mosses and lichens',
+                          nextId: 'inseventhBiologycorrectq6',
+                          sumToBags: [{ name: 'ai', points: 1 }],
+                        },
+                        {
+                          answer: 'Leaf litter and decomposing organic matter',
+                          nextId: 'inseventhBiologycorrectq6',
+                          sumToBags: [{ name: 'ai', points: 1 }],
+                        },
+                        {
+                          answer: "Tree trunks and large branches",
+                          nextId: 'seventhBiologycorrectq6',
+                          sumToBags: [{ name: 'ac', points: 1 }],
+                        },
+                        {
+                          answer: "Various types of fungi",
+                          nextId: 'inseventhBiologycorrectq6',
+                          sumToBags: [{ name: 'ai', points: 1 }],
+                        },
+                      ],
+                    },
+                    
+                    seventhBiologycorrectq6: {
+                    botPrompt: 'Hurray! <strong>Tree trunks and large branches</strong> is the correct answer  ! 😎',
+                    answers: [
+                      {
+                          nextId: 'wishtocountineseventhBiology'+shuffleArraylottwo[7],
+                      },
+                    ],
+                    },
+                    inseventhBiologycorrectq6: {
+                    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Tree trunks and large branches"</strong>',
+                    answers: [
+                      {
+                          nextId: 'wishtocountineseventhBiology'+shuffleArraylottwo[7],
+                      },
+                    ],
+                    },
+                    wishtocountineseventhBiology: {
+                      botPrompt: 'You have Completed Biology. Do you Wish to Continue ?',
+                      type: RTypes.TRANSFORMED_TEXT,
+                      input: selectField(['Yes', "No"]),
+                      answers: [
+                        {
+                          answer: 'Yes',
+                          nextId: 'chooseclass',
+                        },
+                        {
+                          answer: "No",
+                          nextId: 'endConv',
+                        },
+                      
+                      ],
+                    },
+                  
+                  
   //1
 ['eightMaths'+shuffleArraylottwo[1]]: {
   botPrompt: 'If a cube has a volume of 64 cubic centimeters, what is the length of each side?',
