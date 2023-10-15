@@ -222,6 +222,18 @@ chooseclass: {
       nextId: 'choosestate',
     },
     {
+      answer: 'Pre-KG',
+      nextId: 'classprekg',
+    },
+    {
+      answer: 'L.K.G',
+      nextId: 'classlkg',
+    },
+    {
+      answer: 'U.K.G',
+      nextId: 'classukg',
+    },
+    {
       answer: 'CLASS I',
       nextId: 'classi',
     },
@@ -252,6 +264,14 @@ chooseclass: {
     {
       answer: 'CLASS VIII',
       nextId: 'classviii',
+    },
+    {
+      answer: 'CLASS IX',
+      nextId: 'classix',
+    },
+    {
+      answer: 'CLASS X',
+      nextId: 'classx',
     },
    
   ],
@@ -2243,6 +2263,64 @@ thatq: {
 
 
 //shuffletwostart
+
+
+//classprekg
+classprekg: {
+  botPrompt: 'There is no content in Pre-KG fo now. Do you Wish to Continue ?',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['Yes', "No"]),
+    answers: [
+      {
+        answer: 'Yes',
+        nextId: 'chooseclass',
+      },
+      {
+        answer: "No",
+        nextId: 'endConv',
+      },
+    
+    ],
+
+},
+
+//classukg
+classukg: {
+  botPrompt: 'There is no content in U.K.G fo now. Do you Wish to Continue ?',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['Yes', "No"]),
+    answers: [
+      {
+        answer: 'Yes',
+        nextId: 'chooseclass',
+      },
+      {
+        answer: "No",
+        nextId: 'endConv',
+      },
+    
+    ],
+
+},
+
+//classlkg
+classlkg: {
+  botPrompt: 'There is no content in L.K.G fo now. Do you Wish to Continue ?',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['Yes', "No"]),
+    answers: [
+      {
+        answer: 'Yes',
+        nextId: 'chooseclass',
+      },
+      {
+        answer: "No",
+        nextId: 'endConv',
+      },
+    
+    ],
+
+},
 
 //classi
 classi: {
@@ -19747,7 +19825,7 @@ classviii: {
                   botPrompt: 'Which of the following verbs is ALWAYS intransitive?',
                   type: RTypes.TRANSFORMED_TEXT,
                   
-                  input: selectField(['Swim', 'Break', "Hit","Read"]),
+                  input: selectField(['Swim', 'Break', "Hit", "Read"]),
                     answers: [
                       {
                         answer: 'Swim',
@@ -24639,6 +24717,44 @@ wishtocontinueeightEnglish: {
     
     ],
   },
+
+  //classix
+classix: {
+  botPrompt: 'There is no content in Clss IX for now. Do you Wish to Continue ?',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['Yes', "No"]),
+    answers: [
+      {
+        answer: 'Yes',
+        nextId: 'chooseclass',
+      },
+      {
+        answer: "No",
+        nextId: 'endConv',
+      },
+    
+    ],
+
+},
+
+//classx
+classx: {
+  botPrompt: 'There is no content in Clss X for now. Do you Wish to Continue ?',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['Yes', "No"]),
+    answers: [
+      {
+        answer: 'Yes',
+        nextId: 'chooseclass',
+      },
+      {
+        answer: "No",
+        nextId: 'endConv',
+      },
+    
+    ],
+
+},
 
 //shuffletwoend
 
