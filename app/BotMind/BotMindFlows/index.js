@@ -12144,15 +12144,15 @@ classvi: {
       nextId: 'sixthMaths'+randomNumberclass,
     },
     {
-      answer: "English",
+      answer: 'English',
       nextId: 'sixthEnglish'+randomNumberclass,
     },
     {
-      answer: "Science",
-      nextid: 'sixthScience'+randomNumberclass,
+      answer: 'Science',
+      nextId: 'sixthScience'+randomNumberclass,
     },
-  
-  ],
+    
+    ],
 },
 
 
