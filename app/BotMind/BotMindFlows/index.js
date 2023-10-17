@@ -1604,7 +1604,7 @@ answers: [
     botPrompt: 'What is the sum of digits at the tens and hundreds place in the number 387?',
     type: RTypes.TRANSFORMED_TEXT,
     
-    input: selectField(['6', '10', "15","18"]),
+    input: selectField(['6', '10', "11","18"]),
       answers: [
         {
           answer: '6',
@@ -1617,7 +1617,7 @@ answers: [
           sumToBags: [{ name: 'ai', points: 1 }],
         },
         {
-          answer: "15",
+          answer: "11",
           nextId: 'onceTensHundredscorrectq29',
           sumToBags: [{ name: 'ac', points: 1 }],
         },
@@ -1630,7 +1630,7 @@ answers: [
     },
     
     onceTensHundredscorrectq29: {
-    botPrompt: 'Hurray! <strong>15</strong> is the correct answer  ! 😎',
+    botPrompt: 'Hurray! <strong>11</strong> is the correct answer  ! 😎',
     answers: [
       {
         nextId: 'fln'+shuffleArraylot[29],
@@ -1638,7 +1638,7 @@ answers: [
     ],
     },
     inonceTensHundredscorrectq29: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"15"</strong>',
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"11"</strong>',
     answers: [
       {
         nextId: 'fln'+shuffleArraylot[29],
@@ -19781,10 +19781,10 @@ classviii: {
                   botPrompt: 'The product of additive inverse of 1 and its multiplicative inverse is',
                   type: RTypes.TRANSFORMED_TEXT,
                   
-                  input: selectField(['1', '0', "-1", "none of these"]),
+                  input: selectField(['2', '0', "-1", "none of these"]),
                     answers: [
                       {
-                        answer: '1',
+                        answer: '2',
                         nextId: 'inseventhMathscorrectq16',
                         sumToBags: [{ name: 'ai', points: 1 }],
                       },
