@@ -222,7 +222,7 @@ chooseclass: {
       nextId: 'choosestate',
     },
     {
-      answer: 'Pre-KG',
+      answer: 'Pre-kG',
       nextId: 'classprekg',
     },
     {
@@ -2256,7 +2256,8 @@ thatq: {
     {
       answer: common_greetings_negative,
       catchTFID: true,
-      nextId: 'endConv',
+      nextId: 'chooseclass',
+      
     },
   ],
 },
@@ -2746,12 +2747,12 @@ classi: {
             },
             {
               answer: 'Proper noun',
-              nextId: 'infirstEnglishcorrectq10',
+              nextId: 'firstEnglishcorrectq10',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
             {
               answer: "Animal noun",
-              nextId: 'firstEnglishcorrectq10',
+              nextId: 'infirstEnglishcorrectq10',
               sumToBags: [{ name: 'ac', points: 1 }],
             },
             
@@ -2759,7 +2760,7 @@ classi: {
         },
         
         firstEnglishcorrectq10: {
-        botPrompt: 'Hurray! <strong>Animal noun</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>Proper noun</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'firstEnglish'+shuffleArraylottwo[11],
@@ -2767,7 +2768,7 @@ classi: {
         ],
         },
         infirstEnglishcorrectq10: {
-        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Animal Nouns"</strong>',
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Proper noun"</strong>',
         answers: [
           {
             nextId: 'firstEnglish'+shuffleArraylottwo[11],
@@ -2960,7 +2961,7 @@ classi: {
         input: selectField(['Adjectives', 'Verbs', "Pronouns"]),
           answers: [
             {
-              answer: ' Adjectives',
+              answer: 'Adjectives',
               nextId: 'infirstEnglishcorrectq15',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
@@ -3003,10 +3004,10 @@ classi: {
         botPrompt: 'What are words like "jump," "eat," and "dance" called?',
         type: RTypes.TRANSFORMED_TEXT,
         
-        input: selectField(['Nouns', ' Verbs', "Adverbs"]),
+        input: selectField(['Nouns', 'Verbs', "Adverbs"]),
           answers: [
             {
-              answer: ' Nouns',
+              answer: 'Nouns',
               nextId: 'infirstEnglishcorrectq16',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
@@ -3047,7 +3048,7 @@ classi: {
         botPrompt: 'Which word is a verb in this sentence: "The big dog barked loudly"?',
         type: RTypes.TRANSFORMED_TEXT,
         
-        input: selectField(['big', 'dog', "Adverbs"]),
+        input: selectField(['big', 'dog', "barked"]),
           answers: [
             {
               answer: 'big',
@@ -3201,7 +3202,7 @@ classi: {
         },
         
         firstEnglishcorrectq20: {
-        botPrompt: 'Hurray! <strong>AdvAdjective</strong> is the correct answer  ! 😎',
+        botPrompt: 'Hurray! <strong>Adjective</strong> is the correct answer  ! 😎',
         answers: [
           {
             nextId: 'wishtocountinefirstenglish',
@@ -3209,7 +3210,7 @@ classi: {
         ],
         },
         infirstEnglishcorrectq16: {
-        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"AdvAdjective"</strong>',
+        botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Adjective"</strong>',
         answers: [
           {
             nextId: 'wishtocountinefirstenglish',
@@ -3597,7 +3598,7 @@ classi: {
             sumToBags: [{ name: 'ai', points: 1 }],
           },
           {
-            answer: '70 ',
+            answer: '70',
             nextId: 'infirstMathscorrectq9',
             sumToBags: [{ name: 'ai', points: 1 }],
           },
@@ -3767,7 +3768,7 @@ classi: {
         input: selectField(['4', '5', "6"]),
           answers: [
             {
-              answer: ' 4',
+              answer: '4',
               nextId: 'firstMathscorrectq13',
               sumToBags: [{ name: 'ac', points: 1 }],
             },
@@ -3989,7 +3990,7 @@ classi: {
         input: selectField(['34', '44', "54"]),
           answers: [
             {
-              answer: ' 34',
+              answer: '34',
               nextId: 'firstMathscorrectq18',
               sumToBags: [{ name: 'ac', points: 1 }],
             },
@@ -5700,7 +5701,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         input: selectField(['rectangle', 'square', "triangle", "cone"]),
           answers: [
             {
-              answer: 'rectagle',
+              answer: 'rectangle',
               nextId: 'insecondMathscorrectq13',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
@@ -6721,7 +6722,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
               botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"24cm"</strong>',
               answers: [
                 {
-                  nextId: 'thirdMaths'+shuffleArraylot[1321],
+                  nextId: 'thirdMaths'+shuffleArraylot[13],
                 },
               ],
               },
@@ -7108,7 +7109,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                 },
               ],
               },
-              inthirdMathscorrectq16: {
+              inthirdMathscorrectq20: {
               botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"82251"</strong>',
               answers: [
                 {
@@ -19395,7 +19396,7 @@ classviii: {
                   botPrompt: '(3⁰ × 4⁰ × 5⁰) = ?',
                   type: RTypes.TRANSFORMED_TEXT,
                   
-                  input: selectField(['1', '12⁰', "12","both (a) and (b)"]),
+                  input: selectField(['1', '12⁰', "15","both (a) and (b)"]),
                     answers: [
                       {
                         answer: '1',
@@ -19408,7 +19409,7 @@ classviii: {
                         sumToBags: [{ name: 'ai', points: 1 }],
                       },
                       {
-                        answer: "12",
+                        answer: "15",
                         nextId: 'inseventhMathscorrectq8',
                         sumToBags: [{ name: 'ai', points: 1 }],
                       },
@@ -19443,7 +19444,7 @@ classviii: {
                   botPrompt: '7xy - (-8xy) = ?',
                   type: RTypes.TRANSFORMED_TEXT,
                   
-                  input: selectField(['15xy', '-15xy', "xy","23xy"]),
+                  input: selectField(['15xy', '-16xy', "xy","23xy"]),
                     answers: [
                       {
                         answer: '15xy',
@@ -19451,7 +19452,7 @@ classviii: {
                         sumToBags: [{ name: 'ac', points: 1 }],
                       },
                       {
-                        answer: '-15xy',
+                        answer: '-16xy',
                         nextId: 'inseventhMathscorrectq9',
                         sumToBags: [{ name: 'ai', points: 1 }],
                       },
@@ -19492,7 +19493,7 @@ classviii: {
                   botPrompt: 'If 3a - 5 = 1, then a = ?',
                   type: RTypes.TRANSFORMED_TEXT,
                   
-                  input: selectField(['6', '-6', "2","-2"]),
+                  input: selectField(['6', '-7', "2","-8"]),
                     answers: [
                       {
                         answer: '6',
@@ -19500,7 +19501,7 @@ classviii: {
                         sumToBags: [{ name: 'ai', points: 1 }],
                       },
                       {
-                        answer: '-6',
+                        answer: '-7',
                         nextId: 'inseventhMathscorrectq10',
                         sumToBags: [{ name: 'ai', points: 1 }],
                       },
@@ -19510,7 +19511,7 @@ classviii: {
                         sumToBags: [{ name: 'ac', points: 1 }],
                       },
                       {
-                        answer: "-2",
+                        answer: "-8",
                         nextId: 'inseventhMathscorrectq10',
                         sumToBags: [{ name: 'ai', points: 1 }],
                       },
@@ -21632,7 +21633,7 @@ answers: [
 botPrompt: ' 0.0000123 written in standard form is ____________.',
 type: RTypes.TRANSFORMED_TEXT,
 
-input: selectField(['123*10^-5', '123*10^5', "12.3*10^5", "1.23*10^5"]),
+input: selectField(['123*10^-5', '123*11^5', "12.3*10^15", "1.23*12^5"]),
   answers: [
     {
       answer: '123*10^-5',
@@ -21640,17 +21641,17 @@ input: selectField(['123*10^-5', '123*10^5', "12.3*10^5", "1.23*10^5"]),
       sumToBags: [{ name: 'ac', points: 1 }],
     },
     {
-      answer: '123*10^5',
+      answer: '123*11^5',
       nextId: 'ineightMathscorrectq14',
       sumToBags: [{ name: 'ai', points: 1 }],
     },
     {
-      answer: "12.3*10^5",
+      answer: "12.3*10^15",
       nextId: 'ineightMathscorrectq14',
       sumToBags: [{ name: 'ai', points: 1 }],
     },
     {
-      answer: "1.23*10^5",
+      answer: "1.23*12^5",
       nextId: 'ineightMathscorrectq14',
       sumToBags: [{ name: 'ai', points: 1 }],
     },
@@ -21726,7 +21727,7 @@ answers: [
 botPrompt: '8a²b³ ÷ (-2ab) = ?',
 type: RTypes.TRANSFORMED_TEXT,
 
-input: selectField(['ab²', '4a²b', "-4ab²","-4a²b"]),
+input: selectField(['ab²', '2a²b', "-4ab²","-a²b"]),
   answers: [
     {
       answer: 'ab²',
@@ -21734,7 +21735,7 @@ input: selectField(['ab²', '4a²b', "-4ab²","-4a²b"]),
       sumToBags: [{ name: 'ai', points: 1 }],
     },
     {
-      answer: '4a²b',
+      answer: '2a²b',
       nextId: 'ineightMathscorrectq16',
       sumToBags: [{ name: 'ai', points: 1 }],
     },
@@ -21744,7 +21745,7 @@ input: selectField(['ab²', '4a²b', "-4ab²","-4a²b"]),
       sumToBags: [{ name: 'ac', points: 1 }],
     },
     {
-      answer: "-4a²b",
+      answer: "-3a²b",
       nextId: 'ineightMathscorrectq16',
       sumToBags: [{ name: 'ac', points: 1 }],
     },
@@ -21773,10 +21774,10 @@ answers: [
 botPrompt: '(8/-15 + 4/-3) = ?',
 type: RTypes.TRANSFORMED_TEXT,
 
-input: selectField(['28/15', '-28/15', "-4/5","-4/15"]),
+input: selectField(['30/15', '-28/15', "-4/5","-4/15"]),
   answers: [
     {
-      answer: '28/15',
+      answer: '30/15',
       nextId: 'ineightMathscorrectq17',
       sumToBags: [{ name: 'ai', points: 1 }],
     },
@@ -21910,7 +21911,7 @@ answers: [
 },
 //20
 ['eightMaths'+shuffleArraylottwo[20]]: {
-botPrompt: 'What is the square root of 81²?',
+botPrompt: 'What is the square root of 81?',
 type: RTypes.TRANSFORMED_TEXT,
 
 input: selectField(['81', '9', "729","6561"]),
