@@ -7333,10 +7333,10 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                     botPrompt: 'Which of these is a natural source of clothing material?',
                     type: RTypes.TRANSFORMED_TEXT,
                     
-                    input: selectField(['Plastic,', 'Nylon', "Wool",'Rubber']),
+                    input: selectField(['Plastic', 'Nylon', "Wool",'Rubber']),
                       answers: [
                         {
-                          answer: 'Plastic,',
+                          answer: 'Plastic',
                           nextId: 'thirdSciencecorrectq5',
                           sumToBags: [{ name: 'ac', points: 1 }],
                         },
@@ -7919,7 +7919,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                       botPrompt: 'Which of the following is a source of sound?',
                       type: RTypes.TRANSFORMED_TEXT,
                       
-                      input: selectField(['Sun', 'Moo', "Guitar",'Star']),
+                      input: selectField(['Sun', 'Moon', "Guitar",'Star']),
                         answers: [
                           {
                             answer: 'Sun',
@@ -8052,7 +8052,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                       ],
                       },
                       inthirdSciencecorrectq19: {
-                      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5Solar energy"</strong>',
+                      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Solar energy"</strong>',
                       answers: [
                         {
                           nextId: 'thirdScience'+shuffleArraylot[20],
@@ -8995,7 +8995,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                                 },
                               ],
                               },
-                              inthirdEnglishcorrectq16: {
+                              inthirdEnglishcorrectq20: {
                               botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"They are playing in the garden"</strong>',
                               answers: [
                                 {
@@ -9844,7 +9844,7 @@ classiv: {
             sumToBags: [{ name: 'ac', points: 1 }],
           },
           {
-            answer: 'Evaporaton',
+            answer: 'Evaporation',
             nextId: 'infourthSciencecorrectq17',
             sumToBags: [{ name: 'ai', points: 1 }],
           },
@@ -16588,7 +16588,7 @@ classvi: {
               botPrompt: 'They _______ playing in the park yesterday.',
               type: RTypes.TRANSFORMED_TEXT,
               
-              input: selectField(['Will be', 'Are', "Were",  "Will"]),
+              input: selectField(['Will be', 'Are', "Were", "Will"]),
                 answers: [
                   {
                     answer: 'Will be',
@@ -18021,7 +18021,7 @@ classvi: {
       
           ],
           },
-          wishtocountinesixthScience: {
+          wishtocontinuesixthScience: {
             botPrompt: 'You have Completed Science. Do you Wish to Continue ?',
             type: RTypes.TRANSFORMED_TEXT,
             input: selectField(['Yes', "No"]),
@@ -21261,7 +21261,7 @@ answers: [
 ['eightMaths'+shuffleArraylottwo[6]]: {
 botPrompt: 'Factorise:  (mn + n) + m + 1',
 type: RTypes.TRANSFORMED_TEXT,
-input: selectField(['(mn+1)(m+n)', '(mn + m)(n + 1)', "n(m + 1)"," (n + 1)(m + 1)"]),
+input: selectField(['(mn+1)(m+n)', '(mn + m)(n + 1)', "n(m + 1)","(n + 1)(m + 1)"]),
   answers: [
     {
       answer: '(mn + 1)(m + n)',
@@ -21279,7 +21279,7 @@ input: selectField(['(mn+1)(m+n)', '(mn + m)(n + 1)', "n(m + 1)"," (n + 1)(m + 1
       sumToBags: [{ name: 'ai', points: 1 }],
     },
     {
-      answer: " (n + 1)(m + 1)",
+      answer: "(n + 1)(m + 1)",
       nextId: 'eightMathscorrectq6',
       sumToBags: [{ name: 'ac', points: 1 }],
     },
@@ -21726,10 +21726,10 @@ answers: [
 botPrompt: '8a²b³ ÷ (-2ab) = ?',
 type: RTypes.TRANSFORMED_TEXT,
 
-input: selectField([' ab²', '4a²b', "-4ab²","-4a²b"]),
+input: selectField(['ab²', '4a²b', "-4ab²","-4a²b"]),
   answers: [
     {
-      answer: ' ab²',
+      answer: 'ab²',
       nextId: 'ineightMathscorrectq16',
       sumToBags: [{ name: 'ai', points: 1 }],
     },
