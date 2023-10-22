@@ -4901,7 +4901,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
       ],
       },
       insecondEnglishcorrectq16: {
-      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"ran"</strong>',
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"and"</strong>',
       answers: [
         {
           nextId: 'secondEnglish'+shuffleArraylottwo[17],
