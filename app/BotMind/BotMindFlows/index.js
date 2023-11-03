@@ -13338,7 +13338,7 @@ classiv: {
         botPrompt: 'What type of triangle has at least two sides of equal length?',
         type: RTypes.TRANSFORMED_TEXT,
         
-        input: selectField(['Scalene triangle', 'Isosceles triangle', "Equilateral triangle","Right triangle"]),
+        input: selectField(['Scalene triangle', 'Isosceles triangle', "Equilateral triangle", "Right triangle"]),
           answers: [
             {
               answer: 'Scalene triangle',
@@ -13356,7 +13356,7 @@ classiv: {
               sumToBags: [{ name: 'ai', points: 1 }],
             },
             {
-              answer: "Right triangle..",
+              answer: "Right triangle",
               nextId: 'infiveMathscorrectq7',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
@@ -15207,7 +15207,7 @@ classvi: {
       botPrompt: 'The successor of -89 is',
       type: RTypes.TRANSFORMED_TEXT,
       
-      input: selectField(['-90', '-88', "90", "88"]),
+      input: selectField(['-90', '-88', '90', '88']),
         answers: [
           {
             answer: '-90',
@@ -15220,12 +15220,12 @@ classvi: {
             sumToBags: [{ name: 'ac', points: 1 }],
           },
           {
-            answer: "90", 
+            answer: '90', 
             nextId: 'insixthMathscorrectq4',
             sumToBags: [{ name: 'ai', points: 1 }],
           },
           {
-            answer: "88", 
+            answer: '88', 
             nextId: 'insixthMathscorrectq4',
             sumToBags: [{ name: 'ai', points: 1 }],
           },
