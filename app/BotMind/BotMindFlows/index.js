@@ -3205,7 +3205,7 @@ classi: {
         botPrompt: 'Hurray! <strong>Adjective</strong> is the correct answer  ! 😎',
         answers: [
           {
-            nextId: 'wishtocountinefirstenglish',
+            nextId: 'wishtocountinuefirstEnglish',
           },
         ],
         },
@@ -3213,12 +3213,12 @@ classi: {
         botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Adjective"</strong>',
         answers: [
           {
-            nextId: 'wishtocountinefirstenglish',
+            nextId: 'wishtocountinuefirstEnglish',
           },
         ],
         },
 
-        wishtocountinefirstEnglish: {
+        wishtocountinuefirstEnglish: {
           botPrompt: 'You have Completed English. Do you Wish to Continue ?',
           type: RTypes.TRANSFORMED_TEXT,
           input: selectField(['Yes', "No"]),
@@ -6129,7 +6129,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         input: selectField(['Maths', "English", "Science"]),
         answers: [
           {
-            answer: 'Maths',
+            answer: "Maths",
             nextId: "thirdMaths"+randomNumberclass,
           },
           {
@@ -7780,7 +7780,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                           },
                           {
                             answer: 'Burning plastic bags',
-                            nextId: 'infinirstMathscorrectq14',
+                            nextId: 'inthirdSciencecorrectq14',
                             sumToBags: [{ name: 'ai', points: 1 }],
                           },
                           {
@@ -7973,7 +7973,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                         answers: [
                           {
                             answer: 'Sun',
-                            nextId: 'thirdSciencecorrectq18',
+                            nextId: 'inthirdSciencecorrectq18',
                             sumToBags: [{ name: 'ac', points: 1 }],
                           },
                           {
@@ -7983,7 +7983,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                           },
                           {
                             answer: "Tree",
-                            nextId: 'inthirdSciencecorrectq18',
+                            nextId: 'thirdSciencecorrectq18',
                             sumToBags: [{ name: 'ai', points: 1 }],
                           },
                           {
@@ -7996,7 +7996,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                       },
                       
                       thirdSciencecorrectq18: {
-                      botPrompt: 'Hurray! <strong>Sun</strong> is the correct answer  ! 😎',
+                      botPrompt: 'Hurray! <strong>Tree</strong> is the correct answer  ! 😎',
                       answers: [
                         {
                           nextId: 'thirdScience'+shuffleArraylot[19],
@@ -8004,7 +8004,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                       ],
                       },
                       inthirdSciencecorrectq18: {
-                      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Sun"</strong>',
+                      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>Tree</strong> answer is <strong>"Sun"</strong>',
                       answers: [
                         {
                           nextId: 'thirdScience'+shuffleArraylot[19],
@@ -8617,13 +8617,13 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                                 answers: [
                                   {
                                     answer: 'eat',
-                                    nextId: 'inthirdEnglishcorrectq12',
-                                    sumToBags: [{ name: 'ai', points: 1 }],
-                                  },
-                                  {
-                                    answer: 'eats',
                                     nextId: 'thirdEnglishcorrectq12',
                                     sumToBags: [{ name: 'ac', points: 1 }],
+                                  },
+                                  {
+                                    answer: 'eat',
+                                    nextId: 'inthirdEnglishcorrectq12',
+                                    sumToBags: [{ name: 'ai', points: 1 }],
                                   },
                                   {
                                     answer: "eating",
@@ -8635,7 +8635,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                               },
                               
                               thirdEnglishcorrectq12: {
-                              botPrompt: 'Hurray! <strong>eats</strong> is the correct answer  ! 😎',
+                              botPrompt: 'Hurray! <strong>eat</strong> is the correct answer  ! 😎',
                               answers: [
                                 {
                                   nextId: 'thirdEnglish'+shuffleArraylot[13],
@@ -8643,7 +8643,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                               ],
                               },
                               inthirdEnglishcorrectq12: {
-                              botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"eats"</strong>',
+                              botPrompt: 'You have selected wrong Answer... 🤔 the <strong>eat</strong> answer is <strong>"eats"</strong>',
                               answers: [
                                 {
                                   nextId: 'thirdEnglish'+shuffleArraylot[13],
