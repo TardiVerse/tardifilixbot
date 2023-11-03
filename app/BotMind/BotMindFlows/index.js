@@ -20694,7 +20694,7 @@ classviii: {
                   ],
                   },
                   inseventhSciencecorrectq14: {
-                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong>It produces heavy rain</strong>',
+                  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong>answer is <strong>It produces heavy rain</strong>',
                   answers: [
                     {
                       nextId: 'wishtocountineseventhScience',
