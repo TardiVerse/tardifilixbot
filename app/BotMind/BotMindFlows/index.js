@@ -12,6 +12,16 @@ import * as RTypes from '../responseTypes';
 const common_greetings = /(^hello|^hllo|^hi|^hey|^hola|^sup)\b\s?.*$/i;
 const common_greetings_negative = /(?!(^hello|^hi|^hey|^hllo|^sup|^hola)\b)\w+/i;
 
+const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+// Regular expression for negative email filtering
+const emailPatternNegative = /(?![a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})\w+/i;
+
+// Regular expression for positive mobile number validation (10 digits)
+const mobileNumberPattern = /^\b\d{10}\b/;
+
+// Regular expression for negative mobile number filtering
+const mobileNumberPatternNegative = /(?!\b\d{10}\b)\w+/;
 
 
 //shuffleNumberArraylot
@@ -127,7 +137,22 @@ const questions = {
       },
     ],
   },
-
+  greetings_notAEmail: {
+	  botPrompt: 'Hello! You have entererd <strong>Invalid Email</strong> 😅',
+	  answers: [
+	    {
+	      nextId: 'emailcollection',
+	    },
+	  ],
+  },
+  greetings_notAMobileNumber: {
+	  botPrompt: 'Hello! You have entererd <strong>Invalid MobileNumber</strong> 😅',
+	  answers: [
+	    {
+	      nextId: 'mobilecollection',
+	    },
+	  ],
+  },
 
   yourName: {
     botPrompt: 'So, What`s your name?',
@@ -196,20 +221,28 @@ const questions = {
       input: textField(),
       answers: [
         {
-          answer: common_greetings_negative,  
+          answer: emailPattern,  
           catchMail:true,
           nextId: 'mobilecollection',
+        },
+        {
+          answer: emailPatternNegative,
+          nextId: 'greetings_notAEmail',
         },
       ],
   },
   mobilecollection: {
-    botPrompt: 'Please enter<strong> your Mobile Number </strong>?',
+    botPrompt: 'Please enter<strong> your Mobile Number </strong> without country code?',
     input: textField(),
     answers: [
       {
-        answer: common_greetings_negative,  
+        answer: mobileNumberPattern,  
         catchPhone:true,
         nextId: 'chooseclass',
+      },
+      {
+        answer: mobileNumberPatternNegative,
+        nextId: 'greetings_notAMobileNumber',
       },
     ],
 },
@@ -23933,6 +23966,7 @@ classx: {
 },
 
 //shuffletwoend
+
 
   
 
