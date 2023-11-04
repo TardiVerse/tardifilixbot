@@ -31,12 +31,13 @@ const numberslot = Array.from({ length: 40 }, (_, i) => i + 1);
 const shuffleArraylot = shuffleNumberArraylot(numberslot);
 
 
+console.log(shuffleArraylot);
 
 
 
 function shuffleNumberArraylottwo(array) {
   const shuffleNumberArraylottwo = array.slice();
-  for (let i = shuffleNumberArraylot.length - 1; i > 0; i--) {
+  for (let i = shuffleNumberArraylottwo.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [shuffleNumberArraylottwo[i], shuffleNumberArraylottwo[j]] = [shuffleNumberArraylottwo[j], shuffleNumberArraylottwo[i]];
   }
@@ -44,12 +45,13 @@ function shuffleNumberArraylottwo(array) {
 }
 
 // Create an array containing numbers from 1 to 77
-const numberslottwo = Array.from({ length: 20 }, (_, i) => i + 1);
+const numberslottwo = Array.from({ length: 21 }, (_, i) => i + 1);
 
 // Shuffle the array
 const shuffleArraylottwo = shuffleNumberArraylottwo(numberslottwo);
 
 
+console.log(shuffleArraylottwo);
 
 const min = 0;
 const max = 15;
@@ -57,10 +59,11 @@ const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
 
 console.log(randomNumber);
 
-const minclass = 1;
-const maxclass = 19;
+const minclass = 0;
+const maxclass = 14;
 const randomNumberclass = Math.floor(Math.random() * (maxclass - minclass + 1)) + minclass;
 
+console.log(randomNumberclass);
 
 
 
@@ -6148,7 +6151,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
 
     
         //1
-        ['thirdMaths'+shuffleArraylot[1]]: {
+        ['thirdMaths'+shuffleArraylottwo[1]]: {
         botPrompt: 'Question 1: If you have 4 groups of 5 apples each, how many apples do you have in total?',
         type: RTypes.TRANSFORMED_TEXT,
         
@@ -6182,7 +6185,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         botPrompt: 'Hurray! <strong>30</strong> is the correct answer  ! 😎',
         answers: [
           {
-            nextId: 'thirdMaths'+shuffleArraylot[2],
+            nextId: 'thirdMaths'+shuffleArraylottwo[2],
           },
         ],
         },
@@ -6190,13 +6193,13 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"30"</strong>',
         answers: [
           {
-            nextId: 'thirdMaths'+shuffleArraylot[2],
+            nextId: 'thirdMaths'+shuffleArraylottwo[2],
           },
         ],
         },
         
           //2
-          ['thirdMaths'+shuffleArraylot[2]]: {
+          ['thirdMaths'+shuffleArraylottwo[2]]: {
             botPrompt: 'Ali has 3 baskets and each basket has 4 mangoes. If he eats half of the mangoes in each basket then how many mangoes does he have left with him?',
             type: RTypes.TRANSFORMED_TEXT,
             
@@ -6230,7 +6233,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
             botPrompt: 'Hurray! <strong>6</strong> is the correct answer  ! 😎',
             answers: [
               {
-                nextId: 'thirdMaths'+shuffleArraylot[3],
+                nextId: 'thirdMaths'+shuffleArraylottwo[3],
               },
             ],
             },
@@ -6238,13 +6241,13 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
             botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"6"</strong>',
             answers: [
               {
-                nextId: 'thirdMaths'+shuffleArraylot[3],
+                nextId: 'thirdMaths'+shuffleArraylottwo[3],
               },
             ],
             },
         
             //3
-          ['thirdMaths'+shuffleArraylot[3]]: {
+          ['thirdMaths'+shuffleArraylottwo[3]]: {
             botPrompt: ' What is division?',
             type: RTypes.TRANSFORMED_TEXT,
             
@@ -6278,7 +6281,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
             botPrompt: 'Hurray! <strong>sharing or grouping  numbers,</strong> is the correct answer  ! 😎',
             answers: [
               {
-                nextId: 'thirdMaths'+shuffleArraylot[4],
+                nextId: 'thirdMaths'+shuffleArraylottwo[4],
               },
             ],
             },
@@ -6286,13 +6289,13 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
             botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"sharing or grouping  numbers,"</strong>',
             answers: [
               {
-                nextId: 'thirdMaths'+shuffleArraylot[4],
+                nextId: 'thirdMaths'+shuffleArraylottwo[4],
               },
             ],
             },
         
             //4
-          ['thirdMaths'+shuffleArraylot[4]]: {
+          ['thirdMaths'+shuffleArraylottwo[4]]: {
             botPrompt: 'If you have 7  pieces of cake and you eat 6 pieces, what fraction of cake did you eat?',
             type: RTypes.TRANSFORMED_TEXT,
             
@@ -6326,7 +6329,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
             botPrompt: 'Hurray! <strong>6/7</strong> is the correct answer  ! 😎',
             answers: [
               {
-                nextId: 'thirdMaths'+shuffleArraylot[5],
+                nextId: 'thirdMaths'+shuffleArraylottwo[5],
               },
             ],
             },
@@ -6334,13 +6337,13 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
             botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"6/7"</strong>',
             answers: [
               {
-                nextId: 'thirdMaths'+shuffleArraylot[5],
+                nextId: 'thirdMaths'+shuffleArraylottwo[5],
               },
             ],
             },
         
             //5
-          ['thirdMaths'+shuffleArraylot[5]]: {
+          ['thirdMaths'+shuffleArraylottwo[5]]: {
             botPrompt: 'What is used to measure length?',
             type: RTypes.TRANSFORMED_TEXT,
             
@@ -6374,7 +6377,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
             botPrompt: 'Hurray! <strong>Scale</strong> is the correct answer  ! 😎',
             answers: [
               {
-                nextId: 'thirdMaths'+shuffleArraylot[6],
+                nextId: 'thirdMaths'+shuffleArraylottwo[6],
               },
             ],
             },
@@ -6382,14 +6385,14 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
             botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Scale"</strong>',
             answers: [
               {
-                nextId: 'thirdMaths'+shuffleArraylot[6],
+                nextId: 'thirdMaths'+shuffleArraylottwo[6],
               },
             ],
             },
         
         
              //6
-          ['thirdMaths'+shuffleArraylot[6]]: {
+          ['thirdMaths'+shuffleArraylottwo[6]]: {
             botPrompt: 'If an object has a mass of 500 gms, what is its mass in kilograms?',
             type: RTypes.TRANSFORMED_TEXT,
             
@@ -6423,7 +6426,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
             botPrompt: 'Hurray! <strong>0.5 kg</strong> is the correct answer  ! 😎',
             answers: [
               {
-                nextId: 'thirdMaths'+shuffleArraylot[7],
+                nextId: 'thirdMaths'+shuffleArraylottwo[7],
               },
             ],
             },
@@ -6431,14 +6434,14 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
             botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"0.5 kg"</strong>',
             answers: [
               {
-                nextId: 'thirdMaths'+shuffleArraylot[7],
+                nextId: 'thirdMaths'+shuffleArraylottwo[7],
               },
             ],
             },
         
         
              //7
-          ['thirdMaths'+shuffleArraylot[7]]: {
+          ['thirdMaths'+shuffleArraylottwo[7]]: {
             botPrompt: 'Capacity is',
             type: RTypes.TRANSFORMED_TEXT,
             
@@ -6472,7 +6475,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
             botPrompt: 'Hurray! <strong>Measures the volume of a container</strong> is the correct answer  ! 😎',
             answers: [
               {
-                nextId: 'thirdMaths'+shuffleArraylot[8],
+                nextId: 'thirdMaths'+shuffleArraylottwo[8],
               },
             ],
             },
@@ -6480,14 +6483,14 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
             botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Measures the volume of a container"</strong>',
             answers: [
               {
-                nextId: 'thirdMaths'+shuffleArraylot[8],
+                nextId: 'thirdMaths'+shuffleArraylottwo[8],
               },
             ],
             },
         
         
              //8
-          ['thirdMaths'+shuffleArraylot[8]]: {
+          ['thirdMaths'+shuffleArraylottwo[8]]: {
             botPrompt: 'Convert the amount in paise ₹16.66',
             type: RTypes.TRANSFORMED_TEXT,
             
@@ -6521,7 +6524,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
             botPrompt: 'Hurray! <strong>1666 p</strong> is the correct answer  ! 😎',
             answers: [
               {
-                nextId: 'thirdMaths'+shuffleArraylot[9],
+                nextId: 'thirdMaths'+shuffleArraylottwo[9],
               },
             ],
             },
@@ -6529,14 +6532,14 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
             botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"1666 p"</strong>',
             answers: [
               {
-                nextId: 'thirdMaths'+shuffleArraylot[9],
+                nextId: 'thirdMaths'+shuffleArraylottwo[9],
               },
             ],
             },
         
         
              //9
-          ['thirdMaths'+shuffleArraylot[9]]: {
+          ['thirdMaths'+shuffleArraylottwo[9]]: {
             botPrompt: 'The number of vertices  in a cuboid is',
             type: RTypes.TRANSFORMED_TEXT,
             
@@ -6570,7 +6573,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
             botPrompt: 'Hurray! <strong>8</strong> is the correct answer  ! 😎',
             answers: [
               {
-                nextId: 'thirdMaths'+shuffleArraylot[10],
+                nextId: 'thirdMaths'+shuffleArraylottwo[10],
               },
             ],
             },
@@ -6578,13 +6581,13 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
             botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"8"</strong>',
             answers: [
               {
-                nextId: 'thirdMaths'+shuffleArraylot[10],
+                nextId: 'thirdMaths'+shuffleArraylottwo[10],
               },
             ],
             },
         
         //10
-            ['thirdMaths'+shuffleArraylot[10]]: {
+            ['thirdMaths'+shuffleArraylottwo[10]]: {
               botPrompt: ' Equivalent fraction of ⅘ is',
               type: RTypes.TRANSFORMED_TEXT,
               
@@ -6618,7 +6621,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
               botPrompt: 'Hurray! <strong>8/10</strong> is the correct answer  ! 😎',
               answers: [
                 {
-                  nextId: 'thirdMaths'+shuffleArraylot[11],
+                  nextId: 'thirdMaths'+shuffleArraylottwo[11],
                 },
               ],
               },
@@ -6626,14 +6629,14 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
               botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"8/10"</strong>',
               answers: [
                 {
-                  nextId: 'thirdMaths'+shuffleArraylot[11],
+                  nextId: 'thirdMaths'+shuffleArraylottwo[11],
                 },
               ],
               },
         
         
               //11
-            ['thirdMaths'+shuffleArraylot[11]]: {
+            ['thirdMaths'+shuffleArraylottwo[11]]: {
               botPrompt: ' 0 x 21456 = _______________________________ ',
               type: RTypes.TRANSFORMED_TEXT,
               
@@ -6667,7 +6670,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
               botPrompt: 'Hurray! <strong>0</strong> is the correct answer  ! 😎',
               answers: [
                 {
-                  nextId: 'thirdMaths'+shuffleArraylot[12],
+                  nextId: 'thirdMaths'+shuffleArraylottwo[12],
                 },
               ],
               },
@@ -6675,14 +6678,14 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
               botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"0"</strong>',
               answers: [
                 {
-                  nextId: 'thirdMaths'+shuffleArraylot[12],
+                  nextId: 'thirdMaths'+shuffleArraylottwo[12],
                 },
               ],
               },
         
         
                 //12
-            ['thirdMaths'+shuffleArraylot[12]]: {
+            ['thirdMaths'+shuffleArraylottwo[12]]: {
               botPrompt: ' The perimeter of a square is ______________ if the length of each side is 6 cm.',
               type: RTypes.TRANSFORMED_TEXT,
               
@@ -6716,7 +6719,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
               botPrompt: 'Hurray! <strong>24cm</strong> is the correct answer  ! 😎',
               answers: [
                 {
-                  nextId: 'thirdMaths'+shuffleArraylot[13],
+                  nextId: 'thirdMaths'+shuffleArraylottwo[13],
                 },
               ],
               },
@@ -6724,14 +6727,14 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
               botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"24cm"</strong>',
               answers: [
                 {
-                  nextId: 'thirdMaths'+shuffleArraylot[13],
+                  nextId: 'thirdMaths'+shuffleArraylottwo[13],
                 },
               ],
               },
         
         
                 //13
-            ['thirdMaths'+shuffleArraylot[13]]: {
+            ['thirdMaths'+shuffleArraylottwo[13]]: {
               botPrompt: '(41253+ 1234)+231 = (1234 + 231)+ ______________________________ ',
               type: RTypes.TRANSFORMED_TEXT,
               
@@ -6764,7 +6767,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
               botPrompt: 'Hurray! <strong>41253</strong> is the correct answer  ! 😎',
               answers: [
                 {
-                  nextId: 'thirdMaths'+shuffleArraylot[14],
+                  nextId: 'thirdMaths'+shuffleArraylottwo[14],
                 },
               ],
               },
@@ -6772,14 +6775,14 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
               botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"41253"</strong>',
               answers: [
                 {
-                  nextId: 'thirdMaths'+shuffleArraylot[14],
+                  nextId: 'thirdMaths'+shuffleArraylottwo[14],
                 },
               ],
               },
             
         
                   //14
-            ['thirdMaths'+shuffleArraylot[14]]: {
+            ['thirdMaths'+shuffleArraylottwo[14]]: {
               botPrompt: '1 L 25mL  =  _____________________ mL',
               type: RTypes.TRANSFORMED_TEXT,
               
@@ -6813,7 +6816,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
               botPrompt: 'Hurray! <strong>1025</strong> is the correct answer  ! 😎',
               answers: [
                 {
-                  nextId: 'thirdMaths'+shuffleArraylot[15],
+                  nextId: 'thirdMaths'+shuffleArraylottwo[15],
                 },
               ],
               },
@@ -6821,14 +6824,14 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
               botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"1025"</strong>',
               answers: [
                 {
-                  nextId: 'thirdMaths'+shuffleArraylot[15],
+                  nextId: 'thirdMaths'+shuffleArraylottwo[15],
                 },
               ],
               },
             
         
                   //15
-            ['thirdMaths'+shuffleArraylot[15]]: {
+            ['thirdMaths'+shuffleArraylottwo[15]]: {
               botPrompt: 'Place value of 5 in the number 95321 _______________________________',
               type: RTypes.TRANSFORMED_TEXT,
               
@@ -6862,7 +6865,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
               botPrompt: 'Hurray! <strong>5000</strong> is the correct answer  ! 😎',
               answers: [
                 {
-                  nextId: 'thirdMaths'+shuffleArraylot[16],
+                  nextId: 'thirdMaths'+shuffleArraylottwo[16],
                 },
               ],
               },
@@ -6870,14 +6873,14 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
               botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"5000"</strong>',
               answers: [
                 {
-                  nextId: 'thirdMaths'+shuffleArraylot[16],
+                  nextId: 'thirdMaths'+shuffleArraylottwo[16],
                 },
               ],
               },
             
         
               //16
-              ['thirdMaths'+shuffleArraylot[16]]: {
+              ['thirdMaths'+shuffleArraylottwo[16]]: {
                 botPrompt: ' 9999 + 1 = _______________',
                 type: RTypes.TRANSFORMED_TEXT,
                 
@@ -6911,7 +6914,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                 botPrompt: 'Hurray! <strong>10,000</strong> is the correct answer  ! 😎',
                 answers: [
                   {
-                    nextId: 'thirdMaths'+shuffleArraylot[17],
+                    nextId: 'thirdMaths'+shuffleArraylottwo[17],
                   },
                 ],
                 },
@@ -6919,14 +6922,14 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                 botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"10,000"</strong>',
                 answers: [
                   {
-                    nextId: 'thirdMaths'+shuffleArraylot[17],
+                    nextId: 'thirdMaths'+shuffleArraylottwo[17],
                   },
                 ],
                 },
               
         
                  //17
-            ['thirdMaths'+shuffleArraylot[17]]: {
+            ['thirdMaths'+shuffleArraylottwo[17]]: {
               botPrompt: 'Sixty-seven thousand nine hundred ninety-nine _____________',
               type: RTypes.TRANSFORMED_TEXT,
               
@@ -6960,7 +6963,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
               botPrompt: 'Hurray! <strong>67,999</strong> is the correct answer  ! 😎',
               answers: [
                 {
-                  nextId: 'thirdMaths'+shuffleArraylot[18],
+                  nextId: 'thirdMaths'+shuffleArraylottwo[18],
                 },
               ],
               },
@@ -6968,7 +6971,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
               botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"67,999"</strong>',
               answers: [
                 {
-                  nextId: 'thirdMaths'+shuffleArraylot[18],
+                  nextId: 'thirdMaths'+shuffleArraylottwo[18],
                 },
               ],
               },
@@ -6976,7 +6979,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         
 
               //18
-              ['thirdMaths'+shuffleArraylot[18]]: {
+              ['thirdMaths'+shuffleArraylottwo[18]]: {
                 botPrompt: 'Predecessor of the number 9089 is  _______________',
                 type: RTypes.TRANSFORMED_TEXT,
                 
@@ -7010,7 +7013,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                 botPrompt: 'Hurray! <strong>9088</strong> is the correct answer  ! 😎',
                 answers: [
                   {
-                    nextId: 'thirdMaths'+shuffleArraylot[19],
+                    nextId: 'thirdMaths'+shuffleArraylottwo[19],
                   },
                 ],
                 },
@@ -7018,13 +7021,13 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                 botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"9088"</strong>',
                 answers: [
                   {
-                    nextId: 'thirdMaths'+shuffleArraylot[19],
+                    nextId: 'thirdMaths'+shuffleArraylottwo[19],
                   },
                 ],
                 },
             
                  //19
-            ['thirdMaths'+shuffleArraylot[19]]: {
+            ['thirdMaths'+shuffleArraylottwo[19]]: {
               botPrompt: '6660 – 1 = __________________ ',
               type: RTypes.TRANSFORMED_TEXT,
               
@@ -7058,7 +7061,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
               botPrompt: 'Hurray! <strong>6659</strong> is the correct answer  ! 😎',
               answers: [
                 {
-                  nextId: 'thirdMaths'+shuffleArraylot[20],
+                  nextId: 'thirdMaths'+shuffleArraylottwo[20],
                 },
               ],
               },
@@ -7066,14 +7069,14 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
               botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"6659"</strong>',
               answers: [
                 {
-                  nextId: 'thirdMaths'+shuffleArraylot[20],
+                  nextId: 'thirdMaths'+shuffleArraylottwo[20],
                 },
               ],
               },
         
         
                  //20
-            ['thirdMaths'+shuffleArraylot[20]]: {
+            ['thirdMaths'+shuffleArraylottwo[20]]: {
               botPrompt: '82351 – 100 = ______________________ ',
               type: RTypes.TRANSFORMED_TEXT,
               
@@ -7140,7 +7143,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
 
 
                 //1
-                ['thirdScience'+shuffleArraylot[1]]: {
+                ['thirdScience'+shuffleArraylottwo[1]]: {
                 botPrompt: 'Question 1:  Which of these animals is an omnivore?',
                 type: RTypes.TRANSFORMED_TEXT,
                 
@@ -7174,7 +7177,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                 botPrompt: 'Hurray! <strong>Bear</strong> is the correct answer  ! 😎',
                 answers: [
                   {
-                    nextId: 'thirdScience'+shuffleArraylot[2],
+                    nextId: 'thirdScience'+shuffleArraylottwo[2],
                   },
                 ],
                 },
@@ -7182,13 +7185,13 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                 botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Bear"</strong>',
                 answers: [
                   {
-                    nextId: 'thirdScience'+shuffleArraylot[2],
+                    nextId: 'thirdScience'+shuffleArraylottwo[2],
                   },
                 ],
                 },
                 
                   //2
-                  ['thirdScience'+shuffleArraylot[2]]: {
+                  ['thirdScience'+shuffleArraylottwo[2]]: {
                     botPrompt: ' Why should you never play with matches or lighters?',
                     type: RTypes.TRANSFORMED_TEXT,
                     
@@ -7222,7 +7225,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                     botPrompt: 'Hurray! <strong>Because it can cause fires and harm you</strong> is the correct answer  ! 😎',
                     answers: [
                       {
-                        nextId: 'thirdScience'+shuffleArraylot[3],
+                        nextId: 'thirdScience'+shuffleArraylottwo[3],
                       },
                     ],
                     },
@@ -7230,13 +7233,13 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Because it can cause fires and harm you"</strong>',
                     answers: [
                       {
-                        nextId: 'thirdScience'+shuffleArraylot[3],
+                        nextId: 'thirdScience'+shuffleArraylottwo[3],
                       },
                     ],
                     },
                 
                     //3
-                  ['thirdScience'+shuffleArraylot[3]]: {
+                  ['thirdScience'+shuffleArraylottwo[3]]: {
                     botPrompt: 'Why is it important to wear a seatbelt in a car?',
                     type: RTypes.TRANSFORMED_TEXT,
                     
@@ -7270,7 +7273,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                     botPrompt: 'Hurray! <strong>To avoid accidents</strong> is the correct answer  ! 😎',
                     answers: [
                       {
-                        nextId: 'thirdScience'+shuffleArraylot[4],
+                        nextId: 'thirdScience'+shuffleArraylottwo[4],
                       },
                     ],
                     },
@@ -7278,13 +7281,13 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"To avoid accidents"</strong>',
                     answers: [
                       {
-                        nextId: 'thirdScience'+shuffleArraylot[4],
+                        nextId: 'thirdScience'+shuffleArraylottwo[4],
                       },
                     ],
                     },
                 
                     //4
-                  ['thirdScience'+shuffleArraylot[4]]: {
+                  ['thirdScience'+shuffleArraylottwo[4]]: {
                     botPrompt: 'Why do we need windows and doors in a house?',
                     type: RTypes.TRANSFORMED_TEXT,
                     
@@ -7318,7 +7321,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                     botPrompt: 'Hurray! <strong>To let in light and air</strong> is the correct answer  ! 😎',
                     answers: [
                       {
-                        nextId: 'thirdScience'+shuffleArraylot[5],
+                        nextId: 'thirdScience'+shuffleArraylottwo[5],
                       },
                     ],
                     },
@@ -7326,13 +7329,13 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"To let in light and air"</strong>',
                     answers: [
                       {
-                        nextId: 'thirdScience'+shuffleArraylot[5],
+                        nextId: 'thirdScience'+shuffleArraylottwo[5],
                       },
                     ],
                     },
                 
                     //5
-                  ['thirdScience'+shuffleArraylot[5]]: {
+                  ['thirdScience'+shuffleArraylottwo[5]]: {
                     botPrompt: 'Which of these is a natural source of clothing material?',
                     type: RTypes.TRANSFORMED_TEXT,
                     
@@ -7366,7 +7369,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                     botPrompt: 'Hurray! <strong>Plastic</strong> is the correct answer  ! 😎',
                     answers: [
                       {
-                        nextId: 'thirdScience'+shuffleArraylot[6],
+                        nextId: 'thirdScience'+shuffleArraylottwo[6],
                       },
                     ],
                     },
@@ -7374,14 +7377,14 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Plastic"</strong>',
                     answers: [
                       {
-                        nextId: 'thirdScience'+shuffleArraylot[6],
+                        nextId: 'thirdScience'+shuffleArraylottwo[6],
                       },
                     ],
                     },
                 
                 
                      //6
-                  ['thirdScience'+shuffleArraylot[6]]: {
+                  ['thirdScience'+shuffleArraylottwo[6]]: {
                     botPrompt: 'Which type of soil is good for planting seeds?',
                     type: RTypes.TRANSFORMED_TEXT,
                     
@@ -7415,7 +7418,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                     botPrompt: 'Hurray! <strong>Loamy soil</strong> is the correct answer  ! 😎',
                     answers: [
                       {
-                        nextId: 'thirdScience'+shuffleArraylot[7],
+                        nextId: 'thirdScience'+shuffleArraylottwo[7],
                       },
                     ],
                     },
@@ -7423,14 +7426,14 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>" Loamy soil"</strong>',
                     answers: [
                       {
-                        nextId: 'thirdScience'+shuffleArraylot[7],
+                        nextId: 'thirdScience'+shuffleArraylottwo[7],
                       },
                     ],
                     },
                 
                 
                      //7
-                  ['thirdScience'+shuffleArraylot[7]]: {
+                  ['thirdScience'+shuffleArraylottwo[7]]: {
                     botPrompt: 'How does soil help plants grow? ',
                     type: RTypes.TRANSFORMED_TEXT,
                     
@@ -7464,7 +7467,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                     botPrompt: 'Hurray! <strong>By holding water and nutrients</strong> is the correct answer  ! 😎',
                     answers: [
                       {
-                        nextId: 'thirdScience'+shuffleArraylot[8],
+                        nextId: 'thirdScience'+shuffleArraylottwo[8],
                       },
                     ],
                     },
@@ -7472,14 +7475,14 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"By holding water and nutrients"</strong>',
                     answers: [
                       {
-                        nextId: 'thirdScience'+shuffleArraylot[8],
+                        nextId: 'thirdScience'+shuffleArraylottwo[8],
                       },
                     ],
                     },
                 
                 
                      //8
-                  ['thirdScience'+shuffleArraylot[8]]: {
+                  ['thirdScience'+shuffleArraylottwo[8]]: {
                     botPrompt: 'What is the process by which plants make their own food using sunlight?',
                     type: RTypes.TRANSFORMED_TEXT,
                     
@@ -7513,7 +7516,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                     botPrompt: 'Hurray! <strong>Photosynthesis</strong> is the correct answer  ! 😎',
                     answers: [
                       {
-                        nextId: 'thirdScience'+shuffleArraylot[9],
+                        nextId: 'thirdScience'+shuffleArraylottwo[9],
                       },
                     ],
                     },
@@ -7521,14 +7524,14 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Photosynthesis"</strong>',
                     answers: [
                       {
-                        nextId: 'thirdScience'+shuffleArraylot[9],
+                        nextId: 'thirdScience'+shuffleArraylottwo[9],
                       },
                     ],
                     },
                 
                 
                      //9
-                  ['thirdScience'+shuffleArraylot[9]]: {
+                  ['thirdScience'+shuffleArraylottwo[9]]: {
                     botPrompt: ' If you want to store water in a plant, which part would you choose?',
                     type: RTypes.TRANSFORMED_TEXT,
                     
@@ -7562,7 +7565,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                     botPrompt: 'Hurray! <strong>Roots</strong> is the correct answer  ! 😎',
                     answers: [
                       {
-                        nextId: 'thirdScience'+shuffleArraylot[10],
+                        nextId: 'thirdScience'+shuffleArraylottwo[10],
                       },
                     ],
                     },
@@ -7570,13 +7573,13 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                     botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Roots"</strong>',
                     answers: [
                       {
-                        nextId: 'thirdScience'+shuffleArraylot[10],
+                        nextId: 'thirdScience'+shuffleArraylottwo[10],
                       },
                     ],
                     },
                 
                 //10
-                    ['thirdScience'+shuffleArraylot[10]]: {
+                    ['thirdScience'+shuffleArraylottwo[10]]: {
                       botPrompt: ' What do you call the tiny openings on the underside of leaves that allow a plant to breathe?',
                       type: RTypes.TRANSFORMED_TEXT,
                       
@@ -7610,7 +7613,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                       botPrompt: 'Hurray! <strong>Stomata</strong> is the correct answer  ! 😎',
                       answers: [
                         {
-                          nextId: 'thirdScience'+shuffleArraylot[11],
+                          nextId: 'thirdScience'+shuffleArraylottwo[11],
                         },
                       ],
                       },
@@ -7618,13 +7621,13 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                       botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Stomata"</strong>',
                       answers: [
                         {
-                          nextId: 'thirdScience'+shuffleArraylot[11],
+                          nextId: 'thirdScience'+shuffleArraylottwo[11],
                         },
                       ],
                       },
                 
                           //11
-                  ['thirdScience'+shuffleArraylot[11]]: {
+                  ['thirdScience'+shuffleArraylottwo[11]]: {
                     botPrompt:  "What is the primary role of a bird's nest?",
                     type: RTypes.TRANSFORMED_TEXT,
                     
@@ -7658,7 +7661,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                       botPrompt: 'Hurray! <strong>Breathe in oxygen</strong> is the correct answer  ! 😎',
                       answers: [
                         {
-                          nextId: 'thirdScience'+shuffleArraylot[13],
+                          nextId: 'thirdScience'+shuffleArraylottwo[13],
                         },
                       ],
                       },
@@ -7666,13 +7669,13 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                       botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Breathe in oxygen"</strong>',
                       answers: [
                         {
-                          nextId: 'thirdScience'+shuffleArraylot[13],
+                          nextId: 'thirdScience'+shuffleArraylottwo[13],
                         },
                       ],
                       },
                 
                         //12
-                    ['thirdScience'+shuffleArraylot[12]]: {
+                    ['thirdScience'+shuffleArraylottwo[12]]: {
                       botPrompt: ' What is the primary function of the lungs in our body?',
                       type: RTypes.TRANSFORMED_TEXT,
                       
@@ -7706,7 +7709,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                       botPrompt: 'Hurray! <strong>Breathe in oxygen</strong> is the correct answer  ! 😎',
                       answers: [
                         {
-                          nextId: 'thirdScience'+shuffleArraylot[13],
+                          nextId: 'thirdScience'+shuffleArraylottwo[13],
                         },
                       ],
                       },
@@ -7714,14 +7717,14 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                       botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Breathe in oxygen"</strong>',
                       answers: [
                         {
-                          nextId: 'thirdScience'+shuffleArraylot[13],
+                          nextId: 'thirdScience'+shuffleArraylottwo[13],
                         },
                       ],
                       },
                 
                 
                         //13
-                    ['thirdScience'+shuffleArraylot[13]]: {
+                    ['thirdScience'+shuffleArraylottwo[13]]: {
                       botPrompt: 'Why is it important to drink water regularly? ',
                       type: RTypes.TRANSFORMED_TEXT,
                       
@@ -7754,7 +7757,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                       botPrompt: 'Hurray! <strong>To keep your body hydrated and healthy</strong> is the correct answer  ! 😎',
                       answers: [
                         {
-                          nextId: 'thirdScience'+shuffleArraylot[14],
+                          nextId: 'thirdScience'+shuffleArraylottwo[14],
                         },
                       ],
                       },
@@ -7762,14 +7765,14 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                       botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"To keep your body hydrated and healthy"</strong>',
                       answers: [
                         {
-                          nextId: 'thirdScience'+shuffleArraylot[14],
+                          nextId: 'thirdScience'+shuffleArraylottwo[14],
                         },
                       ],
                       },
                     
                 
                           //14
-                    ['thirdScience'+shuffleArraylot[14]]: {
+                    ['thirdScience'+shuffleArraylottwo[14]]: {
                       botPrompt: 'Which of these activities can help reduce air pollution?',
                       type: RTypes.TRANSFORMED_TEXT,
                       
@@ -7803,7 +7806,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                       botPrompt: 'Hurray! <strong>Planting more trees</strong> is the correct answer  ! 😎',
                       answers: [
                         {
-                          nextId: 'thirdScience'+shuffleArraylot[15],
+                          nextId: 'thirdScience'+shuffleArraylottwo[15],
                         },
                       ],
                       },
@@ -7811,14 +7814,14 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                       botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Planting more trees"</strong>',
                       answers: [
                         {
-                          nextId: 'thirdScience'+shuffleArraylot[15],
+                          nextId: 'thirdScience'+shuffleArraylottwo[15],
                         },
                       ],
                       },
                     
                 
                           //15
-                    ['thirdScience'+shuffleArraylot[15]]: {
+                    ['thirdScience'+shuffleArraylottwo[15]]: {
                       botPrompt: 'Which of the following is a unit of time?',
                       type: RTypes.TRANSFORMED_TEXT,
                       
@@ -7852,7 +7855,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                       botPrompt: 'Hurray! <strong>Second</strong> is the correct answer  ! 😎',
                       answers: [
                         {
-                          nextId: 'thirdScience'+shuffleArraylot[16],
+                          nextId: 'thirdScience'+shuffleArraylottwo[16],
                         },
                       ],
                       },
@@ -7860,7 +7863,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                       botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Second"</strong>',
                       answers: [
                         {
-                          nextId: 'thirdScience'+shuffleArraylot[16],
+                          nextId: 'thirdScience'+shuffleArraylottwo[16],
                         },
                       ],
                       },
@@ -7869,7 +7872,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                 
                 
                           //16
-                    ['thirdScience'+shuffleArraylot[16]]: {
+                    ['thirdScience'+shuffleArraylottwo[16]]: {
                       botPrompt: 'Which of the following objects allows light to pass through it? ',
                       type: RTypes.TRANSFORMED_TEXT,
                       
@@ -7903,7 +7906,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                       botPrompt: 'Hurray! <strong>Glass</strong> is the correct answer  ! 😎',
                       answers: [
                         {
-                          nextId: 'thirdScience'+shuffleArraylot[17],
+                          nextId: 'thirdScience'+shuffleArraylottwo[17],
                         },
                       ],
                       },
@@ -7911,14 +7914,14 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                       botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Glass"</strong>',
                       answers: [
                         {
-                          nextId: 'thirdScience'+shuffleArraylot[17],
+                          nextId: 'thirdScience'+shuffleArraylottwo[17],
                         },
                       ],
                       },
                     
                 
                          //17
-                    ['thirdScience'+shuffleArraylot[17]]: {
+                    ['thirdScience'+shuffleArraylottwo[17]]: {
                       botPrompt: 'Which of the following is a source of sound?',
                       type: RTypes.TRANSFORMED_TEXT,
                       
@@ -7952,7 +7955,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                       botPrompt: 'Hurray! <strong>Guitar</strong> is the correct answer  ! 😎',
                       answers: [
                         {
-                          nextId: 'thirdScience'+shuffleArraylot[18],
+                          nextId: 'thirdScience'+shuffleArraylottwo[18],
                         },
                       ],
                       },
@@ -7960,14 +7963,14 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                       botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Guitar"</strong>',
                       answers: [
                         {
-                          nextId: 'thirdScience'+shuffleArraylot[18],
+                          nextId: 'thirdScience'+shuffleArraylottwo[18],
                         },
                       ],
                       },
                 
                 
                          //18
-                    ['thirdScience'+shuffleArraylot[18]]: {
+                    ['thirdScience'+shuffleArraylottwo[18]]: {
                       botPrompt: 'Which of the following objects does not create a shadow? –',
                       type: RTypes.TRANSFORMED_TEXT,
                       
@@ -8001,7 +8004,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                       botPrompt: 'Hurray! <strong>Tree</strong> is the correct answer  ! 😎',
                       answers: [
                         {
-                          nextId: 'thirdScience'+shuffleArraylot[19],
+                          nextId: 'thirdScience'+shuffleArraylottwo[19],
                         },
                       ],
                       },
@@ -8009,14 +8012,14 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                       botPrompt: 'You have selected wrong Answer... 🤔 the <strong>Tree</strong> answer is <strong>"Sun"</strong>',
                       answers: [
                         {
-                          nextId: 'thirdScience'+shuffleArraylot[19],
+                          nextId: 'thirdScience'+shuffleArraylottwo[19],
                         },
                       ],
                       },
                 
                 
                          //19
-                    ['thirdScience'+shuffleArraylot[19]]: {
+                    ['thirdScience'+shuffleArraylottwo[19]]: {
                       botPrompt: ' What is the primary source of energy for the sun?',
                       type: RTypes.TRANSFORMED_TEXT,
                       
@@ -8050,7 +8053,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                       botPrompt: 'Hurray! <strong>Solar energy</strong> is the correct answer  ! 😎',
                       answers: [
                         {
-                          nextId: 'thirdScience'+shuffleArraylot[20],
+                          nextId: 'thirdScience'+shuffleArraylottwo[20],
                         },
                       ],
                       },
@@ -8058,14 +8061,14 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                       botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Solar energy"</strong>',
                       answers: [
                         {
-                          nextId: 'thirdScience'+shuffleArraylot[20],
+                          nextId: 'thirdScience'+shuffleArraylottwo[20],
                         },
                       ],
                       },
                 
                 
                          //20
-                    ['thirdScience'+shuffleArraylot[20]]: {
+                    ['thirdScience'+shuffleArraylottwo[20]]: {
                       botPrompt: "What is the name of Earth's natural satellite?",
                       type: RTypes.TRANSFORMED_TEXT,
                       
@@ -8132,7 +8135,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                 
   
                         //1
-                        ['thirdEnglish'+shuffleArraylot[1]]: {
+                        ['thirdEnglish'+shuffleArraylottwo[1]]: {
                         botPrompt: 'Question 1:In the sentence, "The sky is cloudy," what is the adjective?',
                         type: RTypes.TRANSFORMED_TEXT,
                         
@@ -8161,7 +8164,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                         botPrompt: 'Hurray! <strong>Cloudy</strong> is the correct answer  ! 😎',
                         answers: [
                           {
-                            nextId: 'thirdEnglish'+shuffleArraylot[2],
+                            nextId: 'thirdEnglish'+shuffleArraylottwo[2],
                           },
                         ],
                         },
@@ -8169,13 +8172,13 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                         botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Cloudy"</strong>',
                         answers: [
                           {
-                            nextId: 'thirdEnglish'+shuffleArraylot[2],
+                            nextId: 'thirdEnglish'+shuffleArraylottwo[2],
                           },
                         ],
                         },
                         
                           //2
-                          ['thirdEnglish'+shuffleArraylot[2]]: {
+                          ['thirdEnglish'+shuffleArraylottwo[2]]: {
                             botPrompt: ' Which word is an adjective in the sentence, "The tall giraffe stretched its neck"?',
                             type: RTypes.TRANSFORMED_TEXT,
                             
@@ -8204,7 +8207,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                             botPrompt: 'Hurray! <strong>Tall</strong> is the correct answer  ! 😎',
                             answers: [
                               {
-                                nextId: 'thirdEnglish'+shuffleArraylot[3],
+                                nextId: 'thirdEnglish'+shuffleArraylottwo[3],
                               },
                             ],
                             },
@@ -8212,13 +8215,13 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                             botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Tall"</strong>',
                             answers: [
                               {
-                                nextId: 'thirdEnglish'+shuffleArraylot[3],
+                                nextId: 'thirdEnglish'+shuffleArraylottwo[3],
                               },
                             ],
                             },
                         
                             //3
-                          ['thirdEnglish'+shuffleArraylot[3]]: {
+                          ['thirdEnglish'+shuffleArraylottwo[3]]: {
                             botPrompt: 'What are the adjectives in the sentence, "The small, brown puppy barked"?',
                             type: RTypes.TRANSFORMED_TEXT,
                             
@@ -8247,7 +8250,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                             botPrompt: 'Hurray! <strong>Brown</strong> is the correct answer  ! 😎',
                             answers: [
                               {
-                                nextId: 'thirdEnglish'+shuffleArraylot[4],
+                                nextId: 'thirdEnglish'+shuffleArraylottwo[4],
                               },
                             ],
                             },
@@ -8255,13 +8258,13 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                             botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Brown"</strong>',
                             answers: [
                               {
-                                nextId: 'thirdEnglish'+shuffleArraylot[4],
+                                nextId: 'thirdEnglish'+shuffleArraylottwo[4],
                               },
                             ],
                             },
                         
                             //4
-                          ['thirdEnglish'+shuffleArraylot[4]]: {
+                          ['thirdEnglish'+shuffleArraylottwo[4]]: {
                             botPrompt: 'What is the adjective in the sentence, "She has a cute puppy"?',
                             type: RTypes.TRANSFORMED_TEXT,
                             
@@ -8290,7 +8293,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                             botPrompt: 'Hurray! <strong>Cute</strong> is the correct answer  ! 😎',
                             answers: [
                               {
-                                nextId: 'thirdEnglish'+shuffleArraylot[5],
+                                nextId: 'thirdEnglish'+shuffleArraylottwo[5],
                               },
                             ],
                             },
@@ -8298,13 +8301,13 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                             botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Cute"</strong>',
                             answers: [
                               {
-                                nextId: 'thirdEnglish'+shuffleArraylot[5],
+                                nextId: 'thirdEnglish'+shuffleArraylottwo[5],
                               },
                             ],
                             },
                         
                             //5
-                          ['thirdEnglish'+shuffleArraylot[5]]: {
+                          ['thirdEnglish'+shuffleArraylottwo[5]]: {
                             botPrompt: 'Which adjective best describes a fast car?',
                             type: RTypes.TRANSFORMED_TEXT,
                             
@@ -8333,7 +8336,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                             botPrompt: 'Hurray! <strong>Fast</strong> is the correct answer  ! 😎',
                             answers: [
                               {
-                                nextId: 'thirdEnglish'+shuffleArraylot[6],
+                                nextId: 'thirdEnglish'+shuffleArraylottwo[6],
                               },
                             ],
                             },
@@ -8341,14 +8344,14 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                             botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Fast"</strong>',
                             answers: [
                               {
-                                nextId: 'thirdEnglish'+shuffleArraylot[6],
+                                nextId: 'thirdEnglish'+shuffleArraylottwo[6],
                               },
                             ],
                             },
                         
                         
                              //6
-                          ['thirdEnglish'+shuffleArraylot[6]]: {
+                          ['thirdEnglish'+shuffleArraylottwo[6]]: {
                             botPrompt: 'Which article should replace the blank: "He needs ____ umbrella because it"s raining"?',
                             type: RTypes.TRANSFORMED_TEXT,
                             
@@ -8377,7 +8380,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                             botPrompt: 'Hurray! <strong>an</strong> is the correct answer  ! 😎',
                             answers: [
                               {
-                                nextId: 'thirdEnglish'+shuffleArraylot[7],
+                                nextId: 'thirdEnglish'+shuffleArraylottwo[7],
                               },
                             ],
                             },
@@ -8385,14 +8388,14 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                             botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"an"</strong>',
                             answers: [
                               {
-                                nextId: 'thirdEnglish'+shuffleArraylot[7],
+                                nextId: 'thirdEnglish'+shuffleArraylottwo[7],
                               },
                             ],
                             },
                         
                         
                              //7
-                          ['thirdEnglish'+shuffleArraylot[7]]: {
+                          ['thirdEnglish'+shuffleArraylottwo[7]]: {
                             botPrompt: 'Fill in the blank with the appropriate article: ---- Kaveri is a river.',
                             type: RTypes.TRANSFORMED_TEXT,
                             
@@ -8421,7 +8424,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                             botPrompt: 'Hurray! <strong>the</strong> is the correct answer  ! 😎',
                             answers: [
                               {
-                                nextId: 'thirdEnglish'+shuffleArraylot[8],
+                                nextId: 'thirdEnglish'+shuffleArraylottwo[8],
                               },
                             ],
                             },
@@ -8429,14 +8432,14 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                             botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"the"</strong>',
                             answers: [
                               {
-                                nextId: 'thirdEnglish'+shuffleArraylot[8],
+                                nextId: 'thirdEnglish'+shuffleArraylottwo[8],
                               },
                             ],
                             },
                         
                         
                              //8
-                          ['thirdEnglish'+shuffleArraylot[8]]: {
+                          ['thirdEnglish'+shuffleArraylottwo[8]]: {
                             botPrompt: 'What article should go in the blank: "My brother is ___ doctor"?',
                             type: RTypes.TRANSFORMED_TEXT,
                             
@@ -8465,7 +8468,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                             botPrompt: 'Hurray! <strong>a</strong> is the correct answer  ! 😎',
                             answers: [
                               {
-                                nextId: 'thirdEnglish'+shuffleArraylot[9],
+                                nextId: 'thirdEnglish'+shuffleArraylottwo[9],
                               },
                             ],
                             },
@@ -8473,14 +8476,14 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                             botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"a"</strong>',
                             answers: [
                               {
-                                nextId: 'thirdEnglish'+shuffleArraylot[9],
+                                nextId: 'thirdEnglish'+shuffleArraylottwo[9],
                               },
                             ],
                             },
                         
                         
                              //9
-                          ['thirdEnglish'+shuffleArraylot[9]]: {
+                          ['thirdEnglish'+shuffleArraylottwo[9]]: {
                             botPrompt: 'Which article should go in the blank: "She found ____ interesting book in the library"?',
                             type: RTypes.TRANSFORMED_TEXT,
                             
@@ -8509,7 +8512,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                             botPrompt: 'Hurray! <strong>the</strong> is the correct answer  ! 😎',
                             answers: [
                               {
-                                nextId: 'thirdEnglish'+shuffleArraylot[10],
+                                nextId: 'thirdEnglish'+shuffleArraylottwo[10],
                               },
                             ],
                             },
@@ -8517,13 +8520,13 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                             botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"the"</strong>',
                             answers: [
                               {
-                                nextId: 'thirdEnglish'+shuffleArraylot[10],
+                                nextId: 'thirdEnglish'+shuffleArraylottwo[10],
                               },
                             ],
                             },
                         
                         //10
-                            ['thirdEnglish'+shuffleArraylot[10]]: {
+                            ['thirdEnglish'+shuffleArraylottwo[10]]: {
                               botPrompt: 'Fill in the blank with the appropriate article: "Please pass me ____ orange."',
                               type: RTypes.TRANSFORMED_TEXT,
                               
@@ -8552,7 +8555,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                               botPrompt: 'Hurray! <strong>an</strong> is the correct answer  ! 😎',
                               answers: [
                                 {
-                                  nextId: 'thirdEnglish'+shuffleArraylot[11],
+                                  nextId: 'thirdEnglish'+shuffleArraylottwo[11],
                                 },
                               ],
                               },
@@ -8560,14 +8563,14 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                               botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"an"</strong>',
                               answers: [
                                 {
-                                  nextId: 'thirdEnglish'+shuffleArraylot[11],
+                                  nextId: 'thirdEnglish'+shuffleArraylottwo[11],
                                 },
                               ],
                               },
                         
                         
                               //11
-                            ['thirdEnglish'+shuffleArraylot[11]]: {
+                            ['thirdEnglish'+shuffleArraylottwo[11]]: {
                               botPrompt: 'Which sentence is in the simple present tense?',
                               type: RTypes.TRANSFORMED_TEXT,
                               
@@ -8596,7 +8599,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                               botPrompt: 'Hurray! <strong>He reads books every night.</strong> is the correct answer  ! 😎',
                               answers: [
                                 {
-                                  nextId: 'thirdEnglish'+shuffleArraylot[12],
+                                  nextId: 'thirdEnglish'+shuffleArraylottwo[12],
                                 },
                               ],
                               },
@@ -8604,14 +8607,14 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                               botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"He reads books every night."</strong>',
                               answers: [
                                 {
-                                  nextId: 'thirdEnglish'+shuffleArraylot[12],
+                                  nextId: 'thirdEnglish'+shuffleArraylottwo[12],
                                 },
                               ],
                               },
                         
                         
                                 //12
-                            ['thirdEnglish'+shuffleArraylot[12]]: {
+                            ['thirdEnglish'+shuffleArraylottwo[12]]: {
                               botPrompt: 'What is the correct simple present tense form of the verb "to eat" for "I"?',
                               type: RTypes.TRANSFORMED_TEXT,
                               
@@ -8640,7 +8643,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                               botPrompt: 'Hurray! <strong>eat</strong> is the correct answer  ! 😎',
                               answers: [
                                 {
-                                  nextId: 'thirdEnglish'+shuffleArraylot[13],
+                                  nextId: 'thirdEnglish'+shuffleArraylottwo[13],
                                 },
                               ],
                               },
@@ -8648,14 +8651,14 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                               botPrompt: 'You have selected wrong Answer... 🤔 the <strong>eat</strong> answer is <strong>"eats"</strong>',
                               answers: [
                                 {
-                                  nextId: 'thirdEnglish'+shuffleArraylot[13],
+                                  nextId: 'thirdEnglish'+shuffleArraylottwo[13],
                                 },
                               ],
                               },
                         
                         
                                 //13
-                            ['thirdEnglish'+shuffleArraylot[13]]: {
+                            ['thirdEnglish'+shuffleArraylottwo[13]]: {
                               botPrompt: 'What is the simple present tense form of the verb "to dance" for "She"?',
                               type: RTypes.TRANSFORMED_TEXT,
                               
@@ -8684,7 +8687,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                               botPrompt: 'Hurray! <strong>dances</strong> is the correct answer  ! 😎',
                               answers: [
                                 {
-                                  nextId: 'thirdEnglish'+shuffleArraylot[14],
+                                  nextId: 'thirdEnglish'+shuffleArraylottwo[14],
                                 },
                               ],
                               },
@@ -8692,14 +8695,14 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                               botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"dances"</strong>',
                               answers: [
                                 {
-                                  nextId: 'thirdEnglish'+shuffleArraylot[14],
+                                  nextId: 'thirdEnglish'+shuffleArraylottwo[14],
                                 },
                               ],
                               },
                             
                         
                                   //14
-                            ['thirdEnglish'+shuffleArraylot[14]]: {
+                            ['thirdEnglish'+shuffleArraylottwo[14]]: {
                               botPrompt: 'Which sentence is NOT in the simple present tense?',
                               type: RTypes.TRANSFORMED_TEXT,
                               
@@ -8728,7 +8731,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                               botPrompt: 'Hurray! <strong>We will bake cookies this weekend.</strong> is the correct answer  ! 😎',
                               answers: [
                                 {
-                                  nextId: 'thirdEnglish'+shuffleArraylot[15],
+                                  nextId: 'thirdEnglish'+shuffleArraylottwo[15],
                                 },
                               ],
                               },
@@ -8736,14 +8739,14 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                               botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"We will bake cookies this weekend."</strong>',
                               answers: [
                                 {
-                                  nextId: 'thirdEnglish'+shuffleArraylot[15],
+                                  nextId: 'thirdEnglish'+shuffleArraylottwo[15],
                                 },
                               ],
                               },
                             
                         
                                   //15
-                            ['thirdEnglish'+shuffleArraylot[15]]: {
+                            ['thirdEnglish'+shuffleArraylottwo[15]]: {
                               botPrompt: 'Identify the sentence in the simple present tense:',
                               type: RTypes.TRANSFORMED_TEXT,
                               
@@ -8772,7 +8775,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                               botPrompt: 'Hurray! <strong>He reads a book every evening.</strong> is the correct answer  ! 😎',
                               answers: [
                                 {
-                                  nextId: 'thirdEnglish'+shuffleArraylot[16],
+                                  nextId: 'thirdEnglish'+shuffleArraylottwo[16],
                                 },
                               ],
                               },
@@ -8780,7 +8783,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                               botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"He reads a book every evening."</strong>',
                               answers: [
                                 {
-                                  nextId: 'thirdEnglish'+shuffleArraylot[16],
+                                  nextId: 'thirdEnglish'+shuffleArraylottwo[16],
                                 },
                               ],
                               },
@@ -8789,7 +8792,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                         
                         
                                   //16
-                            ['thirdEnglish'+shuffleArraylot[16]]: {
+                            ['thirdEnglish'+shuffleArraylottwo[16]]: {
                               botPrompt: 'What is the present continuous tense form of the verb "to write" for "She"?',
                               type: RTypes.TRANSFORMED_TEXT,
                               
@@ -8818,7 +8821,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                               botPrompt: 'Hurray! <strong>writing</strong> is the correct answer  ! 😎',
                               answers: [
                                 {
-                                  nextId: 'thirdEnglish'+shuffleArraylot[17],
+                                  nextId: 'thirdEnglish'+shuffleArraylottwo[17],
                                 },
                               ],
                               },
@@ -8826,14 +8829,14 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                               botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"writing"</strong>',
                               answers: [
                                 {
-                                  nextId: 'thirdEnglish'+shuffleArraylot[17],
+                                  nextId: 'thirdEnglish'+shuffleArraylottwo[17],
                                 },
                               ],
                               },
                             
                         
                                  //17
-                            ['thirdEnglish'+shuffleArraylot[17]]: {
+                            ['thirdEnglish'+shuffleArraylottwo[17]]: {
                               botPrompt: 'Select the sentence in the present continuous tense:',
                               type: RTypes.TRANSFORMED_TEXT,
                               
@@ -8862,7 +8865,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                               botPrompt: 'Hurray! <strong>They are swimming in the pool</strong> is the correct answer  ! 😎',
                               answers: [
                                 {
-                                  nextId: 'thirdEnglish'+shuffleArraylot[18],
+                                  nextId: 'thirdEnglish'+shuffleArraylottwo[18],
                                 },
                               ],
                               },
@@ -8870,14 +8873,14 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                               botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"They are swimming in the pool"</strong>',
                               answers: [
                                 {
-                                  nextId: 'thirdEnglish'+shuffleArraylot[18],
+                                  nextId: 'thirdEnglish'+shuffleArraylottwo[18],
                                 },
                               ],
                               },
                         
                         
                                  //18
-                            ['thirdEnglish'+shuffleArraylot[18]]: {
+                            ['thirdEnglish'+shuffleArraylottwo[18]]: {
                               botPrompt: 'Which sentence is NOT in the present continuous tense?',
                               type: RTypes.TRANSFORMED_TEXT,
                               
@@ -8906,7 +8909,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                               botPrompt: 'Hurray! <strong>I will visit the zoo tomorrow</strong> is the correct answer  ! 😎',
                               answers: [
                                 {
-                                  nextId: 'thirdEnglish'+shuffleArraylot[19],
+                                  nextId: 'thirdEnglish'+shuffleArraylottwo[19],
                                 },
                               ],
                               },
@@ -8914,14 +8917,14 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                               botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"I will visit the zoo tomorrow"</strong>',
                               answers: [
                                 {
-                                  nextId: 'thirdEnglish'+shuffleArraylot[19],
+                                  nextId: 'thirdEnglish'+shuffleArraylottwo[19],
                                 },
                               ],
                               },
                         
                         
                                  //19
-                            ['thirdEnglish'+shuffleArraylot[19]]: {
+                            ['thirdEnglish'+shuffleArraylottwo[19]]: {
                               botPrompt: 'Which sentence is in the present continuous tense?',
                               type: RTypes.TRANSFORMED_TEXT,
                               
@@ -8950,7 +8953,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                               botPrompt: 'Hurray! <strong>He is eating dinner right now</strong> is the correct answer  ! 😎',
                               answers: [
                                 {
-                                  nextId: 'thirdEnglish'+shuffleArraylot[20],
+                                  nextId: 'thirdEnglish'+shuffleArraylottwo[20],
                                 },
                               ],
                               },
@@ -8958,14 +8961,14 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                               botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"He is eating dinner right now"</strong>',
                               answers: [
                                 {
-                                  nextId: 'thirdEnglish'+shuffleArraylot[20],
+                                  nextId: 'thirdEnglish'+shuffleArraylottwo[20],
                                 },
                               ],
                               },
                         
                         
                                  //20
-                            ['thirdEnglish'+shuffleArraylot[20]]: {
+                            ['thirdEnglish'+shuffleArraylottwo[20]]: {
                               botPrompt: 'Choose the sentence in the present continuous tense:',
                               type: RTypes.TRANSFORMED_TEXT,
                               
