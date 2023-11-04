@@ -59,7 +59,7 @@ const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
 
 console.log(randomNumber);
 
-const minclass = 0;
+const minclass = 1;
 const maxclass = 14;
 const randomNumberclass = Math.floor(Math.random() * (maxclass - minclass + 1)) + minclass;
 
@@ -8023,10 +8023,10 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                       botPrompt: ' What is the primary source of energy for the sun?',
                       type: RTypes.TRANSFORMED_TEXT,
                       
-                      input: selectField(['Wind energy', 'Solar energy', "Chemical energy",'Sound energy']),
+                      input: selectField(['Wind energy', 'Solar energy', "Chemical energy", "Sound energy"]),
                         answers: [
                           {
-                            answer: 'Wind energy ',
+                            answer: 'Wind energy',
                             nextId: 'inthirdSciencecorrectq19',
                             sumToBags: [{ name: 'ai', points: 1 }],
                           },
@@ -8041,7 +8041,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                             sumToBags: [{ name: 'ai', points: 1 }],
                           },
                           {
-                            answer: 'Sound energy',
+                            answer: "Sound energy",
                             nextId: 'inthirdSciencecorrectq19',
                             sumToBags: [{ name: 'ai', points: 1 }],
                           },
@@ -8238,7 +8238,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                                   sumToBags: [{ name: 'ai', points: 1 }],
                                 },
                                 {
-                                  answer: "the",
+                                  answer: "Small",
                                   nextId: 'inthirdEnglishcorrectq3',
                                   sumToBags: [{ name: 'ai', points: 1 }],
                                 },
@@ -8626,7 +8626,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                                     sumToBags: [{ name: 'ac', points: 1 }],
                                   },
                                   {
-                                    answer: 'eat',
+                                    answer: 'eats',
                                     nextId: 'inthirdEnglishcorrectq12',
                                     sumToBags: [{ name: 'ai', points: 1 }],
                                   },
@@ -9108,7 +9108,7 @@ classiv: {
       botPrompt: 'Which of the following is NOT a part of the digestive system?',
       type: RTypes.TRANSFORMED_TEXT,
       
-      input: selectField(['Esophagus', 'Pancreas', "Kidney","Large intestne"]),
+      input: selectField(['Esophagus', 'Pancreas', "Kidney", "Large intestine"]),
         answers: [
           {
             answer: 'Esophagus',
@@ -14804,7 +14804,7 @@ classiv: {
       },
       {
         answer: "It causes earthquakes",
-        nextId: 'finiveSciencecorrectq16',
+        nextId: 'fiveSciencecorrectq16',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
     ],
@@ -23835,7 +23835,7 @@ wishtocontinueeightEnglish: {
   botPrompt: 'What is the main source of nutrient pollution in bodies of water, leading to issues like harmful algal blooms?',
   type: RTypes.TRANSFORMED_TEXT,
   
-  input: selectField(['Industrial chemicals', 'Air pollution', "Excessive fertilizer runoff","Oil spills"]),
+  input: selectField(['Industrial chemicals', 'Air pollution', "Excessive fertilizer runoff", "Oil spills"]),
     answers: [
       {
         answer: 'Industrial chemicals',
@@ -23864,7 +23864,7 @@ wishtocontinueeightEnglish: {
   botPrompt: 'Hurray! <strong>Excessive fertilizer runoff</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'wishtocontineueightScience',
+      nextId: 'wishtocontinueeightScience',
     },
   ],
   },
