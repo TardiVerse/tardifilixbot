@@ -3209,7 +3209,7 @@ classi: {
           },
         ],
         },
-        infirstEnglishcorrectq16: {
+        infirstEnglishcorrectq20: {
         botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Adjective"</strong>',
         answers: [
           {
@@ -3271,7 +3271,7 @@ classi: {
     },
   ],
   },
-  infirstMathscorrectq5: {
+  infirstMathscorrectq1: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"3"</strong>',
   answers: [
     {
@@ -3516,7 +3516,7 @@ classi: {
           },
           {
             answer: "29",
-            nextId: 'finirstMathscorrectq7',
+            nextId: 'firstMathscorrectq7',
             sumToBags: [{ name: 'ac', points: 1 }],
           },
           
@@ -6128,6 +6128,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
         type: RTypes.TRANSFORMED_TEXT,
         input: selectField(['Maths', "English", "Science"]),
         answers: [
+          
           {
             answer: "Maths",
             nextId: "thirdMaths"+randomNumberclass,
@@ -6136,6 +6137,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
             answer: "English",
             nextId: "thirdEnglish"+randomNumberclass,
           },
+         
           {
             answer: "Science",
             nextId: "thirdScience"+randomNumberclass,
@@ -11603,7 +11605,7 @@ classiv: {
       },
       
       fourthMathscorrectq12: {
-      botPrompt: 'Hurray! <strong>Cicle</strong> is the correct answer  ! 😎',
+      botPrompt: 'Hurray! <strong>Circle</strong> is the correct answer  ! 😎',
       answers: [
         {
           nextId: 'fourthMaths'+shuffleArraylottwo[13],
