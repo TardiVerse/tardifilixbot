@@ -23965,12 +23965,12 @@ classx: {
 
 },
 
-endConversationersation: {
+endConversation: {
   botPrompt: 'Thank you Will Meet you tomorrow ',
   input: endOfConversation(),
   answers: [
     {
-      nextId: 'endConversationersation',
+      nextId: 'endConversation',
     },
   ],
 },
