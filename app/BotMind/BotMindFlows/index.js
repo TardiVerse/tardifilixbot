@@ -3021,7 +3021,7 @@ classi: {
             },
             {
               answer: "Adverbs",
-              nextId: ' ',
+              nextId: 'infirstEnglishcorrectq16',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
             
@@ -11384,7 +11384,7 @@ classiv: {
       botPrompt: 'If the clock shows 2:45 PM, how many minutes are there until 4:00 PM?',
       type: RTypes.TRANSFORMED_TEXT,
       
-      input: selectField(['15 minutes', '30 minutes', "75 minutes"," 105 minutes"]),
+      input: selectField(['15 minutes', '30 minutes', "75 minutes","105 minutes"]),
         answers: [
           {
             answer: '15 minutes',
