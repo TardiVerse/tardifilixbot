@@ -59,9 +59,9 @@ console.log(randomNumber);
 
 const minclass = 1;
 const maxclass = 19;
-const randomNumberclass = Math.floor(Math.random() * (max - min + 1)) + min;
+const randomNumberclass = Math.floor(Math.random() * (maxclass - minclass + 1)) + minclass;
 
-console.log(randomNumberclass);
+
 
 
 
