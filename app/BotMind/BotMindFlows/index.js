@@ -69,7 +69,7 @@ const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
 
 console.log(randomNumber);
 
-const minclass = 1;
+const minclass = 5;
 const maxclass = 14;
 const randomNumberclass = Math.floor(Math.random() * (maxclass - minclass + 1)) + minclass;
 
@@ -4140,7 +4140,7 @@ classi: {
           },
         ],
         },
-        infirstMathscorrectq16: {
+        infirstMathscorrectq20: {
         botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"77"</strong>',
         answers: [
           {
@@ -8681,7 +8681,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                               ],
                               },
                               inthirdEnglishcorrectq12: {
-                              botPrompt: 'You have selected wrong Answer... 🤔 the <strong>eat</strong> answer is <strong>"eats"</strong>',
+                              botPrompt: 'You have selected wrong Answer... 🤔 the <strong>eat</strong> answer is <strong>"eat"</strong>',
                               answers: [
                                 {
                                   nextId: 'thirdEnglish'+shuffleArraylottwo[13],
@@ -11417,7 +11417,7 @@ classiv: {
       botPrompt: 'If the clock shows 2:45 PM, how many minutes are there until 4:00 PM?',
       type: RTypes.TRANSFORMED_TEXT,
       
-      input: selectField(['15 minutes', '30 minutes', "75 minutes"," 105 minutes"]),
+      input: selectField(['15 minutes', '30 minutes', "75 minutes","105 minutes"]),
         answers: [
           {
             answer: '15 minutes',
