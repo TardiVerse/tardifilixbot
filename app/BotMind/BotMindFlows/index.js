@@ -2281,7 +2281,7 @@ classprekg: {
       },
       {
         answer: "No",
-        nextId: 'endConv',
+        nextId: 'endConversationersation',
       },
     
     ],
@@ -2300,7 +2300,7 @@ classukg: {
       },
       {
         answer: "No",
-        nextId: 'endConv',
+        nextId: 'endConversationersation',
       },
     
     ],
@@ -2319,7 +2319,7 @@ classlkg: {
       },
       {
         answer: "No",
-        nextId: 'endConv',
+        nextId: 'endConversationersation',
       },
     
     ],
@@ -3232,7 +3232,7 @@ classi: {
             },
             {
               answer: "No",
-              nextId: 'endConv',
+              nextId: 'endConversation',
             },
           
           ],
@@ -4128,7 +4128,7 @@ classi: {
             },
             {
               answer: "No",
-              nextId: 'endConv',
+              nextId: 'endConversation',
             },
           
           ],
@@ -5105,7 +5105,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
       },
       {
         answer: "No",
-        nextId: 'endConv',
+        nextId: 'endConversation',
       },
     
     ],
@@ -5764,7 +5764,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
             },
             {
               answer: "Past",
-              nextId: 'inecondMathscorrectq14',
+              nextId: 'insecondMathscorrectq14',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
             {
@@ -6100,7 +6100,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
             },
             {
               answer: "No",
-              nextId: 'endConv',
+              nextId: 'endConversation',
             },
           
           ],
@@ -6120,7 +6120,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
       //     },
       //     {
       //       answer: "No",
-      //       nextId: 'endConv',
+      //       nextId: 'endConversation',
       //     },
         
       //   ],
@@ -7134,7 +7134,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                   },
                   {
                     answer: "No",
-                    nextId: 'endConv',
+                    nextId: 'endConversation',
                   },
                 
                 ],
@@ -7343,8 +7343,8 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                       answers: [
                         {
                           answer: 'Plastic',
-                          nextId: 'thirdSciencecorrectq5',
-                          sumToBags: [{ name: 'ac', points: 1 }],
+                          nextId: 'inthirdSciencecorrectq5',
+                          sumToBags: [{ name: 'ai', points: 1 }],
                         },
                         {
                           answer: 'Nylon',
@@ -7353,8 +7353,8 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                         },
                         {
                           answer: "Wool",
-                          nextId: 'inthirdSciencecorrectq5',
-                          sumToBags: [{ name: 'ai', points: 1 }],
+                          nextId: 'thirdSciencecorrectq5',
+                          sumToBags: [{ name: 'ac', points: 1 }],
                         },
                         {
                             answer: 'Rubber',
@@ -7366,7 +7366,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                     },
                     
                     thirdSciencecorrectq5: {
-                    botPrompt: 'Hurray! <strong>Plastic</strong> is the correct answer  ! 😎',
+                    botPrompt: 'Hurray! <strong>Wool</strong> is the correct answer  ! 😎',
                     answers: [
                       {
                         nextId: 'thirdScience'+shuffleArraylottwo[6],
@@ -7374,7 +7374,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                     ],
                     },
                     inthirdSciencecorrectq5: {
-                    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Plastic"</strong>',
+                    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Wool"</strong>',
                     answers: [
                       {
                         nextId: 'thirdScience'+shuffleArraylottwo[6],
@@ -7631,17 +7631,17 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                     botPrompt:  "What is the primary role of a bird's nest?",
                     type: RTypes.TRANSFORMED_TEXT,
                     
-                    input: selectField(['To keep the bird warm ', 'To provide a safe place for the bird to lay eggs and raise its young', "To store food",'To attract a mate']),
+                    input: selectField(['To keep the bird warm', 'To provide a safe place for the bird to lay eggs and raise its young', "To store food",'To attract a mate']),
                       answers: [
                         {
-                          answer: 'To keep the bird warm ',
+                          answer: 'To keep the bird warm',
                           nextId: 'inthirdSciencecorrectq11',
-                          sumToBags: [{ name: 'ac', points: 1 }],
+                          sumToBags: [{ name: 'ai', points: 1 }],
                         },
                         {
                           answer: 'To provide a safe place for the bird to lay eggs and raise its young',
                           nextId: 'thirdSciencecorrectq11',
-                          sumToBags: [{ name: 'ai', points: 1 }],
+                          sumToBags: [{ name: 'ac', points: 1 }],
                         },
                         {
                           answer: "To store food",
@@ -7658,7 +7658,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                     },
                     
                     thirdSciencecorrectq11: {
-                      botPrompt: 'Hurray! <strong>Breathe in oxygen</strong> is the correct answer  ! 😎',
+                      botPrompt: 'Hurray! <strong>To provide a safe place for the bird to lay eggs and raise its young</strong> is the correct answer  ! 😎',
                       answers: [
                         {
                           nextId: 'thirdScience'+shuffleArraylottwo[13],
@@ -7666,7 +7666,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                       ],
                       },
                       inthirdSciencecorrectq11: {
-                      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Breathe in oxygen"</strong>',
+                      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"To provide a safe place for the bird to lay eggs and raise its young"</strong>',
                       answers: [
                         {
                           nextId: 'thirdScience'+shuffleArraylottwo[13],
@@ -8126,7 +8126,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                           },
                           {
                             answer: "No",
-                            nextId: 'endConv',
+                            nextId: 'endConversation',
                           },
                         
                         ],
@@ -8136,7 +8136,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
   
                         //1
                         ['thirdEnglish'+shuffleArraylottwo[1]]: {
-                        botPrompt: 'Question 1:In the sentence, "The sky is cloudy," what is the adjective?',
+                        botPrompt: 'In the sentence, "The sky is cloudy," what is the adjective?',
                         type: RTypes.TRANSFORMED_TEXT,
                         
                         input: selectField(['The', 'Sky', "Cloudy"]),
@@ -9021,7 +9021,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                                   },
                                   {
                                     answer: "No",
-                                    nextId: 'endConv',
+                                    nextId: 'endConversation',
                                   },
                                 
                                 ],
@@ -10041,7 +10041,7 @@ classiv: {
           },
           {
             answer: "No",
-            nextId: 'endConv',
+            nextId: 'endConversation',
           },
         
         ],
@@ -11036,7 +11036,7 @@ classiv: {
           },
           {
             answer: "No",
-            nextId: 'endConv',
+            nextId: 'endConversation',
           },
         
         ],
@@ -12030,7 +12030,7 @@ classiv: {
           },
           {
             answer: "No",
-            nextId: 'endConv',
+            nextId: 'endConversation',
           },
         
         ],
@@ -13046,7 +13046,7 @@ classiv: {
           },
           {
             answer: "No",
-            nextId: 'endConv',
+            nextId: 'endConversation',
           },
         
         ],
@@ -14035,7 +14035,7 @@ classiv: {
             },
             {
               answer: "No",
-              nextId: 'endConv',
+              nextId: 'endConversation',
             },
           
           ],
@@ -15033,7 +15033,7 @@ classiv: {
       },
       {
         answer: "No",
-        nextId: 'endConv',
+        nextId: 'endConversation',
       },
     
     ],
@@ -16050,7 +16050,7 @@ classvi: {
           },
           {
             answer: "No",
-            nextId: 'endConv',
+            nextId: 'endConversation',
           },
         
         ],
@@ -17044,7 +17044,7 @@ classvi: {
                   },
                   {
                     answer: "No",
-                    nextId: 'endConv',
+                    nextId: 'endConversation',
                   },
                 
                 ],
@@ -18038,7 +18038,7 @@ classvi: {
               },
               {
                 answer: "No",
-                nextId: 'endConv',
+                nextId: 'endConversation',
               },
             
             ],
@@ -19053,7 +19053,7 @@ classviii: {
                     },
                     {
                       answer: "No",
-                      nextId: 'endConv',
+                      nextId: 'endConversation',
                     },
                   
                   ],
@@ -20028,7 +20028,7 @@ classviii: {
                       },
                       {
                         answer: "No",
-                        nextId: 'endConv',
+                        nextId: 'endConversation',
                       },
                     
                     ],
@@ -20717,7 +20717,7 @@ classviii: {
                     },
                     {
                       answer: "No",
-                      nextId: 'endConv',
+                      nextId: 'endConversation',
                     },
                   
                   ],
@@ -21021,7 +21021,7 @@ classviii: {
                         },
                         {
                           answer: "No",
-                          nextId: 'endConv',
+                          nextId: 'endConversation',
                         },
                       
                       ],
@@ -21972,7 +21972,7 @@ wishtocontinueeightMaths: {
     },
     {
       answer: "No",
-      nextId: 'endConv',
+      nextId: 'endConversation',
     },
   
   ],
@@ -22929,7 +22929,7 @@ wishtocontinueeightEnglish: {
     },
     {
       answer: "No",
-      nextId: 'endConv',
+      nextId: 'endConversation',
     },
   
   ],
@@ -23888,7 +23888,7 @@ wishtocontinueeightEnglish: {
       },
       {
         answer: "No",
-        nextId: 'endConv',
+        nextId: 'endConversation',
       },
     
     ],
@@ -23906,7 +23906,7 @@ classix: {
       },
       {
         answer: "No",
-        nextId: 'endConv',
+        nextId: 'endConversation',
       },
     
     ],
@@ -23925,11 +23925,21 @@ classx: {
       },
       {
         answer: "No",
-        nextId: 'endConv',
+        nextId: 'endConversation',
       },
     
     ],
 
+},
+
+endConversationersation: {
+  botPrompt: 'Thank you Will Meet you tomorrow ',
+  input: endOfConversation(),
+  answers: [
+    {
+      nextId: 'endConversationersation',
+    },
+  ],
 },
 
 //shuffletwoend
