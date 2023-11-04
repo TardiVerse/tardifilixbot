@@ -59,7 +59,7 @@ const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
 
 console.log(randomNumber);
 
-const minclass = 1;
+const minclass = 5;
 const maxclass = 14;
 const randomNumberclass = Math.floor(Math.random() * (maxclass - minclass + 1)) + minclass;
 
@@ -3021,7 +3021,7 @@ classi: {
             },
             {
               answer: "Adverbs",
-              nextId: 'infirstEnglishcorrectq16',
+              nextId: ' ',
               sumToBags: [{ name: 'ai', points: 1 }],
             },
             
@@ -4107,7 +4107,7 @@ classi: {
           },
         ],
         },
-        infirstMathscorrectq16: {
+        infirstMathscorrectq20: {
         botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"77"</strong>',
         answers: [
           {
@@ -8648,7 +8648,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                               ],
                               },
                               inthirdEnglishcorrectq12: {
-                              botPrompt: 'You have selected wrong Answer... 🤔 the <strong>eat</strong> answer is <strong>"eats"</strong>',
+                              botPrompt: 'You have selected wrong Answer... 🤔 the <strong>eat</strong> answer is <strong>"eat"</strong>',
                               answers: [
                                 {
                                   nextId: 'thirdEnglish'+shuffleArraylottwo[13],
