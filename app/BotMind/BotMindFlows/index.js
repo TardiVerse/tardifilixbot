@@ -21785,7 +21785,7 @@ input: selectField(['ab²', '2a²b', "-4ab²","-a²b"]),
     {
       answer: "-3a²b",
       nextId: 'ineightMathscorrectq16',
-      sumToBags: [{ name: 'ac', points: 1 }],
+      sumToBags: [{ name: 'ai', points: 1 }],
     },
   ],
 },
@@ -23948,7 +23948,959 @@ classix: {
 
 //classx
 classx: {
-  botPrompt: 'There is no content in Clss X for now. Do you Wish to Continue ?',
+  botPrompt: 'You Have Selected CLASS VIII. Which subject you would like to start',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['Maths']),
+    answers: [
+      {
+        answer: 'Maths',
+        nextId: 'tenthMaths'+randomNumberclass,
+      },
+    ],
+  
+
+},
+
+  //1
+  ['tenthMaths'+shuffleArraylottwo[1]]: {
+    botPrompt: 'The graph of a polynomial p(x) passes through the points (-5, 0), (0, -40), (8, 0) and (5, -30). Which among the following is a factor of p(x)?',
+    type: RTypes.TRANSFORMED_TEXT,
+    
+    input: selectField(['(x - 5)', '(x - 8)', "(x + 30)","(x + 40)"]),
+      answers: [
+        {
+          answer: '(x - 5)',
+          nextId: 'intenthMathscorrectq1',
+          sumToBags: [{ name: 'ai', points: 1 }],
+        },
+        {
+          answer: '(x - 8)',
+          nextId: 'tenthMathscorrectq1',
+          sumToBags: [{ name: 'ac', points: 1 }],
+        },
+        {
+          answer: "(x + 30)",
+          nextId: 'intenthMathscorrectq1',
+          sumToBags: [{ name: 'ai', points: 1 }],
+        },
+        {
+          answer: "(x + 40)",
+          nextId: 'intenthMathscorrectq1',
+          sumToBags: [{ name: 'ai', points: 1 }],
+        },
+      ],
+    },
+    
+    tenthMathscorrectq1: {
+    botPrompt: 'Hurray! <strong>(x - 8)</strong> is the correct answer  ! 😎',
+    answers: [
+      {
+        nextId: 'tenthMaths'+shuffleArraylottwo[2],
+      },
+    ],
+    },
+    intenthMathscorrectq1: {
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"(x - 8)"</strong>',
+    answers: [
+      {
+        nextId: 'tenthMaths'+shuffleArraylottwo[2],
+      },
+    ],
+    },
+    
+  //2
+  ['tenthMaths'+shuffleArraylottwo[2]]: {
+  botPrompt: 'Shown below is a pair of linear equations. mx + 4y - 6 = 0 and ny - 12x + 12 = 0',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['m = -1 and n = 2', 'm = -1 and n = 3', "m = 6 and n = -8", "m = 6 and n = -2"]),
+    answers: [
+      {
+        answer: 'm = -1 and n = 2',
+        nextId: 'intenthMathscorrectq2',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: 'm = -1 and n = 3',
+        nextId: 'intenthMathscorrectq2',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: "m = 6 and n = -8",
+        nextId: 'tenthMathscorrectq2',
+        sumToBags: [{ name: 'ac', points: 1 }],
+      },
+      {
+        answer: "m = 6 and n = -2",
+        nextId: 'intenthMathscorrectq2',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+    ],
+  },
+  
+  tenthMathscorrectq2: {
+  botPrompt: 'Hurray! <strong>m = 6 and n = -8</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'tenthMaths'+shuffleArraylottwo[3],
+    },
+  ],
+  },
+  intenthMathscorrectq2: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"m = 6 and n = -8"</strong>',
+  answers: [
+    {
+      nextId: 'tenthMaths'+shuffleArraylottwo[3],
+    },
+  ],
+  },
+  
+  //3
+  ['tenthMaths'+shuffleArraylottwo[3]]: {
+  botPrompt: 'A teacher asks three students to complete the following statement about the nature of the roots of a quadratic equation.If q-4pr > 0, the roots of the quadratic equation px2 + qx + r = 0 will be...Zain answers, "always positive".',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['Zain', 'Vipul', "Suman","(none of them)"]),
+    answers: [
+      {
+        answer: 'Zain',
+        nextId: 'intenthMathscorrectq3',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: 'Vipul',
+        nextId: 'intenthMathscorrectq3',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: "Suman",
+        nextId: 'tenthMathscorrectq3',
+        sumToBags: [{ name: 'ac', points: 1 }],
+      },
+      {
+        answer: "(none of them)",
+        nextId: 'intenthMathscorrectq3',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+    ],
+  },
+  
+  tenthMathscorrectq3: {
+  botPrompt: 'Hurray! <strong>Suman</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'tenthMaths'+shuffleArraylottwo[4],
+    },
+  ],
+  },
+  intenthMathscorrectq3: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Suman"</strong>',
+  answers: [
+    {
+      nextId: 'tenthMaths'+shuffleArraylottwo[4],
+    },
+  ],
+  },
+  
+  //4
+  ['tenthMaths'+shuffleArraylottwo[4]]: {
+  botPrompt: 'Two concentric circles are centered at O(-4, 3). The ratio of the area of inner circle to that of the outer circle is 1:9. Points A and B lie on the boundaries of the inner and outer circle, respectively, as shown below.https://drive.google.com/file/d/1uwdcSxQ6Kh-1qYYS1Ts8USUry2KFp4QG/view?usp=drive_link',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['( 2 /3 , 13 /3 )', '( -5 /3 , 11 /3 )', "( -9 /4 , 14 /4 )","( -33 /10 , 16 /5 )"]),
+    answers: [
+      {
+        answer: '( 2 /3 , 13 /3 )',
+        nextId: 'intenthMathscorrectq4',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: '( -5 /3 , 11 /3 )',
+        nextId: 'tenthMathscorrectq4',
+        sumToBags: [{ name: 'ac', points: 1 }],
+      },
+      {
+        answer: "( -9 /4 , 14 /4 )",
+        nextId: 'intenthMathscorrectq4',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: "( -33 /10 , 16 /5 )",
+        nextId: 'intenthMathscorrectq4',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+    ],
+  },
+  
+  tenthMathscorrectq4: {
+  botPrompt: 'Hurray! <strong>( -5 /3 , 11 /3 )</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'tenthMaths'+shuffleArraylottwo[5],
+    },
+  ],
+  },
+  intenthMathscorrectq4: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"( -5 /3 , 11 /3 )"</strong>',
+  answers: [
+    {
+      nextId: 'tenthMaths'+shuffleArraylottwo[5],
+    },
+  ],
+  },
+  
+  //5
+  ['tenthMaths'+shuffleArraylottwo[5]]: {
+  botPrompt: '"Sonali is standing on one side of a 7 m wide road as shown below. She wants to estimate the distance (D) between two light poles on the other side without crossing the road. image: https://drive.google.com/file/d/1ZxjR2mE_tcbwaww2GZI0pq0nBr350SQL/view?usp=drive_link....Which of the following expressions represent D in terms of p and r?   "',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['7r /p m', 'pr /7 m', "pr /p+7 m","r(p+7) p m"]),
+    answers: [
+      {
+        answer: '7r /p m',
+        nextId: 'intenthMathscorrectq5',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: 'pr /7 m',
+        nextId: 'intenthMathscorrectq5',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: "pr /p+7 m",
+        nextId: 'intenthMathscorrectq5',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: "r(p+7) p m",
+        nextId: 'tenthMathscorrectq5',
+        sumToBags: [{ name: 'ac', points: 1 }],
+      },
+    ],
+  },
+  
+  tenthMathscorrectq5: {
+  botPrompt: 'Hurray! <strong>r(p+7) p m</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'tenthMaths'+shuffleArraylottwo[6],
+    },
+  ],
+  },
+  intenthMathscorrectq5: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"r(p+7) p m"</strong>',
+  answers: [
+    {
+      nextId: 'tenthMaths'+shuffleArraylottwo[6],
+    },
+  ],
+  },
+  
+  //6
+  ['tenthMaths'+shuffleArraylottwo[6]]: {
+  botPrompt: '"Shown below are two triangles such that length of two sides of each is known. https://drive.google.com/file/d/1uwdcSxQ6Kh-1qYYS1Ts8USUry2KFp4QG/view?usp=drive_link.. Along with the given information, which of these is sufficient to conclude whether ΔKLM is similar to ΔPQR? i) ∠KLM = ∠PQR.(ii) Ratio of KM:PR"',
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['only (i)', 'only (ii)', "either (i) or (ii)","(the given information is enough to conclude that ΔKLM is similar to ΔPQR as ratio of sides is known)"]),
+    answers: [
+      {
+        answer: 'only (i)',
+        nextId: 'intenthMathscorrectq6',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: 'only (ii)',
+        nextId: 'intenthMathscorrectq6',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: "either (i) or (ii)",
+        nextId: 'tenthMathscorrectq6',
+        sumToBags: [{ name: 'ac', points: 1 }],
+      },
+      {
+        answer: "(the given information is enough to conclude that ΔKLM is similar to ΔPQR as ratio of sides is known)",
+        nextId: 'intenthMathscorrectq6',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+    ],
+  },
+  
+  tenthMathscorrectq6: {
+  botPrompt: 'Hurray! <strong>either (i) or (ii)</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'tenthMaths'+shuffleArraylottwo[7],
+    },
+  ],
+  },
+  intenthMathscorrectq6: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"either (i) or (ii)"</strong>',
+  answers: [
+    {
+      nextId: 'tenthMaths'+shuffleArraylottwo[7],
+    },
+  ],
+  },
+  
+  //7
+  ['tenthMaths'+shuffleArraylottwo[7]]: {
+  botPrompt: 'Shown below is a sector of a circle with centre P. All lengths are measured in cm. https://drive.google.com/file/d/1uwdcSxQ6Kh-1qYYS1Ts8USUry2KFp4QG/view?usp=drive_link..What is the length of PE?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['3 cm', '3.5 cm', "4 cm","4.5 cm"]),
+    answers: [
+      {
+        answer: '3 cm',
+        nextId: 'intenthMathscorrectq7',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: '3.5 cm',
+        nextId: 'intenthMathscorrectq7',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: "4 cm",
+        nextId: 'intenthMathscorrectq7',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: "4.5 cm",
+        nextId: 'tenthMathscorrectq7',
+        sumToBags: [{ name: 'ac', points: 1 }],
+      },
+    ],
+  },
+  
+  tenthMathscorrectq7: {
+  botPrompt: 'Hurray! <strong>4.5 cm</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'tenthMaths'+shuffleArraylottwo[8],
+    },
+  ],
+  },
+  intenthMathscorrectq7: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4.5 cm"</strong>',
+  answers: [
+    {
+      nextId: 'tenthMaths'+shuffleArraylottwo[8],
+    },
+  ],
+  },
+  
+  //8
+  ['tenthMaths'+shuffleArraylottwo[8]]: {
+  botPrompt: 'A circle is drawn. Two points are marked outside the circle such that only 3 tangents can be drawn to the circle using these two points.Which of the following is true based on the above information?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['All 3 tangents are equal in length.', 'Both the points lie on one of the tangents.', "The tangents and the circle have two common points in total.","(such a situation is not possible as with 2 points, there will be 4 tangents to the circle)"]),
+    answers: [
+      {
+        answer: 'All 3 tangents are equal in length.',
+        nextId: 'intenthMathscorrectq8',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: 'Both the points lie on one of the tangents.',
+        nextId: 'tenthMathscorrectq8',
+        sumToBags: [{ name: 'ac', points: 1 }],
+      },
+      {
+        answer: "The tangents and the circle have two common points in total.",
+        nextId: 'intenthMathscorrectq8',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: "(such a situation is not possible as with 2 points, there will be 4 tangents to the circle)",
+        nextId: 'intenthMathscorrectq8',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+    ],
+  },
+  
+  tenthMathscorrectq8: {
+  botPrompt: 'Hurray! <strong>Both the points lie on one of the tangents.</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'tenthMaths'+shuffleArraylottwo[9],
+    },
+  ],
+  },
+  intenthMathscorrectq8: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Both the points lie on one of the tangents."</strong>',
+  answers: [
+    {
+      nextId: 'tenthMaths'+shuffleArraylottwo[9],
+    },
+  ],
+  },
+  
+  //9
+  ['tenthMaths'+shuffleArraylottwo[9]]: {
+  botPrompt: 'Shown below is a circle with 3 tangents KQ, KP and LM. QL = 2 cm and KL = 6 cm. PM = 1 2 KL. https://drive.google.com/file/d/1pua3vS4K1jTdjF8UhjJLRKAMTvvJZBBO/view?usp=drive_link..What is the measure of ∠LMK?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['50°', '65°', "80°","(cannot be uniquely determined with the given information)"]),
+    answers: [
+      {
+        answer: '50°',
+        nextId: 'intenthMathscorrectq9',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: '65°',
+        nextId: 'intenthMathscorrectq9',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: "80°",
+        nextId: 'tenthMathscorrectq9',
+        sumToBags: [{ name: 'ac', points: 1 }],
+      },
+      {
+        answer: "(cannot be uniquely determined with the given information)",
+        nextId: 'intenthMathscorrectq9',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+    ],
+  },
+  
+  tenthMathscorrectq9: {
+  botPrompt: 'Hurray! <strong>80°</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'tenthMaths'+shuffleArraylottwo[10],
+    },
+  ],
+  },
+  intenthMathscorrectq9: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"80°"</strong>',
+  answers: [
+    {
+      nextId: 'tenthMaths'+shuffleArraylottwo[10],
+    },
+  ],
+  },
+  
+  //10
+  ['tenthMaths'+shuffleArraylottwo[10]]: {
+  botPrompt: 'In the figure shown below, lines AB and PQ are parallel to each other. All measurements are in centimetres. https://drive.google.com/file/d/1rsSMPNr5zhkC1c0yLTXB8P_PqMqrtQce/view?usp=drive_link..Which of the following gives the value of cos θ?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['b/c', 'c/b', "c/b+y","a+x/b+y"]),
+    answers: [
+      {
+        answer: 'b/c',
+        nextId: 'intenthMathscorrectq10',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: 'c/b',
+        nextId: 'tenthMathscorrectq10',
+        sumToBags: [{ name: 'ac', points: 1 }],
+      },
+      {
+        answer: "c/b+y",
+        nextId: 'intenthMathscorrectq10',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: "a+x/b+y",
+        nextId: 'intenthMathscorrectq10',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+    ],
+  },
+  
+  tenthMathscorrectq10: {
+  botPrompt: 'Hurray! <strong>c/b</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'tenthMaths'+shuffleArraylottwo[11],
+    },
+  ],
+  },
+  intenthMathscorrectq10: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"c/b"</strong>',
+  answers: [
+    {
+      nextId: 'tenthMaths'+shuffleArraylottwo[11],
+    },
+  ],
+  },
+  
+  //11
+  ['tenthMaths'+shuffleArraylottwo[11]]: {
+  botPrompt: 'The sine of an angle in a right triangle is 4 5 .Which of these could be the measures of the sides of the triangle?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['4 cm, 5 cm and 9 cm', '4 cm, 5 cm and √41 cm',"6 cm, 8 cm and 10 cm", "8 cm, 10 cm and 4√41 cm"]),
+    answers: [
+      {
+        answer: '4 cm, 5 cm and 9 cm',
+        nextId: 'intenthMathscorrectq11',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: '4 cm, 5 cm and √41 cm',
+        nextId: 'intenthMathscorrectq11',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: "6 cm, 8 cm and 10 cm",
+        nextId: 'tenthMathscorrectq11',
+        sumToBags: [{ name: 'ac', points: 1 }],
+      },
+      {
+        answer: "8 cm, 10 cm and 4√41 cm",
+        nextId: 'tenthMathscorrectq11',
+        sumToBags: [{ name: 'ac', points: 1 }],
+      },
+    ],
+  },
+  
+  tenthMathscorrectq11: {
+  botPrompt: 'Hurray! <strong>6 cm, 8 cm and 10 cm</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'tenthMaths'+shuffleArraylottwo[12],
+    },
+  ],
+  },
+  intenthMathscorrectq11: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"6 cm, 8 cm and 10 cm"</strong>',
+  answers: [
+    {
+      nextId: 'tenthMaths'+shuffleArraylottwo[12],
+    },
+  ],
+  },
+  
+  //12
+  ['tenthMaths'+shuffleArraylottwo[12]]: {
+  botPrompt: '"The marks obtained by a set of students in an exam are recorded in a grouped frequency table. The maximum number of students are found to be in the range of (70-80) marks.If the number of students in the ranges before and after the (70-80) range are equal, which of the following is the mode of the data?"',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['70 marks', '75 marks', "80 marks","(mode cannot be found as frequency is not given)"]),
+    answers: [
+      {
+        answer: '70 marks',
+        nextId: 'intenthMathscorrectq12',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: '75 marks',
+        nextId: 'tenthMathscorrectq12',
+        sumToBags: [{ name: 'ac', points: 1 }],
+      },
+      {
+        answer: "80 marks",
+        nextId: 'intenthMathscorrectq12',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: "(mode cannot be found as frequency is not given)",
+        nextId: 'intenthMathscorrectq12',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+    ],
+  },
+  
+  tenthMathscorrectq12: {
+  botPrompt: 'Hurray! <strong>75 marks</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'tenthMaths'+shuffleArraylottwo[13],
+    },
+  ],
+  },
+  intenthMathscorrectq12: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"75 marks"</strong>',
+  answers: [
+    {
+      nextId: 'tenthMaths'+shuffleArraylottwo[13],
+    },
+  ],
+  },
+  
+  //13
+  ['tenthMaths'+shuffleArraylottwo[13]]: {
+  botPrompt: 'In the figure below, a unit square ROST is inscribed in a circular sector with centre O. https://drive.google.com/file/d/1NsRWpnhGts55iO9__E5Hpyv-R9P8Tqql/view?usp=drive_link Along with the above information, which of these is SUFFICIENT to find the area of sector POQ?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['area of the square ROST', 'radius of sector POQ', "arc length PQ","(the given information is sufficient)"]),
+    answers: [
+      {
+        answer: 'area of the square ROST',
+        nextId: 'intenthMathscorrectq13',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: 'radius of sector POQ',
+        nextId: 'intenthMathscorrectq13',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: "arc length PQ",
+        nextId: 'tenthMathscorrectq13',
+        sumToBags: [{ name: 'ac', points: 1 }],
+      },
+      {
+        answer: "(the given information is sufficient)",
+        nextId: 'intenthMathscorrectq13',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+    ],
+  },
+  
+  tenthMathscorrectq13: {
+  botPrompt: 'Hurray! <strong>arc length PQ</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'tenthMaths'+shuffleArraylottwo[14],
+    },
+  ],
+  },
+  intenthMathscorrectq13: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"arc length PQ"</strong>',
+  answers: [
+    {
+      nextId: 'tenthMaths'+shuffleArraylottwo[14],
+    },
+  ],
+  },
+  
+  //14
+  ['tenthMaths'+shuffleArraylottwo[14]]: {
+  botPrompt: '"Fibonacci sequence is a pattern in which each number is obtained by adding the previous two numbers (except the first 2 numbers).The pattern is 0, 1, 1, 2, 3, 5, 8, 13...Shown below is a representation of the first few terms of the Fibonacci sequence in a unit square grid. The terms represent the side lengths of the squares. https://drive.google.com/file/d/1PV4Y6wcxLEDUfsFOWLC9PYe3OrLo4JNt/view?usp=drive_link..."',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['4π sq units', '16π sq units', "48π sq units", "64π sq units"]),
+    answers: [
+      {
+        answer: '4π sq units',
+        nextId: 'intenthMathscorrectq14',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: '16π sq units',
+        nextId: 'tenthMathscorrectq14',
+        sumToBags: [{ name: 'ac', points: 1 }],
+      },
+      {
+        answer: "48π sq units",
+        nextId: 'intenthMathscorrectq14',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: "64π sq units",
+        nextId: 'intenthMathscorrectq14',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+    ],
+  },
+  
+  tenthMathscorrectq14: {
+  botPrompt: 'Hurray! <strong>16π sq units</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'tenthMaths'+shuffleArraylottwo[15],
+    },
+  ],
+  },
+  intenthMathscorrectq14: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"16π sq units"</strong>',
+  answers: [
+    {
+      nextId: 'tenthMaths'+shuffleArraylottwo[15],
+    },
+  ],
+  },
+  
+  //15
+  ['tenthMaths'+shuffleArraylottwo[15]]: {
+  botPrompt: 'Shown below is a solid made by joining a right circular cylinder and a hemisphere of equal radius (r cm). The total surface area of the solid is equal to the surface area of a sphere with twice the radius of this solid.https://drive.google.com/file/d/168wRCpuaUahGQcFz-VVE-Cl86s64_2Ta/view?usp=drive_link.Which of the following gives the height of the cylinder in the above solid?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['6r cm', '6.5r cm', "7r cm","7.5r cm"]),
+    answers: [
+      {
+        answer: '6r cm',
+        nextId: 'intenthMathscorrectq15',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: '6.5r cm',
+        nextId: 'tenthMathscorrectq15',
+        sumToBags: [{ name: 'ac', points: 1 }],
+      },
+      {
+        answer: "7r cm",
+        nextId: 'intenthMathscorrectq15',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: "7.5r cm",
+        nextId: 'intenthMathscorrectq15',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+    ],
+  },
+  
+  tenthMathscorrectq15: {
+  botPrompt: 'Hurray! <strong>6.5r cm</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'tenthMaths'+shuffleArraylottwo[16],
+    },
+  ],
+  },
+  intenthMathscorrectq15: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"6.5r cm"</strong>',
+  answers: [
+    {
+      nextId: 'tenthMaths'+shuffleArraylottwo[16],
+    },
+  ],
+  },
+  
+  //16
+  ['tenthMaths'+shuffleArraylottwo[16]]: {
+  botPrompt: 'Which of the following is equal to the given expression? https://drive.google.com/file/d/1jU211-JuUbuMnq5eApsurmm8LzVKCoCv/view?usp=drive_link..',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['sec θ', 'cosec θ', "(cot 2 θ) (sec θ)","(cot 2 θ) (cosec θ)"]),
+    answers: [
+      {
+        answer: 'sec θ',
+        nextId: 'tenthMathscorrectq16',
+        sumToBags: [{ name: 'ac', points: 1 }],
+      },
+      {
+        answer: 'cosec θ',
+        nextId: 'intenthMathscorrectq16',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: "(cot 2 θ) (sec θ)",
+        nextId: 'intenthMathscorrectq16',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: "(cot 2 θ) (cosec θ)",
+        nextId: 'intenthMathscorrectq16',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+    ],
+  },
+  
+  tenthMathscorrectq16: {
+  botPrompt: 'Hurray! <strong>sec θ</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'tenthMaths'+shuffleArraylottwo[17],
+    },
+  ],
+  },
+  intenthMathscorrectq16: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"sec θ"</strong>',
+  answers: [
+    {
+      nextId: 'tenthMaths'+shuffleArraylottwo[17],
+    },
+  ],
+  },
+  
+  //17
+  ['tenthMaths'+shuffleArraylottwo[17]]: {
+  botPrompt: 'The heights of plants in Dipti garden are recorded in the table given below. The median plant height is 55 cm. https://drive.google.com/file/d/1W_6D607HAdjS3j8BF_xnL7HWUUP_5_bv/view?usp=drive_link..Which of the following is the value of x?',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['1', '2', "8","(the value of x cannot be found without knowing the total number of plants)"]),
+    answers: [
+      {
+        answer: '1',
+        nextId: 'intenthMathscorrectq17',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: '2',
+        nextId: 'tenthMathscorrectq17',
+        sumToBags: [{ name: 'ac', points: 1 }],
+      },
+      {
+        answer: "8",
+        nextId: 'intenthMathscorrectq17',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: "(the value of x cannot be found without knowing the total number of plants)",
+        nextId: 'intenthMathscorrectq17',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+    ],
+  },
+  
+  tenthMathscorrectq17: {
+  botPrompt: 'Hurray! <strong>-2</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'tenthMaths'+shuffleArraylottwo[18],
+    },
+  ],
+  },
+  intenthMathscorrectq17: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"2"</strong>',
+  answers: [
+    {
+      nextId: 'tenthMaths'+shuffleArraylottwo[18],
+    },
+  ],
+  },
+  
+  //18
+  ['tenthMaths'+shuffleArraylottwo[18]]: {
+  botPrompt: '"A bowl contains 3 red and 2 blue marbles. Roohi wants to pick a red marble.Which of the following changes could she make so that the probability of picking a red marble is greater than it was before? (i) Adding a red marble,(ii) Removing a blue marble,iii)Adding 1 red and 1 blue marble"',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['only (i) ', 'only (i) and (ii) ', "only (i) and (iii) ","(all of the above) "]),
+    answers: [
+      {
+        answer: 'only (i) ',
+        nextId: 'intenthMathscorrectq18',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: 'only (i) and (ii) ',
+        nextId: 'tenthMathscorrectq18',
+        sumToBags: [{ name: 'ac', points: 1 }],
+      },
+      {
+        answer: "only (i) and (iii) ",
+        nextId: 'intenthMathscorrectq18',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: "(all of the above) ",
+        nextId: 'intenthMathscorrectq18',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+    ],
+  },
+  
+  tenthMathscorrectq18: {
+  botPrompt: 'Hurray! <strong>only (i) and (ii)</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'tenthMaths'+shuffleArraylottwo[19],
+    },
+  ],
+  },
+  intenthMathscorrectq18: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"only (i) and (ii) "</strong>',
+  answers: [
+    {
+      nextId: 'tenthMaths'+shuffleArraylottwo[19],
+    },
+  ],
+  },
+  
+  //19
+  ['tenthMaths'+shuffleArraylottwo[19]]: {
+  botPrompt: 'Two statements are given below - one labelled Assertion (A) and the other labelled Reason (R). Read the statements carefully and choose the option that correctly describes statements (A) and (R).Assertion (A): 2 is a prime number,Reason (R): The square of an irrational number is always a prime number.',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['Both (A) and (R) are true and (R) is the correct explanation of (A).', 'Both (A) and (R) are true and (R) is not the correct explanation of (A).', "(A) is true but (R) is false.","(A) is false but (R) is true."]),
+    answers: [
+      {
+        answer: 'Both (A) and (R) are true and (R) is the correct explanation of (A).',
+        nextId: 'intenthMathscorrectq19',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: 'Both (A) and (R) are true and (R) is not the correct explanation of (A).',
+        nextId: 'intenthMathscorrectq19',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: "(A) is true but (R) is false.",
+        nextId: 'tenthMathscorrectq19',
+        sumToBags: [{ name: 'ac', points: 1 }],
+      },
+      {
+        answer: "(A) is false but (R) is true.",
+        nextId: 'intenthMathscorrectq19',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+    ],
+  },
+  
+  tenthMathscorrectq19: {
+  botPrompt: 'Hurray! <strong>(A) is true but (R) is false.</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'tenthMaths'+shuffleArraylottwo[20],
+    },
+  ],
+  },
+  intenthMathscorrectq19: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"(A) is true but (R) is false."</strong>',
+  answers: [
+    {
+      nextId: 'tenthMaths'+shuffleArraylottwo[20],
+    },
+  ],
+  },
+  //20
+  ['tenthMaths'+shuffleArraylottwo[20]]: {
+  botPrompt: 'Two statements are given below - one labelled Assertion (A) and the other labelled Reason (R). Read the statements carefully and choose the option that correctly describes statements (A) and (R).Assertion (A): The origin is the ONLY point equidistant from (2, 3) and (-2, -3).Reason (R): The origin is the midpoint of the line joining (2, 3) and (-2, -3).',
+  type: RTypes.TRANSFORMED_TEXT,
+  
+  input: selectField(['81', '9', "729","6561"]),
+    answers: [
+      {
+        answer: 'Both (A) and (R) are true and (R) is the correct explanation of (A).',
+        nextId: 'intenthMathscorrectq19',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: 'Both (A) and (R) are true and (R) is not the correct explanation of (A).',
+        nextId: 'intenthMathscorrectq19',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: "(A) is true but (R) is false.",
+        nextId: 'intenthMathscorrectq19',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: "(A) is false but (R) is true.",
+        nextId: 'tenthMathscorrectq19',
+        sumToBags: [{ name: 'ac', points: 1 }],
+      },
+    ],
+  },
+  
+  tenthMathscorrectq20: {
+  botPrompt: 'Hurray! <strong>(A) is false but (R) is true.</strong> is the correct answer  ! 😎',
+  answers: [
+    {
+      nextId: 'wishtocontinuetenthMaths',
+    },
+  ],
+  },
+  intenthMathscorrectq20: {
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"(A) is false but (R) is true."</strong>',
+  answers: [
+    {
+      nextId: 'wishtocontinuetenthMaths',
+    },
+  ],
+  },
+  
+  wishtocontinuetenthMaths: {
+    botPrompt: 'You have Completed Maths. Do you Wish to Continue ?',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['Yes', "No"]),
     answers: [
@@ -23962,8 +24914,7 @@ classx: {
       },
     
     ],
-
-},
+  },
 
 endConversation: {
   botPrompt: 'Thank you Will Meet you tomorrow ',
