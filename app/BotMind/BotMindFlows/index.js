@@ -17538,19 +17538,19 @@ classvi: {
               },
               {
                 answer: "Because ice is denser than water", 
-                nextId: 'sixthSciencecorrectq10',
-                sumToBags: [{ name: 'ac', points: 1 }],
+                nextId: 'insixthSciencecorrectq10',
+                sumToBags: [{ name: 'ai', points: 1 }],
               },
               {
                 answer: "Because ice is less dense than water", 
-                nextId: 'insixthSciencecorrectq10',
-                sumToBags: [{ name: 'ai', points: 1 }],
+                nextId: 'sixthSciencecorrectq10',
+                sumToBags: [{ name: 'ac', points: 1 }],
               },
             ],
           },
           
           sixthSciencecorrectq10: {
-          botPrompt: 'Hurray! <strong>Because ice is denser than water</strong> is the correct answer  ! 😎',
+          botPrompt: 'Hurray! <strong>Because ice is less dense than water</strong> is the correct answer  ! 😎',
           answers: [
             {
               nextId: 'sixthScience'+shuffleArraylottwo[11],
@@ -17558,7 +17558,7 @@ classvi: {
           ],
           },
           insixthSciencecorrectq10: {
-          botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Because ice is denser than water"</strong>',
+          botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Because ice is less dense than water"</strong>',
           answers: [
             {
               nextId: 'sixthScience'+shuffleArraylottwo[11],
