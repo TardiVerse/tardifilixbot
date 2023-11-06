@@ -23956,13 +23956,13 @@ classix: {
         },
         {
           answer: '√6',
-          nextId: 'ninethMathscorrectq1',
-          sumToBags: [{ name: 'ac', points: 1 }],
+          nextId: 'inninethMathscorrectq1',
+          sumToBags: [{ name: 'ai', points: 1 }],
         },
         {
           answer: "1.6",
-          nextId: 'inninethMathscorrectq1',
-          sumToBags: [{ name: 'ai', points: 1 }],
+          nextId: 'ninethMathscorrectq1',
+          sumToBags: [{ name: 'ac', points: 1 }],
         },
         {
           answer: "1.9",
@@ -23973,7 +23973,7 @@ classix: {
     },
     
     ninethMathscorrectq1: {
-    botPrompt: 'Hurray! <strong>(x - 8)</strong> is the correct answer  ! 😎',
+    botPrompt: 'Hurray! <strong>1.6</strong> is the correct answer  ! 😎',
     answers: [
       {
         nextId: 'ninethMaths'+shuffleArraylottwo[2],
@@ -23981,7 +23981,7 @@ classix: {
     ],
     },
     inninethMathscorrectq1: {
-    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"(x - 8)"</strong>',
+    botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"1.6"</strong>',
     answers: [
       {
         nextId: 'ninethMaths'+shuffleArraylottwo[2],
@@ -23991,36 +23991,36 @@ classix: {
     
   //2
   ['ninethMaths'+shuffleArraylottwo[2]]: {
-  botPrompt: 'Shown below is a pair of linear equations. mx + 4y - 6 = 0 and ny - 12x + 12 = 0',
+  botPrompt: 'If a/b b/a =-1 then (a^3 - b^3)=?',
   type: RTypes.TRANSFORMED_TEXT,
   
-  input: selectField(['m = -1 and n = 2', 'm = -1 and n = 3', "m = 6 and n = -8", "m = 6 and n = -2"]),
+  input: selectField(['-3', '-2', "-1", "0"]),
     answers: [
       {
-        answer: 'm = -1 and n = 2',
+        answer: '-3',
         nextId: 'inninethMathscorrectq2',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
-        answer: 'm = -1 and n = 3',
+        answer: '-2',
         nextId: 'inninethMathscorrectq2',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
-        answer: "m = 6 and n = -8",
+        answer: "-1",
+        nextId: 'inninethMathscorrectq2',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: "0",
         nextId: 'ninethMathscorrectq2',
         sumToBags: [{ name: 'ac', points: 1 }],
-      },
-      {
-        answer: "m = 6 and n = -2",
-        nextId: 'inninethMathscorrectq2',
-        sumToBags: [{ name: 'ai', points: 1 }],
       },
     ],
   },
   
   ninethMathscorrectq2: {
-  botPrompt: 'Hurray! <strong>m = 6 and n = -8</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>0</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'ninethMaths'+shuffleArraylottwo[3],
@@ -24028,7 +24028,7 @@ classix: {
   ],
   },
   inninethMathscorrectq2: {
-  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"m = 6 and n = -8"</strong>',
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"0"</strong>',
   answers: [
     {
       nextId: 'ninethMaths'+shuffleArraylottwo[3],
@@ -24038,28 +24038,28 @@ classix: {
   
   //3
   ['ninethMaths'+shuffleArraylottwo[3]]: {
-  botPrompt: 'A teacher asks three students to complete the following statement about the nature of the roots of a quadratic equation.If q-4pr > 0, the roots of the quadratic equation px2 + qx + r = 0 will be...Zain answers, "always positive".',
+  botPrompt: 'If(x ^ 100 + 2x ^ 99 + k)  is divisible by(x + 1) then the value of k is',
   type: RTypes.TRANSFORMED_TEXT,
   
-  input: selectField(['Zain', 'Vipul', "Suman","(none of them)"]),
+  input: selectField(['1', '2', "-2","-3"]),
     answers: [
       {
-        answer: 'Zain',
-        nextId: 'inninethMathscorrectq3',
-        sumToBags: [{ name: 'ai', points: 1 }],
-      },
-      {
-        answer: 'Vipul',
-        nextId: 'inninethMathscorrectq3',
-        sumToBags: [{ name: 'ai', points: 1 }],
-      },
-      {
-        answer: "Suman",
+        answer: '1',
         nextId: 'ninethMathscorrectq3',
         sumToBags: [{ name: 'ac', points: 1 }],
       },
       {
-        answer: "(none of them)",
+        answer: '2',
+        nextId: 'inninethMathscorrectq3',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: "-2",
+        nextId: 'inninethMathscorrectq3',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: "-3",
         nextId: 'inninethMathscorrectq3',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
@@ -24067,7 +24067,7 @@ classix: {
   },
   
   ninethMathscorrectq3: {
-  botPrompt: 'Hurray! <strong>Suman</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>1</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'ninethMaths'+shuffleArraylottwo[4],
@@ -24075,7 +24075,7 @@ classix: {
   ],
   },
   inninethMathscorrectq3: {
-  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Suman"</strong>',
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"1"</strong>',
   answers: [
     {
       nextId: 'ninethMaths'+shuffleArraylottwo[4],
@@ -24085,28 +24085,28 @@ classix: {
   
   //4
   ['ninethMaths'+shuffleArraylottwo[4]]: {
-  botPrompt: 'Two concentric circles are centered at O(-4, 3). The ratio of the area of inner circle to that of the outer circle is 1:9. Points A and B lie on the boundaries of the inner and outer circle, respectively, as shown below.https://drive.google.com/file/d/1uwdcSxQ6Kh-1qYYS1Ts8USUry2KFp4QG/view?usp=drive_link',
+  botPrompt: 'TIf A(-2,3) and B(-3,5) are two given points then (abscissa of A) - (abscissa of B) = ?',
   type: RTypes.TRANSFORMED_TEXT,
   
-  input: selectField(['( 2 /3 , 13 /3 )', '( -5 /3 , 11 /3 )', "( -9 /4 , 14 /4 )","( -33 /10 , 16 /5 )"]),
+  input: selectField(['-2', '1', "-1","2"]),
     answers: [
       {
-        answer: '( 2 /3 , 13 /3 )',
+        answer: '-2',
         nextId: 'inninethMathscorrectq4',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
-        answer: '( -5 /3 , 11 /3 )',
+        answer: '1',
         nextId: 'ninethMathscorrectq4',
         sumToBags: [{ name: 'ac', points: 1 }],
       },
       {
-        answer: "( -9 /4 , 14 /4 )",
+        answer: "-1",
         nextId: 'inninethMathscorrectq4',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
-        answer: "( -33 /10 , 16 /5 )",
+        answer: "2",
         nextId: 'inninethMathscorrectq4',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
@@ -24114,7 +24114,7 @@ classix: {
   },
   
   ninethMathscorrectq4: {
-  botPrompt: 'Hurray! <strong>( -5 /3 , 11 /3 )</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>1</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'ninethMaths'+shuffleArraylottwo[5],
@@ -24122,7 +24122,7 @@ classix: {
   ],
   },
   inninethMathscorrectq4: {
-  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"( -5 /3 , 11 /3 )"</strong>',
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"1"</strong>',
   answers: [
     {
       nextId: 'ninethMaths'+shuffleArraylottwo[5],
@@ -24132,28 +24132,28 @@ classix: {
   
   //5
   ['ninethMaths'+shuffleArraylottwo[5]]: {
-  botPrompt: '"Sonali is standing on one side of a 7 m wide road as shown below. She wants to estimate the distance (D) between two light poles on the other side without crossing the road. image: https://drive.google.com/file/d/1ZxjR2mE_tcbwaww2GZI0pq0nBr350SQL/view?usp=drive_link....Which of the following expressions represent D in terms of p and r?   "',
+  botPrompt: 'Axioms are assumed',
   type: RTypes.TRANSFORMED_TEXT,
   
-  input: selectField(['7r /p m', 'pr /7 m', "pr /p+7 m","r(p+7) p m"]),
+  input: selectField(['definitions', 'theorems', "universal truths specific to geometry","universal truths in all branches of mathematics"]),
     answers: [
       {
-        answer: '7r /p m',
+        answer: 'definitions',
         nextId: 'inninethMathscorrectq5',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
-        answer: 'pr /7 m',
+        answer: 'theorems',
         nextId: 'inninethMathscorrectq5',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
-        answer: "pr /p+7 m",
+        answer: "universal truths specific to geometry",
         nextId: 'inninethMathscorrectq5',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
-        answer: "r(p+7) p m",
+        answer: "universal truths in all branches of mathematics",
         nextId: 'ninethMathscorrectq5',
         sumToBags: [{ name: 'ac', points: 1 }],
       },
@@ -24161,7 +24161,7 @@ classix: {
   },
   
   ninethMathscorrectq5: {
-  botPrompt: 'Hurray! <strong>r(p+7) p m</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>universal truths in all branches of mathematics</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'ninethMaths'+shuffleArraylottwo[6],
@@ -24169,7 +24169,7 @@ classix: {
   ],
   },
   inninethMathscorrectq5: {
-  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"r(p+7) p m"</strong>',
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"universal truths in all branches of mathematics"</strong>',
   answers: [
     {
       nextId: 'ninethMaths'+shuffleArraylottwo[6],
@@ -24179,27 +24179,27 @@ classix: {
   
   //6
   ['ninethMaths'+shuffleArraylottwo[6]]: {
-  botPrompt: '"Shown below are two triangles such that length of two sides of each is known. https://drive.google.com/file/d/1uwdcSxQ6Kh-1qYYS1Ts8USUry2KFp4QG/view?usp=drive_link.. Along with the given information, which of these is sufficient to conclude whether ΔKLM is similar to ΔPQR? i) ∠KLM = ∠PQR.(ii) Ratio of KM:PR"',
+  botPrompt: 'The graph of the linear equation 2x + 3y = 6 meets the y-axis at the point ',
   type: RTypes.TRANSFORMED_TEXT,
-  input: selectField(['only (i)', 'only (ii)', "either (i) or (ii)","(the given information is enough to conclude that ΔKLM is similar to ΔPQR as ratio of sides is known)"]),
+  input: selectField(['(2,0)', '(3,0)', "(0,2)","(0,3)"]),
     answers: [
       {
-        answer: 'only (i)',
+        answer: '(2,0)',
         nextId: 'inninethMathscorrectq6',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
-        answer: 'only (ii)',
+        answer: '(3,0)',
         nextId: 'inninethMathscorrectq6',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
-        answer: "either (i) or (ii)",
+        answer: "(0,2)",
         nextId: 'ninethMathscorrectq6',
         sumToBags: [{ name: 'ac', points: 1 }],
       },
       {
-        answer: "(the given information is enough to conclude that ΔKLM is similar to ΔPQR as ratio of sides is known)",
+        answer: "(0,3)",
         nextId: 'inninethMathscorrectq6',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
@@ -24207,7 +24207,7 @@ classix: {
   },
   
   ninethMathscorrectq6: {
-  botPrompt: 'Hurray! <strong>either (i) or (ii)</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>(0,2)</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'ninethMaths'+shuffleArraylottwo[7],
@@ -24215,7 +24215,7 @@ classix: {
   ],
   },
   inninethMathscorrectq6: {
-  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"either (i) or (ii)"</strong>',
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"(0,2)"</strong>',
   answers: [
     {
       nextId: 'ninethMaths'+shuffleArraylottwo[7],
@@ -24225,36 +24225,36 @@ classix: {
   
   //7
   ['ninethMaths'+shuffleArraylottwo[7]]: {
-  botPrompt: 'Shown below is a sector of a circle with centre P. All lengths are measured in cm. https://drive.google.com/file/d/1uwdcSxQ6Kh-1qYYS1Ts8USUry2KFp4QG/view?usp=drive_link..What is the length of PE?',
+  botPrompt: 'In the given figure, ∠OAB = 110 and ∠BCD = 130° then ABC is equal to',
   type: RTypes.TRANSFORMED_TEXT,
   
-  input: selectField(['3 cm', '3.5 cm', "4 cm","4.5 cm"]),
+  input: selectField(['40°', '50°', "60°","70°"]),
     answers: [
       {
-        answer: '3 cm',
+        answer: '40°',
         nextId: 'inninethMathscorrectq7',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
-        answer: '3.5 cm',
+        answer: '50°',
         nextId: 'inninethMathscorrectq7',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
-        answer: "4 cm",
-        nextId: 'inninethMathscorrectq7',
-        sumToBags: [{ name: 'ai', points: 1 }],
-      },
-      {
-        answer: "4.5 cm",
+        answer: "60°",
         nextId: 'ninethMathscorrectq7',
         sumToBags: [{ name: 'ac', points: 1 }],
+      },
+      {
+        answer: "70°",
+        nextId: 'inninethMathscorrectq7',
+        sumToBags: [{ name: 'ai', points: 1 }],
       },
     ],
   },
   
   ninethMathscorrectq7: {
-  botPrompt: 'Hurray! <strong>4.5 cm</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>60°</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'ninethMaths'+shuffleArraylottwo[8],
@@ -24262,7 +24262,7 @@ classix: {
   ],
   },
   inninethMathscorrectq7: {
-  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"4.5 cm"</strong>',
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"60°"</strong>',
   answers: [
     {
       nextId: 'ninethMaths'+shuffleArraylottwo[8],
@@ -24272,28 +24272,28 @@ classix: {
   
   //8
   ['ninethMaths'+shuffleArraylottwo[8]]: {
-  botPrompt: 'A circle is drawn. Two points are marked outside the circle such that only 3 tangents can be drawn to the circle using these two points.Which of the following is true based on the above information?',
+  botPrompt: '"In a  △ABC it is given that ∠A :∠B :∠ C = 3:21 and and∠ACD = 90° . If BC is produced to E then ∠ECD =?  https://drive.google.com/file/d/1QEwXdcrJuXabVG09w6SKtUMn9fsBHzGr/view?usp=drive_link..."',
   type: RTypes.TRANSFORMED_TEXT,
   
-  input: selectField(['All 3 tangents are equal in length.', 'Both the points lie on one of the tangents.', "The tangents and the circle have two common points in total.","(such a situation is not possible as with 2 points, there will be 4 tangents to the circle)"]),
+  input: selectField(['60°', '50°', "40°","25°"]),
     answers: [
       {
-        answer: 'All 3 tangents are equal in length.',
-        nextId: 'inninethMathscorrectq8',
-        sumToBags: [{ name: 'ai', points: 1 }],
-      },
-      {
-        answer: 'Both the points lie on one of the tangents.',
+        answer: '60°',
         nextId: 'ninethMathscorrectq8',
         sumToBags: [{ name: 'ac', points: 1 }],
       },
       {
-        answer: "The tangents and the circle have two common points in total.",
+        answer: '50°',
         nextId: 'inninethMathscorrectq8',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
-        answer: "(such a situation is not possible as with 2 points, there will be 4 tangents to the circle)",
+        answer: "40°",
+        nextId: 'inninethMathscorrectq8',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: "25°",
         nextId: 'inninethMathscorrectq8',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
@@ -24301,7 +24301,7 @@ classix: {
   },
   
   ninethMathscorrectq8: {
-  botPrompt: 'Hurray! <strong>Both the points lie on one of the tangents.</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>60°</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'ninethMaths'+shuffleArraylottwo[9],
@@ -24309,7 +24309,7 @@ classix: {
   ],
   },
   inninethMathscorrectq8: {
-  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"Both the points lie on one of the tangents."</strong>',
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"60°"</strong>',
   answers: [
     {
       nextId: 'ninethMaths'+shuffleArraylottwo[9],
@@ -24319,28 +24319,28 @@ classix: {
   
   //9
   ['ninethMaths'+shuffleArraylottwo[9]]: {
-  botPrompt: 'Shown below is a circle with 3 tangents KQ, KP and LM. QL = 2 cm and KL = 6 cm. PM = 1 2 KL. https://drive.google.com/file/d/1pua3vS4K1jTdjF8UhjJLRKAMTvvJZBBO/view?usp=drive_link..What is the measure of ∠LMK?',
+  botPrompt: 'In the given figure, AB=AC and OB = OC. Then,∠ABO:∠ACO=? https://drive.google.com/file/d/1OMpeDr3Pif9sxhVs0jzqHr0peQgUekmv/view?usp=drive_link..',
   type: RTypes.TRANSFORMED_TEXT,
   
-  input: selectField(['50°', '65°', "80°","(cannot be uniquely determined with the given information)"]),
+  input: selectField(['1:1', '2:1', "1:2","none of these"]),
     answers: [
       {
-        answer: '50°',
-        nextId: 'inninethMathscorrectq9',
-        sumToBags: [{ name: 'ai', points: 1 }],
-      },
-      {
-        answer: '65°',
-        nextId: 'inninethMathscorrectq9',
-        sumToBags: [{ name: 'ai', points: 1 }],
-      },
-      {
-        answer: "80°",
+        answer: '1:1',
         nextId: 'ninethMathscorrectq9',
         sumToBags: [{ name: 'ac', points: 1 }],
       },
       {
-        answer: "(cannot be uniquely determined with the given information)",
+        answer: '2:1',
+        nextId: 'inninethMathscorrectq9',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: "1:2",
+        nextId: 'inninethMathscorrectq9',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: "none of these",
         nextId: 'inninethMathscorrectq9',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
@@ -24348,7 +24348,7 @@ classix: {
   },
   
   ninethMathscorrectq9: {
-  botPrompt: 'Hurray! <strong>80°</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>1:1</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'ninethMaths'+shuffleArraylottwo[10],
@@ -24356,7 +24356,7 @@ classix: {
   ],
   },
   inninethMathscorrectq9: {
-  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"80°"</strong>',
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"1:1"</strong>',
   answers: [
     {
       nextId: 'ninethMaths'+shuffleArraylottwo[10],
@@ -24366,28 +24366,28 @@ classix: {
   
   //10
   ['ninethMaths'+shuffleArraylottwo[10]]: {
-  botPrompt: 'In the figure shown below, lines AB and PQ are parallel to each other. All measurements are in centimetres. https://drive.google.com/file/d/1rsSMPNr5zhkC1c0yLTXB8P_PqMqrtQce/view?usp=drive_link..Which of the following gives the value of cos θ?',
+  botPrompt: 'The diagonals AC and BD of a parallelogram ABCD intersect each other at the point such that ∠DAC = 30° and  ∠AOB = 70° Then, ∠DBC=?  https://drive.google.com/file/d/1J2pzNXrBe4ojnbxhDTXQo_WGWMEfvJCN/view?usp=drive_link....',
   type: RTypes.TRANSFORMED_TEXT,
   
-  input: selectField(['b/c', 'c/b', "c/b+y","a+x/b+y"]),
+  input: selectField(['40°', '35°', "45°","50°"]),
     answers: [
       {
-        answer: 'b/c',
-        nextId: 'inninethMathscorrectq10',
-        sumToBags: [{ name: 'ai', points: 1 }],
-      },
-      {
-        answer: 'c/b',
+        answer: '40°',
         nextId: 'ninethMathscorrectq10',
         sumToBags: [{ name: 'ac', points: 1 }],
       },
       {
-        answer: "c/b+y",
+        answer: '35°',
         nextId: 'inninethMathscorrectq10',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
-        answer: "a+x/b+y",
+        answer: "45°",
+        nextId: 'inninethMathscorrectq10',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: "50°",
         nextId: 'inninethMathscorrectq10',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
@@ -24395,7 +24395,7 @@ classix: {
   },
   
   ninethMathscorrectq10: {
-  botPrompt: 'Hurray! <strong>c/b</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>40°</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'ninethMaths'+shuffleArraylottwo[11],
@@ -24403,7 +24403,7 @@ classix: {
   ],
   },
   inninethMathscorrectq10: {
-  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"c/b"</strong>',
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"40°"</strong>',
   answers: [
     {
       nextId: 'ninethMaths'+shuffleArraylottwo[11],
@@ -24413,28 +24413,28 @@ classix: {
   
   //11
   ['ninethMaths'+shuffleArraylottwo[11]]: {
-  botPrompt: 'The sine of an angle in a right triangle is 4 5 .Which of these could be the measures of the sides of the triangle?',
+  botPrompt: 'In △ABC, it is given that D is the midpoint of BC; E is the midpoint of BD, and O is the midpoint of AE Then, ar(△BOE) = ? https://drive.google.com/file/d/1D8pNv22HAlfEDicoQSErLrDnyBp4B13V/view?usp=drive_link..',
   type: RTypes.TRANSFORMED_TEXT,
   
-  input: selectField(['4 cm, 5 cm and 9 cm', '4 cm, 5 cm and √41 cm',"6 cm, 8 cm and 10 cm", "8 cm, 10 cm and 4√41 cm"]),
+  input: selectField(['1/3 ar(△ABC)', '1/4 ar(△ABC)',"1/6 ar(△ABC)", "1/8 ar(△ABC)"]),
     answers: [
       {
-        answer: '4 cm, 5 cm and 9 cm',
+        answer: '1/3 ar(△ABC)',
         nextId: 'inninethMathscorrectq11',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
-        answer: '4 cm, 5 cm and √41 cm',
+        answer: '1/4 ar(△ABC)',
         nextId: 'inninethMathscorrectq11',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
-        answer: "6 cm, 8 cm and 10 cm",
+        answer: "1/6 ar(△ABC)",
         nextId: 'ninethMathscorrectq11',
         sumToBags: [{ name: 'ac', points: 1 }],
       },
       {
-        answer: "8 cm, 10 cm and 4√41 cm",
+        answer: "1/8 ar(△ABC)",
         nextId: 'ninethMathscorrectq11',
         sumToBags: [{ name: 'ac', points: 1 }],
       },
@@ -24442,7 +24442,7 @@ classix: {
   },
   
   ninethMathscorrectq11: {
-  botPrompt: 'Hurray! <strong>6 cm, 8 cm and 10 cm</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>1/8 ar(△ABC)</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'ninethMaths'+shuffleArraylottwo[12],
@@ -24450,7 +24450,7 @@ classix: {
   ],
   },
   inninethMathscorrectq11: {
-  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"6 cm, 8 cm and 10 cm"</strong>',
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"1/8 ar(△ABC)"</strong>',
   answers: [
     {
       nextId: 'ninethMaths'+shuffleArraylottwo[12],
@@ -24460,28 +24460,28 @@ classix: {
   
   //12
   ['ninethMaths'+shuffleArraylottwo[12]]: {
-  botPrompt: '"The marks obtained by a set of students in an exam are recorded in a grouped frequency table. The maximum number of students are found to be in the range of (70-80) marks.If the number of students in the ranges before and after the (70-80) range are equal, which of the following is the mode of the data?"',
+  botPrompt: 'In the given figure, A and B are the centres of two circles having radii 5 cm and 3 cm respectively and intersecting at points P andQ respectively. If AB = 4 cm then the lengthof common chord PQ is  https://drive.google.com/file/d/1adRT9VYIFpGYeZdVHxnfBc7p-8KeO2Hi/view?usp=drive_link.',
   type: RTypes.TRANSFORMED_TEXT,
   
-  input: selectField(['70 marks', '75 marks', "80 marks","(mode cannot be found as frequency is not given)"]),
+  input: selectField(['3 cm', '6 cm', "7.5 cm","9 cm"]),
     answers: [
       {
-        answer: '70 marks',
+        answer: '3 cm',
         nextId: 'inninethMathscorrectq12',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
-        answer: '75 marks',
+        answer: '6 cm',
         nextId: 'ninethMathscorrectq12',
         sumToBags: [{ name: 'ac', points: 1 }],
       },
       {
-        answer: "80 marks",
+        answer: "7.5 cm",
         nextId: 'inninethMathscorrectq12',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
-        answer: "(mode cannot be found as frequency is not given)",
+        answer: "9 cm",
         nextId: 'inninethMathscorrectq12',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
@@ -24489,7 +24489,7 @@ classix: {
   },
   
   ninethMathscorrectq12: {
-  botPrompt: 'Hurray! <strong>75 marks</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>6 cm</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'ninethMaths'+shuffleArraylottwo[13],
@@ -24497,7 +24497,7 @@ classix: {
   ],
   },
   inninethMathscorrectq12: {
-  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"75 marks"</strong>',
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"6 cm"</strong>',
   answers: [
     {
       nextId: 'ninethMaths'+shuffleArraylottwo[13],
@@ -24507,28 +24507,27 @@ classix: {
   
   //13
   ['ninethMaths'+shuffleArraylottwo[13]]: {
-  botPrompt: 'In the figure below, a unit square ROST is inscribed in a circular sector with centre O. https://drive.google.com/file/d/1NsRWpnhGts55iO9__E5Hpyv-R9P8Tqql/view?usp=drive_link Along with the above information, which of these is SUFFICIENT to find the area of sector POQ?',
-  type: RTypes.TRANSFORMED_TEXT,
+  botPrompt: 'If the height of a cone is doubled then its volume is increased by',
   
-  input: selectField(['area of the square ROST', 'radius of sector POQ', "arc length PQ","(the given information is sufficient)"]),
+  input: selectField(['100%', '200%', "300%","400%"]),
     answers: [
       {
-        answer: 'area of the square ROST',
-        nextId: 'inninethMathscorrectq13',
-        sumToBags: [{ name: 'ai', points: 1 }],
-      },
-      {
-        answer: 'radius of sector POQ',
-        nextId: 'inninethMathscorrectq13',
-        sumToBags: [{ name: 'ai', points: 1 }],
-      },
-      {
-        answer: "arc length PQ",
+        answer: '100%',
         nextId: 'ninethMathscorrectq13',
         sumToBags: [{ name: 'ac', points: 1 }],
       },
       {
-        answer: "(the given information is sufficient)",
+        answer: '200%',
+        nextId: 'inninethMathscorrectq13',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: "300%",
+        nextId: 'inninethMathscorrectq13',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: "400%",
         nextId: 'inninethMathscorrectq13',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
@@ -24536,7 +24535,7 @@ classix: {
   },
   
   ninethMathscorrectq13: {
-  botPrompt: 'Hurray! <strong>arc length PQ</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>100%</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'ninethMaths'+shuffleArraylottwo[14],
@@ -24544,7 +24543,7 @@ classix: {
   ],
   },
   inninethMathscorrectq13: {
-  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"arc length PQ"</strong>',
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"100%"</strong>',
   answers: [
     {
       nextId: 'ninethMaths'+shuffleArraylottwo[14],
@@ -24554,28 +24553,27 @@ classix: {
   
   //14
   ['ninethMaths'+shuffleArraylottwo[14]]: {
-  botPrompt: '"Fibonacci sequence is a pattern in which each number is obtained by adding the previous two numbers (except the first 2 numbers).The pattern is 0, 1, 1, 2, 3, 5, 8, 13...Shown below is a representation of the first few terms of the Fibonacci sequence in a unit square grid. The terms represent the side lengths of the squares. https://drive.google.com/file/d/1PV4Y6wcxLEDUfsFOWLC9PYe3OrLo4JNt/view?usp=drive_link..."',
-  type: RTypes.TRANSFORMED_TEXT,
+  botPrompt: 'If the surface area of a sphere is (144) m² then its volume is',
   
-  input: selectField(['4π sq units', '16π sq units', "48π sq units", "64π sq units"]),
+  input: selectField(['(288π) m³', '(316π) m³', "(188π) m³", "(300π) m³"]),
     answers: [
       {
-        answer: '4π sq units',
-        nextId: 'inninethMathscorrectq14',
-        sumToBags: [{ name: 'ai', points: 1 }],
-      },
-      {
-        answer: '16π sq units',
+        answer: '(288π) m³',
         nextId: 'ninethMathscorrectq14',
         sumToBags: [{ name: 'ac', points: 1 }],
       },
       {
-        answer: "48π sq units",
+        answer: '(316π) m³',
         nextId: 'inninethMathscorrectq14',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
-        answer: "64π sq units",
+        answer: "(188π) m³",
+        nextId: 'inninethMathscorrectq14',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: "(300π) m³",
         nextId: 'inninethMathscorrectq14',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
@@ -24583,7 +24581,7 @@ classix: {
   },
   
   ninethMathscorrectq14: {
-  botPrompt: 'Hurray! <strong>16π sq units</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>(288π) m³</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'ninethMaths'+shuffleArraylottwo[15],
@@ -24591,7 +24589,7 @@ classix: {
   ],
   },
   inninethMathscorrectq14: {
-  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"16π sq units"</strong>',
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"(288π) m³"</strong>',
   answers: [
     {
       nextId: 'ninethMaths'+shuffleArraylottwo[15],
@@ -24601,28 +24599,28 @@ classix: {
   
   //15
   ['ninethMaths'+shuffleArraylottwo[15]]: {
-  botPrompt: 'Shown below is a solid made by joining a right circular cylinder and a hemisphere of equal radius (r cm). The total surface area of the solid is equal to the surface area of a sphere with twice the radius of this solid.https://drive.google.com/file/d/168wRCpuaUahGQcFz-VVE-Cl86s64_2Ta/view?usp=drive_link.Which of the following gives the height of the cylinder in the above solid?',
+  botPrompt: 'The mid-value of a class interval is 42 and the class size is 10. The lower and upper limits are',
   type: RTypes.TRANSFORMED_TEXT,
   
-  input: selectField(['6r cm', '6.5r cm', "7r cm","7.5r cm"]),
+  input: selectField(['37-47', '37.5-47.5', "36.5-47.5","36.5-46.5"]),
     answers: [
       {
-        answer: '6r cm',
-        nextId: 'inninethMathscorrectq15',
-        sumToBags: [{ name: 'ai', points: 1 }],
-      },
-      {
-        answer: '6.5r cm',
+        answer: '37-47',
         nextId: 'ninethMathscorrectq15',
         sumToBags: [{ name: 'ac', points: 1 }],
       },
       {
-        answer: "7r cm",
+        answer: '37.5-47.5',
         nextId: 'inninethMathscorrectq15',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
-        answer: "7.5r cm",
+        answer: "36.5-47.5",
+        nextId: 'inninethMathscorrectq15',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: "36.5-46.5",
         nextId: 'inninethMathscorrectq15',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
@@ -24630,7 +24628,7 @@ classix: {
   },
   
   ninethMathscorrectq15: {
-  botPrompt: 'Hurray! <strong>6.5r cm</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>37-47</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'ninethMaths'+shuffleArraylottwo[16],
@@ -24638,7 +24636,7 @@ classix: {
   ],
   },
   inninethMathscorrectq15: {
-  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"6.5r cm"</strong>',
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"37-47"</strong>',
   answers: [
     {
       nextId: 'ninethMaths'+shuffleArraylottwo[16],
@@ -24648,28 +24646,28 @@ classix: {
   
   //16
   ['ninethMaths'+shuffleArraylottwo[16]]: {
-  botPrompt: 'Which of the following is equal to the given expression? https://drive.google.com/file/d/1jU211-JuUbuMnq5eApsurmm8LzVKCoCv/view?usp=drive_link..',
+  botPrompt: 'If p is the mean of x1, x2,...,xn, then for a≠0, the mean of ax1,ax2,...,axn,x1/a,x2/a,...,xn/a is',
   type: RTypes.TRANSFORMED_TEXT,
   
-  input: selectField(['sec θ', 'cosec θ', "(cot 2 θ) (sec θ)","(cot 2 θ) (cosec θ)"]),
+  input: selectField(['(a+1/a)p', '(a+1\a)p/2', "(a+1\a)p/n","{(a+1\a)p}/2n"]),
     answers: [
       {
-        answer: 'sec θ',
+        answer: '(a+1/a)p',
         nextId: 'ninethMathscorrectq16',
         sumToBags: [{ name: 'ac', points: 1 }],
       },
       {
-        answer: 'cosec θ',
+        answer: '(a+1\a)p/2',
         nextId: 'inninethMathscorrectq16',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
-        answer: "(cot 2 θ) (sec θ)",
+        answer: "(a+1\a)p/n",
         nextId: 'inninethMathscorrectq16',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
-        answer: "(cot 2 θ) (cosec θ)",
+        answer: "{(a+1\a)p}/2n",
         nextId: 'inninethMathscorrectq16',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
@@ -24677,7 +24675,7 @@ classix: {
   },
   
   ninethMathscorrectq16: {
-  botPrompt: 'Hurray! <strong>sec θ</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>(a+1\a)p/2</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'ninethMaths'+shuffleArraylottwo[17],
@@ -24685,7 +24683,7 @@ classix: {
   ],
   },
   inninethMathscorrectq16: {
-  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"sec θ"</strong>',
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"(a+1\a)p/2"</strong>',
   answers: [
     {
       nextId: 'ninethMaths'+shuffleArraylottwo[17],
@@ -24695,28 +24693,28 @@ classix: {
   
   //17
   ['ninethMaths'+shuffleArraylottwo[17]]: {
-  botPrompt: 'The heights of plants in Dipti garden are recorded in the table given below. The median plant height is 55 cm. https://drive.google.com/file/d/1W_6D607HAdjS3j8BF_xnL7HWUUP_5_bv/view?usp=drive_link..Which of the following is the value of x?',
+  botPrompt: 'In 65 throws of a die, the outcomes were noted as under:  https://drive.google.com/file/d/1KsX3esUEB91HCXMymnWUwyLa8btMc_1h/view?usp=drive_link  A die is thrown at random. What is the probability of getting a prime number?',
   type: RTypes.TRANSFORMED_TEXT,
   
-  input: selectField(['1', '2', "8","(the value of x cannot be found without knowing the total number of plants)"]),
+  input: selectField(['3/35', '3/5', "31/65","36/65"]),
     answers: [
       {
-        answer: '1',
+        answer: '3/35',
         nextId: 'inninethMathscorrectq17',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
-        answer: '2',
+        answer: '3/5',
+        nextId: 'inninethMathscorrectq17',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: "31/65",
         nextId: 'ninethMathscorrectq17',
         sumToBags: [{ name: 'ac', points: 1 }],
       },
       {
-        answer: "8",
-        nextId: 'inninethMathscorrectq17',
-        sumToBags: [{ name: 'ai', points: 1 }],
-      },
-      {
-        answer: "(the value of x cannot be found without knowing the total number of plants)",
+        answer: "36/65",
         nextId: 'inninethMathscorrectq17',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
@@ -24724,7 +24722,7 @@ classix: {
   },
   
   ninethMathscorrectq17: {
-  botPrompt: 'Hurray! <strong>-2</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>-31/65</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'ninethMaths'+shuffleArraylottwo[18],
@@ -24732,7 +24730,7 @@ classix: {
   ],
   },
   inninethMathscorrectq17: {
-  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"2"</strong>',
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"31/65"</strong>',
   answers: [
     {
       nextId: 'ninethMaths'+shuffleArraylottwo[18],
@@ -24742,28 +24740,28 @@ classix: {
   
   //18
   ['ninethMaths'+shuffleArraylottwo[18]]: {
-  botPrompt: '"A bowl contains 3 red and 2 blue marbles. Roohi wants to pick a red marble.Which of the following changes could she make so that the probability of picking a red marble is greater than it was before? (i) Adding a red marble,(ii) Removing a blue marble,iii)Adding 1 red and 1 blue marble"',
+  botPrompt: 'In the given figure, AB is a chord of a circle with centre O and AB is produced to C such that BC=OB. Also, CO is joined and produced to meet the circle in D. If ∠ACD = 25 deg then ∠AOD = ?  https://drive.google.com/file/d/1c07EQ9IkFUJi4jkuUUsxtnwCHKQxkcp4/view?usp=drive_link..',
   type: RTypes.TRANSFORMED_TEXT,
   
-  input: selectField(['only (i) ', 'only (i) and (ii) ', "only (i) and (iii) ","(all of the above) "]),
+  input: selectField(['50°', '75°', "90°","100°"]),
     answers: [
       {
-        answer: 'only (i) ',
+        answer: '50°',
         nextId: 'inninethMathscorrectq18',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
-        answer: 'only (i) and (ii) ',
+        answer: '75°',
         nextId: 'ninethMathscorrectq18',
         sumToBags: [{ name: 'ac', points: 1 }],
       },
       {
-        answer: "only (i) and (iii) ",
+        answer: "90°",
         nextId: 'inninethMathscorrectq18',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
-        answer: "(all of the above) ",
+        answer: "100°",
         nextId: 'inninethMathscorrectq18',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
@@ -24771,7 +24769,7 @@ classix: {
   },
   
   ninethMathscorrectq18: {
-  botPrompt: 'Hurray! <strong>only (i) and (ii)</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>75°</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'ninethMaths'+shuffleArraylottwo[19],
@@ -24779,7 +24777,7 @@ classix: {
   ],
   },
   inninethMathscorrectq18: {
-  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"only (i) and (ii) "</strong>',
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"75°"</strong>',
   answers: [
     {
       nextId: 'ninethMaths'+shuffleArraylottwo[19],
@@ -24789,28 +24787,27 @@ classix: {
   
   //19
   ['ninethMaths'+shuffleArraylottwo[19]]: {
-  botPrompt: 'Two statements are given below - one labelled Assertion (A) and the other labelled Reason (R). Read the statements carefully and choose the option that correctly describes statements (A) and (R).Assertion (A): 2 is a prime number,Reason (R): The square of an irrational number is always a prime number.',
-  type: RTypes.TRANSFORMED_TEXT,
+  botPrompt: 'The lengths of the three sides of a triangle are 30 cm, 24 cm and 18 cm respectively. The length of the altitude of the triangle corresponding to the smallest side is',
   
-  input: selectField(['Both (A) and (R) are true and (R) is the correct explanation of (A).', 'Both (A) and (R) are true and (R) is not the correct explanation of (A).', "(A) is true but (R) is false.","(A) is false but (R) is true."]),
+  input: selectField(['24 cm', '18 cm', "30 cm","12 cm"]),
     answers: [
       {
-        answer: 'Both (A) and (R) are true and (R) is the correct explanation of (A).',
-        nextId: 'inninethMathscorrectq19',
-        sumToBags: [{ name: 'ai', points: 1 }],
-      },
-      {
-        answer: 'Both (A) and (R) are true and (R) is not the correct explanation of (A).',
-        nextId: 'inninethMathscorrectq19',
-        sumToBags: [{ name: 'ai', points: 1 }],
-      },
-      {
-        answer: "(A) is true but (R) is false.",
+        answer: '24 cm',
         nextId: 'ninethMathscorrectq19',
         sumToBags: [{ name: 'ac', points: 1 }],
       },
       {
-        answer: "(A) is false but (R) is true.",
+        answer: '18 cm',
+        nextId: 'inninethMathscorrectq19',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: "30 cm",
+        nextId: 'inninethMathscorrectq19',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: "12 cm",
         nextId: 'inninethMathscorrectq19',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
@@ -24818,7 +24815,7 @@ classix: {
   },
   
   ninethMathscorrectq19: {
-  botPrompt: 'Hurray! <strong>(A) is true but (R) is false.</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>24 cm</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'ninethMaths'+shuffleArraylottwo[20],
@@ -24826,7 +24823,7 @@ classix: {
   ],
   },
   inninethMathscorrectq19: {
-  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"(A) is true but (R) is false."</strong>',
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"24 cm"</strong>',
   answers: [
     {
       nextId: 'ninethMaths'+shuffleArraylottwo[20],
@@ -24835,28 +24832,28 @@ classix: {
   },
   //20
   ['ninethMaths'+shuffleArraylottwo[20]]: {
-  botPrompt: 'Two statements are given below - one labelled Assertion (A) and the other labelled Reason (R). Read the statements carefully and choose the option that correctly describes statements (A) and (R).Assertion (A): The origin is the ONLY point equidistant from (2, 3) and (-2, -3).Reason (R): The origin is the midpoint of the line joining (2, 3) and (-2, -3).',
+  botPrompt: 'In a trapezium ABCD, if AB || CD then (A * C ^ 2 + B * D ^ 2) =',
   type: RTypes.TRANSFORMED_TEXT,
   
-  input: selectField(['81', '9', "729","6561"]),
+  input: selectField(['BC²+ AD2+2BC.AD', 'AB ^ 2 + CD ^ 2 + 2AB.CD', "AB^2+CD^2+2AD.BC","BC^2+ AD^2+2AB.CD"]),
     answers: [
       {
-        answer: 'Both (A) and (R) are true and (R) is the correct explanation of (A).',
+        answer: 'BC²+ AD2+2BC.AD',
         nextId: 'inninethMathscorrectq19',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
-        answer: 'Both (A) and (R) are true and (R) is not the correct explanation of (A).',
+        answer: 'AB ^ 2 + CD ^ 2 + 2AB.CD',
         nextId: 'inninethMathscorrectq19',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
-        answer: "(A) is true but (R) is false.",
+        answer: "AB^2+CD^2+2AD.BC",
         nextId: 'inninethMathscorrectq19',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
-        answer: "(A) is false but (R) is true.",
+        answer: "BC^2+ AD^2+2AB.CD",
         nextId: 'ninethMathscorrectq19',
         sumToBags: [{ name: 'ac', points: 1 }],
       },
@@ -24864,7 +24861,7 @@ classix: {
   },
   
   ninethMathscorrectq20: {
-  botPrompt: 'Hurray! <strong>(A) is false but (R) is true.</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>BC2+ AD2+2AB.CD</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'wishtocontinueninethMaths',
@@ -24872,7 +24869,7 @@ classix: {
   ],
   },
   inninethMathscorrectq20: {
-  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"(A) is false but (R) is true."</strong>',
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"BC2+ AD2+2AB.CD"</strong>',
   answers: [
     {
       nextId: 'wishtocontinueninethMaths',
