@@ -24271,9 +24271,19 @@ classix: {
   },
   
   //8
+ ninethMathsq8_image: { 
+    botPrompt: 'https://drive.google.com/file/d/1QEwXdcrJuXabVG09w6SKtUMn9fsBHzGr/view?usp=drive_link',
+    type: RTypes.MEDIA,
+    answers: [
+      {
+        nextId: 'ninethMaths'+shuffleArraylottwo[8]',
+      },
+    ],
+  },
+
   ['ninethMaths'+shuffleArraylottwo[8]]: {
-  botPrompt: '"In a  △ABC it is given that ∠A :∠B :∠ C = 3:21 and and∠ACD = 90° . If BC is produced to E then ∠ECD =?  https://drive.google.com/file/d/1QEwXdcrJuXabVG09w6SKtUMn9fsBHzGr/view?usp=drive_link..."',
-  type: RTypes.TRANSFORMED_TEXT,
+    botPrompt: '"In a  △ABC it is given that ∠A :∠B :∠ C = 3:21 and and∠ACD = 90° . If BC is produced to E then ∠ECD =?"',
+    type: RTypes.TRANSFORMED_TEXT,
   
   input: selectField(['60°', '50°', "40°","25°"]),
     answers: [
