@@ -24722,7 +24722,7 @@ classix: {
   },
   
   ninethMathscorrectq17: {
-  botPrompt: 'Hurray! <strong>-31/65</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>31/65</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'ninethMaths'+shuffleArraylottwo[18],
@@ -24877,6 +24877,22 @@ classix: {
   ],
   },
   
+  wishtocontinueninethMaths: {
+    botPrompt: 'You have Completed Maths. Do you Wish to Continue ?',
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['Yes', "No"]),
+    answers: [
+      {
+        answer: 'Yes',
+        nextId: 'chooseclass',
+      },
+      {
+        answer: "No",
+        nextId: 'endConversation',
+      },
+    
+    ],
+  },
 
 
 
