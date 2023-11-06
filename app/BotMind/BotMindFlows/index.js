@@ -24649,7 +24649,7 @@ classix: {
   botPrompt: 'If p is the mean of x1, x2,...,xn, then for a≠0, the mean of ax1,ax2,...,axn,x1/a,x2/a,...,xn/a is',
   type: RTypes.TRANSFORMED_TEXT,
   
-  input: selectField(['(a+1/a)p', '(a+1\a)p/2', "(a+1\a)p/n","{(a+1\a)p}/2n"]),
+  input: selectField(['(a+1/a)p', '(a+1/a)p/2', "(a+1/a)p/n","{(a+1/a)p}/2n"]),
     answers: [
       {
         answer: '(a+1/a)p',
