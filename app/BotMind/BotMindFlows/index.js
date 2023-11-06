@@ -24653,21 +24653,21 @@ classix: {
     answers: [
       {
         answer: '(a+1/a)p',
+        nextId: 'inninethMathscorrectq16',
+        sumToBags: [{ name: 'ai', points: 1 }],
+      },
+      {
+        answer: '(a+1/a)p/2',
         nextId: 'ninethMathscorrectq16',
         sumToBags: [{ name: 'ac', points: 1 }],
       },
       {
-        answer: '(a+1\a)p/2',
+        answer: "(a+1/a)p/n",
         nextId: 'inninethMathscorrectq16',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
-        answer: "(a+1\a)p/n",
-        nextId: 'inninethMathscorrectq16',
-        sumToBags: [{ name: 'ai', points: 1 }],
-      },
-      {
-        answer: "{(a+1\a)p}/2n",
+        answer: "{(a+1/a)p}/2n",
         nextId: 'inninethMathscorrectq16',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
@@ -24675,7 +24675,7 @@ classix: {
   },
   
   ninethMathscorrectq16: {
-  botPrompt: 'Hurray! <strong>(a+1\a)p/2</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>(a+1/a)p/2</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'ninethMaths'+shuffleArraylottwo[17],
@@ -24683,7 +24683,7 @@ classix: {
   ],
   },
   inninethMathscorrectq16: {
-  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"(a+1\a)p/2"</strong>',
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"(a+1/a)p/2"</strong>',
   answers: [
     {
       nextId: 'ninethMaths'+shuffleArraylottwo[17],
