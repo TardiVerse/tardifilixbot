@@ -24365,8 +24365,20 @@ classix: {
   },
   
   //10
+
+  day12image: { 
+    botPrompt:  'https://drive.google.com/file/d/1J2pzNXrBe4ojnbxhDTXQo_WGWMEfvJCN/view?usp=drive_link....',
+    type: RTypes.MEDIA,
+    answers: [
+      {
+        nextId: 'ninethMaths',
+      },
+    ],
+  },
+
+
   ['ninethMaths'+shuffleArraylottwo[10]]: {
-  botPrompt: 'The diagonals AC and BD of a parallelogram ABCD intersect each other at the point such that ∠DAC = 30° and  ∠AOB = 70° Then, ∠DBC=?  https://drive.google.com/file/d/1J2pzNXrBe4ojnbxhDTXQo_WGWMEfvJCN/view?usp=drive_link....',
+  botPrompt: 'The diagonals AC and BD of a parallelogram ABCD intersect each other at the point such that ∠DAC = 30° and  ∠AOB = 70° Then, ∠DBC=?',
   type: RTypes.TRANSFORMED_TEXT,
   
   input: selectField(['40°', '35°', "45°","50°"]),
@@ -24832,50 +24844,50 @@ classix: {
   },
   //20
   ['ninethMaths'+shuffleArraylottwo[20]]: {
-  botPrompt: 'In a trapezium ABCD, if AB || CD then (A * C ^ 2 + B * D ^ 2) =',
-  type: RTypes.TRANSFORMED_TEXT,
-  
-  input: selectField(['BC²+ AD2+2BC.AD', 'AB ^ 2 + CD ^ 2 + 2AB.CD', "AB^2+CD^2+2AD.BC","BC^2+ AD^2+2AB.CD"]),
-    answers: [
-      {
-        answer: 'BC²+ AD2+2BC.AD',
-        nextId: 'inninethMathscorrectq19',
-        sumToBags: [{ name: 'ai', points: 1 }],
+      botPrompt: 'In a trapezium ABCD, if AB || CD then (A * C ^ 2 + B * D ^ 2) =',
+      type: RTypes.TRANSFORMED_TEXT,
+      
+      input: selectField(['BC²+ AD2+2BC.AD', 'AB ^ 2 + CD ^ 2 + 2AB.CD', "AB^2+CD^2+2AD.BC","BC^2+ AD^2+2AB.CD"]),
+        answers: [
+          {
+            answer: 'BC²+ AD2+2BC.AD',
+            nextId: 'inninethMathscorrectq16',
+            sumToBags: [{ name: 'ai', points: 1 }],
+          },
+          {
+            answer: 'AB ^ 2 + CD ^ 2 + 2AB.CD',
+            nextId: 'inninethMathscorrectq16',
+            sumToBags: [{ name: 'ai', points: 1 }],
+          },
+          {
+            answer: "AB^2+CD^2+2AD.BC",
+            nextId: 'inninethMathscorrectq16',
+            sumToBags: [{ name: 'ai', points: 1 }],
+          },
+          {
+            answer: "BC^2+ AD^2+2AB.CD",
+            nextId: 'ninethMathscorrectq16',
+            sumToBags: [{ name: 'ac', points: 1 }],
+          },
+        ],
       },
-      {
-        answer: 'AB ^ 2 + CD ^ 2 + 2AB.CD',
-        nextId: 'inninethMathscorrectq19',
-        sumToBags: [{ name: 'ai', points: 1 }],
+      
+      ninethMathscorrectq16: {
+      botPrompt: 'Hurray! <strong>BC^2+ AD^2+2AB.CD</strong> is the correct answer  ! 😎',
+      answers: [
+        {
+          nextId: 'wishtocontinueninethMaths',
+        },
+      ],
       },
-      {
-        answer: "AB^2+CD^2+2AD.BC",
-        nextId: 'inninethMathscorrectq19',
-        sumToBags: [{ name: 'ai', points: 1 }],
+      inninethMathscorrectq16: {
+      botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"BC^2+ AD^2+2AB.CD"</strong>',
+      answers: [
+        {
+          nextId: 'wishtocontinueninethMaths',
+        },
+      ],
       },
-      {
-        answer: "BC^2+ AD^2+2AB.CD",
-        nextId: 'ninethMathscorrectq19',
-        sumToBags: [{ name: 'ac', points: 1 }],
-      },
-    ],
-  },
-  
-  ninethMathscorrectq20: {
-  botPrompt: 'Hurray! <strong>BC2+ AD2+2AB.CD</strong> is the correct answer  ! 😎',
-  answers: [
-    {
-      nextId: 'wishtocontinueninethMaths',
-    },
-  ],
-  },
-  inninethMathscorrectq20: {
-  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"BC2+ AD2+2AB.CD"</strong>',
-  answers: [
-    {
-      nextId: 'wishtocontinueninethMaths',
-    },
-  ],
-  },
   
   wishtocontinueninethMaths: {
     botPrompt: 'You have Completed Maths. Do you Wish to Continue ?',
