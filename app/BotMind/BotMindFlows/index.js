@@ -23929,7 +23929,7 @@ wishtocontinueeightEnglish: {
 
   //classix
 classix: {
-  botPrompt: 'You Have Selected CLASS XI. Which subject you would like to start',
+  botPrompt: 'You Have Selected CLASS IX. Which subject you would like to start',
     type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['Maths']),
     answers: [
