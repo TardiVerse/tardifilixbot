@@ -25821,22 +25821,22 @@ classx: {
     answers: [
       {
         answer: 'Both (A) and (R) are true and (R) is the correct explanation of (A).',
-        nextId: 'intenthMathscorrectq19',
+        nextId: 'intenthMathscorrectq20',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
         answer: 'Both (A) and (R) are true and (R) is not the correct explanation of (A).',
-        nextId: 'intenthMathscorrectq19',
+        nextId: 'intenthMathscorrectq20',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
         answer: "(A) is true but (R) is false.",
-        nextId: 'intenthMathscorrectq19',
+        nextId: 'intenthMathscorrectq20',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
         answer: "(A) is false but (R) is true.",
-        nextId: 'tenthMathscorrectq19',
+        nextId: 'tenthMathscorrectq20',
         sumToBags: [{ name: 'ac', points: 1 }],
       },
     ],
