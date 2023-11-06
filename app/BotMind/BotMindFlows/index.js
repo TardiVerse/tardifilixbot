@@ -24276,7 +24276,7 @@ classix: {
     type: RTypes.MEDIA,
     answers: [
       {
-        nextId: 'ninethMaths'+shuffleArraylottwo[8]',
+        nextId: 'ninethMaths'+shuffleArraylottwo[8],
       },
     ],
   },
@@ -25703,7 +25703,7 @@ classx: {
   },
   
   tenthMathscorrectq17: {
-  botPrompt: 'Hurray! <strong>-2</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>2</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'tenthMaths'+shuffleArraylottwo[18],
