@@ -25807,7 +25807,7 @@ classx: {
   botPrompt: 'Two statements are given below - one labelled Assertion (A) and the other labelled Reason (R). Read the statements carefully and choose the option that correctly describes statements (A) and (R).Assertion (A): The origin is the ONLY point equidistant from (2, 3) and (-2, -3).Reason (R): The origin is the midpoint of the line joining (2, 3) and (-2, -3).',
   type: RTypes.TRANSFORMED_TEXT,
   
-  input: selectField(['81', '9', "729","6561"]),
+  input: selectField(['Both (A) and (R) are true and (R) is the correct explanation of (A).', 'Both (A) and (R) are true and (R) is not the correct explanation of (A).', "(A) is true but (R) is false.","(A) is false but (R) is true."]),
     answers: [
       {
         answer: 'Both (A) and (R) are true and (R) is the correct explanation of (A).',
