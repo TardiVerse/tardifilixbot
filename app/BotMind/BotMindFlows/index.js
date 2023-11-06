@@ -24271,9 +24271,19 @@ classix: {
   },
   
   //8
+ ninethMathsq8_image: { 
+    botPrompt: 'https://drive.google.com/file/d/1QEwXdcrJuXabVG09w6SKtUMn9fsBHzGr/view?usp=drive_link',
+    type: RTypes.MEDIA,
+    answers: [
+      {
+        nextId: 'ninethMaths'+shuffleArraylottwo[8],
+      },
+    ],
+  },
+
   ['ninethMaths'+shuffleArraylottwo[8]]: {
-  botPrompt: '"In a  △ABC it is given that ∠A :∠B :∠ C = 3:21 and and∠ACD = 90° . If BC is produced to E then ∠ECD =?  https://drive.google.com/file/d/1QEwXdcrJuXabVG09w6SKtUMn9fsBHzGr/view?usp=drive_link..."',
-  type: RTypes.TRANSFORMED_TEXT,
+    botPrompt: '"In a  △ABC it is given that ∠A :∠B :∠ C = 3:21 and and∠ACD = 90° . If BC is produced to E then ∠ECD =?"',
+    type: RTypes.TRANSFORMED_TEXT,
   
   input: selectField(['60°', '50°', "40°","25°"]),
     answers: [
@@ -25705,7 +25715,7 @@ classx: {
   },
   
   tenthMathscorrectq17: {
-  botPrompt: 'Hurray! <strong>-2</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>2</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'tenthMaths'+shuffleArraylottwo[18],
@@ -25819,26 +25829,26 @@ classx: {
   botPrompt: 'Two statements are given below - one labelled Assertion (A) and the other labelled Reason (R). Read the statements carefully and choose the option that correctly describes statements (A) and (R).Assertion (A): The origin is the ONLY point equidistant from (2, 3) and (-2, -3).Reason (R): The origin is the midpoint of the line joining (2, 3) and (-2, -3).',
   type: RTypes.TRANSFORMED_TEXT,
   
-  input: selectField(['81', '9', "729","6561"]),
+  input: selectField(['Both (A) and (R) are true and (R) is the correct explanation of (A).', 'Both (A) and (R) are true and (R) is not the correct explanation of (A).', "(A) is true but (R) is false.","(A) is false but (R) is true."]),
     answers: [
       {
         answer: 'Both (A) and (R) are true and (R) is the correct explanation of (A).',
-        nextId: 'intenthMathscorrectq19',
+        nextId: 'intenthMathscorrectq20',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
         answer: 'Both (A) and (R) are true and (R) is not the correct explanation of (A).',
-        nextId: 'intenthMathscorrectq19',
+        nextId: 'intenthMathscorrectq20',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
         answer: "(A) is true but (R) is false.",
-        nextId: 'intenthMathscorrectq19',
+        nextId: 'intenthMathscorrectq20',
         sumToBags: [{ name: 'ai', points: 1 }],
       },
       {
         answer: "(A) is false but (R) is true.",
-        nextId: 'tenthMathscorrectq19',
+        nextId: 'tenthMathscorrectq20',
         sumToBags: [{ name: 'ac', points: 1 }],
       },
     ],
