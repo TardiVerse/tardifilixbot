@@ -6350,7 +6350,7 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
                   sumToBags: [{ name: 'ai', points: 1 }],
                 },
                 {
-                    answer: '⅚ ',
+                    answer: '⅚',
                     nextId: 'inthirdMathscorrectq4',
                     sumToBags: [{ name: 'ai', points: 1 }],
                   },
