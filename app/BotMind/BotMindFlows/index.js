@@ -45,8 +45,8 @@ console.log(shuffleArraylot);
 
 
 
-const min = 1;
-const max = 9;
+const min = 0;
+const max = 29;
 const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
 
 console.log(randomNumber);
@@ -1120,9 +1120,9 @@ inflncorrectq20: {
 
 //21
 ["fln"+shuffleArraylot[21]]: {
-  botPrompt: "Which algorithm is not a divide and conquer algorithm?",
+  botPrompt: "What is the worst-case time complexity of the Binary Search algorithm?",
   type: RTypes.TRANSFORMED_TEXT,
-  input: selectField(['O(1)', , "O(n)", 'O(log n)', "O(n log n)"]),
+  input: selectField(['O(1)', , "O(log n)", 'O(n)', "O(n log n)"]),
   answers: [
     {
       answer: 'O(1)',
@@ -1130,25 +1130,25 @@ inflncorrectq20: {
       sumToBags: [{"name": "ai", "points": 1}]
     },
     {
-      answer: "O(n)",
-      nextid: "inflncorrectq21",
-      sumToBags: [{"name": "ai", "points": 1}]
-    },
-    {
-      answer: 'O(log n)',
+      answer: "O(log n)",
       nextid: "flncorrectq21",
       sumToBags: [{"name": "ac", "points": 1}]
+    },
+    {
+      answer: 'O(n)',
+      nextid: "inflncorrectq21",
+      sumToBags: [{"name": "ai", "points": 1}]
     },
     
     {
       answer: "O(n log n)",
-      nextid: "inflncorrectq17",
+      nextid: "inflncorrectq21",
       sumToBags: [{"name": "ai", "points": 1}]
     }
   ]
 },
 flncorrectq21: {
-  botPrompt: "Hurray! <strong>Linear Search</strong> is the correct answer! 😎",
+  botPrompt: "Hurray! <strong>O(log n)</strong> is the correct answer! 😎",
   answers: [
     {
       nextid: "fln"+shuffleArraylot[22],
@@ -1156,10 +1156,57 @@ flncorrectq21: {
   ]
 },
 inflncorrectq21: {
-  botPrompt: "You have selected the wrong Answer... 🤔 the <strong>right</strong> answer is <strong>Linear Search</strong>",
+  botPrompt: "You have selected the wrong Answer... 🤔 the <strong>right</strong> answer is <strong>O(log n)</strong>",
   answers: [
     {
       nextid: "fln"+shuffleArraylot[22],
+    }
+  ]
+},
+
+
+//22
+["fln"+shuffleArraylot[22]]: {
+  botPrompt: "Which algorithm is not a divide and conquer algorithm?",
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['Bubble Sort', 'Merge Sort', "Insertion Sort", "Quick Sort"]),
+  answers: [
+    {
+      answer: 'Bubble Sort',
+      nextid: "inflncorrectq22",
+      sumToBags: [{"name": "ai", "points": 1}]
+    },
+    {
+      answer: 'Merge Sort',
+      nextid: "inflncorrectq22",
+      sumToBags: [{"name": "ai", "points": 1}]
+    },
+    {
+      answer: "Insertion Sort",
+      nextid: "inflncorrectq22",
+      sumToBags: [{"name": "ai", "points": 1}]
+    },
+    
+    {
+      answer: "Quick Sort",
+      nextid: "flncorrectq22",
+      sumToBags: [{"name": "ac", "points": 1}]
+    }
+  ]
+},
+flncorrectq22: {
+  botPrompt: "Hurray! <strong>LiO(log n)ear</strong> is the correct answer! 😎",
+  answers: [
+    {
+      nextid: "fln"+shuffleArraylot[23],
+    }
+  ]
+},
+inflncorrectq22: {
+  botPrompt: "You have selected the wrong Answer... 🤔 the <strong>right</strong> answer is <strong>O(log n)</strong>",
+  answers: [
+    {
+      nextid: "fln"+shuffleArraylot[23],
     }
   ]
 },
