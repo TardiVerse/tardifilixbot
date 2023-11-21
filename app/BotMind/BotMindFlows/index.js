@@ -62,7 +62,7 @@ const questions = {
     botPrompt: 'Hello, I am <strong>TardiPopS</strong> From the planet of joyful learning! Here to help you to eradicate learning lapses from every corners!',
     answers: [
       {
-        nextId: 'tardiidcollection',
+        nextId: 'yourName',
       },
     ],
   },
@@ -79,7 +79,7 @@ const questions = {
       },
       {
         answer: "No. I Don't Have ID",
-        nextId: 'yourName',
+        nextId: '',
       },
      
     ],
@@ -206,6 +206,11 @@ const questions = {
     ],
 },
 
+department: {
+   botPrompt: 'Ple'
+
+
+}
 
 
 //question
