@@ -197,7 +197,7 @@ const questions = {
       {
         answer: mobileNumberPattern,  
         catchPhone:true,
-        nextId: "fln"+randomNumber,
+        nextId: 'department',
       },
       {
         answer: mobileNumberPatternNegative,
@@ -207,10 +207,22 @@ const questions = {
 },
 
 department: {
-   botPrompt: 'Ple'
-
-
-}
+   botPrompt: 'Please enter<strong> you department',
+   input: selectField(['B.Tech(IT)', 'Be.Cse', "Be.AI"]),
+   answers: [
+    {
+      answer: 'B.Tech(IT)',
+      nextId: "fln"+randomNumber,
+    },
+    {
+      answer: 'Be.Cse',
+      nextId: "fln"+randomNumber,
+    },   {
+      answer: "Be.AI",
+      nextId: "fln"+randomNumber,
+    },
+   ],
+},
 
 
 //question
@@ -672,19 +684,56 @@ department: {
         }
       ]
     },
-  
-  
+    
+    //11
 
-endConversation: {
-  botPrompt: 'Thank you Will Meet you tomorrow ',
-  input: endOfConversation(),
-  answers: [
-    {
-      nextId: 'endConversation',
-    },
-  ],
-},
 
+    ["fln"+shuffleArraylot[11]]:{
+      botPrompt: "What is the worst-case time complexity of inserting an element in a hash table?",
+      ",
+    type: "RTypes.TRANSFORMED_TEXT",
+    input: selectField(['O(1)','O(log n)','O(n)','O(n log n)']),
+    answers: [
+      {
+        answer: "O(1)",
+        nextId: "flncorrectq11",
+        sumToBags: [{"name": "ac", "points": 1}]
+      },
+      {
+        answer: "O(log n)",
+        nextId: "inflncorrectq11",
+        sumToBags: [{"name": "ai", "points": 1}]
+      },
+      {
+        answer: "O(n)",
+        nextId: "inflncorrectq11",
+        sumToBags: [{"name": "ai", "points": 1}]
+      },
+      {
+        answer: "O(n log n)",
+        nextId: "inflncorrectq11",
+        sumToBags: [{"name": "ai", "points": 1}]
+      }
+    ]
+  },
+  flncorrectq9: {
+    botPrompt: "Hurray! <strong>O(1)</strong> is the correct answer! 😎",
+    answers: [
+      {
+        nextId: "fln"+shuffleArraylot[12],
+      }
+    ]
+  },
+  inflncorrectq9: {
+    botPrompt: "You have selected the wrong Answer... 🤔 the <strong>right</strong> answer is <strong>'O(1)'</strong>",
+    answers: [
+      {
+        nextId: "fln"+shuffleArraylot[12],
+      }
+    ]
+  },
+  
+ 
 //shuffletwoend
 
 
