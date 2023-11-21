@@ -67,35 +67,6 @@ const questions = {
     ],
   },
 
-
-  tardiidcollection: {
-    botPrompt: 'Do you have TardiPops ID ?',
-    type: RTypes.TRANSFORMED_TEXT,
-    input: selectField(['Yes! I Have ID', "No. I Don't Have ID"]),
-    answers: [
-      {
-        answer: 'Yes! I Have ID',
-        nextId: 'idcollection',
-      },
-      {
-        answer: "No. I Don't Have ID",
-        nextId: '',
-      },
-     
-    ],
-  },
-
-  idcollection: {
-    botPrompt: 'Kindly! Enter your TardiFilix ID ?',
-    input: textField(),
-    answers: [
-      {
-        answer: common_greetings_negative,
-        catchTFID: true,
-        nextId: 'Welcomeback',
-      },
-    ],
-  },
   greetings_notAEmail: {
 	  botPrompt: 'Hello! You have entererd <strong>Invalid Email</strong> 😅',
 	  answers: [
@@ -597,7 +568,7 @@ department: {
       ["fln"+shuffleArraylot[9]]:{
         botPrompt: "What is the output of the following code? x = 'abcd'; for i in range(len(x)): x = 'a'; print(x, end='')",
       type: "RTypes.TRANSFORMED_TEXT",
-      input: selectField(['abcd', 'aaaa', 'a', 'dcba']),
+      input: selectField(['abcd','aaaa','a','dcba']),
       answers: [
         {
           answer: "aaaa",
@@ -690,7 +661,6 @@ department: {
 
     ["fln"+shuffleArraylot[11]]:{
       botPrompt: "What is the worst-case time complexity of inserting an element in a hash table?",
-      ",
     type: "RTypes.TRANSFORMED_TEXT",
     input: selectField(['O(1)','O(log n)','O(n)','O(n log n)']),
     answers: [
@@ -716,7 +686,7 @@ department: {
       }
     ]
   },
-  flncorrectq9: {
+  flncorrectq11: {
     botPrompt: "Hurray! <strong>O(1)</strong> is the correct answer! 😎",
     answers: [
       {
@@ -724,7 +694,7 @@ department: {
       }
     ]
   },
-  inflncorrectq9: {
+  inflncorrectq11: {
     botPrompt: "You have selected the wrong Answer... 🤔 the <strong>right</strong> answer is <strong>'O(1)'</strong>",
     answers: [
       {
@@ -733,7 +703,191 @@ department: {
     ]
   },
   
- 
+
+  //12
+  ["fln"+shuffleArraylot[12]]: {
+    botPrompt: "In a binary max heap, where is the second-largest element likely to be found?",
+    type: "RTypes.TRANSFORMED_TEXT",
+    input: selectField(['Root of the heap.', 'Last element of the heap.', 'One of the children of the root.', 'Anywhere in the heap.']),
+    answers: [
+      {
+        answer: 'Root of the heap.',
+        nextid: "inflncorrectq12",
+        sumToBags: [{"name": "ai", "points": 1}]
+      },
+      {
+        answer: 'Last element of the heap.',
+        nextid: "inflncorrectq12",
+        sumToBags: [{"name": "ai", "points": 1}]
+      },
+      {
+        answer: 'One of the children of the root.',
+        nextid: "flncorrectq12",
+        sumToBags: [{"name": "ac", "points": 1}]
+      },
+      {
+        answer: 'Anywhere in the heap.',
+        nextid: "inflncorrectq12",
+        sumToBags: [{"name": "ai", "points": 1}]
+      }
+    ]
+  },
+  flncorrectq12: {
+    botPrompt: "Hurray! <strong>Root of the heap.</strong> is the correct answer! 😎",
+    answers: [
+      {
+        nextid: "fln"+shuffleArraylot[13],
+      }
+    ]
+  },
+  inflncorrectq12: {
+    botPrompt: "You have selected the wrong Answer... 🤔 the <strong>right</strong> answer is <strong>Root of the heap.</strong>",
+    answers: [
+      {
+        nextid: "fln"+shuffleArraylot[13],
+      }
+    ]
+  },
+
+  //13
+
+  ["fln"+shuffleArraylot[13]]:{
+    botPrompt: "Which of the following is not a limitation of an array in Data Structure?",
+  type: "RTypes.TRANSFORMED_TEXT",
+  input: selectField(['Fixed size.','Consumes more memory for a small number of elements.','Insertion and deletion are expensive operations.','Inability to store multiple data types.']),
+  answers: [
+    {
+      answer: 'Fixed size.',
+      nextId: "flncorrectq13",
+      sumToBags: [{"name": "ac", "points": 1}]
+    },
+    {
+      answer: 'Consumes more memory for a small number of elements.',
+      nextId: "inflncorrectq13",
+      sumToBags: [{"name": "ai", "points": 1}]
+    },
+    {
+      answer: "Insertion and deletion are expensive operations.",
+      nextId: "inflncorrectq13",
+      sumToBags: [{"name": "ai", "points": 1}]
+    },
+    {
+      answer: "Inability to store multiple data types.",
+      nextId: "inflncorrectq13",
+      sumToBags: [{"name": "ai", "points": 1}]
+    }
+  ]
+},
+flncorrectq13: {
+  botPrompt: "Hurray! <strong>O(1)</strong> is the correct answer! 😎",
+  answers: [
+    {
+      nextId: "fln"+shuffleArraylot[14],
+    }
+  ]
+},
+inflncorrectq13: {
+  botPrompt: "You have selected the wrong Answer... 🤔 the <strong>right</strong> answer is <strong>'O(1)'</strong>",
+  answers: [
+    {
+      nextId: "fln"+shuffleArraylot[14],
+    }
+  ]
+},
+
+//14
+["fln"+shuffleArraylot[14]]: {
+  botPrompt: "What is the time complexity of accessing an element in a linked list?",
+  type: "RTypes.TRANSFORMED_TEXT",
+  input: selectField(['O(1)', 'O(log n)', "O(n)", "O(n log n)"]),
+  answers: [
+    {
+      answer: 'Root of the heap.',
+      nextid: "inflncorrectq14",
+      sumToBags: [{"name": "ai", "points": 1}]
+    },
+    {
+      answer: 'Last element of the heap.',
+      nextid: "inflncorrectq14",
+      sumToBags: [{"name": "ai", "points": 1}]
+    },
+    {
+      answer: "One of the children of the root.",
+      nextid: "flncorrectq14",
+      sumToBags: [{"name": "ac", "points": 1}]
+    },
+    {
+      answer: "Anywhere in the heap.",
+      nextid: "inflncorrectq14",
+      sumToBags: [{"name": "ai", "points": 1}]
+    }
+  ]
+},
+flncorrectq14: {
+  botPrompt: "Hurray! <strong>Root of the heap.</strong> is the correct answer! 😎",
+  answers: [
+    {
+      nextid: "fln"+shuffleArraylot[15],
+    }
+  ]
+},
+inflncorrectq14: {
+  botPrompt: "You have selected the wrong Answer... 🤔 the <strong>right</strong> answer is <strong>Root of the heap.</strong>",
+  answers: [
+    {
+      nextid: "fln"+shuffleArraylot[15],
+    }
+  ]
+},
+
+//15
+
+["fln"+shuffleArraylot[15]]: {
+  botPrompt: "In a binary max heap, where is the second-largest element likely to be found?",
+  type: "RTypes.TRANSFORMED_TEXT",
+  input: selectField(['Root of the heap.', 'Last element of the heap.', 'One of the children of the root.', 'Anywhere in the heap.']),
+  answers: [
+    {
+      answer: 'Root of the heap.',
+      nextid: "inflncorrectq15",
+      sumToBags: [{"name": "ai", "points": 1}]
+    },
+    {
+      answer: 'Last element of the heap.',
+      nextid: "inflncorrectq15",
+      sumToBags: [{"name": "ai", "points": 1}]
+    },
+    {
+      answer: 'One of the children of the root.',
+      nextid: "flncorrectq15",
+      sumToBags: [{"name": "ac", "points": 1}]
+    },
+    {
+      answer: 'Anywhere in the heap.',
+      nextid: "inflncorrectq15",
+      sumToBags: [{"name": "ai", "points": 1}]
+    }
+  ]
+},
+flncorrectq15: {
+  botPrompt: "Hurray! <strong>Root of the heap.</strong> is the correct answer! 😎",
+  answers: [
+    {
+      nextid: "fln"+shuffleArraylot[16],
+    }
+  ]
+},
+inflncorrectq15: {
+  botPrompt: "You have selected the wrong Answer... 🤔 the <strong>right</strong> answer is <strong>Root of the heap.</strong>",
+  answers: [
+    {
+      nextid: "fln"+shuffleArraylot[16],
+    }
+  ]
+},
+
+
+
 //shuffletwoend
 
 
