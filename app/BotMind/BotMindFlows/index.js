@@ -200,7 +200,7 @@ department: {
 
   ["fln"+shuffleArraylot[1]]: {
     botPrompt: "What is the output of the following C code? int main() { int a[] = {1, 2, 3, 4, 5}; int *p = a; ++*p; p += 2; printf(\"%d\", *p); return 0; }",
-    type: "RTypes.TRANSFORMED_TEXT",
+    type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['1', '2', '3', '4']),
     answers: [
       {
@@ -244,11 +244,11 @@ department: {
 
   ["fln"+shuffleArraylot[2]]: {
     botPrompt: "What is the issue with the following C function? char* getString() { char str[] = 'hello world'; return str; }",
-    type: "RTypes.TRANSFORMED_TEXT",
+    type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['It returns a string literal.', 'It returns a local variable address.', 'Theres no issue with this function.', 'The string is not null-terminated.']),
     answers: [
       {
-        answer: "It returns a local variable address.",
+        answer: 'It returns a local variable address.',
         nextid: "flncorrectq2",
         sumToBags: [{"name": "ac", "points": 1}]
       },
@@ -289,7 +289,7 @@ department: {
 
   ["fln"+shuffleArraylot[3]]: {
     botPrompt: "In C, if you pass an array as an argument to a function, what actually gets passed?",
-    type: "RTypes.TRANSFORMED_TEXT",
+    type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['The first element of the array.', 'The base address of the array.', 'The entire array.', 'The size of the array.']),
     answers: [
       {
@@ -335,7 +335,7 @@ department: {
 
 ["fln"+shuffleArraylot[4]]: {
     botPrompt: "What will be the value of 'var' after executing the following code? int var = 10; int *ptr = &var; *ptr = *ptr + 5;",
-    type: "RTypes.TRANSFORMED_TEXT",
+    type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['5', '10', '15', '20']),
     answers: [
       {
@@ -382,7 +382,7 @@ department: {
 
   ["fln"+shuffleArraylot[5]]: {
     botPrompt: "What does the 'restrict' keyword in C indicate?",
-    type: "RTypes.TRANSFORMED_TEXT",
+    type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['The variable can only be accessed in the block its declared in.', 'The pointer is the sole initial means of accessing the object it points to.', 'The variable is restricted from being modified.', 'The pointer cannot be dereferenced.']),
     answers: [
       {
@@ -428,7 +428,7 @@ department: {
 
   ["fln"+shuffleArraylot[6]]: {
       botPrompt: "What is the output of the following Python code? def func(x = []): x.append(x); return x; print(func())",
-      type: "RTypes.TRANSFORMED_TEXT",
+      type: RTypes.TRANSFORMED_TEXT,
       input: selectField(["[]", "[...]", "[[]]", "[[...]]"]),
       answers: [
         {
@@ -474,7 +474,7 @@ department: {
   //7
   ["fln"+shuffleArraylot[7]]: {
       botPrompt: "In Python, what is the difference between 'is' and '=='?",
-      type: "RTypes.TRANSFORMED_TEXT",
+      type: RTypes.TRANSFORMED_TEXT,
       input: selectField(['No difference, both are used for equality check.', 'is checks for identity, == checks for equality.', 'is checks for type, == checks for value.', 'is is used for numeric types, == is used for all types.']),
       answers: [
         {
@@ -520,7 +520,7 @@ department: {
   
   ["fln"+shuffleArraylot[8]]: {
       botPrompt: "Which of the following is a correct way to create a generator in Python?",
-      type: "RTypes.TRANSFORMED_TEXT",
+      type: RTypes.TRANSFORMED_TEXT,
       input: selectField(['Using ()', 'Using {}', 'Using []', 'Using <>']),
       answers: [
         {
@@ -567,7 +567,7 @@ department: {
 
       ["fln"+shuffleArraylot[9]]:{
         botPrompt: "What is the output of the following code? x = 'abcd'; for i in range(len(x)): x = 'a'; print(x, end='')",
-      type: "RTypes.TRANSFORMED_TEXT",
+      type: RTypes.TRANSFORMED_TEXT,
       input: selectField(['abcd','aaaa','a','dcba']),
       answers: [
         {
@@ -614,7 +614,7 @@ department: {
   
     ["fln"+shuffleArraylot[10]]: {
       botPrompt: "What is the use of the 'global' keyword in Python?",
-      type: "RTypes.TRANSFORMED_TEXT",
+      type: RTypes.TRANSFORMED_TEXT,
       input: selectField(['To create a global variable.', 'To modify a global variable inside a function.', 'To check if a variable is global.', 'To import a global variable from another module.']),
       answers: [
         {
@@ -643,7 +643,7 @@ department: {
       botPrompt: "Hurray! <strong>To modify a global variable inside a function.</strong> is the correct answer! 😎",
       answers: [
         {
-          nextId: 'endConversation',
+          nextId: "fln"+shuffleArraylot[11],
         }
       ]
     },
@@ -651,7 +651,7 @@ department: {
       botPrompt: "You have selected the wrong Answer... 🤔 the <strong>right</strong> answer is <strong>'To modify a global variable inside a function.'</strong>",
       answers: [
         {
-          nextId: 'endConversation',
+          nextId: "fln"+shuffleArraylot[11],
         }
       ]
     },
@@ -661,7 +661,7 @@ department: {
 
     ["fln"+shuffleArraylot[11]]:{
       botPrompt: "What is the worst-case time complexity of inserting an element in a hash table?",
-    type: "RTypes.TRANSFORMED_TEXT",
+    type: RTypes.TRANSFORMED_TEXT,
     input: selectField(['O(1)','O(log n)','O(n)','O(n log n)']),
     answers: [
       {
@@ -707,8 +707,8 @@ department: {
   //12
   ["fln"+shuffleArraylot[12]]: {
     botPrompt: "In a binary max heap, where is the second-largest element likely to be found?",
-    type: "RTypes.TRANSFORMED_TEXT",
-    input: selectField(['Root of the heap.', 'Last element of the heap.', 'One of the children of the root.', 'Anywhere in the heap.']),
+    type: RTypes.TRANSFORMED_TEXT,
+    input: selectField(['Root of the heap.','Last element of the heap.','One of the children of the root.','Anywhere in the heap.']),
     answers: [
       {
         answer: 'Root of the heap.',
@@ -733,7 +733,7 @@ department: {
     ]
   },
   flncorrectq12: {
-    botPrompt: "Hurray! <strong>Root of the heap.</strong> is the correct answer! 😎",
+    botPrompt: "Hurray! <strong>One of the children of the root.</strong> is the correct answer! 😎",
     answers: [
       {
         nextid: "fln"+shuffleArraylot[13],
@@ -741,7 +741,7 @@ department: {
     ]
   },
   inflncorrectq12: {
-    botPrompt: "You have selected the wrong Answer... 🤔 the <strong>right</strong> answer is <strong>Root of the heap.</strong>",
+    botPrompt: "You have selected the wrong Answer... 🤔 the <strong>right</strong> answer is <strong>One of the children of the root.</strong>",
     answers: [
       {
         nextid: "fln"+shuffleArraylot[13],
@@ -753,8 +753,8 @@ department: {
 
   ["fln"+shuffleArraylot[13]]:{
     botPrompt: "Which of the following is not a limitation of an array in Data Structure?",
-  type: "RTypes.TRANSFORMED_TEXT",
-  input: selectField(['Fixed size.','Consumes more memory for a small number of elements.','Insertion and deletion are expensive operations.','Inability to store multiple data types.']),
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['Fixed size.','Consumes more memory for a small number of elements.',"Insertion and deletion are expensive operations.","Inability to store multiple data types."]),
   answers: [
     {
       answer: 'Fixed size.',
@@ -779,7 +779,7 @@ department: {
   ]
 },
 flncorrectq13: {
-  botPrompt: "Hurray! <strong>O(1)</strong> is the correct answer! 😎",
+  botPrompt: "Hurray! <strong>Fixed size.</strong> is the correct answer! 😎",
   answers: [
     {
       nextId: "fln"+shuffleArraylot[14],
@@ -787,7 +787,7 @@ flncorrectq13: {
   ]
 },
 inflncorrectq13: {
-  botPrompt: "You have selected the wrong Answer... 🤔 the <strong>right</strong> answer is <strong>'O(1)'</strong>",
+  botPrompt: "You have selected the wrong Answer... 🤔 the <strong>right</strong> answer is <strong>'Fixed size.'</strong>",
   answers: [
     {
       nextId: "fln"+shuffleArraylot[14],
@@ -798,33 +798,33 @@ inflncorrectq13: {
 //14
 ["fln"+shuffleArraylot[14]]: {
   botPrompt: "What is the time complexity of accessing an element in a linked list?",
-  type: "RTypes.TRANSFORMED_TEXT",
-  input: selectField(['O(1)', 'O(log n)', "O(n)", "O(n log n)"]),
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['O(1)','O(log n)',"O(n)","O(n log n)"]),
   answers: [
     {
-      answer: 'Root of the heap.',
+      answer: 'O(1)',
       nextid: "inflncorrectq14",
       sumToBags: [{"name": "ai", "points": 1}]
     },
     {
-      answer: 'Last element of the heap.',
+      answer: 'O(log n)',
       nextid: "inflncorrectq14",
       sumToBags: [{"name": "ai", "points": 1}]
     },
     {
-      answer: "One of the children of the root.",
+      answer: "O(n)",
       nextid: "flncorrectq14",
       sumToBags: [{"name": "ac", "points": 1}]
     },
     {
-      answer: "Anywhere in the heap.",
+      answer: "O(n log n)",
       nextid: "inflncorrectq14",
       sumToBags: [{"name": "ai", "points": 1}]
     }
   ]
 },
 flncorrectq14: {
-  botPrompt: "Hurray! <strong>Root of the heap.</strong> is the correct answer! 😎",
+  botPrompt: "Hurray! <strong>O(n)</strong> is the correct answer! 😎",
   answers: [
     {
       nextid: "fln"+shuffleArraylot[15],
@@ -832,7 +832,7 @@ flncorrectq14: {
   ]
 },
 inflncorrectq14: {
-  botPrompt: "You have selected the wrong Answer... 🤔 the <strong>right</strong> answer is <strong>Root of the heap.</strong>",
+  botPrompt: "You have selected the wrong Answer... 🤔 the <strong>right</strong> answer is <strong>O(n)</strong>",
   answers: [
     {
       nextid: "fln"+shuffleArraylot[15],
@@ -843,34 +843,34 @@ inflncorrectq14: {
 //15
 
 ["fln"+shuffleArraylot[15]]: {
-  botPrompt: "In a binary max heap, where is the second-largest element likely to be found?",
-  type: "RTypes.TRANSFORMED_TEXT",
-  input: selectField(['Root of the heap.', 'Last element of the heap.', 'One of the children of the root.', 'Anywhere in the heap.']),
+  botPrompt: "Which of the following is not a type of Linked List?",
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['Circular Linked List','Doubly Linked List','Array Linked List','Single Linked List']),
   answers: [
     {
-      answer: 'Root of the heap.',
+      answer: 'Circular Linked List',
       nextid: "inflncorrectq15",
       sumToBags: [{"name": "ai", "points": 1}]
     },
     {
-      answer: 'Last element of the heap.',
+      answer: 'Doubly Linked List',
       nextid: "inflncorrectq15",
       sumToBags: [{"name": "ai", "points": 1}]
     },
     {
-      answer: 'One of the children of the root.',
+      answer: 'Array Linked List',
       nextid: "flncorrectq15",
       sumToBags: [{"name": "ac", "points": 1}]
     },
     {
-      answer: 'Anywhere in the heap.',
+      answer: 'Single Linked List',
       nextid: "inflncorrectq15",
       sumToBags: [{"name": "ai", "points": 1}]
     }
   ]
 },
 flncorrectq15: {
-  botPrompt: "Hurray! <strong>Root of the heap.</strong> is the correct answer! 😎",
+  botPrompt: "Hurray! <strong>Array Linked List</strong> is the correct answer! 😎",
   answers: [
     {
       nextid: "fln"+shuffleArraylot[16],
@@ -878,7 +878,7 @@ flncorrectq15: {
   ]
 },
 inflncorrectq15: {
-  botPrompt: "You have selected the wrong Answer... 🤔 the <strong>right</strong> answer is <strong>Root of the heap.</strong>",
+  botPrompt: "You have selected the wrong Answer... 🤔 the <strong>right</strong> answer is <strong>Array Linked List</strong>",
   answers: [
     {
       nextid: "fln"+shuffleArraylot[16],
@@ -886,6 +886,283 @@ inflncorrectq15: {
   ]
 },
 
+//16
+
+["fln"+shuffleArraylot[16]]: {
+  botPrompt: "What is the best case time complexity of QuickSort?",
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['O(1)','O(log n)','O(n log n)','O(n^2)']),
+  answers: [
+    {
+      answer: 'O(1)',
+      nextid: "inflncorrectq16",
+      sumToBags: [{"name": "ai", "points": 1}]
+    },
+    {
+      answer: 'O(log n)',
+      nextid: "inflncorrectq16",
+      sumToBags: [{"name": "ai", "points": 1}]
+    },
+    {
+      answer: 'O(n log n)',
+      nextid: "flncorrectq16",
+      sumToBags: [{"name": "ac", "points": 1}]
+    },
+    {
+      answer: 'O(n^2)',
+      nextid: "inflncorrectq16",
+      sumToBags: [{"name": "ai", "points": 1}]
+    }
+  ]
+},
+flncorrectq16: {
+  botPrompt: "Hurray! <strong>O(n log n)</strong> is the correct answer! 😎",
+  answers: [
+    {
+      nextid: "fln"+shuffleArraylot[17],
+    }
+  ]
+},
+inflncorrectq16: {
+  botPrompt: "You have selected the wrong Answer... 🤔 the <strong>right</strong> answer is <strong>O(n log n)</strong>",
+  answers: [
+    {
+      nextid: "fln"+shuffleArraylot[17],
+    }
+  ]
+},
+
+//17
+["fln"+shuffleArraylot[17]]: {
+  botPrompt: "What is the space complexity of an iterative Depth-First Search (DFS) algorithm on a graph?",
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['O(1)', , "O(n)", 'O(log n)', "O(n log n)"]),
+  answers: [
+    {
+      answer: 'O(1)',
+      nextid: "inflncorrectq17",
+      sumToBags: [{"name": "ai", "points": 1}]
+    },
+    {
+      answer: "O(n)",
+      nextid: "flncorrectq17",
+      sumToBags: [{"name": "ac", "points": 1}]
+    },
+    {
+      answer: 'O(log n)',
+      nextid: "inflncorrectq17",
+      sumToBags: [{"name": "ai", "points": 1}]
+    },
+    
+    {
+      answer: "O(n log n)",
+      nextid: "inflncorrectq17",
+      sumToBags: [{"name": "ai", "points": 1}]
+    }
+  ]
+},
+flncorrectq17: {
+  botPrompt: "Hurray! <strong>O(n)</strong> is the correct answer! 😎",
+  answers: [
+    {
+      nextid: "fln"+shuffleArraylot[18],
+    }
+  ]
+},
+inflncorrectq17: {
+  botPrompt: "You have selected the wrong Answer... 🤔 the <strong>right</strong> answer is <strong>O(n)</strong>",
+  answers: [
+    {
+      nextid: "fln"+shuffleArraylot[18],
+    }
+  ]
+},
+
+//18
+["fln"+shuffleArraylot[18]]: {
+  botPrompt: "In Dijkstra's algorithm, what data structure is typically used to achieve the lowest time complexity?",
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['Array', 'Stack', "Queue", "Priority Queue"]),
+  answers: [
+    {
+      answer: 'Array',
+      nextid: "inflncorrectq18",
+      sumToBags: [{"name": "ai", "points": 1}]
+    },
+    {
+      answer: 'Stack',
+      nextid: "inflncorrectq18",
+      sumToBags: [{"name": "ai", "points": 1}]
+    },
+    {
+      answer: "Queue",
+      nextid: "inflncorrectq18",
+      sumToBags: [{"name": "ai", "points": 1}]
+    },
+    
+    {
+      answer: "Priority Queue",
+      nextid: "flncorrectq18",
+      sumToBags: [{"name": "ac", "points": 1}]
+    }
+  ]
+},
+flncorrectq18: {
+  botPrompt: "Hurray! <strong>Priority Queue</strong> is the correct answer! 😎",
+  answers: [
+    {
+      nextid: "fln"+shuffleArraylot[19],
+    }
+  ]
+},
+inflncorrectq18: {
+  botPrompt: "You have selected the wrong Answer... 🤔 the <strong>right</strong> answer is <strong>Priority Queue</strong>",
+  answers: [
+    {
+      nextid: "fln"+shuffleArraylot[19],
+    }
+  ]
+},
+
+//19
+["fln"+shuffleArraylot[19]]: {
+  botPrompt: "Which algorithm is not a divide and conquer algorithm?",
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['Merge Sort', 'Quick Sort', "Binary Search", "Linear Search"]),
+  answers: [
+    {
+      answer: 'Merge Sort',
+      nextid: "inflncorrectq19",
+      sumToBags: [{"name": "ai", "points": 1}]
+    },
+    {
+      answer: 'Quick Sort',
+      nextid: "inflncorrectq19",
+      sumToBags: [{"name": "ai", "points": 1}]
+    },
+    {
+      answer: "Binary Search",
+      nextid: "inflncorrectq19",
+      sumToBags: [{"name": "ai", "points": 1}]
+    },
+    
+    {
+      answer: "Linear Search",
+      nextid: "flncorrectq19",
+      sumToBags: [{"name": "ac", "points": 1}]
+    }
+  ]
+},
+flncorrectq19: {
+  botPrompt: "Hurray! <strong>Linear Search</strong> is the correct answer! 😎",
+  answers: [
+    {
+      nextid: "fln"+shuffleArraylot[20],
+    }
+  ]
+},
+inflncorrectq19: {
+  botPrompt: "You have selected the wrong Answer... 🤔 the <strong>right</strong> answer is <strong>Linear Search</strong>",
+  answers: [
+    {
+      nextid: "fln"+shuffleArraylot[20],
+    }
+  ]
+},
+
+//20
+
+["fln"+shuffleArraylot[20]]: {
+  botPrompt: "Which algorithm is not a divide and conquer algorithm?",
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['Merge Sort', 'Quick Sort', "Binary Search", "Linear Search"]),
+  answers: [
+    {
+      answer: 'Merge Sort',
+      nextid: "inflncorrectq20",
+      sumToBags: [{"name": "ai", "points": 1}]
+    },
+    {
+      answer: 'Quick Sort',
+      nextid: "inflncorrectq20",
+      sumToBags: [{"name": "ai", "points": 1}]
+    },
+    {
+      answer: "Binary Search",
+      nextid: "inflncorrectq20",
+      sumToBags: [{"name": "ai", "points": 1}]
+    },
+    
+    {
+      answer: "Linear Search",
+      nextid: "flncorrectq20",
+      sumToBags: [{"name": "ac", "points": 1}]
+    }
+  ]
+},
+flncorrectq20: {
+  botPrompt: "Hurray! <strong>Linear Search Queue</strong> is the correct answer! 😎",
+  answers: [
+    {
+      nextid: "fln"+shuffleArraylot[21],
+    }
+  ]
+},
+inflncorrectq20: {
+  botPrompt: "You have selected the wrong Answer... 🤔 the <strong>right</strong> answer is <strong>Linear Search Queue</strong>",
+  answers: [
+    {
+      nextid: "fln"+shuffleArraylot[21],
+    }
+  ]
+},
+
+
+//21
+["fln"+shuffleArraylot[21]]: {
+  botPrompt: "Which algorithm is not a divide and conquer algorithm?",
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['O(1)', , "O(n)", 'O(log n)', "O(n log n)"]),
+  answers: [
+    {
+      answer: 'O(1)',
+      nextid: "inflncorrectq21",
+      sumToBags: [{"name": "ai", "points": 1}]
+    },
+    {
+      answer: "O(n)",
+      nextid: "inflncorrectq21",
+      sumToBags: [{"name": "ai", "points": 1}]
+    },
+    {
+      answer: 'O(log n)',
+      nextid: "flncorrectq21",
+      sumToBags: [{"name": "ac", "points": 1}]
+    },
+    
+    {
+      answer: "O(n log n)",
+      nextid: "inflncorrectq17",
+      sumToBags: [{"name": "ai", "points": 1}]
+    }
+  ]
+},
+flncorrectq21: {
+  botPrompt: "Hurray! <strong>Linear Search</strong> is the correct answer! 😎",
+  answers: [
+    {
+      nextid: "fln"+shuffleArraylot[22],
+    }
+  ]
+},
+inflncorrectq21: {
+  botPrompt: "You have selected the wrong Answer... 🤔 the <strong>right</strong> answer is <strong>Linear Search</strong>",
+  answers: [
+    {
+      nextid: "fln"+shuffleArraylot[22],
+    }
+  ]
+},
 
 
 //shuffletwoend
