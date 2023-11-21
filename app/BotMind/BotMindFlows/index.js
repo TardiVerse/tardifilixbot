@@ -1592,6 +1592,6 @@ inflncorrectq30: {
 //shuffletwoend
 
 
-
+}
 console.log("hey sartak this is what you want",questions)
 export default questions;
