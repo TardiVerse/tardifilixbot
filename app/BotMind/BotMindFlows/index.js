@@ -192,8 +192,8 @@ department: {
     {  
       answer: "Be.AI",
       nextId: "fln"+randomNumber,
-    }
-   ]
+    },
+   ],
 },
 
 
