@@ -179,7 +179,7 @@ const questions = {
 
 department: {
    botPrompt: 'Please enter<strong> you department',
-   input: selectField(['B.Tech(IT)', 'Be.Cse', "Be.AI"]),
+   input: selectField(['B.Tech(IT)','Be.Cse', "Be.AI"]),
    answers: [
     {
       answer: 'B.Tech(IT)',
@@ -188,7 +188,7 @@ department: {
     {
       answer: 'Be.Cse',
       nextId: "fln"+randomNumber,
-    },   {
+    },   
       answer: "Be.AI",
       nextId: "fln"+randomNumber,
     },
@@ -521,15 +521,15 @@ department: {
   ["fln"+shuffleArraylot[8]]: {
       botPrompt: "Which of the following is a correct way to create a generator in Python?",
       type: RTypes.TRANSFORMED_TEXT,
-      input: selectField(['Using ()', 'Using {}', 'Using []', 'Using <>']),
+      input: selectField(['Using ()', 'Using {}', "Using []", "Using <>"]),
       answers: [
         {
-          answer: "Using ()",
+          answer: 'Using ()',
           nextId: "flncorrectq8",
           sumToBags: [{"name": "ac", "points": 1}]
         },
         {
-          answer: "Using {}",
+          answer: 'Using {}',
           nextId: "inflncorrectq8",
           sumToBags: [{"name": "ai", "points": 1}]
         },
@@ -1073,35 +1073,35 @@ inflncorrectq19: {
 //20
 
 ["fln"+shuffleArraylot[20]]: {
-  botPrompt: "Which algorithm is not a divide and conquer algorithm?",
+  botPrompt: "Which of the following is a fundamental problem in the study of distributed algorithms?",
   type: RTypes.TRANSFORMED_TEXT,
-  input: selectField(['Merge Sort', 'Quick Sort', "Binary Search", "Linear Search"]),
+  input: selectField(['Finding the median of a data set', 'Calculating the factorial of a number', "Sorting a list of integers", "The Byzantine Generals Problem"]),
   answers: [
     {
-      answer: 'Merge Sort',
+      answer: 'Finding the median of a data set',
       nextid: "inflncorrectq20",
       sumToBags: [{"name": "ai", "points": 1}]
     },
     {
-      answer: 'Quick Sort',
+      answer: 'Calculating the factorial of a number',
       nextid: "inflncorrectq20",
       sumToBags: [{"name": "ai", "points": 1}]
     },
     {
-      answer: "Binary Search",
+      answer: "Sorting a list of integers",
       nextid: "inflncorrectq20",
       sumToBags: [{"name": "ai", "points": 1}]
     },
     
     {
-      answer: "Linear Search",
+      answer: "The Byzantine Generals Problem",
       nextid: "flncorrectq20",
       sumToBags: [{"name": "ac", "points": 1}]
     }
   ]
 },
 flncorrectq20: {
-  botPrompt: "Hurray! <strong>Linear Search Queue</strong> is the correct answer! 😎",
+  botPrompt: "Hurray! <strong>The Byzantine Generals Problem</strong> is the correct answer! 😎",
   answers: [
     {
       nextid: "fln"+shuffleArraylot[21],
@@ -1109,7 +1109,7 @@ flncorrectq20: {
   ]
 },
 inflncorrectq20: {
-  botPrompt: "You have selected the wrong Answer... 🤔 the <strong>right</strong> answer is <strong>Linear Search Queue</strong>",
+  botPrompt: "You have selected the wrong Answer... 🤔 the <strong>right</strong> answer is <strong>The Byzantine Generals Problem</strong>",
   answers: [
     {
       nextid: "fln"+shuffleArraylot[21],
@@ -1167,7 +1167,7 @@ inflncorrectq21: {
 
 //22
 ["fln"+shuffleArraylot[22]]: {
-  botPrompt: "Which algorithm is not a divide and conquer algorithm?",
+  botPrompt: "Which of the following sorting algorithms is not stable?",
   type: RTypes.TRANSFORMED_TEXT,
   input: selectField(['Bubble Sort', 'Merge Sort', "Insertion Sort", "Quick Sort"]),
   answers: [
@@ -1195,7 +1195,7 @@ inflncorrectq21: {
   ]
 },
 flncorrectq22: {
-  botPrompt: "Hurray! <strong>LiO(log n)ear</strong> is the correct answer! 😎",
+  botPrompt: "Hurray! <strong>Quick Sort</strong> is the correct answer! 😎",
   answers: [
     {
       nextid: "fln"+shuffleArraylot[23],
@@ -1203,13 +1203,389 @@ flncorrectq22: {
   ]
 },
 inflncorrectq22: {
-  botPrompt: "You have selected the wrong Answer... 🤔 the <strong>right</strong> answer is <strong>O(log n)</strong>",
+  botPrompt: "You have selected the wrong Answer... 🤔 the <strong>right</strong> answer is <strong>Quick Sort</strong>",
   answers: [
     {
       nextid: "fln"+shuffleArraylot[23],
     }
   ]
 },
+
+
+//23
+["fln"+shuffleArraylot[23]]: {
+  botPrompt: "In the context of graph algorithms, what is the primary purpose of a 'Spanning Tree'?",
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['To find the shortest path between two nodes.', 'To cover all nodes with the minimum number of edges.', "To detect cycles within the graph.", "To find the maximum flow in a network."]),
+  answers: [
+    {
+      answer: 'To find the shortest path between two nodes.',
+      nextid: "inflncorrectq23",
+      sumToBags: [{"name": "ai", "points": 1}]
+    },
+    {
+      answer: 'To cover all nodes with the minimum number of edges.',
+      nextid: "flncorrectq23",
+      sumToBags: [{"name": "ac", "points": 1}]
+    },
+    {
+      answer: "To detect cycles within the graph.",
+      nextid: "inflncorrectq23",
+      sumToBags: [{"name": "ai", "points": 1}]
+    },
+    
+    {
+      answer: "To find the maximum flow in a network.",
+      nextid: "inflncorrectq23",
+      sumToBags: [{"name": "ai", "points": 1}]
+    }
+  ]
+},
+flncorrectq23: {
+  botPrompt: "Hurray! <strong>To cover all nodes with the minimum number of edges.</strong> is the correct answer! 😎",
+  answers: [
+    {
+      nextid: "fln"+shuffleArraylot[24],
+    }
+  ]
+},
+inflncorrectq23: {
+  botPrompt: "You have selected the wrong Answer... 🤔 the <strong>right</strong> answer is <strong>To cover all nodes with the minimum number of edges.</strong>",
+  answers: [
+    {
+      nextid: "fln"+shuffleArraylot[24],
+    }
+  ]
+},
+
+//24
+
+["fln"+shuffleArraylot[24]]: {
+  botPrompt: "In graph theory, which algorithm is used to find the shortest path in a graph with negative weight edges?",
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(["selectField(['Dijkstra\\'s Algorithm" , "Bellman-Ford Algorithm", 'Floyd-Warshall Algorithm', "A* Search Algorithm"]),
+  answers: [
+    {
+      answer: "selectField(['Dijkstra\\'s Algorithm",
+      nextid: "inflncorrectq24",
+      sumToBags: [{"name": "ai", "points": 1}]
+    },
+    {
+      answer: "Bellman-Ford Algorithm",
+      nextid: "flncorrectq24",
+      sumToBags: [{"name": "ac", "points": 1}]
+    },
+    {
+      answer: 'Floyd-Warshall Algorithm',
+      nextid: "inflncorrectq24",
+      sumToBags: [{"name": "ai", "points": 1}]
+    },
+    
+    {
+      answer: "A* Search Algorithm",
+      nextid: "inflncorrectq24",
+      sumToBags: [{"name": "ai", "points": 1}]
+    }
+  ]
+},
+flncorrectq24: {
+  botPrompt: "Hurray! <strong>Bellman-Ford Algorithm</strong> is the correct answer! 😎",
+  answers: [
+    {
+      nextid: "fln"+shuffleArraylot[25],
+    }
+  ]
+},
+inflncorrectq24: {
+  botPrompt: "You have selected the wrong Answer... 🤔 the <strong>right</strong> answer is <strong>Bellman-Ford Algorithm</strong>",
+  answers: [
+    {
+      nextid: "fln"+shuffleArraylot[25],
+    }
+  ]
+},
+
+//25
+
+["fln"+shuffleArraylot[25]]: {
+  botPrompt: "What is the average-case time complexity of a Heap Sort algorithm?",
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(["O(1)", "O(log n)", 'O(n)', "O(n log n)"]),
+  answers: [
+    {
+      answer: "O(1)",
+      nextid: "inflncorrectq25",
+      sumToBags: [{"name": "ai", "points": 1}]
+    },
+    {
+      answer: "O(log n)",
+      nextid: "inflncorrectq25",
+      sumToBags: [{"name": "ai", "points": 1}]
+    },
+    {
+      answer: 'O(n)',
+      nextid: "inflncorrectq25",
+      sumToBags: [{"name": "ai", "points": 1}]
+    },
+    
+    {
+      answer: "O(n log n)",
+      nextid: "flncorrectq25",
+      sumToBags: [{"name": "ac", "points": 1}]
+    }
+  ]
+},
+flncorrectq25: {
+  botPrompt: "Hurray! <strong>O(n log n)</strong> is the correct answer! 😎",
+  answers: [
+    {
+      nextid: "fln"+shuffleArraylot[26],
+    }
+  ]
+},
+inflncorrectq25: {
+  botPrompt: "You have selected the wrong Answer... 🤔 the <strong>right</strong> answer is <strong>O(n log n)</strong>",
+  answers: [
+    {
+      nextid: "fln"+shuffleArraylot[26],
+    }
+  ]
+},
+
+//26
+["fln"+shuffleArraylot[26]]: {
+  botPrompt: "Which data structure is used for implementing LRU (Least Recently Used) Cache?",
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['Queue', 'Stack', "Linked List", "Hash Table",]),
+  answers: [
+    {
+      answer: 'Queue',
+      nextid: "inflncorrectq26",
+      sumToBags: [{"name": "ai", "points": 1}]
+    },
+    {
+      answer: 'Stack',
+      nextid: "inflncorrectq26",
+      sumToBags: [{"name": "ai", "points": 1}]
+    },
+    {
+      answer: "Linked List",
+      nextid: "flncorrectq26",
+      sumToBags: [{"name": "ac", "points": 1}]
+    },
+    
+    {
+      answer: "Hash Table",
+      nextid: "inflncorrectq26",
+      sumToBags: [{"name": "ai", "points": 1}]
+    }
+  ]
+},
+flncorrectq26: {
+  botPrompt: "Hurray! <strong>Linked List</strong> is the correct answer! 😎",
+  answers: [
+    {
+      nextid: "fln"+shuffleArraylot[27],
+    }
+  ]
+},
+inflncorrectq26: {
+  botPrompt: "You have selected the wrong Answer... 🤔 the <strong>right</strong> answer is <strong>Linked List</strong>",
+  answers: [
+    {
+      nextid: "fln"+shuffleArraylot[27],
+    }
+  ]
+},
+
+//27
+
+["fln"+shuffleArraylot[27]]: {
+  botPrompt: "In the field of computer vision, which algorithm is typically used for edge detection in images?",
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['K-Means Clustering', 'Canny Edge Detector', "A* Search Algorithm", "Kruskals Algorithm"]),
+  answers: [
+    {
+      answer: "K-Means Clustering",
+      nextid: "inflncorrectq27",
+      sumToBags: [{"name": "ai", "points": 1}]
+    },
+    {
+      answer: "Canny Edge Detector",
+      nextid: "flncorrectq27",
+      sumToBags: [{"name": "ac", "points": 1}]
+    },
+    {
+      answer: 'A* Search Algorithm',
+      nextid: "inflncorrectq27",
+      sumToBags: [{"name": "ai", "points": 1}]
+    },
+    
+    {
+      answer: "Kruskals Algorithm",
+      nextid: "flncorrectq27",
+      sumToBags: [{"name": "ai", "points": 1}]
+    }
+  ]
+},
+flncorrectq27: {
+  botPrompt: "Hurray! <strong>Canny Edge Detector</strong> is the correct answer! 😎",
+  answers: [
+    {
+      nextid: "fln"+shuffleArraylot[28],
+    }
+  ]
+},
+inflncorrectq27: {
+  botPrompt: "You have selected the wrong Answer... 🤔 the <strong>right</strong> answer is <strong>Canny Edge Detector</strong>",
+  answers: [
+    {
+      nextid: "fln"+shuffleArraylot[28],
+    }
+  ]
+},
+
+
+//28
+["fln"+shuffleArraylot[28]]: {
+  botPrompt: "Which algorithm is most commonly used for balancing load across different servers in a distributed system?",
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['Round Robin', 'Depth-First Search', "Kruskas Algorithm", "Dijkstras Algorithm"]),
+  answers: [
+    {
+      answer: 'Round Robin',
+      nextid: "flncorrectq28",
+      sumToBags: [{"name": "ac", "points": 1}]
+    },
+    {
+      answer: 'Depth-First Search',
+      nextid: "inflncorrectq28",
+      sumToBags: [{"name": "ai", "points": 1}]
+    },
+    {
+      answer: "Kruskas Algorithm",
+      nextid: "inflncorrectq28",
+      sumToBags: [{"name": "ai", "points": 1}]
+    },
+    
+    {
+      answer: "Dijkstras Algorithm",
+      nextid: "inflncorrectq28",
+      sumToBags: [{"name": "ai", "points": 1}]
+    }
+  ]
+},
+flncorrectq28: {
+  botPrompt: "Hurray! <strong>Round Robin</strong> is the correct answer! 😎",
+  answers: [
+    {
+      nextid: "fln"+shuffleArraylot[29],
+    }
+  ]
+},
+inflncorrectq28: {
+  botPrompt: "You have selected the wrong Answer... 🤔 the <strong>right</strong> answer is <strong>Round Robin</strong>",
+  answers: [
+    {
+      nextid: "fln"+shuffleArraylot[29],
+    }
+  ]
+},
+
+//29
+["fln"+shuffleArraylot[29]]: {
+  botPrompt: "What is the time complexity of the Fast Fourier Transform (FFT) algorithm?",
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['O(n)', 'O(n log n)', "O(log n)", "O(n^2)"]),
+  answers: [
+    {
+      answer: 'O(n)',
+      nextid: "inflncorrectq29",
+      sumToBags: [{"name": "ai", "points": 1}]
+    },
+    {
+      answer: 'O(n log n)',
+      nextid: "flncorrectq29",
+      sumToBags: [{"name": "ac", "points": 1}]
+    },
+    {
+      answer: "O(log n)",
+      nextid: "inflncorrectq29",
+      sumToBags: [{"name": "ai", "points": 1}]
+    },
+    
+    {
+      answer: "O(n^2)",
+      nextid: "inflncorrectq29",
+      sumToBags: [{"name": "ai", "points": 1}]
+    }
+  ]
+},
+flncorrectq29: {
+  botPrompt: "Hurray! <strong>O(n log n)</strong> is the correct answer! 😎",
+  answers: [
+    {
+      nextid: "fln"+shuffleArraylot[30],
+    }
+  ]
+},
+inflncorrectq29: {
+  botPrompt: "You have selected the wrong Answer... 🤔 the <strong>right</strong> answer is <strong>O(n log n)</strong>",
+  answers: [
+    {
+      nextid: "fln"+shuffleArraylot[30],
+    }
+  ]
+},
+
+
+//30
+
+["fln"+shuffleArraylot[30]]: {
+  botPrompt: "In the context of algorithm analysis, what does the term 'Amortized Time Complexity' refer to?",
+  type: RTypes.TRANSFORMED_TEXT,
+  input: selectField(['Time complexity of the worst-case operation.', 'Average time per operation over a worst-case sequence of operations.', "Maximum time taken by an operation in the best-case scenario. List", "Time complexity for an algorithm to complete in a real-time system.",]),
+  answers: [
+    {
+      answer: 'Time complexity of the worst-case operation.',
+      nextid: "inflncorrectq30",
+      sumToBags: [{"name": "ai", "points": 1}]
+    },
+    {
+      answer: 'Average time per operation over a worst-case sequence of operations.',
+      nextid: "flncorrectq30",
+      sumToBags: [{"name": "ac", "points": 1}]
+    },
+    {
+      answer: "Maximum time taken by an operation in the best-case scenario.",
+      nextid: "inflncorrectq30",
+      sumToBags: [{"name": "ai", "points": 1}]
+    },
+    
+    {
+      answer: "Time complexity for an algorithm to complete in a real-time system.",
+      nextid: "inflncorrectq30",
+      sumToBags: [{"name": "ai", "points": 1}]
+    }
+  ]
+},
+flncorrectq30: {
+  botPrompt: "Hurray! <strong>Average time per operation over a worst-case sequence of operations.</strong> is the correct answer! 😎",
+  answers: [
+    {
+      nextid: "fln"+shuffleArraylot[31],
+    }
+  ]
+},
+inflncorrectq30: {
+  botPrompt: "You have selected the wrong Answer... 🤔 the <strong>right</strong> answer is <strong>Average time per operation over a worst-case sequence of operations.</strong>",
+  answers: [
+    {
+      nextid: "fln"+shuffleArraylot[31],
+    }
+  ]
+},
+
 
 
 //shuffletwoend
