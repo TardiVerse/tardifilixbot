@@ -2006,7 +2006,7 @@ flncorrectq39: {
   botPrompt: "Hurray! <strong>Round Robin</strong> is the correct answer! 😎",
   answers: [
     {
-      nextid: "fln"+shuffleArraylot[40],
+      nextid: 'endConversation',
     }
   ]
 },
@@ -2014,12 +2014,22 @@ inflncorrectq39: {
   botPrompt: "You have selected the wrong Answer... 🤔 the <strong>right</strong> answer is <strong>Round Robin</strong>",
   answers: [
     {
-      nextid: "fln"+shuffleArraylot[40],
+      nextid: 'endConversation',
     }
   ]
 },
 
 
+
+endConversation: {
+botPrompt: 'Thank you, your Test has been completed you can kindly close browser.',
+input: endOfConversation(),
+answers: [
+  {
+    nextId: 'endConversation',
+  },
+],
+},
 
 
 
