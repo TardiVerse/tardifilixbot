@@ -27,7 +27,7 @@ const mobileNumberPatternNegative = /(?!\b\d{10}\b)\w+/;
 //shuffleNumberArraylot
 function shuffleNumberArraylot(array) {
   const shuffleNumberArraylot = array.slice();
-  for (let i = shuffleNumberArraylot.length - 1; i > 0; i--) {
+  for (let i = shuffleNumberArraylot.length - 1; i > 1; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [shuffleNumberArraylot[i], shuffleNumberArraylot[j]] = [shuffleNumberArraylot[j], shuffleNumberArraylot[i]];
   }
@@ -35,7 +35,7 @@ function shuffleNumberArraylot(array) {
 }
 
 // Create an array containing numbers from 1 to 77
-const numberslot = Array.from({ length: 39 }, (_, i) => i + 1);
+const numberslot = Array.from({ length: 40 }, (_, i) => i + 1);
 
 // Shuffle the array
 const shuffleArraylot = shuffleNumberArraylot(numberslot);
@@ -1219,27 +1219,27 @@ inflncorrectq22: {
 ["fln"+shuffleArraylot[23]]: {
   botPrompt: "In the context of graph algorithms, what is the primary purpose of a 'Spanning Tree'?",
   type: RTypes.TRANSFORMED_TEXT,
-  input: selectField(['To find the shortest path between two nodes.', 'To cover all nodes with the minimum number of edges.', "To detect cycles within the graph.", "To find the maximum flow in a network."]),
+  input: selectField(['To find the shortest path between two nodes.','To cover all nodes with the minimum number of edges.','To detect cycles within the graph.','To find the maximum flow in a network.']),
   answers: [
     {
       answer: 'To find the shortest path between two nodes.',
-      nextid: "inflncorrectq23",
+      nextid: 'inflncorrectq23',
       sumToBags: [{"name": "ai", "points": 1}]
     },
     {
       answer: 'To cover all nodes with the minimum number of edges.',
-      nextid: "flncorrectq23",
+      nextid: 'flncorrectq23',
       sumToBags: [{"name": "ac", "points": 1}]
     },
     {
-      answer: "To detect cycles within the graph.",
-      nextid: "inflncorrectq23",
+      answer: 'To detect cycles within the graph.',
+      nextid: 'inflncorrectq23',
       sumToBags: [{"name": "ai", "points": 1}]
     },
     
     {
-      answer: "To find the maximum flow in a network.",
-      nextid: "inflncorrectq23",
+      answer: 'To find the maximum flow in a network.',
+      nextid: 'inflncorrectq23',
       sumToBags: [{"name": "ai", "points": 1}]
     }
   ]
@@ -1266,15 +1266,15 @@ inflncorrectq23: {
 ["fln"+shuffleArraylot[24]]: {
   botPrompt: "In graph theory, which algorithm is used to find the shortest path in a graph with negative weight edges?",
   type: RTypes.TRANSFORMED_TEXT,
-  input: selectField(["selectField(['Dijkstra\\'s Algorithm" , "Bellman-Ford Algorithm", 'Floyd-Warshall Algorithm', "A* Search Algorithm"]),
+  input: selectField(['Dijkstras Algorithm' , "Bellman-Ford Algorithm", 'Floyd-Warshall Algorithm', 'A* Search Algorithm']),
   answers: [
     {
-      answer: "selectField(['Dijkstra\\'s Algorithm",
+      answer: 'Dijkstras Algorithm',
       nextid: "inflncorrectq24",
       sumToBags: [{"name": "ai", "points": 1}]
     },
     {
-      answer: "Bellman-Ford Algorithm",
+      answer: 'Bellman-Ford Algorithm',
       nextid: "flncorrectq24",
       sumToBags: [{"name": "ac", "points": 1}]
     },
@@ -1285,7 +1285,7 @@ inflncorrectq23: {
     },
     
     {
-      answer: "A* Search Algorithm",
+      answer: 'A* Search Algorithm',
       nextid: "inflncorrectq24",
       sumToBags: [{"name": "ai", "points": 1}]
     }
