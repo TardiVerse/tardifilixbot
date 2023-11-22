@@ -45,7 +45,7 @@ console.log(shuffleArraylot);
 
 
 
-const min = 0;
+const min = 1;
 const max = 29;
 const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
 
@@ -203,10 +203,10 @@ department: {
   ["fln"+shuffleArraylot[1]]: {
     botPrompt: "What is the output of the following C code? int main() { int a[] = {1, 2, 3, 4, 5}; int *p = a; ++*p; p += 2; printf(\"%d\", *p); return 0; }",
     type: RTypes.TRANSFORMED_TEXT,
-    input: selectField(['1', '2', "3", "4"]),
+    input: selectField(['1', '2', '3', '4']),
     answers: [
       {
-        answer: "3",
+        answer: '3',
         nextid: "flncorrectq1",
         sumToBags: [{"name": "ac", "points": 1}]
       },
@@ -221,7 +221,7 @@ department: {
         sumToBags: [{"name": "ai", "points": 1}]
       },
       {
-        answer: "4",
+        answer: '4',
         nextid: "inflncorrectq1",
         sumToBags: [{"name": "ai", "points": 1}]
       }
@@ -248,7 +248,7 @@ department: {
   ["fln"+shuffleArraylot[2]]: {
     botPrompt: "What is the issue with the following C function? char* getString() { char str[] = 'hello world'; return str; }",
     type: RTypes.TRANSFORMED_TEXT,
-    input: selectField(['It returns a string literal.', 'It returns a local variable address.', "Theres no issue with this function.", "The string is not null-terminated."]),
+    input: selectField(['It returns a string literal.','It returns a local variable address.','Theres no issue with this function.','The string is not null-terminated.']),
     answers: [
       {
         answer: 'It returns a local variable address.',
@@ -261,12 +261,12 @@ department: {
         sumToBags: [{"name": "ai", "points": 1}]
       },
       {
-        answer: "Theres no issue with this function.",
+        answer: 'Theres no issue with this function.',
         nextid: "inflncorrectq2",
         sumToBags: [{"name": "ai", "points": 1}]
       },
       {
-        answer: "The string is not null-terminated.",
+        answer: 'The string is not null-terminated.',
         nextid: "inflncorrectq2",
         sumToBags: [{"name": "ai", "points": 1}]
       }
@@ -293,7 +293,7 @@ department: {
   ["fln"+shuffleArraylot[3]]: {
     botPrompt: "In C, if you pass an array as an argument to a function, what actually gets passed?",
     type: RTypes.TRANSFORMED_TEXT,
-    input: selectField(['The first element of the array.', 'The base address of the array.', "The entire array.", "The size of the array."]),
+    input: selectField(['The first element of the array.','The base address of the array.','The entire array.','The size of the array.']),
     answers: [
       {
         answer:'The base address of the array.',
@@ -306,12 +306,12 @@ department: {
         sumToBags: [{"name": "ai", "points": 1}]
       },
       {
-        answer: "The entire array.",
+        answer: 'The entire array.',
         nextid: "inflncorrectq3",
         sumToBags: [{"name": "ai", "points": 1}]
       },
       {
-        answer: "The size of the array.",
+        answer: 'The size of the array.',
         nextid: "inflncorrectq3",
         sumToBags: [{"name": "ai", "points": 1}]
       }
@@ -339,7 +339,7 @@ department: {
 ["fln"+shuffleArraylot[4]]: {
     botPrompt: "What will be the value of 'var' after executing the following code? int var = 10; int *ptr = &var; *ptr = *ptr + 5;",
     type: RTypes.TRANSFORMED_TEXT,
-    input: selectField(['5', '10', "15", "20"]),
+    input: selectField(['5', '10', '15', '20']),
     answers: [
       {
         answer: "15",
@@ -357,7 +357,7 @@ department: {
         sumToBags: [{"name": "ai", "points": 1}]
       },
       {
-        answer: "20",
+        answer: '20',
         nextId: "inflncorrectq4",
         sumToBags: [{"name": "ai", "points": 1}]
       }
@@ -386,7 +386,7 @@ department: {
   ["fln"+shuffleArraylot[5]]: {
     botPrompt: "What does the 'restrict' keyword in C indicate?",
     type: RTypes.TRANSFORMED_TEXT,
-    input: selectField(['The variable can only be accessed in the block its declared in.', 'The pointer is the sole initial means of accessing the object it points to.', "The variable is restricted from being modified.", "The pointer cannot be dereferenced."]),
+    input: selectField(['The variable can only be accessed in the block its declared in.', 'The pointer is the sole initial means of accessing the object it points to.', 'The variable is restricted from being modified.', 'The pointer cannot be dereferenced.']),
     answers: [
       {
         answer: 'The pointer is the sole initial means of accessing the object it points to.',
@@ -399,12 +399,12 @@ department: {
         sumToBags: [{"name": "ai", "points": 1}]
       },
       {
-        answer: "The variable is restricted from being modified.",
+        answer: 'The variable is restricted from being modified.',
         nextId: "inflncorrectq5",
         sumToBags: [{"name": "ai", "points": 1}]
       },
       {
-        answer: "The pointer cannot be dereferenced.",
+        answer: 'The pointer cannot be dereferenced.',
         nextId: "inflncorrectq5",
         sumToBags: [{"name": "ai", "points": 1}]
       }
@@ -432,7 +432,7 @@ department: {
   ["fln"+shuffleArraylot[6]]: {
       botPrompt: "What is the output of the following Python code? def func(x = []): x.append(x); return x; print(func())",
       type: RTypes.TRANSFORMED_TEXT,
-      input: selectField(['[]', '[...]', "[[]]", "[[...]]"]),
+      input: selectField(['[]', '[...]', '[[]]', '[[...]]']),
       answers: [
         {
           answer: '[...]',
@@ -445,12 +445,12 @@ department: {
           sumToBags: [{"name": "ai", "points": 1}]
         },
         {
-          answer: "[[]]",
+          answer: '[[]]',
           nextId: "inflncorrectq6",
           sumToBags: [{"name": "ai", "points": 1}]
         },
         {
-          answer: "[[...]]",
+          answer: '[[...]]',
           nextId: "inflncorrectq6",
           sumToBags: [{"name": "ai", "points": 1}]
         }
@@ -478,7 +478,7 @@ department: {
   ["fln"+shuffleArraylot[7]]: {
       botPrompt: "In Python, what is the difference between 'is' and '=='?",
       type: RTypes.TRANSFORMED_TEXT,
-      input: selectField(['No difference, both are used for equality check.', 'is checks for identity, == checks for equality.', "is checks for type, == checks for value.", "is is used for numeric types, == is used for all types."]),
+      input: selectField(['No difference, both are used for equality check.', 'is checks for identity, == checks for equality.', 'is checks for type, == checks for value.', 'is is used for numeric types, == is used for all types.']),
       answers: [
         {
           answer: 'is checks for identity, == checks for equality.',
@@ -491,12 +491,12 @@ department: {
           sumToBags: [{"name": "ai", "points": 1}]
         },
         {
-          answer: "is checks for type, == checks for value.",
+          answer: 'is checks for type, == checks for value.',
           nextId: "inflncorrectq7",
           sumToBags: [{"name": "ai", "points": 1}]
         },
         {
-          answer: "is is used for numeric types, == is used for all types.",
+          answer: 'is is used for numeric types, == is used for all types.',
           nextId: "inflncorrectq7",
           sumToBags: [{"name": "ai", "points": 1}]
         }
@@ -1737,7 +1737,7 @@ inflncorrectq33: {
 ["fln"+shuffleArraylot[34]]: {
   botPrompt: "In the context of cryptography, what is the primary purpose of the RSA algorithm?",
   type: RTypes.TRANSFORMED_TEXT,
-  input: selectField(['Data Compression', 'Error Detection', "Public Key Encryption", "Password Hashing",]),
+  input: selectField(['Data Compression', 'Error Detection', "Public Key Encryption", "Password Hashing"]),
   answers: [
     {
       answer: 'Data Compression',
@@ -1785,7 +1785,7 @@ inflncorrectq34: {
 ["fln"+shuffleArraylot[35]]: {
   botPrompt: "Which of the following sorting algorithms is typically the fastest for sorting very large lists of data?",
   type: RTypes.TRANSFORMED_TEXT,
-  input: selectField(['Bubble Sort', 'Quick Sort', "Insertion Sort", "Selection Sort",]),
+  input: selectField(['Bubble Sort', 'Quick Sort', "Insertion Sort", "Selection Sort"]),
   answers: [
     {
       answer: 'Bubble Sort',
@@ -1833,7 +1833,7 @@ inflncorrectq35: {
 ["fln"+shuffleArraylot[36]]: {
   botPrompt: "What is the primary characteristic of a 'Greedy' algorithm?",
   type: RTypes.TRANSFORMED_TEXT,
-  input: selectField(['It always considers the entire problem space before making a decision.', 'It makes the most cost-effective choice at each step without considering future consequences.', "It backtracks to previous steps if a better solution is found.", "It divides the problem into subproblems and solves each one independently.",]),
+  input: selectField(['It always considers the entire problem space before making a decision.', 'It makes the most cost-effective choice at each step without considering future consequences.', "It backtracks to previous steps if a better solution is found.", "It divides the problem into subproblems and solves each one independently."]),
   answers: [
     {
       answer: 'It always considers the entire problem space before making a decision.',
@@ -2020,52 +2020,7 @@ inflncorrectq39: {
 },
 
 
-//40
 
-["fln"+shuffleArraylot[40]]: {
-  botPrompt: "Which algorithm is not a divide and conquer algorithm?",
-  type: RTypes.TRANSFORMED_TEXT,
-  input: selectField(['Merge Sort', 'Quick Sort', "Binary Search", "Linear Search",]),
-  answers: [
-    {
-      answer: 'Merge Sort',
-      nextid: "inflncorrectq40",
-      sumToBags: [{"name": "ai", "points": 1}]
-    },
-    {
-      answer: 'Quick Sort',
-      nextid: "inflncorrectq40",
-      sumToBags: [{"name": "ai", "points": 1}]
-    },
-    {
-      answer: "Binary Search",
-      nextid: "inflncorrectq40",
-      sumToBags: [{"name": "ai", "points": 1}]
-    },
-    
-    {
-      answer: "Linear Search",
-      nextid: "flncorrectq40",
-      sumToBags: [{"name": "ac", "points": 1}]
-    }
-  ]
-},
-flncorrectq40: {
-  botPrompt: "Hurray! <strong>Linear Search</strong> is the correct answer! 😎",
-  answers: [
-    {
-      nextid: "fln"+shuffleArraylot[41],
-    }
-  ]
-},
-inflncorrectq40: {
-  botPrompt: "You have selected the wrong Answer... 🤔 the <strong>right</strong> answer is <strong>Linear Search</strong>",
-  answers: [
-    {
-      nextid: "fln"+shuffleArraylot[41],
-    }
-  ]
-},
 
 
 //shuffletwoend
