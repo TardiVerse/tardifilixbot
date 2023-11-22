@@ -35,7 +35,7 @@ function shuffleNumberArraylot(array) {
 }
 
 // Create an array containing numbers from 1 to 77
-const numberslot = Array.from({ length: 10 }, (_, i) => i + 1);
+const numberslot = Array.from({ length: 39 }, (_, i) => i + 1);
 
 // Shuffle the array
 const shuffleArraylot = shuffleNumberArraylot(numberslot);
@@ -179,7 +179,8 @@ const questions = {
 
 department: {
    botPrompt: 'Please enter<strong> you department',
-   input: selectField(['B.Tech(IT)','Be.Cse', "Be.AI"]),
+   type: RTypes.TRANSFORMED_TEXT,
+   input: selectField(['B.Tech(IT)','Be.Cse',"Be.AI"]),
    answers: [
     {
       answer: 'B.Tech(IT)',
@@ -294,22 +295,22 @@ department: {
     input: selectField(['The first element of the array.', 'The base address of the array.', 'The entire array.', 'The size of the array.']),
     answers: [
       {
-        answer: "The base address of the array.",
+        answer:'The base address of the array.',
         nextid: "flncorrectq3",
         sumToBags: [{"name": "ac", "points": 1}]
       },
       {
-        answer: "The first element of the array.",
+        answer: 'The first element of the array.',
         nextid: "inflncorrectq3",
         sumToBags: [{"name": "ai", "points": 1}]
       },
       {
-        answer: "The entire array.",
+        answer: 'The entire array.',
         nextid: "inflncorrectq3",
         sumToBags: [{"name": "ai", "points": 1}]
       },
       {
-        answer: "The size of the array.",
+        answer: 'The size of the array.',
         nextid: "inflncorrectq3",
         sumToBags: [{"name": "ai", "points": 1}]
       }
