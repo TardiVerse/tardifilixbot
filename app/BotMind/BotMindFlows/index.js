@@ -243,6 +243,7 @@ department: {
       }
     ]
   },
+  //2
 
   ["fln"+shuffleArraylot[2]]: {
     botPrompt: "What is the issue with the following C function? char* getString() { char str[] = 'hello world'; return str; }",
@@ -288,7 +289,7 @@ department: {
     ]
   },
 
-
+//3
   ["fln"+shuffleArraylot[3]]: {
     botPrompt: "In C, if you pass an array as an argument to a function, what actually gets passed?",
     type: RTypes.TRANSFORMED_TEXT,
@@ -1408,17 +1409,17 @@ inflncorrectq26: {
   input: selectField(['K-Means Clustering', 'Canny Edge Detector', "A* Search Algorithm", "Kruskals Algorithm"]),
   answers: [
     {
-      answer: "K-Means Clustering",
+      answer: 'K-Means Clustering',
       nextid: "inflncorrectq27",
       sumToBags: [{"name": "ai", "points": 1}]
     },
     {
-      answer: "Canny Edge Detector",
+      answer: 'Canny Edge Detector',
       nextid: "flncorrectq27",
       sumToBags: [{"name": "ac", "points": 1}]
     },
     {
-      answer: 'A* Search Algorithm',
+      answer: "A* Search Algorithm",
       nextid: "inflncorrectq27",
       sumToBags: [{"name": "ai", "points": 1}]
     },
