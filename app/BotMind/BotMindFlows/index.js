@@ -8347,13 +8347,66 @@ answers: [
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"20"</strong>',
   answers: [
     {
-      nextId: 'wishToContinue10'
+      nextId: 'day10link1'
     }
   ],
   },
 
 
 //endnumbersletter
+
+
+day10link1: {
+  botPrompt: 'sar_32',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day10link2', 
+    },
+  ],
+},
+
+day10link2: {
+  botPrompt: 'sar_33',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day10link3', 
+    },
+  ],
+},
+
+day10link3: {
+  botPrompt: 'sar_34',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day10link4', 
+    },
+  ],
+},
+
+day10link4: {
+  botPrompt: 'sar_35',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day10link5', 
+    },
+  ],
+},
+
+
+day10link5: {
+  botPrompt: 'sar_36',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'wishToContinue10', 
+    },
+  ],
+},
+
 
 
 
@@ -10233,7 +10286,17 @@ incorrectq34: {
 
   answers: [
     {
-      nextId: 'wishtocontinue11',
+      nextId: 'day11link1',
+    },
+  ],
+},
+
+day11link1: {
+  botPrompt: 'sar_340',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'wishtocontinue11', 
     },
   ],
 },
