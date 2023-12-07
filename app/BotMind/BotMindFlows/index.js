@@ -3361,31 +3361,31 @@ day9link: {
 day9comment: {
   botPrompt: 'Here are some activities to make learning vowels interesting.',
   answers: [
-          { nextId: 'day91link' },
+          { nextId: 'day91link1' },
   ],
 },
 
-day91link: {
+day91link1: {
   botPrompt: 'https://youtu.be/XRwjnD1DB1U',
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'day92link',
+      nextId: 'day92link2',
     },
   ],
 },
 
-day92link: {
+day92link2: {
   botPrompt: 'sar_31',
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'day93link', 
+      nextId: 'day93link3', 
     },
   ],
 },
 
-day93link: {
+day93link3: {
   botPrompt: 'sar_32',
   type: RTypes.LINK,
   answers: [
