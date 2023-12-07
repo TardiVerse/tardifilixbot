@@ -3770,7 +3770,7 @@ input: selectField(['16', '17', "18","19"]),
   answers: [
     {
       answer: '16',
-      nextId: 'innumberscorrectq14',
+      nextId: 'numberscorrectq14',
   sumToBags: [{ name: 'i', points: 1 }],
 
     },
@@ -3782,7 +3782,7 @@ input: selectField(['16', '17', "18","19"]),
     },
     {
       answer: "18",
-      nextId: 'numberscorrectq14',
+      nextId: 'innumberscorrectq14',
   sumToBags: [{ name: 'c', points: 1 }],
 
     },
