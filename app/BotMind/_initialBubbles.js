@@ -23,7 +23,6 @@ export const getInitialBubble = () => {
 export const getRestartBubble = () => {
   const sessionDay = localStorage.getItem('dayc'); // Replace 'yourSessionKey' with the actual key you're using
 
-
   if (sessionDay === null) {
     // Session data is not created yet, return the default bubble
     return {

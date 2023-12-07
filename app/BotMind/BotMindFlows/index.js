@@ -310,6 +310,7 @@ chooseapple: {
     ],
     'Select any one:'
   ),
+    
   answers: [
     {
       answer: 'Apple',
@@ -383,16 +384,59 @@ day1link: {
   type: RTypes.LINK,
   answers: [
     {
+      nextId: 'day1link1',
+    },
+  ],
+},
+
+day1link1: {
+  botPrompt: 'https://youtu.be/WzyELzv_CRQ',
+  type: RTypes.LINK,
+  answers: [
+    {
       nextId: 'day1comment',
     },
   ],
 },
+
+
 day1comment: {
   botPrompt: 'Along with exercising children learn essential English vocabulary and action words which they will soon use in sentences.   ',
   answers: [
           { nextId: 'wishtocontinue' },
   ],
 },
+day1comment: {
+  botPrompt: 'Let us watch another Gross Motor Skill Activity.  ',
+  answers: [
+          { nextId: 'wishtocontinue' },
+  ],
+},
+
+day1comment: {
+  botPrompt: 'Head, Shoulder, Knees and Toes: ',
+  answers: [
+          { nextId: 'wishtocontinue' },
+  ],
+},
+
+day1link1: {
+  botPrompt: 'sar_1',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day1comment',
+    },
+  ],
+},
+
+day1comment: {
+  botPrompt: 'Along with exercising children learn essential English vocabulary and action words which they will soon use in sentences.   ',
+  answers: [
+          { nextId: 'wishtocontinue' },
+  ],
+},
+
 
 
 wishtocontinue: {
@@ -8017,7 +8061,7 @@ wishToContinue10: {
   vowels_prompt5: {
     botPrompt: 'Let`s Solve 🧠 ',
     answers: [
-            { nextId: 'vvowels_prompt6' },
+            { nextId: 'vowels_prompt6' },
     ],
   },
   vowels_prompt6: {

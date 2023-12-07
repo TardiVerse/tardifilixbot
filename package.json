@@ -2,8 +2,6 @@
   "name": "tardifilixbot",
   "version": "1.0.0",
   "description": "A Full Education based ChatBot for School",
-
-
   "author": "Vignesh Selvaraj",
   "license": "MIT",
   "scripts": {

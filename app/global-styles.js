@@ -9,11 +9,11 @@ ${boilerplateCSS}
 
 body {
   font-family: sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   position: relative;
   background: ${variables.background};
   background-size: cover;
-  height: 100vh;
+  height: 120vh;
 }
 
 .qt-frame {
@@ -131,7 +131,7 @@ body {
   display: inline-block;
   padding: 1rem;
   position: absolute;
-  right: -20px;
+  right: -22px;
   top: 0;
   transform: translate(50%, 50%);
 }
