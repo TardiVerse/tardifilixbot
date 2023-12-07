@@ -591,76 +591,76 @@ day2link: {
 day2comment: {
   botPrompt: 'Another activity to develop this skill is Rice colouring ',
   answers: [
-          { nextId: 'day21link' },
+          { nextId: 'day21link1' },
   ],
 },
 
-day21link: {
+day21link1: {
   botPrompt: 'sar_8',
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'day22comment',
+      nextId: 'day22comment2',
     },
   ],
 },
-day22comment: {
+day22comment2: {
   botPrompt: 'Here we can see our children having fun while doing this activities',
   answers: [
-          { nextId: 'day21link' },
+          { nextId: 'day21link2' },
   ],
 },
-day21link: {
+day21link2: {
   botPrompt: 'https://youtu.be/XHzyKBWx9VI',
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'day22link',
+      nextId: 'day22link3',
     },
   ],
 },
 
-day22link: {
+day22link3: {
   botPrompt: 'sar_9',
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'day23link',
+      nextId: 'day23link4',
     },
   ],
 },
 
-day23link: {
+day23link4: {
   botPrompt: 'sar_10',
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'day24link',
+      nextId: 'day24link5',
     },
   ],
 },
 
-day24link: {
+day24link5: {
   botPrompt: 'sar_11',
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'day25link',
+      nextId: 'day25link6',
     },
   ],
 },
 
-day25link: {
+day25link6: {
   botPrompt: 'sar_12',
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'day26link',
+      nextId: 'day26link7',
     },
   ],
 },
 
-day26link: {
+day26link7: {
   botPrompt: 'sar_13',
   type: RTypes.LINK,
   answers: [
