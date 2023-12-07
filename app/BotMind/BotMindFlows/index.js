@@ -677,12 +677,12 @@ wishtocontinue2: {
       {
         answer: 'Yes!',
         nextId: 'day3',
-        sumToBags: [{ name: 'd', points: 2 }],
+        sumToBags: [{ name: 'd', points: 1 }],
       },
       {
         answer: 'No!',
         nextId: 'endConv',
-        sumToBags: [{ name: 'd', points: 2 }],
+        sumToBags: [{ name: 'd', points: 1 }],
       },
   ],
 
