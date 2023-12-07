@@ -1,22 +1,22 @@
 const recommendationBags = [
 	{
 		name: "c",
-		defaultValue: 1,
+		defaultValue: 0,
 		goToBubbleId: "c",
 	},
 	{
 		name: "i",
-		defaultValue: 1,
+		defaultValue: 0,
 		goToBubbleId: "i",
 	},
 	{
 		name: "d",
-		defaultValue: 1,
+		defaultValue: 0,
 		goToBubbleId: "d",
 	},
 	{
 		name: "t",
-		defaultValue: 1,
+		defaultValue: 0,
 		goToBubbleId: "t",
 	},
 ]

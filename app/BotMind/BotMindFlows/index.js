@@ -576,7 +576,7 @@ day2: {
   answers: [
           { nextId: 'day2link' },
   ],
-  sumToBags: [{ name: 'd', points: 2 }],
+
 
 },
 day2link: {
@@ -683,6 +683,7 @@ wishtocontinue2: {
         nextId: 'endConv',
       },
   ],
+  sumToBags: [{ name: 'd', points: 2 }],
 },
 
 
@@ -692,7 +693,7 @@ day3: {
   answers: [
           { nextId: 'day3link' },
   ],
-  sumToBags: [{ name: 'd', points: 3 }],
+
 
 },
 day3link: {
@@ -773,6 +774,7 @@ wishtocontinue3: {
         answer: 'No!',
         nextId: 'endConv',
       },
+      sumToBags: [{ name: 'd', points: 3 }],
   ],
 },
 
