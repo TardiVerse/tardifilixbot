@@ -1127,7 +1127,7 @@ answers: [
   },
 ],
 },
-incapscorrectq2: {
+incapscorrectq4: {
 botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"P"</strong>',
 answers: [
   {
