@@ -425,6 +425,16 @@ day1link1: {
   type: RTypes.LINK,
   answers: [
     {
+      nextId: 'day1link2',
+    },
+  ],
+},
+
+day1link2: {
+  botPrompt: 'sar_2',
+  type: RTypes.LINK,
+  answers: [
+    {
       nextId: 'day1comment',
     },
   ],
@@ -1111,7 +1121,7 @@ answers: [
   },
 ],
 },
-incapscorrectq2: {
+incapscorrectq4: {
 botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"P"</strong>',
 answers: [
   {
