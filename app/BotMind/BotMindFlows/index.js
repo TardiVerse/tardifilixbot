@@ -468,7 +468,7 @@ day1comment: {
 },
 
 day1link1: {
-  botPrompt: 'sar_1',
+  botPrompt: 'https://drive.google.com/file/d/1EDpUX50L1HF-VTMPQ-LdtuEuH_-pT6Gh/view?usp=drive_link',
   type: RTypes.LINK,
   answers: [
     {
@@ -478,7 +478,7 @@ day1link1: {
 },
 
 day1link2: {
-  botPrompt: 'sar_2',
+  botPrompt: 'https://drive.google.com/file/d/18cceT7-MEQ9qH_MITwwjnfkW4Etk4-gX/view?usp=drive_link',
   type: RTypes.LINK,
   answers: [
     {
@@ -488,7 +488,7 @@ day1link2: {
 },
 
 day1link3: {
-  botPrompt: 'sar_3',
+  botPrompt: 'https://drive.google.com/file/d/1oCRebzVv-0Ffz_OFMVbBEPsVT-rzOYND/view?usp=drive_link',
   type: RTypes.LINK,
   answers: [
     {
@@ -707,51 +707,51 @@ day3link: {
 day3comment: {
   botPrompt: 'Lines can also be demonstrated through Gross motor skill activity',
   answers: [
-          { nextId: 'day31link' },
+          { nextId: 'day31link1' },
   ],
 },
 
-day31link: {
+day31link1: {
   botPrompt: 'https://youtu.be/2vEeUFFIYQE',
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'day32link',
+      nextId: 'day32link2',
     },
   ],
 },
 
-day32link: {
+day32link2: {
   botPrompt: 'sar_14',
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'day33link',
+      nextId: 'day33link3',
     },
   ],
 },
 
-day33link: {
+day33link3: {
   botPrompt: 'sar_15',
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'day34link',
+      nextId: 'day34link4',
     },
   ],
 },
 
-day34link: {
+day34link4: {
   botPrompt: 'sar_16',
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'day35link',
+      nextId: 'day35link5',
     },
   ],
 },
 
-day35link: {
+day35link5: {
   botPrompt: 'sar_17',
   type: RTypes.LINK,
   answers: [
@@ -799,27 +799,27 @@ day4link: {
 day4comment: {
   botPrompt: 'Let`s look at another video where directions can be learnt while playing.',
   answers: [
-          { nextId: 'day41link' },
+          { nextId: 'day41link1' },
   ],
 },
 
-day41link: {
+day41link1: {
   botPrompt: 'https://youtu.be/xE3IFDP85nk',
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'day41comment',
+      nextId: 'day41comment2',
     },
   ],
 },
-day41comment: {
+day41comment2: {
   botPrompt: 'Now it’s time for some dance',
   answers: [
-          { nextId: 'day42link' },
+          { nextId: 'day42link3' },
   ],
 },
 
-day42link: {
+day42link3: {
   botPrompt: 'https://youtu.be/z8ZCnErO34o',
   type: RTypes.LINK,
   answers: [
@@ -13214,7 +13214,7 @@ day15link: {
 
 
 ['oneandmany'+shuffledNumbersthree[0]]: {
-  botPrompt: 'I have ___ brother and two sisters.',
+  botPrompt: 'I have ___ broenand two sisters.',
   type: RTypes.TRANSFORMED_TEXT,
 
   input: selectField(['one', 'many', "onee","any"]),
@@ -28779,7 +28779,7 @@ day253link: {
   botPrompt: 'we go swimming in the pool',
   type: RTypes.TRANSFORMED_TEXT,
   
-  input: selectField(['We go swimming in the pool...', 'we go swimming in the pool', "We Go swimming in the pool","We go swimming in the pool."]),
+  input: selectField(['We go swimming in the pool...', 'we go swimming in the pool', 'We Go swimming in the pool',"We go swimming in the pool."]),
     answers: [
       {
         answer: 'We go swimming in the pool...',
