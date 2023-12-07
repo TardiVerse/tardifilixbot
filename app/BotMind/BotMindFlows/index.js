@@ -435,7 +435,7 @@ day1: {
   answers: [
           { nextId: 'day1link' },
   ],
-  sumToBags: [{ name: 'd', points: 1 }],
+ 
 
 },
 day1link: {
@@ -555,12 +555,12 @@ wishtocontinue: {
       {
         answer: 'Yes!',
         nextId: 'day2',
-
-
+        sumToBags: [{ name: 'd', points: 1 }],
       },
       {
         answer: 'No!',
         nextId: 'endConv',
+        sumToBags: [{ name: 'd', points: 1 }],
       },
 
   ],
@@ -677,13 +677,15 @@ wishtocontinue2: {
       {
         answer: 'Yes!',
         nextId: 'day3',
+        sumToBags: [{ name: 'd', points: 2 }],
       },
       {
         answer: 'No!',
         nextId: 'endConv',
+        sumToBags: [{ name: 'd', points: 2 }],
       },
   ],
-  sumToBags: [{ name: 'd', points: 2 }],
+
 },
 
 
@@ -769,12 +771,14 @@ wishtocontinue3: {
       {
         answer: 'Yes!',
         nextId: 'day4',
+        sumToBags: [{ name: 'd', points: 1 }],
       },
       {
         answer: 'No!',
         nextId: 'endConv',
+        sumToBags: [{ name: 'd', points: 1 }],
       },
-      sumToBags: [{ name: 'd', points: 3 }],
+   
   ],
 },
 
