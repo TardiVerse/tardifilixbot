@@ -10286,13 +10286,13 @@ incorrectq34: {
 
   answers: [
     {
-      nextId: 'day11link1',
+      nextId: 'owels_prompt7',
     },
   ],
 },
 
-day11link1: {
-  botPrompt: 'sar_340',
+vowels_prompt7: {
+  botPrompt: 'sar_35',
   type: RTypes.LINK,
   answers: [
     {
@@ -10332,27 +10332,27 @@ day12link: {
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'day121link',
+      nextId: 'day12link1',
     },
   ],
 },
 
-day121link: {
+day12link1: {
   botPrompt: 'https://youtu.be/ipypG2rNQcU',
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'day122comment',
+      nextId: 'day12comment2',
     },
   ],
 },
-day122comment: {
+day12comment2: {
   botPrompt: 'Here`s the page from the book',
   answers: [
-          { nextId: 'day123link' },
+          { nextId: 'day12link3' },
   ],
 },
-day123link: {
+day12link3: {
   botPrompt: 'https://drive.google.com/file/d/1XDt31gFusGyBB7m5ZDskmWXzZof76o23/view?usp=sharing',
   type: RTypes.LINK,
   answers: [
@@ -24166,16 +24166,29 @@ day23: {
 day23newcomment: {
   botPrompt: 'Good manners begin with the magic words "please", "thank you", "welcome",”Excuse me and "I`m sorry".',
   answers: [
-          { nextId: 'day231newcomment' },
+          { nextId: 'day23newcomment1' },
   ],
 },
-day231newcomment: {
+day23newcomment1: {
   botPrompt: 'Let`s build a simple Teaching Learning Material to remind students of the Five Magic words.',
   answers: [
-          { nextId: 'day232newcomment' },
+          { nextId: 'day23link5' },
   ],
 },
-day232newcomment: {
+
+
+day23link5: {
+  botPrompt: 'sar_36',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'wishToContinue10', 
+    },
+  ],
+},
+
+
+day23newcomment2: {
   botPrompt: 'https://youtu.be/VY1nYwdtFJU',
   type: RTypes.LINK,
   answers: [
