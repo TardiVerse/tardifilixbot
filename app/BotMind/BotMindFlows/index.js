@@ -2953,7 +2953,7 @@ answers: [
 
   },
   {
-    answer: "A",
+    answer: "a",
     nextId: 'insmallcorrectq20',
   sumToBags: [{ name: 'i', points: 1 }],
 
