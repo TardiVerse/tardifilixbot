@@ -824,12 +824,12 @@ day42link3: {
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'day43link',
+      nextId: 'day43link4',
     },
   ],
 },
 
-day43link: {
+day43link4: {
   botPrompt: 'sar_18',
   type: RTypes.LINK,
   answers: [
@@ -868,10 +868,10 @@ day5: {
 day5comment: {
   botPrompt: '<strong>O BE CAREFUL LITTLE EYES </strong>',
   answers: [
-          { nextId: 'day5link' },
+          { nextId: 'day5link1' },
   ],
 },
-day5link: {
+day5link1: {
   botPrompt: 'https://youtu.be/-EpJ7igt-0E',
   type: RTypes.LINK,
   answers: [
@@ -918,38 +918,38 @@ day6link: {
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'day61comment',
+      nextId: 'day61comment1',
     },
   ],
 },
-day61comment: {
+day61comment1: {
   botPrompt: '1 . 2.. 3... ',
   answers: [
-          { nextId: 'day61link' },
+          { nextId: 'day61link2' },
   ],
 },
 
-day61link: {
+day61link2: {
   botPrompt: 'https://youtu.be/Iq4PVbWRN2k',
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'day62text',
+      nextId: 'day62text3',
     },
   ],
 },
 
-day62text: {
+day62text3: {
   botPrompt: ' Conversationional English (Kindiedays)\n  Whats the weather(4o) + Four Seasons (1R) \n Show and tell ',
   type: RTypes.TEXT,
   answers: [
     {
-      nextId: 'day63text',
+      nextId: 'day63text4',
     },
   ],
 },
 
-day63text: {
+day63text4: {
   botPrompt: 'Show and Tell is a weekly activity where children have the opportunity to share something special from their life, inside or outside of school, speaking about it for about a minute and inviting questions from theirfriends. Bring something related to the theme All About Me, such as aphotograph or a favourite toy.',
   type: RTypes.TEXT,
   answers: [
@@ -990,124 +990,124 @@ day7: {
 day7comment: {
   botPrompt: '<strong> START </strong>',
   answers: [
-          { nextId: 'day71comment' },
+          { nextId: 'day71comment1' },
   ],
 },
-day71comment: {
+day71comment1: {
   botPrompt: 'A question-answer session adds energy to the class. Here we go…',
   answers: [
-          { nextId: 'day7link' },
+          { nextId: 'day7link2' },
   ],
 },
 
-day7link: {
+day7link2: {
   botPrompt: 'https://youtu.be/HM5AgkSwUxc',
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'day72comment',
+      nextId: 'day72comment3',
     },
   ],
 },
-day72comment: {
+day72comment3: {
   botPrompt: 'Now let us learn the Alphabet song.',
   answers: [
-          { nextId: 'day72link' },
+          { nextId: 'day72link4' },
   ],
 },
 
-day72link: {
+day72link4: {
   botPrompt: 'https://youtu.be/OXtOEGx5MB0',
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'day73link',
+      nextId: 'day73link5',
     },
   ],
 },
 
-day73link: {
+day73link5: {
   botPrompt: 'sar_19',
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'day74link', 
+      nextId: 'day74link6', 
     },
   ],
 },
 
 
-day74link: {
+day74link6: {
   botPrompt: 'sar_20',
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'day75link', 
+      nextId: 'day75link7', 
     },
   ],
 },
 
-day75link: {
+day75link7: {
   botPrompt: 'sar_21',
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'day76link', 
+      nextId: 'day76link8', 
     },
   ],
 },
 
-day76link: {
+day76link8: {
   botPrompt: 'sar_22',
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'day77link', 
+      nextId: 'day77link9', 
     },
   ],
 },
 
-day77link: {
+day77link9: {
   botPrompt: 'sar_23',
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'day78link', 
+      nextId: 'day78link10', 
     },
   ],
 },
 
-day78link: {
+day78link10: {
   botPrompt: 'sar_24',
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'day79link', 
+      nextId: 'day79link11', 
     },
   ],
 },
 
-day79link: {
+day79link11: {
   botPrompt: 'sar_25',
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'day80link', 
+      nextId: 'day80link12', 
     },
   ],
 },
 
-day80link: {
+day80link12: {
   botPrompt: 'sar_26',
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'day81link', 
+      nextId: 'day81link13', 
     },
   ],
 },
 
-day81link: {
+day81link13: {
   botPrompt: 'sar_27',
   type: RTypes.LINK,
   answers: [
@@ -1154,70 +1154,70 @@ day8link: {
 day8comment: {
   botPrompt: 'Look at our book <br> <strong> Tracing Capital letters </strong>',
   answers: [
-          { nextId: 'day81link' },
+          { nextId: 'day81link1' },
   ],
 },
 
-day81link: {
+day81link1: {
   botPrompt: 'https://drive.google.com/file/d/1bmULkMLEs2F6pM_SlFCDQid9aGXHJy70/view?usp=sharing',
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'day81comment',
+      nextId: 'day81comment2',
     },
   ],
 },
-day81comment: {
+day81comment2: {
   botPrompt: '<strong> Tracing Small letters </strong>',
   answers: [
-          { nextId: 'day82link' },
+          { nextId: 'day82link3' },
   ],
 },
 
-day82link: {
+day82link3: {
   botPrompt: 'https://drive.google.com/file/d/1Oq-vDgxTJauH2R80KRL05bv5_IM8uqk-/view?usp=sharing',
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'day82comment',
+      nextId: 'day82comment4',
     },
   ],
 },
 
-day82comment: {
+day82comment4: {
   botPrompt: 'Here is another video of tracing numbers.',
   answers: [
-          { nextId: 'day83link' },
+          { nextId: 'day83link5' },
   ],
 },
 
-day83link: {
+day83link5: {
   botPrompt: 'https://youtu.be/y737D8xSgHg',
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'day83comment',
+      nextId: 'day83comment6',
     },
   ],
 },
-day83comment: {
+day83comment6: {
   botPrompt: 'Let us have a look into the pages of our book-',
   answers: [
-          { nextId: 'day84link' },
+          { nextId: 'day84link7' },
   ],
 },
 
-day84link: {
+day84link7: {
   botPrompt: 'https://drive.google.com/file/d/173lvzQ9Xpqcck9o6nDv6iD7l-98bvc24/view?usp=drive_link',
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'day84comment',
+      nextId: 'day84comment8',
     },
   ],
 },
 
-day84comment: {
+day84comment8: {
   botPrompt: 'Let`s solve <br> <strong> TRACING CAPITAL LETTERS  QUESTIONS </strong>',
   answers: [
           { nextId: 'capletters'+shuffledNumbersto[0] },
@@ -3274,7 +3274,7 @@ smallcorrectq20: {
 botPrompt: 'You Have Selected correct Anwser 🎉! <strong>l</strong> 😎',
 answers: [
   {
-    nextId: 'wishtocontinue8',
+    nextId: 'day84comment9',
   },
 ],
 },
@@ -3282,7 +3282,7 @@ insmallcorrectq20: {
 botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"l"</strong>',
 answers: [
   {
-    nextId: 'wishtocontinue8',
+    nextId: 'day84comment9',
   },
 ],
 },
@@ -3291,27 +3291,27 @@ answers: [
 
 //endsmallletter
 
-day85link: {
+day84comment9: {
   botPrompt: 'sar_28',
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'day86link', 
+      nextId: 'day86link10', 
     },
   ],
 },
 
-day86link: {
+day86link10: {
   botPrompt: 'sar_29',
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'day87link', 
+      nextId: 'day87link11', 
     },
   ],
 },
 
-day87link: {
+day87link11: {
   botPrompt: 'sar_30',
   type: RTypes.LINK,
   answers: [
