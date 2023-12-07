@@ -453,6 +453,99 @@ day1comment: {
           { nextId: 'wishtocontinue' },
   ],
 },
+day1comment: {
+  botPrompt: 'Let us watch another Gross Motor Skill Activity.  ',
+  answers: [
+          { nextId: 'wishtocontinue' },
+  ],
+},
+
+day1comment: {
+  botPrompt: 'Head, Shoulder, Knees and Toes: ',
+  answers: [
+          { nextId: 'wishtocontinue' },
+  ],
+},
+
+day1link1: {
+  botPrompt: 'sar_1',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day1link2',
+    },
+  ],
+},
+
+day1link2: {
+  botPrompt: 'sar_2',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day1link3',
+    },
+  ],
+},
+
+day1link3: {
+  botPrompt: 'sar_3',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day1link4',
+    },
+  ],
+},
+
+day1link4: {
+  botPrompt: 'sar_4',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day1link5',
+    },
+  ],
+},
+
+
+day1link5: {
+  botPrompt: 'sar_5',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day1link6',
+    },
+  ],
+},
+
+day1link6: {
+  botPrompt: 'sar_6',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day1link7',
+    },
+  ],
+},
+
+day1link7: {
+  botPrompt: 'sar_7',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day1comment',
+    },
+  ],
+},
+
+
+day1comment: {
+  botPrompt: 'Along with exercising children learn essential English vocabulary and action words which they will soon use in sentences.   ',
+  answers: [
+          { nextId: 'wishtocontinue' },
+  ],
+},
+
 
 
 wishtocontinue: {
@@ -503,7 +596,7 @@ day2comment: {
 },
 
 day21link: {
-  botPrompt: 'https://youtu.be/XHzyKBWx9VI',
+  botPrompt: 'sar_8',
   type: RTypes.LINK,
   answers: [
     {
@@ -522,7 +615,57 @@ day21link: {
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'wishtocontinue2',
+      nextId: 'day22link',
+    },
+  ],
+},
+
+day22link: {
+  botPrompt: 'sar_9',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day23link',
+    },
+  ],
+},
+
+day23link: {
+  botPrompt: 'sar_10',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day24link',
+    },
+  ],
+},
+
+day24link: {
+  botPrompt: 'sar_11',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day25link',
+    },
+  ],
+},
+
+day25link: {
+  botPrompt: 'sar_12',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day26link',
+    },
+  ],
+},
+
+day26link: {
+  botPrompt: 'sar_13',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'wishtocontinue2', 
     },
   ],
 },
@@ -573,7 +716,47 @@ day31link: {
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'wishtocontinue3',
+      nextId: 'day32link',
+    },
+  ],
+},
+
+day32link: {
+  botPrompt: 'sar_14',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day33link',
+    },
+  ],
+},
+
+day33link: {
+  botPrompt: 'sar_15',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day34link',
+    },
+  ],
+},
+
+day34link: {
+  botPrompt: 'sar_16',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day35link',
+    },
+  ],
+},
+
+day35link: {
+  botPrompt: 'sar_17',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'wishtocontinue3', 
     },
   ],
 },
@@ -641,7 +824,17 @@ day42link: {
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'wishtocontinue4',
+      nextId: 'day43link',
+    },
+  ],
+},
+
+day43link: {
+  botPrompt: 'sar_18',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'wishtocontinue4', 
     },
   ],
 },
@@ -741,10 +934,31 @@ day61link: {
   type: RTypes.LINK,
   answers: [
     {
+      nextId: 'day62text',
+    },
+  ],
+},
+
+day62text: {
+  botPrompt: ' Conversationional English (Kindiedays)\n  Whats the weather(4o) + Four Seasons (1R) \n Show and tell ',
+  type: RTypes.TEXT,
+  answers: [
+    {
+      nextId: 'day63text',
+    },
+  ],
+},
+
+day63text: {
+  botPrompt: 'Show and Tell is a weekly activity where children have the opportunity to share something special from their life, inside or outside of school, speaking about it for about a minute and inviting questions from theirfriends. Bring something related to the theme All About Me, such as aphotograph or a favourite toy.',
+  type: RTypes.TEXT,
+  answers: [
+    {
       nextId: 'wishtocontinue6',
     },
   ],
 },
+
 
 
 wishtocontinue6: {
@@ -807,11 +1021,101 @@ day72link: {
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'wishtocontinue7',
+      nextId: 'day73link',
     },
   ],
 },
 
+day73link: {
+  botPrompt: 'sar_19',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day74link', 
+    },
+  ],
+},
+
+
+day74link: {
+  botPrompt: 'sar_20',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day75link', 
+    },
+  ],
+},
+
+day75link: {
+  botPrompt: 'sar_21',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day76link', 
+    },
+  ],
+},
+
+day76link: {
+  botPrompt: 'sar_22',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day77link', 
+    },
+  ],
+},
+
+day77link: {
+  botPrompt: 'sar_23',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day78link', 
+    },
+  ],
+},
+
+day78link: {
+  botPrompt: 'sar_24',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day79link', 
+    },
+  ],
+},
+
+day79link: {
+  botPrompt: 'sar_25',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day80link', 
+    },
+  ],
+},
+
+day80link: {
+  botPrompt: 'sar_26',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day81link', 
+    },
+  ],
+},
+
+day81link: {
+  botPrompt: 'sar_27',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'wishtocontinue7', 
+    },
+  ],
+},
 wishtocontinue7: {
   botPrompt: 'Your todays module is completed Do you wish to continue for next DAY Task ? ',
   input: selectField(['Yes!', 'No!']),
@@ -2987,12 +3291,35 @@ answers: [
 
 //endsmallletter
 
+day85link: {
+  botPrompt: 'sar_28',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day86link', 
+    },
+  ],
+},
 
+day86link: {
+  botPrompt: 'sar_29',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day87link', 
+    },
+  ],
+},
 
-
-
-
-
+day87link: {
+  botPrompt: 'sar_30',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'wishtocontinue8', 
+    },
+  ],
+},
 
 
 wishtocontinue8: {
@@ -3043,7 +3370,27 @@ day91link: {
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'wishtocontinue9',
+      nextId: 'day92link',
+    },
+  ],
+},
+
+day92link: {
+  botPrompt: 'sar_31',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day93link', 
+    },
+  ],
+},
+
+day93link: {
+  botPrompt: 'sar_32',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'wishtocontinue9', 
     },
   ],
 },
