@@ -1985,7 +1985,7 @@ day85comment: {
     },
     {
       answer: "c",
-      nextId: 'insmallcorrect',
+      nextId: 'smallcorrect',
   sumToBags: [{ name: 'i', points: 1 },  { name: 'd', points: 8 }],
 
       
@@ -2000,7 +2000,7 @@ day85comment: {
   ],
 },
 smallcorrect: {
-  botPrompt: 'Hurray <strong>a</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray <strong>a and c</strong> are the correct answer  ! 😎',
   answers: [
     {
       nextId: 'small_letter'+shuffledNumbersto[1],
@@ -2008,7 +2008,7 @@ smallcorrect: {
   ],
 },
 insmallcorrect: {
-  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"a"</strong>',
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"a or c"</strong>',
   answers: [
     {
       nextId: 'small_letter'+shuffledNumbersto[1],
@@ -2024,13 +2024,13 @@ insmallcorrect: {
   answers: [
     {
       answer: 'e',
-      nextId: 'insmallcorrectq2',
+      nextId: 'smallcorrectq2',
   sumToBags: [{ name: 'i', points: 1 }],
 
     },
     {
       answer: 'f',
-      nextId: 'smallcorrectq2',
+      nextId: 'insmallcorrectq2',
   sumToBags: [{ name: 'c', points: 1 }],
 
     },
@@ -2050,7 +2050,7 @@ insmallcorrect: {
 },
 
 smallcorrectq2: {
-  botPrompt: 'Hurray! <strong>f</strong> is the correct answer  ! 😎',
+  botPrompt: 'Hurray! <strong>e</strong> is the correct answer  ! 😎',
   answers: [
     {
       nextId: 'small_letter'+shuffledNumbersto[2],
@@ -2058,7 +2058,7 @@ smallcorrectq2: {
   ],
 },
 insmallcorrectq2: {
-  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"f"</strong>',
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"e"</strong>',
   answers: [
     {
       nextId: 'small_letter'+shuffledNumbersto[2],
@@ -2159,7 +2159,7 @@ answers: [
   },
 ],
 },
-insmallcorrectq2: {
+insmallcorrectq4: {
 botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"p"</strong>',
 answers: [
   {
@@ -2184,7 +2184,6 @@ answers: [
   {
     answer: 'o',
   sumToBags: [{ name: 'i', points: 1 }],
-
     nextId: 'insmallcorrectq5',
   sumToBags: [{ name: 'i', points: 1 }],
 
@@ -3967,7 +3966,7 @@ answers: [
 ['numbers'+shuffledNumbersnseve[17]]: {
 botPrompt: 'Which number is greater, 9 or 6?',
 type: RTypes.TRANSFORMED_TEXT,
-input: selectField(['6', '7', "8","94"]),
+input: selectField(['6', '7', "8","9"]),
 answers: [
   {
     answer: '6',
