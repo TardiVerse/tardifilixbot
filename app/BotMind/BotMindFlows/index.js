@@ -9982,7 +9982,7 @@ incorrectq28: {
   ],
 },
 correctq29: {
-  botPrompt: 'You Have Selected Correct Anwser 🎉! M<strong>A or E</strong>N 😎',
+  botPrompt: 'You Have Selected Correct Anwser 🎉! <strong>A or E</strong>😎',
   answers: [
     {
       nextId: 'vowels_question'+shuffledNumbers[29],
