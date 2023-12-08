@@ -24192,7 +24192,7 @@ day23link6: {
 },
 
 day23link7: {
-  botPrompt: 'sar_41',//missing
+  botPrompt: 'https://drive.google.com/file/d/1SUb-fVktpbBaByBuutYvbkqVVm3GMH4X/view?usp=drive_link',
   type: RTypes.LINK,
   answers: [
     {
@@ -24225,7 +24225,7 @@ day23link9: {
 
 
 day23link10: {
-  botPrompt: 'sar_44', //missing
+  botPrompt: 'https://drive.google.com/file/d/17Y0W6sS5QT3y0g2Mkf5ffne8WpfjXduu/view?usp=drive_link',
   type: RTypes.LINK,
   answers: [
     {
