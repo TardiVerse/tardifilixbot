@@ -1000,7 +1000,6 @@ day7: {
   answers: [
           { nextId: 'day7comment' },
   ],
-  sumToBags: [{ name: 'd', points: 7 }],
 
 },
 day7comment: {
@@ -3345,12 +3344,13 @@ wishtocontinue8: {
       {
         answer: 'Yes!',
         nextId: 'day9',
+        sumToBags: [{ name: 'd', points: 1 }],
+
       },
       {
         answer: 'No!',
         nextId: 'endConv',
-        sumToBags: [{ name: 'd', points: 8 }],
-
+        sumToBags: [{ name: 'd', points: 1 }],
       },
   ],
 },
@@ -3361,7 +3361,6 @@ day9: {
   answers: [
           { nextId: 'day9link' },
   ],
-  sumToBags: [{ name: 'd', points: 9 }],
 
 },
 
@@ -3435,7 +3434,7 @@ day10: {
   answers: [
           { nextId: 'day10link' },
   ],
-  sumToBags: [{ name: 'd', points: 10 }],
+
 
 },
 day10link: {
@@ -8433,10 +8432,14 @@ wishToContinue10: {
       {
         answer: 'Yes!',
         nextId: 'vowelsareback',
+        sumToBags: [{ name: 'd', points: 1 }],
+
       },
       {
         answer: 'No!',
         nextId: 'endConv',
+        sumToBags: [{ name: 'd', points: 1 }],
+
 
       },
   ],
@@ -18728,10 +18731,14 @@ wishtocontinue16: {
       {
         answer: 'Yes!',
         nextId: 'day17',
+        sumToBags: [{ name: 'd', points: 1 }],
+
       },
       {
         answer: 'No!',
         nextId: 'endConv',
+        sumToBags: [{ name: 'd', points: 1 }],
+
       },
   ],
 },
@@ -18746,7 +18753,7 @@ day17: {
   answers: [
           { nextId: 'day17link' },
   ],
-  sumToBags: [{ name: 'd', points: 17 }],
+ 
 
 },
 
@@ -18782,10 +18789,14 @@ wishtocontinue17: {
       {
         answer: 'Yes!',
         nextId: 'day18',
+        sumToBags: [{ name: 'd', points: 1 }],
+
       },
       {
         answer: 'No!',
         nextId: 'endConv',
+        sumToBags: [{ name: 'd', points: 1 }],
+
       },
   ],
 },
@@ -18800,7 +18811,6 @@ day18: {
   answers: [
           { nextId: 'day18link' },
   ],
-  sumToBags: [{ name: 'd', points: 18 }],
 
 },
 
@@ -19528,10 +19538,14 @@ wishtocontinue18: {
       {
         answer: 'Yes!',
         nextId: 'day19',
+        sumToBags: [{ name: 'd', points: 1 }],
+
       },
       {
         answer: 'No!',
         nextId: 'endConv',
+        sumToBags: [{ name: 'd', points: 1 }],
+
       },
   ],
 },
@@ -19548,8 +19562,7 @@ day19: {
   answers: [
           { nextId: 'day19link' },
   ],
-  sumToBags: [{ name: 'd', points: 19
-}],
+
 
 },
 
@@ -20052,10 +20065,14 @@ wishtocontinue19: {
       {
         answer: 'Yes!',
         nextId: 'day20',
+        sumToBags: [{ name: 'd', points: 1 }],
+
       },
       {
         answer: 'No!',
         nextId: 'endConv',
+        sumToBags: [{ name: 'd', points: 1 }],
+
       },
   ],
 },
@@ -20066,7 +20083,7 @@ day20: {
   answers: [
           { nextId: 'day20comment' },
   ],
-  sumToBags: [{ name: 'd', points: 20 }],
+ 
 
 },
 
@@ -23708,10 +23725,14 @@ wishtocontinue20: {
       {
         answer: 'Yes!',
         nextId: 'endConv',
+        sumToBags: [{ name: 'd', points: 1 }],
+
       },
       {
         answer: 'No!',
         nextId: 'endConv',
+        sumToBags: [{ name: 'd', points: 1 }],
+
       },
   ],
 },
@@ -23723,7 +23744,7 @@ day21: {
   answers: [
           { nextId: 'day21newcomment' },
   ],
-  sumToBags: [{ name: 'd', points: 21}],
+
 
 },
 day21newcomment: {
@@ -24120,10 +24141,14 @@ wishtocontinue21: {
       {
         answer: 'Yes!',
         nextId: 'day22',
+        sumToBags: [{ name: 'd', points: 1 }],
+
       },
       {
         answer: 'No!',
         nextId: 'endConv',
+        sumToBags: [{ name: 'd', points: 1 }],
+
       },
   ],
 },
@@ -24135,7 +24160,7 @@ day22: {
   answers: [
           { nextId: 'day22newcomment' },
   ],
-  sumToBags: [{ name: 'd', points: 22 }],
+ 
 
 },
 day22newcomment: {
@@ -24162,10 +24187,14 @@ wishtocontinue22: {
       {
         answer: 'Yes!',
         nextId: 'day23',
+        sumToBags: [{ name: 'd', points: 1 }],
+
       },
       {
         answer: 'No!',
         nextId: 'endConv',
+        sumToBags: [{ name: 'd', points: 1 }],
+
       },
   ],
 },
@@ -24176,7 +24205,7 @@ day23: {
   answers: [
           { nextId: 'day23newcomment' },
   ],
-  sumToBags: [{ name: 'd', points: 23 }],
+ 
 
 },
 day23newcomment: {
@@ -24223,10 +24252,14 @@ wishtocontinue23: {
       {
         answer: 'Yes!',
         nextId: 'day24',
+        sumToBags: [{ name: 'd', points: 1 }],
+
       },
       {
         answer: 'No!',
         nextId: 'endConv',
+        sumToBags: [{ name: 'd', points: 1 }],
+
       },
   ],
 },
@@ -24239,7 +24272,7 @@ day24: {
   answers: [
           { nextId: 'day24newcomment' },
   ],
-  sumToBags: [{ name: 'd', points: 24}],
+
 
 },
 day24newcomment: {
@@ -28468,10 +28501,14 @@ wishtocontinue24: {
       {
         answer: 'Yes!',
         nextId: 'day25',
+        sumToBags: [{ name: 'd', points: 1 }],
+
       },
       {
         answer: 'No!',
         nextId: 'endConv',
+        sumToBags: [{ name: 'd', points: 1 }],
+
       },
   ],
 },
@@ -28485,7 +28522,6 @@ day25: {
   answers: [
           { nextId: 'day25link' },
   ],
-  sumToBags: [{ name: 'd', points: 25 }],
 
 },
 
@@ -29891,10 +29927,14 @@ day253link: {
         {
           answer: 'Yes!',
           nextId: 'endConv',
+        sumToBags: [{ name: 'd', points: 1 }],
+
         },
         {
           answer: 'No!',
           nextId: 'endConv',
+        sumToBags: [{ name: 'd', points: 1 }],
+
         },
     ],
   },
@@ -29933,10 +29973,5 @@ flnend: {
 
 
 };
-
-
-
-
-
 
 export default questions;
