@@ -13,6 +13,18 @@ import * as RTypes from '../responseTypes';
 const common_greetings = /(^hello|^hllo|^hi|^hey|^hola|^sup)\b\s?.*$/i;
 const common_greetings_negative = /(?!(^hello|^hi|^hey|^hllo|^sup|^hola)\b)\w+/i;
 
+const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+// Regular expression for negative email filtering
+const emailPatternNegative = /(?![a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})\w+/i;
+
+// Regular expression for positive mobile number validation (10 digits)
+const mobileNumberPattern = /^\b\d{10}\b/;
+
+// Regular expression for negative mobile number filtering
+const mobileNumberPatternNegative = /(?!\b\d{10}\b)\w+/;
+
+
 function shuffleArray(array) {
   const shuffledArray = array.slice();
   for (let i = shuffledArray.length - 1; i > 0; i--) {
@@ -202,15 +214,15 @@ const questions = {
     answers: [
       {
         answer: 'Student',
-        nextId: 'tardiidcollection',
+        nextId: 'yourName',
       },
       {
         answer: "Parent",
-        nextId: 'tardiidcollection',
+        nextId: 'yourName',
       },
       {
         answer: "Teacher",
-        nextId: 'tardiidcollection',
+        nextId: 'yourName',
       },
     ],
   },
