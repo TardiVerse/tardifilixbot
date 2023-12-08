@@ -4,8 +4,8 @@ export const background = 'url("https://ecommercetardiworld.s3.ap-south-1.amazon
 // =================================COLORS=================================
 
 // --- Char General Colors ---//
-export const primaryColor = '#127C71';
-export const onlineColor = '#127C71';
+export const primaryColor = '#9b93ed';
+export const onlineColor = '#9b93ed';
 export const offlineColor = '#e5e5e5';
 export const textColor = '#5d6975';
 export const strongTextColor = '#FFFFFF';
@@ -25,7 +25,7 @@ export const botAvatarIcon = 'https://tardimeet.s3.ap-south-1.amazonaws.com/bot.
 // ---Bubbles/Dialogues/Badges Colors---//
 export const bubbleTextColorBot = 'black';
 export const bubbleTextColorUser = '#003785';
-export const bubbleBGBot = 'rgb(0 193 173)';
+export const bubbleBGBot = 'rgb(155, 147, 237)';
 export const bubbleBGUser = 'rgba(82, 154, 255, 0.1)';
 export const selectReplyColor = 'rgba(82, 154, 255, 0.3)';
 export const selectReplyColorOnHover = userAvatar;

@@ -9,11 +9,11 @@ ${boilerplateCSS}
 
 body {
   font-family: Segoe UI;
-  font-size: 18px;
+  font-size: 22px;
   position: relative;
   background: ${variables.background};
   background-size: cover;
-  height: 100vh;
+  height: 120vh;
 }
 
 .qt-frame {
@@ -106,7 +106,7 @@ body {
 .qt-chat__bubble div {
   border-radius: 1.5625rem;
   display: inline-block;
-  max-width: 36.25rem;
+  max-width: 49.25rem;
   padding: 1rem;
   position: relative;
   -webkit-transition: width 2s;
