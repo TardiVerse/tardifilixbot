@@ -10256,7 +10256,7 @@ correctq34: {
  
   answers: [
     {
-      nextId: 'wishtocontinue11',
+      nextId: 'vowels_prompt7',
     },
   ],
 },
@@ -10265,7 +10265,7 @@ incorrectq34: {
 
   answers: [
     {
-      nextId: 'owels_prompt7',
+      nextId: 'vowels_prompt7',
     },
   ],
 },
