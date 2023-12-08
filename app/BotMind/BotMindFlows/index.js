@@ -498,7 +498,7 @@ day1link3: {
 },
 
 day1link4: {
-  botPrompt: 'sar_4',
+  botPrompt: 'https://drive.google.com/file/d/1KW5-mXDZ6r3JCqbUcGQx2T5afXn9O7CI/view?usp=drive_link',
   type: RTypes.LINK,
   answers: [
     {
@@ -509,7 +509,7 @@ day1link4: {
 
 
 day1link5: {
-  botPrompt: 'sar_5',
+  botPrompt: 'https://drive.google.com/file/d/1F-I9jH2QYCnuvrPKz5ArjPo1-HhQqmw0/view?usp=drive_link',
   type: RTypes.LINK,
   answers: [
     {
@@ -519,7 +519,7 @@ day1link5: {
 },
 
 day1link6: {
-  botPrompt: 'sar_6',
+  botPrompt: 'https://drive.google.com/file/d/1Q5jfKAg64dGpfaIJfSheVrOgLNbrrEJR/view?usp=drive_link',
   type: RTypes.LINK,
   answers: [
     {
@@ -529,7 +529,7 @@ day1link6: {
 },
 
 day1link7: {
-  botPrompt: 'sar_7',
+  botPrompt: 'https://drive.google.com/file/d/1R1pF7jkXsEybngU6rSJgMuOV4H1x6CK7/view?usp=drive_link',
   type: RTypes.LINK,
   answers: [
     {
@@ -621,7 +621,7 @@ day21link2: {
 },
 
 day22link3: {
-  botPrompt: 'sar_9',
+  botPrompt: 'https://drive.google.com/file/d/1eAD5pV22yRJds56opiuZi7TpyGu-hj2h/view?usp=drive_link',
   type: RTypes.LINK,
   answers: [
     {
@@ -1049,7 +1049,7 @@ day73link5: {
 
 
 day74link6: {
-  botPrompt: 'sar_20',
+  botPrompt: 'https://drive.google.com/file/d/1seShQtwCLcuhgbVR7mcg0pZAx7wvMWMp/view?usp=drive_link',
   type: RTypes.LINK,
   answers: [
     {
@@ -1079,7 +1079,7 @@ day76link8: {
 },
 
 day77link9: {
-  botPrompt: 'sar_23',
+  botPrompt: 'https://drive.google.com/file/d/1Bq5Or5LPM-SxK3RpXgASLmDSlzwrs5mv/view?usp=drive_link',
   type: RTypes.LINK,
   answers: [
     {
@@ -2315,7 +2315,7 @@ day85comment: {
   ],
 },
 smallcorrect: {
-  botPrompt: 'Hurray <strong>a and c</strong> are the correct answer  ! 😎',
+  botPrompt: 'Hurray <strong>a</strong> are the correct answer  ! 😎',
   answers: [
     {
       nextId: 'small_letter'+shuffledNumbersto[1],
@@ -2323,7 +2323,7 @@ smallcorrect: {
   ],
 },
 insmallcorrect: {
-  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"a or c"</strong>',
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"a"</strong>',
   answers: [
     {
       nextId: 'small_letter'+shuffledNumbersto[1],
@@ -4422,30 +4422,30 @@ answers: [
 
 //20
 ['numbers'+shuffledNumbersnseve[19]]: {
-botPrompt: 'What number comes between 7 and 9?',
+botPrompt: 'What number comes between 23 and 25?',
 type: RTypes.TRANSFORMED_TEXT,
-input: selectField(['5', '6', "7","8"]),
+input: selectField(['20', '21', "25","24"]),
 answers: [
   {
-    answer: '5',
+    answer: '20',
     nextId: 'innumberscorrectq20',
   sumToBags: [{ name: 'i', points: 1 }],
 
   },
   {
-    answer: '6',
+    answer: '21',
     nextId: 'innumberscorrectq20',
   sumToBags: [{ name: 'i', points: 1 }],
 
   },
   {
-    answer: "7",
+    answer: "25",
     nextId: 'innumberscorrectq20',
   sumToBags: [{ name: 'i', points: 1 }],
 
   },
   {
-    answer: "8",
+    answer: "24",
     nextId: 'numberscorrectq20',
   sumToBags: [{ name: 'c', points: 1 }],
 
@@ -4453,7 +4453,7 @@ answers: [
 ],
 },
 numberscorrectq20: {
-botPrompt: 'You Have Selected correct Anwser 🎉! <strong>8</strong> 😎',
+botPrompt: 'You Have Selected correct Anwser 🎉! <strong>24</strong> 😎',
 answers: [
   {
     nextId: 'numbers'+shuffledNumbersnseve[20],
@@ -4461,7 +4461,7 @@ answers: [
 ],
 },
 innumberscorrectq20: {
-botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"8"</strong>',
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"24"</strong>',
 answers: [
   {
     nextId: 'numbers'+shuffledNumbersnseve[20],
@@ -24191,7 +24191,61 @@ day23newcomment1: {
 
 
 day23link5: {
-  botPrompt: 'sar_36',
+  botPrompt: 'sar_39',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day23link6', 
+    },
+  ],
+},
+
+
+day23link6: {
+  botPrompt: 'sar_40',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day23link7', 
+    },
+  ],
+},
+
+day23link7: {
+  botPrompt: 'sar_41',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day23link8', 
+    },
+  ],
+},
+
+
+day23link8: {
+  botPrompt: 'sar_42',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day23link9', 
+    },
+  ],
+},
+
+
+day23link9: {
+  botPrompt: 'sar_43',
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day23link10', 
+    },
+  ],
+},
+
+
+day23link10: {
+  botPrompt: 'sar_44',
   type: RTypes.LINK,
   answers: [
     {
@@ -24199,6 +24253,11 @@ day23link5: {
     },
   ],
 },
+
+
+
+
+
 
 
 day23newcomment2: {
