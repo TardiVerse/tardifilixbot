@@ -23672,7 +23672,7 @@ wishtocontinue20: {
   answers: [
       {
         answer: 'Yes!',
-        nextId: 'endConv',
+        nextId: 'day21',
         sumToBags: [{ name: 'd', points: 1 }],
 
       },
@@ -29990,5 +29990,5 @@ flnend: {
 
 
 };
-
+console.log("my questions",questions);
 export default questions;
