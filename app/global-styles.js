@@ -9,7 +9,7 @@ ${boilerplateCSS}
 
 body {
   font-family: Segoe UI;
-  font-size: 14px;
+  font-size: 18px;
   position: relative;
   background: ${variables.background};
   background-size: cover;
