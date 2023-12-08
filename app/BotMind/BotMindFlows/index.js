@@ -596,7 +596,7 @@ day2comment: {
 },
 
 day21link1: {
-  botPrompt: 'sar_8',
+  botPrompt: 'https://drive.google.com/file/d/1SgeLuKrTHjPNgrzxxU0UezgI4Vn349BJ/view?usp=drive_link',
   type: RTypes.LINK,
   answers: [
     {
@@ -631,17 +631,7 @@ day22link3: {
 },
 
 day23link4: {
-  botPrompt: 'sar_10',
-  type: RTypes.LINK,
-  answers: [
-    {
-      nextId: 'day24link5',
-    },
-  ],
-},
-
-day24link5: {
-  botPrompt: 'sar_11',
+  botPrompt: 'https://drive.google.com/file/d/1_GmpJyByE6Ffxz4u5XGXuBEDyzu6h2T_/view?usp=drive_link',
   type: RTypes.LINK,
   answers: [
     {
@@ -650,22 +640,13 @@ day24link5: {
   ],
 },
 
-day25link6: {
-  botPrompt: 'sar_12',
-  type: RTypes.LINK,
-  answers: [
-    {
-      nextId: 'day26link7',
-    },
-  ],
-},
 
-day26link7: {
-  botPrompt: 'sar_13',
+day25link6: {
+  botPrompt: 'https://drive.google.com/file/d/1wBWOV7COAxzKxf0_zWvuk6CNfE76Yfkn/view?usp=drive_link',
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'wishtocontinue2', 
+      nextId: 'wishtocontinue2',
     },
   ],
 },
@@ -725,7 +706,7 @@ day31link1: {
 },
 
 day32link2: {
-  botPrompt: 'sar_14',
+  botPrompt: 'https://drive.google.com/file/d/1OZy4qniQPoX03NrUp3DDV0cMZRG8578n/view?usp=drive_link',
   type: RTypes.LINK,
   answers: [
     {
@@ -735,7 +716,7 @@ day32link2: {
 },
 
 day33link3: {
-  botPrompt: 'sar_15',
+  botPrompt: 'https://drive.google.com/file/d/1-9EIDWSFh7oA-R-CC-dQKWBgGFgCj9r6/view?usp=drive_link',
   type: RTypes.LINK,
   answers: [
     {
@@ -745,7 +726,7 @@ day33link3: {
 },
 
 day34link4: {
-  botPrompt: 'sar_16',
+  botPrompt: 'https://drive.google.com/file/d/1XGwKA6P4dzicEggLjDYiRpEqYJuFEL7I/view?usp=drive_link',
   type: RTypes.LINK,
   answers: [
     {
@@ -755,7 +736,7 @@ day34link4: {
 },
 
 day35link5: {
-  botPrompt: 'sar_17',
+  botPrompt: 'https://drive.google.com/file/d/1GznURIM2TZSYURv04nCj6fcPxr5xbtS6/view?usp=drive_link',
   type: RTypes.LINK,
   answers: [
     {
@@ -836,7 +817,7 @@ day42link3: {
 },
 
 day43link4: {
-  botPrompt: 'sar_18',
+  botPrompt: 'https://drive.google.com/file/d/1Zvb4PQtAtlpacjcB_sC0HwJSnSbC2cGF/view?usp=drive_link',
   type: RTypes.LINK,
   answers: [
     {
@@ -1042,7 +1023,7 @@ day72link4: {
 },
 
 day73link5: {
-  botPrompt: 'sar_19',
+  botPrompt: 'https://drive.google.com/file/d/1YXvSm0n_tiqp4dH9B07OGUB1VCtgf0G6/view?usp=drive_link',
   type: RTypes.LINK,
   answers: [
     {
@@ -1053,7 +1034,7 @@ day73link5: {
 
 
 day74link6: {
-  botPrompt: 'https://drive.google.com/file/d/1seShQtwCLcuhgbVR7mcg0pZAx7wvMWMp/view?usp=drive_link',
+  botPrompt: 'https://drive.google.com/file/d/1s13ENf1PXlvVqv2gIkmqsap6IS2_2E26/view?usp=drive_link',
   type: RTypes.LINK,
   answers: [
     {
@@ -1063,7 +1044,7 @@ day74link6: {
 },
 
 day75link7: {
-  botPrompt: 'sar_21',
+  botPrompt: 'https://drive.google.com/file/d/1TnQJ9T2mx1QAaYWo-D2YnLgSuzOxV9cy/view?usp=drive_link',
   type: RTypes.LINK,
   answers: [
     {
@@ -1073,7 +1054,7 @@ day75link7: {
 },
 
 day76link8: {
-  botPrompt: 'sar_22',
+  botPrompt: 'https://drive.google.com/file/d/1YXvSm0n_tiqp4dH9B07OGUB1VCtgf0G6/view?usp=drive_link', 
   type: RTypes.LINK,
   answers: [
     {
@@ -1093,7 +1074,7 @@ day77link9: {
 },
 
 day78link10: {
-  botPrompt: 'sar_24',
+  botPrompt: 'https://drive.google.com/file/d/1SgeLuKrTHjPNgrzxxU0UezgI4Vn349BJ/view?usp=drive_link',
   type: RTypes.LINK,
   answers: [
     {
@@ -1103,7 +1084,7 @@ day78link10: {
 },
 
 day79link11: {
-  botPrompt: 'sar_25',
+  botPrompt: 'https://drive.google.com/file/d/1zbPvTs58rOeId3WuucvidsALApHhypVI/view?usp=drive_link',
   type: RTypes.LINK,
   answers: [
     {
@@ -1113,7 +1094,7 @@ day79link11: {
 },
 
 day80link12: {
-  botPrompt: 'sar_26',
+  botPrompt: 'https://drive.google.com/file/d/1CFYQVVXTyX4LRvcNMYqDjk3zc79zK3Cm/view?usp=drive_link',
   type: RTypes.LINK,
   answers: [
     {
@@ -1123,7 +1104,7 @@ day80link12: {
 },
 
 day81link13: {
-  botPrompt: 'sar_27',
+  botPrompt: 'https://drive.google.com/file/d/1s13ENf1PXlvVqv2gIkmqsap6IS2_2E26/view?usp=drive_link',
   type: RTypes.LINK,
   answers: [
     {
@@ -3289,7 +3270,7 @@ smallcorrectq20: {
 botPrompt: 'You Have Selected correct Anwser 🎉! <strong>l</strong> 😎',
 answers: [
   {
-    nextId: 'day84comment9',
+    nextId: 'day86link10',
   },
 ],
 },
@@ -3297,27 +3278,15 @@ insmallcorrectq20: {
 botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"l"</strong>',
 answers: [
   {
-    nextId: 'day84comment9',
+    nextId: 'day86link10',
   },
 ],
 },
 
-
-
 //endsmallletter
 
-day84comment9: {
-  botPrompt: 'sar_28',
-  type: RTypes.LINK,
-  answers: [
-    {
-      nextId: 'day86link10', 
-    },
-  ],
-},
-
 day86link10: {
-  botPrompt: 'sar_29',
+  botPrompt: 'https://drive.google.com/file/d/1Mlq41iKkxJZof3XcyF5BBYwSNmChGr_s/view?usp=drive_link',
   type: RTypes.LINK,
   answers: [
     {
@@ -3327,7 +3296,7 @@ day86link10: {
 },
 
 day87link11: {
-  botPrompt: 'sar_30',
+  botPrompt: 'https://drive.google.com/file/d/1bfjbF0Lz2vW2R9xFzz-xvbORZmIzaW5d/view?usp=drive_link',
   type: RTypes.LINK,
   answers: [
     {
@@ -3391,17 +3360,7 @@ day91link1: {
 },
 
 day92link2: {
-  botPrompt: 'sar_31',
-  type: RTypes.LINK,
-  answers: [
-    {
-      nextId: 'day93link3', 
-    },
-  ],
-},
-
-day93link3: {
-  botPrompt: 'sar_32',
+  botPrompt: 'https://drive.google.com/file/d/1seShQtwCLcuhgbVR7mcg0pZAx7wvMWMp/view?usp=drive_link',
   type: RTypes.LINK,
   answers: [
     {
@@ -8354,7 +8313,7 @@ answers: [
   botPrompt: 'Hurray! <strong>20</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'wishToContinue10'
+      nextId: 'day10link2'
     },
   ],
   },
@@ -8362,7 +8321,7 @@ answers: [
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"20"</strong>',
   answers: [
     {
-      nextId: 'day10link1'
+      nextId: 'day10link2'
     }
   ],
   },
@@ -8370,19 +8329,8 @@ answers: [
 
 //endnumbersletter
 
-
-day10link1: {
-  botPrompt: 'sar_32',
-  type: RTypes.LINK,
-  answers: [
-    {
-      nextId: 'day10link2', 
-    },
-  ],
-},
-
 day10link2: {
-  botPrompt: 'sar_33',
+  botPrompt: 'https://drive.google.com/file/d/16FEahu5VkTKSUIdYIqlQHQJK5vlTkLzj/view?usp=drive_link',
   type: RTypes.LINK,
   answers: [
     {
@@ -8392,7 +8340,7 @@ day10link2: {
 },
 
 day10link3: {
-  botPrompt: 'sar_34',
+  botPrompt: 'https://drive.google.com/file/d/1o_j1VyZJwrdG-XStB8tFFMqWVylWAkMt/view?usp=drive_link',
   type: RTypes.LINK,
   answers: [
     {
@@ -8402,7 +8350,7 @@ day10link3: {
 },
 
 day10link4: {
-  botPrompt: 'sar_35',
+  botPrompt: 'https://drive.google.com/file/d/1BBbRXVVrNuiRTg2-ZvOksUL4HrMQ67GY/view?usp=drive_link',
   type: RTypes.LINK,
   answers: [
     {
@@ -8413,7 +8361,7 @@ day10link4: {
 
 
 day10link5: {
-  botPrompt: 'sar_36',
+  botPrompt: 'https://drive.google.com/file/d/1-LxBIbqRWtQuQdk_Ey7NenSkr7Hnu-0C/view?usp=drive_link',
   type: RTypes.LINK,
   answers: [
     {
@@ -8700,7 +8648,7 @@ correctq4: {
     },
   ],
 },
-incorrectq2: {
+incorrectq4: {
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"U"</strong>',
   answers: [
     {
@@ -9422,7 +9370,7 @@ incorrectq17: {
   ],
 },
 correctq18: {
-  botPrompt: 'You Have Selected Correct Anwser 🎉! W<strong>A</strong>NT 😎',
+  botPrompt: 'You Have Selected Correct Anwser 🎉! W<strong>A or E</strong>NT 😎',
   answers: [
     {
       nextId: 'vowels_question'+shuffledNumbers[18],
@@ -9430,7 +9378,7 @@ correctq18: {
   ],
 },
 incorrectq18: {
-  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"A"</strong>',
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"A or E"</strong>',
   answers: [
     {
       nextId: 'vowels_question'+shuffledNumbers[18],
@@ -10022,7 +9970,7 @@ incorrectq28: {
   ],
 },
 correctq29: {
-  botPrompt: 'You Have Selected Correct Anwser 🎉! M<strong>A</strong>N 😎',
+  botPrompt: 'You Have Selected Correct Anwser 🎉! M<strong>A or E</strong>N 😎',
   answers: [
     {
       nextId: 'vowels_question'+shuffledNumbers[29],
@@ -10030,7 +9978,7 @@ correctq29: {
   ],
 },
 incorrectq29: {
-  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"A"</strong>',
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"A or E"</strong>',
   answers: [
     {
       nextId: 'vowels_question'+shuffledNumbers[29],
@@ -10095,7 +10043,7 @@ incorrectq30: {
 ['vowels_question'+shuffledNumbers[30]]: {
   botPrompt: 'Fill in the missing vowel in "b_t": ',
   type: RTypes.TRANSFORMED_TEXT,
-  input: selectField(['A', 'E', "I","O","U"]),
+  input: selectField(['A', 'E', "I","O","All of the above"]),
   answers: [
     {
       answer: 'A',
@@ -10118,19 +10066,19 @@ incorrectq30: {
     {
       answer: "O",
       nextId: 'correctq31',
-  sumToBags: [{ name: 'c', points: 1 }],
+  sumToBags: [{ name: 'i', points: 1 }],
 
     },
     {
-      answer: "U",
+      answer: "All of the above",
       nextId: 'incorrectq31',
-  sumToBags: [{ name: 'i', points: 1 }],
+  sumToBags: [{ name: 'c', points: 1 }],
 
     },
   ],
 },
 correctq31: {
-  botPrompt: 'You Have Selected Correct Anwser 🎉! B<strong>A</strong>T or B<strong>O</strong>T😎',
+  botPrompt: 'You Have Selected Correct Anwser 🎉! B<strong>A</strong>All of the above<strong>O</strong>T😎',
   answers: [
     {
       nextId: 'vowels_question'+shuffledNumbers[31],
@@ -10138,7 +10086,7 @@ correctq31: {
   ],
 },
 incorrectq31: {
-  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"A or O"</strong>',
+  botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"All of the above"</strong>',
   answers: [
     {
       nextId: 'vowels_question'+shuffledNumbers[31],
@@ -10311,7 +10259,7 @@ incorrectq34: {
 },
 
 vowels_prompt7: {
-  botPrompt: 'sar_35',
+  botPrompt: 'https://drive.google.com/file/d/1innKoerXUUe-kl9KNgXDNkjNqPGmLg2e/view?usp=drive_link', 
   type: RTypes.LINK,
   answers: [
     {
@@ -18039,7 +17987,7 @@ answers: [
 },
 
 isArecorrectq64: {
-botPrompt: 'Hurray! <strong>P</strong> is the correct answer  ! 😎',
+botPrompt: 'Hurray! <strong>are</strong> is the correct answer  ! 😎',
 answers: [
   {
     nextId: 'isAre'+shuffledNumbersseventyseven[64],
@@ -18047,7 +17995,7 @@ answers: [
 ],
 },
 inisArecorrectq2: {
-botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"P"</strong>',
+botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"are"</strong>',
 answers: [
   {
     nextId: 'isAre'+shuffledNumbersseventyseven[64],
@@ -24223,7 +24171,7 @@ day23newcomment1: {
 
 
 day23link5: {
-  botPrompt: 'sar_39',
+  botPrompt: 'https://drive.google.com/file/d/1pj2PKRz_56WZW7vmSDBqneFWr8LLH3RG/view?usp=drive_link',
   type: RTypes.LINK,
   answers: [
     {
@@ -24234,7 +24182,7 @@ day23link5: {
 
 
 day23link6: {
-  botPrompt: 'sar_40',
+  botPrompt: 'https://drive.google.com/file/d/1B2fmK0s9kN09tGwcti72YExnjyd1M3Tj/view?usp=drive_link',
   type: RTypes.LINK,
   answers: [
     {
@@ -24244,7 +24192,7 @@ day23link6: {
 },
 
 day23link7: {
-  botPrompt: 'sar_41',
+  botPrompt: 'sar_41',//missing
   type: RTypes.LINK,
   answers: [
     {
@@ -24255,7 +24203,7 @@ day23link7: {
 
 
 day23link8: {
-  botPrompt: 'sar_42',
+  botPrompt: 'https://drive.google.com/file/d/14UpZUFelQwL4nkgxsstmY0g8uLWHheah/view?usp=drive_link',
   type: RTypes.LINK,
   answers: [
     {
@@ -24266,7 +24214,7 @@ day23link8: {
 
 
 day23link9: {
-  botPrompt: 'sar_43',
+  botPrompt: 'https://drive.google.com/file/d/1xLL_woGDgR0sWlG5uPAWSdVW6wf7xKUL/view?usp=drive_link',
   type: RTypes.LINK,
   answers: [
     {
@@ -24277,7 +24225,17 @@ day23link9: {
 
 
 day23link10: {
-  botPrompt: 'sar_44',
+  botPrompt: 'sar_44', //missing
+  type: RTypes.LINK,
+  answers: [
+    {
+      nextId: 'day23link11', 
+    },
+  ],
+},
+
+day23link11: {
+  botPrompt: 'https://drive.google.com/file/d/1imaavmzrgZfVnxqQAq7AIttDWMbHQAMx/view?usp=drive_link',
   type: RTypes.LINK,
   answers: [
     {
