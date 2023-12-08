@@ -8495,7 +8495,7 @@ wishToContinue10: {
   vowels_prompt5: {
     botPrompt: 'Let`s Solve 🧠 ',
     answers: [
-            { nextId: 'vvowels_prompt6' },
+            { nextId: 'vowels_prompt6' },
     ],
   },
   vowels_prompt6: {
