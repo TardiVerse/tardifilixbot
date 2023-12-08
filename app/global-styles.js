@@ -106,7 +106,7 @@ body {
 .qt-chat__bubble div {
   border-radius: 1.5625rem;
   display: inline-block;
-  max-width: 36.25rem;
+  max-width: 50.25rem;
   padding: 1rem;
   position: relative;
   -webkit-transition: width 2s;
