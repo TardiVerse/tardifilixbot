@@ -28,6 +28,7 @@ export class BotContainer extends React.Component { // eslint-disable-line react
   }
   componentDidMount() {
     this.handleInitConversation();
+    this.getTokenFromUrl();
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -38,7 +39,7 @@ export class BotContainer extends React.Component { // eslint-disable-line react
     if(this.props.botContainer.userPhone && this.state.signupnotdone )
     {
 
-    this.signup();
+    this.signup(token);
       
         }
   
@@ -68,16 +69,25 @@ if(dbid !== null)
   handleInitConversation() {
     this.props.initConversation();
   }
+  getTokenFromUrl() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const token = urlParams.get('token');
+    if (token) {
+      console.log('Token:', token);
+      localStorage.setItem('ftoken', token);
 
-//signup
+      // You can then use this token as needed, for example, setting it in state or using it in a fetch request.
+    }
+  }
 
  
 signup = () => {
+  const ftoken  = localStorage.getItem('ftoken');
 
-
-fetch(
+  fetch(
     // `https://devapitardifilix-6bf804c0e6f9.herokuapp.com/chatbot/save/TF2601/hjgbjhg`,
-    `https://api.filibot.org/auth/signUp`,
+
+    'https://auth.filibot.in/api/validate-token?token='+ftoken,
     {
       method: 'POST',
 
@@ -85,25 +95,49 @@ fetch(
         Accept: 'application/json',
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({
-        teaid:this.props.botContainer.companyName,
-        name: this.props.botContainer.userName,
-        sessId: this.state.id,
-        mobile_no: this.props.botContainer.userPhone,
-        email_id: this.props.botContainer.userEmail,
-      }),
     }
   )
     .then((response) => response.json())
     .then((res) => {
       if (res.status === true) {
-        this.setState({ signupnotdone: false,dbid:res.id });
-        localStorage.setItem('dbid', res.id);
-        console.log(res.status);
+        
+        fetch(
+        `https://api.filibot.org/auth/signUp`,
+        {
+          method: 'POST',
+    
+          headers: {
+            Accept: 'application/json',
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            tfid:res.user.userId,
+            teaid:res.user._id,
+            name: res.user.firstName +" " +res.user.lastName,
+            sessId: res.user._id,
+            mobile_no: res.user.mobileNumber,
+            email_id: res.user.emailId,
+            
+          }),
+        }
+      )
+        .then((response) => response.json())
+        .then((res) => {
+          if (res.status === true) {
+            this.setState({ signupnotdone: false,dbid:res.id });
+            localStorage.setItem('dbid', res.id);
+            console.log(res.status);
+          } else {
+            console.log('Failed');
+          }
+        });
+
       } else {
         console.log('Failed');
       }
     });
+
+
 
 
 };
