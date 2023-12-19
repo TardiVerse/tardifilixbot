@@ -20,42 +20,37 @@ export class BotContainer extends React.Component { // eslint-disable-line react
     this.state = {
       botnameonfly: 'filibot Assessment',
       pathname: window.location.pathname,
-      signupnotdone:true,
+      signupdone:false,
       dbid:"",
       stateconvlength:0,
+      apiDataFetched: false,
       id: Date.now(),
     };
   }
   componentDidMount() {
     this.handleInitConversation();
-    this.getTokenFromUrl();
+    const urlParams = new URLSearchParams(window.location.search);
+  const token = urlParams.get('token');
+  if (token) {
+    console.log('Token:', token);
+    localStorage.setItem('ftoken', token);
+
+    // You can then use this token as needed, for example, setting it in state or using it in a fetch request.
+  }
   }
 
-  componentDidUpdate(prevProps, prevState) {
-    const dbid = localStorage.getItem('dbid');
-    if (this.props.botContainer.displayRecommendation) {
-      this.handleEstimateRecommendation(this.props.botContainer.bags);
-    }
-    if(this.props.botContainer.userPhone && this.state.signupnotdone )
-    {
+componentDidUpdate(prevProps, prevState) {
+  const dbid = localStorage.getItem('dbid');
+  const ftok = localStorage.getItem('ftoken');
 
-    this.signup(token);
-      
-        }
-  
+  if (!this.state.signupdone && ftok && !this.state.apiDataFetched) {
+    this.fetchMyApiData();
+    this.setState({ apiDataFetched: true }); // Set the flag to true after calling the method
+  }
 
-
-if(dbid !== null)
-{
-
-     if (this.props.botContainer.conversation.length !== prevProps.botContainer.conversation.length) {
-      
-      this.saveChatList();
-
-     }
-  
-}
-
+  if (dbid !== null && this.props.botContainer.conversation.length !== prevState.conversation.length) {
+    this.saveChatList();
+  }
 }
 
 
@@ -69,37 +64,41 @@ if(dbid !== null)
   handleInitConversation() {
     this.props.initConversation();
   }
-  getTokenFromUrl() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const token = urlParams.get('token');
-    if (token) {
-      console.log('Token:', token);
-      localStorage.setItem('ftoken', token);
 
-      // You can then use this token as needed, for example, setting it in state or using it in a fetch request.
+
+
+  fetchMyApiData = async () => {
+    const ftoken = localStorage.getItem('ftoken');
+    if (!ftoken) {
+      console.log('No ftoken found');
+      return;
+    }
+  
+    try {
+      const response = await fetch('https://auth.filibot.in/api/validate-token?token=' + ftoken, {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+        },
+        mode: 'no-cors'
+      });
+  
+      const res = await response.json();
+      if (res.status === true) {
+        this.signup(res.user);
+      } else {
+        console.log('Failed to validate token');
+      }
+    } catch (error) {
+      console.error('Error in fetchMyApiData:', error);
     }
   }
 
+
  
-signup = () => {
-  const ftoken  = localStorage.getItem('ftoken');
-
-  fetch(
-    // `https://devapitardifilix-6bf804c0e6f9.herokuapp.com/chatbot/save/TF2601/hjgbjhg`,
-
-    'https://auth.filibot.in/api/validate-token?token='+ftoken,
-    {
-      method: 'POST',
-
-      headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json',
-      },
-    }
-  )
-    .then((response) => response.json())
-    .then((res) => {
-      if (res.status === true) {
+signup = (resUser) => {
+ 
         
         fetch(
         `https://api.filibot.org/auth/signUp`,
@@ -111,12 +110,13 @@ signup = () => {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
-            tfid:res.user.userId,
-            teaid:res.user._id,
-            name: res.user.firstName +" " +res.user.lastName,
-            sessId: res.user._id,
-            mobile_no: res.user.mobileNumber,
-            email_id: res.user.emailId,
+            tfid:resUser.userId,
+            teaid:resUser._id,
+            name: resUser.firstName +" " +res.user.lastName,
+            sessId: resUser._id,
+            mobile_no: resUser.mobileNumber,
+            email_id: resUser.emailId,
+            //here i need to put fetchmydata 
             
           }),
         }
@@ -124,7 +124,7 @@ signup = () => {
         .then((response) => response.json())
         .then((res) => {
           if (res.status === true) {
-            this.setState({ signupnotdone: false,dbid:res.id });
+            this.setState({ signupdone: true,dbid:res.id });
             localStorage.setItem('dbid', res.id);
             console.log(res.status);
           } else {
@@ -132,13 +132,7 @@ signup = () => {
           }
         });
 
-      } else {
-        console.log('Failed');
-      }
-    });
-
-
-
+  
 
 };
 
@@ -181,7 +175,6 @@ saveChatList = () => {
         if (res.message === 'Sucess') {
           const dayadd= parseInt(daycount)+1;
           localStorage.setItem('dayc', "day"+dayadd);
-
           console.log('Success');
         } else {
           console.log('Failed');
