@@ -11,10 +11,18 @@ import { createStructuredSelector } from 'reselect';
 import makeSelectBotContainer from './selectors';
 import { initConversation, estimateRecommendation, activateBot } from './actions';
 import BotComponent from '../../components/BotComponent/';
-
+import FontSizeAdjuster from './FontSizeAdjuster';
 export class BotContainer extends React.Component { // eslint-disable-line react/prefer-dataless-function
  
- 
+  increaseFontSize = () => {
+    document.documentElement.style.fontSize = 
+      parseFloat(window.getComputedStyle(document.documentElement).fontSize) + 1 + 'px';
+  };
+
+  decreaseFontSize = () => {
+    document.documentElement.style.fontSize = 
+      parseFloat(window.getComputedStyle(document.documentElement).fontSize) - 1 + 'px';
+  };
   constructor(props) {
     super(props);
     this.state = {
@@ -201,6 +209,10 @@ saveChatList = () => {
           TFID={data.TFID}
           companyName={data.companyName}
           botThinking={data.botThinking}
+        />
+         <FontSizeAdjuster 
+          onIncrease={this.increaseFontSize} 
+          onDecrease={this.decreaseFontSize} 
         />
 
       </div>
