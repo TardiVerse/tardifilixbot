@@ -1017,7 +1017,7 @@ day72link4: {
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'day73link5',
+      nextId: 'wishtocontinue7',
     },
   ],
 },
