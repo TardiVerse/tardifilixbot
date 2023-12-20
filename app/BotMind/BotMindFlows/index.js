@@ -23690,18 +23690,18 @@ wishtocontinue20: {
 day21: {
   botPrompt: '<strong> Day 21: </strong> These, Those ',
   answers: [
-          { nextId: 'day21newcomment' },
+          { nextId: 'day2111newcomment' },
   ],
 
 
 },
-day21newcomment: {
+day2111newcomment: {
   botPrompt: 'These and Those point towards more than one object which is near or far from us.',
   answers: [
-          { nextId: 'day21newlink' },
+          { nextId: 'day21newlink100' },
   ],
 },
-day21newlink: {
+day21newlink100: {
   botPrompt: 'https://youtu.be/Nj8VNqvLHvo',
   type: RTypes.LINK,
   answers: [
