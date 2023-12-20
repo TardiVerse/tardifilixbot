@@ -24165,7 +24165,7 @@ day23newcomment: {
 day23newcomment1: {
   botPrompt: 'Let`s build a simple Teaching Learning Material to remind students of the Five Magic words.',
   answers: [
-          { nextId: 'day23link5' },
+          { nextId: 'day23newcomment2' },
   ],
 },
 
