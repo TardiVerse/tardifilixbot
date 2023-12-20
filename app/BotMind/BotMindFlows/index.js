@@ -416,7 +416,7 @@ day1comment: {
 day1comment: {
   botPrompt: 'Head, Shoulder, Knees and Toes: ',
   answers: [
-          { nextId: 'wishtocontinue' },
+          { nextId: 'day1comment' },
   ],
 },
 
