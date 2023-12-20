@@ -811,7 +811,7 @@ day42link3: {
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'day43link4',
+      nextId: 'wishtocontinue4',
     },
   ],
 },
@@ -927,7 +927,7 @@ day61link2: {
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'day62text3',
+      nextId: 'wishtocontinue6',
     },
   ],
 },
