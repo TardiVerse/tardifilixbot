@@ -6380,10 +6380,10 @@ botPrompt: 'You Have Selected CLASS II. Which subject you would like to start',
             botPrompt: 'What is used to measure length?',
             type: RTypes.TRANSFORMED_TEXT,
             
-            input: selectField(['Scale,', 'tape', "pencil",'paper']),
+            input: selectField(['Scale', 'tape', "pencil",'paper']),
               answers: [
                 {
-                  answer: 'Scale,',
+                  answer: 'Scale',
                   nextId: 'thirdMathscorrectq5',
                   sumToBags: [{ name: 'ac', points: 1 }],
                 },
@@ -16974,7 +16974,7 @@ classvi: {
               botPrompt: ' MCQ: In which of the following sentences is the reported speech correctly transformed from direct to indirect speech?',
               type: RTypes.TRANSFORMED_TEXT,
               
-              input: selectField(['She said, "I will visit the museum tomorrow."', 'He said, "I am going to the party tomorrow."', "They said,'We have finished our homework.'",  "He said,'I had already seen that movie.'"]),
+              input: selectField(['She said, "I will visit the museum tomorrow."', 'He said, "I am going to the party tomorrow."', "They said,'We have finished our homework.",  "He said,'I had already seen that movie.'"]),
                 answers: [
                   {
                     answer: 'She said, "I will visit the museum tomorrow."',
