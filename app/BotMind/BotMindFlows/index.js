@@ -3278,7 +3278,7 @@ insmallcorrectq20: {
 botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"l"</strong>',
 answers: [
   {
-    nextId: 'day86link10',
+    nextId: 'wishtocontinue8',
   },
 ],
 },
