@@ -700,7 +700,7 @@ day31link1: {
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'day32link2',
+      nextId: 'wishtocontinue3',
     },
   ],
 },
