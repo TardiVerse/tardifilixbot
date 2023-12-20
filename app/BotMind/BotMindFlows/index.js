@@ -465,19 +465,7 @@ day1comment: {
           { nextId: 'wishtocontinue' },
   ],
 },
-day1comment: {
-  botPrompt: 'Let us watch another Gross Motor Skill Activity.  ',
-  answers: [
-          { nextId: 'wishtocontinue' },
-  ],
-},
 
-day1comment: {
-  botPrompt: 'Head, Shoulder, Knees and Toes: ',
-  answers: [
-          { nextId: 'wishtocontinue' },
-  ],
-},
 
 day1link1: {
   botPrompt: 'https://drive.google.com/file/d/1EDpUX50L1HF-VTMPQ-LdtuEuH_-pT6Gh/view?usp=drive_link',
@@ -596,14 +584,14 @@ day2link: {
   type: RTypes.LINK,
   answers: [
     {
-      nextId: 'day2comment',
+      nextId: 'day22comment2',
     },
   ],
 },
 day2comment: {
   botPrompt: 'Another activity to develop this skill is Rice colouring ',
   answers: [
-          { nextId: 'day21link1' },
+          { nextId: 'day22comment2' },
   ],
 },
 
