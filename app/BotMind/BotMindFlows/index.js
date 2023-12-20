@@ -8321,7 +8321,7 @@ answers: [
   botPrompt: 'You have selected wrong Answer... 🤔 the <strong>right</strong> answer is <strong>"20"</strong>',
   answers: [
     {
-      nextId: 'day10link2'
+      nextId: 'wishToContinue10'
     }
   ],
   },
