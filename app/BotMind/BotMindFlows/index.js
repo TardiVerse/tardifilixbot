@@ -10078,7 +10078,7 @@ incorrectq30: {
   ],
 },
 correctq31: {
-  botPrompt: 'You Have Selected Correct Anwser 🎉! B<strong>A</strong>All of the above<strong>O</strong>T😎',
+  botPrompt: 'You Have Selected Correct Anwser 🎉! <strong></strong>All of the above<strong></strong>😎',
   answers: [
     {
       nextId: 'vowels_question'+shuffledNumbers[31],
