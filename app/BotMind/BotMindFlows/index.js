@@ -3270,7 +3270,7 @@ smallcorrectq20: {
 botPrompt: 'You Have Selected correct Anwser 🎉! <strong>l</strong> 😎',
 answers: [
   {
-    nextId: 'day86link10',
+    nextId: 'wishtocontinue8',
   },
 ],
 },
@@ -8313,7 +8313,7 @@ answers: [
   botPrompt: 'Hurray! <strong>20</strong> is the correct answer  ! 😎',
   answers: [
     {
-      nextId: 'day10link2'
+      nextId: 'wishToContinue10'
     },
   ],
   },
@@ -10244,7 +10244,7 @@ correctq34: {
  
   answers: [
     {
-      nextId: 'vowels_prompt7',
+      nextId: 'wishtocontinue11',
     },
   ],
 },
@@ -10253,7 +10253,7 @@ incorrectq34: {
 
   answers: [
     {
-      nextId: 'vowels_prompt7',
+      nextId: 'wishtocontinue11',
     },
   ],
 },
